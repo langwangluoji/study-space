@@ -1,0 +1,25 @@
+.progress-track { position: fixed; inset: 0 0 auto; height: 4px; z-index: 80; background: transparent; }
+.progress-track i { display: block; width: 0; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+.site-header { position: sticky; top: 0; z-index: 70; display: flex; align-items: center; gap: 1rem; min-height: 64px; padding: .65rem clamp(1rem, 3vw, 2.5rem); border-bottom: 1px solid color-mix(in srgb, var(--line) 78%, transparent); background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(18px); font-family: var(--sans); }
+.brand { color: var(--text); font-weight: 800; text-decoration: none; white-space: nowrap; }
+.course-nav { display: flex; gap: .25rem; overflow-x: auto; scrollbar-width: none; }
+.course-nav a { color: var(--muted); text-decoration: none; padding: .5rem .7rem; border-radius: 10px; white-space: nowrap; }
+.course-nav a[aria-current="page"], .course-nav a:hover { color: var(--text); background: var(--panel-2); }
+.header-actions { margin-left: auto; display: flex; gap: .5rem; }
+.icon-button { width: 42px; min-width: 42px; border: 1px solid var(--line); border-radius: 12px; color: var(--text); background: var(--panel); cursor: pointer; }
+.page-shell { display: grid; grid-template-columns: minmax(210px, 260px) minmax(0, 800px) minmax(190px, 230px); gap: clamp(1.2rem, 3vw, 3rem); width: min(1500px, 100%); margin: 0 auto; padding: 2rem clamp(1rem, 2.6vw, 2.5rem) 7rem; }
+.page-shell.home { grid-template-columns: minmax(0, 1fr); width: min(1180px, 100%); }
+.side-nav, .study-rail { position: sticky; top: 92px; align-self: start; max-height: calc(100vh - 112px); overflow-y: auto; font-family: var(--sans); }
+.side-nav h2, .study-rail h2 { font-size: .78rem; color: var(--dim); text-transform: uppercase; letter-spacing: .12em; }
+.toc { display: grid; gap: .22rem; }
+.toc a { display: block; color: var(--muted); padding: .48rem .65rem; border-left: 2px solid transparent; text-decoration: none; font-size: .88rem; }
+.toc a.active { color: var(--text); border-color: var(--accent); background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 13%, transparent), transparent); }
+.content { min-width: 0; }
+.hero { padding: clamp(2rem, 5vw, 5rem) 0 3rem; border-bottom: 1px solid var(--line); }
+.hero .lead { max-width: 700px; font-size: clamp(1.08rem, 2vw, 1.32rem); color: var(--muted); }
+.hero-links, .card-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.concept { padding: clamp(3rem, 7vw, 6rem) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 86px; }
+.study-rail .rail-card { margin-bottom: 1rem; }
+.mobile-toc-toggle { display: none; }
+@media (max-width: 1080px) { .page-shell { grid-template-columns: 220px minmax(0, 1fr); } .study-rail { display: none; } }
+@media (max-width: 760px) { .site-header { flex-wrap: wrap; } .course-nav { order: 3; width: 100%; } .page-shell { display: block; padding-top: 1rem; } .side-nav { position: static; max-height: none; display: none; margin-bottom: 1rem; } body.toc-open .side-nav { display: block; } .mobile-toc-toggle { display: inline-grid; place-items: center; } .hero { padding-top: 2.2rem; } }

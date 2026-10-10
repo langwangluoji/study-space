@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>逐步练习Notebook · 课程知识库</title><script>(function(){try{var t=localStorage.getItem('ml-course-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}}());</script><link href="assets/css/base.css" rel="stylesheet"/><link href="assets/css/layout.css" rel="stylesheet"/><link href="assets/css/components.css" rel="stylesheet"/><link href="assets/css/architecture.css" rel="stylesheet"/><link href="assets/favicon.svg" rel="icon"/><link href="assets/css/readers.css" rel="stylesheet"/><script>window.MathJax={"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "svg": {"fontCache": "global"}};</script><script defer="" src="assets/vendor/mathjax/tex-svg.js"></script></head><body data-page="resource-reader"><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header library-header"><a class="brand" href="index.html">课程知识库</a><nav aria-label="全站导航" class="course-nav"><a href="index.html">知识库</a><a aria-current="page" href="course-ml.html">机器学习</a><a href="resources.html">资料中心</a></nav><div class="header-actions"><button aria-label="展开课程与本讲目录" class="icon-button mobile-toc-toggle" data-toc-toggle="" type="button">☰</button><button aria-label="切换主题" class="icon-button" data-theme-toggle="" type="button">☀</button></div></header><main class="resource-reader content" id="main-content"><nav aria-label="面包屑" class="breadcrumbs"><a href="index.html">知识库</a><span>/</span><a href="resources.html">资料中心</a><span>/</span><span>逐步练习Notebook</span></nav><h1>逐步练习Notebook</h1><div class="reader-toolbar"><a download="" href="downloads/CIFAR10_MLP_逐步练习.ipynb">下载原始文件</a><a href="course-ml.html">返回课程</a></div><div class="reader-layout"><aside class="reader-toc"><h2>本页目录</h2><a href="#r-1">CIFAR-10 MLP 逐步练习</a><a href="#r-2">教材化讲义与代码的数学约定</a><a href="#r-3">代码单元 3</a><a href="#r-4">P0. 环境、随机种子与学习方式</a><a href="#r-5">本节目标</a><a href="#r-6">理论连接</a><a href="#r-7">先自己补全的练习骨架</a><a href="#r-8">提示</a><a href="#r-9">逐行与变量解释</a><a href="#r-10">预期输出</a><a href="#r-11">常见错误</a><a href="#r-12">独立任务</a><a href="#r-13">代码单元 5</a><a href="#r-14">代码单元 6</a><a href="#r-15">P1. 读取 CIFAR-10、认识样本并显示一组图像</a><a href="#r-16">本节目标</a><a href="#r-17">理论连接</a><a href="#r-18">先自己补全的练习骨架</a><a href="#r-19">提示</a><a href="#r-20">逐行与变量解释</a><a href="#r-21">预期输出</a><a href="#r-22">常见错误</a><a href="#r-23">独立任务</a><a href="#r-24">代码单元 8</a><a href="#r-25">代码单元 9</a><a href="#r-26">P2. 数据变换、CHW 与归一化</a><a href="#r-27">本节目标</a><a href="#r-28">理论连接</a><a href="#r-29">先自己补全的练习骨架</a><a href="#r-30">提示</a><a href="#r-31">逐行与变量解释</a><a href="#r-32">预期输出</a><a href="#r-33">常见错误</a><a href="#r-34">独立任务</a><a href="#r-35">代码单元 11</a><a href="#r-36">代码单元 12</a><a href="#r-37">P3. 确定性划分训练集和验证集</a><a href="#r-38">本节目标</a><a href="#r-39">理论连接</a><a href="#r-40">先自己补全的练习骨架</a><a href="#r-41">提示</a><a href="#r-42">逐行与变量解释</a><a href="#r-43">预期输出</a><a href="#r-44">常见错误</a><a href="#r-45">独立任务</a><a href="#r-46">代码单元 14</a><a href="#r-47">代码单元 15</a><a href="#r-48">P4. DataLoader 与 mini-batch</a><a href="#r-49">本节目标</a><a href="#r-50">理论连接</a><a href="#r-51">先自己补全的练习骨架</a><a href="#r-52">提示</a><a href="#r-53">逐行与变量解释</a><a href="#r-54">预期输出</a><a href="#r-55">常见错误</a><a href="#r-56">独立任务</a><a href="#r-57">代码单元 17</a><a href="#r-58">代码单元 18</a><a href="#r-59">P5. 线性 Softmax 分类基线</a><a href="#r-60">本节目标</a><a href="#r-61">理论连接</a><a href="#r-62">先自己补全的练习骨架</a><a href="#r-63">提示</a><a href="#r-64">逐行与变量解释</a><a href="#r-65">预期输出</a><a href="#r-66">常见错误</a><a href="#r-67">独立任务</a><a href="#r-68">代码单元 20</a><a href="#r-69">代码单元 21</a><a href="#r-70">P6. 实现 3072→512→256→10 的 MLP</a><a href="#r-71">本节目标</a><a href="#r-72">理论连接</a><a href="#r-73">先自己补全的练习骨架</a><a href="#r-74">提示</a><a href="#r-75">逐行与变量解释</a><a href="#r-76">预期输出</a><a href="#r-77">常见错误</a><a href="#r-78">独立任务</a><a href="#r-79">代码单元 23</a><a href="#r-80">代码单元 24</a><a href="#r-81">P7. 交叉熵损失与 SGD</a><a href="#r-82">本节目标</a><a href="#r-83">理论连接</a><a href="#r-84">先自己补全的练习骨架</a><a href="#r-85">提示</a><a href="#r-86">逐行与变量解释</a><a href="#r-87">预期输出</a><a href="#r-88">常见错误</a><a href="#r-89">独立任务</a><a href="#r-90">代码单元 26</a><a href="#r-91">代码单元 27</a><a href="#r-92">P8. 手写一个 epoch 的训练循环</a><a href="#r-93">本节目标</a><a href="#r-94">理论连接</a><a href="#r-95">先自己补全的练习骨架</a><a href="#r-96">提示</a><a href="#r-97">逐行与变量解释</a><a href="#r-98">预期输出</a><a href="#r-99">常见错误</a><a href="#r-100">独立任务</a><a href="#r-101">代码单元 29</a><a href="#r-102">代码单元 30</a><a href="#r-103">P9. 无梯度评估与精确指标</a><a href="#r-104">本节目标</a><a href="#r-105">理论连接</a><a href="#r-106">先自己补全的练习骨架</a><a href="#r-107">提示</a><a href="#r-108">逐行与变量解释</a><a href="#r-109">预期输出</a><a href="#r-110">常见错误</a><a href="#r-111">独立任务</a><a href="#r-112">代码单元 32</a><a href="#r-113">代码单元 33</a><a href="#r-114">P10. 快速模式：先验证代码流</a><a href="#r-115">本节目标</a><a href="#r-116">理论连接</a><a href="#r-117">先自己补全的练习骨架</a><a href="#r-118">提示</a><a href="#r-119">逐行与变量解释</a><a href="#r-120">预期输出</a><a href="#r-121">常见错误</a><a href="#r-122">独立任务</a><a href="#r-123">代码单元 35</a><a href="#r-124">代码单元 36</a><a href="#r-125">P11. 完整模式与历史记录</a><a href="#r-126">本节目标</a><a href="#r-127">理论连接</a><a href="#r-128">先自己补全的练习骨架</a><a href="#r-129">提示</a><a href="#r-130">逐行与变量解释</a><a href="#r-131">预期输出</a><a href="#r-132">常见错误</a><a href="#r-133">独立任务</a><a href="#r-134">代码单元 38</a><a href="#r-135">代码单元 39</a><a href="#r-136">P12. 只用验证集搜索超参数</a><a href="#r-137">本节目标</a><a href="#r-138">理论连接</a><a href="#r-139">先自己补全的练习骨架</a><a href="#r-140">提示</a><a href="#r-141">逐行与变量解释</a><a href="#r-142">预期输出</a><a href="#r-143">常见错误</a><a href="#r-144">独立任务</a><a href="#r-145">代码单元 41</a><a href="#r-146">代码单元 42</a><a href="#r-147">P13. 完整重训、最终测试与检查点</a><a href="#r-148">本节目标</a><a href="#r-149">理论连接</a><a href="#r-150">先自己补全的练习骨架</a><a href="#r-151">提示</a><a href="#r-152">逐行与变量解释</a><a href="#r-153">预期输出</a><a href="#r-154">常见错误</a><a href="#r-155">独立任务</a><a href="#r-156">代码单元 44</a><a href="#r-157">代码单元 45</a><a href="#r-158">P14. 曲线、混淆矩阵与错误样本</a><a href="#r-159">本节目标</a><a href="#r-160">理论连接</a><a href="#r-161">先自己补全的练习骨架</a><a href="#r-162">提示</a><a href="#r-163">逐行与变量解释</a><a href="#r-164">预期输出</a><a href="#r-165">常见错误</a><a href="#r-166">独立任务</a><a href="#r-167">代码单元 47</a><a href="#r-168">代码单元 48</a><a href="#r-169">P15. 实验报告、从空白重写与自检</a><a href="#r-170">本节目标</a><a href="#r-171">理论连接</a><a href="#r-172">先自己补全的练习骨架</a><a href="#r-173">提示</a><a href="#r-174">逐行与变量解释</a><a href="#r-175">预期输出</a><a href="#r-176">常见错误</a><a href="#r-177">独立任务</a><a href="#r-178">代码单元 50</a><a href="#r-179">代码单元 51</a></aside><article class="reader-body"><p>这是Notebook静态预览，代码不会在页面内执行。下载原件并选择Anaconda pytorch内核运行。</p><h2 id="r-1">CIFAR-10 MLP 逐步练习</h2>
+<p>这份 Notebook 的课程目的，是把前三讲的线性分类、交叉熵、梯度下降和多层感知机公式，逐步落实为一个可运行的 CIFAR-10 十分类程序。请先读每节的目标和骨架，再运行参考代码与检查单元。</p>
+<p><strong>运行约定</strong></p>
+<ul>
+<li>请从上到下依次运行单元格；跳着运行可能读取旧变量。重新开始时请选择 <strong>Restart Kernel and Run All</strong>。</li>
+<li>顶层开关默认是 <code>QUICK_MODE=True</code>，用于学习代码、检查形状和观察短训练趋势。</li>
+<li><code>QUICK_MODE=False</code> 的完整模式会明显更慢；P11 完整训练、P12 超参数搜索、P13 最终完整重训与测试都有独立的显式开关，默认不会在 Run All 时启动。</li>
+<li>首次运行需要下载真实 CIFAR-10。下载失败时会给出缓存、网络和解释器提示并重新抛出异常；本课程不会用伪数据冒充成功。</li>
+</ul>
+<p>配套材料：<a href="cifar10-practice.html">综合 HTML 讲义</a> · <a href="read-downloads-cifar10_mlp_tutorial.html">连续 Python 参考脚本</a></p>
+<h2 id="r-2">教材化讲义与代码的数学约定</h2>
+<p>三讲正文以完整推导为主。网络单样本按列书写，PyTorch batch 按行；CrossEntropyLoss 默认平均且输入 logits。SGD 的 weight_decay 为更新梯度中的 λw，momentum 会累计该项。</p>
+<p>可在包根目录的 Anaconda pytorch 环境执行 <code>python downloads/rewrite_reference_checks.py</code>，独立核对三点回归、Gaussian 后验、稳定 CE 和 C4 网络梯度，无需下载 CIFAR-10。完整训练为可选实践。</p>
+<h3 id="r-3">代码单元 3</h3><div class="code-wrap"><pre><code>import os
+from pathlib import Path
+import sys
+
+# Notebook 独立定位交付包：支持从包根、downloads 目录或其父目录启动。
+_cwd = Path.cwd().resolve()
+_root_override = os.environ.get("CIFAR_TUTORIAL_ROOT")
+_root_candidates = ([Path(_root_override).expanduser().resolve()] if _root_override else [_cwd, *_cwd.parents])
+PROJECT_ROOT = next((candidate for candidate in _root_candidates if (candidate / "MISSION.md").is_file() and (candidate / "practice" / "cifar10_mlp_tutorial.py").is_file()), None)
+if PROJECT_ROOT is None:
+    raise FileNotFoundError("无法定位课程交付包：请从包含 MISSION.md 和 cifar10-practice.html 的目录启动 Jupyter，或把 CIFAR_TUTORIAL_ROOT 指向该目录。")
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+import matplotlib
+import torch
+import torchvision
+from practice import cifar10_mlp_tutorial as reference_runtime
+
+# 本 Notebook 唯一的模式总开关。quick 只用于学习/冒烟，不能作为最终结果。
+QUICK_MODE = True
+CIFAR_NOTEBOOK_VALIDATION = os.environ.get("CIFAR_NOTEBOOK_VALIDATION") == "1"
+DATA_DIR = PROJECT_ROOT / "data"
+RESULTS_DIR = PROJECT_ROOT / "outputs" / "cifar10_results"
+device = reference_runtime.resolve_device()
+
+print("workspace:", PROJECT_ROOT)
+print("python:", sys.version)
+print("torch:", torch.__version__)
+print("torchvision:", torchvision.__version__)
+print("matplotlib:", matplotlib.__version__)
+print("runtime:", reference_runtime.runtime_metadata(device))
+print("QUICK_MODE:", QUICK_MODE)
+if QUICK_MODE:
+    print("提示：quick 模式只用于学习与冒烟；最终作业必须完成完整重训。")
+</code></pre></div><h2 id="r-4">P0. 环境、随机种子与学习方式</h2>
+<h3 id="r-5">本节目标</h3>
+<p>确认 Python、PyTorch、torchvision、matplotlib 和计算设备可用，固定随机种子，并理解 Notebook 必须从上到下运行。</p>
+<h3 id="r-6">理论连接</h3>
+<p>&lt;p&gt;Python 文件每次从第一行重新执行；Notebook 会保留已经运行过的变量，因此跳着运行可能得到“旧变量”。每次重新打开 Notebook，应使用“Restart Kernel and Run All”。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;QUICK_MODE=True&lt;/code&gt; 只取小子集，目的是检查代码和张量形状；完整模式才用于正式实验。随机种子使数据划分和初始权重较容易复现，但不同设备、库版本仍可能产生细小差异。&lt;/p&gt;</p>
+<h3 id="r-7">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">import random
+import sys
+import matplotlib
+import numpy as np
+import torch
+import torchvision
+
+SEED = ____
+QUICK_MODE = ____
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+device = torch.device("cuda" if ____ else "cpu")
+print(sys.version)
+print(torch.__version__, torchvision.__version__, matplotlib.__version__)
+print(device, SEED, QUICK_MODE)
+</code></pre></div>
+<h3 id="r-8">提示</h3>
+<p>&lt;p&gt;课程统一用 42；CUDA 可用性由 &lt;code&gt;torch.cuda&lt;/code&gt; 下的布尔函数判断。快速学习阶段先选真值。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import random
+import sys
+import matplotlib
+import numpy as np
+import torch
+import torchvision
+
+SEED = 42
+# Notebook 的首个代码单元已经定义 QUICK_MODE；脚本单独运行本段时才补默认值。
+if "QUICK_MODE" not in globals():
+    QUICK_MODE = True
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(SEED)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("python:", sys.version.split()[0])
+print("torch:", torch.__version__)
+print("torchvision:", torchvision.__version__)
+print("matplotlib:", matplotlib.__version__)
+print("device:", device)
+print("seed:", SEED)
+print("mode:", "quick" if QUICK_MODE else "full")
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-9">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;sys.version&lt;/code&gt; 给出 Python 版本；&lt;code&gt;torch.__version__&lt;/code&gt;、&lt;code&gt;torchvision.__version__&lt;/code&gt; 和 &lt;code&gt;matplotlib.__version__&lt;/code&gt; 记录三个直接依赖的版本，便于别人复现实验。&lt;/li&gt;&lt;li&gt;&lt;code&gt;import matplotlib&lt;/code&gt; 加载绘图库包；后面画图时再导入 &lt;code&gt;matplotlib.pyplot&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;code&gt;random.seed&lt;/code&gt;、&lt;code&gt;np.random.seed&lt;/code&gt; 和 &lt;code&gt;torch.manual_seed&lt;/code&gt; 分别固定 Python、NumPy 和 PyTorch 的随机序列。&lt;/li&gt;&lt;li&gt;&lt;code&gt;torch.cuda.is_available()&lt;/code&gt; 只有在 CUDA 构建、驱动和 GPU 均可用时才为真；否则选择 CPU，不是报错。&lt;/li&gt;&lt;li&gt;&lt;code&gt;device&lt;/code&gt;、&lt;code&gt;SEED&lt;/code&gt; 和 &lt;code&gt;QUICK_MODE&lt;/code&gt; 都要打印，确保本次实际设置与报告一致。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-10">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">示例（版本因环境而异）：
+python: 3.x.x
+torch: 2.x.x
+torchvision: 0.x.x
+matplotlib: 3.x.x
+device: cpu
+seed: 42
+mode: quick
+</code></pre></div>
+<h3 id="r-11">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;ModuleNotFoundError：&lt;/b&gt;当前内核不是课程 PyTorch 环境；切换 Jupyter kernel 或用该环境启动 Notebook。&lt;/li&gt;&lt;li&gt;&lt;b&gt;CUDA 显示 False：&lt;/b&gt;通常是无兼容 GPU、驱动或安装了 CPU 版 PyTorch；本练习可继续使用 CPU。&lt;/li&gt;&lt;li&gt;&lt;b&gt;NameError：&lt;/b&gt;跳过了定义变量的单元；重启内核并从上到下运行。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-12">独立任务</h3>
+<p>把 QUICK_MODE 改为 False，再打印一行“本次用于正式实验”；不要在此单元开始下载数据。</p>
+<h3 id="r-13">代码单元 5</h3><div class="code-wrap"><pre><code>import random
+import sys
+import matplotlib
+import numpy as np
+import torch
+import torchvision
+
+SEED = 42
+# Notebook 的首个代码单元已经定义 QUICK_MODE；脚本单独运行本段时才补默认值。
+if "QUICK_MODE" not in globals():
+    QUICK_MODE = True
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(SEED)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print("python:", sys.version.split()[0])
+print("torch:", torch.__version__)
+print("torchvision:", torchvision.__version__)
+print("matplotlib:", matplotlib.__version__)
+print("device:", device)
+print("seed:", SEED)
+print("mode:", "quick" if QUICK_MODE else "full")
+</code></pre></div><h3 id="r-14">代码单元 6</h3><div class="code-wrap"><pre><code>assert isinstance(sys.version, str) and sys.version
+assert isinstance(torch.__version__, str) and torch.__version__
+assert isinstance(torchvision.__version__, str) and torchvision.__version__
+assert isinstance(matplotlib.__version__, str) and matplotlib.__version__
+assert SEED == 42
+assert isinstance(QUICK_MODE, bool)
+assert device.type in {"cpu", "cuda", "mps"}
+assert torch.initial_seed() == SEED
+</code></pre></div><h2 id="r-15">P1. 读取 CIFAR-10、认识样本并显示一组图像</h2>
+<h3 id="r-16">本节目标</h3>
+<p>用官方 CIFAR10 接口建立训练集和测试集，读出单个样本，并正确显示 8 张归一化后的图像及类别名。</p>
+<h3 id="r-17">理论连接</h3>
+<p>&lt;p&gt;CIFAR-10 有 10 类彩色图像，单图大小为 32×32。官方训练部分有 50,000 张，测试部分有 10,000 张。此处先保留 PIL 图像，下一步再转换为张量。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;train=True&lt;/code&gt; 选择官方训练部分；&lt;code&gt;train=False&lt;/code&gt; 选择官方测试部分。两者角色不同，不能拼接后重分。&lt;/p&gt;</p>
+<h3 id="r-18">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">from torchvision.datasets import CIFAR10
+
+classes = ("airplane", "automobile", "bird", "cat", "deer",
+           "dog", "frog", "horse", "ship", "truck")
+raw_train = CIFAR10(root=____, train=____, download=True, transform=None)
+raw_test = CIFAR10(root="data", train=____, download=True, transform=None)
+image, label = raw_train[0]
+print(type(image), image.size, label, classes[____])
+# 再建立带 ToTensor 和 Normalize 的显示数据集，取 8 张图并撤销归一化。
+</code></pre></div>
+<h3 id="r-19">提示</h3>
+<p>&lt;p&gt;&lt;code&gt;root&lt;/code&gt; 是缓存目录；两个数据集的 &lt;code&gt;train&lt;/code&gt; 值相反；类别名用整数标签索引。显示时先取一个 batch，再做 &lt;code&gt;image*0.5+0.5&lt;/code&gt;，最后把 CHW 换为 HWC。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import matplotlib.pyplot as plt
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision.datasets import CIFAR10
+
+classes = (
+    "airplane", "automobile", "bird", "cat", "deer",
+    "dog", "frog", "horse", "ship", "truck",
+)
+raw_train = CIFAR10(root="data", train=True, download=True, transform=None)
+raw_test = CIFAR10(root="data", train=False, download=True, transform=None)
+image, label = raw_train[0]
+print("sizes:", len(raw_train), len(raw_test))
+print("sample:", type(image).__name__, image.size, label, classes[label])
+
+display_transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+])
+display_dataset = CIFAR10(
+    root="data", train=True, download=True, transform=display_transform
+)
+display_loader = DataLoader(
+    display_dataset, batch_size=8, shuffle=False, num_workers=0
+)
+sample_images, sample_labels = next(iter(display_loader))
+figure, axes = plt.subplots(2, 4, figsize=(10, 5))
+for axis, sample_image, sample_label in zip(
+    axes.reshape(-1), sample_images, sample_labels
+):
+    display_image = (sample_image * 0.5 + 0.5).clamp(0, 1)
+    display_image = display_image.permute(1, 2, 0)
+    axis.imshow(display_image.numpy())
+    axis.set_title(classes[int(sample_label.item())])
+    axis.axis("off")
+figure.tight_layout()
+plt.show()
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-20">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;CIFAR10(root, train, download, transform)&lt;/code&gt; 把数据缓存在 &lt;code&gt;root&lt;/code&gt;；&lt;code&gt;download=True&lt;/code&gt; 仅在缺少文件时下载；&lt;code&gt;transform=None&lt;/code&gt; 暂时返回 PIL 图像。&lt;/li&gt;&lt;li&gt;&lt;code&gt;raw_train[0]&lt;/code&gt; 返回 &lt;code&gt;(image, label)&lt;/code&gt;。图像尺寸是 &lt;code&gt;(32,32)&lt;/code&gt;，标签是 0 到 9 的整数；&lt;code&gt;classes[label]&lt;/code&gt; 只负责显示名称。&lt;/li&gt;&lt;li&gt;&lt;code&gt;display_transform&lt;/code&gt; 先把 PIL 图像变为 float32、CHW 张量，再按 RGB 三通道归一化到约 [-1,1]。&lt;/li&gt;&lt;li&gt;&lt;code&gt;DataLoader(..., batch_size=8, shuffle=False, num_workers=0)&lt;/code&gt; 取固定顺序的 8 张图；Windows/Jupyter 使用 0 个工作进程更稳妥。&lt;/li&gt;&lt;li&gt;&lt;code&gt;next(iter(display_loader))&lt;/code&gt; 得到 &lt;code&gt;sample_images[8,3,32,32]&lt;/code&gt; 和 &lt;code&gt;sample_labels[8]&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;code&gt;sample_image*0.5+0.5&lt;/code&gt; 撤销本课的 Normalize，&lt;code&gt;clamp(0,1)&lt;/code&gt; 限制显示值域。&lt;/li&gt;&lt;li&gt;&lt;code&gt;permute(1,2,0)&lt;/code&gt; 把 CHW[3,32,32] 换成 matplotlib 需要的 HWC[32,32,3]；&lt;code&gt;numpy()&lt;/code&gt; 转为可显示数组。&lt;/li&gt;&lt;li&gt;&lt;code&gt;subplots(2,4)&lt;/code&gt; 建立 8 个坐标轴；标题用标签索引类别名，&lt;code&gt;axis("off")&lt;/code&gt; 隐藏刻度。&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;接口参数见 &lt;a href="https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html"&gt;torchvision.datasets.CIFAR10 官方文档&lt;/a&gt;。&lt;/p&gt;</p>
+<h3 id="r-21">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">首次运行会显示下载进度。随后应类似：
+sizes: 50000 10000
+sample: Image (32, 32) 6 frog
+并显示一个 2×4 图像网格，每张图上方为类别名。具体首样本标签以本地官方数据为准。
+</code></pre></div>
+<h3 id="r-22">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;下载超时：&lt;/b&gt;网络或代理阻止访问；保留 &lt;code&gt;data&lt;/code&gt; 缓存目录并重试，不要静默换成假数据。&lt;/li&gt;&lt;li&gt;&lt;b&gt;PermissionError：&lt;/b&gt;&lt;code&gt;root&lt;/code&gt; 指向不可写目录；改为项目内的 &lt;code&gt;data&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;b&gt;把测试集设成 train=True：&lt;/b&gt;会再次引用训练数据；测试集必须明确使用 False。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-23">独立任务</h3>
+<p>把显示数量改为 12，并调整为 3×4 网格；保持 shuffle=False，逐张核对标题与整数标签的类别映射。</p>
+<h3 id="r-24">代码单元 8</h3><div class="code-wrap"><pre><code>import matplotlib.pyplot as plt
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision.datasets import CIFAR10
+
+classes = (
+    "airplane", "automobile", "bird", "cat", "deer",
+    "dog", "frog", "horse", "ship", "truck",
+)
+try:
+    raw_train = CIFAR10(root=DATA_DIR, train=True, download=True, transform=None)
+    raw_test = CIFAR10(root=DATA_DIR, train=False, download=True, transform=None)
+except Exception as exc:
+    print("CIFAR-10 下载失败：", repr(exc))
+    print("数据缓存目录：", DATA_DIR)
+    print("请检查网络/代理，确认缓存目录可写，并确认当前 Jupyter 内核与安装 torch/torchvision 的 Python 解释器一致。")
+    print("修复后重新运行本单元；不会改用 FakeData 或其他伪数据。")
+    raise
+image, label = raw_train[0]
+print("sizes:", len(raw_train), len(raw_test))
+print("sample:", type(image).__name__, image.size, label, classes[label])
+
+display_transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+])
+try:
+    display_dataset = CIFAR10(
+        root=DATA_DIR, train=True, download=True, transform=display_transform
+    )
+except Exception as exc:
+    print("CIFAR-10 显示数据集读取失败：", repr(exc))
+    print("请检查数据缓存目录、网络和当前 Python 解释器：", DATA_DIR)
+    raise
+display_loader = DataLoader(
+    display_dataset, batch_size=8, shuffle=False, num_workers=0
+)
+sample_images, sample_labels = next(iter(display_loader))
+figure, axes = plt.subplots(2, 4, figsize=(10, 5))
+for axis, sample_image, sample_label in zip(
+    axes.reshape(-1), sample_images, sample_labels
+):
+    display_image = (sample_image * 0.5 + 0.5).clamp(0, 1)
+    display_image = display_image.permute(1, 2, 0)
+    axis.imshow(display_image.numpy())
+    axis.set_title(classes[int(sample_label.item())])
+    axis.axis("off")
+figure.tight_layout()
+plt.show()
+</code></pre></div><h3 id="r-25">代码单元 9</h3><div class="code-wrap"><pre><code>assert len(raw_train) == 50_000
+assert len(raw_test) == 10_000
+assert image.size == (32, 32)
+assert 0 &lt;= label &lt; 10
+assert len(classes) == 10
+assert sample_images.shape == (8, 3, 32, 32)
+assert sample_labels.shape == (8,)
+assert all(0 &lt;= int(value) &lt; 10 for value in sample_labels)
+restored = (sample_images[0] * 0.5 + 0.5).clamp(0, 1)
+assert restored.shape == (3, 32, 32)
+assert float(restored.min()) &gt;= 0.0 and float(restored.max()) &lt;= 1.0
+</code></pre></div><h2 id="r-26">P2. 数据变换、CHW 与归一化</h2>
+<h3 id="r-27">本节目标</h3>
+<p>把 PIL 图像转换为 [3,32,32] 浮点张量，并用逐通道 Normalize 把值域从 [0,1] 映射到约 [-1,1]。</p>
+<h3 id="r-28">理论连接</h3>
+<p>&lt;p&gt;PIL/NumPy 常按 HWC 排列，即 &lt;code&gt;[32,32,3]&lt;/code&gt;；PyTorch 图像张量按 CHW 排列，即 &lt;code&gt;[3,32,32]&lt;/code&gt;。&lt;code&gt;ToTensor&lt;/code&gt; 同时把 8 位像素除以 255。&lt;/p&gt;
+&lt;p&gt;每个通道执行 &lt;code&gt;x'=(x-mean)/std&lt;/code&gt;。当 mean=std=0.5 时，0 映射为 -1，1 映射为 1。加入 batch 后形状为 &lt;code&gt;[B,3,32,32]&lt;/code&gt;，进入 MLP 前再展平为 &lt;code&gt;[B,3072]&lt;/code&gt;。&lt;/p&gt;</p>
+<h3 id="r-29">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">from torchvision import transforms
+from torchvision.datasets import CIFAR10
+
+transform = transforms.Compose([
+    transforms.____(),
+    transforms.Normalize((0.5, 0.5, 0.5), ____),
+])
+dataset = CIFAR10(root="data", train=True, download=True, transform=transform)
+test_dataset = CIFAR10(root="data", train=False, download=True, transform=transform)
+image, label = dataset[0]
+print(image.shape, image.dtype, image.min().item(), image.max().item())
+</code></pre></div>
+<h3 id="r-30">提示</h3>
+<p>&lt;p&gt;先转换类型和维度，再归一化；均值和标准差都需要三个值，顺序对应 RGB。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">from torchvision import transforms
+from torchvision.datasets import CIFAR10
+
+NORMALIZATION_MEAN = (0.5, 0.5, 0.5)
+NORMALIZATION_STD = (0.5, 0.5, 0.5)
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(NORMALIZATION_MEAN, NORMALIZATION_STD),
+])
+dataset = CIFAR10(root="data", train=True, download=True, transform=transform)
+test_dataset = CIFAR10(root="data", train=False, download=True, transform=transform)
+image, label = dataset[0]
+print("shape:", tuple(image.shape))
+print("dtype:", image.dtype)
+print("range:", float(image.min()), float(image.max()))
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-31">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;Compose&lt;/code&gt; 严格按列表顺序调用变换。&lt;/li&gt;&lt;li&gt;&lt;code&gt;ToTensor&lt;/code&gt; 得到 &lt;code&gt;float32 [3,32,32]&lt;/code&gt;，通道移到最前。&lt;/li&gt;&lt;li&gt;&lt;code&gt;Normalize(mean, std)&lt;/code&gt; 不计算数据集统计量，而是使用传入的三个均值和三个标准差逐通道变换。&lt;/li&gt;&lt;li&gt;单张图没有 B 维；DataLoader 才把多张图堆成 &lt;code&gt;[B,3,32,32]&lt;/code&gt;。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-32">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">示例：
+shape: (3, 32, 32)
+dtype: torch.float32
+range: -1.0 1.0
+实际极值取决于该图是否包含 0 或 255 像素。
+</code></pre></div>
+<h3 id="r-33">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Normalize 报类型错误：&lt;/b&gt;它前面收到 PIL 图像；把 &lt;code&gt;ToTensor()&lt;/code&gt; 放在前面。&lt;/li&gt;&lt;li&gt;&lt;b&gt;写成单个 0.5：&lt;/b&gt;RGB 有三个通道；显式传三个值更易检查。&lt;/li&gt;&lt;li&gt;&lt;b&gt;误以为形状是 HWC：&lt;/b&gt;打印 &lt;code&gt;image.shape&lt;/code&gt;，PyTorch 结果应是 CHW。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-34">独立任务</h3>
+<p>手算原像素值 0、0.25、0.5、0.75、1 经该 Normalize 后的结果，再用一个长度为 5 的张量验证。</p>
+<h3 id="r-35">代码单元 11</h3><div class="code-wrap"><pre><code>from torchvision import transforms
+from torchvision.datasets import CIFAR10
+
+NORMALIZATION_MEAN = (0.5, 0.5, 0.5)
+NORMALIZATION_STD = (0.5, 0.5, 0.5)
+transform = transforms.Compose([
+    transforms.ToTensor(),
+    transforms.Normalize(NORMALIZATION_MEAN, NORMALIZATION_STD),
+])
+dataset = CIFAR10(root=DATA_DIR, train=True, download=True, transform=transform)
+test_dataset = CIFAR10(root=DATA_DIR, train=False, download=True, transform=transform)
+image, label = dataset[0]
+print("shape:", tuple(image.shape))
+print("dtype:", image.dtype)
+print("range:", float(image.min()), float(image.max()))
+</code></pre></div><h3 id="r-36">代码单元 12</h3><div class="code-wrap"><pre><code>assert image.shape == (3, 32, 32)
+assert image.dtype == torch.float32
+assert torch.isfinite(image).all()
+assert float(image.min()) &gt;= -1.00001
+assert float(image.max()) &lt;= 1.00001
+</code></pre></div><h2 id="r-37">P3. 确定性划分训练集和验证集</h2>
+<h3 id="r-38">本节目标</h3>
+<p>把官方 50,000 张训练图像固定划分为 45,000/5,000，并让官方测试集保持隔离。</p>
+<h3 id="r-39">理论连接</h3>
+<p>&lt;p&gt;训练集用于求梯度；验证集用于选择学习率、隐藏层宽度等；测试数据在模型选择完成前绝不能读取。最终指标完成后可以只读遍历测试集生成混淆矩阵和错误样本，但不得据此重新调参或训练，否则最终数字会偏乐观。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;torch.Generator().manual_seed(42)&lt;/code&gt; 给本次划分一个局部随机源，不依赖其他单元消耗了多少全局随机数。&lt;/p&gt;</p>
+<h3 id="r-40">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+
+generator = torch.Generator().manual_seed(____)
+train_set, val_set = torch.utils.data.random_split(
+    dataset, [____, ____], generator=generator
+)
+print(len(train_set), len(val_set), len(test_dataset))
+</code></pre></div>
+<h3 id="r-41">提示</h3>
+<p>&lt;p&gt;两段长度之和必须为 50,000；较大的部分用于更新参数。不要把 &lt;code&gt;test_dataset&lt;/code&gt; 传给 random_split。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+
+generator = torch.Generator().manual_seed(42)
+train_set, val_set = torch.utils.data.random_split(
+    dataset, [45_000, 5_000], generator=generator
+)
+test_set = test_dataset
+print("train/validation/test:", len(train_set), len(val_set), len(test_set))
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-42">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;random_split(dataset, lengths, generator)&lt;/code&gt; 生成两个互不重叠的 &lt;code&gt;Subset&lt;/code&gt;；图像本身仍来自同一个带 transform 的训练数据集。&lt;/li&gt;&lt;li&gt;&lt;code&gt;generator&lt;/code&gt; 只控制索引排列，使同一 seed 得到相同索引。&lt;/li&gt;&lt;li&gt;&lt;code&gt;test_set = test_dataset&lt;/code&gt; 强调测试数据来自官方测试部分，不参与 45k/5k 划分。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-43">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">train/validation/test: 45000 5000 10000
+</code></pre></div>
+<h3 id="r-44">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;lengths 总和错误：&lt;/b&gt;&lt;code&gt;random_split&lt;/code&gt; 会拒绝；确认 45000+5000=50000。&lt;/li&gt;&lt;li&gt;&lt;b&gt;每次划分不同：&lt;/b&gt;漏传固定 seed 的 generator。&lt;/li&gt;&lt;li&gt;&lt;b&gt;先看测试准确率再改学习率：&lt;/b&gt;造成测试泄漏；所有选择只看验证指标。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-45">独立任务</h3>
+<p>用 seed=7 做第二次划分，证明长度不变但前五个训练索引与 seed=42 不完全相同。</p>
+<h3 id="r-46">代码单元 14</h3><div class="code-wrap"><pre><code>import torch
+
+generator = torch.Generator().manual_seed(42)
+train_set, val_set = torch.utils.data.random_split(
+    dataset, [45_000, 5_000], generator=generator
+)
+test_set = test_dataset
+print("train/validation/test:", len(train_set), len(val_set), len(test_set))
+</code></pre></div><h3 id="r-47">代码单元 15</h3><div class="code-wrap"><pre><code>assert len(train_set) == 45_000
+assert len(val_set) == 5_000
+assert len(test_set) == 10_000
+assert set(train_set.indices).isdisjoint(val_set.indices)
+</code></pre></div><h2 id="r-48">P4. DataLoader 与 mini-batch</h2>
+<h3 id="r-49">本节目标</h3>
+<p>用 DataLoader 把样本组成批次，理解 batch_size、shuffle、num_workers 和 pin_memory，并检查第一批形状。</p>
+<h3 id="r-50">理论连接</h3>
+<p>&lt;p&gt;一个 batch 把 B 张图堆为 &lt;code&gt;[B,3,32,32]&lt;/code&gt;，标签堆为 &lt;code&gt;[B]&lt;/code&gt;。训练集打乱可改变 mini-batch 组合；验证和测试无需打乱。&lt;/p&gt;
+&lt;p&gt;Windows/Jupyter 默认 &lt;code&gt;num_workers=0&lt;/code&gt; 最稳妥。&lt;code&gt;pin_memory=True&lt;/code&gt; 主要帮助 CUDA 主机到显存的传输，CPU 模式没有必要。&lt;/p&gt;</p>
+<h3 id="r-51">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">from torch.utils.data import DataLoader
+
+train_loader = DataLoader(train_set, batch_size=____, shuffle=____,
+                          num_workers=0, pin_memory=device.type == "cuda")
+images, labels = next(iter(train_loader))
+print(images.shape, labels.shape, labels.dtype)
+</code></pre></div>
+<h3 id="r-52">提示</h3>
+<p>&lt;p&gt;课程默认批大小是 128；只有训练 loader 需要打乱。&lt;code&gt;iter&lt;/code&gt; 创建迭代器，&lt;code&gt;next&lt;/code&gt; 取第一批。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">from torch.utils.data import DataLoader
+
+train_loader = DataLoader(
+    train_set,
+    batch_size=128,
+    shuffle=True,
+    num_workers=0,
+    pin_memory=device.type == "cuda",
+)
+val_loader = DataLoader(val_set, batch_size=128, shuffle=False, num_workers=0)
+images, labels = next(iter(train_loader))
+print("images:", tuple(images.shape))
+print("labels:", tuple(labels.shape), labels.dtype)
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-53">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;batch_size=128&lt;/code&gt; 表示通常每次取 128 个样本，最后一批可能更小。&lt;/li&gt;&lt;li&gt;&lt;code&gt;shuffle=True&lt;/code&gt; 在每轮开始重新排列训练索引，不会改写数据文件。&lt;/li&gt;&lt;li&gt;&lt;code&gt;num_workers=0&lt;/code&gt; 在当前进程加载，避免 Windows Notebook 子进程启动问题。&lt;/li&gt;&lt;li&gt;&lt;code&gt;pin_memory&lt;/code&gt; 仅在 CUDA 时开启；图像仍须在训练循环中调用 &lt;code&gt;.to(device)&lt;/code&gt;。&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;参数定义见 &lt;a href="https://docs.pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader"&gt;DataLoader 官方文档&lt;/a&gt;。&lt;/p&gt;</p>
+<h3 id="r-54">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">images: (128, 3, 32, 32)
+labels: (128,) torch.int64
+若数据集不足 128 个样本，第一维会更小。
+</code></pre></div>
+<h3 id="r-55">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Windows 卡住或递归启动：&lt;/b&gt;Notebook 中把 &lt;code&gt;num_workers&lt;/code&gt; 设为 0。&lt;/li&gt;&lt;li&gt;&lt;b&gt;验证结果每次样本顺序不同：&lt;/b&gt;验证 loader 不应 shuffle。&lt;/li&gt;&lt;li&gt;&lt;b&gt;以为每批一定 128：&lt;/b&gt;最后一批可能更小，统计时必须用实际 &lt;code&gt;labels.size(0)&lt;/code&gt;。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-56">独立任务</h3>
+<p>建立 test_loader，设置 shuffle=False；打印最后一个 batch 的实际大小并解释它为何可能不是 128。</p>
+<h3 id="r-57">代码单元 17</h3><div class="code-wrap"><pre><code>from torch.utils.data import DataLoader
+
+train_loader = DataLoader(
+    train_set,
+    batch_size=128,
+    shuffle=True,
+    num_workers=0,
+    pin_memory=device.type == "cuda",
+)
+val_loader = DataLoader(val_set, batch_size=128, shuffle=False, num_workers=0)
+images, labels = next(iter(train_loader))
+print("images:", tuple(images.shape))
+print("labels:", tuple(labels.shape), labels.dtype)
+</code></pre></div><h3 id="r-58">代码单元 18</h3><div class="code-wrap"><pre><code>assert images.ndim == 4
+assert images.shape[1:] == (3, 32, 32)
+assert labels.shape == (images.shape[0],)
+assert labels.dtype == torch.int64
+</code></pre></div><h2 id="r-59">P5. 线性 Softmax 分类基线</h2>
+<h3 id="r-60">本节目标</h3>
+<p>建立 Flatten+Linear 的线性基线，把 3072 个像素特征映射为 10 个 logits，且不手动添加 Softmax。</p>
+<h3 id="r-61">理论连接</h3>
+<p>&lt;p&gt;对一个 batch，线性层写成 &lt;code&gt;A=XW^T+b&lt;/code&gt;：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ A=XW^{\mathsf T}+b,\qquad a_{bk}=\sum_{i=1}^{D}x_{bi}w_{ki}+b_k. $$&lt;/p&gt;
+&lt;p&gt;B 是 batch 大小，b 是样本下标；D=3072，i 是输入特征下标；k 是输出节点（本层即类别）下标。X 为 [B,3072]，W 为 [10,3072]，b 为 [10]，A 为 [B,10]；a_{bk} 是第 b 个样本对第 k 类的 logit。训练时交叉熵内部处理 Softmax，模型末尾不加 Softmax。&lt;/p&gt;</p>
+<h3 id="r-62">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">import torch.nn as nn
+
+class LinearBaseline(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.network = nn.Sequential(nn.____(), nn.Linear(____, 10))
+
+    def forward(self, images):
+        return self.____(images)
+
+baseline = LinearBaseline()
+logits = baseline(images)
+</code></pre></div>
+<h3 id="r-63">提示</h3>
+<p>&lt;p&gt;3×32×32=3072。需要一个无参数层把后三维连成一维，forward 调用已保存的子网络。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+import torch.nn as nn
+
+class LinearBaseline(nn.Module):
+    def __init__(self) -&gt; None:
+        super().__init__()
+        self.network = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(3 * 32 * 32, 10),
+        )
+
+    def forward(self, images: torch.Tensor) -&gt; torch.Tensor:
+        return self.network(images)
+
+baseline = LinearBaseline()
+logits = baseline(images)
+print("logits:", tuple(logits.shape))
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-64">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;nn.Module&lt;/code&gt; 让 PyTorch 能登记参数并切换训练/评估状态。&lt;/li&gt;&lt;li&gt;&lt;code&gt;super().__init__()&lt;/code&gt; 初始化基类；漏写会导致子层不能正确登记。&lt;/li&gt;&lt;li&gt;&lt;code&gt;nn.Flatten()&lt;/code&gt; 保留第 0 维 B，把 &lt;code&gt;[B,3,32,32]&lt;/code&gt; 变为 &lt;code&gt;[B,3072]&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;code&gt;nn.Linear(3072,10)&lt;/code&gt; 保存 W[10,3072] 与 b[10]，输出 logits[B,10]。&lt;/li&gt;&lt;li&gt;&lt;code&gt;forward&lt;/code&gt; 描述前向计算；调用 &lt;code&gt;baseline(images)&lt;/code&gt; 会进入它。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-65">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">logits: (128, 10)；数值随随机初始化和输入变化，不应解释成概率。
+</code></pre></div>
+<h3 id="r-66">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;mat1 and mat2 shapes cannot be multiplied：&lt;/b&gt;Linear 的输入特征数不是 3072，或漏掉 Flatten。&lt;/li&gt;&lt;li&gt;&lt;b&gt;输出先做 Softmax：&lt;/b&gt;会与 CrossEntropyLoss 的内部处理重复；删除 Softmax，直接返回 logits。&lt;/li&gt;&lt;li&gt;&lt;b&gt;参数没有登记：&lt;/b&gt;忘写 &lt;code&gt;super().__init__()&lt;/code&gt; 或把层放在普通局部变量中。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-67">独立任务</h3>
+<p>计算该基线的参数总数，并分别说明权重 10×3072 和偏置 10 各贡献多少。</p>
+<h3 id="r-68">代码单元 20</h3><div class="code-wrap"><pre><code>import torch
+import torch.nn as nn
+
+class LinearBaseline(nn.Module):
+    def __init__(self) -&gt; None:
+        super().__init__()
+        self.network = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(3 * 32 * 32, 10),
+        )
+
+    def forward(self, images: torch.Tensor) -&gt; torch.Tensor:
+        return self.network(images)
+
+baseline = LinearBaseline()
+logits = baseline(images)
+print("logits:", tuple(logits.shape))
+</code></pre></div><h3 id="r-69">代码单元 21</h3><div class="code-wrap"><pre><code>assert logits.shape == (images.shape[0], 10)
+assert baseline.network[1].weight.shape == (10, 3072)
+assert baseline.network[1].bias.shape == (10,)
+assert not any(isinstance(layer, nn.Softmax) for layer in baseline.modules())
+</code></pre></div><h2 id="r-70">P6. 实现 3072→512→256→10 的 MLP</h2>
+<h3 id="r-71">本节目标</h3>
+<p>手写 MLP 类，逐层追踪张量和参数形状，并把线性变换、ReLU 与反向传播公式对应起来。</p>
+<h3 id="r-72">理论连接</h3>
+<p>&lt;p&gt;每个线性层仍满足 &lt;code&gt;A=XW^T+b&lt;/code&gt;。隐藏层激活的 ASCII 映射是 &lt;code&gt;ReLU Z=max(0,A)&lt;/code&gt;，MathJax 形式为：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ z_{bj}^{(l)}=\max\!\left(0,a_{bj}^{(l)}\right). $$&lt;/p&gt;
+&lt;p&gt;b 是 batch 中的样本下标，l 是层号，j 是第 l 层隐藏节点下标；ReLU 对每个 a_{bj}^{(l)} 独立运算且不改变形状。数据流是 [B,3,32,32] → [B,3072] → [B,512] → [B,256] → [B,10]。&lt;/p&gt;
+&lt;p&gt;下面先采用&lt;b&gt;单样本、列向量约定&lt;/b&gt;。反向传播的 ASCII 映射是 &lt;code&gt;backprop dL/dW^l=delta^l(z^(l-1))^T&lt;/code&gt;：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ \frac{\partial L}{\partial W^{(l)}}=\delta^{(l)}\left(z^{(l-1)}\right)^{\mathsf T}. $$&lt;/p&gt;
+&lt;p&gt;在 mini-batch 的&lt;b&gt;样本按行&lt;/b&gt;约定下，设 \(Z^{(l-1)}\in\mathbb{R}^{B\times n_{l-1}}\)，\(\Delta^{(l)}\in\mathbb{R}^{B\times n_l}\)，则 batch 平均梯度为：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ \frac{\partial L}{\partial W^{(l)}}=\frac{1}{B}\left(\Delta^{(l)}\right)^{\mathsf T}Z^{(l-1)},\qquad \frac{\partial L}{\partial w_{ji}^{(l)}}=\frac{1}{B}\sum_{b=1}^{B}\delta_{bj}^{(l)}z_{bi}^{(l-1)}. $$&lt;/p&gt;
+&lt;p&gt;矩阵乘积的形状是 [n_l,B]×[B,n_{l-1}]=[n_l,n_{l-1}]，与 W^{(l)} 相同。l 表示从第 l-1 层到第 l 层；w_{ji}^{(l)} 的右下标 i 是来源节点，左下标 j 是目标节点；b 是样本下标。对 b 求和并除以 B，正好对应 batch 平均损失。&lt;/p&gt;
+&lt;p&gt;本课只用全连接层和 ReLU，不引入 CNN、Dropout 或 BatchNorm。&lt;/p&gt;</p>
+<h3 id="r-73">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">class MLP(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.network = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(3072, ____), nn.ReLU(),
+            nn.Linear(512, ____), nn.ReLU(),
+            nn.Linear(256, ____),
+        )
+
+    def forward(self, images):
+        return ____(images)
+</code></pre></div>
+<h3 id="r-74">提示</h3>
+<p>&lt;p&gt;三个输出宽度依次是 512、256、10；forward 应调用构造函数中保存的整个网络。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+import torch.nn as nn
+
+class MLP(nn.Module):
+    def __init__(self, hidden_dims: tuple[int, int] = (512, 256)) -&gt; None:
+        super().__init__()
+        h1, h2 = hidden_dims
+        self.hidden_dims = hidden_dims
+        self.network = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(3 * 32 * 32, h1),
+            nn.ReLU(),
+            nn.Linear(h1, h2),
+            nn.ReLU(),
+            nn.Linear(h2, 10),
+        )
+
+    def forward(self, images: torch.Tensor) -&gt; torch.Tensor:
+        return self.network(images)
+
+model = MLP().to(device)
+logits = model(images.to(device))
+print("output:", tuple(logits.shape))
+print("parameters:", sum(p.numel() for p in model.parameters()))
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-75">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;hidden_dims=(512,256)&lt;/code&gt; 集中保存两个隐藏层宽度。&lt;/li&gt;&lt;li&gt;第一个 Linear：输入 [B,3072]，W[512,3072]、b[512]，输出 [B,512]。&lt;/li&gt;&lt;li&gt;第一个 ReLU 不改变形状；第二个 Linear 使用 W[256,512]、b[256]，输出 [B,256]。&lt;/li&gt;&lt;li&gt;第二个 ReLU 后，最后 Linear 使用 W[10,256]、b[10]，输出 logits[B,10]。&lt;/li&gt;&lt;li&gt;&lt;code&gt;.to(device)&lt;/code&gt; 移动参数；输入也必须移到同一设备。参数数目为 3072×512+512+512×256+256+256×10+10。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-76">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">以 B=128 为例：
+output: (128, 10)
+parameters: 1707274
+logits 数值和类别排序不是固定答案。
+</code></pre></div>
+<h3 id="r-77">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;设备不一致：&lt;/b&gt;模型在 CUDA、images 在 CPU；两者都调用 &lt;code&gt;.to(device)&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;b&gt;层宽接不上：&lt;/b&gt;后一层 in_features 必须等于前一层 out_features。&lt;/li&gt;&lt;li&gt;&lt;b&gt;误加 CNN/Dropout/BatchNorm：&lt;/b&gt;超出本作业范围；保持 Flatten、Linear、ReLU。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-78">独立任务</h3>
+<p>把隐藏层改成 (256,128)，先手算三个权重矩阵形状和参数总数，再用代码核对。</p>
+<h3 id="r-79">代码单元 23</h3><div class="code-wrap"><pre><code>import torch
+import torch.nn as nn
+
+class MLP(nn.Module):
+    def __init__(self, hidden_dims: tuple[int, int] = (512, 256)) -&gt; None:
+        super().__init__()
+        h1, h2 = hidden_dims
+        self.hidden_dims = hidden_dims
+        self.network = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(3 * 32 * 32, h1),
+            nn.ReLU(),
+            nn.Linear(h1, h2),
+            nn.ReLU(),
+            nn.Linear(h2, 10),
+        )
+
+    def forward(self, images: torch.Tensor) -&gt; torch.Tensor:
+        return self.network(images)
+
+model = MLP().to(device)
+logits = model(images.to(device))
+print("output:", tuple(logits.shape))
+print("parameters:", sum(p.numel() for p in model.parameters()))
+</code></pre></div><h3 id="r-80">代码单元 24</h3><div class="code-wrap"><pre><code>assert logits.shape == (images.shape[0], 10)
+assert model.network[1].weight.shape == (512, 3072)
+assert model.network[3].weight.shape == (256, 512)
+assert model.network[5].weight.shape == (10, 256)
+assert sum(p.numel() for p in model.parameters()) == 1_707_274
+</code></pre></div><h2 id="r-81">P7. 交叉熵损失与 SGD</h2>
+<h3 id="r-82">本节目标</h3>
+<p>把 [B,10] logits 和 [B] 整数标签变成标量损失，并建立不含手动 Softmax 的 SGD 优化器。</p>
+<h3 id="r-83">理论连接</h3>
+<p>&lt;p&gt;多类交叉熵的 ASCII 映射是 &lt;code&gt;CE L=-(1/B) sum_b log y_(b,t_b)&lt;/code&gt;：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ L=-\frac{1}{B}\sum_{b=1}^{B}\log y_{b,t_b}. $$&lt;/p&gt;
+&lt;p&gt;B 是 batch 样本数，b 是样本下标，t_b 是第 b 个样本的真实类别下标，y_{b,t_b} 是样本 b 经 Softmax 后分给目标类别 t_b 的概率；一般类别下标 k 遍历 0…9。PyTorch 接收 logits 并在内部稳定地完成 log-softmax。&lt;/p&gt;
+&lt;p&gt;随机梯度下降的 ASCII 映射是 &lt;code&gt;SGD W &lt;- W - eta dL/dW&lt;/code&gt;：&lt;/p&gt;
+&lt;p class="math-display"&gt;$$ W^{(l)}\leftarrow W^{(l)}-\eta\frac{\partial L}{\partial W^{(l)}}. $$&lt;/p&gt;
+&lt;p&gt;l 是层号，W^{(l)} 是连接第 l-1 层到第 l 层的权重矩阵，eta 是学习率，偏导是当前 mini-batch 对这一层权重的梯度；每层偏置也按同类规则更新。&lt;/p&gt;</p>
+<h3 id="r-84">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">criterion = nn.____()
+optimizer = torch.optim.SGD(model.parameters(), lr=____,
+                            momentum=0.9, weight_decay=0.0)
+labels_device = labels.to(device)
+loss = criterion(logits, ____)
+print(loss.shape, loss.item())
+</code></pre></div>
+<h3 id="r-85">提示</h3>
+<p>&lt;p&gt;损失类名与本节标题相同；默认学习率为 0.01；logits 和标签必须在同一设备。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+import torch.nn as nn
+
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(
+    model.parameters(),
+    lr=0.01,
+    momentum=0.9,
+    weight_decay=0.0,
+)
+labels_device = labels.to(device)
+loss = criterion(logits, labels_device)
+print("loss shape:", tuple(loss.shape))
+print("loss:", float(loss.item()))
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-86">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;CrossEntropyLoss&lt;/code&gt; 要求输入 logits[B,10] 和目标 &lt;code&gt;torch.int64 [B]&lt;/code&gt;；默认 reduction='mean' 输出 0 维标量。&lt;/li&gt;&lt;li&gt;&lt;code&gt;model.parameters()&lt;/code&gt; 把所有 Linear 的 W、b 交给优化器。&lt;/li&gt;&lt;li&gt;&lt;code&gt;lr=0.01&lt;/code&gt; 是 eta；&lt;code&gt;momentum=0.9&lt;/code&gt; 使用历史更新方向；&lt;code&gt;weight_decay=0.0&lt;/code&gt; 表示默认无正则化。&lt;/li&gt;&lt;li&gt;不要传 one-hot 标签，也不要在 logits 前后手动 Softmax。&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;详见 &lt;a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html"&gt;CrossEntropyLoss&lt;/a&gt; 与 &lt;a href="https://docs.pytorch.org/docs/stable/generated/torch.optim.SGD.html"&gt;SGD 官方文档&lt;/a&gt;。&lt;/p&gt;</p>
+<h3 id="r-87">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">loss shape: ()；loss 是有限正数。随机初始化时常接近 ln(10)≈2.30，但不是固定值。
+</code></pre></div>
+<h3 id="r-88">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;expected Long：&lt;/b&gt;标签被转成 float；保留 &lt;code&gt;torch.int64&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;b&gt;Target out of bounds：&lt;/b&gt;标签不在 0…9。&lt;/li&gt;&lt;li&gt;&lt;b&gt;损失异常或梯度很弱：&lt;/b&gt;模型末尾重复添加 Softmax；删掉它并传原始 logits。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-89">独立任务</h3>
+<p>保持其他设置不变，分别建立 lr=0.001 和 lr=0.03 的优化器，只比较配置，不读取测试集。</p>
+<h3 id="r-90">代码单元 26</h3><div class="code-wrap"><pre><code>import torch
+import torch.nn as nn
+
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(
+    model.parameters(),
+    lr=0.01,
+    momentum=0.9,
+    weight_decay=0.0,
+)
+labels_device = labels.to(device)
+loss = criterion(logits, labels_device)
+print("loss shape:", tuple(loss.shape))
+print("loss:", float(loss.item()))
+</code></pre></div><h3 id="r-91">代码单元 27</h3><div class="code-wrap"><pre><code>assert loss.ndim == 0
+assert torch.isfinite(loss)
+assert labels_device.dtype == torch.int64
+assert logits.shape[0] == labels_device.shape[0]
+assert optimizer.param_groups[0]["lr"] == 0.01
+</code></pre></div><h2 id="r-92">P8. 手写一个 epoch 的训练循环</h2>
+<h3 id="r-93">本节目标</h3>
+<p>按 zero_grad→forward→loss→backward→step 的顺序更新参数，并按实际样本数累计损失与准确率。</p>
+<h3 id="r-94">理论连接</h3>
+<p>&lt;p&gt;&lt;code&gt;backward()&lt;/code&gt; 用链式法则把标量 L 对每个参数的梯度写入 &lt;code&gt;.grad&lt;/code&gt;。PyTorch 默认累加梯度，所以每个 batch 前必须清空。&lt;code&gt;step()&lt;/code&gt; 只读取梯度并更新参数，不会自动计算梯度。&lt;/p&gt;
+&lt;p&gt;每个 batch 的 &lt;code&gt;loss.item()&lt;/code&gt; 已是 batch 平均值。最后一批可能较小，因此累计时用 &lt;code&gt;loss×batch_size&lt;/code&gt;，最后除以总样本数，不能直接平均各 batch 均值。&lt;/p&gt;</p>
+<h3 id="r-95">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">def train_one_epoch(model, loader, criterion, optimizer, device):
+    model.____()
+    loss_sum = correct = sample_count = 0
+    for images, labels in loader:
+        images, labels = images.to(device), labels.to(device)
+        optimizer.____(set_to_none=True)
+        logits = model(images)
+        loss = criterion(logits, labels)
+        loss.____()
+        optimizer.____()
+        batch_size = labels.size(0)
+        loss_sum += ____ * batch_size
+        correct += (logits.argmax(1) == labels).sum().item()
+        sample_count += batch_size
+    return loss_sum / sample_count, correct / sample_count
+</code></pre></div>
+<h3 id="r-96">提示</h3>
+<p>&lt;p&gt;训练状态用动词形式的方法；梯度计算前清空，计算后更新。把标量张量转为 Python 数用 &lt;code&gt;.item()&lt;/code&gt;。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+
+def train_one_epoch(model, loader, criterion, optimizer, device):
+    model.train()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+    for images, labels in loader:
+        images = images.to(device, non_blocking=device.type == "cuda")
+        labels = labels.to(device, non_blocking=device.type == "cuda")
+        optimizer.zero_grad(set_to_none=True)
+        logits = model(images)
+        loss = criterion(logits, labels)
+        if not bool(torch.isfinite(loss).item()):
+            raise FloatingPointError("non-finite training loss")
+        loss.backward()
+        if not all(
+            p.grad is not None and bool(torch.isfinite(p.grad).all().item())
+            for p in model.parameters()
+        ):
+            raise FloatingPointError("missing or non-finite gradient")
+        optimizer.step()
+        batch_size = labels.size(0)
+        loss_sum += float(loss.item()) * batch_size
+        correct += int((logits.argmax(dim=1) == labels).sum().item())
+        sample_count += batch_size
+    if sample_count == 0:
+        raise ValueError("empty training loader")
+    return {"loss": loss_sum / sample_count,
+            "accuracy": correct / sample_count,
+            "samples": sample_count}
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-97">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;model.train()&lt;/code&gt; 明确进入训练状态。&lt;/li&gt;&lt;li&gt;每批 images[B,3,32,32]、labels[B] 移到参数所在设备。&lt;/li&gt;&lt;li&gt;&lt;code&gt;zero_grad(set_to_none=True)&lt;/code&gt; 清除上一批梯度；forward 得 logits[B,10]；criterion 得标量。&lt;/li&gt;&lt;li&gt;&lt;code&gt;loss.backward()&lt;/code&gt; 填写每个参数同形状的 grad；有限性检查可尽早发现数值错误。&lt;/li&gt;&lt;li&gt;&lt;code&gt;optimizer.step()&lt;/code&gt; 执行参数更新。&lt;/li&gt;&lt;li&gt;用当前 B 加权损失并累计正确数；最终三个指标都对应同一 &lt;code&gt;sample_count&lt;/code&gt;。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-98">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">例如第 1 个 epoch 可能得到 {'loss': 2.1..., 'accuracy': 0.2..., 'samples': 8000}；数值仅示意，不承诺准确率。
+</code></pre></div>
+<h3 id="r-99">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;忘记 zero_grad：&lt;/b&gt;梯度跨 batch 累加，更新方向错误；放在每次 forward 前。&lt;/li&gt;&lt;li&gt;&lt;b&gt;忘记 backward：&lt;/b&gt;&lt;code&gt;step&lt;/code&gt; 没有新梯度可用。&lt;/li&gt;&lt;li&gt;&lt;b&gt;直接平均 batch loss：&lt;/b&gt;最后一批权重被放大；按 batch 实际样本数加权。&lt;/li&gt;&lt;li&gt;&lt;b&gt;loss 变 NaN：&lt;/b&gt;先降低学习率，再检查输入和梯度是否有限。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-100">独立任务</h3>
+<p>不复制答案，从空白单元按九个动作重写训练循环，并额外断言 logits 的第二维是 10。</p>
+<h3 id="r-101">代码单元 29</h3><div class="code-wrap"><pre><code>import torch
+
+def train_one_epoch(model, loader, criterion, optimizer, device):
+    model.train()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+    for images, labels in loader:
+        images = images.to(device, non_blocking=device.type == "cuda")
+        labels = labels.to(device, non_blocking=device.type == "cuda")
+        optimizer.zero_grad(set_to_none=True)
+        logits = model(images)
+        loss = criterion(logits, labels)
+        if not bool(torch.isfinite(loss).item()):
+            raise FloatingPointError("non-finite training loss")
+        loss.backward()
+        if not all(
+            p.grad is not None and bool(torch.isfinite(p.grad).all().item())
+            for p in model.parameters()
+        ):
+            raise FloatingPointError("missing or non-finite gradient")
+        optimizer.step()
+        batch_size = labels.size(0)
+        loss_sum += float(loss.item()) * batch_size
+        correct += int((logits.argmax(dim=1) == labels).sum().item())
+        sample_count += batch_size
+    if sample_count == 0:
+        raise ValueError("empty training loader")
+    return {"loss": loss_sum / sample_count,
+            "accuracy": correct / sample_count,
+            "samples": sample_count}
+</code></pre></div><h3 id="r-102">代码单元 30</h3><div class="code-wrap"><pre><code>from torch.utils.data import DataLoader, Subset
+
+# 自检只取少量真实样本，避免 Run All 又训练完整 45k 一轮。
+training_check_size = min(32 if CIFAR_NOTEBOOK_VALIDATION else 512, len(train_set))
+training_check_loader = DataLoader(
+    Subset(train_set, range(training_check_size)),
+    batch_size=128,
+    shuffle=False,
+    num_workers=0,
+)
+metrics = train_one_epoch(
+    model, training_check_loader, criterion, optimizer, device
+)
+assert metrics["samples"] == len(training_check_loader.dataset)
+assert 0.0 &lt;= metrics["accuracy"] &lt;= 1.0
+assert metrics["loss"] &gt;= 0.0
+assert all(p.grad is not None for p in model.parameters())
+print("P8 quick training check samples:", metrics["samples"])
+</code></pre></div><h2 id="r-103">P9. 无梯度评估与精确指标</h2>
+<h3 id="r-104">本节目标</h3>
+<p>编写 evaluate，在 eval/no_grad 状态下计算样本加权损失和 argmax 准确率，绝不更新参数。</p>
+<h3 id="r-105">理论连接</h3>
+<p>&lt;p&gt;评估与训练使用同一前向和损失，但不清梯度、不反向传播、不调用 step。&lt;code&gt;model.eval()&lt;/code&gt; 设置评估状态；&lt;code&gt;torch.no_grad()&lt;/code&gt; 停止建立反向图，减少内存。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;argmax(dim=1)&lt;/code&gt; 在 10 个类别维上选最大 logit，得到 predictions[B]。正确数是逐元素比较后求和；损失仍按实际 B 加权。&lt;/p&gt;</p>
+<h3 id="r-106">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">def evaluate(model, loader, criterion, device):
+    model.____()
+    loss_sum = correct = sample_count = 0
+    with torch.____():
+        for images, labels in loader:
+            images, labels = images.to(device), labels.to(device)
+            logits = model(images)
+            loss = criterion(logits, labels)
+            predictions = logits.____(dim=1)
+            # 按样本数累计
+    return ____
+</code></pre></div>
+<h3 id="r-107">提示</h3>
+<p>&lt;p&gt;评估方法名与 train 相对；上下文管理器关闭梯度；最大类别索引沿第 1 维取得。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import torch
+
+def evaluate(model, loader, criterion, device):
+    model.eval()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+    with torch.no_grad():
+        for images, labels in loader:
+            images = images.to(device, non_blocking=device.type == "cuda")
+            labels = labels.to(device, non_blocking=device.type == "cuda")
+            logits = model(images)
+            loss = criterion(logits, labels)
+            if not bool(torch.isfinite(loss).item()):
+                raise FloatingPointError("non-finite evaluation loss")
+            batch_size = labels.size(0)
+            loss_sum += float(loss.item()) * batch_size
+            correct += int((logits.argmax(dim=1) == labels).sum().item())
+            sample_count += batch_size
+    if sample_count == 0:
+        raise ValueError("empty evaluation loader")
+    return {"loss": loss_sum / sample_count,
+            "accuracy": correct / sample_count,
+            "samples": sample_count}
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-108">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;model.eval()&lt;/code&gt; 不等于关闭梯度，所以还要使用 &lt;code&gt;no_grad&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;输入形状仍为 [B,3,32,32]，输出 logits[B,10]，标签和预测均为 [B]。&lt;/li&gt;&lt;li&gt;&lt;code&gt;argmax(dim=1)&lt;/code&gt; 返回类别索引，不必先 Softmax，因为 Softmax 保持大小顺序。&lt;/li&gt;&lt;li&gt;函数没有 optimizer 参数，因此接口本身也阻止意外更新。&lt;/li&gt;&lt;li&gt;返回 loss、accuracy、samples，训练与验证可以使用同一指标格式。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-109">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">例如 {'loss': 1.9..., 'accuracy': 0.3..., 'samples': 2000}；验证集、模型和训练轮数会改变数值。
+</code></pre></div>
+<h3 id="r-110">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;验证时显存持续增长：&lt;/b&gt;漏写 &lt;code&gt;torch.no_grad()&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;b&gt;准确率维度不对：&lt;/b&gt;&lt;code&gt;argmax&lt;/code&gt; 应沿类别维 dim=1，不是 batch 维。&lt;/li&gt;&lt;li&gt;&lt;b&gt;参数在验证后变化：&lt;/b&gt;评估函数不应接收或调用 optimizer。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-111">独立任务</h3>
+<p>用一个含 5 个样本的手工 logits 张量和标签，先手算正确数，再用 argmax 与比较表达式核对。</p>
+<h3 id="r-112">代码单元 32</h3><div class="code-wrap"><pre><code>import torch
+
+def evaluate(model, loader, criterion, device):
+    model.eval()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+    with torch.no_grad():
+        for images, labels in loader:
+            images = images.to(device, non_blocking=device.type == "cuda")
+            labels = labels.to(device, non_blocking=device.type == "cuda")
+            logits = model(images)
+            loss = criterion(logits, labels)
+            if not bool(torch.isfinite(loss).item()):
+                raise FloatingPointError("non-finite evaluation loss")
+            batch_size = labels.size(0)
+            loss_sum += float(loss.item()) * batch_size
+            correct += int((logits.argmax(dim=1) == labels).sum().item())
+            sample_count += batch_size
+    if sample_count == 0:
+        raise ValueError("empty evaluation loader")
+    return {"loss": loss_sum / sample_count,
+            "accuracy": correct / sample_count,
+            "samples": sample_count}
+</code></pre></div><h3 id="r-113">代码单元 33</h3><div class="code-wrap"><pre><code>from torch.utils.data import DataLoader, Subset
+
+# 评估函数用少量真实验证样本做快速、无参数更新的自检。
+evaluation_check_size = min(32 if CIFAR_NOTEBOOK_VALIDATION else 512, len(val_set))
+evaluation_check_loader = DataLoader(
+    Subset(val_set, range(evaluation_check_size)),
+    batch_size=128,
+    shuffle=False,
+    num_workers=0,
+)
+
+before = [p.detach().clone() for p in model.parameters()]
+metrics = evaluate(model, evaluation_check_loader, criterion, device)
+after = list(model.parameters())
+assert metrics["samples"] == len(evaluation_check_loader.dataset)
+assert 0.0 &lt;= metrics["accuracy"] &lt;= 1.0
+assert all(torch.equal(a, b.detach()) for a, b in zip(before, after))
+print("P9 quick evaluation check samples:", metrics["samples"])
+</code></pre></div><h2 id="r-114">P10. 快速模式：先验证代码流</h2>
+<h3 id="r-115">本节目标</h3>
+<p>让顶层 QUICK_MODE 真正控制数据规模和 epoch，并用 P6/P8/P9 亲手写出的 MLP、train_one_epoch、evaluate 串起本地训练流程。</p>
+<h3 id="r-116">理论连接</h3>
+<p>&lt;p&gt;&lt;code&gt;QUICK_MODE&lt;/code&gt; 只在 Notebook 顶层设置一次：True 时使用 8000/2000/2000 与 3 个 epoch；False 时使用 45000/5000/10000 与 20 个 epoch。它不是装饰变量，后续数据规模和默认轮数都从它推导。&lt;/p&gt;
+&lt;p&gt;快速模式只用于学习、冒烟和排错，不能作为最终作业结果。P10 不重新导入运行时脚本中的 MLP 或 fit，而是调用 P6、P8、P9 已经亲手写出的本地实现，这样前面代码写错时会被真实暴露。&lt;/p&gt;</p>
+<h3 id="r-117">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">EPOCHS = 3 if QUICK_MODE else ____
+selected_train_dataset = Subset(train_set, range(____ if QUICK_MODE else 45000))
+
+def fit_local(model, train_loader, validation_loader, criterion,
+              optimizer, device, epochs):
+    # 每轮调用 P8 的 train_one_epoch 和 P9 的 evaluate
+    ____
+
+model = MLP().to(device)  # 使用 P6 本地类，不重新导入答案
+history = fit_local(model, train_loader, val_loader, criterion,
+                    optimizer, device, EPOCHS)
+</code></pre></div>
+<h3 id="r-118">提示</h3>
+<p>&lt;p&gt;完整模式默认 20 轮；快速训练子集为 8000。fit_local 每轮先训练、再验证，并深复制验证准确率最高的 state_dict。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import copy
+import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader, Subset
+
+NOTEBOOK_VALIDATION = bool(globals().get("CIFAR_NOTEBOOK_VALIDATION", False))
+MODE_NAME = "quick" if QUICK_MODE else "full"
+MODE_EPOCHS = 3 if QUICK_MODE else 20
+MODE_SIZES = (8_000, 2_000, 2_000) if QUICK_MODE else (45_000, 5_000, 10_000)
+if NOTEBOOK_VALIDATION:
+    MODE_EPOCHS = 1
+    MODE_SIZES = (64, 32, 32)
+
+def _prefix_subset(source, count):
+    return Subset(source, range(min(count, len(source))))
+
+selected_train_dataset = _prefix_subset(train_set, MODE_SIZES[0])
+selected_val_dataset = _prefix_subset(val_set, MODE_SIZES[1])
+selected_test_dataset = _prefix_subset(test_set, MODE_SIZES[2])
+
+train_loader = DataLoader(
+    selected_train_dataset, batch_size=128, shuffle=True, num_workers=0,
+    generator=torch.Generator().manual_seed(SEED),
+)
+val_loader = DataLoader(
+    selected_val_dataset, batch_size=128, shuffle=False, num_workers=0
+)
+# 此处只构造 test_loader，不迭代、不计算指标。
+test_loader = DataLoader(
+    selected_test_dataset, batch_size=128, shuffle=False, num_workers=0
+)
+
+def fit_local(model, train_loader, validation_loader, criterion,
+              optimizer, device, epochs):
+    history = {
+        "train_loss": [], "train_accuracy": [],
+        "validation_loss": [], "validation_accuracy": [],
+    }
+    best_validation_accuracy = float("-inf")
+    best_epoch = 0
+    best_state_dict = None
+    for epoch in range(1, epochs + 1):
+        train_metrics = train_one_epoch(
+            model, train_loader, criterion, optimizer, device
+        )
+        validation_metrics = evaluate(
+            model, validation_loader, criterion, device
+        )
+        history["train_loss"].append(train_metrics["loss"])
+        history["train_accuracy"].append(train_metrics["accuracy"])
+        history["validation_loss"].append(validation_metrics["loss"])
+        history["validation_accuracy"].append(validation_metrics["accuracy"])
+        if validation_metrics["accuracy"] &gt; best_validation_accuracy:
+            best_validation_accuracy = validation_metrics["accuracy"]
+            best_epoch = epoch
+            best_state_dict = copy.deepcopy(model.state_dict())
+        print(
+            f"epoch {epoch}/{epochs}: "
+            f"train={train_metrics['accuracy']:.3f}, "
+            f"validation={validation_metrics['accuracy']:.3f}"
+        )
+    if best_state_dict is None:
+        raise RuntimeError("fit_local did not produce a best state")
+    model.load_state_dict(best_state_dict)
+    history["best_epoch"] = best_epoch
+    history["best_validation_accuracy"] = best_validation_accuracy
+    history["best_state_dict"] = best_state_dict
+    return history
+
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+model = MLP().to(device)
+criterion = torch.nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(
+    model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.0
+)
+history = fit_local(
+    model, train_loader, val_loader, criterion, optimizer, device, MODE_EPOCHS
+)
+print("mode:", MODE_NAME)
+print("sizes:", len(selected_train_dataset), len(selected_val_dataset), len(selected_test_dataset))
+print("epochs:", MODE_EPOCHS)
+print("best validation accuracy:", history["best_validation_accuracy"])
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-119">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;MODE_EPOCHS&lt;/code&gt; 和 &lt;code&gt;MODE_SIZES&lt;/code&gt; 都由顶层 QUICK_MODE 推导，后面不再偷偷重设模式。&lt;/li&gt;&lt;li&gt;三个 selected dataset 都来自 P3 已完成的确定性划分，避免重复构造 CIFAR10；验证器专用的小规模只在环境开关下生效，不改变用户默认值。&lt;/li&gt;&lt;li&gt;&lt;code&gt;fit_local&lt;/code&gt; 明确调用 P8 的 train_one_epoch 和 P9 的 evaluate；P6 的本地 MLP 也直接被实例化。&lt;/li&gt;&lt;li&gt;每轮只看验证指标并恢复最佳验证权重。test_loader 在本节只构造，不迭代，也不参与 epoch 选择。&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;完整训练流程可与 &lt;a href="https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html"&gt;PyTorch CIFAR-10 官方教程&lt;/a&gt;对照；本课模型仍是 MLP。&lt;/p&gt;</p>
+<h3 id="r-120">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">QUICK_MODE=True 时数据量为 8000/2000/2000、3 轮；False 时为 45000/5000/10000、20 轮。验证器专用环境会进一步缩小，但正常学习不会。quick 数字只证明流程可运行。
+</code></pre></div>
+<h3 id="r-121">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;下载慢：&lt;/b&gt;首次运行需要官方数据；检查网络和 data 目录，不换伪数据。&lt;/li&gt;&lt;li&gt;&lt;b&gt;CPU 训练仍需时间：&lt;/b&gt;先保留 3 epoch，不把子集继续缩到无法观察趋势。&lt;/li&gt;&lt;li&gt;&lt;b&gt;用 test_loader 反复评估：&lt;/b&gt;测试泄漏；本步骤只看 validation。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-122">独立任务</h3>
+<p>先保持 QUICK_MODE=True 检查流程，再只在顶层改为 False 观察数据量和 epoch 如何联动；快速模式指标绝不能写成最终作业结论。</p>
+<h3 id="r-123">代码单元 35</h3><div class="code-wrap"><pre><code>import copy
+import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader, Subset
+
+NOTEBOOK_VALIDATION = bool(globals().get("CIFAR_NOTEBOOK_VALIDATION", False))
+MODE_NAME = "quick" if QUICK_MODE else "full"
+MODE_EPOCHS = 3 if QUICK_MODE else 20
+MODE_SIZES = (8_000, 2_000, 2_000) if QUICK_MODE else (45_000, 5_000, 10_000)
+if NOTEBOOK_VALIDATION:
+    MODE_EPOCHS = 1
+    MODE_SIZES = (64, 32, 32)
+
+def _prefix_subset(source, count):
+    return Subset(source, range(min(count, len(source))))
+
+selected_train_dataset = _prefix_subset(train_set, MODE_SIZES[0])
+selected_val_dataset = _prefix_subset(val_set, MODE_SIZES[1])
+selected_test_dataset = _prefix_subset(test_set, MODE_SIZES[2])
+
+train_loader = DataLoader(
+    selected_train_dataset, batch_size=128, shuffle=True, num_workers=0,
+    generator=torch.Generator().manual_seed(SEED),
+)
+val_loader = DataLoader(
+    selected_val_dataset, batch_size=128, shuffle=False, num_workers=0
+)
+# 此处只构造 test_loader，不迭代、不计算指标。
+test_loader = DataLoader(
+    selected_test_dataset, batch_size=128, shuffle=False, num_workers=0
+)
+
+def fit_local(model, train_loader, validation_loader, criterion,
+              optimizer, device, epochs):
+    history = {
+        "train_loss": [], "train_accuracy": [],
+        "validation_loss": [], "validation_accuracy": [],
+    }
+    best_validation_accuracy = float("-inf")
+    best_epoch = 0
+    best_state_dict = None
+    for epoch in range(1, epochs + 1):
+        train_metrics = train_one_epoch(
+            model, train_loader, criterion, optimizer, device
+        )
+        validation_metrics = evaluate(
+            model, validation_loader, criterion, device
+        )
+        history["train_loss"].append(train_metrics["loss"])
+        history["train_accuracy"].append(train_metrics["accuracy"])
+        history["validation_loss"].append(validation_metrics["loss"])
+        history["validation_accuracy"].append(validation_metrics["accuracy"])
+        if validation_metrics["accuracy"] &gt; best_validation_accuracy:
+            best_validation_accuracy = validation_metrics["accuracy"]
+            best_epoch = epoch
+            best_state_dict = copy.deepcopy(model.state_dict())
+        print(
+            f"epoch {epoch}/{epochs}: "
+            f"train={train_metrics['accuracy']:.3f}, "
+            f"validation={validation_metrics['accuracy']:.3f}"
+        )
+    if best_state_dict is None:
+        raise RuntimeError("fit_local did not produce a best state")
+    model.load_state_dict(best_state_dict)
+    history["best_epoch"] = best_epoch
+    history["best_validation_accuracy"] = best_validation_accuracy
+    history["best_state_dict"] = best_state_dict
+    return history
+
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+model = MLP().to(device)
+criterion = torch.nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(
+    model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.0
+)
+history = fit_local(
+    model, train_loader, val_loader, criterion, optimizer, device, MODE_EPOCHS
+)
+print("mode:", MODE_NAME)
+print("sizes:", len(selected_train_dataset), len(selected_val_dataset), len(selected_test_dataset))
+print("epochs:", MODE_EPOCHS)
+print("best validation accuracy:", history["best_validation_accuracy"])
+</code></pre></div><h3 id="r-124">代码单元 36</h3><div class="code-wrap"><pre><code>expected_epochs = 1 if NOTEBOOK_VALIDATION else (3 if QUICK_MODE else 20)
+expected_sizes = (64, 32, 32) if NOTEBOOK_VALIDATION else (
+    (8_000, 2_000, 2_000) if QUICK_MODE else (45_000, 5_000, 10_000)
+)
+assert MODE_EPOCHS == expected_epochs
+assert tuple(map(len, (selected_train_dataset, selected_val_dataset, selected_test_dataset))) == expected_sizes
+assert len(history["train_loss"]) == MODE_EPOCHS
+assert 1 &lt;= history["best_epoch"] &lt;= MODE_EPOCHS
+assert all(key in globals() for key in ("MLP", "train_one_epoch", "evaluate", "fit_local"))
+</code></pre></div><h2 id="r-125">P11. 完整模式与历史记录</h2>
+<h3 id="r-126">本节目标</h3>
+<p>理解完整 45000/5000 训练与验证历史，并用显式开关避免 Run All 意外启动 20 轮训练。</p>
+<h3 id="r-127">理论连接</h3>
+<p>&lt;p&gt;完整模式用于正式实验。20 个 epoch 是起始值，不是保证最优的定律；应根据验证曲线和设备预算调整。测试集在训练历史中仍不出现。&lt;/p&gt;
+&lt;p&gt;每轮记录 train_loss、train_accuracy、validation_loss、validation_accuracy。横轴必须是相同的 epoch 序号，才能比较欠拟合和训练/验证差距。&lt;/p&gt;</p>
+<h3 id="r-128">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">RUN_FULL_TRAINING = ____
+if RUN_FULL_TRAINING:
+    full_train_loader = DataLoader(train_set, batch_size=128, shuffle=True)
+    full_history = fit_local(full_model, full_train_loader,
+                             full_val_loader, criterion,
+                             full_optimizer, device, epochs=____)
+required = ["train_loss", "train_accuracy", ____, ____]
+for key in required:
+    print(key, len(full_history[key]))
+</code></pre></div>
+<h3 id="r-129">提示</h3>
+<p>&lt;p&gt;开关默认 False；确认时间预算后改为 True。完整训练 20 轮，另外两条键名都以 validation 开头。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+RUN_FULL_TRAINING = False
+FULL_EPOCHS = 20
+if RUN_FULL_TRAINING:
+    random.seed(SEED)
+    np.random.seed(SEED)
+    torch.manual_seed(SEED)
+    full_train_loader = DataLoader(
+        train_set, batch_size=128, shuffle=True, num_workers=0,
+        generator=torch.Generator().manual_seed(SEED),
+    )
+    full_val_loader = DataLoader(
+        val_set, batch_size=128, shuffle=False, num_workers=0
+    )
+    full_model = MLP().to(device)
+    full_criterion = torch.nn.CrossEntropyLoss()
+    full_optimizer = torch.optim.SGD(
+        full_model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.0
+    )
+    full_history = fit_local(
+        full_model, full_train_loader, full_val_loader,
+        full_criterion, full_optimizer, device, FULL_EPOCHS,
+    )
+    required = ["train_loss", "train_accuracy", "validation_loss", "validation_accuracy"]
+    for key in required:
+        print(key, len(full_history[key]))
+else:
+    print("P11 完整训练默认关闭；把 RUN_FULL_TRAINING 改为 True 后单独运行本节。")
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-130">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;完整训练只使用 P3 的 45k train_set 与 5k val_set；本节不创建也不读取测试 loader。&lt;/li&gt;&lt;li&gt;&lt;code&gt;FULL_EPOCHS=20&lt;/code&gt; 表示完整遍历训练 loader 20 次，默认开关关闭以保护 Run All。&lt;/li&gt;&lt;li&gt;仍调用本地 &lt;code&gt;MLP&lt;/code&gt; 与 &lt;code&gt;fit_local&lt;/code&gt;，四条历史的生成逻辑和 P10 完全一致。&lt;/li&gt;&lt;li&gt;P11 是观察完整历史的可选实验，不负责超参数搜索或最终测试。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-131">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">默认打印跳过说明；显式开启后四个历史键各为长度 20。具体指标不设固定及格数字。
+</code></pre></div>
+<h3 id="r-132">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;耗时比 quick 长很多：&lt;/b&gt;这是完整数据和 20 轮的正常代价；先在 quick 模式排错。&lt;/li&gt;&lt;li&gt;&lt;b&gt;重复使用 quick 的已训练模型：&lt;/b&gt;正式运行前重新固定种子并创建新模型、优化器。&lt;/li&gt;&lt;li&gt;&lt;b&gt;四条历史长度不一致：&lt;/b&gt;append 位置不统一；每轮训练和验证完成后各追加一次。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-133">独立任务</h3>
+<p>把完整模式配置写入实验记录，包括 seed、batch size、层宽、学习率、momentum、weight_decay、epoch 和 device。</p>
+<h3 id="r-134">代码单元 38</h3><div class="code-wrap"><pre><code>import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+RUN_FULL_TRAINING = False
+FULL_EPOCHS = 20
+if RUN_FULL_TRAINING:
+    random.seed(SEED)
+    np.random.seed(SEED)
+    torch.manual_seed(SEED)
+    full_train_loader = DataLoader(
+        train_set, batch_size=128, shuffle=True, num_workers=0,
+        generator=torch.Generator().manual_seed(SEED),
+    )
+    full_val_loader = DataLoader(
+        val_set, batch_size=128, shuffle=False, num_workers=0
+    )
+    full_model = MLP().to(device)
+    full_criterion = torch.nn.CrossEntropyLoss()
+    full_optimizer = torch.optim.SGD(
+        full_model.parameters(), lr=0.01, momentum=0.9, weight_decay=0.0
+    )
+    full_history = fit_local(
+        full_model, full_train_loader, full_val_loader,
+        full_criterion, full_optimizer, device, FULL_EPOCHS,
+    )
+    required = ["train_loss", "train_accuracy", "validation_loss", "validation_accuracy"]
+    for key in required:
+        print(key, len(full_history[key]))
+else:
+    print("P11 完整训练默认关闭；把 RUN_FULL_TRAINING 改为 True 后单独运行本节。")
+</code></pre></div><h3 id="r-135">代码单元 39</h3><div class="code-wrap"><pre><code>if RUN_FULL_TRAINING:
+    assert len(full_train_loader.dataset) == 45_000
+    assert len(full_val_loader.dataset) == 5_000
+    for key in ("train_loss", "train_accuracy", "validation_loss", "validation_accuracy"):
+        assert len(full_history[key]) == FULL_EPOCHS
+    assert 1 &lt;= full_history["best_epoch"] &lt;= FULL_EPOCHS
+else:
+    assert RUN_FULL_TRAINING is False
+    print("P11 检查已跳过：未启动完整训练。")
+</code></pre></div><h2 id="r-136">P12. 只用验证集搜索超参数</h2>
+<h3 id="r-137">本节目标</h3>
+<p>清除所有旧选择状态后，用本地 MLP 与 fit_local 公平比较候选，并以 SEARCH_COMPLETED 哨兵标记一次真正成功的搜索。</p>
+<h3 id="r-138">理论连接</h3>
+<p>&lt;p&gt;候选只改变学习率、隐藏层宽度、batch size 和可选的 weight_decay。每次 trial 必须重新初始化，否则后一组继承前一组已学权重，比较不公平。&lt;/p&gt;
+&lt;p&gt;选择规则只读 validation_accuracy。搜索开始前必须把 best_config、best_state_dict、best_history 和 SEARCH_PROVENANCE 全部清空，并把 SEARCH_COMPLETED 设为 False；旧内核残留变量不能获得授权。测试集不进入本节。&lt;/p&gt;</p>
+<h3 id="r-139">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">import copy
+
+best_val = float("-inf")
+for trial in SEARCH_CONFIGS:
+    seed_everything(42)
+    model = ____(trial["hidden_dims"]).to(device)
+    optimizer = torch.optim.SGD(model.parameters(), lr=trial["learning_rate"])
+    history = fit(model, train_loader, val_loader, criterion,
+                  optimizer, device, epochs=3)
+    score = history[____]
+    if score &gt; best_val:
+        best_val = score
+        best_state = copy.____(model.state_dict())
+        best_history = copy.____(history)
+</code></pre></div>
+<h3 id="r-140">提示</h3>
+<p>&lt;p&gt;模型类是 MLP；比较 fit 返回的最佳验证准确率；最佳权重和对应历史都要深复制，不能保存随后还会变化的引用。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import copy
+import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+# 先清空旧内核可能残留的选择结果；只有本次完整成功后才把哨兵设为 True。
+best_config = None
+best_state_dict = None
+best_history = None
+SEARCH_PROVENANCE = None
+SEARCH_COMPLETED = False
+RUN_HYPERPARAMETER_SEARCH = False
+
+SEARCH_CONFIGS = [
+    {"hidden_dims": (512, 256), "learning_rate": 0.01, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (512, 256), "learning_rate": 0.03, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (1024, 512), "learning_rate": 0.01, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (512, 256), "learning_rate": 0.01, "batch_size": 64, "weight_decay": 1e-4},
+]
+SEARCH_EPOCHS = 1 if NOTEBOOK_VALIDATION else (3 if QUICK_MODE else 5)
+
+if RUN_HYPERPARAMETER_SEARCH:
+    expected_search_sizes = (
+        (64, 32) if NOTEBOOK_VALIDATION else
+        ((8_000, 2_000) if QUICK_MODE else (45_000, 5_000))
+    )
+    search_train_dataset = selected_train_dataset
+    search_val_dataset = selected_val_dataset
+    assert (len(search_train_dataset), len(search_val_dataset)) == expected_search_sizes
+    SEARCH_PROVENANCE = {
+        "mode": "quick" if QUICK_MODE else "full",
+        "train_samples": len(search_train_dataset),
+        "validation_samples": len(search_val_dataset),
+        "epochs_per_trial": SEARCH_EPOCHS,
+        "seed_per_trial": SEED,
+        "used_test_data": False,
+    }
+    search_results = []
+    best_validation_accuracy = float("-inf")
+    for trial_index, trial_config in enumerate(SEARCH_CONFIGS, start=1):
+        random.seed(SEED)
+        np.random.seed(SEED)
+        torch.manual_seed(SEED)
+        trial_train_loader = DataLoader(
+            search_train_dataset,
+            batch_size=trial_config["batch_size"],
+            shuffle=True,
+            num_workers=0,
+            generator=torch.Generator().manual_seed(SEED),
+        )
+        trial_val_loader = DataLoader(
+            search_val_dataset,
+            batch_size=trial_config["batch_size"],
+            shuffle=False,
+            num_workers=0,
+        )
+        trial_model = MLP(tuple(trial_config["hidden_dims"])).to(device)
+        trial_criterion = torch.nn.CrossEntropyLoss()
+        trial_optimizer = torch.optim.SGD(
+            trial_model.parameters(),
+            lr=trial_config["learning_rate"],
+            momentum=0.9,
+            weight_decay=trial_config["weight_decay"],
+        )
+        trial_history = fit_local(
+            trial_model, trial_train_loader, trial_val_loader,
+            trial_criterion, trial_optimizer, device, SEARCH_EPOCHS,
+        )
+        score = float(trial_history["best_validation_accuracy"])
+        search_results.append({
+            "config": copy.deepcopy(trial_config),
+            "validation_accuracy": score,
+            "history": copy.deepcopy(trial_history),
+        })
+        if score &gt; best_validation_accuracy:
+            best_validation_accuracy = score
+            best_config = copy.deepcopy(trial_config)
+            best_state_dict = copy.deepcopy(trial_model.state_dict())
+            best_history = copy.deepcopy(trial_history)
+        print(f"trial {trial_index}/{len(SEARCH_CONFIGS)} validation={score:.3f}")
+    if best_config is None or best_state_dict is None or best_history is None:
+        raise RuntimeError("search completed without selection artifacts")
+    SEARCH_COMPLETED = True
+    print("best config:", best_config)
+    print("search provenance:", SEARCH_PROVENANCE)
+else:
+    print("P12 搜索默认关闭；把 RUN_HYPERPARAMETER_SEARCH 改为 True 后运行本节。")
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-141">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;单元一开始无条件清空旧 best_* 与 provenance；即使搜索关闭，旧值也不能穿过门禁。&lt;/li&gt;&lt;li&gt;搜索数据显式取自 P10 的 selected_train_dataset 和 selected_val_dataset，规模与模式写入 SEARCH_PROVENANCE，且 used_test_data=False。&lt;/li&gt;&lt;li&gt;每个候选使用相同 seed，并重新创建 DataLoader、P6 本地 MLP、损失和优化器，再调用本地 fit_local。&lt;/li&gt;&lt;li&gt;best_state_dict 只是“选参试验”的权重证据；P12 不创建 best_model，也不读取 test_loader。&lt;/li&gt;&lt;li&gt;只有全部循环和结果检查成功后，SEARCH_COMPLETED 才变为 True。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-142">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">trials: 4；随后打印一组 best config 和 0 到 1 的最佳验证准确率，并把该获胜 trial 的四条曲线保存为 best_history。哪一组获胜不是固定答案。
+</code></pre></div>
+<h3 id="r-143">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;所有 trial 接着训练同一模型：&lt;/b&gt;循环内重新创建模型和 optimizer。&lt;/li&gt;&lt;li&gt;&lt;b&gt;保存后权重继续变化：&lt;/b&gt;直接保存 state_dict 引用；使用 &lt;code&gt;copy.deepcopy&lt;/code&gt;。&lt;/li&gt;&lt;li&gt;&lt;b&gt;依据测试集选配置：&lt;/b&gt;删除搜索函数的 test 参数，只比较验证指标。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-144">独立任务</h3>
+<p>为四组候选各写一句比较理由；若新增第五组，一次只改变一个主要因素并说明假设。</p>
+<h3 id="r-145">代码单元 41</h3><div class="code-wrap"><pre><code>import copy
+import random
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+# 先清空旧内核可能残留的选择结果；只有本次完整成功后才把哨兵设为 True。
+best_config = None
+best_state_dict = None
+best_history = None
+SEARCH_PROVENANCE = None
+SEARCH_COMPLETED = False
+RUN_HYPERPARAMETER_SEARCH = False
+
+SEARCH_CONFIGS = [
+    {"hidden_dims": (512, 256), "learning_rate": 0.01, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (512, 256), "learning_rate": 0.03, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (1024, 512), "learning_rate": 0.01, "batch_size": 128, "weight_decay": 0.0},
+    {"hidden_dims": (512, 256), "learning_rate": 0.01, "batch_size": 64, "weight_decay": 1e-4},
+]
+SEARCH_EPOCHS = 1 if NOTEBOOK_VALIDATION else (3 if QUICK_MODE else 5)
+
+if RUN_HYPERPARAMETER_SEARCH:
+    expected_search_sizes = (
+        (64, 32) if NOTEBOOK_VALIDATION else
+        ((8_000, 2_000) if QUICK_MODE else (45_000, 5_000))
+    )
+    search_train_dataset = selected_train_dataset
+    search_val_dataset = selected_val_dataset
+    assert (len(search_train_dataset), len(search_val_dataset)) == expected_search_sizes
+    SEARCH_PROVENANCE = {
+        "mode": "quick" if QUICK_MODE else "full",
+        "train_samples": len(search_train_dataset),
+        "validation_samples": len(search_val_dataset),
+        "epochs_per_trial": SEARCH_EPOCHS,
+        "seed_per_trial": SEED,
+        "used_test_data": False,
+    }
+    search_results = []
+    best_validation_accuracy = float("-inf")
+    for trial_index, trial_config in enumerate(SEARCH_CONFIGS, start=1):
+        random.seed(SEED)
+        np.random.seed(SEED)
+        torch.manual_seed(SEED)
+        trial_train_loader = DataLoader(
+            search_train_dataset,
+            batch_size=trial_config["batch_size"],
+            shuffle=True,
+            num_workers=0,
+            generator=torch.Generator().manual_seed(SEED),
+        )
+        trial_val_loader = DataLoader(
+            search_val_dataset,
+            batch_size=trial_config["batch_size"],
+            shuffle=False,
+            num_workers=0,
+        )
+        trial_model = MLP(tuple(trial_config["hidden_dims"])).to(device)
+        trial_criterion = torch.nn.CrossEntropyLoss()
+        trial_optimizer = torch.optim.SGD(
+            trial_model.parameters(),
+            lr=trial_config["learning_rate"],
+            momentum=0.9,
+            weight_decay=trial_config["weight_decay"],
+        )
+        trial_history = fit_local(
+            trial_model, trial_train_loader, trial_val_loader,
+            trial_criterion, trial_optimizer, device, SEARCH_EPOCHS,
+        )
+        score = float(trial_history["best_validation_accuracy"])
+        search_results.append({
+            "config": copy.deepcopy(trial_config),
+            "validation_accuracy": score,
+            "history": copy.deepcopy(trial_history),
+        })
+        if score &gt; best_validation_accuracy:
+            best_validation_accuracy = score
+            best_config = copy.deepcopy(trial_config)
+            best_state_dict = copy.deepcopy(trial_model.state_dict())
+            best_history = copy.deepcopy(trial_history)
+        print(f"trial {trial_index}/{len(SEARCH_CONFIGS)} validation={score:.3f}")
+    if best_config is None or best_state_dict is None or best_history is None:
+        raise RuntimeError("search completed without selection artifacts")
+    SEARCH_COMPLETED = True
+    print("best config:", best_config)
+    print("search provenance:", SEARCH_PROVENANCE)
+else:
+    print("P12 搜索默认关闭；把 RUN_HYPERPARAMETER_SEARCH 改为 True 后运行本节。")
+</code></pre></div><h3 id="r-146">代码单元 42</h3><div class="code-wrap"><pre><code>if RUN_HYPERPARAMETER_SEARCH:
+    assert SEARCH_COMPLETED is True
+    assert len(search_results) == len(SEARCH_CONFIGS) == 4
+    assert best_config in SEARCH_CONFIGS
+    assert best_state_dict is not None and best_history is not None
+    assert SEARCH_PROVENANCE["used_test_data"] is False
+    assert SEARCH_PROVENANCE["mode"] == ("quick" if QUICK_MODE else "full")
+    assert SEARCH_PROVENANCE["train_samples"] == len(selected_train_dataset)
+    assert SEARCH_PROVENANCE["validation_samples"] == len(selected_val_dataset)
+    assert (SEARCH_PROVENANCE["train_samples"], SEARCH_PROVENANCE["validation_samples"]) == expected_search_sizes
+else:
+    assert SEARCH_COMPLETED is False
+    assert best_config is None and best_state_dict is None and best_history is None
+    assert SEARCH_PROVENANCE is None
+    print("P12 检查已跳过，且旧选择状态已清空。")
+</code></pre></div><h2 id="r-147">P13. 完整重训、最终测试与检查点</h2>
+<h3 id="r-148">本节目标</h3>
+<p>只有本次搜索成功且最终开关开启时，按所选配置在完整 45k/5k 流程上从新模型重训，再首次读取 10k 测试集并保存真实来源信息。</p>
+<h3 id="r-149">理论连接</h3>
+<p>&lt;p&gt;测试数据在模型选择完成前绝不能读取。P13 同时要求 &lt;code&gt;SEARCH_COMPLETED is True&lt;/code&gt;，并要求学习者手动把默认关闭的 &lt;code&gt;RUN_FINAL_RETRAIN_AND_TEST&lt;/code&gt; 改为 True；仅仅看到旧 best_* 变量并不构成授权。&lt;/p&gt;
+&lt;p&gt;快速搜索可用于选候选，但最终作业必须新建 MLP，在完整 45000/5000 训练—验证流程上重训并恢复本次完整重训的最佳验证权重，然后才评估完整 10000 测试样本。状态字典之外还要保存实际配置与 provenance。&lt;/p&gt;</p>
+<h3 id="r-150">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">best_model = MLP(tuple(best_config["hidden_dims"])).to(device)
+best_model.____(best_state_dict)
+test_metrics = ____(best_model, test_loader, criterion, device)
+torch.save({
+    "state_dict": best_model.____(),
+    "classes": classes,
+    "hidden_dims": best_config["hidden_dims"],
+}, "outputs/cifar10_results/best_mlp.pt")
+</code></pre></div>
+<h3 id="r-151">提示</h3>
+<p>&lt;p&gt;先检查两个布尔门禁，再创建新的完整 train/validation/test loaders。最终模型从头初始化并用所选配置重训；fit_local 会恢复完整验证集上的最佳权重。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">import random
+from pathlib import Path
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+RUN_FINAL_RETRAIN_AND_TEST = False
+FINAL_TEST_COMPLETED = False
+FINAL_PROVENANCE = None
+
+if not SEARCH_COMPLETED:
+    print("P13 未执行：P12 本次搜索未成功。先开启搜索并得到 SEARCH_COMPLETED=True。")
+elif not RUN_FINAL_RETRAIN_AND_TEST:
+    print("P13 未执行：把 RUN_FINAL_RETRAIN_AND_TEST 改为 True 才会完整重训并访问测试集。")
+else:
+    random.seed(SEED)
+    np.random.seed(SEED)
+    torch.manual_seed(SEED)
+    final_train_loader = DataLoader(
+        train_set, batch_size=int(best_config["batch_size"]),
+        shuffle=True, num_workers=0,
+        generator=torch.Generator().manual_seed(SEED),
+    )
+    final_val_loader = DataLoader(
+        val_set, batch_size=int(best_config["batch_size"]),
+        shuffle=False, num_workers=0,
+    )
+    final_test_loader = DataLoader(
+        test_set, batch_size=int(best_config["batch_size"]),
+        shuffle=False, num_workers=0,
+    )
+    assert len(final_train_loader.dataset) == 45_000
+    assert len(final_val_loader.dataset) == 5_000
+    assert len(final_test_loader.dataset) == 10_000
+
+    final_model = MLP(tuple(best_config["hidden_dims"])).to(device)
+    final_criterion = torch.nn.CrossEntropyLoss()
+    final_optimizer = torch.optim.SGD(
+        final_model.parameters(),
+        lr=float(best_config["learning_rate"]),
+        momentum=0.9,
+        weight_decay=float(best_config["weight_decay"]),
+    )
+    FINAL_EPOCHS = 20
+    final_history = fit_local(
+        final_model, final_train_loader, final_val_loader,
+        final_criterion, final_optimizer, device, FINAL_EPOCHS,
+    )
+    # fit_local 已载入完整验证流程的最佳权重；模型选择结束后首次读取测试集。
+    test_metrics = evaluate(
+        final_model, final_test_loader, final_criterion, device
+    )
+    assert test_metrics["samples"] == 10_000
+
+    best_model = final_model
+    best_history = final_history
+    test_loader = final_test_loader
+    checkpoint_path = RESULTS_DIR / "best_mlp.pt"
+    checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+    FINAL_PROVENANCE = {
+        "quick_mode": False,
+        "train_samples": len(final_train_loader.dataset),
+        "validation_samples": len(final_val_loader.dataset),
+        "test_samples": len(final_test_loader.dataset),
+        "epochs": FINAL_EPOCHS,
+        "seed": SEED,
+        "selected_config": copy.deepcopy(best_config),
+        "test_used_after_selection": True,
+    }
+    torch.save({
+        "architecture": "MLP",
+        "state_dict": copy.deepcopy(best_model.state_dict()),
+        "classes": list(classes),
+        "normalization": {"mean": NORMALIZATION_MEAN, "std": NORMALIZATION_STD},
+        "hidden_dims": tuple(best_config["hidden_dims"]),
+        "config": copy.deepcopy(FINAL_PROVENANCE),
+    }, checkpoint_path)
+    restored_model = MLP(tuple(best_config["hidden_dims"])).to(device)
+    restored_model.load_state_dict(torch.load(
+        checkpoint_path, map_location=device, weights_only=True
+    )["state_dict"])
+    restored_model.eval()
+    FINAL_TEST_COMPLETED = True
+    print("final test:", test_metrics)
+    print("final provenance:", FINAL_PROVENANCE)
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-152">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;FINAL_TEST_COMPLETED 在分支前重置为 False；只有完整重训、10k 测试与保存全部成功后才设为 True。&lt;/li&gt;&lt;li&gt;门禁读取 SEARCH_COMPLETED 的布尔结果，而不是用 globals 中是否残留某个名字来授权。&lt;/li&gt;&lt;li&gt;final_model 是按 best_config 新建的 P6 本地 MLP；它在完整 45k/5k 上调用 fit_local，不沿用 P12 的搜索模型。&lt;/li&gt;&lt;li&gt;测试 loader 明确是 10000 个官方测试样本；evaluate 只在选择结束后调用。&lt;/li&gt;&lt;li&gt;检查点保存 quick_mode=False、完整数据规模、epoch、seed、selected_config、类别与归一化，恢复模型必须使用相同 hidden_dims。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-153">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">默认打印“把 RUN_FINAL_RETRAIN_AND_TEST 改为 True”的说明且不训练、不读取测试集、不写文件；手动开启并满足搜索门禁后，完整重训 20 轮并打印 10000 样本的 final test 与 quick_mode=False provenance。
+</code></pre></div>
+<h3 id="r-154">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Missing/Unexpected keys：&lt;/b&gt;恢复模型结构与保存时不同；先读取 hidden_dims 再创建。&lt;/li&gt;&lt;li&gt;&lt;b&gt;目录不存在：&lt;/b&gt;用 &lt;code&gt;Path.mkdir(parents=True, exist_ok=True)&lt;/code&gt;，或调用运行时的 save_checkpoint。&lt;/li&gt;&lt;li&gt;&lt;b&gt;在每个 trial 都测试：&lt;/b&gt;测试集被重复使用；只对最终选中的模型调用一次。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-155">独立任务</h3>
+<p>关闭当前模型变量后，仅凭检查点中的 hidden_dims、state_dict 和 normalization 恢复模型；核对 provenance 确认这是完整模式重训结果。</p>
+<h3 id="r-156">代码单元 44</h3><div class="code-wrap"><pre><code>import random
+from pathlib import Path
+import numpy as np
+import torch
+from torch.utils.data import DataLoader
+
+RUN_FINAL_RETRAIN_AND_TEST = False
+FINAL_TEST_COMPLETED = False
+FINAL_PROVENANCE = None
+
+if not SEARCH_COMPLETED:
+    print("P13 未执行：P12 本次搜索未成功。先开启搜索并得到 SEARCH_COMPLETED=True。")
+elif not RUN_FINAL_RETRAIN_AND_TEST:
+    print("P13 未执行：把 RUN_FINAL_RETRAIN_AND_TEST 改为 True 才会完整重训并访问测试集。")
+else:
+    random.seed(SEED)
+    np.random.seed(SEED)
+    torch.manual_seed(SEED)
+    final_train_loader = DataLoader(
+        train_set, batch_size=int(best_config["batch_size"]),
+        shuffle=True, num_workers=0,
+        generator=torch.Generator().manual_seed(SEED),
+    )
+    final_val_loader = DataLoader(
+        val_set, batch_size=int(best_config["batch_size"]),
+        shuffle=False, num_workers=0,
+    )
+    final_test_loader = DataLoader(
+        test_set, batch_size=int(best_config["batch_size"]),
+        shuffle=False, num_workers=0,
+    )
+    assert len(final_train_loader.dataset) == 45_000
+    assert len(final_val_loader.dataset) == 5_000
+    assert len(final_test_loader.dataset) == 10_000
+
+    final_model = MLP(tuple(best_config["hidden_dims"])).to(device)
+    final_criterion = torch.nn.CrossEntropyLoss()
+    final_optimizer = torch.optim.SGD(
+        final_model.parameters(),
+        lr=float(best_config["learning_rate"]),
+        momentum=0.9,
+        weight_decay=float(best_config["weight_decay"]),
+    )
+    FINAL_EPOCHS = 20
+    final_history = fit_local(
+        final_model, final_train_loader, final_val_loader,
+        final_criterion, final_optimizer, device, FINAL_EPOCHS,
+    )
+    # fit_local 已载入完整验证流程的最佳权重；模型选择结束后首次读取测试集。
+    test_metrics = evaluate(
+        final_model, final_test_loader, final_criterion, device
+    )
+    assert test_metrics["samples"] == 10_000
+
+    best_model = final_model
+    best_history = final_history
+    test_loader = final_test_loader
+    checkpoint_path = RESULTS_DIR / "best_mlp.pt"
+    checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+    FINAL_PROVENANCE = {
+        "quick_mode": False,
+        "train_samples": len(final_train_loader.dataset),
+        "validation_samples": len(final_val_loader.dataset),
+        "test_samples": len(final_test_loader.dataset),
+        "epochs": FINAL_EPOCHS,
+        "seed": SEED,
+        "selected_config": copy.deepcopy(best_config),
+        "test_used_after_selection": True,
+    }
+    torch.save({
+        "architecture": "MLP",
+        "state_dict": copy.deepcopy(best_model.state_dict()),
+        "classes": list(classes),
+        "normalization": {"mean": NORMALIZATION_MEAN, "std": NORMALIZATION_STD},
+        "hidden_dims": tuple(best_config["hidden_dims"]),
+        "config": copy.deepcopy(FINAL_PROVENANCE),
+    }, checkpoint_path)
+    restored_model = MLP(tuple(best_config["hidden_dims"])).to(device)
+    restored_model.load_state_dict(torch.load(
+        checkpoint_path, map_location=device, weights_only=True
+    )["state_dict"])
+    restored_model.eval()
+    FINAL_TEST_COMPLETED = True
+    print("final test:", test_metrics)
+    print("final provenance:", FINAL_PROVENANCE)
+</code></pre></div><h3 id="r-157">代码单元 45</h3><div class="code-wrap"><pre><code>if FINAL_TEST_COMPLETED:
+    assert SEARCH_COMPLETED is True and RUN_FINAL_RETRAIN_AND_TEST is True
+    assert len(final_train_loader.dataset) == 45_000
+    assert len(final_val_loader.dataset) == 5_000
+    assert len(final_test_loader.dataset) == 10_000
+    assert test_metrics["samples"] == 10_000
+    assert 0.0 &lt;= test_metrics["accuracy"] &lt;= 1.0
+    assert FINAL_PROVENANCE["quick_mode"] is False
+    assert FINAL_PROVENANCE["selected_config"] == best_config
+    assert checkpoint_path.exists()
+    for key, value in best_model.state_dict().items():
+        assert torch.equal(value, restored_model.state_dict()[key])
+else:
+    assert not SEARCH_COMPLETED or not RUN_FINAL_RETRAIN_AND_TEST
+    print("P13 检查已跳过：未获得最终测试授权。")
+</code></pre></div><h2 id="r-158">P14. 曲线、混淆矩阵与错误样本</h2>
+<h3 id="r-159">本节目标</h3>
+<p>只在 FINAL_TEST_COMPLETED 后对最终模型做只读诊断；允许额外遍历测试集画混淆矩阵和错误样本，但严禁据此回头调参。</p>
+<h3 id="r-160">理论连接</h3>
+<p>&lt;p&gt;损失曲线显示优化过程，准确率曲线显示分类结果。训练继续改善而验证恶化，提示泛化差距；不能只看最后一个点。&lt;/p&gt;
+&lt;p&gt;混淆矩阵 C[i,j] 表示真实类别 i 被预测为 j 的数量。错误图要先撤销 Normalize：&lt;code&gt;image*0.5+0.5&lt;/code&gt;，再把 CHW 排为 HWC。&lt;/p&gt;
+&lt;p&gt;MLP 把 [3,32,32] 展平到 [3072]，相邻像素的空间关系不再以二维结构显式表达。这是本实验的局限分析；本实践不改用 CNN。&lt;/p&gt;
+&lt;p&gt;“最终测试”不是指测试集永远只能遍历一次，而是测试数据在模型选择前绝不能被使用。最终指标完成后，混淆矩阵和错误样本可以额外只读遍历测试集，但这些诊断不得触发重新选参或训练。&lt;/p&gt;</p>
+<h3 id="r-161">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python">from practice.cifar10_mlp_tutorial import (
+    plot_history, build_confusion_matrix, collect_misclassified,
+    plot_confusion_matrix, plot_misclassified_examples,
+)
+
+plot_history(best_history, output_dir / "history.png")
+confusion = build_confusion_matrix(best_model, test_loader, device)
+assert confusion.shape == ____
+mistakes = collect_misclassified(best_model, test_loader, device, max_examples=____)
+# 保存矩阵和错误样本图
+</code></pre></div>
+<h3 id="r-162">提示</h3>
+<p>&lt;p&gt;CIFAR-10 有 10 类，所以矩阵两维都是 10；课堂展示取 16 个错误样本即可。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">from pathlib import Path
+from practice.cifar10_mlp_tutorial import (
+    build_confusion_matrix, collect_misclassified, plot_confusion_matrix,
+    plot_history, plot_misclassified_examples,
+)
+
+DIAGNOSTICS_COMPLETED = False
+if FINAL_TEST_COMPLETED:
+    output_dir = RESULTS_DIR
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plot_history(best_history, output_dir / "history.png")
+    confusion = build_confusion_matrix(best_model, test_loader, device)
+    mistakes = collect_misclassified(
+        best_model, test_loader, device, max_examples=16
+    )
+    plot_confusion_matrix(confusion, output_dir / "confusion_matrix.png")
+    plot_misclassified_examples(mistakes, output_dir / "misclassified_examples.png")
+    DIAGNOSTICS_COMPLETED = True
+    print("confusion:", tuple(confusion.shape), int(confusion.sum()))
+    print("mistakes shown:", len(mistakes))
+    print("警告：这些测试集诊断只能用于报告，不得据此重新调参或训练。")
+else:
+    print("P14 未绘图：必须先有 FINAL_TEST_COMPLETED=True 的最终模型。")
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-163">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;&lt;code&gt;best_history&lt;/code&gt; 此时来自 P13 的完整重训，与 best_model 完全对应。&lt;/li&gt;&lt;li&gt;FINAL_TEST_COMPLETED 是必要门禁；P12 的搜索权重或旧内核变量不能直接进入诊断。&lt;/li&gt;&lt;li&gt;&lt;code&gt;build_confusion_matrix&lt;/code&gt; 与 &lt;code&gt;collect_misclassified&lt;/code&gt; 会再次只读遍历测试集，但不更新参数。&lt;/li&gt;&lt;li&gt;这些结果用于解释已冻结的最终模型，绝不能据此改变配置后再次声称是同一次最终测试。&lt;/li&gt;&lt;li&gt;绘图函数撤销归一化并标注类别；矩阵总和应等于 10000。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-164">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">若最终测试未完成，打印前置条件；完成后 confusion: (10, 10) 10000，并生成三张 PNG 和“不得据此重新调参”的警告。
+</code></pre></div>
+<h3 id="r-165">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;图像颜色异常：&lt;/b&gt;忘记撤销 Normalize 或忘记 CHW→HWC。&lt;/li&gt;&lt;li&gt;&lt;b&gt;矩阵轴反了：&lt;/b&gt;本课固定“真实为行、预测为列”，报告中写清楚。&lt;/li&gt;&lt;li&gt;&lt;b&gt;矩阵总数不等于测试数：&lt;/b&gt;漏 batch 或只统计错误样本；应遍历整个 loader。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-166">独立任务</h3>
+<p>找出混淆矩阵中最大的两个非对角元素，写出对应真实类→预测类，并结合错误图提出一种可能原因。</p>
+<h3 id="r-167">代码单元 47</h3><div class="code-wrap"><pre><code>from pathlib import Path
+from practice.cifar10_mlp_tutorial import (
+    build_confusion_matrix, collect_misclassified, plot_confusion_matrix,
+    plot_history, plot_misclassified_examples,
+)
+
+DIAGNOSTICS_COMPLETED = False
+if FINAL_TEST_COMPLETED:
+    output_dir = RESULTS_DIR
+    output_dir.mkdir(parents=True, exist_ok=True)
+    plot_history(best_history, output_dir / "history.png")
+    confusion = build_confusion_matrix(best_model, test_loader, device)
+    mistakes = collect_misclassified(
+        best_model, test_loader, device, max_examples=16
+    )
+    plot_confusion_matrix(confusion, output_dir / "confusion_matrix.png")
+    plot_misclassified_examples(mistakes, output_dir / "misclassified_examples.png")
+    DIAGNOSTICS_COMPLETED = True
+    print("confusion:", tuple(confusion.shape), int(confusion.sum()))
+    print("mistakes shown:", len(mistakes))
+    print("警告：这些测试集诊断只能用于报告，不得据此重新调参或训练。")
+else:
+    print("P14 未绘图：必须先有 FINAL_TEST_COMPLETED=True 的最终模型。")
+</code></pre></div><h3 id="r-168">代码单元 48</h3><div class="code-wrap"><pre><code>if DIAGNOSTICS_COMPLETED:
+    assert FINAL_TEST_COMPLETED is True
+    assert confusion.shape == (10, 10)
+    assert confusion.dtype == torch.int64
+    assert int(confusion.sum()) == 10_000
+    assert len(mistakes) &lt;= 16
+    assert (output_dir / "history.png").exists()
+    assert (output_dir / "confusion_matrix.png").exists()
+    assert (output_dir / "misclassified_examples.png").exists()
+else:
+    assert FINAL_TEST_COMPLETED is False
+    print("P14 检查已跳过：没有完成最终测试。")
+</code></pre></div><h2 id="r-169">P15. 实验报告、从空白重写与自检</h2>
+<h3 id="r-170">本节目标</h3>
+<p>用可核查的模板完成报告，并在不看答案时从空白写出数据、模型、训练、验证和最终测试流程。</p>
+<h3 id="r-171">理论连接</h3>
+<p>&lt;p&gt;报告应让别人仅凭配置和步骤复现实验。必须区分验证集最佳结果与最终测试结果，写明快速/完整模式，并把不确定的解释标为分析而非事实。&lt;/p&gt;
+&lt;p&gt;最终复盘要能回答：每个函数做什么；[B,3,32,32] 如何变成 [B,3072] 再到 [B,10]；为何 CrossEntropyLoss 前不加 Softmax；为何测试集不能参与调参。&lt;/p&gt;</p>
+<h3 id="r-172">先自己补全的练习骨架</h3>
+<p>下面只是阅读和手写用的骨架，不是可执行单元格。</p>
+<div class="code-wrap"><pre><code class="language-python"># 从空白文件完成，不复制前面的答案：
+# 1. 固定种子并构造 45k/5k/10k 数据
+# 2. 写 MLP: 3072 -&gt; 512 -&gt; 256 -&gt; 10
+# 3. 写 train_one_epoch 与 evaluate
+# 4. 只用验证集选择配置
+# 5. 模型选择完成后完整重训，再做最终测试；诊断不得触发重新调参
+
+def train_one_epoch(...):
+    ____
+
+def evaluate(...):
+    ____
+</code></pre></div>
+<h3 id="r-173">提示</h3>
+<p>&lt;p&gt;先在纸上写数据流和九个训练动作，再写代码。每完成一段就打印形状或加 assert；如果卡住，只回看对应 P0–P14，不整段复制。&lt;/p&gt;</p>
+<p>&lt;details&gt;
+&lt;summary&gt;展开原始完整参考代码&lt;/summary&gt;</p>
+<div class="code-wrap"><pre><code class="language-python">REPORT_TEMPLATE = """一、实验目的
+用像素展开后的多层感知机完成 CIFAR-10 十分类，并掌握验证集选参流程。
+
+二、数据与划分
+官方训练集 50000 张，固定 seed 后划分 45000/5000；官方测试集 10000 张，仅最终评估。
+
+三、模型结构
+[B,3,32,32] -&gt; [B,3072] -&gt; [B,512] -&gt; [B,256] -&gt; [B,10] logits。
+
+四、训练设置
+记录 seed、设备、epoch、batch size、优化器、学习率、momentum 与 weight_decay。
+
+五、验证集选择
+列出每组候选配置及最佳验证准确率，说明只按验证集选择。
+
+六、最终测试结果
+报告一次测试 loss 和 accuracy，不承诺或捏造固定数值。
+
+七、曲线与错误分析
+解释训练/验证曲线、主要混淆类别、代表性错误图及展平丢失空间结构的局限。
+
+八、复现信息
+记录 Python、PyTorch、torchvision 版本、运行命令、随机种子和检查点路径。
+"""
+
+SELF_CHECK = (
+    "我能解释每个函数和参数",
+    "我能写出每一步张量形状",
+    "模型输出 logits 且未手动 Softmax",
+    "损失按样本数加权",
+    "每个 trial 使用新模型和新优化器",
+    "测试数据在模型选择前从不读取，最终诊断不触发重新调参",
+)
+print(REPORT_TEMPLATE)
+for item in SELF_CHECK:
+    print("[ ]", item)
+</code></pre></div>
+<p>&lt;/details&gt;</p>
+<h3 id="r-174">逐行与变量解释</h3>
+<p>&lt;ol&gt;&lt;li&gt;模板的“数据与划分”记录数据来源、数量和 seed；“模型结构”写每层形状和参数。&lt;/li&gt;&lt;li&gt;“训练设置”必须给具体值，不写“采用合适参数”。&lt;/li&gt;&lt;li&gt;“验证集选择”展示候选与选择依据；“最终测试”只写选定模型的一次结果。&lt;/li&gt;&lt;li&gt;“错误分析”引用曲线、混淆矩阵和样本证据，并说明 Flatten 的空间局限。&lt;/li&gt;&lt;li&gt;自检六项对应可复现性、数学映射和无测试泄漏；未勾选项就是复习入口。&lt;/li&gt;&lt;/ol&gt;</p>
+<h3 id="r-175">预期输出</h3>
+<div class="code-wrap"><pre><code class="language-text">打印八节报告模板和六条未勾选自检项。报告中的实际版本、曲线、配置和指标必须由本次运行填写，不能照抄示例数字。
+</code></pre></div>
+<h3 id="r-176">常见错误</h3>
+<p>&lt;ul&gt;&lt;li&gt;&lt;b&gt;只贴代码和准确率：&lt;/b&gt;缺少数据划分、选择依据、曲线和错误分析；按八节模板补齐。&lt;/li&gt;&lt;li&gt;&lt;b&gt;把最佳验证准确率写成测试结果：&lt;/b&gt;两者来自不同 loader，分别标注。&lt;/li&gt;&lt;li&gt;&lt;b&gt;无法从空白重写：&lt;/b&gt;回到失败的最小步骤，先写函数输入输出和形状，再补函数体。&lt;/li&gt;&lt;/ul&gt;</p>
+<h3 id="r-177">独立任务</h3>
+<p>关闭参考答案，从新文件独立完成全流程；逐项勾选 SELF_CHECK，并让同学仅凭报告和检查点恢复模型、解释一次预测。</p>
+<h3 id="r-178">代码单元 50</h3><div class="code-wrap"><pre><code>REPORT_TEMPLATE = """一、实验目的
+用像素展开后的多层感知机完成 CIFAR-10 十分类，并掌握验证集选参流程。
+
+二、数据与划分
+官方训练集 50000 张，固定 seed 后划分 45000/5000；官方测试集 10000 张，仅最终评估。
+
+三、模型结构
+[B,3,32,32] -&gt; [B,3072] -&gt; [B,512] -&gt; [B,256] -&gt; [B,10] logits。
+
+四、训练设置
+记录 seed、设备、epoch、batch size、优化器、学习率、momentum 与 weight_decay。
+
+五、验证集选择
+列出每组候选配置及最佳验证准确率，说明只按验证集选择。
+
+六、最终测试结果
+报告一次测试 loss 和 accuracy，不承诺或捏造固定数值。
+
+七、曲线与错误分析
+解释训练/验证曲线、主要混淆类别、代表性错误图及展平丢失空间结构的局限。
+
+八、复现信息
+记录 Python、PyTorch、torchvision 版本、运行命令、随机种子和检查点路径。
+"""
+
+SELF_CHECK = (
+    "我能解释每个函数和参数",
+    "我能写出每一步张量形状",
+    "模型输出 logits 且未手动 Softmax",
+    "损失按样本数加权",
+    "每个 trial 使用新模型和新优化器",
+    "测试数据在模型选择前从不读取，最终诊断不触发重新调参",
+)
+print(REPORT_TEMPLATE)
+for item in SELF_CHECK:
+    print("[ ]", item)
+</code></pre></div><h3 id="r-179">代码单元 51</h3><div class="code-wrap"><pre><code>required_sections = (
+    "一、实验目的", "二、数据与划分", "三、模型结构", "四、训练设置",
+    "五、验证集选择", "六、最终测试结果", "七、曲线与错误分析", "八、复现信息",
+)
+assert all(section in REPORT_TEMPLATE for section in required_sections)
+assert len(SELF_CHECK) == 6
+assert "测试数据在模型选择前从不读取，最终诊断不触发重新调参" in SELF_CHECK
+</code></pre></div></article></div></main><script src="assets/js/theme.js"></script><script src="assets/js/navigation.js"></script><script src="assets/js/learning-state.js"></script><script src="assets/js/search.js"></script><script src="assets/js/code-copy.js"></script><script src="assets/js/library-index.js"></script><script src="assets/js/library-search.js"></script></body></html>

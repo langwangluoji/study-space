@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="第一讲：从线性回归、最小二乘到似然、贝叶斯与模型控制。" name="description"/><title>第一讲 · 从拟合到可靠预测</title>
+<script>(function(){try{var t=localStorage.getItem('ml-course-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}}());</script>
+<link href="assets/css/base.css" rel="stylesheet"/><link href="assets/css/layout.css" rel="stylesheet"/><link href="assets/css/components.css" rel="stylesheet"/>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'}};</script><script defer="" src="assets/vendor/mathjax/tex-svg.js"></script><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><link href="assets/css/architecture.css" rel="stylesheet"/></head>
+<body data-page="lecture-1"><a class="skip-link" href="#main-content">跳到正文</a><div aria-hidden="true" class="progress-track"><i id="reading-progress"></i></div>
+<header class="site-header library-header"><a class="brand" href="index.html">课程知识库</a><nav aria-label="全站导航" class="course-nav"><a href="index.html">知识库</a><a aria-current="page" href="course-ml.html">机器学习</a><a href="resources.html">资料中心</a></nav><div class="header-actions"><button aria-label="展开课程与本讲目录" class="icon-button mobile-toc-toggle" data-toc-toggle="" type="button">☰</button><button aria-label="切换主题" class="icon-button" data-theme-toggle="" type="button">☀</button></div></header>
+<div class="page-shell course-shell"><aside class="side-nav"><h2>机器学习</h2><nav aria-label="课程章节" class="course-tree"><a href="course-ml.html">课程总览</a><a aria-current="page" href="lecture-1.html">线性回归与最小二乘</a><a href="lecture-2.html">线性分类与感知机</a><a href="lecture-3.html">非线性回归与多层感知机</a><a href="cifar10-practice.html">CIFAR-10 · MLP 实践</a><a href="resources.html#ml">课程资料与代码</a></nav><p class="small muted">正文按教材推导；实践为可选。</p></aside>
+<main class="content" id="main-content"><nav aria-label="面包屑" class="breadcrumbs"><a href="index.html">知识库</a><span>/</span><a href="course-ml.html">机器学习</a><span>/</span><span>线性回归与最小二乘</span></nav><section class="hero"><p class="eyebrow">Lecture 01 · Regression</p><h1>线性回归：从风险最小化到后验预测</h1><p class="lead">以线性基函数模型为主线，逐步推导平方风险、正规方程、高斯似然、贝叶斯更新和泛化误差。全讲统一采用每样本平均目标，所有结论都注明假设与尺度。</p><div class="pill-row"><span class="pill">教材阅读与推导</span><span class="pill">15 节核心知识</span><span class="pill">基础：线性代数、微积分、概率</span></div></section>
+<article class="knowledge-point" id="a1"><p class="kicker">A1 · 线性回归</p><h2>多项式与线性基函数模型</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>先决定模型能画出哪些形状，数据才有可能选择参数。</div><div class="derivation"><p>回归的目标是根据输入预测连续数值。训练数据是已经观测到的输入与目标对，而模型是尚未确定参数的函数族。必须先区分函数族的选择与参数的估计：前者决定允许哪些形状，后者从这些形状中选择适合数据的一种。</p><p>设固定基函数为 \(\phi_0,\ldots,\phi_M\)。以它们的线性组合表示预测：</p><div class="eqchain">\[
+y(x,\mathbf w)=\sum_{m=0}^{M}w_m\phi_m(x)=\mathbf w^T\boldsymbol\phi(x),\qquad \boldsymbol\phi(x)=[\phi_0(x),\ldots,\phi_M(x)]^T.
+\]</div><p>这里 \(\boldsymbol\phi(x),\mathbf w\in\mathbb R^{M+1}\)，内积输出一个标量。选择 \(\phi_m(x)=x^m\)，便得到多项式模型。将每项依次代入，而非把多项式当作另一套模型：</p><div class="eqchain">\[
+\begin{aligned}
+y(x,\mathbf w)&amp;=w_0\phi_0(x)+w_1\phi_1(x)+\cdots+w_M\phi_M(x)\\
+&amp;=w_0x^0+w_1x^1+\cdots+w_Mx^M\\
+&amp;=w_0+w_1x+\cdots+w_Mx^M.
+\end{aligned}
+\]</div><p>“线性”指参数以一次形式出现，并不要求输入只出现一次。三次多项式对输入非线性，对权重仍线性。高斯基函数、固定的周期基函数也能放进同一框架。如果基函数内部的中心或宽度也参与学习，整个问题一般不再是这里的线性参数估计。</p><p>常数基函数 \(\phi_0=1\) 对应截距 \(w_0\)。它让曲线整体平移；其他权重改变相对于输入的变化。多项式次数控制函数族的容量，但数据存在噪声时，容量增加并不自动改善未来预测。</p><p class="source-note">出处：Bishop《PRML》§3.1，印刷 pp.138–140，式(3.1)–(3.5)；MML §9.1，p.291。此处记 M 为多项式最高次数，因此参数数目为 M+1，与 PRML 的基函数计数区别。</p></div></article><article class="knowledge-point" id="a2"><p class="kicker">A2 · 线性回归</p><h2>设计矩阵与整批预测</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>逐样本写预测会重复同一结构，需要一次处理全部样本。</div><div class="derivation"><p>单个样本的预测是一个内积。要把同一函数应用于 N 个样本，应将每个样本的基函数向量转置成一行，组成设计矩阵。原始输入矩阵与设计矩阵不能混为一谈：即使输入是一维，经过多项式展开后仍有 M+1 列。</p><div class="eqchain">\[
+y_n=\mathbf w^T\boldsymbol\phi(x_n)=\sum_{m=0}^{M}w_m\phi_m(x_n),\qquad
+X=\begin{bmatrix}\boldsymbol\phi(x_1)^T\\\vdots\\\boldsymbol\phi(x_N)^T\end{bmatrix}
+=\begin{bmatrix}1&amp;x_1&amp;\cdots&amp;x_1^M\\\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\1&amp;x_N&amp;\cdots&amp;x_N^M\end{bmatrix}.
+\]</div><p>样本索引 n 决定行，基函数索引 m 决定列。按矩阵乘法定义检查第 n 个元素：</p><div class="eqchain">\[
+(X\mathbf w)_n=\sum_{m=0}^{M}X_{nm}w_m=\sum_{m=0}^{M}\phi_m(x_n)w_m=y_n.
+\]</div><p>因此整批预测向量是 \(\mathbf y=X\mathbf w\)。维度为 \(X:N\times(M+1)\)、\(\mathbf w:(M+1)\times1\)、\(\mathbf t:N\times1\)。后续所有残差、梯度和协方差公式都建立在样本按行排列的约定上。</p><p>设计矩阵的秩还决定参数能否被数据区分。如果两列完全相同，增加一个权重、减少另一个权重可能留下相同预测。此时问题不在于矩阵乘法无法进行，而在于仅凭训练数据不能唯一辨认参数。</p><p class="source-note">出处：PRML §3.1.1，印刷 pp.141–142，式(3.10)、(3.16)；MML §9.2，pp.292–302。</p></div></article><article class="knowledge-point" id="a3"><p class="kicker">A3 · 线性回归</p><h2>平方风险为什么预测条件均值</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>正负残差会抵消，因此需要一个不会互相抵消的总误差。</div><div class="derivation"><p>先在总体层面讨论什么预测最合适，再用有限训练集近似总体。给定输入 x，令 \(m(x)=\mathbb E[T\mid x]\)，假定条件二阶矩有限。使用平方代价时，输出标量 a 的条件风险是 \(R(a\mid x)=\mathbb E[(a-T)^2\mid x]\)。将误差拆成偏离均值的两部分：</p><div class="eqchain">\[
+\begin{aligned}
+R(a\mid x)&amp;=\mathbb E[((a-m)+(m-T))^2\mid x]\\
+&amp;=(a-m)^2+2(a-m)\mathbb E[m-T\mid x]+\mathbb E[(m-T)^2\mid x]\\
+&amp;=(a-m)^2+\operatorname{Var}(T\mid x).
+\end{aligned}
+\]</div><p>中间交叉项为零，因为 \(\mathbb E[T\mid x]=m\)。第二项与输出 a 无关，第一项在且仅在 a=m 时为零。因此最优平方风险预测为条件均值；这一结论不需要高斯假设。高斯假设将在 A7 解释为什么参数的最大似然估计也会得到最小二乘。</p><p>有限数据不能直接提供所有条件分布。令残差统一为预测减目标，用经验平均代替总体期望：</p><div class="eqchain">\[
+r_n=y_n-t_n=\mathbf w^T\boldsymbol\phi_n-t_n,\quad \mathbf r=X\mathbf w-\mathbf t,
+\qquad L(\mathbf w)=\frac1{2N}\sum_{n=1}^{N}r_n^2=\frac1{2N}\|X\mathbf w-\mathbf t\|_2^2.
+\]</div><p>平方防止正负残差抵消。系数 1/2 消除求导时的 2，系数 1/N 使目标表示每样本平均。正的常数倍不改变无正则项时的极小点，但改变梯度数值，也改变与正则项之间的相对尺度。本文始终使用平均目标；书中平方和 \(E_D=\frac12\sum r_n^2\) 等于 NL。MSE 则等于 2L。</p><p class="source-note">出处：PRML §1.5.5，印刷 pp.46–47，式(1.86)–(1.90)；§3.1.1，p.141，式(3.12)。条件风险分解采用原创逐步展开。</p></div></article><article class="knowledge-point" id="a4"><p class="kicker">A4 · 线性回归</p><h2>正规方程、凸性与解的唯一性</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>有了损失，下一问不是背答案，而是怎样找到最低点。</div><div class="derivation"><p>找到最佳权重要求对每个参数计算误差如何变化。将 A3 的平均损失展开为标量，固定参数 \(w_q\)，按链式法则逐项求导：</p><div class="eqchain">\[
+\begin{aligned}
+L&amp;=\frac1{2N}\sum_n\left(\sum_mX_{nm}w_m-t_n\right)^2,\\
+\frac{\partial L}{\partial w_q}&amp;=\frac1{2N}\sum_n2\left(\sum_mX_{nm}w_m-t_n\right)\frac{\partial}{\partial w_q}\left(\sum_mX_{nm}w_m-t_n\right)\\
+&amp;=\frac1N\sum_n\left(\sum_mX_{nm}w_m-t_n\right)X_{nq}\\
+&amp;=\frac1N\sum_nX_{nq}r_n=\left[\frac1NX^T\mathbf r\right]_q.
+\end{aligned}
+\]</div><p>由于对每个 q 都成立，收拢各分量得到梯度。令其为零，公共正因子 N 消去，得到正规方程：</p><div class="eqchain">\[
+\nabla L=\frac1NX^T(X\mathbf w-\mathbf t),\qquad
+\frac1NX^T(X\mathbf w-\mathbf t)=0
+\Rightarrow X^TX\mathbf w-X^T\mathbf t=0
+\Rightarrow X^TX\mathbf w=X^T\mathbf t.
+\]</div><p>梯度为零通常只是必要条件，这里还要证明它足够。再求一次导数，Hessian 为 \(H=X^TX/N\)。任意方向 \(\mathbf v\) 上的曲率满足</p><div class="eqchain">\[
+\mathbf v^TH\mathbf v=\frac1N\mathbf v^TX^TX\mathbf v=\frac1N\|X\mathbf v\|^2\ge0.
+\]</div><p>所以损失是凸二次函数，任意驻点都是全局最小点。当 X 满列秩，非零方向的曲率严格为正，因此极小点唯一，且可以写成</p><div class="eqchain">\[
+\mathbf w^*=(X^TX)^{-1}X^T\mathbf t.
+\]</div><p>如果 X 不满列秩，逆矩阵不存在，但最小二乘依然有解。用 Moore–Penrose 伪逆可表示所有极小点：</p><div class="eqchain">\[
+\mathbf w^*=X^+\mathbf t+(I-X^+X)\mathbf z,\quad\mathbf z\in\mathbb R^{M+1}.
+\]</div><p>后一项落在 X 的零空间，所以所有这些权重给出同一训练预测。\(X^+\mathbf t\) 是其中欧氏范数最小的权重。数学写出的逆矩阵是解的表达式，数值实现通常应通过 QR 或 SVD 求解，避免显式形成逆；近共线列会使 \(X^TX\) 病态。</p><p class="source-note">出处：PRML §3.1.1–3.1.2，印刷 pp.142–143，式(3.15)–(3.17)；MML §9.2、§9.4，pp.292–302、313–315；唯一性与零空间说明由线性代数展开。</p></div></article><article class="knowledge-point" id="a5"><p class="kicker">A5 · 线性回归</p><h2>三个样本的完整最小二乘计算</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>抽象矩阵必须落到数字，才能检查每次乘法和维度。</div><div class="derivation"><p>取 \((0,1),(1,2),(2,2)\)，拟合带截距直线 \(y=w_0+w_1x\)。数据与设计矩阵为</p><div class="eqchain">\[
+X=\begin{bmatrix}1&amp;0\\1&amp;1\\1&amp;2\end{bmatrix},\qquad\mathbf t=\begin{bmatrix}1\\2\\2\end{bmatrix}.
+\]</div><p>正规方程左边的元素是各列内积，右边的元素是各列与目标的内积。把乘法保留到每个数的来源：</p><div class="eqchain">\[
+\begin{aligned}
+X^TX&amp;=\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\end{bmatrix}\begin{bmatrix}1&amp;0\\1&amp;1\\1&amp;2\end{bmatrix}
+=\begin{bmatrix}1+1+1&amp;0+1+2\\0+1+2&amp;0+1+4\end{bmatrix}=\begin{bmatrix}3&amp;3\\3&amp;5\end{bmatrix},\\
+X^T\mathbf t&amp;=\begin{bmatrix}1&amp;1&amp;1\\0&amp;1&amp;2\end{bmatrix}\begin{bmatrix}1\\2\\2\end{bmatrix}
+=\begin{bmatrix}1+2+2\\0+2+4\end{bmatrix}=\begin{bmatrix}5\\6\end{bmatrix}.
+\end{aligned}
+\]</div><p>行列式为 \(3\cdot5-3\cdot3=6\)，所以列独立，参数唯一。二阶矩阵求逆并回代：</p><div class="eqchain">\[
+(X^TX)^{-1}=\frac16\begin{bmatrix}5&amp;-3\\-3&amp;3\end{bmatrix},\qquad
+\mathbf w^*=\frac16\begin{bmatrix}25-18\\-15+18\end{bmatrix}=\begin{bmatrix}7/6\\1/2\end{bmatrix}.
+\]</div><p>获得参数后必须回到样本核验，而不是仅检查求逆过程。三个预测与残差分别为</p><div class="eqchain">\[
+\hat{\mathbf y}=\begin{bmatrix}7/6\\5/3\\13/6\end{bmatrix},\quad
+\mathbf r=\begin{bmatrix}1/6\\-1/3\\1/6\end{bmatrix},\quad
+L=\frac1{2\cdot3}\left(\frac1{36}+\frac1{9}+\frac1{36}\right)=\frac1{36}.
+\]</div><p>平均平方误差为 1/18；未平均的半平方和为 1/12。三者表示同一拟合，但不能在公式中混用。最后直接检查一阶条件：</p><div class="eqchain">\[
+X^T\mathbf r=\begin{bmatrix}1/6-1/3+1/6\\0-1/3+2/6\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix}.
+\]</div><p>直线不通过全部三个点，并不表示估计失败。每个方向上的加权残差已经平衡；移动截距或斜率只会让总平方误差更大。</p><p class="source-note">出处：数值例为本讲原有例题；计算依据 PRML §3.1.1，p.142 的正规方程。平均目标的数值由本讲直接验算。</p></div></article><article class="knowledge-point" id="a6"><p class="kicker">A6 · 线性回归</p><h2>最小二乘的正交投影</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>正规方程为什么含有一个转置？几何图像能回答。</div><div class="derivation"><p>把所有 N 个目标值看成 \(\mathbb R^N\) 中的一个向量。X 的每一列也在这一空间中，而 \(X\mathbf w\) 是这些列的线性组合。因此模型的所有训练预测组成列空间 \(\mathcal C(X)\)，最小二乘在这个空间里寻找离 \(\mathbf t\) 最近的点。</p><p>正规方程意味着 \(X^T\mathbf r=0\)，即残差与每一列正交。对任意列空间方向 \(X\mathbf a\)，有 \(\mathbf r^TX\mathbf a=(X^T\mathbf r)^T\mathbf a=0\)。令最优预测 \(\hat{\mathbf y}=X\mathbf w^*\)，任意候选预测 \(\mathbf y\in\mathcal C(X)\)，展开距离：</p><div class="eqchain">\[
+\begin{aligned}
+\|\mathbf y-\mathbf t\|^2&amp;=\|(\mathbf y-\hat{\mathbf y})+(\hat{\mathbf y}-\mathbf t)\|^2\\
+&amp;=\|\mathbf y-\hat{\mathbf y}\|^2+2(\mathbf y-\hat{\mathbf y})^T\mathbf r+\|\mathbf r\|^2\\
+&amp;=\|\mathbf y-\hat{\mathbf y}\|^2+\|\mathbf r\|^2\ge\|\mathbf r\|^2.
+\end{aligned}
+\]</div><p>这就是最优性的几何证明。参数可能不唯一，但列空间内的最近预测唯一。满列秩时，投影矩阵可写为</p><div class="eqchain">\[
+P=X(X^TX)^{-1}X^T,\quad \hat{\mathbf y}=P\mathbf t,\quad
+P^T=P,\quad P^2=X(X^TX)^{-1}(X^TX)(X^TX)^{-1}X^T=P.
+\]</div><p>对称性与幂等性描述正交投影：投影后再投影不会变化。秩不足时统一写成 \(P=XX^+\)。本文残差是 \(\mathbf r=\hat{\mathbf y}-\mathbf t\)，图中箭头从目标指向投影点；从投影点指向目标的箭头表示 \(-\mathbf r\)。</p><figure class="diagram-wrap" id="a6-projection"><svg aria-label="目标向量投影到设计矩阵列空间的几何图" class="projection-diagram" role="img" viewbox="0 0 900 360">
+<defs><marker id="arrP" markerheight="9" markerwidth="9" orient="auto" refx="8" refy="4.5"><path d="M0,0 L9,4.5 L0,9 z" fill="#2572ae"></path></marker><marker id="arrR" markerheight="9" markerwidth="9" orient="auto" refx="8" refy="4.5"><path d="M0,0 L9,4.5 L0,9 z" fill="#b43b3b"></path></marker></defs>
+<polygon class="space" points="95,280 620,280 805,105 285,105"></polygon>
+<text x="655" y="265">列空间 𝒞(X)</text>
+<line class="vec" marker-end="url(#arrP)" x1="210" x2="525" y1="280" y2="165"></line>
+<text class="math" x="380" y="205">ŷ = Xw*</text>
+<line class="res" marker-end="url(#arrR)" x1="525" x2="620" y1="165" y2="45"></line>
+<text class="math" x="595" y="115">−r = t − ŷ</text>
+<line class="vec" marker-end="url(#arrP)" x1="210" x2="620" y1="280" y2="45"></line>
+<text class="math" x="430" y="115">t</text>
+<path class="right" d="M505 173 L516 187 L530 176"></path>
+<text class="muted" x="105" y="322">正规方程 Xᵀ(Xw*−t)=0 等价于 Xᵀr=0</text>
+</svg><figcaption>目标到列空间投影的反向残差为 −r；统一残差 r=ŷ−t。</figcaption></figure><p>这种正交基于欧氏内积。如果每个样本具有不同观测方差，加权损失使用 W，则条件变为 \(X^TW\mathbf r=0\)，正交应在相应加权内积中理解。</p><p class="source-note">出处：PRML §3.1.2，印刷 p.143，图3.2；MML §3.8，pp.81–90，§9.4，pp.313–315。</p></div></article><article class="knowledge-point" id="a7"><p class="kicker">A7 · 线性回归</p><h2>高斯观测模型与最大似然</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>平方损失还需要说明它适合怎样的数据生成过程。</div><div class="derivation"><p>在 A3 中平方代价来自预测决策；现在从数据生成假设出发估计权重。假设条件于输入与参数，各目标独立，且具有相同已知方差 \(\sigma^2&gt;0\)：</p><div class="eqchain">\[
+t_n=\mathbf w^T\boldsymbol\phi_n+\varepsilon_n,\quad \varepsilon_n\sim\mathcal N(0,\sigma^2),\quad
+p(t_n\mid x_n,\mathbf w,\sigma^2)=\frac1{\sqrt{2\pi\sigma^2}}\exp\left[-\frac{(t_n-\mathbf w^T\boldsymbol\phi_n)^2}{2\sigma^2}\right].
+\]</div><p>固定数据，似然是关于参数的函数。独立性给出联合似然的乘积，取对数把乘积变成和：</p><div class="eqchain">\[
+\begin{aligned}
+p(\mathbf t\mid X,\mathbf w,\sigma^2)&amp;=\prod_np(t_n\mid x_n,\mathbf w,\sigma^2),\\
+\ell&amp;=\sum_n\left[-\tfrac12\log(2\pi\sigma^2)-\frac{(t_n-\mathbf w^T\boldsymbol\phi_n)^2}{2\sigma^2}\right]\\
+&amp;=-\frac N2\log(2\pi\sigma^2)-\frac{\|X\mathbf w-\mathbf t\|^2}{2\sigma^2}
+=-\frac N2\log(2\pi\sigma^2)-\frac N{\sigma^2}L(\mathbf w).
+\end{aligned}
+\]</div><p>固定方差时，第一项与权重无关，第二项是 L 的负的常数倍，因此 \(\arg\max\ell=\arg\min L\)。平方残差的符号不影响平方，但梯度和图示中的符号仍应遵守统一约定。</p><p>如果还要估计方差，令 \(v=\sigma^2\)、\(S(\mathbf w)=\|X\mathbf w-\mathbf t\|^2\)，对 v 求导：</p><div class="eqchain">\[
+\frac{\partial\ell}{\partial v}=-\frac N{2v}+\frac{S}{2v^2}=0
+\Rightarrow v=\frac SN,\qquad
+\left.\frac{\partial^2\ell}{\partial v^2}\right|_{v=S/N}=-\frac N{2v^2}&lt;0\quad(S&gt;0).
+\]</div><p>当最小残差平方和 \(S^*&gt;0\) 时，联合 ML 为最小二乘权重与 \(\hat\sigma^2=S^*/N=2L(\mathbf w^*)\)。这不是无偏方差估计：满列秩且参数数目 d=M+1 时，常见无偏残差方差为 \(S^*/(N-d)\)，要求 N&gt;d。</p><p>若模型能完全插值，\(S^*=0\)，让 \(v\downarrow0\) 会使似然无限增大。方差要求严格为正时不存在有限联合最大值，不能把“估计为零”当作正常非退化高斯解。固定正方差的权重 ML 仍与最小二乘相同。若已知噪声方差不同，负对数似然对应 \(\frac12\sum_nr_n^2/\sigma_n^2\)，而非普通最小二乘。</p><p class="source-note">出处：PRML §3.1.1，印刷 pp.140–143，式(3.7)–(3.21)。联合零残差退化由该似然在正方差边界的极限直接分析。</p></div></article><article class="knowledge-point" id="a8"><p class="kicker">A8 · 线性回归</p><h2>从概率规则到斜率的贝叶斯更新</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>似然、先验和后验若没有条件概率基础，很容易只剩符号搬运。</div><div class="derivation"><p>概率推断必须把哪些量随机、哪些量已给定说清楚。离散边缘化是求和，连续边缘化是积分。乘积规则来自条件概率定义；将同一个联合分布按两种次序分解，就得到贝叶斯规则：</p><div class="eqchain">\[
+p(a)=\sum_bp(a,b)\quad\text{或}\quad p(a)=\int p(a,b)\,db,\qquad
+p(a,b)=p(b\mid a)p(a)=p(a\mid b)p(b),\qquad
+p(b\mid a)=\frac{p(a\mid b)p(b)}{p(a)}.
+\]</div><p>概率密度在某个点的数值可以大于 1，积分才给概率。似然固定观测、改变参数；它本身一般没有对参数归一化。后验则是将先验与似然相乘，再除以证据，得到真正关于参数的密度。</p><p>考虑已知截距为零的回归 \(t_n=ax_n+\varepsilon_n\)。斜率 a 是随机参数，先验 \(a\sim\mathcal N(m_0,v_0)\)，\(v_0&gt;0\)，观测噪声方差 \(\sigma^2&gt;0\) 已知。记 \(S_{xx}=\sum_nx_n^2\)、\(S_{xt}=\sum_nx_nt_n\)、\(S_{tt}=\sum_nt_n^2\)。先验与似然分别为</p><div class="eqchain">\[
+p(a)=\frac1{\sqrt{2\pi v_0}}e^{-(a-m_0)^2/(2v_0)},\qquad
+p(\mathbf t\mid\mathbf x,a)=(2\pi\sigma^2)^{-N/2}\exp\left[-\frac{S_{tt}-2aS_{xt}+a^2S_{xx}}{2\sigma^2}\right].
+\]</div><p>相乘后指数中的二次式可以配方。定义后验精度、线性项与常数项为</p><div class="eqchain">\[
+q=\frac1{v_0}+\frac{S_{xx}}{\sigma^2},\quad b=\frac{m_0}{v_0}+\frac{S_{xt}}{\sigma^2},\quad c=\frac{m_0^2}{v_0}+\frac{S_{tt}}{\sigma^2}.
+\]</div><p>逐步配方，而不是只给高斯结论：</p><div class="eqchain">\[
+qa^2-2ba+c=q\left(a-\frac bq\right)^2+c-\frac{b^2}{q},\qquad
+v_N=q^{-1},\quad m_N=\frac bq=v_N\left(\frac{m_0}{v_0}+\frac{S_{xt}}{\sigma^2}\right).
+\]</div><p>证据是对 a 积分，不是取似然最大值。利用高斯积分 \(\int e^{-q(a-m_N)^2/2}da=\sqrt{2\pi/q}\)，得到完整归一化常数：</p><div class="eqchain">\[
+\begin{aligned}
+p(\mathbf t\mid\mathbf x)&amp;=\int p(\mathbf t\mid\mathbf x,a)p(a)da\\
+&amp;=(2\pi\sigma^2)^{-N/2}\sqrt{\frac{v_N}{v_0}}\exp\left[-\frac12\left(c-\frac{b^2}{q}\right)\right],\\
+p(a\mid\mathbf x,\mathbf t)&amp;=\frac{p(\mathbf t\mid\mathbf x,a)p(a)}{p(\mathbf t\mid\mathbf x)}
+=\frac1{\sqrt{2\pi v_N}}e^{-(a-m_N)^2/(2v_N)}.
+\end{aligned}
+\]</div><p>若 \(S_{xx}&gt;0\)，最大似然斜率 \(a_{ML}=S_{xt}/S_{xx}\)，后验均值为先验均值与数据斜率的精度加权平均：</p><div class="eqchain">\[
+m_N=\frac{v_0^{-1}m_0+(S_{xx}/\sigma^2)a_{ML}}{v_0^{-1}+S_{xx}/\sigma^2},\qquad v_N\le v_0.
+\]</div><p>例如先验 \(\mathcal N(0,1)\)，单点 x=1,t=2，噪声方差为 1，则后验为 \(\mathcal N(1,1/2)\)，证据为 \(\mathcal N(2\mid0,2)=e^{-1}/\sqrt{4\pi}\)。数据把斜率向 2 拉动，但先验仍保留作用。若所有 x 都为零，数据不含斜率信息，后验等于先验。</p><figure class="diagram-wrap" id="a8-posterior"><svg aria-label="斜率先验N(0,1)与后验N(1,1/2)的概念对照" role="img" viewbox="0 0 700 250"><line stroke="currentColor" x1="60" x2="650" y1="195" y2="195"></line><path d="M70 192 C140 192 160 60 250 60 C340 60 360 192 460 192" fill="none" stroke="#2572ae" stroke-width="3"></path><path d="M240 192 C310 192 340 30 395 30 C450 30 470 192 535 192" fill="none" stroke="#b43b3b" stroke-width="3"></path><text fill="currentColor" x="95" y="35">先验 a∼N(0,1)</text><text fill="currentColor" x="460" y="55">后验 a∼N(1,1/2)</text><text fill="currentColor" x="240" y="220">0</text><text fill="currentColor" x="390" y="220">1</text><text fill="currentColor" x="560" y="220">斜率 a</text></svg><figcaption>概念示意：单点x=1、t=2、噪声方差1；后验中心移动、方差缩小。曲线用于说明形状，纵轴不是数值标尺。</figcaption></figure><p>后续方差分析需要期望与协方差。对连续变量，\(\mathbb E[f(U)]=\int f(u)p(u)du\)。将定义中的平方或乘积展开，得到</p><div class="eqchain">\[
+\begin{aligned}
+\operatorname{Var}(U)&amp;=\mathbb E[(U-\mu)^2]=\mathbb E[U^2]-2\mu\mathbb E[U]+\mu^2=\mathbb E[U^2]-\mu^2,\\
+\operatorname{Cov}(U,V)&amp;=\mathbb E[(U-\mu_U)(V-\mu_V)]=\mathbb E[UV]-\mu_U\mu_V.
+\end{aligned}
+\]</div><p class="source-note">出处：PRML §1.2，印刷 pp.12–21 的概率规则；§3.3.1，pp.152–154，式(3.48)–(3.55)；MML §6.3–6.6，pp.183–213。一维斜率、证据与数值例为依规则自行配方。</p></div></article><article class="knowledge-point" id="a9"><p class="kicker">A9 · 线性回归</p><h2>损失与统计假设的对应</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>不同任务对错误的定义不同，需要知道损失来自代价还是概率模型。</div><div class="derivation"><p>损失可以来自任务所规定的代价，也可以来自所采用的观测分布。两条路径有时给出同一表达式，但含义不同。例如平方决策损失要求条件均值，Gaussian 观测模型使参数 ML 化成最小二乘；不能据此倒推真实噪声一定高斯。</p><p>对 Laplace 观测噪声，令尺度 b&gt;0，有</p><div class="eqchain">\[
+p(t\mid y,b)=\frac1{2b}e^{-|t-y|/b},\quad
+-\log p(t\mid y,b)=\log(2b)+\frac{|t-y|}{b}.
+\]</div><p>固定尺度时最大似然等价于最小化绝对残差。平方惩罚的增长是二次的，绝对惩罚是线性的，因此极端残差对两种目标的影响不同。就总体决策而言，绝对误差风险的导数（分布连续时）为 \(2F_{T\mid x}(a)-1\)，其零点为条件中位数。</p><p>分类标签是离散变量，应使用离散观测概率。Bernoulli 标签 t∈{0,1}、预测正类概率 p 时：</p><div class="eqchain">\[
+p(t\mid p)=p^t(1-p)^{1-t},\quad -\log p(t\mid p)=-t\log p-(1-t)\log(1-p).
+\]</div><p>K 类单热标签满足 \(\sum_kt_k=1\)，预测概率满足 \(p_k\ge0,\sum_kp_k=1\)，categorical 似然为 \(\prod_kp_k^{t_k}\)，负对数为 \(-\sum_kt_k\log p_k\)。这就是交叉熵的统计来源，第二讲会进一步求它对模型参数的导数。</p><p>0–1 代价 \(\mathbf1[\hat c\ne c]\) 直接衡量是否分类错误，但对连续参数通常难以求导。Hinge 代价 \(\max(0,1-ta)\) 使用 t∈{−1,1} 与未归一化得分 a，要求正确符号之外还具有间隔。概率交叉熵与 hinge 使用不同输出和标签约定，必须先确认模型输出，再选择目标。</p><p class="source-note">出处：PRML §1.5.5，印刷 pp.46–48；§4.3.2–4.3.4，pp.205–210；Laplace 观测负对数与 Bernoulli/categorical 展开为本讲直接推导。</p></div></article><article class="knowledge-point" id="a10"><p class="kicker">A10 · 线性回归</p><h2>梯度下降与二次目标的步长条件</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>解析解只属于少数模型，普遍做法是从当前位置小步改进。</div><div class="derivation"><p>正规方程给出小规模线性模型的解析解；一般模型要从当前参数逐步改进。梯度提供一阶变化：</p><div class="eqchain">\[
+L(\mathbf w+\Delta\mathbf w)=L(\mathbf w)+\nabla L(\mathbf w)^T\Delta\mathbf w+O(\|\Delta\mathbf w\|^2).
+\]</div><p>在固定小步长长度下，Cauchy–Schwarz 不等式给出 \(\nabla L^T\Delta\mathbf w\ge-\|\nabla L\|\|\Delta\mathbf w\|\)，等号发生在反梯度方向。因此取 \(\Delta\mathbf w=-\eta\nabla L\)，\(\eta&gt;0\)：</p><div class="eqchain">\[
+L(\mathbf w-\eta\nabla L)\approx L(\mathbf w)-\eta\nabla L^T\nabla L=L(\mathbf w)-\eta\|\nabla L\|^2.
+\]</div><p>这一近似只有在高阶项足够小时说明下降。对于本讲平均最小二乘，二阶展开精确成立，Hessian 为 \(H=X^TX/N\)：</p><div class="eqchain">\[
+\mathbf w_{k+1}=\mathbf w_k-\frac\eta N X^T(X\mathbf w_k-\mathbf t),\quad
+L(\mathbf w-\eta\mathbf g)-L(\mathbf w)=-\eta\|\mathbf g\|^2+\frac{\eta^2}2\mathbf g^TH\mathbf g
+\le-\eta\left(1-\frac{\eta h_{max}}2\right)\|\mathbf g\|^2.
+\]</div><p>其中 \(h_{max}=\lambda_{max}(H)\)。若 hmax&gt;0，选择 \(0&lt;\eta&lt;2/h_{max}\) 可使非零梯度时严格下降。为了看清收敛，再令 \(\mathbf e_k=\mathbf w_k-\mathbf w^*\)，利用 \(\nabla L(\mathbf w^*)=0\) 得</p><div class="eqchain">\[
+\mathbf e_{k+1}=(I-\eta H)\mathbf e_k,\quad H=Q\operatorname{diag}(h_j)Q^T,\quad
+\tilde e_{k+1,j}=(1-\eta h_j)\tilde e_{k,j}.
+\]</div><p>每个正曲率方向要求 \(|1-\eta h_j|&lt;1\)。零曲率方向没有下降信息，初始化中的零空间分量不会被梯度下降改变。若 H=0，则梯度也为零，目标不随权重变化。未经平均的平方和 Hessian 为 XᵀX，稳定步长范围与这里相差 N 倍。</p><p class="source-note">出处：MML §5.8、§7.1，pp.165–169、227–232；PRML §3.1.3，pp.143–144。特征方向与平均目标步长界为二次函数的直接推导。</p></div></article><article class="knowledge-point" id="a11"><p class="kicker">A11 · 线性回归</p><h2>小批量梯度的无偏性与方差</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>全数据梯度准确但昂贵，单样本梯度便宜但噪声大。</div><div class="derivation"><p>将平均目标写成 \(L=N^{-1}\sum_n\ell_n\)，其中 \(\ell_n=\frac12(\mathbf w^T\boldsymbol\phi_n-t_n)^2\)。单样本梯度按链式法则为</p><div class="eqchain">\[
+\mathbf g_n=\nabla\ell_n=(\mathbf w^T\boldsymbol\phi_n-t_n)\boldsymbol\phi_n,\quad
+\bar{\mathbf g}=\nabla L=\frac1N\sum_n\mathbf g_n,\quad
+\hat{\mathbf g}_{\mathcal B}=\frac1B\sum_{b=1}^{B}\mathbf g_{I_b}.
+\]</div><p>这里需要明确抽样：条件于当前参数，从 N 个索引独立、均匀、有放回地抽取 Ib。每次抽样梯度的期望为全梯度，因此</p><div class="eqchain">\[
+\mathbb E[\hat{\mathbf g}_{\mathcal B}\mid\mathbf w]=\frac1B\sum_b\frac1N\sum_n\mathbf g_n=\bar{\mathbf g}.
+\]</div><p>无偏并不表示每次梯度都准确。定义有限训练集上的单次抽样协方差</p><div class="eqchain">\[
+C=\frac1N\sum_n(\mathbf g_n-\bar{\mathbf g})(\mathbf g_n-\bar{\mathbf g})^T.
+\]</div><p>独立抽样使不同 b 的交叉协方差为零，因此平均的协方差为</p><div class="eqchain">\[
+\operatorname{Cov}(\hat{\mathbf g}_{\mathcal B}\mid\mathbf w)=\frac1{B^2}\sum_{b,c}\operatorname{Cov}(\mathbf g_{I_b},\mathbf g_{I_c})=\frac1{B^2}\sum_bC=\frac CB.
+\]</div><p>均匀无放回抽取 B 个不同索引时，则为 \(\frac{N-B}{B(N-1)}C\)，要求 N&gt;1；B=N 时协方差为零。这不能与有放回公式互换。实践中打乱顺序分批并非每一步都对剩余样本构成全训练集的独立均匀抽样，因此上面的严格无偏声明针对所写抽样机制。</p><p>全批量使用全部样本；SGD 常指 B=1 的更新，也常作为随机梯度方法的统称；mini-batch 使用中等 B 以平衡计算吞吐与方差。\(\mathbf w\leftarrow\mathbf w-\eta\hat{\mathbf g}\)。一个 epoch 表示训练集完成一次遍历，通常约有 \(\lceil N/B\rceil\) 次更新；有放回独立抽样时“一次遍历”仅是约 N 次抽样的计数约定，并不保证每个样本出现过。</p><p class="source-note">出处：PRML §3.1.3，印刷 pp.143–144，式(3.22)–(3.23)；LeeDL §3.2.1，pp.45–48 提供批量背景。无偏与协方差由期望、独立性逐步推出。</p></div></article><article class="knowledge-point" id="a12"><p class="kicker">A12 · 线性回归</p><h2>泛化误差的偏差、方差与噪声</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>训练误差持续下降时，验证误差可能已经回升。</div><div class="derivation"><p>降低训练误差只说明模型更贴合已经观察的数据。若 x 值互异，N 个点对应的 N 阶 Vandermonde 矩阵可逆，次数至多 N−1 的多项式可完全插值。训练损失为零，但高阶系数可能对微小观测扰动非常敏感，未来误差并不会随之归零。</p><p>要解释这种差异，固定一个测试输入 x，并想象重复采集同样规模的独立训练集 D。学习算法输出 \(\hat f_D(x)\)，不同 D 给出不同函数。令 \(f(x)=\mathbb E[T\mid x]\)、\(T=f(x)+\varepsilon\)，其中 \(\mathbb E[\varepsilon\mid x]=0\)、\(\operatorname{Var}(\varepsilon\mid x)=\sigma^2(x)\)，且新测试噪声独立于训练集。</p><p>记 \(\bar f(x)=\mathbb E_D[\hat f_D(x)]\)。把预测误差拆成训练集波动、平均预测偏离和测试噪声：</p><div class="eqchain">\[
+\hat f_D-T=(\hat f_D-\bar f)+(\bar f-f)-\varepsilon.
+\]</div><p>平方后保留所有交叉项，再对 D 和新噪声取期望：</p><div class="eqchain">\[
+\begin{aligned}
+\mathbb E_{D,\varepsilon}[(\hat f_D-T)^2\mid x]
+&amp;=\mathbb E_D[(\hat f_D-\bar f)^2]+(\bar f-f)^2+\mathbb E[\varepsilon^2\mid x]\\
+&amp;\quad+2(\bar f-f)\mathbb E_D[\hat f_D-\bar f]\\
+&amp;\quad-2\mathbb E_{D,\varepsilon}[(\hat f_D-\bar f)\varepsilon\mid x]-2(\bar f-f)\mathbb E[\varepsilon\mid x]\\
+&amp;=\underbrace{(\bar f-f)^2}_{\text{偏差平方}}+\underbrace{\mathbb E_D[(\hat f_D-\bar f)^2]}_{\text{方差}}+\underbrace{\sigma^2(x)}_{\text{不可约噪声}}.
+\end{aligned}
+\]</div><p>第一交叉项由中心化为零；第二项由测试噪声与 D 独立且零均值为零；第三项由条件零均值为零。最后再对输入分布积分，得到总体测试 MSE：</p><div class="eqchain">\[
+\mathbb E_{x,D,T}[(\hat f_D(x)-T)^2]=\int[\operatorname{Bias}(x)^2+\operatorname{Var}_D(\hat f_D(x))+\sigma^2(x)]p(x)dx.
+\]</div><p>若使用半平方代价，右侧整体乘 1/2。偏差是重复训练后的平均预测与真实条件均值之差；方差是重复训练结果的波动，而不是一个训练集中的目标方差。灵活模型常减少偏差并增加方差，这是一种常见现象，不是所有算法必然遵循的单调定律。</p><figure class="diagram-wrap" id="a12-bias-variance"><svg aria-label="测试平方误差分解为偏差平方、方差和噪声" role="img" viewbox="0 0 760 240"><g fill="none" stroke="currentColor"><rect height="110" rx="12" width="200" x="25" y="65"></rect><rect height="110" rx="12" width="200" x="280" y="65"></rect><rect height="110" rx="12" width="200" x="535" y="65"></rect></g><g fill="currentColor" text-anchor="middle"><text x="125" y="105">偏差平方</text><text x="125" y="140">平均预测偏离真实均值</text><text x="253" y="125">＋</text><text x="380" y="105">方差</text><text x="380" y="140">不同训练集的预测波动</text><text x="508" y="125">＋</text><text x="635" y="105">不可约噪声</text><text x="635" y="140">新观测自身的随机性</text><text x="380" y="35">固定测试输入 x 的期望平方误差</text><text x="380" y="215">概念分解图；不是某个实验的测量结果</text></g></svg></figure><p>训练集用于估计权重；验证集用于选择次数、正则强度等超参数；测试集用于整个选择过程完成后的评估。偏差方差分解依赖无法直接观测的 f 与重复数据集，通常用于理论解释；不能仅从一条训练曲线直接测出三项。</p><p class="source-note">出处：PRML §3.2，印刷 pp.147–152，式(3.36)–(3.44)，图3.5–3.6；LeeDL §2.1–2.4，pp.29–36。图为概念示意，不表示测量曲线。</p></div></article><article class="knowledge-point" id="a13"><p class="kicker">A13 · 线性回归</p><h2>岭回归、MAP 与完整后验预测</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>过拟合出现后，需要一个连续可调的复杂度旋钮。</div><div class="derivation"><p>岭回归在数据拟合之外惩罚权重幅度。为明确截距处理，定义 \(D=\operatorname{diag}(0,1,\ldots,1)\)，不惩罚 w0；惩罚所有参数时用 D=I。平均目标为</p><div class="eqchain">\[
+J(\mathbf w)=\frac1{2N}\|X\mathbf w-\mathbf t\|^2+\frac\lambda2\mathbf w^TD\mathbf w,\quad
+\nabla J=\frac1NX^T(X\mathbf w-\mathbf t)+\lambda D\mathbf w.
+\]</div><p>将梯度设为零并乘 N，得到</p><div class="eqchain">\[
+X^TX\mathbf w-X^T\mathbf t+N\lambda D\mathbf w=0
+\Rightarrow (X^TX+N\lambda D)\mathbf w=X^T\mathbf t
+\Rightarrow \mathbf w_{ridge}=(X^TX+N\lambda D)^{-1}X^T\mathbf t.
+\]</div><p>最后一式要求矩阵可逆。D=I、λ&gt;0 时必然正定；D 不惩罚偏置时，应检查 \(\ker X\cap\ker D=\{0\}\)。含全1截距列且 N&gt;0、其他参数均被惩罚时满足此条件。普通梯度下降的正则更新为</p><div class="eqchain">\[
+\mathbf w\leftarrow\mathbf w-\eta[\nabla L+\lambda D\mathbf w]=(I-\eta\lambda D)\mathbf w-\eta\nabla L.
+\]</div><p>因此截距保留，其余参数受到收缩。这里是 SGD 对耦合 L2 惩罚的代数表达；不能据此把所有优化器中的权重衰减都视作同一实现。</p><p>现在给参数一个 proper Gaussian 先验 \(\mathbf w\sim\mathcal N(\mathbf m_0,S_0)\)，\(S_0\succ0\)。已知正噪声方差时，记 \(A=S_0^{-1}+X^TX/\sigma^2\)、\(\mathbf b=S_0^{-1}\mathbf m_0+X^T\mathbf t/\sigma^2\)。似然与先验相乘的负对数，忽略与 w 无关项：</p><div class="eqchain">\[
+\begin{aligned}
+-\log[p(\mathbf t\mid X,\mathbf w)p(\mathbf w)]
+&amp;=\frac1{2\sigma^2}(\mathbf t-X\mathbf w)^T(\mathbf t-X\mathbf w)
++\frac12(\mathbf w-\mathbf m_0)^TS_0^{-1}(\mathbf w-\mathbf m_0)+C\\
+&amp;=\frac12\mathbf w^TA\mathbf w-\mathbf b^T\mathbf w+C'\\
+&amp;=\frac12(\mathbf w-A^{-1}\mathbf b)^TA(\mathbf w-A^{-1}\mathbf b)+C''.
+\end{aligned}
+\]</div><p>配方说明归一化后后验仍是高斯：</p><div class="eqchain">\[
+S_N=A^{-1},\quad \mathbf m_N=S_N\mathbf b,\quad
+p(\mathbf w\mid X,\mathbf t)=\frac{\exp[-\tfrac12(\mathbf w-\mathbf m_N)^TS_N^{-1}(\mathbf w-\mathbf m_N)]}{(2\pi)^{(M+1)/2}|S_N|^{1/2}}.
+\]</div><p>高斯分布的均值与众数相同，故 \(\mathbf w_{MAP}=\mathbf m_N\)。取零均值各向同性先验 \(S_0=\tau^2I\)，负对数先验为 \(\|\mathbf w\|^2/(2\tau^2)+C\)。将完整负对数乘以 \(\sigma^2/N\)，得到平均平方目标与岭项，因此</p><div class="eqchain">\[
+\lambda=\frac{\sigma^2}{N\tau^2},\qquad
+\mathbf m_N=(X^TX+\sigma^2\tau^{-2}I)^{-1}X^T\mathbf t.
+\]</div><p>不惩罚偏置可解释为截距采用平坦的不正规先验，其他参数采用 Gaussian 先验；它不能称作具有有限协方差的完整 Gaussian 先验。只要后验精度正定，后验仍可归一化，但不正规先验不能直接用于具有唯一绝对归一化常数的证据比较。</p><p>MAP 只输出一个权重点，贝叶斯预测要对后验积分。对新输入特征 \(\boldsymbol\phi_*\)，有 \(T_*=\boldsymbol\phi_*^T\mathbf w+\varepsilon_*\)。后验权重与独立新噪声都是 Gaussian，因此</p><div class="eqchain">\[
+\begin{aligned}
+p(T_*\mid x_*,X,\mathbf t)&amp;=\int p(T_*\mid x_*,\mathbf w)p(\mathbf w\mid X,\mathbf t)d\mathbf w\\
+&amp;=\mathcal N\left(T_*\mid \boldsymbol\phi_*^T\mathbf m_N,\ \sigma^2+\boldsymbol\phi_*^TS_N\boldsymbol\phi_*\right),\\
+\mathbb E[T_*\mid\mathcal D]&amp;=\boldsymbol\phi_*^T\mathbf m_N,\\
+\operatorname{Var}(T_*\mid\mathcal D)&amp;=\mathbb E_{\mathbf w}[\operatorname{Var}(T_*\mid\mathbf w)]+\operatorname{Var}_{\mathbf w}[\mathbb E(T_*\mid\mathbf w)]\\
+&amp;=\sigma^2+\boldsymbol\phi_*^TS_N\boldsymbol\phi_*.
+\end{aligned}
+\]</div><p>在此模型与已知超参数条件下，约95%的等尾后验预测区间是 \(\mu_*\pm1.96\sqrt{\sigma^2+\boldsymbol\phi_*^TS_N\boldsymbol\phi_*}\)。若只关心无噪声回归均值 \(f_*\)，区间应去掉 σ²。MAP 的预测均值与这里相同，但单独一个 MAP 点不能提供参数不确定性。估计超参数后将其当作固定值，会忽略超参数不确定性。</p><p class="source-note">出处：PRML §3.1.4，印刷 pp.144–146，式(3.24)–(3.30)；§3.3.1–3.3.2，pp.152–156，式(3.48)–(3.59)。本讲采用平均目标，故 PRML 平方和系数等于 Nλ。</p></div></article><article class="knowledge-point" id="a14"><p class="kicker">A14 · 线性回归</p><h2>Laplace 参数先验与稀疏解</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>若我们希望模型自动放弃一部分特征，仅缩小还不够。</div><div class="derivation"><p>A9 的 Laplace 噪声给绝对残差；这里将 Laplace 分布放在参数上，得到绝对权重惩罚，两者作用位置不同。令非偏置权重独立且 \(p(w_j)=(2b)^{-1}e^{-|w_j|/b}\)，则</p><div class="eqchain">\[
+-\log p(\mathbf w)=\frac1b\sum_{j=1}^{M}|w_j|+C,
+\quad J_1=L+\lambda\sum_{j=1}^{M}|w_j|,\quad \lambda=\frac{\sigma^2}{Nb}.
+\]</div><p>该映射由 Gaussian 负对数似然加参数负对数先验，再乘 σ²/N 得到。绝对值在零点没有普通导数，凸优化使用次梯度：</p><div class="eqchain">\[
+\partial|w_j|=\begin{cases}\{1\},&amp;w_j&gt;0,\\{}[-1,1],&amp;w_j=0,\\\{-1\},&amp;w_j&lt;0.\end{cases}
+\]</div><p>若 \(w_j=0\) 是最优解，该坐标的一阶条件为</p><div class="eqchain">\[
+0\in\frac{\partial L}{\partial w_j}+\lambda[-1,1]
+\quad\Longleftrightarrow\quad\left|\frac{\partial L}{\partial w_j}\right|\le\lambda.
+\]</div><p>这说明一个完整梯度区间可被惩罚抵消，因此最优解可以精确为零。为了看清数值如何收缩，考虑一维子问题 \(F(w)=\frac12(w-a)^2+\lambda|w|\)，分三种情况求解：</p><div class="eqchain">\[
+\begin{aligned}
+w&gt;0:&amp;\quad F'(w)=w-a+\lambda=0\Rightarrow w=a-\lambda&gt;0\Leftrightarrow a&gt;\lambda;\\
+w&lt;0:&amp;\quad F'(w)=w-a-\lambda=0\Rightarrow w=a+\lambda&lt;0\Leftrightarrow a&lt;-\lambda;\\
+w=0:&amp;\quad 0\in-a+\lambda[-1,1]\Leftrightarrow |a|\le\lambda.
+\end{aligned}
+\]</div><p>因此软阈值解为</p><div class="eqchain">\[
+w^*=\begin{cases}a-\lambda,&amp;a&gt;\lambda,\\0,&amp;|a|\le\lambda,\\a+\lambda,&amp;a&lt;-\lambda,\end{cases}
+=\operatorname{sign}(a)\max(|a|-\lambda,0).
+\]</div><p>这三个分支包括边界 a=±λ，都给出零。作为比较，二次惩罚的一维问题 \(\frac12(w-a)^2+\frac\lambda2w^2\) 给 \(w=a/(1+\lambda)\)，a 非零时不会变为精确零。多维相关设计矩阵的 Lasso 一般不能对最小二乘解逐元素套用一次软阈值；软阈值用于合适的正交情形、坐标更新或近端步骤。</p><p class="source-note">出处：PRML §3.1.4，印刷 pp.145–146，§3.3.1，p.156，式(3.29)、(3.56)；次梯度与软阈值三个分支为本讲逐步求解。</p></div></article><article class="knowledge-point" id="a15"><p class="kicker">A15 · 线性回归</p><h2>交叉验证、标准化与无泄漏评估</h2><div class="why-now"><strong>先回答：为什么现在需要它？</strong>样本少时，一次划分可能偶然；预处理也可能偷看验证信息。</div><div class="derivation"><p>模型次数与正则强度是超参数，不能通过最小化含 λ 的训练目标来直接选 λ，否则它会倾向于取消惩罚。将数据拆成 K 个验证折 Vk，第 k 次仅用其余样本 Tk 学习参数。每折验证损失为</p><div class="eqchain">\[
+\hat R_k(h)=\frac1{|V_k|}\sum_{n\in V_k}\ell(t_n,\hat f_{T_k,h}(x_n)),\qquad
+\hat R_{CV}(h)=\frac1K\sum_k\hat R_k(h).
+\]</div><p>折大小不等时，应明确使用等折权重还是按验证样本数加权。选择 \(h^*=\arg\min_h\hat R_{CV}(h)\) 后，在全部开发训练数据上重新拟合预处理与参数，最后只在独立测试集评估一次。没有独立测试集时，可用外层评估、内层选择的嵌套交叉验证评估包含超参数选择的完整流程，避免同一验证结果同时用于选择和评价所造成的乐观偏差；它并不保证对所有目标总体严格无偏。</p><p>预处理本身也有待估参数。第 k 折的特征均值与尺度必须只由 Tk 计算：</p><div class="eqchain">\[
+\mu_j^{(k)}=\frac1{|T_k|}\sum_{n\in T_k}x_{nj},\qquad
+s_j^{(k)}=\sqrt{\frac1{|T_k|}\sum_{n\in T_k}(x_{nj}-\mu_j^{(k)})^2},\qquad
+z_{nj}^{(k)}=\frac{x_{nj}-\mu_j^{(k)}}{s_j^{(k)}}.
+\]</div><p>训练部分和验证部分都使用同一组 \(\mu^{(k)},s^{(k)}\)。若某列 s=0，应在这一折按预先规定的规则删除该列或令尺度为1；不能除零。全1截距列不做标准化。这里分母使用训练样本数，表示变换的经验尺度，并非要计算总体方差的无偏估计。</p><p>标准化改善尺度差异导致的优化条件，也改变同一数值正则系数对各物理特征的含义。它不能创造新信息；若在划分前计算全数据均值，验证样本已经影响训练管线，产生泄漏。同理，特征筛选、插补、降维和类别编码的拟合都要在每一训练折内部完成。</p><p>标准化后线性模型如何返回原单位也可以直接展开。若 \(y=b+\sum_jv_j(x_j-\mu_j)/s_j\)，则</p><div class="eqchain">\[
+w_j=\frac{v_j}{s_j},\qquad w_0=b-\sum_j\frac{v_j\mu_j}{s_j},\qquad y=w_0+\sum_jw_jx_j.
+\]</div><p>最后，随机 K 折需要样本近似可交换；时间序列应尊重时间顺序，同一主体的相关样本应按主体分组。验证误差是选择依据，测试误差是完成选择后的评价，两者不应承担同一角色。</p><p class="source-note">出处：PRML §1.3，印刷 pp.32–33；MML §8.6，pp.283–287；LeeDL §2.4，pp.35–36。逐折预处理与尺度还原为本讲管线规则及代数展开。</p></div></article><nav aria-label="相邻页面" class="page-nav"><a href="index.html">← 课程总览</a><a href="lecture-2.html">第二讲：从分类分数到交叉熵 →</a></nav></main>
+<aside aria-label="本讲目录" class="chapter-outline"><h2>第一讲目录</h2><label class="sr-only" for="page-search">搜索本页</label><input data-page-search="" id="page-search" placeholder="搜索本讲全部知识点…"/><nav class="toc"><a href="#a1">A1 多项式与线性基函数模型</a><a href="#a2">A2 设计矩阵与整批预测</a><a href="#a3">A3 平方风险为什么预测条件均值</a><a href="#a4">A4 正规方程、凸性与解的唯一性</a><a href="#a5">A5 三个样本的完整最小二乘计算</a><a href="#a6">A6 最小二乘的正交投影</a><a href="#a7">A7 高斯观测模型与最大似然</a><a href="#a8">A8 从概率规则到斜率的贝叶斯更新</a><a href="#a9">A9 损失与统计假设的对应</a><a href="#a10">A10 梯度下降与二次目标的步长条件</a><a href="#a11">A11 小批量梯度的无偏性与方差</a><a href="#a12">A12 泛化误差的偏差、方差与噪声</a><a href="#a13">A13 岭回归、MAP 与完整后验预测</a><a href="#a14">A14 Laplace 参数先验与稀疏解</a><a href="#a15">A15 交叉验证、标准化与无泄漏评估</a></nav></aside></div>
+<script src="assets/js/math-models.js"></script><script src="assets/js/theme.js"></script><script src="assets/js/navigation.js"></script><script src="assets/js/learning-state.js"></script><script src="assets/js/search.js"></script><script src="assets/js/code-copy.js"></script></body></html>

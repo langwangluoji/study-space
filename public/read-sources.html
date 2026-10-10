@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>教材与官方资源 · 课程知识库</title><script>(function(){try{var t=localStorage.getItem('ml-course-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}}());</script><link href="assets/css/base.css" rel="stylesheet"/><link href="assets/css/layout.css" rel="stylesheet"/><link href="assets/css/components.css" rel="stylesheet"/><link href="assets/css/architecture.css" rel="stylesheet"/><link href="assets/favicon.svg" rel="icon"/><link href="assets/css/readers.css" rel="stylesheet"/><script>window.MathJax={"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "svg": {"fontCache": "global"}};</script><script defer="" src="assets/vendor/mathjax/tex-svg.js"></script></head><body data-page="resource-reader"><a class="skip-link" href="#main-content">跳到正文</a><header class="site-header library-header"><a class="brand" href="index.html">课程知识库</a><nav aria-label="全站导航" class="course-nav"><a href="index.html">知识库</a><a aria-current="page" href="course-ml.html">机器学习</a><a href="resources.html">资料中心</a></nav><div class="header-actions"><button aria-label="展开课程与本讲目录" class="icon-button mobile-toc-toggle" data-toc-toggle="" type="button">☰</button><button aria-label="切换主题" class="icon-button" data-theme-toggle="" type="button">☀</button></div></header><main class="resource-reader content" id="main-content"><nav aria-label="面包屑" class="breadcrumbs"><a href="index.html">知识库</a><span>/</span><a href="resources.html">资料中心</a><span>/</span><span>教材与官方资源</span></nav><h1>教材与官方资源</h1><div class="reader-toolbar"><a download="" href="sources.md">下载原始文件</a><a href="course-ml.html">返回课程</a></div><div class="reader-layout"><aside class="reader-toc"><h2>本页目录</h2><a href="#r-1">资料来源与使用边界</a><a href="#r-2">本地课程材料（内容基线）</a><a href="#r-3">第一讲：回归、似然、贝叶斯与模型控制</a><a href="#r-4">第二讲：分类概率与交叉熵</a><a href="#r-5">第三讲：MLP、优化与反向传播</a><a href="#r-6">CIFAR-10 与 PyTorch 实践</a><a href="#r-7">设计参考</a><a href="#r-8">解释原则</a><a href="#r-9">本次教材化重写</a></aside><article class="reader-body"><h2 id="r-1">资料来源与使用边界</h2>
+<p>更新日期：2026-10-10</p>
+<h2 id="r-2">本地课程材料（内容基线）</h2>
+<ul>
+<li>教师课件（最高优先级内容基线）：[本地路径不公开]；网页交互和教材推导只负责解释、展开与核对。</li>
+<li>原综合讲义：<code>机器学习第1-3讲_理论与CIFAR10实践综合版.html</code>。读取时 SHA-256 为 <code>97D1B8DF147F05BA0012300B5F42C690605077F9C7AF572A1232A3312E04F600</code>。新版保留其三讲范围、核心推导和 P0—P15 实践链，但重写了教学顺序与表达。</li>
+<li>本地参考教材：Deisenroth, Faisal, Ong, <em>Mathematics for Machine Learning</em>，用于线性代数、概率和优化的交叉核对。</li>
+<li>原实践脚本：<code>practice/cifar10_mlp_tutorial.py</code>；本交付包在 <code>downloads/</code> 中保留副本。</li>
+<li>原逐步 Notebook：<code>notebooks/CIFAR10_MLP_逐步练习.ipynb</code>；本交付包在 <code>downloads/</code> 中保留副本。</li>
+<li>已有 quick run 摘要及诊断图复制到 <code>verified-results/</code>。其中 0.3035 是特定的 8000/2000/2000、1 epoch 快速运行结果，只用于证明该代码流曾运行，不代表完整训练性能。</li>
+</ul>
+<h2 id="r-3">第一讲：回归、似然、贝叶斯与模型控制</h2>
+<ul>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_linear-regression/linear-regression.html">Linear Regression</a>：线性模型、平方损失、正规方程，以及独立同方差高斯噪声下“最小均方误差 = 最大似然”的推导。</li>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/maximum-likelihood.html">Maximum Likelihood</a>：似然、贝叶斯规则、先验和最大似然的关系。</li>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_linear-regression/weight-decay.html">Weight Decay</a>：先展示过拟合问题，再引入复杂度惩罚；并讨论先验与惩罚项的对应。</li>
+<li>Stanford CS229, <a href="https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf">Course notes</a>：线性回归、概率解释、逻辑回归与生成式分类的复核来源。</li>
+</ul>
+<h2 id="r-4">第二讲：分类概率与交叉熵</h2>
+<ul>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_linear-classification/softmax-regression.html">Softmax Regression</a>：从分类概率和最大似然得到交叉熵；softmax 与交叉熵的梯度为预测减目标。</li>
+<li>scikit-learn, <a href="https://scikit-learn.org/stable/modules/lda_qda.html">Linear and Quadratic Discriminant Analysis</a>：LDA 的共享协方差假设与线性决策边界。</li>
+<li>PyTorch, <a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html">CrossEntropyLoss</a>：输入应为未归一化 logits；实现等价于 LogSoftmax 与 NLLLoss 的组合。</li>
+</ul>
+<h2 id="r-5">第三讲：MLP、优化与反向传播</h2>
+<ul>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_multilayer-perceptrons/mlp.html">Multilayer Perceptrons</a>：线性模型限制、隐藏层与激活函数。</li>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_multilayer-perceptrons/backprop.html">Forward Propagation, Backward Propagation, and Computational Graphs</a>：前向缓存、计算图与反向传播。</li>
+<li>Stanford CS229, <a href="https://cs229.stanford.edu/notes_archive/cs229-notes-all/cs229-notes-backprop.pdf">Backpropagation notes</a>：分量形式和向量形式的反向传播复核。</li>
+<li>Dive into Deep Learning, <a href="https://d2l.ai/chapter_optimization/gd.html">Gradient Descent</a>：Taylor 展开、梯度下降和学习率。</li>
+</ul>
+<h2 id="r-6">CIFAR-10 与 PyTorch 实践</h2>
+<ul>
+<li>PyTorch Tutorials, <a href="https://docs.pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html">Training a Classifier</a>：CIFAR-10 下载、DataLoader、分类训练与评估的官方流程。</li>
+<li>Torchvision, <a href="https://docs.pytorch.org/vision/stable/generated/torchvision.datasets.CIFAR10.html">CIFAR10 dataset</a>：数据集接口与参数。</li>
+<li>PyTorch, <a href="https://docs.pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader">DataLoader</a>：批处理、打乱与多进程加载接口。</li>
+<li>PyTorch, <a href="https://docs.pytorch.org/docs/stable/generated/torch.optim.SGD.html">SGD</a>：学习率、momentum 与 weight decay 的官方定义。</li>
+</ul>
+<h2 id="r-7">设计参考</h2>
+<ul>
+<li>ECNU Urban Analytics course site：<a href="https://dawn-ecnu.github.io/teachings/urban-analytics-ba-26/">https://dawn-ecnu.github.io/teachings/urban-analytics-ba-26/</a>。仅参考清晰分区、三栏阅读、进度和主题切换等信息架构；配色与教学组件为本项目重新设计。</li>
+</ul>
+<h2 id="r-8">解释原则</h2>
+<ul>
+<li>公式只在问题、直觉与假设已经出现后给出。</li>
+<li>“相等”必须注明条件。例如已知固定正方差、条件独立同方差Gaussian观测下，权重ML与最小二乘共享最优参数；联合估计方差时还须检查完全插值退化。平方风险的条件均值结论本身不需要Gaussian假设。</li>
+<li>预期形状、理论结论与实际运行结果分开标注；未重新运行的实验不写成已验证成绩。</li>
+</ul>
+<h2 id="r-9">本次教材化重写</h2>
+<p>主要参考本地 Bishop《Pattern Recognition and Machine Learning》第3–5章，并与 MML、李宏毅教材及 D2L 核对。逐知识点出处与真实PDF页码见 教材来源表 和三份章节审查记录。教材不同章的页偏移不同，未机械套用全书偏移。原公式迁移账本保存198个原显示式；26节均有人工迁移审查。</p>
+<p>重写以教材概念与完整推导为主，取消逐节滑块，只保留投影、后验、偏差方差、计算图四幅说明图。独立数值核对代码为 <code>downloads/rewrite_reference_checks.py</code>。既有quick run为历史记录，本次未重新训练CIFAR-10。</p>
+</article></div></main><script src="assets/js/theme.js"></script><script src="assets/js/navigation.js"></script><script src="assets/js/learning-state.js"></script><script src="assets/js/search.js"></script><script src="assets/js/code-copy.js"></script><script src="assets/js/library-index.js"></script><script src="assets/js/library-search.js"></script></body></html>

@@ -1,0 +1,1003 @@
+"""面向初学者的 PyTorch CIFAR-10 多层感知机完整实践。
+
+默认使用快速模式，适合检查数据流、张量形状和训练循环。完整模式可通过
+``--full`` 开启。模型直接输出 logits；``CrossEntropyLoss`` 会在内部完成
+log-softmax，因此模型末尾不要再手动添加 Softmax。
+"""
+
+from __future__ import annotations
+
+import argparse
+import copy
+import dataclasses
+import json
+import pathlib
+import random
+import sys
+import typing
+
+
+def _raise_dependency_error(package: str, error: Exception) -> typing.NoReturn:
+    """把第三方依赖导入失败转换为可执行的环境修复提示。"""
+
+    message = (
+        f"无法导入第三方依赖 {package!r}，该包可能未安装或与当前环境不兼容。\n"
+        f"当前 Python: {sys.executable}\n"
+        "请改用课程的 PyTorch 环境运行，例如：\n"
+        "  conda run -n pytorch python downloads/cifar10_mlp_tutorial.py --smoke\n"
+        f"原始错误: {type(error).__name__}: {error}"
+    )
+    raise ImportError(message) from error
+
+
+try:
+    import matplotlib
+except Exception as exc:  # 导入阶段也可能因二进制版本不兼容抛出非 ImportError。
+    _raise_dependency_error("matplotlib", exc)
+
+try:
+    import numpy as np
+except Exception as exc:
+    _raise_dependency_error("numpy", exc)
+
+try:
+    import torch
+except Exception as exc:
+    _raise_dependency_error("torch", exc)
+
+try:
+    import torchvision
+except Exception as exc:
+    _raise_dependency_error("torchvision", exc)
+
+
+CIFAR10_CLASSES: tuple[str, ...] = (
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck",
+)
+
+NORMALIZATION_MEAN: tuple[float, float, float] = (0.5, 0.5, 0.5)
+NORMALIZATION_STD: tuple[float, float, float] = (0.5, 0.5, 0.5)
+
+
+@dataclasses.dataclass(frozen=True)
+class Config:
+    """集中保存实验设置；冻结数据类可避免训练途中意外改动配置。"""
+
+    data_dir: pathlib.Path = pathlib.Path("data")
+    output_dir: pathlib.Path = pathlib.Path("outputs/cifar10_results")
+    seed: int = 42
+    quick_mode: bool = True
+    batch_size: int = 128
+    hidden_dims: tuple[int, int] = (512, 256)
+    learning_rate: float = 0.01
+    momentum: float = 0.9
+    weight_decay: float = 0.0
+    epochs: int = 3
+    num_workers: int = 0
+
+
+MetricDict = dict[str, float | int]
+HistoryDict = dict[str, typing.Any]
+MisclassifiedExample = tuple[torch.Tensor, int, int]
+
+
+def seed_everything(seed: int) -> None:
+    """固定 Python、NumPy 和 PyTorch 的随机种子。"""
+
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.cuda.manual_seed_all(seed)
+
+
+def resolve_device() -> torch.device:
+    """按 CUDA、MPS、CPU 的顺序选择可用计算设备。"""
+
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    mps_backend = getattr(torch.backends, "mps", None)
+    if mps_backend is not None and mps_backend.is_available():
+        return torch.device("mps")
+    return torch.device("cpu")
+
+
+def runtime_metadata(device: torch.device | None = None) -> dict[str, typing.Any]:
+    """记录本次运行的解释器、PyTorch、CUDA 和设备信息。"""
+
+    selected = device if device is not None else resolve_device()
+    metadata: dict[str, typing.Any] = {
+        "python": sys.version.split()[0],
+        "python_executable": sys.executable,
+        "torch": torch.__version__,
+        "torchvision": torchvision.__version__,
+        "cuda_available": bool(torch.cuda.is_available()),
+        "cuda_version": torch.version.cuda,
+        "device": str(selected),
+    }
+    if selected.type == "cuda":
+        metadata["device_name"] = torch.cuda.get_device_name(0)
+    return metadata
+
+
+def build_transform() -> torchvision.transforms.Compose:
+    """把 PIL 图像转为张量，并把各通道从 [0, 1] 映射到约 [-1, 1]。"""
+
+    return torchvision.transforms.Compose(
+        [
+            torchvision.transforms.ToTensor(),
+            torchvision.transforms.Normalize(NORMALIZATION_MEAN, NORMALIZATION_STD),
+        ]
+    )
+
+
+def split_train_validation(
+    dataset: torch.utils.data.Dataset, seed: int
+) -> tuple[torch.utils.data.Subset, torch.utils.data.Subset]:
+    """确定性地把官方 50,000 个训练样本划分为 45,000/5,000。"""
+
+    expected_size = 50_000
+    actual_size = len(dataset)
+    if actual_size != expected_size:
+        raise ValueError(
+            "CIFAR-10 training dataset must contain exactly "
+            f"{expected_size:,} samples, but found {actual_size:,}."
+        )
+    generator = torch.Generator().manual_seed(seed)
+    train_dataset, validation_dataset = torch.utils.data.random_split(
+        dataset, [45_000, 5_000], generator=generator
+    )
+    return train_dataset, validation_dataset
+
+
+def _deterministic_subset(
+    dataset: torch.utils.data.Dataset, size: int, seed: int
+) -> torch.utils.data.Subset:
+    """使用局部随机生成器选取子集，不改变全局随机状态。"""
+
+    if size < 0 or size > len(dataset):
+        raise ValueError(f"subset size {size} is invalid for dataset of size {len(dataset)}")
+    generator = torch.Generator().manual_seed(seed)
+    indices = torch.randperm(len(dataset), generator=generator)[:size].tolist()
+    return torch.utils.data.Subset(dataset, indices)
+
+
+def _make_loader(
+    dataset: torch.utils.data.Dataset,
+    *,
+    batch_size: int,
+    shuffle: bool,
+    num_workers: int,
+    device: torch.device,
+    seed: int,
+) -> torch.utils.data.DataLoader:
+    if batch_size <= 0:
+        raise ValueError("batch_size must be positive")
+    if num_workers < 0:
+        raise ValueError("num_workers cannot be negative")
+    generator = torch.Generator().manual_seed(seed)
+    return torch.utils.data.DataLoader(
+        dataset,
+        batch_size=batch_size,
+        shuffle=shuffle,
+        num_workers=num_workers,
+        pin_memory=device.type == "cuda",
+        generator=generator,
+    )
+
+
+def make_dataloaders(
+    config: Config,
+) -> tuple[
+    torch.utils.data.DataLoader,
+    torch.utils.data.DataLoader,
+    torch.utils.data.DataLoader,
+]:
+    """下载官方 CIFAR-10，并构造训练、验证和测试 DataLoader。
+
+    快速模式的数据量严格为 8,000/2,000/2,000；完整模式为
+    45,000/5,000/10,000。训练与验证先从同一官方训练集做互斥划分，
+    测试集始终来自官方测试集。
+    """
+
+    transform = build_transform()
+    try:
+        full_training_dataset = torchvision.datasets.CIFAR10(
+            root=config.data_dir,
+            train=True,
+            download=True,
+            transform=transform,
+        )
+        test_dataset: torch.utils.data.Dataset = torchvision.datasets.CIFAR10(
+            root=config.data_dir,
+            train=False,
+            download=True,
+            transform=transform,
+        )
+    except Exception:
+        print(
+            "无法下载或读取官方 CIFAR-10。请检查网络连接、data-dir 的写入权限，"
+            "或先从 torchvision 官方来源下载数据后重试。脚本不会改用伪造数据。",
+            file=sys.stderr,
+        )
+        raise
+
+    train_dataset, validation_dataset = split_train_validation(
+        full_training_dataset, config.seed
+    )
+    if len(test_dataset) != 10_000:
+        raise ValueError(
+            "CIFAR-10 test dataset must contain exactly 10,000 samples, "
+            f"but found {len(test_dataset):,}."
+        )
+
+    if config.quick_mode:
+        train_dataset = _deterministic_subset(train_dataset, 8_000, config.seed + 1)
+        validation_dataset = _deterministic_subset(
+            validation_dataset, 2_000, config.seed + 2
+        )
+        test_dataset = _deterministic_subset(test_dataset, 2_000, config.seed + 3)
+
+    device = resolve_device()
+    train_loader = _make_loader(
+        train_dataset,
+        batch_size=config.batch_size,
+        shuffle=True,
+        num_workers=config.num_workers,
+        device=device,
+        seed=config.seed,
+    )
+    validation_loader = _make_loader(
+        validation_dataset,
+        batch_size=config.batch_size,
+        shuffle=False,
+        num_workers=config.num_workers,
+        device=device,
+        seed=config.seed,
+    )
+    test_loader = _make_loader(
+        test_dataset,
+        batch_size=config.batch_size,
+        shuffle=False,
+        num_workers=config.num_workers,
+        device=device,
+        seed=config.seed,
+    )
+    return train_loader, validation_loader, test_loader
+
+
+class LinearBaseline(torch.nn.Module):
+    """把 3×32×32 像素展平后直接映射到 10 个类别 logits。"""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.network = torch.nn.Sequential(
+            torch.nn.Flatten(), torch.nn.Linear(3 * 32 * 32, 10)
+        )
+
+    def forward(self, images: torch.Tensor) -> torch.Tensor:
+        return self.network(images)
+
+
+class MLP(torch.nn.Module):
+    """默认结构为 3072 → 512 → 256 → 10 的多层感知机。"""
+
+    def __init__(self, hidden_dims: tuple[int, int] = (512, 256)) -> None:
+        super().__init__()
+        if len(hidden_dims) != 2 or any(width <= 0 for width in hidden_dims):
+            raise ValueError("hidden_dims must contain two positive integers")
+        h1, h2 = hidden_dims
+        self.hidden_dims = hidden_dims
+        self.network = torch.nn.Sequential(
+            torch.nn.Flatten(),
+            torch.nn.Linear(3 * 32 * 32, h1),
+            torch.nn.ReLU(),
+            torch.nn.Linear(h1, h2),
+            torch.nn.ReLU(),
+            torch.nn.Linear(h2, 10),
+        )
+
+    def forward(self, images: torch.Tensor) -> torch.Tensor:
+        # 返回原始 logits；CrossEntropyLoss 内部会完成所需的归一化。
+        return self.network(images)
+
+
+def _finalize_metrics(loss_sum: float, correct: int, sample_count: int) -> MetricDict:
+    if sample_count == 0:
+        raise ValueError("cannot compute metrics for an empty DataLoader")
+    return {
+        "loss": loss_sum / sample_count,
+        "accuracy": correct / sample_count,
+        "samples": sample_count,
+    }
+
+
+def train_one_epoch(
+    model: torch.nn.Module,
+    loader: torch.utils.data.DataLoader,
+    criterion: torch.nn.Module,
+    optimizer: torch.optim.Optimizer,
+    device: torch.device,
+) -> MetricDict:
+    """训练一个 epoch，并按样本数加权计算损失和准确率。"""
+
+    model.train()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+
+    for images, labels in loader:
+        images = images.to(device, non_blocking=device.type == "cuda")
+        labels = labels.to(device, non_blocking=device.type == "cuda")
+
+        optimizer.zero_grad(set_to_none=True)
+        logits = model(images)
+        loss = criterion(logits, labels)
+        if not bool(torch.isfinite(loss).item()):
+            raise FloatingPointError("non-finite loss encountered during training")
+        loss.backward()
+        optimizer.step()
+
+        batch_size = labels.size(0)
+        loss_sum += float(loss.item()) * batch_size
+        correct += int((logits.argmax(dim=1) == labels).sum().item())
+        sample_count += batch_size
+
+    return _finalize_metrics(loss_sum, correct, sample_count)
+
+
+def evaluate(
+    model: torch.nn.Module,
+    loader: torch.utils.data.DataLoader,
+    criterion: torch.nn.Module,
+    device: torch.device,
+) -> MetricDict:
+    """在不记录梯度的情况下评估模型，并返回样本加权指标。"""
+
+    model.eval()
+    loss_sum = 0.0
+    correct = 0
+    sample_count = 0
+
+    with torch.no_grad():
+        for images, labels in loader:
+            images = images.to(device, non_blocking=device.type == "cuda")
+            labels = labels.to(device, non_blocking=device.type == "cuda")
+            logits = model(images)
+            loss = criterion(logits, labels)
+            if not bool(torch.isfinite(loss).item()):
+                raise FloatingPointError("non-finite loss encountered during evaluation")
+
+            batch_size = labels.size(0)
+            loss_sum += float(loss.item()) * batch_size
+            correct += int((logits.argmax(dim=1) == labels).sum().item())
+            sample_count += batch_size
+
+    return _finalize_metrics(loss_sum, correct, sample_count)
+
+
+def fit(
+    model: torch.nn.Module,
+    train_loader: torch.utils.data.DataLoader,
+    validation_loader: torch.utils.data.DataLoader,
+    criterion: torch.nn.Module,
+    optimizer: torch.optim.Optimizer,
+    device: torch.device,
+    epochs: int,
+) -> HistoryDict:
+    """训练模型，只依据验证准确率选权重，并在结束时恢复最佳状态。"""
+
+    if epochs <= 0:
+        raise ValueError("epochs must be positive")
+
+    history: HistoryDict = {
+        "train_loss": [],
+        "train_accuracy": [],
+        "validation_loss": [],
+        "validation_accuracy": [],
+    }
+    best_validation_accuracy = float("-inf")
+    best_epoch = 0
+    best_state_dict: dict[str, torch.Tensor] | None = None
+
+    for epoch in range(1, epochs + 1):
+        train_metrics = train_one_epoch(
+            model, train_loader, criterion, optimizer, device
+        )
+        validation_metrics = evaluate(model, validation_loader, criterion, device)
+
+        history["train_loss"].append(float(train_metrics["loss"]))
+        history["train_accuracy"].append(float(train_metrics["accuracy"]))
+        history["validation_loss"].append(float(validation_metrics["loss"]))
+        history["validation_accuracy"].append(
+            float(validation_metrics["accuracy"])
+        )
+
+        current_accuracy = float(validation_metrics["accuracy"])
+        if current_accuracy > best_validation_accuracy:
+            best_validation_accuracy = current_accuracy
+            best_epoch = epoch
+            best_state_dict = copy.deepcopy(model.state_dict())
+
+        print(
+            f"Epoch {epoch:02d}/{epochs:02d} | "
+            f"train loss {float(train_metrics['loss']):.4f}, "
+            f"acc {float(train_metrics['accuracy']):.2%} | "
+            f"val loss {float(validation_metrics['loss']):.4f}, "
+            f"acc {current_accuracy:.2%}"
+        )
+
+    if best_state_dict is None:
+        raise RuntimeError("training completed without a best model state")
+    model.load_state_dict(best_state_dict)
+    history["best_epoch"] = best_epoch
+    history["best_validation_accuracy"] = best_validation_accuracy
+    history["best_state_dict"] = best_state_dict
+    return history
+
+
+SEARCH_CONFIGS: list[dict[str, typing.Any]] = [
+    {
+        "hidden_dims": (512, 256),
+        "learning_rate": 0.01,
+        "batch_size": 128,
+        "weight_decay": 0.0,
+    },
+    {
+        "hidden_dims": (512, 256),
+        "learning_rate": 0.03,
+        "batch_size": 128,
+        "weight_decay": 0.0,
+    },
+    {
+        "hidden_dims": (1024, 512),
+        "learning_rate": 0.01,
+        "batch_size": 128,
+        "weight_decay": 0.0,
+    },
+    {
+        "hidden_dims": (512, 256),
+        "learning_rate": 0.01,
+        "batch_size": 64,
+        "weight_decay": 1e-4,
+    },
+]
+
+
+def run_hyperparameter_search(
+    train_dataset: torch.utils.data.Dataset,
+    validation_dataset: torch.utils.data.Dataset,
+    *,
+    device: torch.device,
+    epochs: int = 3,
+    seed: int = 42,
+    momentum: float = 0.9,
+    num_workers: int = 0,
+    search_configs: typing.Sequence[typing.Mapping[str, typing.Any]] = SEARCH_CONFIGS,
+) -> dict[str, typing.Any]:
+    """只使用训练/验证数据比较候选配置，不接收也不访问测试集。"""
+
+    if not search_configs:
+        raise ValueError("search_configs cannot be empty")
+
+    results: list[dict[str, typing.Any]] = []
+    best_config: dict[str, typing.Any] | None = None
+    best_state_dict: dict[str, torch.Tensor] | None = None
+    best_validation_accuracy = float("-inf")
+
+    for trial_index, raw_config in enumerate(search_configs, start=1):
+        trial_config = dict(raw_config)
+        hidden_dims = tuple(trial_config["hidden_dims"])
+        batch_size = int(trial_config["batch_size"])
+        learning_rate = float(trial_config["learning_rate"])
+        weight_decay = float(trial_config["weight_decay"])
+
+        # 每个 trial 都重置种子、模型、优化器和 DataLoader，避免继承状态。
+        seed_everything(seed)
+        train_loader = _make_loader(
+            train_dataset,
+            batch_size=batch_size,
+            shuffle=True,
+            num_workers=num_workers,
+            device=device,
+            seed=seed,
+        )
+        validation_loader = _make_loader(
+            validation_dataset,
+            batch_size=batch_size,
+            shuffle=False,
+            num_workers=num_workers,
+            device=device,
+            seed=seed,
+        )
+        model = MLP(typing.cast(tuple[int, int], hidden_dims)).to(device)
+        criterion = torch.nn.CrossEntropyLoss()
+        optimizer = torch.optim.SGD(
+            model.parameters(),
+            lr=learning_rate,
+            momentum=momentum,
+            weight_decay=weight_decay,
+        )
+
+        print(f"Hyperparameter trial {trial_index}/{len(search_configs)}: {trial_config}")
+        history = fit(
+            model,
+            train_loader,
+            validation_loader,
+            criterion,
+            optimizer,
+            device,
+            epochs,
+        )
+        validation_accuracy = float(history["best_validation_accuracy"])
+        results.append(
+            {
+                "config": copy.deepcopy(trial_config),
+                "best_epoch": int(history["best_epoch"]),
+                "validation_accuracy": validation_accuracy,
+                "history": {
+                    key: copy.deepcopy(history[key])
+                    for key in (
+                        "train_loss",
+                        "train_accuracy",
+                        "validation_loss",
+                        "validation_accuracy",
+                    )
+                },
+            }
+        )
+
+        if validation_accuracy > best_validation_accuracy:
+            best_validation_accuracy = validation_accuracy
+            best_config = copy.deepcopy(trial_config)
+            best_state_dict = copy.deepcopy(model.state_dict())
+
+    if best_config is None or best_state_dict is None:
+        raise RuntimeError("hyperparameter search did not produce a valid result")
+    return {
+        "best_config": best_config,
+        "best_state_dict": best_state_dict,
+        "best_validation_accuracy": best_validation_accuracy,
+        "results": results,
+    }
+
+
+def build_confusion_matrix(
+    model: torch.nn.Module,
+    loader: torch.utils.data.DataLoader,
+    device: torch.device,
+) -> torch.Tensor:
+    """按“真实类别为行、预测类别为列”统计 10×10 整数混淆矩阵。"""
+
+    model.eval()
+    confusion = torch.zeros((10, 10), dtype=torch.int64)
+    with torch.no_grad():
+        for images, labels in loader:
+            images = images.to(device, non_blocking=device.type == "cuda")
+            logits = model(images)
+            predictions = logits.argmax(dim=1).cpu().to(torch.int64)
+            actual = labels.detach().cpu().to(torch.int64)
+            if actual.numel() != predictions.numel():
+                raise ValueError("labels and predictions have different sample counts")
+            if actual.numel() and (
+                int(actual.min()) < 0
+                or int(actual.max()) >= 10
+                or int(predictions.min()) < 0
+                or int(predictions.max()) >= 10
+            ):
+                raise ValueError("CIFAR-10 labels and predictions must be in [0, 9]")
+            confusion += torch.bincount(
+                actual * 10 + predictions, minlength=100
+            ).reshape(10, 10)
+    return confusion
+
+
+def collect_misclassified(
+    model: torch.nn.Module,
+    loader: torch.utils.data.DataLoader,
+    device: torch.device,
+    max_examples: int = 16,
+) -> list[MisclassifiedExample]:
+    """收集少量错误样本，返回 (图像, 真实标签, 预测标签)。"""
+
+    if max_examples < 0:
+        raise ValueError("max_examples cannot be negative")
+    examples: list[MisclassifiedExample] = []
+    if max_examples == 0:
+        return examples
+
+    model.eval()
+    with torch.no_grad():
+        for images, labels in loader:
+            logits = model(images.to(device, non_blocking=device.type == "cuda"))
+            predictions = logits.argmax(dim=1).cpu()
+            labels_cpu = labels.detach().cpu()
+            for image, actual, predicted in zip(images, labels_cpu, predictions):
+                actual_index = int(actual.item())
+                predicted_index = int(predicted.item())
+                if actual_index != predicted_index:
+                    examples.append(
+                        (image.detach().cpu().clone(), actual_index, predicted_index)
+                    )
+                    if len(examples) >= max_examples:
+                        return examples
+    return examples
+
+
+def _get_pyplot() -> typing.Any:
+    """延迟导入 pyplot，保留 Notebook 已选择的交互式后端。"""
+
+    import matplotlib.pyplot as plt
+
+    return plt
+
+
+def plot_history(history: typing.Mapping[str, typing.Any], path: pathlib.Path) -> None:
+    """保存训练/验证损失和准确率曲线。"""
+
+    plt = _get_pyplot()
+    path = pathlib.Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    epochs = range(1, len(history["train_loss"]) + 1)
+    figure, axes = plt.subplots(1, 2, figsize=(11, 4.2))
+    axes[0].plot(epochs, history["train_loss"], marker="o", label="train")
+    axes[0].plot(epochs, history["validation_loss"], marker="o", label="validation")
+    axes[0].set(title="Loss", xlabel="Epoch", ylabel="Cross-entropy")
+    axes[0].legend()
+    axes[0].grid(alpha=0.25)
+
+    axes[1].plot(epochs, history["train_accuracy"], marker="o", label="train")
+    axes[1].plot(
+        epochs, history["validation_accuracy"], marker="o", label="validation"
+    )
+    axes[1].set(title="Accuracy", xlabel="Epoch", ylabel="Accuracy", ylim=(0, 1))
+    axes[1].legend()
+    axes[1].grid(alpha=0.25)
+    figure.tight_layout()
+    figure.savefig(path, dpi=160, bbox_inches="tight")
+    plt.close(figure)
+
+
+def plot_confusion_matrix(
+    confusion: torch.Tensor,
+    path: pathlib.Path,
+    classes: typing.Sequence[str] = CIFAR10_CLASSES,
+) -> None:
+    """保存混淆矩阵热力图。"""
+
+    if confusion.shape != (10, 10):
+        raise ValueError(f"confusion matrix must have shape (10, 10), got {confusion.shape}")
+    if len(classes) != 10:
+        raise ValueError("classes must contain exactly 10 names")
+
+    plt = _get_pyplot()
+    path = pathlib.Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    values = confusion.detach().cpu().numpy()
+    figure, axis = plt.subplots(figsize=(8.5, 7.2))
+    image = axis.imshow(values, cmap="Blues")
+    figure.colorbar(image, ax=axis, fraction=0.046, pad=0.04)
+    axis.set(
+        title="CIFAR-10 Confusion Matrix",
+        xlabel="Predicted label",
+        ylabel="True label",
+        xticks=np.arange(10),
+        yticks=np.arange(10),
+        xticklabels=classes,
+        yticklabels=classes,
+    )
+    plt.setp(axis.get_xticklabels(), rotation=45, ha="right")
+    threshold = float(values.max()) / 2.0 if values.size else 0.0
+    for row in range(10):
+        for column in range(10):
+            axis.text(
+                column,
+                row,
+                str(int(values[row, column])),
+                ha="center",
+                va="center",
+                color="white" if values[row, column] > threshold else "black",
+                fontsize=8,
+            )
+    figure.tight_layout()
+    figure.savefig(path, dpi=160, bbox_inches="tight")
+    plt.close(figure)
+
+
+def plot_misclassified_examples(
+    examples: typing.Sequence[MisclassifiedExample],
+    path: pathlib.Path,
+    classes: typing.Sequence[str] = CIFAR10_CLASSES,
+) -> None:
+    """保存错误分类样本图；显示前先撤销 Normalize。"""
+
+    if len(classes) != 10:
+        raise ValueError("classes must contain exactly 10 names")
+    plt = _get_pyplot()
+    path = pathlib.Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    count = len(examples)
+    if count == 0:
+        figure, axis = plt.subplots(figsize=(6, 2))
+        axis.text(0.5, 0.5, "No misclassified examples collected", ha="center")
+        axis.axis("off")
+    else:
+        columns = min(4, count)
+        rows = (count + columns - 1) // columns
+        figure, axes = plt.subplots(rows, columns, figsize=(3 * columns, 3 * rows))
+        axes_array = np.atleast_1d(axes).reshape(-1)
+        for axis, (image, actual, predicted) in zip(axes_array, examples):
+            display_image = (image * 0.5 + 0.5).clamp(0, 1).permute(1, 2, 0)
+            axis.imshow(display_image.numpy())
+            axis.set_title(
+                f"true: {classes[actual]}\npred: {classes[predicted]}", fontsize=9
+            )
+            axis.axis("off")
+        for axis in axes_array[count:]:
+            axis.axis("off")
+    figure.tight_layout()
+    figure.savefig(path, dpi=160, bbox_inches="tight")
+    plt.close(figure)
+
+
+def _config_to_serializable_dict(config: Config) -> dict[str, typing.Any]:
+    values = dataclasses.asdict(config)
+    values["data_dir"] = str(values["data_dir"])
+    values["output_dir"] = str(values["output_dir"])
+    return values
+
+
+def save_checkpoint(
+    path: pathlib.Path,
+    model: MLP,
+    config: Config,
+) -> None:
+    """保存权重和重建模型所需的类别、归一化及配置元数据。"""
+
+    if not isinstance(model, MLP):
+        raise TypeError(
+            "save_checkpoint only supports MLP models; "
+            f"received {type(model).__name__}."
+        )
+    path = pathlib.Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "architecture": "MLP",
+        "state_dict": copy.deepcopy(model.state_dict()),
+        "classes": list(CIFAR10_CLASSES),
+        "normalization": {"mean": NORMALIZATION_MEAN, "std": NORMALIZATION_STD},
+        "hidden_dims": tuple(model.hidden_dims),
+        "config": _config_to_serializable_dict(config),
+    }
+    torch.save(payload, path)
+
+
+def load_checkpoint(
+    path: pathlib.Path, device: torch.device | None = None
+) -> tuple[MLP, dict[str, typing.Any]]:
+    """读取检查点、重建 MLP 并返回模型和原始元数据。"""
+
+    target_device = device if device is not None else resolve_device()
+    try:
+        checkpoint = torch.load(
+            pathlib.Path(path), map_location=target_device, weights_only=True
+        )
+    except TypeError:  # 兼容尚不支持 weights_only 参数的旧版 PyTorch。
+        checkpoint = torch.load(pathlib.Path(path), map_location=target_device)
+    required_keys = {
+        "architecture",
+        "state_dict",
+        "classes",
+        "normalization",
+        "hidden_dims",
+        "config",
+    }
+    missing = required_keys - set(checkpoint)
+    if missing:
+        raise ValueError(f"checkpoint is missing keys: {sorted(missing)}")
+    architecture = checkpoint["architecture"]
+    if architecture != "MLP":
+        raise ValueError(
+            f"unsupported checkpoint architecture {architecture!r}; expected 'MLP'"
+        )
+    hidden_dims = tuple(int(value) for value in checkpoint["hidden_dims"])
+    if len(hidden_dims) != 2:
+        raise ValueError("checkpoint hidden_dims must contain exactly two values")
+    model = MLP(typing.cast(tuple[int, int], hidden_dims)).to(target_device)
+    model.load_state_dict(checkpoint["state_dict"])
+    model.eval()
+    return model, checkpoint
+
+
+def synthetic_smoke_test() -> None:
+    """用 4 个合成样本检查形状、有限损失、梯度和单步参数更新。"""
+
+    seed_everything(42)
+    device = torch.device("cpu")
+    images = torch.randn(4, 3, 32, 32, device=device)
+    labels = torch.tensor([0, 1, 2, 3], device=device)
+    model = MLP((64, 32)).to(device)
+    criterion = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+
+    optimizer.zero_grad(set_to_none=True)
+    logits = model(images)
+    if logits.shape != (4, 10):
+        raise AssertionError(f"expected logits shape (4, 10), got {tuple(logits.shape)}")
+    loss = criterion(logits, labels)
+    if not bool(torch.isfinite(loss).item()):
+        raise AssertionError("smoke-test loss is not finite")
+    loss.backward()
+    if not all(
+        parameter.grad is not None and bool(torch.isfinite(parameter.grad).all().item())
+        for parameter in model.parameters()
+    ):
+        raise AssertionError("smoke-test gradients are missing or non-finite")
+
+    before_step = [parameter.detach().clone() for parameter in model.parameters()]
+    optimizer.step()
+    if not any(
+        not torch.equal(before, after.detach())
+        for before, after in zip(before_step, model.parameters())
+    ):
+        raise AssertionError("SGD step did not change any model parameter")
+    print("synthetic smoke test: PASS")
+
+
+def _build_argument_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description="Train an MLP on the official CIFAR-10 dataset."
+    )
+    mode_group = parser.add_mutually_exclusive_group()
+    mode_group.add_argument(
+        "--quick", dest="quick_mode", action="store_true", help="use 8k/2k/2k"
+    )
+    mode_group.add_argument(
+        "--full", dest="quick_mode", action="store_false", help="use full data"
+    )
+    parser.set_defaults(quick_mode=None)
+    parser.add_argument(
+        "--epochs",
+        type=_positive_int,
+        default=None,
+        help="positive number of epochs (default: quick 3, full 20)",
+    )
+    parser.add_argument("--data-dir", type=pathlib.Path, default=None)
+    parser.add_argument("--output-dir", type=pathlib.Path, default=None)
+    parser.add_argument(
+        "--smoke", action="store_true", help="run a synthetic test without downloading data"
+    )
+    return parser
+
+
+def _positive_int(value: str) -> int:
+    """供 argparse 使用：非法 epoch 直接生成友好的 usage 错误。"""
+
+    try:
+        parsed = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("must be a positive integer") from exc
+    if parsed <= 0:
+        raise argparse.ArgumentTypeError("must be a positive integer")
+    return parsed
+
+
+def _config_from_arguments(arguments: argparse.Namespace) -> Config:
+    defaults = Config()
+    quick_mode = (
+        defaults.quick_mode if arguments.quick_mode is None else bool(arguments.quick_mode)
+    )
+    default_epochs = 3 if quick_mode else 20
+    return dataclasses.replace(
+        defaults,
+        quick_mode=quick_mode,
+        epochs=default_epochs if arguments.epochs is None else arguments.epochs,
+        data_dir=defaults.data_dir if arguments.data_dir is None else arguments.data_dir,
+        output_dir=(
+            defaults.output_dir
+            if arguments.output_dir is None
+            else arguments.output_dir
+        ),
+    )
+
+
+def main(argv: typing.Sequence[str] | None = None) -> int:
+    """命令行入口：默认训练单个 MLP，不默认执行昂贵的超参数搜索。"""
+
+    arguments = _build_argument_parser().parse_args(argv)
+    if arguments.smoke:
+        synthetic_smoke_test()
+        return 0
+
+    config = _config_from_arguments(arguments)
+    if config.epochs <= 0:
+        raise ValueError("--epochs must be positive")
+    seed_everything(config.seed)
+    device = resolve_device()
+    print(f"Using device: {device}")
+    train_loader, validation_loader, test_loader = make_dataloaders(config)
+
+    model = MLP(config.hidden_dims).to(device)
+    criterion = torch.nn.CrossEntropyLoss()
+    optimizer = torch.optim.SGD(
+        model.parameters(),
+        lr=config.learning_rate,
+        momentum=config.momentum,
+        weight_decay=config.weight_decay,
+    )
+    history = fit(
+        model,
+        train_loader,
+        validation_loader,
+        criterion,
+        optimizer,
+        device,
+        config.epochs,
+    )
+
+    # fit 已恢复验证集最优权重；模型选择结束后，测试集在此首次参与评估。
+    test_metrics = evaluate(model, test_loader, criterion, device)
+    confusion = build_confusion_matrix(model, test_loader, device)
+    mistakes = collect_misclassified(model, test_loader, device, max_examples=16)
+
+    config.output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_path = config.output_dir / "best_mlp.pt"
+    save_checkpoint(checkpoint_path, model, config)
+    plot_history(history, config.output_dir / "history.png")
+    plot_confusion_matrix(confusion, config.output_dir / "confusion_matrix.png")
+    plot_misclassified_examples(
+        mistakes, config.output_dir / "misclassified_examples.png"
+    )
+
+    history_for_json = {
+        key: history[key]
+        for key in (
+            "train_loss",
+            "train_accuracy",
+            "validation_loss",
+            "validation_accuracy",
+            "best_epoch",
+            "best_validation_accuracy",
+        )
+    }
+    (config.output_dir / "history.json").write_text(
+        json.dumps(history_for_json, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    summary = {
+        "runtime": runtime_metadata(device),
+        "device": str(device),
+        "mode": "quick" if config.quick_mode else "full",
+        "dataset_sizes": {
+            "train": len(train_loader.dataset),
+            "validation": len(validation_loader.dataset),
+            "test": len(test_loader.dataset),
+        },
+        "config": _config_to_serializable_dict(config),
+        "best_epoch": int(history["best_epoch"]),
+        "best_validation_accuracy": float(history["best_validation_accuracy"]),
+        "test_metrics": test_metrics,
+        "checkpoint": str(checkpoint_path),
+    }
+    (config.output_dir / "summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    print(
+        f"Test loss {float(test_metrics['loss']):.4f}, "
+        f"accuracy {float(test_metrics['accuracy']):.2%}"
+    )
+    print(f"Results saved to: {config.output_dir.resolve()}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

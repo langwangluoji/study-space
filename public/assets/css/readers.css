@@ -1,0 +1,18 @@
+.teaching-figure{margin:1.6rem 0;padding:1rem;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.figure-scroll{overflow-x:auto}.teaching-figure img{display:block;width:100%;min-width:650px;height:auto;border-radius:8px;background:white}
+.teaching-figure figcaption{font-size:.92rem;color:var(--muted);line-height:1.8;margin-top:.8rem}
+.resource-reader{max-width:1180px;margin:auto;padding:2rem clamp(1rem,3vw,2.5rem) 5rem}
+.resource-reader>h1{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.3}.reader-toc h2{font-size:.9rem}.reader-body h2{font-size:1.55rem}.reader-body h3{font-size:1.2rem}.reader-single{grid-template-columns:minmax(0,1fr)!important}
+.reader-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:2.5rem}
+.reader-toc{position:sticky;top:90px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}
+.reader-toc a{display:block;padding:.4rem 0;color:var(--muted);font-size:.9rem}
+.reader-body{min-width:0}.reader-body h2,.reader-body h3{scroll-margin-top:90px}.reader-body p,.reader-body li{line-height:1.9}
+.reader-body pre{overflow:auto;padding:1rem;border-radius:10px;background:#07101f;color:#f5f9ff;font-size:.85rem}
+.reader-body table{font-size:.86rem;min-width:560px}.reader-body img{max-width:100%}
+.reader-toolbar,.book-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin:1rem 0}
+.book-actions button{padding:.6rem .9rem;background:var(--panel-2);color:var(--text);border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.book-path{width:100%;padding:.75rem;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);font: .85rem var(--mono)}
+.book-card{padding:1.5rem 0;border-bottom:1px solid var(--line)}
+.book-card h2{font-size:1.5rem}.pdf-reader{width:100%;height:75vh;min-height:450px;border:1px solid var(--line);border-radius:10px}
+.book-status{padding:1rem;background:var(--panel);border-left:3px solid var(--accent)}
+@media(max-width:760px){.reader-layout{display:block}.reader-toc{position:static;max-height:220px;margin-bottom:2rem}.teaching-figure{padding:.6rem}.resource-reader{padding-top:1rem}}
