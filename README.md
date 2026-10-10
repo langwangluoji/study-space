@@ -1,8 +1,10 @@
-# 机器学习课程知识库
+# Study Space · 多领域学习空间
 
-面向自学与课程复习的中文学习网站。围绕问题、建模假设和逐步公式推导组织内容，用算例、函数曲线和网络示意辅助理解。
+面向自学、课程复习与资料查阅的中文学习空间。当前收录机器学习前三讲及可选实践；后续按领域扩展课程、数学推导、学习笔记和参考资料，避免把所有内容混在一个长页面中。
 
-[在线阅读](https://langwangluoji.github.io/) · [课程总览](https://langwangluoji.github.io/course-ml.html) · [资料中心](https://langwangluoji.github.io/resources.html)
+[在线阅读](https://langwangluoji.github.io/study-space/) · [机器学习课程](https://langwangluoji.github.io/study-space/course-ml.html) · [资料中心](https://langwangluoji.github.io/study-space/resources.html)
+
+`study-space` 是本站专用的 GitHub Pages 项目路径，不是另行注册的独立域名。个人主页根地址可留给未来其他用途。
 
 ## 内容梗概与阅读路径
 
@@ -50,8 +52,8 @@ public/
 较大修改：在本地编辑并预览、检查公式和链接后提交：
 
 ```bash
-git clone https://github.com/langwangluoji/langwangluoji.github.io.git
-cd langwangluoji.github.io
+git clone https://github.com/langwangluoji/study-space.git
+cd study-space
 git pull --ff-only
 # 修改、检查public中的内容后
 git add public
