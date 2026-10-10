@@ -1,7 +1,31 @@
 {
   "status": "PASS",
-  "count": 19,
+  "count": 25,
   "checks": [
+    {
+      "name": "A9 one-observation Laplace NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 independent joint NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 Laplace variance",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 known unequal scales",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 median-risk derivative FD",
+      "max_abs_error": 4.644451490065649e-12
+    },
+    {
+      "name": "A9 atomic median minimizes absolute risk",
+      "max_abs_error": 0.0
+    },
     {
       "name": "A6 projection symmetry",
       "max_abs_error": 2.3592239273284576e-16
@@ -16,7 +40,7 @@
     },
     {
       "name": "A10 exact quadratic loss change",
-      "max_abs_error": 1.1102230246251565e-16
+      "max_abs_error": 0.0
     },
     {
       "name": "A11 covariance entries",
@@ -40,15 +64,15 @@
     },
     {
       "name": "B3 LS Fisher equivalence",
-      "max_abs_error": 9.992007221626409e-16
+      "max_abs_error": 8.881784197001252e-16
     },
     {
       "name": "B5 parameter gradient FD",
-      "max_abs_error": 6.167233390641513e-12
+      "max_abs_error": 8.076407598256452e-12
     },
     {
       "name": "B5 Hessian FD",
-      "max_abs_error": 2.527267891488938e-12
+      "max_abs_error": 1.702339658127272e-12
     },
     {
       "name": "B5 autograd",
@@ -56,23 +80,23 @@
     },
     {
       "name": "B6 gradient FD",
-      "max_abs_error": 3.652822488930951e-11
+      "max_abs_error": 2.7620503106895455e-11
     },
     {
       "name": "B6 autograd",
-      "max_abs_error": 5.551115123125783e-17
+      "max_abs_error": 8.326672684688674e-17
     },
     {
       "name": "B6 Jacobian expansion",
-      "max_abs_error": 2.7755575615628914e-17
+      "max_abs_error": 1.3877787807814457e-17
     },
     {
       "name": "B6 Jacobian column sums",
-      "max_abs_error": 1.5612511283791264e-17
+      "max_abs_error": 9.71445146547012e-17
     },
     {
       "name": "C1 layer components",
-      "max_abs_error": 2.220446049250313e-16
+      "max_abs_error": 0.0
     },
     {
       "name": "C2 layer Jacobian",

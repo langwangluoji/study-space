@@ -29,7 +29,7 @@
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -249,7 +249,7 @@
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -469,7 +469,7 @@
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -689,7 +689,7 @@
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -909,7 +909,7 @@
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -1129,7 +1129,7 @@
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 363,
+      "math": 491,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -1331,6 +1331,10 @@
     "same-page search opens closed extra",
     "Chinese keyword search",
     "cross-page search expands ancestors",
+    "lecture one has four narrative parts and four outline entries",
+    "fourth-level proof searchable and expanded",
+    "direct proof anchor expands ancestor",
+    "knowledge hub links to course and resources",
     "Vue diagram responds after route switch",
     "mobile separate menus 390",
     "mobile separate menus 320",

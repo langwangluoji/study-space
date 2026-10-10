@@ -21,7 +21,13 @@ for(const [chapterIndex,chapter] of course.entries()){
   slugSet.add(chapter.slug);
   const prev=chapterIndex?{text:course[chapterIndex-1].title,link:'/'+course[chapterIndex-1].slug}:{text:'课程总览',link:'/course-ml'};
   const next=chapterIndex<course.length-1?{text:course[chapterIndex+1].title,link:'/'+course[chapterIndex+1].slug}:false;
-  let text=`---\ntitle: ${chapter.title}\nprev: ${JSON.stringify(prev)}\nnext: ${JSON.stringify(next)}\n---\n\n# ${chapter.title}\n\n本讲可以连续阅读。具体算例、练习和互动图默认收起；结论所需条件保留在正文。\n\n`;
+  const parts=chapter.parts??[];
+  if(parts.length){
+    const assigned=parts.flatMap(p=>p.sections);
+    if(JSON.stringify(assigned)!==JSON.stringify(chapter.sections.map(s=>s.id)))throw Error('阅读分组必须按顺序覆盖所有知识点: '+chapter.slug);
+    if(new Set(parts.map(p=>p.id)).size!==parts.length)throw Error('重复阅读分组: '+chapter.slug);
+  }
+  let text=`---\ntitle: ${chapter.title}\n${parts.length?'outline: 2\n':''}prev: ${JSON.stringify(prev)}\nnext: ${JSON.stringify(next)}\n---\n\n# ${chapter.title}\n\n${chapter.intro??'本讲可以连续阅读。具体算例、练习和互动图默认收起；结论所需条件保留在正文。'}\n\n`;
   for(const section of chapter.sections){
     if(ids.has(section.id))throw Error('重复知识点: '+section.id);ids.add(section.id);
     const source=path.resolve(docs,section.source);
@@ -30,8 +36,12 @@ for(const [chapterIndex,chapter] of course.entries()){
     if(!fragment.includes(`{#${section.id}}`))throw Error('缺失旧锚点: '+section.id);
     const heading=fragment.split('\n')[0];
     if(!heading.includes(section.title))throw Error('配置标题与片段不一致: '+section.id);
-    text+=`<!--@include: ./${section.source}-->\n\n<LearningMark section="${section.id}" />\n\n`;
+    const part=parts.find(p=>p.sections[0]===section.id);
+    if(part)text+=`## ${part.title} {#${part.id}}\n\n${part.intro}\n\n`;
+    text+=`<!--@include: ./${section.source}-->\n\n`;
+    if(!parts.length)text+=`<LearningMark section="${section.id}" />\n\n`;
   }
+  if(parts.length)text+='<details class="learning-overview"><summary>学习记录｜按知识点标记阅读与掌握情况</summary>\n\n'+chapter.sections.map(s=>`**${s.id.toUpperCase()} · ${s.title}**\n\n<LearningMark section="${s.id}" />\n\n`).join('')+'</details>\n';
   fs.writeFileSync(path.join(docs,chapter.slug+'.md'),text);
 }
 const staticRoot=path.join(root,'public');

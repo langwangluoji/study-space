@@ -15,6 +15,24 @@ def fd(fn,p,h=1e-5):
         a,b=p.copy(),p.copy();a[i]+=h;b[i]-=h;out[i]=(fn(a)-fn(b))/(2*h)
     return out
 X=rng.normal(size=(9,3)); t=rng.normal(size=9)
+# A9: compare the distribution's actual log density with every loss reduction.
+laplace_y=rng.normal(size=9);scale=1.7;residual=laplace_y-t
+lp=torch.distributions.Laplace(torch.tensor(laplace_y),torch.full((9,),scale,dtype=torch.float64))
+check('A9 one-observation Laplace NLL',-lp.log_prob(torch.tensor(t)).numpy(),np.log(2*scale)+np.abs(residual)/scale)
+check('A9 independent joint NLL',-lp.log_prob(torch.tensor(t)).sum().numpy(),len(t)*np.log(2*scale)+np.abs(residual).sum()/scale)
+check('A9 Laplace variance',lp.variance.numpy(),np.full(9,2*scale**2))
+other_scales=np.linspace(.4,2.,9)
+weighted=torch.distributions.Laplace(torch.tensor(laplace_y),torch.tensor(other_scales))
+check('A9 known unequal scales',-weighted.log_prob(torch.tensor(t)).sum().numpy(),np.log(2*other_scales).sum()+(np.abs(residual)/other_scales).sum())
+# Continuous Laplace risk has a closed form; independently check its derivative
+# against 2F(a)-1. Atoms instead require the two one-sided median inequalities.
+location=.8; test_a=-.3
+risk=lambda a:abs(a-location)+scale*np.exp(-abs(a-location)/scale)
+cdf=lambda a:.5*np.exp((a-location)/scale) if a<location else 1-.5*np.exp(-(a-location)/scale)
+check('A9 median-risk derivative FD',fd(risk,np.array(test_a)),2*cdf(test_a)-1,1e-8)
+atoms=np.array([-1.,0.,2.]);masses=np.array([.2,.6,.2]);med=0.
+assert masses[atoms<med].sum()<=.5 and masses[atoms>med].sum()<=.5
+check('A9 atomic median minimizes absolute risk',np.sum(masses*abs(atoms-med)),min(np.sum(masses*abs(atoms-a)) for a in atoms))
 w=np.linalg.lstsq(X,t,rcond=None)[0];P=X@np.linalg.pinv(X)
 check('A6 projection symmetry',P,P.T);check('A6 projection idempotent',P@P,P)
 check('A6 residual orthogonality',X.T@(X@w-t),np.zeros(3))
