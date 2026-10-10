@@ -1,15 +1,43 @@
-name: Publish course website
+name: Build, verify and publish notes
 on:
   push:
     branches: [main]
-  workflow_dispatch:
+  pull_request:
 permissions:
   contents: read
 concurrency:
-  group: pages
+  group: notes-${{ github.ref }}
   cancel-in-progress: false
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: npm run check
+      - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu
+      - run: npm run check:math
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/check-ui.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notes-preview
+          include-hidden-files: true
+          path: |
+            docs/.vitepress/dist
+            reports
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: check
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -20,9 +48,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/configure-pages@v5
+      - uses: actions/download-artifact@v4
+        with:
+          name: notes-preview
+          path: build-preview
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: public
+          path: build-preview/docs/.vitepress/dist
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

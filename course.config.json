@@ -1,0 +1,236 @@
+[
+  {
+    "slug": "lecture-1",
+    "title": "第一讲 · 回归与可靠预测",
+    "sections": [
+      {
+        "id": "a1",
+        "title": "先看懂模型里的两个参数",
+        "source": "_fragments/a1.md"
+      },
+      {
+        "id": "a2",
+        "title": "矩阵只是把几次预测排在一起",
+        "source": "_fragments/a2.md"
+      },
+      {
+        "id": "a3",
+        "title": "为什么平方误差能作为训练目标",
+        "source": "_fragments/a3.md"
+      },
+      {
+        "id": "a4",
+        "title": "先对一个参数求导，再得到正规方程",
+        "source": "_fragments/a4.md"
+      },
+      {
+        "id": "a5",
+        "title": "从正规方程到参数求解与核验",
+        "source": "_fragments/a5.md"
+      },
+      {
+        "id": "a6",
+        "title": "最小二乘的正交投影",
+        "source": "_fragments/a6.md"
+      },
+      {
+        "id": "a7",
+        "title": "高斯观测模型与最大似然",
+        "source": "_fragments/a7.md"
+      },
+      {
+        "id": "a8",
+        "title": "从概率规则到斜率的贝叶斯更新",
+        "source": "_fragments/a8.md"
+      },
+      {
+        "id": "a9",
+        "title": "损失与统计假设的对应",
+        "source": "_fragments/a9.md"
+      },
+      {
+        "id": "a10",
+        "title": "梯度下降与二次目标的步长条件",
+        "source": "_fragments/a10.md"
+      },
+      {
+        "id": "a11",
+        "title": "小批量梯度的无偏性与方差",
+        "source": "_fragments/a11.md"
+      },
+      {
+        "id": "a12",
+        "title": "泛化误差的偏差、方差与噪声",
+        "source": "_fragments/a12.md"
+      },
+      {
+        "id": "a13",
+        "title": "岭回归、MAP 与完整后验预测",
+        "source": "_fragments/a13.md"
+      },
+      {
+        "id": "a14",
+        "title": "Laplace 参数先验与稀疏解",
+        "source": "_fragments/a14.md"
+      },
+      {
+        "id": "a15",
+        "title": "交叉验证、标准化与无泄漏评估",
+        "source": "_fragments/a15.md"
+      }
+    ]
+  },
+  {
+    "slug": "lecture-2",
+    "title": "第二讲 · 线性分类与概率",
+    "sections": [
+      {
+        "id": "b1",
+        "title": "评分、几何距离、后验概率与决策",
+        "source": "_fragments/b1.md"
+      },
+      {
+        "id": "b2",
+        "title": "把 one-hot 标签作为多输出回归目标",
+        "source": "_fragments/b2.md"
+      },
+      {
+        "id": "b3",
+        "title": "Fisher 的方向与生成 LDA 的边界",
+        "source": "_fragments/b3.md"
+      },
+      {
+        "id": "b4",
+        "title": "错误驱动的更新与线性可分性",
+        "source": "_fragments/b4.md"
+      },
+      {
+        "id": "b5",
+        "title": "从对数几率到 Bernoulli 似然与 BCE",
+        "source": "_fragments/b5.md"
+      },
+      {
+        "id": "b6",
+        "title": "Softmax、categorical 与交叉熵",
+        "source": "_fragments/b6.md"
+      }
+    ]
+  },
+  {
+    "slug": "lecture-3",
+    "title": "第三讲 · 神经网络与反向传播",
+    "sections": [
+      {
+        "id": "c1",
+        "title": "从线性模型到可学习的隐藏层",
+        "source": "_fragments/c1.md"
+      },
+      {
+        "id": "c2",
+        "title": "激活、局部导数与初始化尺度",
+        "source": "_fragments/c2.md"
+      },
+      {
+        "id": "c3",
+        "title": "曲率、驻点与小批量优化",
+        "source": "_fragments/c3.md"
+      },
+      {
+        "id": "c4",
+        "title": "沿计算图推导反向传播",
+        "source": "_fragments/c4.md"
+      },
+      {
+        "id": "c5",
+        "title": "用 Taylor 展开检查梯度",
+        "source": "_fragments/c5.md"
+      }
+    ]
+  },
+  {
+    "slug": "cifar10-practice",
+    "title": "实践 · CIFAR-10 MLP",
+    "sections": [
+      {
+        "id": "p0",
+        "title": "环境、设备与随机种子",
+        "source": "_fragments/p0.md"
+      },
+      {
+        "id": "p1",
+        "title": "读取 CIFAR-10，并先看真实样本",
+        "source": "_fragments/p1.md"
+      },
+      {
+        "id": "p2",
+        "title": "把图像变成 CHW 张量，再使用固定教学归一化",
+        "source": "_fragments/p2.md"
+      },
+      {
+        "id": "p3",
+        "title": "确定性划分训练集与验证集",
+        "source": "_fragments/p3.md"
+      },
+      {
+        "id": "p4",
+        "title": "DataLoader 决定一次更新看多少样本",
+        "source": "_fragments/p4.md"
+      },
+      {
+        "id": "p5",
+        "title": "先训练线性 Softmax 基线",
+        "source": "_fragments/p5.md"
+      },
+      {
+        "id": "p6",
+        "title": "实现 3072→512→256→10 的 MLP",
+        "source": "_fragments/p6.md"
+      },
+      {
+        "id": "p7",
+        "title": "交叉熵接 logits，SGD 接参数",
+        "source": "_fragments/p7.md"
+      },
+      {
+        "id": "p8",
+        "title": "训练循环的顺序不能乱",
+        "source": "_fragments/p8.md"
+      },
+      {
+        "id": "p9",
+        "title": "评估时关闭训练行为和梯度记录",
+        "source": "_fragments/p9.md"
+      },
+      {
+        "id": "p10",
+        "title": "快速模式只验证代码流，不代表最终性能",
+        "source": "_fragments/p10.md"
+      },
+      {
+        "id": "p11",
+        "title": "记录每轮历史，并按验证指标保留最佳状态",
+        "source": "_fragments/p11.md"
+      },
+      {
+        "id": "p12",
+        "title": "只用验证集搜索超参数",
+        "source": "_fragments/p12.md"
+      },
+      {
+        "id": "p13",
+        "title": "重训最终配置，只在选择结束后计算最终测试指标",
+        "source": "_fragments/p13.md"
+      },
+      {
+        "id": "p14",
+        "title": "曲线、混淆矩阵和错误样本回答不同问题",
+        "source": "_fragments/p14.md"
+      },
+      {
+        "id": "p15",
+        "title": "报告必须让别人知道你做了什么、没做什么",
+        "source": "_fragments/p15.md"
+      }
+    ]
+  }
+]

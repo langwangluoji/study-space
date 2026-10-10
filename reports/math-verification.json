@@ -1,0 +1,319 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "regression_initial_predictions",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_initial_loss",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_solution",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_predictions",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_residuals",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_optimal_loss",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_stationarity",
+      "passed": true,
+      "max_abs_error": 1.6653345369377348e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_gram",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_rhs",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_gradient_finite_difference",
+      "passed": true,
+      "max_abs_error": 1.525932713519751e-10,
+      "atol": 2e-09
+    },
+    {
+      "name": "regression_shifted_target",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_shifted_loss",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "rank_deficient_same_predictions",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "optimal_loss_difference_identity",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18,
+      "atol": 1e-10
+    },
+    {
+      "name": "optimal_loss_difference_identity",
+      "passed": true,
+      "max_abs_error": 1.7763568394002505e-15,
+      "atol": 1e-10
+    },
+    {
+      "name": "hessian_psd",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "conditional_risk_identity",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "conditional_risk_identity",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "conditional_risk_identity",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "conditional_risk_identity",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "single_sample_gradient",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "regression_exercise_loss",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_hidden_preactivations",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_prediction",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_initial_loss",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_all_gradients",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_finite_difference_eps_0.0001",
+      "passed": true,
+      "max_abs_error": 1.837419105754634e-13,
+      "atol": 2e-09
+    },
+    {
+      "name": "network_finite_difference_eps_1e-05",
+      "passed": true,
+      "max_abs_error": 3.56326079753444e-12,
+      "atol": 2e-09
+    },
+    {
+      "name": "network_finite_difference_eps_1e-06",
+      "passed": true,
+      "max_abs_error": 4.3508752156640185e-11,
+      "atol": 2e-09
+    },
+    {
+      "name": "network_updated_parameters",
+      "passed": true,
+      "max_abs_error": 1.3877787807814457e-17,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_updated_hidden",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_updated_prediction",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_updated_loss",
+      "passed": true,
+      "max_abs_error": 2.42861286636753e-17,
+      "atol": 1e-10
+    },
+    {
+      "name": "network_input_path_cancellation",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "branch_derivative",
+      "passed": true,
+      "max_abs_error": 3.275602011854062e-11,
+      "atol": 2e-09
+    },
+    {
+      "name": "branch_derivative",
+      "passed": true,
+      "max_abs_error": 4.11333189731522e-10,
+      "atol": 2e-09
+    },
+    {
+      "name": "outer_product_exercise",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "atol": 1e-10
+    },
+    {
+      "name": "batch_weight_example",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "batch_bias_example",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "batch_finite_difference",
+      "passed": true,
+      "max_abs_error": 2.963107537112819e-11,
+      "atol": 2e-09
+    },
+    {
+      "name": "batch_average_once",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-10
+    },
+    {
+      "name": "softmax_ce_gradient",
+      "passed": true,
+      "max_abs_error": 1.8463885975705807e-10,
+      "atol": 2e-09
+    },
+    {
+      "name": "sigmoid_bce_gradient",
+      "passed": true,
+      "max_abs_error": 3.525124636638566e-11,
+      "atol": 2e-09
+    },
+    {
+      "name": "sigmoid_bce_gradient",
+      "passed": true,
+      "max_abs_error": 8.495759651339085e-12,
+      "atol": 2e-09
+    },
+    {
+      "name": "torch_autograd_single",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "atol": 1e-12
+    },
+    {
+      "name": "torch_autograd_batch",
+      "passed": true,
+      "max_abs_error": 2.7755575615628914e-17,
+      "atol": 1e-12
+    }
+  ],
+  "count": 46,
+  "python": "3.11.13",
+  "numpy": "2.3.5",
+  "autograd": {
+    "available": true,
+    "torch_version": "2.8.0+cu129",
+    "dtype": "float64",
+    "device": "cpu"
+  },
+  "finite_difference": [
+    {
+      "epsilon": 0.0001,
+      "max_abs_error": 1.837419105754634e-13
+    },
+    {
+      "epsilon": 1e-05,
+      "max_abs_error": 3.56326079753444e-12
+    },
+    {
+      "epsilon": 1e-06,
+      "max_abs_error": 4.3508752156640185e-11
+    }
+  ],
+  "regression_solution": [
+    0.8999999999999999,
+    1.2
+  ],
+  "network_gradient": [
+    -0.48,
+    0.24,
+    -0.24,
+    0.12,
+    -0.8999999999999999,
+    -0.8999999999999999,
+    -0.6
+  ],
+  "network_new_loss": 0.020930579999999976,
+  "boundary": "Numerical checks validate these examples and implementations, not every general theorem or learner comprehension."
+}
