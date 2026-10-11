@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "count": 25,
+  "count": 32,
   "checks": [
     {
       "name": "A9 one-observation Laplace NLL",
@@ -100,6 +100,34 @@
     },
     {
       "name": "C2 layer Jacobian",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B1 boundary foot lies on plane",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "B1 signed geometric distance",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B5 BCE equals Bernoulli NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B6 common score shift preserves probabilities",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "B6 normalized soft-target gradient FD",
+      "max_abs_error": 2.144982585647326e-11
+    },
+    {
+      "name": "B6 normalized soft-target autograd",
+      "max_abs_error": 4.163336342344337e-17
+    },
+    {
+      "name": "C2 local Jacobian autograd",
       "max_abs_error": 0.0
     }
   ],

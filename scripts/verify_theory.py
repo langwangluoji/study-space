@@ -76,5 +76,26 @@ ww=rng.normal(size=(2,3));z=rng.normal(size=3);bias=rng.normal(size=2);A=ww@z+bi
 check('C1 layer components',A,[sum(ww[j,i]*z[i] for i in range(3))+bias[j] for j in range(2)])
 local=1/(1+np.exp(-A));derivative=local*(1-local)
 check('C2 layer Jacobian',np.diag(derivative)@ww,[[derivative[j]*ww[j,i] for i in range(3)] for j in range(2)])
+# Independent checks for the revised classification and network explanations.
+point=rng.normal(size=3);normal=rng.normal(size=3);offset=.4
+score=normal@point+offset;foot=point-score*normal/(normal@normal)
+check('B1 boundary foot lies on plane',normal@foot+offset,0)
+check('B1 signed geometric distance',(point-foot)@(normal/np.linalg.norm(normal)),score/np.linalg.norm(normal))
+check('B5 BCE equals Bernoulli NLL',bce(q),-torch.distributions.Bernoulli(logits=xt@torch.tensor(q)).log_prob(torch.tensor(targets,dtype=torch.float64)).mean().numpy())
+shifted=a+3.7;shifted=np.exp(shifted-shifted.max(1,keepdims=True));shifted/=shifted.sum(1,keepdims=True)
+check('B6 common score shift preserves probabilities',shifted,Pp)
+soft=rng.uniform(size=T.shape);soft/=soft.sum(1,keepdims=True)
+def soft_ce(weights):
+    logits=X@weights;mx=logits.max(1,keepdims=True)
+    logs=logits-mx-np.log(np.exp(logits-mx).sum(1,keepdims=True))
+    return -np.mean((soft*logs).sum(1))
+soft_grad=X.T@(Pp-soft)/len(X)
+check('B6 normalized soft-target gradient FD',fd(soft_ce,W),soft_grad,1e-8)
+soft_w=torch.tensor(W,requires_grad=True,dtype=torch.float64)
+soft_loss=-(torch.tensor(soft)*torch.log_softmax(xt@soft_w,dim=1)).sum(1).mean();soft_loss.backward()
+check('B6 normalized soft-target autograd',soft_w.grad.numpy(),soft_grad)
+layer_w=torch.tensor(ww,dtype=torch.float64);layer_b=torch.tensor(bias,dtype=torch.float64)
+jac=torch.autograd.functional.jacobian(lambda value:torch.sigmoid(layer_w@value+layer_b),torch.tensor(z,dtype=torch.float64))
+check('C2 local Jacobian autograd',jac.numpy(),np.diag(derivative)@ww)
 report={'status':'PASS','count':len(checks),'checks':checks,'scope':'Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose.'}
 Path('reports/theory-verification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('Theory checks:',len(checks),'PASS')
