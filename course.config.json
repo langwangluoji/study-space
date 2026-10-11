@@ -1,0 +1,341 @@
+[
+  {
+    "slug": "lecture-1",
+    "title": "第一讲 · 回归与可靠预测",
+    "sections": [
+      {
+        "id": "a1",
+        "title": "先看懂模型里的两个参数",
+        "source": "_fragments/a1.md"
+      },
+      {
+        "id": "a2",
+        "title": "矩阵只是把几次预测排在一起",
+        "source": "_fragments/a2.md"
+      },
+      {
+        "id": "a3",
+        "title": "为什么平方误差能作为训练目标",
+        "source": "_fragments/a3.md"
+      },
+      {
+        "id": "a4",
+        "title": "先对一个参数求导，再得到正规方程",
+        "source": "_fragments/a4.md"
+      },
+      {
+        "id": "a5",
+        "title": "从正规方程到参数求解与核验",
+        "source": "_fragments/a5.md"
+      },
+      {
+        "id": "a6",
+        "title": "最小二乘的正交投影",
+        "source": "_fragments/a6.md"
+      },
+      {
+        "id": "a7",
+        "title": "高斯观测模型与最大似然",
+        "source": "_fragments/a7.md"
+      },
+      {
+        "id": "a8",
+        "title": "从概率规则到斜率的贝叶斯更新",
+        "source": "_fragments/a8.md"
+      },
+      {
+        "id": "a9",
+        "title": "损失与统计假设的对应",
+        "source": "_fragments/a9.md"
+      },
+      {
+        "id": "a10",
+        "title": "梯度下降与二次目标的步长条件",
+        "source": "_fragments/a10.md"
+      },
+      {
+        "id": "a11",
+        "title": "小批量梯度的无偏性与方差",
+        "source": "_fragments/a11.md"
+      },
+      {
+        "id": "a12",
+        "title": "泛化误差的偏差、方差与噪声",
+        "source": "_fragments/a12.md"
+      },
+      {
+        "id": "a13",
+        "title": "岭回归、MAP 与完整后验预测",
+        "source": "_fragments/a13.md"
+      },
+      {
+        "id": "a14",
+        "title": "Laplace 参数先验与稀疏解",
+        "source": "_fragments/a14.md"
+      },
+      {
+        "id": "a15",
+        "title": "交叉验证、标准化与无泄漏评估",
+        "source": "_fragments/a15.md"
+      }
+    ],
+    "intro": "这一讲围绕一个问题展开：怎样从数据得到预测，并知道预测是否可靠？先把模型和误差写清，再理解概率解释、训练方法与模型选择。正文保留理解结论所需的推导；算例和进一步的证明可以按需展开。",
+    "parts": [
+      {
+        "id": "model-and-fit",
+        "title": "从预测模型到最小二乘",
+        "sections": [
+          "a1",
+          "a2",
+          "a3",
+          "a4",
+          "a5",
+          "a6"
+        ],
+        "intro": "从一条直线出发，把多个样本的预测排成矩阵，再沿着残差、损失和导数求出参数。矩阵只是把逐个样本的计算合在一起；每一步仍可以写回元素。"
+      },
+      {
+        "id": "probability-and-loss",
+        "title": "用概率解释误差与参数",
+        "sections": [
+          "a7",
+          "a8",
+          "a9"
+        ],
+        "intro": "得到一个拟合解之后，我们还要解释观测为什么偏离预测。先认识噪声与似然，再看数据怎样更新参数的不确定性，最后比较不同误差假设为什么产生不同损失。"
+      },
+      {
+        "id": "training-and-generalization",
+        "title": "怎样训练，为什么还会预测失准",
+        "sections": [
+          "a10",
+          "a11",
+          "a12"
+        ],
+        "intro": "解析解不是所有模型都能得到。接下来沿着梯度逐步更新参数，并区分两种波动：抽样带来的训练波动，以及新数据带来的预测误差。"
+      },
+      {
+        "id": "regularization-and-validation",
+        "title": "约束模型，并检验选择是否可靠",
+        "sections": [
+          "a13",
+          "a14",
+          "a15"
+        ],
+        "intro": "训练误差低并不保证未来表现好。正则化限制参数，验证数据帮助选择限制的强度。先理解它们分别解决什么问题，再按需要展开完整的概率推导。"
+      }
+    ]
+  },
+  {
+    "slug": "lecture-2",
+    "title": "第二讲 · 线性分类与概率",
+    "sections": [
+      {
+        "id": "b1",
+        "title": "评分、几何距离、后验概率与决策",
+        "source": "_fragments/b1.md"
+      },
+      {
+        "id": "b2",
+        "title": "把 one-hot 标签作为多输出回归目标",
+        "source": "_fragments/b2.md"
+      },
+      {
+        "id": "b3",
+        "title": "Fisher：先固定类间距离，再压小类内波动",
+        "source": "_fragments/b3.md"
+      },
+      {
+        "id": "b4",
+        "title": "错误驱动的更新与线性可分性",
+        "source": "_fragments/b4.md"
+      },
+      {
+        "id": "b5",
+        "title": "概率怎样产生二分类损失与梯度",
+        "source": "_fragments/b5.md"
+      },
+      {
+        "id": "b6",
+        "title": "从多类评分到交叉熵与梯度",
+        "source": "_fragments/b6.md"
+      }
+    ],
+    "intro": "分类要回答两件事：怎样比较类别，以及怎样根据数据学会这种比较。这一讲先区分评分、距离与概率，再比较线性分类方法，最后从标签的概率模型逐步推到交叉熵和参数梯度。",
+    "parts": [
+      {
+        "id": "scores-and-targets",
+        "title": "先分清评分、概率与分类目标",
+        "sections": [
+          "b1",
+          "b2"
+        ],
+        "intro": "从一个线性评分开始，明确边界、距离和概率分别是什么。接着借用第一讲的回归方法拟合类别标签，检查它为何还不能自动成为概率模型。"
+      },
+      {
+        "id": "linear-classifiers",
+        "title": "寻找能区分类别的方向",
+        "sections": [
+          "b3",
+          "b4"
+        ],
+        "intro": "当目标是区分类别时，可以先寻找类间分开、类内聚集的投影方向，也可以直接用未正确分开的样本修正边界。两种方法依据不同，都需要说明成立条件。"
+      },
+      {
+        "id": "probability-classifiers",
+        "title": "从标签概率到交叉熵与学习",
+        "sections": [
+          "b5",
+          "b6"
+        ],
+        "intro": "如果希望输出类别概率，就要说明评分怎样变成概率、真实标签怎样给出似然，以及负对数怎样形成训练目标。先看二分类，再将同一思路推广到多分类。"
+      }
+    ]
+  },
+  {
+    "slug": "lecture-3",
+    "title": "第三讲 · 神经网络与反向传播",
+    "sections": [
+      {
+        "id": "c1",
+        "title": "从线性模型到可学习的隐藏层",
+        "source": "_fragments/c1.md"
+      },
+      {
+        "id": "c2",
+        "title": "激活如何影响输出、梯度与初始化",
+        "source": "_fragments/c2.md"
+      },
+      {
+        "id": "c3",
+        "title": "用曲率和抽样理解训练更新",
+        "source": "_fragments/c3.md"
+      },
+      {
+        "id": "c4",
+        "title": "沿计算图推导反向传播",
+        "source": "_fragments/c4.md"
+      },
+      {
+        "id": "c5",
+        "title": "用损失扰动核对梯度",
+        "source": "_fragments/c5.md"
+      }
+    ],
+    "intro": "神经网络仍然是在用参数产生预测、用损失评价预测。这一讲先解释隐藏层怎样改变表达能力，再连接激活、训练与反向传播，最后用独立的数值计算核验梯度。",
+    "parts": [
+      {
+        "id": "network-and-activation",
+        "title": "从线性组合到可学习的隐藏层",
+        "sections": [
+          "c1",
+          "c2"
+        ],
+        "intro": "先把一个节点的输入、加权和与输出分清，再把同一计算排成矩阵。非线性决定能够表达什么，它的局部导数和初始化尺度也决定训练信号怎样通过。"
+      },
+      {
+        "id": "optimization-and-backprop",
+        "title": "连接训练更新与反向传播",
+        "sections": [
+          "c3",
+          "c4"
+        ],
+        "intro": "优化器需要梯度才能更新参数，但梯度从哪里来？先说明更新方向、步长和抽样，再沿计算图逐段求导：一条路径相乘，多个后继贡献相加。"
+      },
+      {
+        "id": "verify-gradients",
+        "title": "用独立计算检验梯度",
+        "sections": [
+          "c5"
+        ],
+        "intro": "公式与代码都可能在转置、平均因子和更新顺序上出错。用小幅参数扰动重新计算损失，再与反传梯度比较，最后区分数值误差与真正的实现错误。"
+      }
+    ]
+  },
+  {
+    "slug": "cifar10-practice",
+    "title": "实践 · CIFAR-10 MLP",
+    "sections": [
+      {
+        "id": "p0",
+        "title": "环境、设备与随机种子",
+        "source": "_fragments/p0.md"
+      },
+      {
+        "id": "p1",
+        "title": "读取 CIFAR-10，并先看真实样本",
+        "source": "_fragments/p1.md"
+      },
+      {
+        "id": "p2",
+        "title": "把图像变成 CHW 张量，再使用固定教学归一化",
+        "source": "_fragments/p2.md"
+      },
+      {
+        "id": "p3",
+        "title": "确定性划分训练集与验证集",
+        "source": "_fragments/p3.md"
+      },
+      {
+        "id": "p4",
+        "title": "DataLoader 决定一次更新看多少样本",
+        "source": "_fragments/p4.md"
+      },
+      {
+        "id": "p5",
+        "title": "先训练线性 Softmax 基线",
+        "source": "_fragments/p5.md"
+      },
+      {
+        "id": "p6",
+        "title": "实现 3072→512→256→10 的 MLP",
+        "source": "_fragments/p6.md"
+      },
+      {
+        "id": "p7",
+        "title": "交叉熵接 logits，SGD 接参数",
+        "source": "_fragments/p7.md"
+      },
+      {
+        "id": "p8",
+        "title": "训练循环的顺序不能乱",
+        "source": "_fragments/p8.md"
+      },
+      {
+        "id": "p9",
+        "title": "评估时关闭训练行为和梯度记录",
+        "source": "_fragments/p9.md"
+      },
+      {
+        "id": "p10",
+        "title": "快速模式只验证代码流，不代表最终性能",
+        "source": "_fragments/p10.md"
+      },
+      {
+        "id": "p11",
+        "title": "记录每轮历史，并按验证指标保留最佳状态",
+        "source": "_fragments/p11.md"
+      },
+      {
+        "id": "p12",
+        "title": "只用验证集搜索超参数",
+        "source": "_fragments/p12.md"
+      },
+      {
+        "id": "p13",
+        "title": "重训最终配置，只在选择结束后计算最终测试指标",
+        "source": "_fragments/p13.md"
+      },
+      {
+        "id": "p14",
+        "title": "曲线、混淆矩阵和错误样本回答不同问题",
+        "source": "_fragments/p14.md"
+      },
+      {
+        "id": "p15",
+        "title": "报告必须让别人知道你做了什么、没做什么",
+        "source": "_fragments/p15.md"
+      }
+    ]
+  }
+]

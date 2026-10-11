@@ -1,14 +1,14 @@
 # 资料来源与使用边界
 
-更新日期：2026-10-10
+更新日期：2026-10-11
 
 ## 本地课程材料（内容基线）
 
 - 教师课件（最高优先级内容基线）：[本地路径不公开]；网页交互和教材推导只负责解释、展开与核对。
 - 原综合讲义：`机器学习第1-3讲_理论与CIFAR10实践综合版.html`。读取时 SHA-256 为 `97D1B8DF147F05BA0012300B5F42C690605077F9C7AF572A1232A3312E04F600`。新版保留其三讲范围、核心推导和 P0—P15 实践链，但重写了教学顺序与表达。
 - 本地参考教材：Deisenroth, Faisal, Ong, *Mathematics for Machine Learning*，用于线性代数、概率和优化的交叉核对。
-- 原实践脚本：`practice/cifar10_mlp_tutorial.py`；本交付包在 `downloads/` 中保留副本。
-- 原逐步 Notebook：`notebooks/CIFAR10_MLP_逐步练习.ipynb`；本交付包在 `downloads/` 中保留副本。
+- 实践脚本唯一维护源：`downloads/cifar10_mlp_tutorial.py`；`practice/` 保留原导入兼容入口。
+- 逐步 Notebook 维护源：`downloads/CIFAR10_MLP_逐步练习.ipynb`；在线阅读页在构建时由它生成。
 - 已有 quick run 摘要及诊断图复制到 `verified-results/`。其中 0.3035 是特定的 8000/2000/2000、1 epoch 快速运行结果，只用于证明该代码流曾运行，不代表完整训练性能。
 
 ## 第一讲：回归、似然、贝叶斯与模型控制
@@ -48,8 +48,12 @@
 - “相等”必须注明条件。例如已知固定正方差、条件独立同方差Gaussian观测下，权重ML与最小二乘共享最优参数；联合估计方差时还须检查完全插值退化。平方风险的条件均值结论本身不需要Gaussian假设。
 - 预期形状、理论结论与实际运行结果分开标注；未重新运行的实验不写成已验证成绩。
 
-## 本次教材化重写
+## Markdown 内容优化与架构迁移
 
-主要参考本地 Bishop《Pattern Recognition and Machine Learning》第3–5章，并与 MML、李宏毅教材及 D2L 核对。逐知识点出处与真实PDF页码见 [教材来源表](editorial-audit/source-map.md) 和三份章节审查记录。教材不同章的页偏移不同，未机械套用全书偏移。原公式迁移账本保存198个原显示式；26节均有人工迁移审查。
+三讲以本地 Bishop《Pattern Recognition and Machine Learning》第 3–5 章为推导基线，并交叉核对 MML、李宏毅教材和 D2L。保留原正文所列教材章节与版本；网页中的补充推导、矩阵展开和新样章算例由本站编写。核验方法和边界见[核验记录](verification.html)。
 
-重写以教材概念与完整推导为主，取消逐节滑块，只保留投影、后验、偏差方差、计算图四幅说明图。独立数值核对代码为 `downloads/rewrite_reference_checks.py`。既有quick run为历史记录，本次未重新训练CIFAR-10。
+第一讲 A1–A5 与第三讲 C4 沿用已认可的样章。数字代入、完整手算、练习与互动图默认收起；必要条件仍在正文。新回归算例和 ReLU 回归网络取代旧算例，下载核验脚本与 C5 同步。
+
+布局参考 [LinhoNotes](https://notes.linho.cc/) 与其 [项目说明](https://github.com/Linho1219/LinhoNotes) 的文档结构：分组课程侧栏、受控正文宽度、右侧大纲、移动端目录与本地搜索。本站保留“课程知识库”品牌、蓝色系和深浅主题，用 VitePress 1.6.4 的主题扩展实现。
+
+Notebook、Python 和本来源文稿是对应阅读页的唯一来源，构建过程不执行 Notebook。教材 PDF、教师课件与历史结果保持原文件；已有 quick run 仅作历史记录，本次未重新训练 CIFAR-10。

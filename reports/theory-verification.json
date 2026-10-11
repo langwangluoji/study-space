@@ -1,0 +1,235 @@
+{
+  "status": "PASS",
+  "count": 57,
+  "checks": [
+    {
+      "name": "A9 one-observation Laplace NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 independent joint NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 Laplace variance",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 known unequal scales",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A9 median-risk derivative FD",
+      "max_abs_error": 4.644451490065649e-12
+    },
+    {
+      "name": "A9 atomic median minimizes absolute risk",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A6 projection symmetry",
+      "max_abs_error": 2.3592239273284576e-16
+    },
+    {
+      "name": "A6 projection idempotent",
+      "max_abs_error": 2.636779683484747e-16
+    },
+    {
+      "name": "A6 residual orthogonality",
+      "max_abs_error": 2.0727479838213728e-15
+    },
+    {
+      "name": "A10 exact quadratic loss change",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A11 covariance entries",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A13 predictive quadratic",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A14 soft threshold stationarity",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "A14 soft threshold stationarity",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 scatter expansion",
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "B3 LS Fisher equivalence",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "B3 projected mean difference",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 projected within-class scatter",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 fixed-distance constraint",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 constrained minimum scatter",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B3 constrained Lagrangian gradient FD",
+      "max_abs_error": 1.1102230246251564e-11
+    },
+    {
+      "name": "B3 constrained Lagrangian autograd",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "B3 feasible-perturbation global gap",
+      "max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "name": "B3 maximum ratio generalized eigensystem",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "B3 ratio unchanged by normalization",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "B5 parameter gradient FD",
+      "max_abs_error": 5.095149996359183e-12
+    },
+    {
+      "name": "B5 Hessian FD",
+      "max_abs_error": 1.7355353265635642e-12
+    },
+    {
+      "name": "B5 autograd",
+      "max_abs_error": 4.163336342344337e-17
+    },
+    {
+      "name": "B6 gradient FD",
+      "max_abs_error": 1.7996659718022556e-11
+    },
+    {
+      "name": "B6 autograd",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B6 Jacobian expansion",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B6 Jacobian column sums",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "C1 layer components",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "C2 layer Jacobian",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B1 boundary foot lies on plane",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "B1 signed geometric distance",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B5 BCE equals Bernoulli NLL",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B6 common score shift preserves probabilities",
+      "max_abs_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "B6 normalized soft-target gradient FD",
+      "max_abs_error": 1.9728829681042725e-11
+    },
+    {
+      "name": "B6 normalized soft-target autograd",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "C2 local Jacobian autograd",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "C2 composed forward Jacobian autograd",
+      "max_abs_error": 5.204170427930421e-18
+    },
+    {
+      "name": "C2 backward transposed Jacobian autograd",
+      "max_abs_error": 8.673617379884035e-19
+    },
+    {
+      "name": "B2 per-output least-squares gradient FD",
+      "max_abs_error": 3.65035224270116e-11
+    },
+    {
+      "name": "B2 per-output least-squares autograd",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B4 negative-margin gradient FD",
+      "max_abs_error": 9.493628105872176e-12
+    },
+    {
+      "name": "B4 zero-margin subgradient supporting inequality",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B4 zero-margin update improves current margin",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "B5 stable logit loss extreme scores",
+      "max_abs_error": 1.7978867228535603e-16
+    },
+    {
+      "name": "B6 direct log-sum derivative FD",
+      "max_abs_error": 1.2150148942513539e-11
+    },
+    {
+      "name": "B6 unnormalized target score gradient FD",
+      "max_abs_error": 2.839439794399823e-11
+    },
+    {
+      "name": "C1 row-batch equals stacked single-sample forward",
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "C2 independent zero-mean weight second moment",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "C2 symmetric ReLU halves second moment",
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "C4 batched hidden weight and bias autograd",
+      "max_abs_error": 9.71445146547012e-17
+    },
+    {
+      "name": "C4 batched output weight and bias autograd",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "C5 central-difference quadratic error identity",
+      "max_abs_error": 2.209427844672429e-15
+    }
+  ],
+  "scope": "Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose."
+}

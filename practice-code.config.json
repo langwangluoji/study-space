@@ -1,0 +1,52 @@
+{
+  "p0": [
+    "seed_everything",
+    "resolve_device"
+  ],
+  "p1": [
+    "make_dataloaders"
+  ],
+  "p2": [
+    "build_transform"
+  ],
+  "p3": [
+    "split_train_validation"
+  ],
+  "p4": [
+    "_make_loader"
+  ],
+  "p5": [
+    "LinearBaseline"
+  ],
+  "p6": [
+    "MLP"
+  ],
+  "p7": [
+    "main"
+  ],
+  "p8": [
+    "train_one_epoch"
+  ],
+  "p9": [
+    "evaluate"
+  ],
+  "p10": [
+    "Config",
+    "_config_from_arguments"
+  ],
+  "p11": [
+    "fit"
+  ],
+  "p12": [
+    "run_hyperparameter_search"
+  ],
+  "p13": [
+    "save_checkpoint",
+    "load_checkpoint"
+  ],
+  "p14": [
+    "plot_history",
+    "plot_confusion_matrix",
+    "plot_misclassified_examples"
+  ]
+}

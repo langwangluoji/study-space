@@ -1,0 +1,305 @@
+{
+  "status": "PASS",
+  "date": "2026-10-11T01:34:54.074Z",
+  "base": "http://127.0.0.1:8784/study-space/",
+  "checks": [
+    {
+      "name": "homepage course entry",
+      "url": "http://127.0.0.1:8784/study-space/course-ml.html"
+    },
+    {
+      "name": "SPA route preserves theme and B1 link",
+      "themeBefore": true,
+      "themeAfter": true,
+      "url": "http://127.0.0.1:8784/study-space/lecture-2.html#b1"
+    },
+    {
+      "name": "mobile outline Escape after transition",
+      "closed": true
+    },
+    {
+      "name": "resources mobile body width",
+      "viewport": 390,
+      "scroll": 390,
+      "links": [
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E8%B5%84%E6%96%99%E4%B8%AD%E5%BF%83"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#ml"
+        },
+        {
+          "text": "课程阅读路径",
+          "href": "http://127.0.0.1:8784/study-space/course-ml.html"
+        },
+        {
+          "text": "三讲与实践的来源说明",
+          "href": "http://127.0.0.1:8784/study-space/read-sources.html"
+        },
+        {
+          "text": "维护指南",
+          "href": "http://127.0.0.1:8784/study-space/read-README.html"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E5%8E%9F%E6%95%99%E6%9D%90"
+        },
+        {
+          "text": "第 3–5 章参考",
+          "href": "http://127.0.0.1:8784/study-space/book-prml.html"
+        },
+        {
+          "text": "PDF",
+          "href": "http://127.0.0.1:8784/study-space/books/prml.pdf"
+        },
+        {
+          "text": "数学背景参考",
+          "href": "http://127.0.0.1:8784/study-space/book-mml.html"
+        },
+        {
+          "text": "PDF",
+          "href": "http://127.0.0.1:8784/study-space/books/mml.pdf"
+        },
+        {
+          "text": "版本与阅读入口",
+          "href": "http://127.0.0.1:8784/study-space/book-leedl.html"
+        },
+        {
+          "text": "维护项目",
+          "href": "https://github.com/datawhalechina/leedl-tutorial"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E6%95%99%E5%B8%88%E8%AF%BE%E4%BB%B6"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/slides-lecture-1.html"
+        },
+        {
+          "text": "下载",
+          "href": "http://127.0.0.1:8784/study-space/slides/lecture-1.pptx"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/slides-lecture-2.html"
+        },
+        {
+          "text": "下载",
+          "href": "http://127.0.0.1:8784/study-space/slides/lecture-2.pptx"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/slides-lecture-3.html"
+        },
+        {
+          "text": "下载",
+          "href": "http://127.0.0.1:8784/study-space/slides/lecture-3.pptx"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E5%8F%AF%E8%BF%90%E8%A1%8C%E4%BB%A3%E7%A0%81"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/read-downloads-cifar10_mlp_tutorial.html"
+        },
+        {
+          "text": "Python",
+          "href": "http://127.0.0.1:8784/study-space/downloads/cifar10_mlp_tutorial.py"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/read-notebook.html"
+        },
+        {
+          "text": "Notebook",
+          "href": "http://127.0.0.1:8784/study-space/downloads/CIFAR10_MLP_%E9%80%90%E6%AD%A5%E7%BB%83%E4%B9%A0.ipynb"
+        },
+        {
+          "text": "阅读",
+          "href": "http://127.0.0.1:8784/study-space/read-downloads-rewrite_reference_checks.html"
+        },
+        {
+          "text": "Python",
+          "href": "http://127.0.0.1:8784/study-space/downloads/rewrite_reference_checks.py"
+        },
+        {
+          "text": "实践 P0",
+          "href": "http://127.0.0.1:8784/study-space/cifar10-practice.html#p0"
+        },
+        {
+          "text": "快速检查 P10",
+          "href": "http://127.0.0.1:8784/study-space/cifar10-practice.html#p10"
+        },
+        {
+          "text": "MISSION.md",
+          "href": "http://127.0.0.1:8784/study-space/MISSION.md"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E6%A0%B8%E9%AA%8C%E4%B8%8E%E5%8E%86%E5%8F%B2%E7%BB%93%E6%9E%9C"
+        },
+        {
+          "text": "本次核验记录",
+          "href": "http://127.0.0.1:8784/study-space/verification.html"
+        },
+        {
+          "text": "​",
+          "href": "http://127.0.0.1:8784/study-space/resources.html#%E6%97%A7%E5%AE%9E%E9%AA%8C%E8%B5%84%E6%96%99%E5%85%A5%E5%8F%A3"
+        },
+        {
+          "text": "训练曲线",
+          "href": "http://127.0.0.1:8784/study-space/verified-results/history.png"
+        },
+        {
+          "text": "混淆矩阵",
+          "href": "http://127.0.0.1:8784/study-space/verified-results/confusion_matrix.png"
+        },
+        {
+          "text": "误分类样本",
+          "href": "http://127.0.0.1:8784/study-space/verified-results/misclassified_examples.png"
+        }
+      ]
+    },
+    {
+      "name": "lecture-1 outline",
+      "count": 4,
+      "headers": [
+        "从预测模型到最小二乘",
+        "用概率解释误差与参数",
+        "怎样训练，为什么还会预测失准",
+        "约束模型，并检验选择是否可靠"
+      ]
+    },
+    {
+      "name": "lecture-1 keyboard diagrams",
+      "count": 15
+    },
+    {
+      "name": "lecture-2 outline",
+      "count": 3,
+      "headers": [
+        "先分清评分、概率与分类目标",
+        "寻找能区分类别的方向",
+        "从标签概率到交叉熵与学习"
+      ]
+    },
+    {
+      "name": "lecture-2 keyboard diagrams",
+      "count": 6
+    },
+    {
+      "name": "lecture-3 outline",
+      "count": 3,
+      "headers": [
+        "从线性组合到可学习的隐藏层",
+        "连接训练更新与反向传播",
+        "用独立计算检验梯度"
+      ]
+    },
+    {
+      "name": "lecture-3 keyboard diagrams",
+      "count": 5
+    },
+    {
+      "name": "direct folded hash",
+      "visible": true,
+      "top": 95.6875
+    },
+    {
+      "name": "search empty state",
+      "text": "没有找到相关笔记 \"不存在的知识条目\"\n切换\n选择\nesc\n关闭"
+    },
+    {
+      "name": "lecture-1 legacy anchors",
+      "count": 15,
+      "absent": []
+    },
+    {
+      "name": "lecture-2 legacy anchors",
+      "count": 6,
+      "absent": []
+    },
+    {
+      "name": "lecture-3 legacy anchors",
+      "count": 5,
+      "absent": []
+    },
+    {
+      "name": "cifar10-practice legacy anchors",
+      "count": 16,
+      "absent": []
+    },
+    {
+      "name": "mobile PDF with alternative download",
+      "frame": "/study-space/books/prml.pdf#page=243",
+      "download": 1,
+      "width": 320
+    },
+    {
+      "name": "download books/prml.pdf",
+      "status": 200
+    },
+    {
+      "name": "download books/mml.pdf",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-1.pdf",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-2.pdf",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-3.pdf",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-1.pptx",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-2.pptx",
+      "status": 200
+    },
+    {
+      "name": "download slides/lecture-3.pptx",
+      "status": 200
+    },
+    {
+      "name": "download downloads/cifar10_mlp_tutorial.py",
+      "status": 200
+    },
+    {
+      "name": "download downloads/rewrite_reference_checks.py",
+      "status": 200
+    },
+    {
+      "name": "download downloads/CIFAR10_MLP_逐步练习.ipynb",
+      "status": 200
+    },
+    {
+      "name": "download MISSION.md",
+      "status": 200
+    },
+    {
+      "name": "qualified legacy progress cleared",
+      "initial": false,
+      "afterReload": false,
+      "stored": "{\"a1\":false,\"lecture-1:a1\":true,\"other\":true}"
+    },
+    {
+      "name": "import old qualified key then clear persists",
+      "importedTrue": true,
+      "cleared": true,
+      "preserved": true
+    }
+  ],
+  "issues": [],
+  "runtimeErrors": []
+}

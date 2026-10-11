@@ -1,0 +1,70 @@
+[
+  {
+    "file": "books/prml.pdf",
+    "pages": 746,
+    "metadata": {
+      "/CreationDate": "D:20090915162758+02'00'",
+      "/Creator": "Adobe Acrobat 6.0",
+      "/ModDate": "D:20190211094747+02'00'",
+      "/Producer": "Acrobat Distiller 6.0 (Windows)",
+      "/Title": ""
+    },
+    "first_page": "Christopher M. Bishop\nPattern Recognition and\nMachine Learning\n"
+  },
+  {
+    "file": "books/mml.pdf",
+    "pages": 417,
+    "metadata": {
+      "/Author": "Marc Peter Deisenroth, A. Aldo Faisal, Cheng Soon Ong",
+      "/CreationDate": "D:20240115154149Z",
+      "/Creator": "LaTeX with hyperref",
+      "/Keywords": "",
+      "/ModDate": "D:20240115154149Z",
+      "/PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) kpathsea version 6.3.3",
+      "/Producer": "pdfTeX-1.40.23",
+      "/Subject": "",
+      "/Title": "Mathematics for Machine Learning",
+      "/Trapped": "/False"
+    },
+    "first_page": "MATHEMATICS  FOR \nMACHINE LEAR NING\nMarc Peter Deisenroth\nA. Aldo Faisal\nCheng Soon On g\nMATHEMATICS FOR MACHINE LEARNING DEISENROTH ET AL.\nThe fundamental mathematical tools needed to understand machine \nlearning include linear algebra, analytic geometry, matrix decompositions, \nvector calculus, optimization, probability and statistics. These topics \nare traditionally taught in disparate courses, making it hard for data \nscience or computer science students, or professionals, to efﬁ  ciently learn \nthe mathematics. This self-contained textbook bridges the gap between \nmathematical and machine learning texts, introducing the mathematical \nconcepts with a minimum of prerequisites. It uses these concepts to \nderive four central machine learning methods: linear regression, principal \ncomponent analysis, Gaussian mixture models and support vector machines. \nFor students and others with a mathematical background, these derivations \nprovide a starting point to machine learning texts. For those learning the \nmathematics for the ﬁ  rst time, the methods help build intuition and practical \nex"
+  },
+  {
+    "file": "slides/lecture-1.pdf",
+    "pages": 63,
+    "metadata": {
+      "/Title": "PowerPoint 演示文稿",
+      "/Author": "Windows 用户",
+      "/CreationDate": "D:20261010103245+08'00'",
+      "/ModDate": "D:20261010103245+08'00'",
+      "/Producer": "Microsoft® PowerPoint® 2024",
+      "/Creator": "Microsoft® PowerPoint® 2024"
+    },
+    "first_page": "图像分析与机器学习\n1 线性回归与最小二乘\n张绍明"
+  },
+  {
+    "file": "slides/lecture-2.pdf",
+    "pages": 58,
+    "metadata": {
+      "/Title": "PowerPoint 演示文稿",
+      "/Author": "Windows 用户",
+      "/CreationDate": "D:20261010103257+08'00'",
+      "/ModDate": "D:20261010103257+08'00'",
+      "/Producer": "Microsoft® PowerPoint® 2024",
+      "/Creator": "Microsoft® PowerPoint® 2024"
+    },
+    "first_page": "2\n图像分析与机器学习\n2 线性分类与感知机\n张绍明"
+  },
+  {
+    "file": "slides/lecture-3.pdf",
+    "pages": 49,
+    "metadata": {
+      "/Title": "PowerPoint 演示文稿",
+      "/Author": "Windows 用户",
+      "/CreationDate": "D:20261010103304+08'00'",
+      "/ModDate": "D:20261010103304+08'00'",
+      "/Producer": "Microsoft® PowerPoint® 2024",
+      "/Creator": "Microsoft® PowerPoint® 2024"
+    },
+    "first_page": "2\n图像分析与机器学习\n3 非线性分类/回归与多层感知机\n张绍明"
+  }
+]

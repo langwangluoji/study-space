@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "baseline": "7bda518dbc420977d4a2b96c7299e610d6158bf5",
+  "files": [
+    {
+      "path": "public/MISSION.md",
+      "sha256": "3c87f6b221d74f67a6196a1f8aae4d5573a99f2b00c1d0d04a7430a15ac8acc8",
+      "unchanged": true,
+      "line_endings": "git-normalized"
+    },
+    {
+      "path": "public/books/mml.pdf",
+      "sha256": "3f87b70c64a35d30ec4e565b4d5cfd18fe913002d3b3bed44691c7d0838911bc",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/books/prml.pdf",
+      "sha256": "1f59e27187f0388617697fa89c27ec7ec327faa79b50098ca212b81b636d38f2",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/downloads/cifar10_mlp_tutorial.py",
+      "sha256": "575e63a62adaad25081866da2c3d3c6d88232dd7b448c2a6449ae93c9258cdef",
+      "unchanged": true,
+      "line_endings": "git-normalized"
+    },
+    {
+      "path": "public/practice/__init__.py",
+      "sha256": "cdd76cb275eeb3d1c54b72caed9bb7a4d28b4f33ab43d50332671b76bcf17e88",
+      "unchanged": true,
+      "line_endings": "git-normalized"
+    },
+    {
+      "path": "public/practice/cifar10_mlp_tutorial.py",
+      "sha256": "fdf9d3ce3ddb4f3a5a38f7f8c0de768ab970ce54296180daa291dacc56af8cba",
+      "unchanged": true,
+      "line_endings": "git-normalized"
+    },
+    {
+      "path": "public/slides/lecture-1.pdf",
+      "sha256": "6b583df51dfbab5129cefb8fffc0ad0c238c11a8a98380f0964343199fb25cf2",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/slides/lecture-1.pptx",
+      "sha256": "aa25cc4366a63c4e07ada59415d222abbd01e1de285c6b4b42cd030e14d30755",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/slides/lecture-2.pdf",
+      "sha256": "6280c23dfb15a141597e3fa6016406fa14e5c699b33f297113710db9cbd83765",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/slides/lecture-2.pptx",
+      "sha256": "3f87e1ec47d4db13b294f443840a4a90c0ff5642f666285675bd730ddd948a55",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/slides/lecture-3.pdf",
+      "sha256": "b6cfdb5e6ee8eef4bf8c899253383fcc826afa4d2dd2cf93be77077d72bd8e9c",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/slides/lecture-3.pptx",
+      "sha256": "818156b8fde8bfb846f585e9dce6d3ada1648d1f52882566cd7349673f293c54",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/verified-results/confusion_matrix.png",
+      "sha256": "51db4bd2224c4f3561b1bde21990f73c18c6f58f4e464f41e7b974884a206bc6",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/verified-results/history.png",
+      "sha256": "8ddb07d4fd99cf9a920befe49c5558d283ae6336c7de01bce9bd9e9d54e423ce",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    },
+    {
+      "path": "public/verified-results/misclassified_examples.png",
+      "sha256": "1f114e26eb6aabb6a85c7cf5b1bea3d28068d4876fd629b38799b930cd7c1391",
+      "unchanged": true,
+      "line_endings": "binary-exact"
+    }
+  ],
+  "notebook_code_and_outputs": "unchanged; one prose reference updated"
+}

@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "scope": "synthetic input, one SGD step, no CIFAR download or retraining",
+  "output": "synthetic smoke test: PASS"
+}

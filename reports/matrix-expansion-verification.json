@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "count": 10,
+  "checks": [
+    {
+      "name": "prediction_rows",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "transpose_residual",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "normal_equation_gram",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "normal_equation_rhs",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "scalar_parameter_solution",
+      "passed": true,
+      "max_abs_error": 5.898059818321144e-17
+    },
+    {
+      "name": "successor_sum",
+      "passed": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "activation_component_product",
+      "passed": true,
+      "max_abs_error": 6.938893903907228e-18
+    },
+    {
+      "name": "connection_outer_product",
+      "passed": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "batch_connection_average",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "batch_bias_average",
+      "passed": true,
+      "max_abs_error": 0.0
+    }
+  ],
+  "scope": "Numerical component checks supplement the index derivations; they are not general proofs."
+}

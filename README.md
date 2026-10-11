@@ -1,76 +1,86 @@
-# Study Space · 多领域学习空间
+# 课程知识库 · Markdown 维护指南
 
-面向自学、课程复习与资料查阅的中文学习空间。当前收录机器学习前三讲及可选实践；后续按领域扩展课程、数学推导、学习笔记和参考资料，避免把所有内容混在一个长页面中。
+内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。三讲与实践各保留一张连续阅读的长页。生成页面不手工修改。
 
-[在线阅读](https://langwangluoji.github.io/study-space/) · [机器学习课程](https://langwangluoji.github.io/study-space/course-ml.html) · [资料中心](https://langwangluoji.github.io/study-space/resources.html)
+## 环境与命令
 
-`study-space` 是本站专用的 GitHub Pages 项目路径，不是另行注册的独立域名。个人主页根地址可留给未来其他用途。
+需要 Node.js 20 或更新的 LTS、npm。首次克隆后运行：
 
-## 内容梗概与阅读路径
-
-| 章节 | 内容重点 | 源文件 |
-| --- | --- | --- |
-| 第一讲：线性回归与最小二乘 | 回归模型、最小二乘、最大似然与最小二乘的联系、先验与正则化 | [第一讲](public/lecture-1.html) |
-| 第二讲：线性分类与感知机 | 判别函数、感知机、概率分类、sigmoid、softmax与交叉熵 | [第二讲](public/lecture-2.html) |
-| 第三讲：非线性回归与多层感知机 | 非线性表达、网络结构、激活函数、链式求导与反向传播 | [第三讲](public/lecture-3.html) |
-| CIFAR-10可选实践 | 数据划分、MLP训练、评估与代码对照 | [实践](public/cifar10-practice.html) |
-
-建议依次阅读前三讲，关注“问题 → 假设 → 推导 → 解释”的联系。已学过的数学背景按需回顾；实践用于连接数学和代码，不是阅读理论的前提。
-
-## 使用详情
-
-- 从课程总览进入讲义，通过章节目录定位知识点；主页搜索可跨讲查找概念。
-- 交互图中的滑块和曲线用于观察参数变化；公式由随站发布的MathJax渲染，无需安装LaTeX。
-- 主题与部分学习状态保存在当前浏览器，不是跨设备同步账号。
-- PDF内嵌阅读失败时，请新标签打开或下载；手机浏览器可能直接下载文件。
-- PPT在线预览是静态PDF；动画与演示效果需要下载原PPTX后打开。
-- Python与Notebook下载后在自己的Anaconda `pytorch` 环境运行；网站不提供服务器端Python或GPU执行。
-- 教材章节定位和官方链接见 [来源说明](public/sources.md)。
-
-## 文件结构
-
-```text
-.github/workflows/pages.yml  自动部署
-public/
-  index.html                主页
-  course-ml.html            课程总览
-  lecture-1/2/3.html        各讲正文
-  cifar10-practice.html     可选实践
-  resources.html           资料中心
-  book-*.html              教材阅读页
-  slides-lecture-*.html     课件阅读页
-  assets/                  样式、交互、插图及公式渲染
-  books/                   教材PDF
-  slides/                  课件PDF与PPTX
-  downloads/               Python与Notebook
+```sh
+npm ci
+npm run dev
 ```
 
-## 维护与更新
+开发地址由命令行显示，访问带 `/study-space/` 的路径。以下命令用于交付前检查：
 
-小修改：在GitHub打开文件 → 点击编辑 → 提交到 `main` → 在 **Actions → Publish course website** 查看部署是否成功。建议写清修改内容。
-
-较大修改：在本地编辑并预览、检查公式和链接后提交：
-
-```bash
-git clone https://github.com/langwangluoji/study-space.git
-cd study-space
-git pull --ff-only
-# 修改、检查public中的内容后
-git add public
-git commit -m "docs: revise lecture explanations"
-git push origin main
+```sh
+npm run build
+npm run preview
+python -m pip install -r requirements-checks.txt
+npm run check:math
+node scripts/check-ui.cjs
 ```
 
-这是静态HTML网站，无需npm构建。新增章节时还需要更新课程总览、导航、课程目录与搜索索引；上传新HTML不会自动生成这些入口。更换教材文件后检查阅读页中的文件路径。部署失败先查看Actions日志，不要删除旧网站。
+`build` 先检查课程配置与缺失片段，生成入口和来源阅读页，再构建并核对内部链接、42 个旧锚点和公式渲染。`check:math` 做 NumPy、中心差分与 PyTorch 自动微分核对，并运行不下载数据的合成 smoke。UI 检查需安装 Playwright 和 Chromium；可用 `PLAYWRIGHT_MODULE` 指向已有模块，`PLAYWRIGHT_CHANNEL=msedge` 使用本机 Edge。
 
-勘误可通过本仓库Issues提交，请注明讲次、知识点、具体问题与参考来源。数学推导、排版和代码运行分别核验，网页能打开不等于内容已经全部验收。
+使用已有 Anaconda 环境时先运行 `conda activate pytorch`，再执行 `npm run check:math`；命令使用当前环境的 Python。基础 Python 未安装 PyTorch 时会明确失败，不跳过自动微分核验。
 
-网站发布目录为 `public`，使用 GitHub Actions 发布 GitHub Pages。
-在仓库 Settings → Pages → Build and deployment 中选择 GitHub Actions。
+## 内容在哪里编辑
 
-PRML、MML 与前三讲课件提供站内 PDF 预览和下载。李宏毅教程保留原维护项目完整版下载入口；不将大于100 MiB的原教材提交到 Git 仓库。
+| 内容 | 唯一维护源 |
+| --- | --- |
+| 讲次、编号、标题、顺序、源文件 | `course.config.json` |
+| 单个知识点与实践说明 | `docs/_fragments/a1.md` 等 42 个片段 |
+| 首页、课程路径、资料与核验说明 | `docs/*.md` 中非生成文件 |
+| 实践参考代码 | `public/downloads/cifar10_mlp_tutorial.py` |
+| Notebook 单元、讲解及练习 | `public/downloads/CIFAR10_MLP_逐步练习.ipynb` |
+| 来源文稿 | `public/sources.md` |
+| 数学复算 | `public/downloads/rewrite_reference_checks.py` 与 `scripts/verify_*.py` |
 
-本仓库不包含本机桌面打开服务、私密配置或内部验收报告。
-资料版权归原作者和教师所有，公开分发须遵循其许可；未对第三方教材附加开源许可。仓库公开不等于全部内容具有开源授权，目前没有统一开源许可证。以后若为原创代码或讲义添加许可，应单独说明范围并排除第三方资料。
+`docs/lecture-*.md`、`docs/cifar10-practice.md`、`docs/read-*.md` 和 `docs/_fragments/generated/` 由脚本生成并已忽略。整讲入口通过 Markdown include 组合片段；开发时编辑片段会自动刷新。新增知识点或调整课程配置后重新启动 `npm run dev`。
 
-GitHub Pages 为静态网站，不执行服务器端 Python。大陆跨网络可达性需上线后实测。
+`public/` 仅维护静态文件，构建时复制到网站根路径；教材、课件、历史结果、下载与 `MISSION.md` 不改名。不往其中添加手写 HTML 正文或搜索索引。
+
+## 新增课程与知识点
+
+在 `course.config.json` 新增讲次或知识点记录，包含 `slug`、`title`、`sections`；每个 section 指定唯一 `id`、`title`、`source`。按配置顺序生成长页，左侧导航同步生成，搜索自动检索渲染后的正文。
+
+没有阅读分组时，片段首行写 `## 标题 {#p1}`；三讲均使用 `### 标题 {#a1}`，片段内的小标题使用四级标题。首行标题与配置保持一致；二、三级标题进入右侧大纲。旧的 `a1–a15`、`b1–b6`、`c1–c5`、`p0–p15` 锚点不得删除或改名。片段不单独生成网页。
+
+可在讲次配置中添加 `intro` 与 `parts`：每个 part 包含唯一 `id`、`title`、过渡文字 `intro` 和按原顺序排列的 `sections` 编号。分组必须恰好覆盖所有知识点，生成器会拒绝遗漏、重复或乱序。分组标题成为二级标题，侧栏按分组折叠；学习标记集中在讲末的附加框中，继续使用原存储键。知识点编号用于维护与定位，不必成为正文里的显眼编号。
+
+写作时先提出当前问题，再解释新术语和符号，随后逐行推导；不要在一个等式中同时引入多个未知概念。长证明可以放进“进一步推导”附加框，但结论的假设、边界与适用条件必须在正文可见。首页维护全站课程与资料入口，单门课程的讲次目录放在课程页。
+
+实践页通过 `practice-code.config.json` 选择脚本函数或类，构建时从源代码提取对照片段；不要手工复制第二份实现。代码阅读页同样自动从下载文件生成。Notebook 读取时按原单元顺序渲染，不执行 Notebook。
+
+## 数学与附加框
+
+行内公式使用 `$...$`；独立公式使用单独一行的 `$$` 开始和结束。矩阵保留 TeX 的 `&` 列分隔与 `\\` 行换行。不要将 TeX 写成 HTML 实体，也不要给代码块批量替换反斜线。
+
+统一每样本平均损失、残差“预测减目标”，单样本网络用列向量，批量样本按行。符号先定义、维度先注明，求和时说清固定下标与遍历下标。必要假设、边界和损失尺度放正文。
+
+数字算例、手算、练习及可选代码用下列附加框，标签后的空行不能省略：
+
+```md
+<details><summary>附加算例｜标题</summary>
+
+### 算例标题 {#unique-example}
+
+这里写可检索的补充内容和公式。
+
+</details>
+```
+
+标题给出可定位锚点；从搜索结果或旧链接跳入框内时，主题会展开所有祖先附加框。互动图用 `<ConceptViz id="a6" />`，放在附加框里，由 Vue 生命周期管理尺寸和主题监听。
+
+## 构建与发布
+
+PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages 部署，发布目录为 `docs/.vitepress/dist`。草稿 PR 不触发正式发布。预览使用 `npm run preview`，无需更改 Pages 设置。
+
+主题只加载 VitePress 扩展变量，保留蓝色、深浅主题与衬线正文。旧的 `ml-course-theme` 会在首次迁移时读入；已读与掌握分别继续用 `ml-course-progress-v1`、`ml-course-mastery-v1`，不会清空旧记录。
+
+## 原始资料与核验边界
+
+教材与教师 PPT/PDF、已有 `verified-results/` 保持原样。本次迁移不重新训练 CIFAR-10。历史 quick run 仅证明当时的代码流程，不能作为完整实验性能。教师课件为课程范围依据，网页补足解释与核对；原课件勘误在正文注明，不修改课件文件。
+
+复算记录见 [核验记录](verification.html)，教材版本与原路径见 [来源说明](read-sources.html)。

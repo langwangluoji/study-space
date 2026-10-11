@@ -1,0 +1,9 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/lecture-*.md
+docs/cifar10-practice.md
+docs/read-*.md
+reports/screenshots/
+__pycache__/
+docs/_fragments/generated/
