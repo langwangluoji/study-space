@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "count": 43,
+  "count": 57,
   "checks": [
     {
       "name": "A9 one-observation Laplace NLL",
@@ -173,6 +173,62 @@
     {
       "name": "C2 backward transposed Jacobian autograd",
       "max_abs_error": 8.673617379884035e-19
+    },
+    {
+      "name": "B2 per-output least-squares gradient FD",
+      "max_abs_error": 3.65035224270116e-11
+    },
+    {
+      "name": "B2 per-output least-squares autograd",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B4 negative-margin gradient FD",
+      "max_abs_error": 9.493628105872176e-12
+    },
+    {
+      "name": "B4 zero-margin subgradient supporting inequality",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B4 zero-margin update improves current margin",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "B5 stable logit loss extreme scores",
+      "max_abs_error": 1.7978867228535603e-16
+    },
+    {
+      "name": "B6 direct log-sum derivative FD",
+      "max_abs_error": 1.2150148942513539e-11
+    },
+    {
+      "name": "B6 unnormalized target score gradient FD",
+      "max_abs_error": 2.839439794399823e-11
+    },
+    {
+      "name": "C1 row-batch equals stacked single-sample forward",
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "C2 independent zero-mean weight second moment",
+      "max_abs_error": 5.551115123125783e-17
+    },
+    {
+      "name": "C2 symmetric ReLU halves second moment",
+      "max_abs_error": 2.7755575615628914e-17
+    },
+    {
+      "name": "C4 batched hidden weight and bias autograd",
+      "max_abs_error": 9.71445146547012e-17
+    },
+    {
+      "name": "C4 batched output weight and bias autograd",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "C5 central-difference quadratic error identity",
+      "max_abs_error": 2.209427844672429e-15
     }
   ],
   "scope": "Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose."

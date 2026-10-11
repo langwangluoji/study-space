@@ -152,12 +152,12 @@
       },
       {
         "id": "b5",
-        "title": "从对数几率到 Bernoulli 似然与 BCE",
+        "title": "概率怎样产生二分类损失与梯度",
         "source": "_fragments/b5.md"
       },
       {
         "id": "b6",
-        "title": "Softmax、categorical 与交叉熵",
+        "title": "从多类评分到交叉熵与梯度",
         "source": "_fragments/b6.md"
       }
     ],
@@ -203,12 +203,12 @@
       },
       {
         "id": "c2",
-        "title": "激活、局部导数与初始化尺度",
+        "title": "激活如何影响输出、梯度与初始化",
         "source": "_fragments/c2.md"
       },
       {
         "id": "c3",
-        "title": "曲率、驻点与小批量优化",
+        "title": "用曲率和抽样理解训练更新",
         "source": "_fragments/c3.md"
       },
       {
@@ -218,7 +218,7 @@
       },
       {
         "id": "c5",
-        "title": "用 Taylor 展开检查梯度",
+        "title": "用损失扰动核对梯度",
         "source": "_fragments/c5.md"
       }
     ],

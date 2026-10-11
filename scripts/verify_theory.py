@@ -139,5 +139,54 @@ check('C2 composed forward Jacobian autograd',composed,torch.autograd.functional
 input_grad=torch.tensor(start,requires_grad=True,dtype=torch.float64)
 output=network(input_grad);loss=.5*(output**2).sum();loss.backward()
 check('C2 backward transposed Jacobian autograd',composed.T@current,input_grad.grad.numpy())
+# Second/third lecture re-audit: check the actual newly explained routes.
+MW=rng.normal(size=(3,2));MT=rng.normal(size=(9,2));ME=X@MW-MT
+multi_ls=lambda weights:.5*np.square(X@weights-MT).sum()/len(X)
+check('B2 per-output least-squares gradient FD',fd(multi_ls,MW),X.T@ME/len(X),1e-8)
+mwt=torch.tensor(MW,requires_grad=True,dtype=torch.float64)
+mloss=.5*((xt@mwt-torch.tensor(MT))**2).sum()/len(X);mloss.backward()
+check('B2 per-output least-squares autograd',mwt.grad.numpy(),X.T@ME/len(X))
+phi=rng.normal(size=3);tag=-1.;eta_p=.3
+negative=-tag*phi
+perceptron=lambda value:max(0.,-tag*(value@phi))
+check('B4 negative-margin gradient FD',fd(perceptron,negative),-tag*phi,1e-8)
+zero=np.zeros(3);selected=-tag*phi;trials=rng.normal(size=(24,3))
+slacks=np.array([perceptron(trial)-perceptron(zero)-selected@(trial-zero) for trial in trials])
+assert np.all(slacks>=-1e-12)
+check('B4 zero-margin subgradient supporting inequality',np.minimum(slacks,0),np.zeros_like(slacks))
+new=zero-eta_p*selected
+check('B4 zero-margin update improves current margin',tag*(new@phi)-tag*(zero@phi),eta_p*(phi@phi))
+logits=np.array([-1000.,-12.,0.,12.,1000.]);binary=np.array([1.,0.,1.,1.,0.])
+stable_bce=np.maximum(logits,0)+np.log1p(np.exp(-np.abs(logits)))-binary*logits
+check('B5 stable logit loss extreme scores',stable_bce,torch.nn.functional.binary_cross_entropy_with_logits(torch.tensor(logits),torch.tensor(binary),reduction='none').numpy())
+score=rng.normal(size=4);score_prob=np.exp(score-score.max());score_prob/=score_prob.sum()
+lse=lambda value:np.logaddexp.reduce(value)
+check('B6 direct log-sum derivative FD',fd(lse,score),score_prob,1e-8)
+unnorm=rng.uniform(size=4);unnorm*=2.3/unnorm.sum()
+weighted_ce=lambda value:unnorm.sum()*lse(value)-unnorm@value
+check('B6 unnormalized target score gradient FD',fd(weighted_ce,score),unnorm.sum()*score_prob-unnorm,1e-8)
+Zbatch=rng.normal(size=(5,3));Wbatch=rng.normal(size=(2,3));bbatch=rng.normal(size=2)
+check('C1 row-batch equals stacked single-sample forward',Zbatch@Wbatch.T+bbatch,np.stack([Wbatch@row+bbatch for row in Zbatch]))
+# Exact enumeration avoids sampling noise in the initialization moment identity.
+from itertools import product
+signs=np.array(list(product([-1.,1.],repeat=3)));init_scale=.4
+preacts=(signs*init_scale)@np.ones(3)
+check('C2 independent zero-mean weight second moment',np.mean(preacts**2),3*init_scale**2)
+check('C2 symmetric ReLU halves second moment',np.mean(np.maximum(preacts,0)**2),.5*np.mean(preacts**2))
+Cz=rng.normal(size=(4,3));CU=rng.normal(size=(2,3));Cc=rng.normal(size=2)
+CV=rng.normal(size=(1,2));Cb=rng.normal(size=1);Ct=rng.normal(size=(4,1))
+CA=Cz@CU.T+Cc;CZ=np.tanh(CA);CY=CZ@CV.T+Cb;CD=CY-Ct
+hidden_delta=(CD@CV)*(1-CZ**2)
+manual_batch=[hidden_delta.T@Cz/len(Cz),hidden_delta.mean(0),CD.T@CZ/len(Cz),CD.mean(0)]
+tU=torch.tensor(CU,requires_grad=True);tc=torch.tensor(Cc,requires_grad=True)
+tV=torch.tensor(CV,requires_grad=True);tb=torch.tensor(Cb,requires_grad=True)
+ty=torch.tanh(torch.tensor(Cz)@tU.T+tc)@tV.T+tb
+tloss=.5*((ty-torch.tensor(Ct))**2).sum()/len(Cz);tloss.backward()
+check('C4 batched hidden weight and bias autograd',np.r_[manual_batch[0].ravel(),manual_batch[1]],np.r_[tU.grad.numpy().ravel(),tc.grad.numpy()])
+check('C4 batched output weight and bias autograd',np.r_[manual_batch[2].ravel(),manual_batch[3]],np.r_[tV.grad.numpy().ravel(),tb.grad.numpy()])
+# For a cubic, the central-difference error is exactly h^2 times its cubic coefficient.
+cubic=lambda value:value**3+.7*value**2-.2*value
+center=.6;step=.01;approx=(cubic(center+step)-cubic(center-step))/(2*step)
+check('C5 central-difference quadratic error identity',approx-(3*center**2+1.4*center-.2),step**2)
 report={'status':'PASS','count':len(checks),'checks':checks,'scope':'Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose.'}
 Path('reports/theory-verification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('Theory checks:',len(checks),'PASS')
