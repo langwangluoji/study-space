@@ -55,6 +55,30 @@ check('B3 scatter expansion',S1,[[sum((x[i]-m1[i])*(x[j]-m1[j]) for x in c1) for
 lsX=np.c_[np.ones(N),np.r_[c1,c2]];labels=np.r_[np.full(len(c1),N/len(c1)),np.full(len(c2),-N/len(c2))]
 ls=np.linalg.lstsq(lsX,labels,rcond=None)[0];fisher=np.linalg.solve(SW,delta);alpha=len(c1)*len(c2)/N
 check('B3 LS Fisher equivalence',ls[1:],N/(1+alpha*delta@fisher)*fisher)
+# Fisher revision: independently verify the normalized constrained problem,
+# its global gap identity and the ratio optimum, rather than only LS equivalence.
+fq=delta@fisher;alpha_f=1/fq;fw=fisher/fq
+check('B3 projected mean difference',c1.mean(0)@fw-c2.mean(0)@fw,delta@fw)
+check('B3 projected within-class scatter',np.square((c1-m1)@fw).sum()+np.square((c2-m2)@fw).sum(),fw@SW@fw)
+check('B3 fixed-distance constraint',delta@fw,1.)
+check('B3 constrained minimum scatter',fw@SW@fw,1/fq)
+lagrange=lambda weights:weights@SW@weights-2*alpha_f*(delta@weights-1)
+check('B3 constrained Lagrangian gradient FD',fd(lagrange,fw),np.zeros_like(fw),1e-8)
+fw_t=torch.tensor(fw,requires_grad=True,dtype=torch.float64)
+lag_t=fw_t@torch.tensor(SW)@fw_t-2*alpha_f*(torch.tensor(delta)@fw_t-1)
+lag_t.backward();check('B3 constrained Lagrangian autograd',fw_t.grad.numpy(),np.zeros_like(fw))
+perturb=rng.normal(size=(16,2));perturb-=((perturb@delta)/(delta@delta))[:,None]*delta
+candidates=fw+perturb
+candidate_q=np.einsum('bi,ij,bj->b',candidates,SW,candidates)
+gaps=np.einsum('bi,ij,bj->b',perturb,SW,perturb)
+check('B3 feasible-perturbation global gap',candidate_q-fw@SW@fw,gaps)
+assert np.all(candidate_q>=fw@SW@fw-1e-12)
+chol=np.linalg.cholesky(SW)
+left=np.linalg.solve(chol,np.outer(delta,delta))
+whitened=np.linalg.solve(chol,left.T).T
+check('B3 maximum ratio generalized eigensystem',np.linalg.eigvalsh(whitened).max(),fq)
+ratio=lambda weights:(weights@delta)**2/(weights@SW@weights)
+check('B3 ratio unchanged by normalization',ratio(fisher),ratio(fw))
 # Binary Hessian and multiclass parameter gradients: FD + autograd.
 targets=rng.integers(0,2,size=9);p=1/(1+np.exp(-X@q))
 bg=X.T@(p-targets)/9;bh=X.T@(p[:,None]*(1-p[:,None])*X)/9
@@ -97,5 +121,23 @@ check('B6 normalized soft-target autograd',soft_w.grad.numpy(),soft_grad)
 layer_w=torch.tensor(ww,dtype=torch.float64);layer_b=torch.tensor(bias,dtype=torch.float64)
 jac=torch.autograd.functional.jacobian(lambda value:torch.sigmoid(layer_w@value+layer_b),torch.tensor(z,dtype=torch.float64))
 check('C2 local Jacobian autograd',jac.numpy(),np.diag(derivative)@ww)
+# C2: compare forward Jacobian composition and backward sensitivity with
+# independent automatic differentiation in a three-layer smooth network.
+weights=[rng.normal(size=(4,3)),rng.normal(size=(3,4)),rng.normal(size=(2,3))]
+biases=[rng.normal(size=w.shape[0]) for w in weights]
+start=rng.normal(size=3);current=start.copy();composed=np.eye(3)
+for wi,bi in zip(weights,biases):
+    current=1/(1+np.exp(-(wi@current+bi)))
+    composed=np.diag(current*(1-current))@wi@composed
+weight_t=[torch.tensor(wi,dtype=torch.float64) for wi in weights]
+bias_t=[torch.tensor(bi,dtype=torch.float64) for bi in biases]
+def network(value):
+    for wi,bi in zip(weight_t,bias_t):value=torch.sigmoid(wi@value+bi)
+    return value
+input_t=torch.tensor(start,dtype=torch.float64)
+check('C2 composed forward Jacobian autograd',composed,torch.autograd.functional.jacobian(network,input_t).numpy())
+input_grad=torch.tensor(start,requires_grad=True,dtype=torch.float64)
+output=network(input_grad);loss=.5*(output**2).sum();loss.backward()
+check('C2 backward transposed Jacobian autograd',composed.T@current,input_grad.grad.numpy())
 report={'status':'PASS','count':len(checks),'checks':checks,'scope':'Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose.'}
 Path('reports/theory-verification.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('Theory checks:',len(checks),'PASS')

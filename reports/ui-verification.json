@@ -29,7 +29,7 @@
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -40,7 +40,7 @@
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -51,7 +51,7 @@
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -249,7 +249,7 @@
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -260,7 +260,7 @@
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -271,7 +271,7 @@
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -469,7 +469,7 @@
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -480,7 +480,7 @@
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -491,7 +491,7 @@
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -689,7 +689,7 @@
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -700,7 +700,7 @@
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -711,7 +711,7 @@
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -909,7 +909,7 @@
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -920,7 +920,7 @@
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -931,7 +931,7 @@
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": false
@@ -1129,7 +1129,7 @@
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 491,
+      "math": 535,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -1140,7 +1140,7 @@
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 341,
+      "math": 378,
       "errors": 0,
       "brokenImages": [],
       "dark": true
@@ -1151,7 +1151,7 @@
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 321,
+      "math": 330,
       "errors": 0,
       "brokenImages": [],
       "dark": true

@@ -142,7 +142,7 @@
       },
       {
         "id": "b3",
-        "title": "Fisher 的方向与生成 LDA 的边界",
+        "title": "Fisher：先固定类间距离，再压小类内波动",
         "source": "_fragments/b3.md"
       },
       {

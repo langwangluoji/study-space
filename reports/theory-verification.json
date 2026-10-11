@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "count": 32,
+  "count": 43,
   "checks": [
     {
       "name": "A9 one-observation Laplace NLL",
@@ -67,32 +67,68 @@
       "max_abs_error": 8.881784197001252e-16
     },
     {
+      "name": "B3 projected mean difference",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 projected within-class scatter",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 fixed-distance constraint",
+      "max_abs_error": 0.0
+    },
+    {
+      "name": "B3 constrained minimum scatter",
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "name": "B3 constrained Lagrangian gradient FD",
+      "max_abs_error": 1.1102230246251564e-11
+    },
+    {
+      "name": "B3 constrained Lagrangian autograd",
+      "max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "name": "B3 feasible-perturbation global gap",
+      "max_abs_error": 2.6645352591003757e-15
+    },
+    {
+      "name": "B3 maximum ratio generalized eigensystem",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "name": "B3 ratio unchanged by normalization",
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
       "name": "B5 parameter gradient FD",
-      "max_abs_error": 8.076407598256452e-12
+      "max_abs_error": 5.095149996359183e-12
     },
     {
       "name": "B5 Hessian FD",
-      "max_abs_error": 1.702339658127272e-12
+      "max_abs_error": 1.7355353265635642e-12
     },
     {
       "name": "B5 autograd",
-      "max_abs_error": 2.7755575615628914e-17
+      "max_abs_error": 4.163336342344337e-17
     },
     {
       "name": "B6 gradient FD",
-      "max_abs_error": 2.7620503106895455e-11
+      "max_abs_error": 1.7996659718022556e-11
     },
     {
       "name": "B6 autograd",
-      "max_abs_error": 8.326672684688674e-17
+      "max_abs_error": 1.1102230246251565e-16
     },
     {
       "name": "B6 Jacobian expansion",
-      "max_abs_error": 1.3877787807814457e-17
+      "max_abs_error": 0.0
     },
     {
       "name": "B6 Jacobian column sums",
-      "max_abs_error": 9.71445146547012e-17
+      "max_abs_error": 5.551115123125783e-17
     },
     {
       "name": "C1 layer components",
@@ -108,7 +144,7 @@
     },
     {
       "name": "B1 signed geometric distance",
-      "max_abs_error": 0.0
+      "max_abs_error": 1.1102230246251565e-16
     },
     {
       "name": "B5 BCE equals Bernoulli NLL",
@@ -116,19 +152,27 @@
     },
     {
       "name": "B6 common score shift preserves probabilities",
-      "max_abs_error": 2.220446049250313e-16
+      "max_abs_error": 1.6653345369377348e-16
     },
     {
       "name": "B6 normalized soft-target gradient FD",
-      "max_abs_error": 2.144982585647326e-11
+      "max_abs_error": 1.9728829681042725e-11
     },
     {
       "name": "B6 normalized soft-target autograd",
-      "max_abs_error": 4.163336342344337e-17
+      "max_abs_error": 5.551115123125783e-17
     },
     {
       "name": "C2 local Jacobian autograd",
       "max_abs_error": 0.0
+    },
+    {
+      "name": "C2 composed forward Jacobian autograd",
+      "max_abs_error": 5.204170427930421e-18
+    },
+    {
+      "name": "C2 backward transposed Jacobian autograd",
+      "max_abs_error": 8.673617379884035e-19
     }
   ],
   "scope": "Numerical checks of published element expansions, equivalent directions and objective gradients; general conditions also reviewed in prose."
