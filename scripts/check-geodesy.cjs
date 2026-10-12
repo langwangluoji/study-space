@@ -19,6 +19,21 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
    await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));
   }
   checks.push(slugs.length+' pages, two main chapters, 4+6 topic routes, formula rendering and source images');
+  const reading=[{slug:'course-geodesy',title:'大地测量课程总览'},...chapters.flatMap(c=>[{slug:c.slug,title:c.title},...c.topics])];
+  for(const [i,item] of reading.entries()){
+   await page.goto(base+item.slug+'.html',{waitUntil:'networkidle'});
+   for(const [direction,neighbor] of [['prev',reading[i-1]],['next',reading[i+1]]]){
+    const button=page.locator('.VPDocFooter .pager-link.'+direction);
+    if(!neighbor){assert.equal(await button.count(),0);continue}
+    assert.equal(await button.locator('.title').innerText(),neighbor.title);
+    const url=new URL(await button.getAttribute('href'),base);
+    assert.equal(url.pathname,new URL(neighbor.slug+'.html',base).pathname);
+   }
+  }
+  await page.goto(base+'course-geodesy.html',{waitUntil:'networkidle'});
+  await page.locator('.VPDocFooter .pager-link.next').click();await page.waitForURL('**/geodesy-intro.html');
+  checks.push('all 13 main reading pages: correct pager titles, destinations, boundaries and next click');
+
   await page.goto(base+'geodesy-local-directions.html',{waitUntil:'networkidle'});
   const inputs=page.locator('.geodesy-lab input');
   await inputs.nth(0).fill('0');assert((await page.locator('.geodesy-results').innerText()).includes('6378137.000'));

@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-math
-next: /geodesy-local-directions
+prev: {"text": "曲线 曲面与坐标表达", "link": "/geodesy-math"}
+next: {"text": "椭球上的局部方向", "link": "/geodesy-local-directions"}
 ---
 
 # 旋转椭球与三种纬度

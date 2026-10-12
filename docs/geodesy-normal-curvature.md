@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-curvature
-next: /geodesy-metric
+prev: {"text": "曲线曲率与子午曲率半径", "link": "/geodesy-curvature"}
+next: {"text": "曲面度量 弧长与面积", "link": "/geodesy-metric"}
 ---
 
 # 法曲率与方向曲率

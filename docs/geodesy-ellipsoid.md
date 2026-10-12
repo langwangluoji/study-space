@@ -1,7 +1,7 @@
 ---
 title: 第二章 椭球面数学性质
-prev: /geodesy-intro-gravity
-next: /geodesy-math
+prev: {"text": "地球形状与重力场", "link": "/geodesy-intro-gravity"}
+next: {"text": "曲线 曲面与坐标表达", "link": "/geodesy-math"}
 ---
 
 # 第二章 椭球面数学性质

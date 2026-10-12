@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-intro-frames
-next: /geodesy-intro-gravity
+prev: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
+next: {"text": "地球形状与重力场", "link": "/geodesy-intro-gravity"}
 ---
 
 # 空间观测怎样约束位置

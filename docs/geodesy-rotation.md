@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-intro-frames
-next: /geodesy-local-directions
+prev: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
+next: {"text": "椭球上的局部方向", "link": "/geodesy-local-directions"}
 ---
 
 # 坐标轴与坐标分量旋转

@@ -1,5 +1,5 @@
 ---
-prev: /geodesy-normal-curvature
+prev: {"text": "法曲率与方向曲率", "link": "/geodesy-normal-curvature"}
 next: false
 ---
 

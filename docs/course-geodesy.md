@@ -1,7 +1,7 @@
 ---
 title: 大地测量课程总览
 prev: false
-next: /geodesy-intro
+next: {"text": "第一章 大地测量绪论", "link": "/geodesy-intro"}
 ---
 
 # 大地测量
