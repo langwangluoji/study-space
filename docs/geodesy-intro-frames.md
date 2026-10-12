@@ -24,7 +24,20 @@ $$
 =C_{P\leftarrow Q}\mathbf v_Q.
 $$
 
-矩阵元素为 $C_{ij}=\mathbf p_i\cdot\mathbf q_j$，即两根轴夹角的余弦。它的第 $j$ 列是 Q 的第 $j$ 根轴在 P 中的分量，逆变换是 $C_{Q\leftarrow P}=C_{P\leftarrow Q}^T$。这个推导从“同一向量”出发，因此正好解释了为什么转动坐标轴与转动向量使用的正角矩阵互为转置。[主动与被动旋转的图示](geodesy-rotation.html#g4-active-passive)给出具体的 90° 检查。
+矩阵元素为 $C_{ij}=\mathbf p_i\cdot\mathbf q_j$，即两根轴夹角的余弦；第 $j$ 列就是 Q 的第 $j$ 根轴在 P 中的分量。又因为 $E_P,E_Q$ 的列都是正交单位基，
+
+$$
+C_{P\leftarrow Q}^TC_{P\leftarrow Q}
+=E_Q^TE_PE_P^TE_Q=I,
+$$
+
+所以 $C_{P\leftarrow Q}$ 本身是正交矩阵，逆矩阵等于转置：
+
+$$
+C_{Q\leftarrow P}=C_{P\leftarrow Q}^{-1}=C_{P\leftarrow Q}^T.
+$$
+
+这样转置关系来自同一向量在两组正交基中的表示，而不是额外规定。[主动与被动旋转的图示](geodesy-rotation.html#g4-active-passive)给出具体的 90° 检查。
 
 若转换的是两个点的位置，且坐标原点不同，还必须加入平移。上式只处理向量分量的基变换，不能自动替代完整的位置转换。
 

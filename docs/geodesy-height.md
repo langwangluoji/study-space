@@ -4,7 +4,7 @@
 
 ## 参考面 {#g7-height}
 
-[研究对象与参考模型](geodesy-intro-models.html)说明椭球高与物理高程的概念区别；[地球形状与重力场](geodesy-intro-gravity.html)推导等位面与重力方向的关系。
+[研究对象与参考模型](geodesy-intro-models.html)先区分椭球高与物理高程各自依附的参考面；[地球形状与重力场](geodesy-intro-gravity.html)再从位函数说明正高、正常高为何需要重力信息。前者回答“相对哪个几何面”，后者回答“由哪个物理场定义”，两者不能仅靠同一套椭球坐标公式互相替换。
 
 ## 辅助教材 {#g7-leveling}
 
