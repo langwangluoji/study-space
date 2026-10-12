@@ -69,6 +69,9 @@ I=vel.dot(vel)
 II=acc.dot(-up)  # Inward normal gives positive convex curvature.
 zero(II-(M*vB**2+N*sp.cos(B)**2*vL**2))
 zero(I-(M**2*vB**2+N**2*sp.cos(B)**2*vL**2))
+# Reuse the canonical forms only after the raw differential expressions above are proved equal.
+I=M**2*vB**2+N**2*sp.cos(B)**2*vL**2
+II=M*vB**2+N*sp.cos(B)**2*vL**2
 zero((II/I).subs({vB:sp.cos(A)/M,vL:sp.sin(A)/(N*sp.cos(B))})-(sp.cos(A)**2/M+sp.sin(A)**2/N))
 scale=sp.symbols('scale',positive=True)
 zero((II/I).subs({vB:scale*vB,vL:scale*vL})-II/I)
