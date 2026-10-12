@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "geodesy-intro",
+    "title": "第一章 大地测量绪论",
+    "topics": [
+      {
+        "slug": "geodesy-intro-models",
+        "title": "研究对象与参考模型"
+      },
+      {
+        "slug": "geodesy-intro-frames",
+        "title": "位置表达与坐标框架"
+      },
+      {
+        "slug": "geodesy-intro-observations",
+        "title": "空间观测怎样约束位置"
+      },
+      {
+        "slug": "geodesy-intro-gravity",
+        "title": "地球形状与重力场"
+      }
+    ]
+  },
+  {
+    "slug": "geodesy-ellipsoid",
+    "title": "第二章 椭球面数学性质",
+    "topics": [
+      {
+        "slug": "geodesy-math",
+        "title": "曲线 曲面与坐标表达"
+      },
+      {
+        "slug": "geodesy-ellipsoid-coordinates",
+        "title": "旋转椭球与三种纬度"
+      },
+      {
+        "slug": "geodesy-local-directions",
+        "title": "椭球上的局部方向"
+      },
+      {
+        "slug": "geodesy-curvature",
+        "title": "曲线曲率与子午曲率半径"
+      },
+      {
+        "slug": "geodesy-normal-curvature",
+        "title": "法曲率与方向曲率"
+      },
+      {
+        "slug": "geodesy-metric",
+        "title": "曲面度量 弧长与面积"
+      }
+    ]
+  }
+]

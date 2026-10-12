@@ -27,6 +27,8 @@ node scripts/check-ui.cjs
 
 ## 内容在哪里编辑
 
+大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；原始文件保留本地。来源与工作流署名见 docs/geodesy-sources.md。
+
 | 内容 | 唯一维护源 |
 | --- | --- |
 | 讲次、编号、标题、顺序、源文件 | `course.config.json` |

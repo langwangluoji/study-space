@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "checks": [
+    "symbolic ellipsoid equation, tangents, orientation, metric and zero mixed second form",
+    "symbolic meridian curvature numerator",
+    "symbolic spherical, equatorial and polar limits",
+    "symbolic area antiderivative and spherical surface area limit",
+    "symbolic derivative of the published e6 meridian series",
+    "high-precision independent latitude and tangent checks at five latitudes",
+    "independent directional-radius integral and bounds",
+    "Meusnier/Euler projection for distinct curves with a common tangent",
+    "numerical integral/Newton meridian round trips and range rejection",
+    "global and regional area checked by independent quadrature"
+  ],
+  "meridian_roundtrips": [
+    {
+      "latitude_deg": -89.9,
+      "iterations": 3,
+      "arc_residual_m": 0.0
+    },
+    {
+      "latitude_deg": -50,
+      "iterations": 3,
+      "arc_residual_m": 2.756675423231516e-29
+    },
+    {
+      "latitude_deg": 0,
+      "iterations": 0,
+      "arc_residual_m": 0.0
+    },
+    {
+      "latitude_deg": 50,
+      "iterations": 3,
+      "arc_residual_m": 2.756675423231516e-29
+    },
+    {
+      "latitude_deg": 89.9,
+      "iterations": 3,
+      "arc_residual_m": 0.0
+    }
+  ],
+  "area_m2": 510065621724088.5,
+  "scope": "core displayed identities and numerical examples, not a full source-text audit"
+}
