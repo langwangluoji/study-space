@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "pages": 20,
+  "checks": [
+    "20 pages, two main chapters, 4+6 topic routes, formula rendering and source images",
+    "coordinate boundaries, empty input and persisted learning mark",
+    "active/passive rotation and keyboard control",
+    "figure enlargement, provenance, Escape, close button and focus restoration",
+    "theorem cross-page search",
+    "320px/390px light/dark topics, formulas and image dialog",
+    "legacy chapter and auxiliary anchors preserved",
+    "ML homepage/sidebar/formula regression"
+  ],
+  "errors": []
+}

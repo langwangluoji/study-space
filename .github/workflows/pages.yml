@@ -24,6 +24,8 @@ jobs:
           python-version: '3.11'
       - run: npm ci
       - run: npm run check
+      - run: pip install -r requirements-geodesy.txt
+      - run: python scripts/verify_geodesy.py
       - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu
       - run: npm run check:math
       - run: npx playwright install --with-deps chromium

@@ -1,0 +1,189 @@
+[
+  {
+    "id": "meridian-normal",
+    "file": "meridian-normal.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 12,
+    "printedPage": 11,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1272,
+      243,
+      2160,
+      904
+    ],
+    "width": 888,
+    "height": 661,
+    "sha256": "dfcddd18d66df79342ae816e7c7aa3ee1d1b6bc5157016dbfc3e8fd06b263f09"
+  },
+  {
+    "id": "reduced-latitude",
+    "file": "reduced-latitude.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 13,
+    "printedPage": 12,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1272,
+      351,
+      2040,
+      1040
+    ],
+    "width": 768,
+    "height": 689,
+    "sha256": "b7d98101a5d22f2327ddabf768146e01f997f842ae396342b0898d7941d3b805"
+  },
+  {
+    "id": "geodetic-latitude",
+    "file": "geodetic-latitude.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 14,
+    "printedPage": 13,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1056,
+      216,
+      2040,
+      904
+    ],
+    "width": 984,
+    "height": 688,
+    "sha256": "c3bd992a25ff784c10410be0fea0f6b41141278ef41d0aaf7617aefe78599ee1"
+  },
+  {
+    "id": "geocentric-latitude",
+    "file": "geocentric-latitude.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 25,
+    "printedPage": 24,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1200,
+      216,
+      1992,
+      878
+    ],
+    "width": 792,
+    "height": 662,
+    "sha256": "e7afa1ca158dbaed8b64d4d94b6cd7f40212a642f7de298d0cdfa913f6cbfb36"
+  },
+  {
+    "id": "normal-sections",
+    "file": "normal-sections.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 41,
+    "printedPage": 32,
+    "renderScale": 2.5,
+    "cropPixels": [
+      648,
+      351,
+      1752,
+      1228
+    ],
+    "width": 1104,
+    "height": 877,
+    "sha256": "b52e64720ca5242cdf8e91c2d188cf27595a1e1cee108a82a7a70bfaef0fdeb8"
+  },
+  {
+    "id": "area-element",
+    "file": "area-element.png",
+    "source": "1椭球面数学性质   课程讲义.pdf",
+    "filePage": 56,
+    "printedPage": 43,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1584,
+      310,
+      2184,
+      945
+    ],
+    "width": 600,
+    "height": 635,
+    "sha256": "23ea8980e4e6232e630a840f024205c7ac703bb1048b48444f893055334d582f"
+  },
+  {
+    "id": "station-satellite",
+    "file": "station-satellite.png",
+    "source": "大地测量 绪论(1).pdf",
+    "filePage": 6,
+    "printedPage": 22,
+    "renderScale": 2.5,
+    "cropPixels": [
+      1273,
+      351,
+      2185,
+      1161
+    ],
+    "width": 912,
+    "height": 810,
+    "sha256": "30f5f22ed8300f998e9367e118b8ea41f1f574022a1c2a0db9ae4901b19ea8ed"
+  },
+  {
+    "id": "vlbi",
+    "file": "vlbi.png",
+    "source": "大地测量 绪论(1).pdf",
+    "filePage": 11,
+    "printedPage": 27,
+    "renderScale": 2.5,
+    "cropPixels": [
+      144,
+      351,
+      2389,
+      1249
+    ],
+    "width": 2245,
+    "height": 898,
+    "sha256": "7b6171971f62569c0d545676f86c852dc738954053a0cdcb12ea84e19ab9a8a6"
+  },
+  {
+    "id": "altimetry",
+    "file": "altimetry.png",
+    "source": "大地测量 绪论(1).pdf",
+    "filePage": 13,
+    "printedPage": 29,
+    "renderScale": 2.5,
+    "cropPixels": [
+      132,
+      284,
+      2389,
+      1195
+    ],
+    "width": 2257,
+    "height": 911,
+    "sha256": "9d4c1304083db3a78bc5ff16a826f3f707055090b7f46b0a6ca1fb3778f72659"
+  },
+  {
+    "id": "geoid-ellipsoid",
+    "file": "geoid-ellipsoid.png",
+    "source": "大地测量 绪论(1).pdf",
+    "filePage": 22,
+    "printedPage": 37,
+    "renderScale": 2.5,
+    "cropPixels": [
+      348,
+      243,
+      2017,
+      999
+    ],
+    "width": 1669,
+    "height": 756,
+    "sha256": "850e37753e46baeb152dc29f585ae947c9229982835adc5c02e91282a3c8eb7e"
+  },
+  {
+    "id": "reference-ellipsoid",
+    "file": "reference-ellipsoid.png",
+    "source": "大地测量 绪论(1).pdf",
+    "filePage": 24,
+    "printedPage": 39,
+    "renderScale": 2.5,
+    "cropPixels": [
+      684,
+      378,
+      1729,
+      1019
+    ],
+    "width": 1045,
+    "height": 641,
+    "sha256": "e84d8e98ee8513a6e47c7782d0a632d15b536da5cf406541c35a6a7906ebf250"
+  }
+]

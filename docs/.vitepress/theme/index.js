@@ -4,11 +4,13 @@ import { useRoute, useRouter } from 'vitepress';
 import LearningMark from './LearningMark.vue';
 import ConceptViz from './ConceptViz.vue';
 import PdfReader from './PdfReader.vue';
+import GeodesyLab from './GeodesyLab.vue';
+import SourceFigure from './SourceFigure.vue';
 import './style.css';
 export default {
   extends:DefaultTheme,
   Layout(){return h(DefaultTheme.Layout)},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader)},
+  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{

@@ -1,5 +1,11 @@
 # 资料中心
 
+## 大地测量课程资料 {#geodesy}
+
+[两主章的阅读路径](course-geodesy.html) · [六份原资料与页码索引](geodesy-sources.html) · [课程维护方案](geodesy-plan.html)
+
+主内容为绪论与椭球面数学性质，其他材料辅助解释和核对。轨道课件只参考坐标变换；原文件在本地存档，配图保留来源页码。
+
 ## 机器学习课程资料 {#ml}
 
 [课程阅读路径](course-ml.html) · [三讲与实践的来源说明](read-sources.html) · [维护指南](read-README.html)

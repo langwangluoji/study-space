@@ -22,6 +22,14 @@ sidebar: false
         <ul class="hub-tags" aria-label="课程内容"><li>三讲连续笔记</li><li>CIFAR-10 实践</li><li>教材与课件</li></ul>
         <a class="hub-entry" href="/study-space/course-ml.html">进入课程 <span aria-hidden="true">→</span></a>
       </article>
+      <article class="hub-course">
+        <p class="hub-eyebrow">测绘与地球空间科学</p>
+        <h3><a href="/study-space/course-geodesy.html">大地测量</a></h3>
+        <p class="hub-subtitle">Geodesy &amp; Geodetic Control</p>
+        <p>以绪论与椭球数学性质为主线，从一般曲线和曲面走向椭球坐标、曲率、弧长与面积的完整推导。</p>
+        <ul class="hub-tags" aria-label="大地测量课程内容"><li>两个主要大章</li><li>坐标交互算例</li><li>原课件几何图</li></ul>
+        <a class="hub-entry" href="/study-space/course-geodesy.html">进入课程 <span aria-hidden="true">→</span></a>
+      </article>
     </section>
     <aside class="hub-resources" aria-labelledby="hub-materials">
       <div class="hub-section-heading"><h2 id="hub-materials">资料与工具</h2><span>RESOURCES</span></div>
