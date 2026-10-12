@@ -44,13 +44,33 @@ $$
 
 曲面也能由隐式方程 $F(X,Y,Z)=0$ 表达。沿面内切向位移，$dF=\nabla F\cdot d\mathbf x=0$；只要 $\nabla F\ne0$，梯度也给出法向。参数化与隐式方程描述同一曲面时，两种计算应得到平行的法线，这将成为椭球公式的重要检查。
 
+## 参数差怎样变成长度 {#first-fundamental-form}
+
+已经有 $d\mathbf x=\mathbf x_u\,du+\mathbf x_v\,dv$。参数变化可以相同，实际位移却取决于两根切向量的长度与夹角。对这个位移作点积，得到
+
+$$
+\begin{aligned}
+ds^2&=d\mathbf x\cdot d\mathbf x\\
+&=(\mathbf x_u\cdot\mathbf x_u)du^2
+ +2(\mathbf x_u\cdot\mathbf x_v)du\,dv
+ +(\mathbf x_v\cdot\mathbf x_v)dv^2\\
+&=E\,du^2+2F\,du\,dv+G\,dv^2.
+\end{aligned}
+$$
+
+这里 $E=\|\mathbf x_u\|^2$、$F=\mathbf x_u\cdot\mathbf x_v$、$G=\|\mathbf x_v\|^2$。这个描述曲面局部长度的二次式称为**第一基本形式**。F记录两条参数方向的夹角；它们正交时F=0。正则曲面满足 $E>0$、$EG-F^2=\|\mathbf x_u\times\mathbf x_v\|^2>0$，所以非零参数位移对应正的长度平方。
+
+平面 $\mathbf x(u,v)=(u,v,0)$ 有E=G=1、F=0，恢复勾股关系。若改用斜坐标 $\mathbf x(u,v)=(u+v,v,0)$，则E=1、F=1、G=2，同一个平面出现交叉项：变化的是参数基，不是平面的几何。对于半径R的圆，$\|\mathbf r_t\|^2=R^2$，所以 $ds^2=R^2dt^2$；圆上的角参数同样需乘以长度系数。
+
+沿曲面曲线 $u(t),v(t)$，速度平方是 $v_c^2=E\dot u^2+2F\dot u\dot v+G\dot v^2$。改用弧长s时，$ds/ds=1$，于是 $E(u')^2+2Fu'v'+G(v')^2=1$。后面投影曲率时需要的单位切向条件，正是这条长度关系，而不是默认参数导数本身长为1。
+
 ## 方向 投影与坐标基 {#g2-curvature}
 
 点积 $\mathbf a\cdot\mathbf b=\|\mathbf a\|\|\mathbf b\|\cos\theta$ 说明两个方向的夹角，单位向量 $\mathbf e$ 上的标量投影是 $\mathbf a\cdot\mathbf e$。叉积长度 $\|\mathbf a\times\mathbf b\|=\|\mathbf a\|\|\mathbf b\|\sin\theta$ 则对应两向量张成的平行四边形面积。
 
 这两种运算分别连接着方向与面积。如果两个切向量正交，归一化后可以构成两个局部轴，再取法线作为第三个轴。一般曲面的参数曲线不一定正交，不能只把两个导数归一化就声称得到了正交基。
 
-曲线也有自己的法线：当切向方向随弧长变化时，$\mathbf T'(s)$ 指向曲线的主法线。它与曲面法线通常不同。下面原课件说明了子午线这一特殊情形。
+曲线也有自己的法线：单位切向随弧长的变化 $d\mathbf T/ds$ 若非零，把它归一化就得到主法线。其长度是曲率，完整定义与推导见[曲线曲率](geodesy-curvature.html)。再取 $\mathbf b_c=\mathbf T\times\mathbf n_c$，切向、主法向与副法向构成Frenet正交标架；这里仅用它辨认方向，不展开挠率。曲线主法线与曲面法线通常不同。下面原课件说明了子午线这一特殊情形。
 
 <SourceFigure src="/geodesy/figures/meridian-normal.png" alt="子午线的法线与椭球面的法线方向" source="1椭球面数学性质   课程讲义.pdf" page="12" printed="11" note="图中 M 是曲面上的点，R 是平行圈切向，不表示本文的曲率半径。" />
 

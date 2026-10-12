@@ -19,6 +19,33 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
    await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));
   }
   checks.push(slugs.length+' pages, two main chapters, 4+6 topic routes, formula rendering and source images');
+  const coverage=JSON.parse(fs.readFileSync('public/geodesy/coverage.json','utf8'));
+  assert.equal(coverage.entries.length,89);
+  assert.equal(new Set(coverage.entries.map(e=>e.source+':'+e.file_page)).size,89);
+  assert.equal(coverage.entries.filter(e=>e.status==='excluded').length,2);
+  await page.goto(base+'geodesy-normal-curvature.html',{waitUntil:'networkidle'});
+  const proof=page.locator('#normal-section-coordinate-proof');
+  assert.equal(await proof.evaluate(el=>el.closest('details').open),false);
+  await page.locator('details summary').filter({hasText:'坐标变换'}).click();
+  assert(await proof.isVisible());
+  await page.goto(base+'geodesy-normal-curvature.html#normal-section-coordinate-proof',{waitUntil:'networkidle'});
+  assert(await proof.evaluate(el=>el.closest('details').open));
+  await page.goto(base+'geodesy-math.html#first-fundamental-form',{waitUntil:'networkidle'});
+  assert(await page.locator('#first-fundamental-form').isVisible());
+  await page.goto(base+'geodesy-metric.html#first-fundamental-form',{waitUntil:'networkidle'});
+  assert(await page.locator('#first-fundamental-form').isVisible());
+  for(const [slug,file] of [['geodesy-intro-frames','frame-chain.svg'],['geodesy-intro-gravity','height-reference.svg'],['geodesy-normal-curvature','local-curvature.svg']]){
+   await page.goto(base+slug+'.html',{waitUntil:'networkidle'});
+   const fig=page.locator('.source-figure').filter({has:page.locator('img[src$="'+file+'"]')});
+   const caption=await fig.locator('figcaption').innerText();assert(caption.includes('本站绘制')&&!caption.includes('PDF 文件页'));
+   await fig.locator('.figure-open').click();assert(await fig.locator('dialog').isVisible());await page.keyboard.press('Escape');
+  }
+  await page.goto(base+'geodesy-normal-curvature.html',{waitUntil:'networkidle'});
+  await page.keyboard.press('Control+k');await page.locator('input[type=search]').fill('从局部截面方程核对Euler公式');
+  await page.locator('.VPLocalSearchBox a[href*="normal-section-coordinate-proof"]').first().click();
+  await page.waitForFunction(()=>document.getElementById('normal-section-coordinate-proof')?.closest('details')?.open);
+  checks.push('89 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof');
+
   const reading=[{slug:'course-geodesy',title:'大地测量课程总览'},...chapters.flatMap(c=>[{slug:c.slug,title:c.title},...c.topics])];
   for(const [i,item] of reading.entries()){
    await page.goto(base+item.slug+'.html',{waitUntil:'networkidle'});

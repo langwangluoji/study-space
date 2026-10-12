@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" role="img" aria-labelledby="title"><title id="title">平行圈法曲率投影、方位角和密切圆</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2563eb"/></marker></defs><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#172c43;font-size:22px}.small{font-size:18px}.head{font-size:26px;font-weight:600}.axis{stroke:#172c43;stroke-width:3;fill:none}.blue{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrow)}.dashed{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none}.panel{fill:#f4f8fc;stroke:#cedbe8;stroke-width:1.5}.curve{stroke:#138476;stroke-width:3;fill:none}</style><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="45" class="head">切向、法向与曲率半径的三个局部关系</text>
+<rect x="25" y="70" width="525" height="350" rx="16" class="panel"/><rect x="570" y="70" width="505" height="350" rx="16" class="panel"/>
+<text x="50" y="110">平行圈与卯酉法截线共享东向切线</text>
+<circle cx="420" cy="325" r="5" fill="#172c43"/><text x="427" y="353">P</text>
+<path d="M420 325H170 M420 325L220 180" class="blue"/>
+<text x="60" y="345">n∥：指向旋转轴</text><text x="190" y="162">ν = −e<tspan baseline-shift="sub" font-size="15">U</tspan>：椭球内法线</text>
+<path d="M350 325Q351 301 363 284" class="curve"/><text x="320" y="296">θ</text>
+<text x="50" y="385" class="small">θ = |B|，kₙ = κ∥ cos θ；非极点处 κ∥ = 1/(N cos B)</text>
+<text x="595" y="110">切平面中的方位角（俯视）</text>
+<path d="M770 345V150 M770 345H1010 M770 345L920 185" class="blue"/>
+<text x="780" y="152">北 e<tspan baseline-shift="sub" font-size="15">N</tspan></text><text x="960" y="377">东 e<tspan baseline-shift="sub" font-size="15">E</tspan></text><text x="925" y="185">T</text>
+<path d="M770 270Q797 270 820 292" class="curve"/><text x="794" y="258">A</text>
+<text x="595" y="403" class="small">T = cos A e<tspan baseline-shift="sub" font-size="15">N</tspan> + sin A e<tspan baseline-shift="sub" font-size="15">E</tspan>，A 从北向东量起</text>
+<rect x="25" y="440" width="1050" height="260" rx="16" class="panel"/>
+<text x="50" y="480">密切圆：相同位置、切向与二阶弯曲</text>
+<circle cx="260" cy="595" r="80" class="dashed"/><path d="M180 555Q260 475 340 555" class="curve"/>
+<path d="M140 515h240" class="axis"/><circle cx="260" cy="515" r="5" fill="#172c43"/>
+<path d="M260 515V595" class="blue"/><text x="277" y="562">R<tspan baseline-shift="sub" font-size="15">c</tspan></text><text x="277" y="620">曲率中心</text><text x="395" y="522">切线</text>
+<text x="530" y="535">圆与曲线在 P 具有相同 T 和 κ = 1/R<tspan baseline-shift="sub" font-size="15">c</tspan></text>
+<text x="530" y="575">r(s₀ + δs) = r₀ + T δs + κ n<tspan baseline-shift="sub" font-size="15">c</tspan> δs²/2 + o(δs²)</text>
+<text x="530" y="620" class="small">曲率中心沿主法线；R<tspan baseline-shift="sub" font-size="14">c</tspan> 一般不是点到地心的距离。</text>
+<text x="35" y="730" class="small">本站绘制 · 示意图不按真实尺度</text></svg>

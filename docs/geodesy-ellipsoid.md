@@ -10,7 +10,7 @@ next: {"text": "曲线 曲面与坐标表达", "link": "/geodesy-math"}
 
 ## 曲线与曲面的表达
 
-[第一个专题](geodesy-math.html)说明参数变化如何形成切向量，以及独立切向量如何确定法线。向量知识在推导需要时说明。
+[第一个专题](geodesy-math.html)说明参数变化如何形成切向量，以及独立切向量如何确定法线；从点积建立后续曲率归一化所需的第一基本形式。向量知识在推导需要时说明。
 
 ## 三种纬度与空间坐标 {#g3-latitude}
 
@@ -24,4 +24,4 @@ next: {"text": "曲线 曲面与坐标表达", "link": "/geodesy-math"}
 
 [第四个专题](geodesy-curvature.html)推导曲率和子午曲率半径；[第五个专题](geodesy-normal-curvature.html)证明法曲率定理并推导卯酉及方向曲率；[第六个专题](geodesy-metric.html)统一长度与面积计算。
 
-主要依据椭球 PDF 文件页 3–56，插入的补充推导页也参与核对。文件页 57 的习题暂不编入，58–60 页额外法截线展开留作后续专题。
+主要依据椭球 PDF 文件页 3–56，插入的补充推导页也参与核对。文件页 57 的习题暂不编入，58–60 页的坐标变换与法截线展开已完整整理为[默认折叠的独立证明](geodesy-normal-curvature.html#normal-section-coordinate-proof)。

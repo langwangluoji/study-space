@@ -7,22 +7,29 @@
     "symbolic spherical, equatorial and polar limits",
     "symbolic area antiderivative and spherical surface area limit",
     "symbolic derivative of the published e6 meridian series",
+    "II/I: arbitrary chart velocities, tangential acceleration cancellation and reparameterization",
+    "reduced/geodetic latitude sine-cosine identities and meridian denominator",
+    "independent translated normal-section equation and curvature equals Euler",
+    "area integration split into derivative plus artanh integral",
+    "symmetric midpoint coefficient 1/24, exact M second derivative and first-order e-prime engineering correction",
     "high-precision independent latitude and tangent checks at five latitudes",
     "independent directional-radius integral and bounds",
     "Meusnier/Euler projection for distinct curves with a common tangent",
     "numerical integral/Newton meridian round trips and range rejection",
-    "global and regional area checked by independent quadrature"
+    "global and regional area checked by independent quadrature",
+    "60-digit worked examples, 45-digit quadrature cross-check and southern symmetry",
+    "GNSS four-unknown model: nondegenerate and identical-direction ranks"
   ],
   "meridian_roundtrips": [
     {
       "latitude_deg": -89.9,
       "iterations": 3,
-      "arc_residual_m": 0.0
+      "arc_residual_m": 1.29820817545472e-46
     },
     {
       "latitude_deg": -50,
       "iterations": 3,
-      "arc_residual_m": 2.756675423231516e-29
+      "arc_residual_m": 2.756675423281721e-29
     },
     {
       "latitude_deg": 0,
@@ -32,14 +39,87 @@
     {
       "latitude_deg": 50,
       "iterations": 3,
-      "arc_residual_m": 2.756675423231516e-29
+      "arc_residual_m": 2.756675423281721e-29
     },
     {
       "latitude_deg": 89.9,
       "iterations": 3,
-      "arc_residual_m": 0.0
+      "arc_residual_m": 1.29820817545472e-46
     }
   ],
   "area_m2": 510065621724088.5,
+  "precision_decimal_digits": 60,
+  "worked_examples": {
+    "latitude_45": {
+      "B_deg": 45,
+      "u_deg": "44.90378784942021981268473",
+      "Phi_deg": "44.80757678401803728630568",
+      "B_minus_u_arcmin": "5.772729034786811238916369",
+      "B_minus_Phi_arcmin": "11.54539295891776282165931"
+    },
+    "degree_lengths_45": {
+      "meridian_m": "111131.7774141756347865022",
+      "parallel_m": "78846.8350939781075942034",
+      "interpretation": "local differential scale for one degree; meridian finite one-degree interval varies with latitude"
+    },
+    "e6_meridian_errors": [
+      {
+        "latitude_deg": 30,
+        "reference_arc_m": "3320113.39794038290478101724699",
+        "e6_arc_m": "3320113.39793274613193814382653",
+        "signed_error_mm": "-0.007636772842873420454113105",
+        "quadrature_45_60_difference_m": "2.3753606e-41"
+      },
+      {
+        "latitude_deg": 45,
+        "reference_arc_m": "4984944.37797774351065559439992",
+        "e6_arc_m": "4984944.37777597780490360114679",
+        "signed_error_mm": "-0.2017657057519932531248844",
+        "quadrature_45_60_difference_m": "1.6813753e-40"
+      },
+      {
+        "latitude_deg": 50,
+        "reference_arc_m": "5540847.04168414870056247878506",
+        "e6_arc_m": "5540847.04123988557401742346579",
+        "signed_error_mm": "-0.4442631265450553192646392",
+        "quadrature_45_60_difference_m": "1.467801e-40"
+      },
+      {
+        "latitude_deg": 90,
+        "reference_arc_m": "10001965.7293127228117396161112",
+        "e6_arc_m": "10001965.7157737844157024286526",
+        "signed_error_mm": "-13.53893839603718745861189",
+        "quadrature_45_60_difference_m": "6.4946496e-42"
+      }
+    ],
+    "newton_45": {
+      "target_arc_m": "4984944.37797774351065559439992",
+      "residual_tolerance_m": "1e-8",
+      "angle_tolerance_rad": "1e-15",
+      "history": [
+        {
+          "k": 0,
+          "B_deg": "44.78051725223087713540406",
+          "integral_residual_m": "-24391.03718379484622436695"
+        },
+        {
+          "k": 1,
+          "B_deg": "45.00000423543126029175571",
+          "integral_residual_m": "0.4706910042470673105701653"
+        },
+        {
+          "k": 2,
+          "B_deg": "45.0000000000000015772494",
+          "integral_residual_m": "1.752825293758835833523415e-10"
+        },
+        {
+          "k": 3,
+          "B_deg": "45.0",
+          "integral_residual_m": "2.430771291994652065965426e-29"
+        }
+      ],
+      "final_integral_residual_m": "2.430771291994652065965426e-29"
+    }
+  },
   "scope": "core displayed identities and numerical examples, not a full source-text audit"
 }
