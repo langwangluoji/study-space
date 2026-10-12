@@ -3,17 +3,18 @@
     {
       "file": "frame-chain.svg",
       "kind": "original schematic",
-      "sha256": "cf7b50c4795df86002c4db6d1b14d354fc3bf8731811623226ed9b11c7809066"
+      "sha256": "e54fe9bb2cd4c4efe2cd1936ebad995c23be7176152d67f6af9a837cd76622f9"
     },
     {
       "file": "height-reference.svg",
       "kind": "original schematic",
-      "sha256": "71063210352c77b8820c898da0a2344600e6dee95a3d95c29b8bb2019b7d5dfd"
+      "sha256": "2d28406b62f5dcc25238e990c54392401dfc149c9045b19d1d8c2a8cbd6b93a3"
     },
     {
       "file": "local-curvature.svg",
       "kind": "original schematic",
-      "sha256": "1bc076ee34978358812cfc738b9535939f955852fda617ca37123b47148cc634"
+      "sha256": "15e1e7da16af5351b3846bffee95b5e0989077958503f90a935ac28f573fb8e1"
     }
-  ]
+  ],
+  "checksum_basis": "Git blob bytes; text files use repository LF line endings"
 }
