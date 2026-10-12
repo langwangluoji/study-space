@@ -1,7 +1,7 @@
 ---
 title: 第一章 大地测量绪论
-prev: /course-geodesy
-next: /geodesy-intro-models
+prev: {"text": "大地测量课程总览", "link": "/course-geodesy"}
+next: {"text": "研究对象与参考模型", "link": "/geodesy-intro-models"}
 ---
 
 # 第一章 大地测量绪论

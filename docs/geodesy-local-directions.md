@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-ellipsoid-coordinates
-next: /geodesy-curvature
+prev: {"text": "旋转椭球与三种纬度", "link": "/geodesy-ellipsoid-coordinates"}
+next: {"text": "曲线曲率与子午曲率半径", "link": "/geodesy-curvature"}
 ---
 
 # 椭球上的局部方向

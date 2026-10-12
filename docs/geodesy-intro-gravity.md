@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-intro-observations
-next: /geodesy-ellipsoid
+prev: {"text": "空间观测怎样约束位置", "link": "/geodesy-intro-observations"}
+next: {"text": "第二章 椭球面数学性质", "link": "/geodesy-ellipsoid"}
 ---
 
 # 地球形状与重力场

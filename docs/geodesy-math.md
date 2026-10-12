@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-ellipsoid
-next: /geodesy-ellipsoid-coordinates
+prev: {"text": "第二章 椭球面数学性质", "link": "/geodesy-ellipsoid"}
+next: {"text": "旋转椭球与三种纬度", "link": "/geodesy-ellipsoid-coordinates"}
 ---
 
 # 曲线 曲面与坐标表达

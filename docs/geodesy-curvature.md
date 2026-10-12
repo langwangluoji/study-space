@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-local-directions
-next: /geodesy-normal-curvature
+prev: {"text": "椭球上的局部方向", "link": "/geodesy-local-directions"}
+next: {"text": "法曲率与方向曲率", "link": "/geodesy-normal-curvature"}
 ---
 
 # 曲线曲率与子午曲率半径

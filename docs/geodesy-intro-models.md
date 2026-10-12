@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-intro
-next: /geodesy-intro-frames
+prev: {"text": "第一章 大地测量绪论", "link": "/geodesy-intro"}
+next: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
 ---
 
 # 研究对象与参考模型

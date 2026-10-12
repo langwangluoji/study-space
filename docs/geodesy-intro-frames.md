@@ -1,6 +1,6 @@
 ---
-prev: /geodesy-intro-models
-next: /geodesy-intro-observations
+prev: {"text": "研究对象与参考模型", "link": "/geodesy-intro-models"}
+next: {"text": "空间观测怎样约束位置", "link": "/geodesy-intro-observations"}
 ---
 
 # 位置表达与坐标框架
