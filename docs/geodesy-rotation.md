@@ -16,7 +16,7 @@ $$
 C_{P\leftarrow Q}=E_P^TE_Q.
 $$
 
-每个元素 $C_{ij}=\mathbf p_i\cdot\mathbf q_j$，第 j 列就是 Q 第 j 根轴在 P 中的坐标。右手正交基使 $C^TC=I,\det C=1$，所以逆变换是转置。连乘时
+每个元素 $C_{ij}=\mathbf p_i\cdot\mathbf q_j$，第 j 列就是 Q 第 j 根轴在 P 中的坐标。两组基正交归一使 $C^TC=I$，因此 $C^{-1}=C^T$；再因为 P、Q 都约定为右手基，才进一步有 $\det C=+1$。若其中一组基改变手性，正交性仍成立，但行列式会是 $-1$。连乘时
 $C_{P\leftarrow R}=C_{P\leftarrow Q}C_{Q\leftarrow R}$，最右侧先作用。
 
 ## 一个正角对应两种几何问题 {#g4-active-passive}

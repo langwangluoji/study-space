@@ -101,8 +101,13 @@ $$
 
 ## 沿法线增加椭球高 {#ellipsoid-height}
 
-椭球高 $h$ 沿外法线计量，因此空间点满足
-$\mathbf r_h=\mathbf r(B,L)+h\mathbf e_U$。把两个表达相加就得到
+椭球高 $h$ 沿参考椭球的外法线计量。这里的 $B,L$ 先确定椭球面脚点 $\mathbf r(B,L)$，$\mathbf e_U(B,L)$ 是该脚点的单位外法线；空间点定义为
+
+$$
+\mathbf r_h=\mathbf r(B,L)+h\mathbf e_U(B,L).
+$$
+
+因此高度改变时保持的是同一条椭球法线，而不是沿地心向径移动。把两个表达相加就得到
 
 $$
 \begin{aligned}

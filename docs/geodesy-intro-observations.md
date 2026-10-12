@@ -52,7 +52,21 @@ $$
 
 这里 $\delta t_r$ 为接收机钟差，$b$ 用米表示；$\varepsilon_i$ 汇集残余误差。称为“伪距”，正因为传播时间还受时钟影响，它不只是几何距离。待定量是X、Y、Z和b四个，因此至少需要四个独立伪距观测，且卫星必须有足够好的空间分布。
 
-为什么数量并不充分，可以从一阶线性化看出来。令 $\mathbf e_i=(\mathbf r_i-\mathbf r_0)/\rho_{i0}$ 为近似接收机指向卫星的单位向量，则
+为什么数量并不充分，可以从一阶线性化看出来。先在近似接收机位置 $\mathbf r_0$ 处定义
+
+$$
+\rho_{i0}=\|\mathbf r_i-\mathbf r_0\|,
+\qquad
+\mathbf e_i=\frac{\mathbf r_i-\mathbf r_0}{\rho_{i0}},
+$$
+
+其中 $\mathbf e_i$ 从接收机指向卫星。若接收机改正量为 $\Delta\mathbf r$，几何距离的一阶变化为
+
+$$
+\Delta\rho_i\approx-\mathbf e_i^T\Delta\mathbf r.
+$$
+
+负号表示接收机若沿视线向卫星移动，站星距离会减小。因此
 
 $$
 P_i-\rho_{i0}-b_0
