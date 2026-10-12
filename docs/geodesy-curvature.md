@@ -75,7 +75,7 @@ M(u)=\frac1\kappa
 =\frac{(a^2\sin^2u+b^2\cos^2u)^{3/2}}{ab}.
 $$
 
-要得到大地纬度表达，还需把 $u$ 换成 $B$。由上一专题的坐标比较：
+要得到大地纬度表达，还需把 $u$ 换成 $B$。由[三种纬度专题的坐标比较](geodesy-ellipsoid-coordinates.html#latitude-relations)：
 
 $$
 \cos u=\frac{\cos B}{W},\qquad
@@ -106,6 +106,17 @@ $$
 $$
 
 因此子午线曲率为 $1/M$，主法线朝向内侧；几何外法线与它在同一直线上，但方向相反。这一方向约定在法曲率专题中尤为重要。
+
+用二阶Taylor式可以理解“密切”为什么与曲率相连。在曲率非零的点s₀附近，
+
+$$
+\mathbf r(s_0+\delta s)=\mathbf r_0+\mathbf T_0\delta s
++\frac{\kappa_0\mathbf n_c}{2}(\delta s)^2+o((\delta s)^2).
+$$
+
+以 $\mathbf r_0+\mathbf n_c/\kappa_0$ 为圆心、$1/\kappa_0$ 为半径，在切向与主法向张成的平面内画圆，它有同样的位置、一阶切向和二阶弯曲项。因此密切圆描述的是局部接触，而不是整条曲线都成为这个圆。下图下半部给出这层关系；上半部的法曲率夹角将在下一专题使用。
+
+<SourceFigure src="/geodesy/figures/local-curvature.svg" alt="主法线、方位角与密切圆的局部关系" source="本站绘制" page="示意图" original />
 
 ## 边界与局部意义
 

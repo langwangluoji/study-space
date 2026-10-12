@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" role="img" aria-labelledby="title"><title id="title">传统天球到地固框架的四步轴向转换</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2563eb"/></marker></defs><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#172c43;font-size:22px}.small{font-size:18px}.head{font-size:26px;font-weight:600}.axis{stroke:#172c43;stroke-width:3;fill:none}.blue{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrow)}.dashed{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none}.panel{fill:#f4f8fc;stroke:#cedbe8;stroke-width:1.5}.curve{stroke:#138476;stroke-width:3;fill:none}</style><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="45" class="head">同一向量，依次改用不同坐标轴表达</text>
+<rect x="35" y="70" width="1030" height="555" rx="16" class="panel"/>
+<g><rect x="65" y="95" width="285" height="70" rx="8" fill="#dbeafe"/><text x="82" y="124">C：协议天球系</text><text x="82" y="150" class="small">约定参考历元的轴向</text>
+<rect x="65" y="200" width="285" height="70" rx="8" fill="#dbeafe"/><text x="82" y="229">M：瞬时平天球系</text><text x="82" y="255" class="small">平均极与平均春分点</text>
+<rect x="65" y="305" width="285" height="70" rx="8" fill="#dbeafe"/><text x="82" y="334">V：瞬时真天球系</text><text x="82" y="360" class="small">真实极与真春分点</text>
+<rect x="65" y="410" width="285" height="70" rx="8" fill="#dbeafe"/><text x="82" y="439">E：瞬时地球系</text><text x="82" y="465" class="small">瞬时自转极、地面经度方向</text>
+<rect x="65" y="515" width="285" height="70" rx="8" fill="#dbeafe"/><text x="82" y="544">T：协议地固系</text><text x="82" y="570" class="small">约定的地固轴向</text></g>
+<path d="M205 165v35" class="blue"/><path d="M205 270v35" class="blue"/><path d="M205 375v35" class="blue"/><path d="M205 480v35" class="blue"/>
+<text x="390" y="183">岁差：C → M</text><text x="390" y="210" class="small">平均地轴长期改变方向；相应平均春分点也变化</text>
+<text x="390" y="288">章动：M → V</text><text x="390" y="315" class="small">真实地轴相对平均地轴的小幅周期变化</text>
+<text x="390" y="393">地球自转：V → E</text><text x="390" y="420" class="small">以绕瞬时极的旋转联系天球方向与地面经度方向</text>
+<text x="390" y="498">极移：E → T</text><text x="390" y="525" class="small">瞬时自转轴相对固体地球约定轴的移动</text>
+<text x="65" y="610" class="small">矩阵从右往左作用；此图对应传统课件分解，精密计算须选定现代标准与地球定向参数。</text>
+<text x="35" y="680" class="small">本站绘制 · 示意图不按真实尺度</text></svg>

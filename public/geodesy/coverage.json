@@ -1,0 +1,629 @@
+{
+  "review_date": "2026-10-12",
+  "basis": "knowledge coverage, not verbatim reproduction",
+  "entries": [
+    {
+      "source": "S1",
+      "file_page": 1,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "定义、分类和任务"
+    },
+    {
+      "source": "S1",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "定义、分类和任务"
+    },
+    {
+      "source": "S1",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "四系统对照；CGCS2000长半轴笔误已统一为6378137m"
+    },
+    {
+      "source": "S1",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 28,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 29,
+      "status": "excluded",
+      "topic": null,
+      "note": "按用户要求不设习题"
+    },
+    {
+      "source": "S3",
+      "file_page": 1,
+      "status": "source-only",
+      "topic": "geodesy-intro-frames",
+      "note": "封面或图示过渡页；坐标定义融入正文，原图未重复刊载"
+    },
+    {
+      "source": "S3",
+      "file_page": 4,
+      "status": "source-only",
+      "topic": "geodesy-intro-frames",
+      "note": "封面或图示过渡页；坐标定义融入正文，原图未重复刊载"
+    },
+    {
+      "source": "S3",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "几何对象及坐标定义；点线面在后续各专题具体解释"
+    },
+    {
+      "source": "S3",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "几何对象及坐标定义；点线面在后续各专题具体解释"
+    },
+    {
+      "source": "S3",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-math",
+      "note": "主法线与椭球法线；不扩展挠率或完整Frenet微分方程"
+    },
+    {
+      "source": "S3",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 28,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 29,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 30,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 31,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 32,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 33,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 34,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 35,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 36,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 37,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 38,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 39,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 40,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 41,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 42,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 43,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 44,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 45,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 46,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 47,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 48,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 49,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 50,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 51,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 52,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 53,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 54,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 55,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 56,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 57,
+      "status": "excluded",
+      "topic": null,
+      "note": "按用户要求不设习题"
+    },
+    {
+      "source": "S3",
+      "file_page": 58,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    },
+    {
+      "source": "S3",
+      "file_page": 59,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    },
+    {
+      "source": "S3",
+      "file_page": 60,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    }
+  ]
+}

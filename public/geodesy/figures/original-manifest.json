@@ -1,0 +1,19 @@
+{
+  "figures": [
+    {
+      "file": "frame-chain.svg",
+      "kind": "original schematic",
+      "sha256": "cf7b50c4795df86002c4db6d1b14d354fc3bf8731811623226ed9b11c7809066"
+    },
+    {
+      "file": "height-reference.svg",
+      "kind": "original schematic",
+      "sha256": "71063210352c77b8820c898da0a2344600e6dee95a3d95c29b8bb2019b7d5dfd"
+    },
+    {
+      "file": "local-curvature.svg",
+      "kind": "original schematic",
+      "sha256": "1bc076ee34978358812cfc738b9535939f955852fda617ca37123b47148cc634"
+    }
+  ]
+}

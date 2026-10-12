@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" role="img" aria-labelledby="title"><title id="title">椭球高与两类物理高度的参照关系</title><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#2563eb"/></marker></defs><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#172c43;font-size:22px}.small{font-size:18px}.head{font-size:26px;font-weight:600}.axis{stroke:#172c43;stroke-width:3;fill:none}.blue{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrow)}.dashed{stroke:#64748b;stroke-width:2;stroke-dasharray:7 6;fill:none}.panel{fill:#f4f8fc;stroke:#cedbe8;stroke-width:1.5}.curve{stroke:#138476;stroke-width:3;fill:none}</style><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="45" class="head">同一地面点，用不同物理参考面表达高度</text>
+<rect x="25" y="70" width="505" height="520" rx="16" class="panel"/><rect x="550" y="70" width="525" height="520" rx="16" class="panel"/>
+<text x="55" y="110" class="head">正高与大地水准面</text><text x="580" y="110" class="head">正常高与似大地水准面</text>
+<path d="M55 180Q280 155 490 180 M580 180Q800 155 1035 180" class="axis"/>
+<text x="60" y="150">地面点 P</text><text x="585" y="150">地面点 P</text>
+<path d="M55 360Q280 330 490 360 M580 375Q800 345 1035 375" class="curve"/>
+<text x="60" y="397">大地水准面：W = W₀</text><text x="585" y="412">似大地水准面：不是等位面</text>
+<path d="M55 490h435 M580 490h455" class="axis"/>
+<text x="60" y="525">参考椭球</text><text x="585" y="525">同一参考椭球</text>
+<path d="M465 487V178 M1010 487V178" class="blue"/><text x="470" y="305">h</text><text x="1020" y="305">h</text>
+<path d="M275 355V171 M800 370V170" class="blue"/><text x="288" y="265">Hᴼ</text><text x="814" y="265">Hᴺ</text>
+<path d="M275 487V358 M800 487V373" class="blue"/><text x="288" y="446">N<tspan baseline-shift="sub" font-size="15">g</tspan></text><text x="814" y="446">ζ</text>
+<text x="60" y="565">h ≈ Hᴼ + N<tspan baseline-shift="sub" font-size="15">g</tspan></text><text x="585" y="565">h ≈ Hᴺ + ζ</text>
+<text x="35" y="622" class="small">图将法线与铅垂方向近似画成平行直线；实际方向和对应脚点须按高度系统定义。</text>
+<text x="35" y="651" class="small">正高来自真实重力；正常高来自正常重力。N<tspan baseline-shift="sub" font-size="14">g</tspan> 与 ζ 一般不同，不能互换。</text>
+<text x="35" y="680" class="small">本站绘制 · 示意图不按真实尺度</text></svg>

@@ -33,6 +33,17 @@ $$
 
 其中 $L_2=\mathbf x_{uu}\cdot\boldsymbol\nu$、$M_2=\mathbf x_{uv}\cdot\boldsymbol\nu$、$N_2=\mathbf x_{vv}\cdot\boldsymbol\nu$ 是第二基本形式的系数，下标用于区别椭球的曲率半径 $M,N$。
 
+前面的写法已经选择弧长。若用任意正则参数t，令 $v_c=\|d\mathbf r/dt\|>0$，则 $\mathbf r_{tt}=v_c^2\mathbf r_{ss}+(dv_c/dt)\mathbf T$；第二项在切平面内，投影到曲面法线后消失。所以
+
+$$
+k_n=\frac{\mathbf r_{tt}\cdot\boldsymbol\nu}{v_c^2}
+=\frac{L_2\dot u^2+2M_2\dot u\dot v+N_2\dot v^2}
+{E\dot u^2+2F\dot u\dot v+G\dot v^2}
+=\frac{\mathrm{II}}{\mathrm{I}}.
+$$
+
+第一基本形式I量切向长度平方，第二基本形式II量同一变化产生的法向弯曲。二者的比消除了参数快慢的影响；t=s时分母等于1，才回到上面的简式。
+
 在固定点、固定单位切向下，$u',v'$ 已经确定，曲线怎样继续走所对应的 $u'',v''$ 不影响 $k_n$。这就是不同曲线只要有同一切向，就有相同法曲率的原因。
 
 若曲线曲率 $\kappa>0$，写 $\mathbf r''=\kappa\mathbf n_c$，$\theta$ 是主法线与所选曲面法线的夹角，则
@@ -45,7 +56,7 @@ $$
 
 ## 从平行圈推导卯酉曲率半径
 
-<SourceFigure src="/geodesy/figures/normal-sections.png" alt="子午法截面与卯酉法截面" source="1椭球面数学性质   课程讲义.pdf" page="41" printed="32" note="示意图包含局部轴和角度标记，不能把每个标记字母都当成本文的纬度或曲率半径。" />
+<SourceFigure src="/geodesy/figures/normal-sections.png" alt="子午法截面与卯酉法截面" source="1椭球面数学性质   课程讲义.pdf" page="41" printed="32" note="图中P是接触点，PT是子午切线，Pn是椭球法线；图内小写n标记法线延伸，不表示本文的单位向量。" />
 
 卯酉法截面包含法线与东向切线，与子午面正交。平行圈在固定 B 下是半径 $r_B=N\cos B$ 的圆，它与卯酉法截线具有同一东向切线，但通常不是同一曲线。
 
@@ -70,6 +81,12 @@ $$
 
 在赤道，平行圈与卯酉法截线局部具有同一法向，所以其曲率半径相同；其他纬度的平行圈半径是 $N\cos B$，不能把它直接当成 $N$。
 
+在原图中，子午面含旋转轴和点P，另一法截面含Pn并与子午面正交；两面在P的切线分别对应本文北向 $\mathbf e_N$ 与东向 $\mathbf e_E$。图内的点名B与角度B须依所处位置辨认，不能把点名代入纬度公式。下面本站示意图把推导真正需要的方向单独画出。
+
+<SourceFigure src="/geodesy/figures/local-curvature.svg" alt="Meusnier法向投影与Euler方位角" source="本站绘制" page="示意图" original />
+
+图左只画平行圈主法线与椭球内法线所在的子午面，东向切线垂直图面；夹角是 $|B|$。图右画切平面，A从北向东量起，因此单位切向为 $\cos A\,\mathbf e_N+\sin A\,\mathbf e_E$。两幅图分别说明法向投影和切向方向，不能把两个角当成同一个角。
+
 ## Euler 公式为什么成立
 
 第二基本形式是一个对称二次型。在切平面选择正交单位基，它对应对称矩阵，因而可以用正交主方向对角化。先以一般曲面说明其几何意义：在点附近令切平面为 $z=0$，所选法线指向正 z，曲面写作 $z=f(x,y)$，该点有 $f_x=f_y=0$。
@@ -87,7 +104,7 @@ $$
 $$
 
 对椭球还需确认子午与卯酉方向确实为主方向。已有 $\mathbf r_B=M\mathbf e_N$、$\mathbf r_L=N\cos B\mathbf e_E$，一阶点积为零；混合二阶导数的法向分量也为零，因为
-$\partial_L\mathbf e_N=-\sin B\,\mathbf e_E$。因此两个基本形式在这组方向都没有交叉项，子午和卯酉就是主方向，其曲率分别为 $1/M,1/N$。
+$\partial_L\mathbf e_N=-\sin B\,\mathbf e_E$。因此两个基本形式在这组参数方向都没有交叉项。更明确地，内法线下 $L_2=M$、$M_2=0$、$N_2=N\cos^2B$：第一式由 $\mathbf r_{BB}=M_B\mathbf e_N-M\mathbf e_U$ 投影得到，末式由 $\mathbf r_{LL}=N\cos B(-\cos L,-\sin L,0)$ 投影得到。将参数方向分别除以M和 $N\cos B$，变成正交单位基后，II对应的矩阵就是 $\operatorname{diag}(1/M,1/N)$。所以子午与卯酉确实是主方向，而不仅是彼此正交的两条曲线。
 
 取 A 从北向往东向量起，Euler 公式成为
 
@@ -100,6 +117,77 @@ $$
 由 $N/M=W^2/(1-e^2)=1+e'^2\cos^2B\ge1$ 得 $M\le R_A\le N$。A 为 0 时得到 M，为 $\pi/2$ 时得到 N；极点处 M=N，任意方向相同。
 
 讲义还引入辅助量 $c=a^2/b$、$V=\sqrt{1+e'^2\cos^2B}$。由 $V^2=W^2/(1-e^2)$，可将同一组半径写为 $N=c/V$、$M=c/V^3$、$\sqrt{MN}=c/V^2$。这些是前述公式的代数重写，不是另外三种几何半径。
+
+<details>
+<summary>补充证明：由坐标变换和法截线方程独立得到方向曲率</summary>
+
+### 从局部截面方程核对Euler公式 {#normal-section-coordinate-proof}
+
+这对应原讲义文件页58–60。原页用L记大地纬度，本节统一改为B，经度仍用L。利用旋转对称性可先取接触点经度为0，任意经度的情形只需整体绕Z旋转，不改变曲率。记 $d=1-e^2$、$c_B=\cos B$、$s_B=\sin B$、$C_A=\cos A$、$S_A=\sin A$。
+
+接触点为 $\mathbf r_0=(Nc_B,0,Nd s_B)$。局部p轴沿外法线，q轴沿北向往东偏A的切向，剩余的w轴垂直法截面；局部三维分量按(p,w,q)排列，在法截面内w=0，旋转和平移给出
+
+$$
+\begin{pmatrix}X\\Y\\Z\end{pmatrix}
+=\begin{pmatrix}Nc_B\\0\\Nd s_B\end{pmatrix}
++\begin{pmatrix}c_B&-s_BC_A\\0&S_A\\s_B&c_BC_A\end{pmatrix}
+\begin{pmatrix}p\\q\end{pmatrix}.
+$$
+
+两个矩阵列向量分别是外法线与所选单位切向，长度为1、点积为0。它与原课件两个旋转矩阵的乘积等价。把位置代入 $X^2+Y^2+Z^2/d=a^2$。常数项是 $N^2(c_B^2+d s_B^2)=N^2W^2=a^2$，所以抵消；一次项是
+
+$$
+2N c_B(c_Bp-s_BC_Aq)+2N s_B(s_Bp+c_BC_Aq)=2Np.
+$$
+
+二次项按p²、pq、q²合并：
+
+$$
+\begin{aligned}
+Q={}&\left(c_B^2+\frac{s_B^2}{d}\right)p^2
++2s_Bc_BC_A\left(\frac1d-1\right)pq\\
+&+\left(s_B^2C_A^2+S_A^2+\frac{c_B^2C_A^2}{d}\right)q^2.
+\end{aligned}
+$$
+
+因为 $1/d=1+e'^2$，三个系数依次化为 $1+e'^2s_B^2$、$2e'^2s_Bc_BC_A$、$1+e'^2c_B^2C_A^2$。再把偏心率部分配成平方，截线方程就是
+
+$$
+p^2+q^2+2Np+e'^2(s_Bp+c_BC_Aq)^2=0.
+$$
+
+这一步保留了原材料的常数、一次、二次项展开逻辑，而不是预先假定Euler公式。令 $\alpha=1+e'^2s_B^2$、$\beta=e'^2s_Bc_BC_A$、$\gamma=1+e'^2c_B^2C_A^2$，写 $F(p,q)=\alpha p^2+2\beta pq+\gamma q^2+2Np=0$。
+
+在原点 $F_p=2N\ne0$，隐函数定理允许局部写p=p(q)。对q求导并除以2，得到
+
+$$
+\alpha p p_q+\beta(qp_q+p)+\gamma q+Np_q=0.
+$$
+
+代入p=q=0得 $p_q(0)=0$，说明q轴就是切线。再求一次导数：
+
+$$
+\alpha(p_q^2+p p_{qq})+\beta(qp_{qq}+2p_q)+\gamma+Np_{qq}=0,
+$$
+
+故 $p_{qq}(0)=-\gamma/N$。局部空间曲线是 $(p(q),0,q)$，叉积曲率公式给出
+
+$$
+\kappa_A=\frac{|p_{qq}|}{(1+p_q^2)^{3/2}},\qquad
+R_A=\frac{N}{\gamma}
+=\frac{N}{1+e'^2\cos^2B\cos^2A}.
+$$
+
+负的 $p_{qq}$ 表明弯曲朝内，与正文选择内法线后正的法曲率一致。由 $N/M=1+e'^2\cos^2B$，独立结果可写成
+
+$$
+\frac1{R_A}=\frac{1+e'^2\cos^2B\cos^2A}{N}
+=\frac{\cos^2A}{M}+\frac{\sin^2A}{N}.
+$$
+
+A=0得到M，A=π/2得到N；球面或极点极限下各向半径相同。于是坐标截线法与正文的曲率投影法在同一符号约定下闭合。
+
+</details>
 
 ## 对方向平均得到哪个量
 

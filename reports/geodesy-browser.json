@@ -3,6 +3,7 @@
   "pages": 20,
   "checks": [
     "20 pages, two main chapters, 4+6 topic routes, formula rendering and source images",
+    "89 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof",
     "all 13 main reading pages: correct pager titles, destinations, boundaries and next click",
     "coordinate boundaries, empty input and persisted learning mark",
     "active/passive rotation and keyboard control",

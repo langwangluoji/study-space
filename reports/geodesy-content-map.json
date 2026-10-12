@@ -7,30 +7,30 @@
         {
           "slug": "geodesy-intro-models",
           "title": "研究对象与参考模型",
-          "chars": 1339,
+          "chars": 1671,
           "display_math_blocks": 0,
           "source_figures": 2
         },
         {
           "slug": "geodesy-intro-frames",
           "title": "位置表达与坐标框架",
-          "chars": 1770,
+          "chars": 2980,
           "display_math_blocks": 3,
-          "source_figures": 0
+          "source_figures": 1
         },
         {
           "slug": "geodesy-intro-observations",
           "title": "空间观测怎样约束位置",
-          "chars": 2321,
-          "display_math_blocks": 5,
+          "chars": 4057,
+          "display_math_blocks": 7,
           "source_figures": 3
         },
         {
           "slug": "geodesy-intro-gravity",
           "title": "地球形状与重力场",
-          "chars": 1718,
-          "display_math_blocks": 4,
-          "source_figures": 0
+          "chars": 3446,
+          "display_math_blocks": 6,
+          "source_figures": 1
         }
       ]
     },
@@ -41,43 +41,43 @@
         {
           "slug": "geodesy-math",
           "title": "曲线 曲面与坐标表达",
-          "chars": 2269,
-          "display_math_blocks": 3,
+          "chars": 3373,
+          "display_math_blocks": 4,
           "source_figures": 1
         },
         {
           "slug": "geodesy-ellipsoid-coordinates",
           "title": "旋转椭球与三种纬度",
-          "chars": 3150,
-          "display_math_blocks": 12,
+          "chars": 3768,
+          "display_math_blocks": 13,
           "source_figures": 3
         },
         {
           "slug": "geodesy-local-directions",
           "title": "椭球上的局部方向",
-          "chars": 2504,
-          "display_math_blocks": 8,
+          "chars": 2921,
+          "display_math_blocks": 9,
           "source_figures": 0
         },
         {
           "slug": "geodesy-curvature",
           "title": "曲线曲率与子午曲率半径",
-          "chars": 2498,
-          "display_math_blocks": 11,
-          "source_figures": 0
-        },
-        {
-          "slug": "geodesy-normal-curvature",
-          "title": "法曲率与方向曲率",
-          "chars": 3537,
+          "chars": 3056,
           "display_math_blocks": 12,
           "source_figures": 1
         },
         {
+          "slug": "geodesy-normal-curvature",
+          "title": "法曲率与方向曲率",
+          "chars": 6423,
+          "display_math_blocks": 21,
+          "source_figures": 2
+        },
+        {
           "slug": "geodesy-metric",
           "title": "曲面度量 弧长与面积",
-          "chars": 4014,
-          "display_math_blocks": 15,
+          "chars": 6265,
+          "display_math_blocks": 21,
           "source_figures": 1
         }
       ]
@@ -277,5 +277,10 @@
     "orbital dynamics",
     "STK",
     "standalone projection/control/height chapters"
-  ]
+  ],
+  "source_page_decisions": 89,
+  "original_svg_figures": 3,
+  "supplemental_proof": "geodesy-normal-curvature#normal-section-coordinate-proof",
+  "independent_review": "intro coverage and ellipsoid proof dependencies reviewed; no blocking mathematical issue",
+  "scope": "knowledge coverage and proof dependencies, distinct from symbolic/numerical checks"
 }
