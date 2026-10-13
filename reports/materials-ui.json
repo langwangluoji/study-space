@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "startedAt": "2026-10-13T23:45:58.296Z",
+  "startedAt": "2026-10-13T23:51:31.959Z",
   "root": "docs\\.vitepress\\dist",
   "storage": "materials\\storage",
   "catalogPath": "public\\materials\\catalog.json",
@@ -68,7 +68,7 @@
         "viewport": 1280,
         "paperWidth": 1280,
         "canvasCSSWidth": 1920,
-        "paperScrollWidth": 1932
+        "paperScrollWidth": 1944
       },
       "network": {
         "requests": 0,
@@ -91,7 +91,55 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62813/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -99,7 +147,7 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -161,7 +209,25 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62813/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -169,7 +235,7 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -238,7 +304,7 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -343,7 +409,7 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -467,7 +533,7 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -534,7 +600,7 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -596,7 +662,7 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -656,15 +722,22 @@
         "consoleErrors": [
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -702,31 +775,31 @@
       },
       "statusTimeline": [
         {
-          "time": 32.30000000447035,
+          "time": 24.100000001490116,
           "stage": "initial",
           "status": "正在加载原资料…",
           "error": false
         },
         {
-          "time": 464,
+          "time": 468.70000000298023,
           "stage": "initial",
           "status": "正在载入第 163 页…",
           "error": false
         },
         {
-          "time": 1009.3000000044703,
+          "time": 1071.8999999985099,
           "stage": "initial",
           "status": "第 163 / 326 页",
           "error": false
         },
         {
-          "time": 1069.3000000044703,
+          "time": 1144.7000000029802,
           "stage": "initial",
           "status": "正在载入第 164 页…",
           "error": false
         },
         {
-          "time": 1234.3999999985099,
+          "time": 1344.6000000014901,
           "stage": "initial",
           "status": "第 164 / 326 页",
           "error": false
@@ -832,15 +905,28 @@
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -922,7 +1008,7 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+            "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": true
@@ -930,7 +1016,7 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62813/study-space/material-viewer/viewer.js",
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
             "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -997,13 +1083,13 @@
   "errors": [],
   "serverDownloadRequests": [],
   "selectedCasePattern": null,
-  "optionalLocalInventoryChecked": false,
+  "optionalLocalInventoryChecked": true,
   "catalogRecords": 43,
   "partURLs": 163,
   "downloadDiagnostics": [
     {
       "id": "rs-english-summary",
-      "url": "http://127.0.0.1:62813/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
+      "url": "http://127.0.0.1:55393/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
       "filename": "2451561_Chatper1_summary.docx",
       "worker": {
         "controller": true,
@@ -1013,7 +1099,7 @@
     },
     {
       "id": "slide-11",
-      "url": "http://127.0.0.1:62813/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+      "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
       "filename": "11-图像目标检测-3-Transformer类.pptx",
       "worker": {
         "controller": true,
@@ -1022,5 +1108,5 @@
       }
     }
   ],
-  "finishedAt": "2026-10-13T23:46:11.867Z"
+  "finishedAt": "2026-10-13T23:51:48.918Z"
 }

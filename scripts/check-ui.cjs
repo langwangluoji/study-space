@@ -32,6 +32,9 @@ async function run(){
   });
  };
  let page=await browser.newPage();observe(page);
+ // Init scripts also run in child frames. Only the parent owns the site's
+ // theme; let the standalone reader receive its theme from the iframe URL.
+ await page.addInitScript(()=>{if(window.top!==window)return;const t=new URLSearchParams(location.search).get('__ui_theme');if(t)localStorage.setItem('vitepress-theme-appearance',t)});
  const pages=['index','course-ml','lecture-1','lecture-2','lecture-3','cifar10-practice','resources','read-notebook','read-sources','read-downloads-cifar10_mlp_tutorial','read-downloads-rewrite_reference_checks','read-README','textbooks','book-prml','book-mml','book-leedl','slides-lecture-1','slides-lecture-2','slides-lecture-3','verification','course-geodesy',...JSON.parse(fs.readFileSync('geodesy.config.json','utf8')).flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-sources','geodesy-plan'];
  pages.push(...JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.filter(c=>!['ml','geodesy'].includes(c.id)).flatMap(c=>[c.entry.slice(1).replace(/\.html$/,''),c.source.slice(1).replace(/\.html$/,''),...(c.chapters??[]).map(ch=>ch.slug)]));
  pages.push('courses','review-guide','study-guide','contribute',...Array.from({length:6},(_,i)=>'geodesy-source-s'+(i+1)));
@@ -39,11 +42,10 @@ async function run(){
  for(const width of (process.env.UI_WIDTHS?process.env.UI_WIDTHS.split(',').map(Number):[1440,390,320])){
   await page.setViewportSize({width,height:900});
   for(const theme of ['light','dark']){
-   await page.addInitScript(t=>localStorage.setItem('vitepress-theme-appearance',t),theme);
    for(const slug of (process.env.UI_PAGES?process.env.UI_PAGES.split(','):pages)){
     // This matrix verifies parent-page layout; PDF rendering and byte-range
     // traffic are covered by check-materials-ui.cjs with explicit ready checks.
-    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html'),{waitUntil:archivePages.has(slug)?'domcontentloaded':'networkidle',timeout:60000});
+    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html')+'?__ui_theme='+theme,{waitUntil:archivePages.has(slug)?'domcontentloaded':'networkidle',timeout:60000});
     if(archivePages.has(slug)){await page.locator('.vp-doc').waitFor();await page.waitForFunction(t=>document.documentElement.classList.contains('dark')===(t==='dark'),theme)}
     const defaultOpen=await page.locator('.vp-doc details[open]').count();assert.equal(defaultOpen,0,'Extras must start closed: '+slug);
     await page.evaluate(()=>document.querySelectorAll('.vp-doc details').forEach(d=>d.open=true));
