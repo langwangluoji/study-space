@@ -1,0 +1,11 @@
+{
+  "id":"remote-sensing",
+  "title":"遥感原理与基础",
+  "title_en":"Remote Sensing Principles and Fundamentals",
+  "chapters":[
+    {"number":1,"slug":"remote-sensing-ch1","title":"第一章 遥感概述","title_en":"Introduction to Remote Sensing"},
+    {"number":2,"slug":"remote-sensing-ch2","title":"第二章 遥感电磁辐射基础","title_en":"Electromagnetic Radiation Fundamentals"},
+    {"number":3,"slug":"remote-sensing-ch3","title":"第三章 遥感平台及运行特点","title_en":"Platforms and Orbital Characteristics"},
+    {"number":4,"slug":"remote-sensing-ch4","title":"第四章 遥感传感器及其成像原理","title_en":"Sensors and Imaging Principles"}
+  ]
+}

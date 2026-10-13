@@ -271,7 +271,8 @@ async function run(){
    assert(injected>0,'503 must be exercised by an actual archive read');
    const errorStatus=await page.locator('#status').textContent();assert(errorStatus?.trim(),'Failed read shows a human-readable status');
    await page.screenshot({path:path.join(screenRoot,'archive-503-error.png')});
-   fail=false;await page.locator('#retry').click();const recovered=await waitRendered(page,1);
+   fail=false;await Promise.all([page.waitForEvent('domcontentloaded',{timeout}),page.locator('#retry').click()]);
+   const recovered=await waitRendered(page,1);
    assert.equal(recovered.total,expectedPages('insar-l3'));assert(await page.locator('#retry').isHidden(),'Retry control hides after success');
    assert.deepEqual(tracker.pageErrors,[],'No uncaught script errors on failed read/retry');
    const unexpected=tracker.httpErrors.filter(e=>!source.parts.some(p=>e==='HTTP 503 '+p.url));
@@ -308,8 +309,10 @@ async function run(){
    await page.screenshot({path:path.join(screenRoot,'later-chunk-503-error.png')});
    fail=false;await page.evaluate(()=>window.__materialTestStage='click-retry');
    caseItem.beforeRetry={status:await page.locator('#status').textContent(),network:snapshot(tracker)};
-   await page.locator('#retry').click();
+   await Promise.all([page.waitForEvent('domcontentloaded',{timeout}),page.locator('#retry').click()]);
    caseItem.afterRetryClick={status:await page.locator('#status').textContent(),network:snapshot(tracker)};
+   // Wait for the replacement document before inspecting page render state;
+   // the previous document briefly retains its error status during reload.
    const recovered=await waitRendered(page,163);
    assert.equal(recovered.total,expectedPages('leedl'));assert(page.url().endsWith('#page=163'),'Rebuilt reader retains target page');
    assert(await page.locator('#retry').isHidden());await page.locator('#next').click();const next=await waitRendered(page,164);

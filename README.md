@@ -35,7 +35,7 @@ InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwa
 
 大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；六份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
 
-遥感基础当前作为原资料可读课程接入，入口为 `docs/course-remote-sensing.md`，范围与署名维护在 `docs/remote-sensing-sources.md`。提供第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份资料；主站不把尚未接入的讲义写成已完成。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文仍按当前已整理的前三讲与实践标明范围。
+遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文仍按当前已整理的前三讲与实践标明范围。
 
 | 内容 | 唯一维护源 |
 | --- | --- |

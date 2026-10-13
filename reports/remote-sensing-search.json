@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "method": "Browser verification of the final static build; supersedes unavailable standalone Chromium run.",
+  "checks": [
+    {
+      "query": "荧光",
+      "results": 3,
+      "remoteSensing": true
+    },
+    {
+      "query": "fluorescence",
+      "results": 3,
+      "remoteSensing": true
+    },
+    {
+      "query": "积分时间",
+      "results": 5,
+      "remoteSensing": true
+    },
+    {
+      "query": "integration time",
+      "results": 16,
+      "remoteSensing": true
+    },
+    {
+      "query": "GIFOV",
+      "results": 12,
+      "remoteSensing": true
+    },
+    {
+      "query": "Ground Range Detected",
+      "results": 16,
+      "remoteSensing": true
+    }
+  ],
+  "evidence": "textbook-browser-check.json"
+}

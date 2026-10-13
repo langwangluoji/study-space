@@ -34,6 +34,20 @@ next: false
 
 公式核对时特别注意角度单位、椭球参数、三种纬度，以及曲率半径的方向约定。需要回到课件核对页码时使用[资料来源索引](geodesy-sources.html)。当前大地测量版本保持连贯讲解，不另设习题或自测。
 
+## 遥感原理与基础：串起辐射、轨道与成像 {#remote-sensing}
+
+| 复习主线 | 回到正文 | 读完应能说明 |
+| --- | --- | --- |
+| 遥感系统链 | [遥感定义与过程](remote-sensing-ch1.html) | 能量、目标、传感器和信息产品之间怎样连接 |
+| 电磁波与辐射量 | [波谱](remote-sensing-ch2.html#rs2-spectrum)、[辐射量](remote-sensing-ch2.html#rs2-radiometry) | 波长与频率关系；通量、辐照度、出射度和辐亮度的对象与单位 |
+| 热辐射与亮温 | [黑体定律](remote-sensing-ch2.html#rs2-blackbody-laws)、[发射率与亮温](remote-sensing-ch2.html#rs2-emissivity-brightness-temperature) | 普朗克、Stefan–Boltzmann和维恩定律各描述什么；亮温为何不等于物理温度 |
+| 大气与地物光谱 | [大气作用](remote-sensing-ch2.html#rs2-atmosphere)、[地物光谱](remote-sensing-ch2.html#rs2-spectral-signatures) | 窗口、吸收带与仪器波段的区别；植被、水体、土壤和岩石曲线为何变化 |
+| 轨道与姿态 | [轨道参数](remote-sensing-ch3.html)、[姿态](remote-sensing-ch3.html#rs3-attitude) | 静止和太阳同步各需哪些条件；周期、重访、地面轨迹与姿态的区别 |
+| 扫描与分辨率 | [光机扫描](remote-sensing-ch4.html#rs4-scanning)、[视场与分辨率](remote-sensing-ch4.html#rs4-ifov) | 摆扫和推扫怎样形成影像；FOV、IFOV、幅宽、GSD和空间分辨率各指什么 |
+| 微波、SAR与InSAR | [微波成像](remote-sensing-ch4.html#rs4-microwave)、[SAR](remote-sensing-ch4.html#rs4-radar)、[InSAR](remote-sensing-ch4.html#rs4-insar) | 主动与被动微波的能量路径；距离向、方位向、地形畸变和干涉相位的意义 |
+
+复习讲义原图时先读图注中的适用条件和原文件页码。岩石光谱图的横轴有疑似刻度笔误，黑体图纵轴单位不完整，这两张图只作定性比较；涉及定量关系时回到正文公式和单位。
+
 ## 根据剩余时间安排阅读
 
 - 时间充足：沿自学路线读正文，遇到疑问再展开证明，并复算已有例子。

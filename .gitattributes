@@ -1,1 +1,4 @@
+# Keep source figure hashes stable on Windows and Linux.
+public/insar/figures/*.svg text eol=lf
+
 materials/storage/**/*.bin -text -diff

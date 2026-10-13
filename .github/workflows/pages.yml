@@ -25,6 +25,8 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: node scripts/verify-materials.mjs
+      - run: node scripts/check-remote-content.mjs
+      - run: python scripts/verify_remote_sensing.py
       - run: pip install -r requirements-geodesy.txt
       - run: python scripts/verify_geodesy.py
       - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu

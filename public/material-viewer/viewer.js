@@ -66,6 +66,6 @@ el('prev').onclick=()=>{current--;showPage()};el('next').onclick=()=>{current++;
 // A failed custom range read can leave PDF.js destruction waiting on its
 // pending page request. Recreate this frame, retaining the requested page,
 // rather than waiting indefinitely for that old worker to settle.
-el('retry').onclick=()=>retryAction==='download'?downloadOriginal():location.replace(location.pathname+location.search+'#page='+current);
+el('retry').onclick=()=>{if(retryAction==='download')return downloadOriginal();history.replaceState(null,'',location.pathname+location.search+'#page='+current);location.reload()};
 el('download').onclick=e=>{e.preventDefault();downloadOriginal()};
 let resized;addEventListener('resize',()=>{clearTimeout(resized);resized=setTimeout(()=>{if(el('zoom').value==='fit')showPage()},250)});addEventListener('pagehide',()=>{renderTask?.cancel();pdf?.destroy()});open();

@@ -28,7 +28,8 @@ export function generateCatalog(){
     if(!['pdf','file','archive'].includes(r.reader)||(!r.file&&r.reader!=='archive'))throw Error('无效资料阅读配置: '+r.id);
     const archive=archives.find(a=>a.id===r.archiveId);
     if(r.reader==='archive'&&!archive)throw Error('未找到原资料档案: '+r.id);
-    const download=r.file?`<a href="/study-space${r.file}" download>下载原 ${r.format}</a>`:`<a href="/study-space/material-viewer/index.html?id=${encodeURIComponent(r.archiveId)}&download=1" target="_blank" rel="noopener">下载原 ${r.format}</a>`;
+    const originalName=(archive?.original.filename??'').replaceAll('&','&amp;').replaceAll('"','&quot;');
+    const download=r.file?`<a href="/study-space${r.file}" download="${originalName}">下载原 ${r.format}</a>`:`<a href="/study-space/material-viewer/index.html?id=${encodeURIComponent(r.archiveId)}&download=1" target="_blank" rel="noopener">下载原 ${r.format}</a>`;
     const owner=space.courses.find(c=>c.id===r.course);
     if(!owner)throw Error('资料阅读页所属课程不存在: '+r.id);
     const preview=r.reader==='archive'?`<MaterialReader id="${r.archiveId}" title=${JSON.stringify(r.title)} />\n\n${archive.preview.pages} 个文件页。${archive.preview.kind==='original-pdf'?'窗口阅读原 PDF 全文，页码按文件页计算。':'窗口阅读保持原排版的 PDF 导出版；PowerPoint 动画、视频与 Word 编辑功能请下载原件使用。'}`:r.reader==='pdf'?`<PdfReader src="${r.file.slice(1)}" title="${r.title}" />`:'下载原文件后使用 '+(r.format==='DOCX'?'Word':'PowerPoint')+' 或兼容阅读器打开。此页面提供资料说明，不在浏览器执行原文件。';
@@ -45,7 +46,7 @@ export function generateCatalog(){
     if(r.archiveId){
       const archive=archives.find(a=>a.id===r.archiveId);
       if(!archive||archive.course!==r.course)throw Error('档案与资料课程不一致: '+r.id);
-      result.bytes=archive.original.bytes;result.pages=archive.preview.pages;
+      result.bytes=archive.original.bytes;result.pages=archive.preview.pages;result.originalFilename=archive.original.filename;
     }
     for(const key of ['file','alternate'])if(r[key]){
       const file=localPath(r[key],'public');

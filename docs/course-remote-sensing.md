@@ -1,38 +1,63 @@
 ---
-title: 遥感基础 · 原资料阅读
+title: 遥感原理与基础
+description: 前四章双语学习资料，结合轨道、扫描成像与辐射图解建立概念。
 prev: false
-next: false
+next:
+  text: 第一章 遥感概述
+  link: /remote-sensing-ch1
 ---
 
-# 遥感基础 · 原资料阅读 {#remote-sensing}
+# 遥感原理与基础
 
-遥感把地表发出或反射的电磁辐射变成观测数据，再通过处理与解释认识地面。本课程原资料从电磁辐射出发，连接平台与轨道、传感器成像、图像处理、判读与应用。这里提供 **15 份原资料的在线预览**，包括第 2–9 章教师课件、汇总、3 本参考教材和补充资料。
+Remote Sensing Principles and Fundamentals
 
-当前主站接入的是原资料阅读入口，尚未把这些内容全部整理成本站讲义。原资料的完整范围、历史参数和作业安排按原件阅读；在线预览不表示已逐页审校，也不表示所有章节已有独立知识讲解。
+<RsLanguage />
 
-## 先沿课件建立问题顺序 {#route}
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-| 先回答什么 | 原课件阅读 | 再接到哪里 |
-| --- | --- | --- |
-| 传感器收到的能量来自哪里，怎样经过大气？ | [第 2 章 · 电磁辐射基础](material-rs-ch2.html) | 理解波谱、辐射与地物光谱，再选择观测方式 |
-| 从何处、以什么轨道和姿态观测？ | [第 3 章 · 遥感平台及运行特点](material-rs-ch3.html) | 把空间覆盖与观测时间联系起来 |
-| 一段辐射怎样变成图像？ | [第 4 章 · 遥感传感器及成像原理](material-rs-ch4.html) | 比较摄影、扫描与微波成像 |
-| 像元位置怎样对应地面？ | [第 5 章 · 图像的几何处理](material-rs-ch5.html) | 区分成像坐标与地图位置 |
-| 像元数值怎样用于比较？ | [第 6 章 · 图像的辐射处理](material-rs-ch6.html) | 检查传感器、大气与处理对信号的影响 |
-| 怎样从形状、纹理和光谱识别地物？ | [第 7 章 · 图像判读](material-rs-ch7.html) | 先提出解释，再用多种证据核对 |
-| 怎样让计算机组织地物类别？ | [第 8 章 · 图像自动识别分类](material-rs-ch8.html) | 将图像信息接到分类与评价 |
-| 如何把观测用于实际问题？ | [第 9 章 · 遥感技术的应用](material-rs-ch9.html) | 根据任务选择数据与方法 |
+传感器接收到的是辐射信号，我们希望知道的却是植被、温度、地形或变化。这套资料沿着“目标怎样改变辐射—平台如何安排观测—传感器怎样形成影像”的顺序，建立从观测到解释的联系。前四章对应课程主线，中英文讲解保留同样的定义、公式条件和图像解释。另有[15份原资料在线阅读与下载入口](./remote-sensing-sources.html#rs-sources-materials)，包含第2–9章课件、汇总、三本教材及补充资料；原件范围超出已整理的前四章。
 
-[遥感汇总](material-rs-summary.html)包含上述第 2–9 章，共 932 文件页；需要按课件顺序连续查看时使用汇总，需要快速定位时使用分章。现有资料未包含独立的第 1 章 PDF；英文总结可以辅助理解导学与术语，但不能代替缺失课件。
+基础要求为高中物理、基本三角关系与初等微积分。首次遇到术语时先理解它描述的是对象、过程、几何量还是物理量，再查看英文名和相近概念。可在每页选择中文、English或双语；配图支持放大，扫描和轨道原图配有分步骤读图说明。
 
-## 参考书与补充资料 {#references}
+</div>
 
-入门时可搭配 [CCRS《Fundamentals of Remote Sensing》](material-rs-ccrs-fundamentals.html)。继续阅读时，使用[赵英时等《遥感应用分析原理与方法》](material-rs-zhao-analysis.html)和[Campbell 等《Introduction to Remote Sensing》第六版](material-rs-campbell-introduction.html)查找更完整的解释。三本书保留原作者与版本说明，章节体系不要求与教师课件相同。
+<div class="rs-lang" data-rs-lang="en" lang="en">
 
-[课程笔记](material-rs-notes.html)、[英文课程总结](material-rs-english-summary.html)和[高分系列卫星调研](material-rs-gaofen.html)是辅助阅读材料。笔记、调研与教材的用途不同；遇到单位、角度或任务参数不一致，先核对定义、资料年代与数据产品说明。
+A sensor records radiation, whereas we want information about vegetation, temperature, terrain or change. These notes connect observations to interpretation through the sequence <strong>target–radiation interaction → observing platform → image formation</strong>. The first four chapters preserve the same definitions, assumptions and figure explanations in Chinese and English. The [15 original materials are also available for online reading and download](./remote-sensing-sources.html#rs-sources-materials), including Chapter 2–9 lecture PDFs, the compilation, three textbooks and supplements; their scope extends beyond the four completed chapters.
 
-## 与其他课程连接 {#connections}
+The prerequisites are basic physics, trigonometry and elementary calculus. When encountering a term, first ask whether it describes an object, a process, geometry or a physical quantity. Select Chinese, English or bilingual reading on each page. Source figures can be enlarged; scanning and orbit figures have step-by-step reading explanations.
 
-读到微波与 SAR 时，可转入已经整理的 [InSAR 前三章](course-insar.html)，从散射走到成像与解译。读到自动分类时，可转入[图像分析与机器学习](course-ml.html)，恢复回归、分类与网络的计算基础。地图定位与参考框架可参考[大地测量](course-geodesy.html)。这些链接帮助建立联系，不把原资料中尚未整理的章节标成已完成讲义。
+</div>
 
-[原资料、作者与页数索引](remote-sensing-sources.html) · [资料中心](resources.html#remote-sensing)
+## 按章节建立理解 / Read the four chapters {#rs-course-chapters}
+
+<div class="rs-course-links">
+<a class="rs-course-link" href="./remote-sensing-ch1.html"><span>01 · Introduction</span><strong>遥感概述</strong><span>信息链、分类、平台与传感器<br>Workflow, classifications, platforms and sensors</span></a>
+<a class="rs-course-link" href="./remote-sensing-ch2.html"><span>02 · Radiation</span><strong>电磁辐射基础</strong><span>辐射量、热辐射、大气与地物光谱<br>Radiometry, thermal radiation, atmosphere and spectra</span></a>
+<a class="rs-course-link" href="./remote-sensing-ch3.html"><span>03 · Platforms &amp; orbits</span><strong>平台及运行特点</strong><span>轨道、地面轨迹、重访与观测几何<br>Orbits, ground tracks, revisit and viewing geometry</span></a>
+<a class="rs-course-link" href="./remote-sensing-ch4.html"><span>04 · Sensors &amp; imaging</span><strong>传感器及成像原理</strong><span>摆扫、推扫、热红外、SAR与分辨率<br>Whiskbroom, pushbroom, thermal infrared, SAR and resolution</span></a>
+</div>
+
+<RsFigure id="workflow" />
+
+## 怎样读图与查概念 / Figures and terminology {#rs-course-reading}
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+读扫描图时，把平台前进方向与扫描方向分开；读轨道图时，把卫星绕地运动与地球自转分开；读光谱图时，先看横纵轴、单位和条件，再判断曲线差异。讲义原图与精选英文教材原图均注明来源、页码和适用条件；教材图保留原图号、英文标签与署名。原图的历史参数和旧译名按原语境解释。
+
+前四章全部36个主知识节均有[逐节教材对照与阅读入口](/remote-sensing-sources#rs-sources-crosswalk)，以老师推荐的 *Introduction to Remote Sensing* 第六版核对主线，CCRS教程和赵英时教材补充理解。阅读时先理解正文，再用对应教材小节与原图检查概念、量纲和条件。
+
+可用[双语术语与概念对照](./remote-sensing-glossary.html)比较相近概念，或用[来源、配图与勘误索引](./remote-sensing-sources.html)回查课件。第一章以现有概述整理稿补建；第二至第四章有完整中文课件范围，英文班Lecture编号另做映射。详情见来源页。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+In a scanning diagram, distinguish platform motion from the scan direction. In an orbit diagram, distinguish satellite motion from Earth rotation. In a spectral plot, read the axes, units and conditions before interpreting the curves. Original lecture figures and selected English textbook figures have sources, pages and assumptions. Textbook excerpts retain original figure numbers, English labels and credits. Historical specifications and older terminology are kept in their original context.
+
+All 36 main sections in the four existing chapters have [section-by-section textbook reading links](/remote-sensing-sources#rs-sources-crosswalk). The instructor-recommended sixth edition of *Introduction to Remote Sensing* checks the main concepts; the CCRS tutorial and Zhao textbook supplement them. Read the lesson first, then use the matching textbook section and original figure to check concepts, units and conditions.
+
+Use the [bilingual glossary](./remote-sensing-glossary.html) to compare related concepts and the [sources, figures and errata index](./remote-sensing-sources.html) to locate the original materials. Chapter 1 is reconstructed from the available introductory summary; Chapters 2–4 have full Chinese lecture coverage. English Lecture numbers are mapped separately on the source page.
+
+</div>

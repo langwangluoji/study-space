@@ -127,15 +127,35 @@
     },
     {
       "id": "remote-sensing",
-      "title": "遥感基础",
-      "category": "遥感与地球空间科学",
+      "title": "遥感原理与基础",
+      "category": "测绘与地球空间科学",
       "url": "course-remote-sensing.html",
-      "description": "在线阅读第2–9章教师课件、汇总和参考教材，结合原资料建立辐射、平台、传感器与图像处理的学习路线。",
-      "status": "原资料可在线阅读 · 整理讲义尚未接入",
+      "description": "沿电磁辐射、卫星轨道和传感器成像建立双语知识线，用讲义原图辨析扫描、分辨率与雷达几何。",
+      "status": "前四章已整理",
       "chapters": [
         {
-          "slug": "remote-sensing-sources",
-          "title": "原资料范围与来源"
+          "id": "remote-sensing-ch1",
+          "slug": "remote-sensing-ch1",
+          "title": "第一章 遥感概述",
+          "url": "remote-sensing-ch1.html"
+        },
+        {
+          "id": "remote-sensing-ch2",
+          "slug": "remote-sensing-ch2",
+          "title": "第二章 电磁辐射基础",
+          "url": "remote-sensing-ch2.html"
+        },
+        {
+          "id": "remote-sensing-ch3",
+          "slug": "remote-sensing-ch3",
+          "title": "第三章 平台与轨道",
+          "url": "remote-sensing-ch3.html"
+        },
+        {
+          "id": "remote-sensing-ch4",
+          "slug": "remote-sensing-ch4",
+          "title": "第四章 传感器与成像",
+          "url": "remote-sensing-ch4.html"
         }
       ]
     }

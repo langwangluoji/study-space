@@ -48,7 +48,7 @@ onUnmounted(()=>{stop?.();window.removeEventListener('hashchange',syncUrl);windo
         <h3>{{r.title}}</h3><p class="resource-author">{{r.author}}<template v-if="r.pages"> · {{r.pages}} 页</template><template v-if="r.bytes"> · {{size(r.bytes)}}</template></p><p>{{r.description}}</p><span class="resource-course">{{labels[r.course]}}</span>
         <div class="resource-actions">
           <a :href="withBase(r.preview)" :aria-label="'阅读：'+r.title">{{r.localOnly?'查看说明与出处':r.reader==='file'?'阅读资料说明':'在线阅读'}} <span aria-hidden="true">→</span></a>
-          <a v-if="r.file" :href="withBase(r.file)" :aria-label="'下载 '+r.format+'：'+r.title" download>下载 {{r.format}}</a>
+          <a v-if="r.file" :href="withBase(r.file)" :aria-label="'下载 '+r.format+'：'+r.title" :download="r.originalFilename||''">下载 {{r.format}}</a>
           <a v-else-if="r.archiveId" :href="withBase('/material-viewer/index.html')+'?id='+encodeURIComponent(r.archiveId)+'&download=1'" :aria-label="'下载 '+r.format+'：'+r.title" target="_blank" rel="noopener">下载 {{r.format}}</a>
           <a v-if="r.alternate" :href="withBase(r.alternate)" :aria-label="'下载 PDF：'+r.title" download>下载 PDF</a>
           <a v-if="r.release" :href="r.release" target="_blank" rel="noopener noreferrer">版本发布页 ↗</a>

@@ -1,0 +1,974 @@
+[
+  {
+    "anchor": "rs1-information-chain",
+    "chapter": 1,
+    "zh": "遥感定义与信息链",
+    "en": "Definition and information chain",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "43–44",
+        "printedPages": "4–5",
+        "section": "1.2 Definitions; Table 1.1"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "5–6",
+        "printedPages": "5–6",
+        "section": "1.1 What is Remote Sensing?"
+      }
+    ],
+    "changesZh": "比较广义遥感、教材聚焦范围与非成像测量，避免把教材定义当成普适边界。",
+    "changesEn": "Compare broad remote sensing, the textbook scope and non-imaging measurements; do not treat one scoped definition as universal."
+  },
+  {
+    "anchor": "rs1-platform-sensor",
+    "chapter": 1,
+    "zh": "平台、传感器与探测器",
+    "en": "Platform, sensor and detector",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "93–94",
+        "printedPages": "54–55",
+        "section": "3.1 Introduction; 3.2 Platforms"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "34–35",
+        "printedPages": "34–35",
+        "section": "2.1 On the Ground, In the Air, In Space"
+      }
+    ],
+    "changesZh": "核对平台与仪器层级，明确平台选择也约束载荷、任务和成本。",
+    "changesEn": "Check system levels and how platform choice constrains payloads, mission design and costs."
+  },
+  {
+    "anchor": "rs1-energy-paths",
+    "chapter": 1,
+    "zh": "分类维度与三种能量路径",
+    "en": "Classification dimensions and three energy paths",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "88–89",
+        "printedPages": "49–50",
+        "section": "2.7 Summary; Figures 2.20–2.22"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "19",
+        "printedPages": "19",
+        "section": "1.6 Passive vs. Active Sensing"
+      }
+    ],
+    "changesZh": "对齐三种能量路径，保留主动不一概全天候和热发射不必即时来自太阳的条件。",
+    "changesEn": "Align the three energy paths while retaining weather limits and the distinction between thermal emission and immediate solar illumination."
+  },
+  {
+    "anchor": "rs1-bands-applications",
+    "chapter": 1,
+    "zh": "波段与任务",
+    "en": "Wavelength regions and applications",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "67–70",
+        "printedPages": "28–31",
+        "section": "2.3 Major Divisions of the Electromagnetic Spectrum"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "9–11, 17–18",
+        "printedPages": "9–11, 17–18",
+        "section": "1.3 The Electromagnetic Spectrum; 1.5 Radiation–Target Interactions"
+      }
+    ],
+    "changesZh": "按任务核对波段能力；教材命名边界与微波单位不机械照录。",
+    "changesEn": "Check task-specific spectral capabilities; do not copy naming boundaries or erroneous microwave units mechanically."
+  },
+  {
+    "anchor": "rs1-observation-limits",
+    "chapter": 1,
+    "zh": "观测限制与可信解释",
+    "en": "Observation limits and defensible interpretation",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "76–77, 86–87",
+        "printedPages": "37–38, 47–48",
+        "section": "2.5 Effects of Scattering; 2.6 Spectral Properties of Objects"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "39–44",
+        "printedPages": "39–44",
+        "section": "2.3–2.6 Spatial, Spectral, Radiometric and Temporal Resolution"
+      }
+    ],
+    "changesZh": "比较观测机会与有效观测，增加测量—反演—决策的证据层级表。",
+    "changesEn": "Compare acquisition opportunities with usable observations; add a measurement–retrieval–decision evidence table."
+  },
+  {
+    "anchor": "rs2-wave-properties",
+    "chapter": 2,
+    "zh": "电磁波与波动属性",
+    "en": "Electromagnetic waves and wave behaviour",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "64–66, 70–71, 85–86",
+        "printedPages": "25–27, 31–32, 46–47",
+        "section": "2.2 The Electromagnetic Spectrum; 2.4 Radiation Laws; 2.6 Polarization"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "7–8",
+        "printedPages": "7–8",
+        "section": "1.2 Electromagnetic Radiation"
+      }
+    ],
+    "changesZh": "补振幅与相位区别；保留场幅度不等于辐照度、光子能量不等于通量的严格表述。",
+    "changesEn": "Add amplitude/phase distinctions; retain rigorous separation of field amplitude, irradiance, photon energy and flux."
+  },
+  {
+    "anchor": "rs2-spectrum",
+    "chapter": 2,
+    "zh": "波谱、单位与仪器波段",
+    "en": "Spectrum, units and instrument bands",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "66–70",
+        "printedPages": "27–31",
+        "section": "2.2 The Electromagnetic Spectrum; 2.3 Major Divisions; Tables 2.1–2.3"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "9–11, 41–42",
+        "printedPages": "9–11, 41–42",
+        "section": "1.3 The Electromagnetic Spectrum; 2.4 Spectral Resolution"
+      }
+    ],
+    "changesZh": "补波谱区域—大气窗口—仪器波段表，注明第六版正文微波单位混写。",
+    "changesEn": "Add a spectral-region/window/instrument-band table and flag mixed microwave units in the sixth-edition prose."
+  },
+  {
+    "anchor": "rs2-radiometry",
+    "chapter": 2,
+    "zh": "辐射量、立体角与量纲",
+    "en": "Radiometric quantities, solid angle and units",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "71",
+        "printedPages": "32",
+        "section": "2.4 Radiation Laws: radiant flux, irradiance and radiant exitance"
+      }
+    ],
+    "changesZh": "核对通量、辐照度、出射度，明确光子到达率需乘每光子能量才能得到瓦；其余角度与谱单位是本站推导。",
+    "changesEn": "Check flux, irradiance and exitance; photons per second require photon energy to become watts. Angular and spectral-unit derivations extend the textbook introduction."
+  },
+  {
+    "anchor": "rs2-blackbody-laws",
+    "chapter": 2,
+    "zh": "黑体与辐射定律",
+    "en": "Blackbodies and radiation laws",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "71–72",
+        "printedPages": "32–33",
+        "section": "2.4 Radiation Laws; Equations 2.2–2.5; Figure 2.5"
+      }
+    ],
+    "changesZh": "保留SI单位、普朗克谱量及积分条件；教材只介绍关系，本站继续给出推导。",
+    "changesEn": "Retain SI units, Planck spectral quantities and integration conditions; the site develops the derivations beyond the textbook overview."
+  },
+  {
+    "anchor": "rs2-emissivity-brightness-temperature",
+    "chapter": 2,
+    "zh": "发射率与亮温",
+    "en": "Emissivity and brightness temperature",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "299–303",
+        "printedPages": "260–264",
+        "section": "10.6 Thermal Properties of Objects; 10.7 Land Surface Temperature; Figure 10.6"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "50–51",
+        "printedPages": "50–51",
+        "section": "2.9 Thermal Imaging"
+      }
+    ],
+    "changesZh": "新增灰体与选择性辐射体区别，保持亮温与真实温度的模型边界。",
+    "changesEn": "Distinguish graybodies from selective radiators and preserve brightness-versus-physical-temperature model limits."
+  },
+  {
+    "anchor": "rs2-solar-terrestrial",
+    "chapter": 2,
+    "zh": "太阳与地球辐射",
+    "en": "Solar and terrestrial radiation",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "81–82, 88–89",
+        "printedPages": "42–43, 49–50",
+        "section": "2.5 Overview of Energy Interactions; 2.7 Summary; Figures 2.13, 2.20–2.22"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "14–15, 19",
+        "printedPages": "14–15, 19",
+        "section": "1.4 Interactions with the Atmosphere; 1.6 Passive vs. Active Sensing"
+      }
+    ],
+    "changesZh": "对照太阳—地表能量路径，区分全球平均能量收支与局部瞬时辐照度。",
+    "changesEn": "Compare solar/surface paths and distinguish global-average energy budgets from local instantaneous irradiance."
+  },
+  {
+    "anchor": "rs2-atmosphere",
+    "chapter": 2,
+    "zh": "大气吸收、散射与窗口",
+    "en": "Atmospheric absorption, scattering and windows",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "73–80",
+        "printedPages": "34–41",
+        "section": "2.5 Interactions with the Atmosphere; Figures 2.6–2.12; Table 2.4"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "12–15",
+        "printedPages": "12–15",
+        "section": "1.4 Interactions with the Atmosphere"
+      }
+    ],
+    "changesZh": "补直接辐射、漫射照明、路径辐射和邻近效应表；核对水汽分子与水滴区别、散射弱不等于零。",
+    "changesEn": "Add direct/diffuse illumination, path radiance and adjacency effects; separate water-vapour molecules from droplets and weak scattering from no scattering."
+  },
+  {
+    "anchor": "rs2-reflectance-brdf",
+    "chapter": 2,
+    "zh": "反射几何、朗伯表面与BRDF",
+    "en": "Reflection geometry, Lambertian surfaces and BRDF",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "82–84, 86",
+        "printedPages": "43–45, 47",
+        "section": "2.6 Interactions with Surfaces: Reflection, BRDF, Reflectance; Figures 2.14–2.16"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "16–17",
+        "printedPages": "16–17",
+        "section": "1.5 Radiation–Target Interactions"
+      }
+    ],
+    "changesZh": "加入同一波长和角度约定下的吸收—反射—透射守恒；反射因子可大于1，保留辐亮度/强度与单位区分。 能量配平须统计全部反射/透射方向；BRF为无量纲量，不能代替半球积分反射率。",
+    "changesEn": "Add matched-convention absorption/reflection/transmission conservation; reflectance factors may exceed 1. Retain radiance/intensity and unit distinctions. Energy partition includes all reflection/transmission directions. BRF is dimensionless and cannot replace hemispherically integrated reflectance."
+  },
+  {
+    "anchor": "rs2-spectral-signatures",
+    "chapter": 2,
+    "zh": "地物光谱与概念综合",
+    "en": "Surface spectra and integrated interpretation",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "85–87",
+        "printedPages": "46–48",
+        "section": "2.6 Fluorescence; Spectral Properties of Objects; Figure 2.19"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "17–18",
+        "printedPages": "17–18",
+        "section": "1.5 Radiation–Target Interactions: leaves, water, spectral response"
+      }
+    ],
+    "changesZh": "增加反射、荧光与热发射区别表，避免将荧光混同红边或把波谱视为永久指纹。",
+    "changesEn": "Distinguish reflection, fluorescence and thermal emission; fluorescence is not the red edge, and spectra are not immutable fingerprints."
+  },
+  {
+    "anchor": "rs3-platforms",
+    "chapter": 3,
+    "zh": "平台与载荷、平台选择",
+    "en": "Platforms, payloads and platform choice",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "93–101",
+        "printedPages": "54–62",
+        "section": "Chapter 3 §§3.1–3.5: Platforms; The Basic Satellite Platform"
+      },
+      {
+        "book": "campbell",
+        "filePages": "105–109",
+        "printedPages": "66–70",
+        "section": "Chapter 3 §3.6: Unmanned Aerial Systems"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "34–35",
+        "printedPages": "34–35",
+        "section": "§2.1 On the Ground, In the Air, In Space"
+      }
+    ],
+    "changesZh": "补入地基/航空/航天观测与约束比较，区分UAV飞行器与UAS系统，保留高度不是质量保证的条件。",
+    "changesEn": "Adds platform trade-offs and distinguishes UAV from UAS; altitude alone does not guarantee quality."
+  },
+  {
+    "anchor": "rs3-elements",
+    "chapter": 3,
+    "zh": "六个经典轨道根数",
+    "en": "Six classical orbital elements",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "101–102",
+        "printedPages": "62–63",
+        "section": "Chapter 3 §3.5: Satellite Orbits (introduces COEs, focuses on inclination/altitude)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "232–233",
+        "printedPages": "193–194",
+        "section": "Chapter 7 §7.8: Land Observation Satellite Orbits (ellipse, nodes, perigee/apogee)"
+      }
+    ],
+    "changesZh": "核对教材只引入六根数并重点讲倾角与高度；完整六根数仍按讲义。半长轴是地心长度，不能沿用教材把高度等同半长轴的简写。",
+    "changesEn": "Checks the textbook scope; full COE definitions retain the lecture basis. Semi-major axis is a geocentric length, distinct from altitude."
+  },
+  {
+    "anchor": "rs3-orbits",
+    "chapter": 3,
+    "zh": "同步轨道、太阳时与升降轨",
+    "en": "Synchronous orbits, solar time and ascending/descending passes",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "101–104",
+        "printedPages": "62–65",
+        "section": "Chapter 3 §3.5: Satellite Orbits"
+      },
+      {
+        "book": "campbell",
+        "filePages": "232–234",
+        "printedPages": "193–195",
+        "section": "Chapter 7 §7.8: Land Observation Satellite Orbits"
+      },
+      {
+        "book": "campbell",
+        "filePages": "226",
+        "printedPages": "187",
+        "section": "Chapter 7 §7.5: MODIS, Terra/Aqua daylight pass examples"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "36–38",
+        "printedPages": "36–38",
+        "section": "§2.2 Satellite Characteristics: Orbits and Swaths"
+      }
+    ],
+    "changesZh": "补入Terra上午降轨/Aqua下午升轨示例；保留地球同步与静止区别、太阳同步不保证每日覆盖或全年太阳角相同。教材第193/195印刷页进动方向表述不一致，按东向交点进动理解。 第六版PDF232/234进动方向措辞需按惯性系升交点赤经变化审读，区别卫星沿轨逆行与地固轨迹移动。",
+    "changesEn": "Adds Terra/Aqua daylight-pass counterexamples and retains geosynchronous/geostationary and local-time/revisit distinctions. The textbook’s precession-direction inconsistency is qualified. Qualify the nodal-precession wording on sixth-edition PDF232/234 in an inertial frame; distinguish orbital retrograde motion and Earth-fixed track motion."
+  },
+  {
+    "anchor": "rs3-kepler",
+    "chapter": 3,
+    "zh": "开普勒模型、半长轴与周期",
+    "en": "Kepler model, semi-major axis and period",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "101–103",
+        "printedPages": "62–64",
+        "section": "Chapter 3 §3.5: Satellite Orbits (altitude, orbital speed background)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "232–233",
+        "printedPages": "193–194",
+        "section": "Chapter 7 §7.8: idealized normal orbits and perturbations"
+      }
+    ],
+    "changesZh": "教材作为椭圆与摄动背景阅读；三定律、周期公式和速度公式继续依据讲义/英文笔记，避免宣称教材本节完整推导。",
+    "changesEn": "Uses the textbook for elliptical-orbit and perturbation background; the laws and formulas retain their lecture/English-notes derivation."
+  },
+  {
+    "anchor": "rs3-timing",
+    "chapter": 3,
+    "zh": "周期、重访、重复轨迹与覆盖",
+    "en": "Period, revisit, repeat track and coverage",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "104–105",
+        "printedPages": "65–66",
+        "section": "Chapter 3 §3.5: Image Footprint; Satellite Constellations"
+      },
+      {
+        "book": "campbell",
+        "filePages": "232–234",
+        "printedPages": "193–195",
+        "section": "Chapter 7 §7.8: Land Observation Satellite Orbits"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "36–38",
+        "printedPages": "36–38",
+        "section": "§2.2 Satellite Characteristics: Orbits and Swaths"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "44",
+        "printedPages": "44",
+        "section": "§2.6 Temporal Resolution"
+      }
+    ],
+    "changesZh": "逐项核查轨道周期/重复轨迹/重访/可用观测表；CCRS §2.6与§2.2对重访的简写不一致，采用本站四项分开定义。",
+    "changesEn": "Checks the four timing terms and qualifies CCRS’s inconsistent shorthand across §§2.2 and 2.6."
+  },
+  {
+    "anchor": "rs3-attitude",
+    "chapter": 3,
+    "zh": "位置、姿态、观测角与立体",
+    "en": "Position, attitude, viewing angles and stereo",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "101",
+        "printedPages": "62",
+        "section": "Chapter 3 §3.5: The Basic Satellite Platform"
+      },
+      {
+        "book": "campbell",
+        "filePages": "130–132",
+        "printedPages": "91–93",
+        "section": "Chapter 4 §4.4: Digital Camera Designs; Linear Arrays"
+      },
+      {
+        "book": "campbell",
+        "filePages": "249–250",
+        "printedPages": "210–211",
+        "section": "Chapter 8 §8.3: Geometry of the Radar Image"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "47",
+        "printedPages": "47",
+        "section": "§2.7 Cameras and Aerial Photography (stereo)"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "52–53",
+        "printedPages": "52–53",
+        "section": "§2.10 Geometric Distortion in Imagery"
+      }
+    ],
+    "changesZh": "核查定轨/定姿与离天底/地面入射角的不同参考点；教材线阵多视角例证对应沿轨立体，未将多角度自动等同立体。",
+    "changesEn": "Checks position/attitude and angle reference points; uses multi-view linear arrays as stereo examples without equating all multi-angle observations with stereo."
+  },
+  {
+    "anchor": "rs3-missions",
+    "chapter": 3,
+    "zh": "历史任务与传感器组合",
+    "en": "Historical missions and sensor combinations",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "216–224",
+        "printedPages": "177–185",
+        "section": "Chapter 7 §§7.3–7.4: Landsat Origins and Evolution; SPOT, Sentinel-2, CBERS, ASTER"
+      },
+      {
+        "book": "campbell",
+        "filePages": "225–227",
+        "printedPages": "186–188",
+        "section": "Chapter 7 §7.5: Broad-Scale/Coarse Resolution Satellites; MODIS, VIIRS"
+      }
+    ],
+    "changesZh": "对照载荷组合与长期记录；保留Landsat8 OLI/TIRS、MODIS离散多光谱归类；书中出版时状态与型号表不作为2026现状。",
+    "changesEn": "Checks payload combinations and continuity; retains OLI/TIRS and MODIS multispectral classification. Publication-era status tables are not current 2026 specifications."
+  },
+  {
+    "anchor": "rs3-design",
+    "chapter": 3,
+    "zh": "任务到平台与观测条件",
+    "en": "From a task to platforms and observing conditions",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "94",
+        "printedPages": "55",
+        "section": "Chapter 3 §3.2: Platforms (matching sensor and platform)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "112–113",
+        "printedPages": "73–74",
+        "section": "Chapter 3 §3.9 Summary; Review Questions"
+      },
+      {
+        "book": "campbell",
+        "filePages": "163–164",
+        "printedPages": "124–125",
+        "section": "Chapter 5 §5.4: Digital Data (engineering trade-offs)"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "38–44",
+        "printedPages": "38–44",
+        "section": "§§2.2–2.6: coverage and four resolutions"
+      }
+    ],
+    "changesZh": "核对任务优先而非像元最小优先，分清几何机会与可用数据、跨传感器时序与定标。",
+    "changesEn": "Checks task-first choices, available opportunities versus usable data, and cross-sensor temporal/calibration constraints."
+  },
+  {
+    "anchor": "rs3-sources",
+    "chapter": 3,
+    "zh": "第三章教材阅读路线",
+    "en": "Chapter 3 textbook reading route",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "93–113",
+        "printedPages": "54–74",
+        "section": "Chapter 3: Remote Sensing Platforms"
+      },
+      {
+        "book": "campbell",
+        "filePages": "232–234",
+        "printedPages": "193–195",
+        "section": "Chapter 7 §7.8: Land Observation Satellite Orbits"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "34–38",
+        "printedPages": "34–38",
+        "section": "§§2.1–2.2: platforms, orbits and swaths"
+      }
+    ],
+    "changesZh": "逐节增设来源页对应锚点，分开PDF文件页与书内印刷页；讲义与教材原图均可按图注追溯。",
+    "changesEn": "Adds section-specific source links and separates PDF file pages from printed pages; original lecture/textbook figures are traceable through captions."
+  },
+  {
+    "anchor": "rs4-components",
+    "chapter": 4,
+    "zh": "传感器、探测器、采样与量化",
+    "en": "Sensors, detectors, sampling and quantisation",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "155–160",
+        "printedPages": "116–121",
+        "section": "Chapter 5 §5.2: Electronic Imagery"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "20–21",
+        "printedPages": "20–21",
+        "section": "§1.7 Characteristics of Images"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "48–49",
+        "printedPages": "48–49",
+        "section": "§2.8 Multispectral Scanning"
+      }
+    ],
+    "changesZh": "补入位置/时间采样与幅度量化的区别，核对探测、ADC与定标环节。",
+    "changesEn": "Distinguishes spatial/temporal sampling from amplitude quantisation and checks detection, ADC and calibration."
+  },
+  {
+    "anchor": "rs4-photography",
+    "chapter": 4,
+    "zh": "画幅摄影、投影与数字相机",
+    "en": "Frame photography, projection and digital cameras",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "118–132",
+        "printedPages": "79–93",
+        "section": "Chapter 4 §§4.2–4.4: aerial camera components, geometry and digital camera designs"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "20–21",
+        "printedPages": "20–21",
+        "section": "§1.7 Characteristics of Images"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "45–47",
+        "printedPages": "45–47",
+        "section": "§2.7 Cameras and Aerial Photography"
+      }
+    ],
+    "changesZh": "补充滚动快门/多镜头合成例外，避免数字摄影必定单中心同时曝光；保留image/photograph历史与现代用法边界。",
+    "changesEn": "Qualifies the single-centre/simultaneous-exposure ideal using rolling shutters and multi-head composites; retains historical versus modern image/photograph usage."
+  },
+  {
+    "anchor": "rs4-scanning",
+    "chapter": 4,
+    "zh": "摆扫、推扫、驻留与积分",
+    "en": "Whiskbroom, pushbroom, dwell and integration",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "155–157",
+        "printedPages": "116–118",
+        "section": "Chapter 5 §5.2: Electronic Imagery; Figures 5.1–5.3"
+      },
+      {
+        "book": "campbell",
+        "filePages": "158–160",
+        "printedPages": "119–121",
+        "section": "Chapter 5 §5.2: dynamic range and SNR"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "48–49",
+        "printedPages": "48–49",
+        "section": "§2.8 Multispectral Scanning"
+      }
+    ],
+    "changesZh": "补充驻留时段与电子积分时长的严格区别；保留横轨线阵与沿轨运动、CCD不是扫描方式、探元交叉定标条件。",
+    "changesEn": "Separates available dwell from electronic integration and retains scan directions, CCD/scan-method distinction and detector cross-calibration."
+  },
+  {
+    "anchor": "rs4-ifov",
+    "chapter": 4,
+    "zh": "IFOV、足迹、GSD与GRD",
+    "en": "IFOV, footprint, GSD and GRD",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "156–157",
+        "printedPages": "117–118",
+        "section": "Chapter 5 §5.2: IFOV and ground resolved distance"
+      },
+      {
+        "book": "campbell",
+        "filePages": "294–296",
+        "printedPages": "255–257",
+        "section": "Chapter 10 §10.3: Instantaneous Field of View; Figure 10.4"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "39–40",
+        "printedPages": "39–40",
+        "section": "§2.3 Spatial Resolution, Pixel Size, and Scale"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "52–53",
+        "printedPages": "52–53",
+        "section": "§2.10 Geometric Distortion in Imagery"
+      }
+    ],
+    "changesZh": "补入离轴角IFOV不变但足迹放大拉长与扫描地面速度改变；检测/分辨、像元格网/原始足迹继续分开。 GRD需指定目标、对比度、噪声和判据；另与SAR Ground Range Detected产品缩写消歧。",
+    "changesEn": "Adds off-nadir footprint enlargement and nonuniform ground scan speed; retains detection/resolution and grid/footprint distinctions. GRD requires a target, contrast, noise and criterion; distinguish the same abbreviation for a SAR Ground Range Detected product."
+  },
+  {
+    "anchor": "rs4-resolutions",
+    "chapter": 4,
+    "zh": "四类分辨率与光谱指标",
+    "en": "Four resolutions and spectral metrics",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "158–164",
+        "printedPages": "119–125",
+        "section": "Chapter 5 §§5.2–5.4: dynamic range, SNR, spectral sensitivity/FWHM and digital data"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "39–44",
+        "printedPages": "39–44",
+        "section": "§§2.3–2.6: spatial, spectral, radiometric and temporal resolution"
+      }
+    ],
+    "changesZh": "补入中心波长、FWHM与采样间隔对照，教材把sampling interval/bandwidth并称时本页明确区分；不把位深等同有效灵敏度。",
+    "changesEn": "Adds centre-wavelength/FWHM/sampling-interval comparison and qualifies the textbook’s interval/bandwidth shorthand; bit depth remains distinct from effective sensitivity."
+  },
+  {
+    "anchor": "rs4-colour",
+    "chapter": 4,
+    "zh": "光谱波段与RGB显示",
+    "en": "Spectral bands and RGB display",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "168–170",
+        "printedPages": "129–131",
+        "section": "Chapter 5 §5.6: Band Combinations: Multispectral Imagery"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "21",
+        "printedPages": "21",
+        "section": "§1.7 Characteristics of Images (band-to-RGB display)"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "41–42",
+        "printedPages": "41–42",
+        "section": "§2.4 Spectral Resolution"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "45–46",
+        "printedPages": "45–46",
+        "section": "§2.7 Cameras and Aerial Photography (false colour)"
+      }
+    ],
+    "changesZh": "核对真/假彩色属于显示映射，波段编号必须对应仪器；全色锐化不等于全波段新观测。",
+    "changesEn": "Checks display mapping and instrument-specific band numbers; pan-sharpening is not a new observation in every band."
+  },
+  {
+    "anchor": "rs4-thermal",
+    "chapter": 4,
+    "zh": "DN、辐亮度、亮温与地表温度",
+    "en": "DN, radiance, brightness and surface temperature",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "293–295",
+        "printedPages": "254–256",
+        "section": "Chapter 10 §10.3: Thermal Radiometry and reference calibration"
+      },
+      {
+        "book": "campbell",
+        "filePages": "298–304",
+        "printedPages": "259–265",
+        "section": "Chapter 10 §§10.6–10.7: emissivity, thermal inertia and land surface temperature"
+      },
+      {
+        "book": "campbell",
+        "filePages": "163–164",
+        "printedPages": "124–125",
+        "section": "Chapter 5 §5.4: Digital Data; Radiances"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "50–51",
+        "printedPages": "50–51",
+        "section": "§2.9 Thermal Imaging"
+      }
+    ],
+    "changesZh": "新增定标链层次表与混合温度非线性，日夜热惯量解释；反演依据波段辐亮度而非必须测到光谱峰值，亮温不直接等于地温。",
+    "changesEn": "Adds calibration-level comparison and nonlinear mixed-temperature/diurnal effects; retrieval uses band radiance rather than requiring peak-wavelength measurement."
+  },
+  {
+    "anchor": "rs4-microwave",
+    "chapter": 4,
+    "zh": "微波、极化与散射机制",
+    "en": "Microwaves, polarisation and scattering mechanisms",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "242–244",
+        "printedPages": "203–205",
+        "section": "Chapter 8 §§8.1–8.2: active microwave and system components"
+      },
+      {
+        "book": "campbell",
+        "filePages": "256–264",
+        "printedPages": "217–225",
+        "section": "Chapter 8 §§8.5–8.8: wavelength, penetration, polarization and backscatter interpretation"
+      },
+      {
+        "book": "campbell",
+        "filePages": "296–297",
+        "printedPages": "257–258",
+        "section": "Chapter 10 §10.4: Microwave Radiometers"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "92–98",
+        "printedPages": "92–98",
+        "section": "§§3.1–3.2: microwave families, radar and polarisation"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "106–109",
+        "printedPages": "106–109",
+        "section": "§3.5 Target Interaction and Image Appearance"
+      }
+    ],
+    "changesZh": "修正中文双程反射为双反射，与雷达往返传播分开；波长、极化、粗糙度、介电与几何联合解释，未照录C波段表排印错误。",
+    "changesEn": "Corrects double-bounce wording and separates it from round-trip propagation; jointly interprets wavelength, polarisation, roughness, dielectric properties and geometry."
+  },
+  {
+    "anchor": "rs4-radar",
+    "chapter": 4,
+    "zh": "雷达角度、RAR/SAR与相干斑",
+    "en": "Radar angles, RAR/SAR and speckle",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "245–250",
+        "printedPages": "206–211",
+        "section": "Chapter 8 §§8.2–8.3: RAR/SAR, Doppler and radar geometry"
+      },
+      {
+        "book": "campbell",
+        "filePages": "254–256",
+        "printedPages": "215–217",
+        "section": "Chapter 8 §8.4: Look Direction and Look Angle (angle labels require convention)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "260–261",
+        "printedPages": "221–222",
+        "section": "Chapter 8 §8.8: Speckle"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "99–101",
+        "printedPages": "99–101",
+        "section": "§3.3 Viewing Geometry and Spatial Resolution"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "110–113",
+        "printedPages": "110–113",
+        "section": "§3.6 Radar Image Properties"
+      }
+    ],
+    "changesZh": "新增离天底/俯角/入射/局部入射四角度表与近远距定义；指出教材look/depression混用，保持公式角度条件。多视与滤波不替代定标。 第六版PDF255 look/depression混用需核对：平台处look/俯角互余；look与目标incidence相等需平行竖直近似。",
+    "changesEn": "Adds four-angle and near/far-range definitions, qualifying look/depression shorthand and formula assumptions. Despeckling does not replace calibration. Qualify look/depression wording on sixth-edition PDF255: platform angles are complementary, while look/incidence equality needs parallel reference verticals."
+  },
+  {
+    "anchor": "rs4-terrain",
+    "chapter": 4,
+    "zh": "透视收缩、叠掩与阴影",
+    "en": "Foreshortening, layover and shadow",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "249–255",
+        "printedPages": "210–216",
+        "section": "Chapter 8 §§8.3–8.4: range geometry, layover, foreshortening and radar shadow"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "102–105",
+        "printedPages": "102–105",
+        "section": "§3.4 Radar Image Distortions"
+      }
+    ],
+    "changesZh": "核对脚/顶斜距顺序与缺观测信息；阴影不必由叠掩或收缩导致，几何校正不能补回未观测区域。",
+    "changesEn": "Checks slant-range ordering and missing observations; shadow is not necessarily caused by layover/foreshortening and correction cannot restore unmeasured regions."
+  },
+  {
+    "anchor": "rs4-insar",
+    "chapter": 4,
+    "zh": "相位、InSAR与雷达立体测量",
+    "en": "Phase, InSAR and radargrammetry",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "264–266",
+        "printedPages": "225–227",
+        "section": "Chapter 8 §8.9: Interferometric SAR"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "114–116",
+        "printedPages": "114–116",
+        "section": "§3.7 Advanced Radar Applications: stereo radar, interferometry and polarimetry"
+      }
+    ],
+    "changesZh": "补入雷达立体视差与InSAR相位差、空间与时间基线区别；保留相干性、符号、解缠与LOS边界，修正教材干涉图描述为两复观测相位差。",
+    "changesEn": "Distinguishes radargrammetric parallax from interferometric phase and spatial from temporal baseline; retains coherence, signs, unwrapping and LOS limits."
+  },
+  {
+    "anchor": "rs4-selection",
+    "chapter": 4,
+    "zh": "任务与仪器权衡",
+    "en": "Task requirements and instrument trade-offs",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "163–164",
+        "printedPages": "124–125",
+        "section": "Chapter 5 §5.4: Digital Data (coverage/resolution/data-rate trade-offs)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "267–268",
+        "printedPages": "228–229",
+        "section": "Chapter 8 §8.10: Summary and Review Questions (optical–radar complementarity)"
+      },
+      {
+        "book": "campbell",
+        "filePages": "293",
+        "printedPages": "254",
+        "section": "Chapter 10 §10.2: thermal sensitivity versus spatial detail"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "39–44",
+        "printedPages": "39–44",
+        "section": "§§2.3–2.6: four resolutions"
+      }
+    ],
+    "changesZh": "核对目标物理量、空间/光谱/时间/角度、有效数据与验证的任务链；光学和雷达互补，不以一项像元指标排名。",
+    "changesEn": "Checks the task chain from target physics to scales, geometry, usable observations and validation; optical and radar complement one another."
+  },
+  {
+    "anchor": "rs4-sources",
+    "chapter": 4,
+    "zh": "第四章教材阅读路线",
+    "en": "Chapter 4 textbook reading route",
+    "readings": [
+      {
+        "book": "campbell",
+        "filePages": "118–132",
+        "printedPages": "79–93",
+        "section": "Chapter 4 §§4.2–4.4: camera components and geometry"
+      },
+      {
+        "book": "campbell",
+        "filePages": "155–170",
+        "printedPages": "116–131",
+        "section": "Chapter 5 §§5.2–5.6: electronic imagery, spectral/digital data and display"
+      },
+      {
+        "book": "campbell",
+        "filePages": "242–268",
+        "printedPages": "203–229",
+        "section": "Chapter 8 §§8.1–8.10: Active Microwave"
+      },
+      {
+        "book": "campbell",
+        "filePages": "289–305",
+        "printedPages": "250–266",
+        "section": "Chapter 10 §§10.1–10.8: Thermal Imagery"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "39–53",
+        "printedPages": "39–53",
+        "section": "§§2.3–2.10: resolution, photography, scanning, thermal and distortion"
+      },
+      {
+        "book": "ccrs",
+        "filePages": "92–116",
+        "printedPages": "92–116",
+        "section": "§§3.1–3.7: Microwave Remote Sensing"
+      }
+    ],
+    "changesZh": "为所有主节建立双语阅读入口、PDF与印刷页映射；更新插图来源政策为讲义和教材原图均明确标注。",
+    "changesEn": "Creates bilingual reading entry points and PDF/printed-page mapping for every main section; original lecture and textbook figures both carry explicit provenance."
+  }
+]
