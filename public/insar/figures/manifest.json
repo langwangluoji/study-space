@@ -1,0 +1,198 @@
+[
+  {
+    "file": "l1-p18.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 18,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "52ef923b66569617247d819325263b260f58f98a2da0a434a4fc52c9489b1a28"
+  },
+  {
+    "file": "l1-p22.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 22,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "138e900b3a53400efc9e4ac55f120918dd0806951cd424787845f12b0daaadd2"
+  },
+  {
+    "file": "l1-p63.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 63,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "d2603e863ed93425e71bb161fb4e270ca173f2ec5654bca9ff938eb9e87d2504"
+  },
+  {
+    "file": "l1-p77.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 77,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "11a115874e4aee3259a12b973f7c1b7677f67f8da9f8b0e348b3d9af8ec2a259"
+  },
+  {
+    "file": "l2-p19.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 19,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "989fcb5440261ca6479b8401ee7dcc65548c9483c757dd80ff261c729e7ef14e"
+  },
+  {
+    "file": "l2-p53.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 53,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "d7413e6bb81f16c427f42a3e0a6932c75ac637cbd0651abbbbb38da00d042b12"
+  },
+  {
+    "file": "l3-p28.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 28,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "5d6ae8b855a98d9f6355121d004403a50bb302ddd5844abd7394253cb2bfb244"
+  },
+  {
+    "file": "l3-p35.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 35,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "36b97b7ee10248d590b3458e057946774af258cd54ef94421d8538da76a4fd4e"
+  },
+  {
+    "file": "l3-p49.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 49,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "02ea0e1ac287a65b0990bd5da09dec3c0fbf4148b042e1383f69408103af9a9b"
+  },
+  {
+    "file": "book-p34.png",
+    "source_id": "B1",
+    "source": "时间序列InSAR技术与应用_(廖明生，王腾)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+    "file_page": 34,
+    "printed_page": 23,
+    "operation": "full-page render; no content edited",
+    "width": 816,
+    "height": 1184,
+    "sha256": "f1e798ba12602cebed970a358053948cbfa8bb55e142009a898dbada401c0844"
+  },
+  {
+    "file": "book-p39.png",
+    "source_id": "B1",
+    "source": "时间序列InSAR技术与应用_(廖明生，王腾)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+    "file_page": 39,
+    "printed_page": 28,
+    "operation": "full-page render; no content edited",
+    "width": 816,
+    "height": 1184,
+    "sha256": "2cfdf6f6e265069f4e1ae57b93c4517fc294dfce1fd3b7f24d020d9c36fea4a5"
+  },
+  {
+    "file": "ch1-phase.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "9979d247d7ed84ed7e193b5adf4214c136951de93058c7878a1316d975e588e1"
+  },
+  {
+    "file": "ch1-polarization.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "a21bbb8b236dadb991160bfae3e3973291bec421c6d3182ebc78f2c03478dc79"
+  },
+  {
+    "file": "ch1-scattering.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "cf7eba21c17d0eb4ce54dc87791f14c7f4763a296b17b61e6f6e73d1aa95a116"
+  },
+  {
+    "file": "ch2-aperture.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "268ba6a6a8d3f510041be275b115bd2bcf425fc68831d61ca5f7ca2158d4f149"
+  },
+  {
+    "file": "ch2-chirp.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "6344ebd1e381e020110be5badb7960813f26ae6a05947541fa073fa064119a0c"
+  },
+  {
+    "file": "ch2-geometry.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "8c63494b86f860aeb016e812bf861d36f1759e6e6538557e05386dea6c571e04"
+  },
+  {
+    "file": "ch2-products.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "c1b552f18f8ecd7f86c80df1f6806efadde67c3f5ad01a16b025d6dce5a85a72"
+  },
+  {
+    "file": "ch3-radiometry.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "5c4fe10631758527dcca2d5c1a9571eb4009b335e483bdd97b7c5bb5b9f35e6f"
+  },
+  {
+    "file": "ch3-range.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "f8121e87659debeccf9c2017fa9a6eb1105ae0c40c80d0b054c80c97a68bff6b"
+  },
+  {
+    "file": "ch3-speckle.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "2a2cb5400ec75063435ccd9b4e27b7b015c8bbc42ee5511038884fa918d1d30b"
+  },
+  {
+    "file": "ch3-terrain.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "71965f555385584a995ace5ee3aeeb6d44cc11676604e45591d40eb2baa8b894"
+  },
+  {
+    "file": "ch1-radar-energy.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "sha256": "823f7fbd57d3c424f9a829d2f8e50117762c2c7e20ce244a73d69f3c6dd5f6a0"
+  }
+]

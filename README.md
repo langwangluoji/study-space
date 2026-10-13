@@ -27,6 +27,10 @@ node scripts/check-ui.cjs
 
 ## 内容在哪里编辑
 
+InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwave.md`、`docs/insar-imaging.md`、`docs/insar-interpretation.md`；总览、公式索引和来源分别维护在 `course-insar.md`、`insar-review.md`、`insar-sources.md`。在 `study-space.config.json` 的 `insar` 记录维护顺序，资料记录在 `resources.config.json`。原PDF不包含在仓库，有限引用图和原创SVG在 `public/insar/figures/`，图像清单区分原图与原创。源原件校验清单不含本地路径。
+
+正文或原创配图修订后先运行 `python scripts/package-insar.py` 更新离线讲义，再构建。该脚本验证原图校验值、更新原创图校验值，并把网页专用图片组件转换成可离线阅读的Markdown图片和相对链接。数学核验运行 `python scripts/verify_insar.py`（NumPy），浏览器专项运行 `node scripts/check-insar-ui.cjs`；既有UI脚本自动从课程清单取得新课程页与数量，避免写死两门课程。老师原件或教材不是讲义下载包的一部分。
+
 大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；原始文件保留本地，六份校验一致的副本接入资料库，PDF支持预览。来源与工作流署名见 docs/geodesy-sources.md。
 
 | 内容 | 唯一维护源 |

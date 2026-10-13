@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+<title id="title">散射与面积归一化，线性功率和分贝</title><desc id="desc">对比平滑面和粗糙面的散射，列出同一散射截面按水平、斜距、视线垂直面积归一化的关系，说明线性功率增十倍时增加十dB。</desc>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#345d89" stroke-width="1.4"/></marker></defs>
+<rect width="1000" height="760" rx="16" fill="#f7fafc"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#18364f">
+<text x="35" y="47" font-size="27" font-weight="bold">散射决定返回多少能量，参考面积决定如何归一化</text>
+<rect x="25" y="74" width="460" height="247" rx="12" fill="white" stroke="#d9e3ec"/><rect x="505" y="74" width="470" height="247" rx="12" fill="white" stroke="#d9e3ec"/>
+<text x="45" y="111" font-size="23" font-weight="bold">相对于波长较光滑</text><line x1="70" y1="237" x2="442" y2="237" stroke="#628da4" stroke-width="4"/><path d="M136 139L247 231L361 139" fill="none" stroke="#345d89" stroke-width="3" marker-end="url(#arr)"/><text x="52" y="154" font-size="18">入射</text><text x="351" y="185" font-size="18">镜面反射</text><text x="45" y="289" font-size="20">斜视时多数能量离开雷达方向</text>
+<text x="525" y="111" font-size="23" font-weight="bold">相位起伏与粗糙散射</text><path d="M548 236L581 222L611 245L644 218L675 240L705 225L738 241L775 219L809 238L842 227L908 240" fill="none" stroke="#68815e" stroke-width="4"/>
+<path d="M624 142L727 231" fill="none" stroke="#345d89" stroke-width="3" marker-end="url(#arr)"/><path d="M727 227L640 153M727 227L733 150M727 227L823 165" fill="none" stroke="#c4772f" stroke-width="2" marker-end="url(#arr)"/>
+<text x="525" y="289" font-size="21">相位尺度 δφ ∼ 4πhr cosθℓ / λ</text>
+<rect x="25" y="342" width="950" height="211" rx="12" fill="white" stroke="#d9e3ec"/>
+<text x="45" y="382" font-size="23" font-weight="bold">同一个等效散射截面 Σ，三种面积参考</text>
+<text x="45" y="425" font-size="24">σ⁰ = Σ/AG　　β⁰ = Σ/AR　　γ⁰ = Σ/A⊥</text>
+<text x="45" y="468" font-size="23">平地：AR = AG sinθ　　A⊥ = AG cosθ</text>
+<text x="45" y="511" font-size="23">所以：σ⁰ = β⁰ sinθ　　γ⁰ = σ⁰/cosθ</text>
+<text x="35" y="602" font-size="23">线性功率：0.01　→　0.1　→　1　　（每步 ×10）</text>
+<text x="35" y="645" font-size="23">分贝功率：−20 dB　→　−10 dB　→　0 dB　（每步 +10 dB）</text>
+<text x="35" y="684" font-size="21">xdB = 10 log10 x；区域功率先在线性域平均，再转为 dB。</text>
+<text x="35" y="726" font-size="18" fill="#566e82">面积关系假设水平地面及一致的角度定义；山地须核对产品与辐射地形校正定义。</text>
+</g></svg>

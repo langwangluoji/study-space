@@ -9,11 +9,12 @@ const geodesySidebar=[{text:'大地测量',items:[{text:'课程总览',link:'/co
 const chapterItems=c=>c.parts?.length?c.parts.map(p=>({text:p.title,link:'/'+c.slug+'.html#'+p.id,collapsed:true,items:p.sections.map(id=>{const s=c.sections.find(s=>s.id===id);return {text:s.title,link:'/'+c.slug+'.html#'+id}})})):c.sections.map(s=>({text:s.title,link:'/'+c.slug+'.html#'+s.id}));
 const mlSidebar=[{text:'机器学习',items:[{text:'课程总览',link:'/course-ml'},{text:'复习路线',link:'/review-guide#ml'}]},...courses.map(c=>({text:c.title,collapsed:true,items:[{text:'连续阅读整讲',link:'/'+c.slug},...chapterItems(c)]})),{text:'课程资料',items:[{text:'教材与课件',link:'/resources#ml'},{text:'来源说明',link:'/read-sources'}]}];
 const resourceSidebar=[{text:'资料中心',items:[{text:'全部资源',link:'/resources'},{text:'教材与延伸阅读',link:'/textbooks'}]},{text:'机器学习资料',collapsed:false,items:[{text:'PRML 教材',link:'/book-prml'},{text:'MML 数学基础',link:'/book-mml'},{text:'李宏毅深度学习教程',link:'/book-leedl'},{text:'第一讲课件',link:'/slides-lecture-1'},{text:'第二讲课件',link:'/slides-lecture-2'},{text:'第三讲课件',link:'/slides-lecture-3'},{text:'Notebook 阅读版',link:'/read-notebook'},{text:'实践脚本',link:'/read-downloads-cifar10_mlp_tutorial'},{text:'核验脚本',link:'/read-downloads-rewrite_reference_checks'},{text:'教材与知识点来源',link:'/read-sources'}]},{text:'大地测量资料',items:[{text:'原资料与配图索引',link:'/geodesy-sources'}]},{text:'遥感资料',items:[{text:'双语术语与概念对照',link:'/remote-sensing-glossary'},{text:'原资料、讲义图与勘误',link:'/remote-sensing-sources'}]}];
+resourceSidebar.push({text:'InSAR 资料',collapsed:true,items:[{text:'来源与配图索引',link:'/insar-sources'},{text:'离线讲义',link:'/course-insar'}]});
 const spaceSidebar=[{text:'学习空间',items:[{text:'课程目录',link:'/courses'},{text:'自学路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources'}]},{text:'共建与维护',items:[{text:'知识库共建',link:'/contribute'},{text:'详细维护指南',link:'/read-README'},{text:'内容核验记录',link:'/verification'}]}];
 const sidebar={'/':spaceSidebar,'/geodesy-':geodesySidebar,'/course-geodesy':geodesySidebar};
 resourceSidebar[1].collapsed=true;resourceSidebar[2].collapsed=true;
 for(const prefix of ['/course-ml','/lecture-','/cifar10-practice'])sidebar[prefix]=mlSidebar;
-resourceSidebar.at(-1).items.push(...resources.filter(r=>r.course==='geodesy'&&r.reader).map(r=>({text:r.title,link:r.preview})));
+resourceSidebar.find(section=>section.text==='大地测量资料').items.push(...resources.filter(r=>r.course==='geodesy'&&r.reader).map(r=>({text:r.title,link:r.preview})));
 for(const prefix of ['/resources','/textbooks','/book-','/slides-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source'])sidebar[prefix]=resourceSidebar;
 for(const c of space.courses.filter(c=>!['ml','geodesy'].includes(c.id))){
   const extra=c.id==='remote-sensing'?[{text:'双语术语与概念对照',link:'/remote-sensing-glossary'}]:[];
@@ -45,7 +46,7 @@ export default defineConfig({
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',
     docFooter:{prev:'上一页',next:'下一页'},lastUpdated:{text:'最近更新'},
-    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|textbooks|book-|slides-|read-(?!README)|geodesy-source|remote-sensing-sources)'},{text:'共建',link:'/contribute'}],
+    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|textbooks|book-|slides-|read-(?!README)|geodesy-source|remote-sensing-sources)'},{text:'共建',link:'/contribute'}],
     // VitePress prioritizes slash depth and otherwise preserves insertion order.
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),

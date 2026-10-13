@@ -108,7 +108,7 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
    await page.goto(base+slug+'.html#'+anchor,{waitUntil:'networkidle'});assert(await page.locator('#'+anchor).count());
   }
   checks.push('legacy chapter and auxiliary anchors preserved');
-  await page.goto(base,{waitUntil:'networkidle'});assert.equal(await page.locator('.hub-course').count(),3);
+  await page.goto(base,{waitUntil:'networkidle'});assert.equal(await page.locator('.hub-course').count(),JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.length);
   await page.goto(base+'lecture-3.html',{waitUntil:'networkidle'});assert((await page.locator('.VPSidebar').innerText()).includes('机器学习'));assert(await page.locator('mjx-container').count()>0);
   checks.push('ML homepage/sidebar/formula regression');
   assert.deepEqual(failures,[]);

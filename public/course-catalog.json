@@ -100,6 +100,32 @@
       ]
     },
     {
+      "id": "insar",
+      "title": "InSAR 原理与应用",
+      "category": "测绘与地球空间科学",
+      "url": "course-insar.html",
+      "description": "从微波散射、相干成像到图像解译，逐步建立干涉测量的信号与几何基础。",
+      "status": "前三章已整理",
+      "chapters": [
+        {
+          "slug": "insar-microwave",
+          "title": "第一章 · 微波遥感基础"
+        },
+        {
+          "slug": "insar-imaging",
+          "title": "第二章 · SAR 成像原理"
+        },
+        {
+          "slug": "insar-interpretation",
+          "title": "第三章 · SAR 图像特征及解译"
+        },
+        {
+          "slug": "insar-review",
+          "title": "主线与公式索引"
+        }
+      ]
+    },
+    {
       "id": "remote-sensing",
       "title": "遥感原理与基础",
       "category": "测绘与地球空间科学",

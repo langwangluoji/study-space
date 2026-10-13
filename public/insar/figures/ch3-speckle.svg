@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+<title id="title">相干叠加、强度多视与干涉相干性</title><desc id="desc">复矢量同向相加增强，反向相加抵消。多视平均强度减少方差。复数据保留相位，两期共轭相乘可生成干涉图，但仍须区分位移与几何大气等贡献。</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#345d89" stroke-width="1.4"/></marker></defs>
+<rect width="1000" height="1000" rx="16" fill="#f7fafc"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#18364f">
+<text x="35" y="46" font-size="27" font-weight="bold">同一平均散射水平，复矢量的相加方式仍会改变亮度</text>
+<rect x="25" y="75" width="465" height="257" rx="12" fill="white" stroke="#d9e3ec"/><rect x="510" y="75" width="465" height="257" rx="12" fill="white" stroke="#d9e3ec"/>
+<text x="45" y="116" font-size="23" font-weight="bold">近似同向：增强</text><path d="M75 257H445M111 281V143" fill="none" stroke="#bdcad6" stroke-width="2"/><text x="438" y="285" font-size="18">Re</text><text x="82" y="151" font-size="18">Im</text>
+<path d="M111 257L230 214L329 177" stroke="#6f9ebc" stroke-width="4" fill="none" marker-end="url(#a)"/><path d="M111 257L329 177" stroke="#345d89" stroke-width="3" fill="none" marker-end="url(#a)"/><text x="45" y="306" font-size="21">|s| 较大，I = |s|² 较亮</text>
+<text x="530" y="116" font-size="23" font-weight="bold">近似反向：抵消</text><path d="M560 257H930M596 281V143" fill="none" stroke="#bdcad6" stroke-width="2"/><text x="923" y="285" font-size="18">Re</text><text x="567" y="151" font-size="18">Im</text>
+<path d="M596 257L759 181" stroke="#6f9ebc" stroke-width="4" fill="none" marker-end="url(#a)"/><path d="M759 181L624 241" stroke="#c4772f" stroke-width="4" fill="none" marker-end="url(#a)"/><path d="M596 257L624 241" stroke="#345d89" stroke-width="3" fill="none" marker-end="url(#a)"/><text x="530" y="306" font-size="21">|s| 较小，I = |s|² 较暗</text>
+<text x="35" y="379" font-size="24">单元内：s = Σk ak exp(iφk)　　强度检测：I = |s|²</text>
+<rect x="25" y="404" width="950" height="191" rx="12" fill="white" stroke="#d9e3ec"/>
+<text x="45" y="447" font-size="23" font-weight="bold">M 个独立同分布强度的平均</text><text x="45" y="491" font-size="23">均值仍为 μ　　方差 μ²/M　　相对标准差 1/√M</text><text x="45" y="535" font-size="22">ENL = μI²/σI²　　仅在同质、低噪声等条件成立时解释为有效视数</text><text x="45" y="573" font-size="19">降低起伏通常牺牲细节；强度平均不等于复数平均。</text>
+<rect x="25" y="617" width="950" height="292" rx="12" fill="white" stroke="#d9e3ec"/>
+<text x="45" y="660" font-size="23" font-weight="bold">两期复数观测：保留相位，才能形成干涉</text>
+<text x="45" y="704" font-size="23">s1、s2 → I12 = s1 conj(s2) → Δφ = φ1 − φ2</text>
+<text x="45" y="746" font-size="22">散射相位不变时：Δφ = 4π(R2 − R1)/λ　（模 2π）</text>
+<text x="45" y="788" font-size="21">视线位移：dLOS = −u·d；远离雷达为正 → Δφdef = +4πdLOS/λ</text>
+<text x="45" y="830" font-size="21">|γ| 衡量复数联系；高相干不等于纯位移，低相干会破坏相位连续性。</text>
+<text x="45" y="871" font-size="19">相干须由共注册复数据的局部窗口估计；非零单像元归一化相关模恒为 1。</text>
+<text x="35" y="950" font-size="18" fill="#566e82">复矢量示意不按比例；统计关系依赖充分发展相干斑与独立同均值假设。</text>
+<text x="35" y="980" font-size="18" fill="#566e82">u 从地面指向雷达；R 为单程斜距。阴影缺失与叠掩混合无法靠滤波消除。</text>
+</g></svg>
