@@ -1,0 +1,669 @@
+{
+  "status": "PASS",
+  "schema_version": 1,
+  "generated_at_UTC": "2026-10-13T16:15:46.064283+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "seed": 20261014,
+  "Monte_Carlo_samples": 400000,
+  "sources": [
+    {
+      "path": "docs/insar-microwave.md",
+      "sha256": "ed86d8ff46b56be7f123eeb3a56bce57cbad30f39fda1a0ebe1a46690e66284b"
+    },
+    {
+      "path": "docs/insar-imaging.md",
+      "sha256": "8ea6ec8c5bf82b8ad2242f026af284b12f720c25f5bb07b24870faec90b1f43b"
+    },
+    {
+      "path": "docs/insar-interpretation.md",
+      "sha256": "35bd3c42b20ba27ffbbd5864190c84ebb0d09bb23943b463f3c2f5b2dd89fb68"
+    }
+  ],
+  "check_count": 16,
+  "failed_checks": [],
+  "checks": [
+    {
+      "id": "flat_ground_range_projection",
+      "status": "PASS",
+      "model_and_scope": "R is one-way slant range; theta is from vertical; planar ground and local derivative.",
+      "metrics": {
+        "height_m": 800000.0,
+        "step_m": 1,
+        "cases": [
+          {
+            "theta_deg": 5,
+            "finite_difference_dR_dx": 0.08715574274538085,
+            "sin_theta": 0.08715574274765817,
+            "absolute_error": 2.2773172236867367e-12
+          },
+          {
+            "theta_deg": 23,
+            "finite_difference_dR_dx": 0.39073112851474434,
+            "sin_theta": 0.39073112848927377,
+            "absolute_error": 2.5470570097496648e-11
+          },
+          {
+            "theta_deg": 35,
+            "finite_difference_dR_dx": 0.5735764363198541,
+            "sin_theta": 0.573576436351046,
+            "absolute_error": 3.11919379214487e-11
+          },
+          {
+            "theta_deg": 45,
+            "finite_difference_dR_dx": 0.7071067811921239,
+            "sin_theta": 0.7071067811865476,
+            "absolute_error": 5.576317185784774e-12
+          },
+          {
+            "theta_deg": 70,
+            "finite_difference_dR_dx": 0.9396926208864897,
+            "sin_theta": 0.9396926207859083,
+            "absolute_error": 1.005814320720333e-10
+          }
+        ],
+        "range_resolution_to_ground": "delta_x = delta_R / sin(theta)"
+      },
+      "tolerance": {
+        "max_absolute_derivative_error": 2e-09
+      }
+    },
+    {
+      "id": "slope_projection_and_range_order",
+      "status": "PASS",
+      "model_and_scope": "Independent Euclidean distance on a 2D fore-slope; slope tangent rises away from radar. A negative signed projection angle is not a negative physical incidence angle.",
+      "metrics": {
+        "theta_deg": 35,
+        "cases": [
+          {
+            "slope_deg": 0,
+            "numeric_dR_dl": 0.5735764363198541,
+            "sin_theta_minus_alpha": 0.573576436351046,
+            "condition": "flat",
+            "signed_angle_deg": 35,
+            "physical_incidence_angle_deg": 35,
+            "absolute_error": 3.11919379214487e-11
+          },
+          {
+            "slope_deg": 20,
+            "numeric_dR_dl": 0.2588190451497212,
+            "sin_theta_minus_alpha": 0.25881904510252074,
+            "condition": "foreshortening",
+            "signed_angle_deg": 15,
+            "physical_incidence_angle_deg": 15,
+            "absolute_error": 4.7200465758123755e-11
+          },
+          {
+            "slope_deg": 35,
+            "numeric_dR_dl": -5.820766091346741e-11,
+            "sin_theta_minus_alpha": 0.0,
+            "condition": "maximum_compression_boundary",
+            "signed_angle_deg": 0,
+            "physical_incidence_angle_deg": 0,
+            "absolute_error": 5.820766091346741e-11
+          },
+          {
+            "slope_deg": 45,
+            "numeric_dR_dl": -0.17364817770430818,
+            "sin_theta_minus_alpha": -0.17364817766693036,
+            "condition": "reversed_range_order_layover",
+            "signed_angle_deg": -10,
+            "physical_incidence_angle_deg": 10,
+            "absolute_error": 3.7377823058903914e-11
+          },
+          {
+            "slope_deg": 70,
+            "numeric_dR_dl": -0.5735764363780618,
+            "sin_theta_minus_alpha": -0.573576436351046,
+            "condition": "reversed_range_order_layover",
+            "signed_angle_deg": -35,
+            "physical_incidence_angle_deg": 35,
+            "absolute_error": 2.701572299201871e-11
+          }
+        ]
+      },
+      "tolerance": {
+        "derivative_absolute_error": 2e-09
+      }
+    },
+    {
+      "id": "backslope_local_normal_and_global_shadow",
+      "status": "PASS",
+      "model_and_scope": "Local normal cosine detects a grazing/back-facing surface; positive cosine alone does not exclude an intervening ridge. This is a 2D visibility example, not a 3D DEM algorithm.",
+      "metrics": {
+        "local_cases": [
+          {
+            "backslope_deg": 0,
+            "normal_dot_toward_radar": 0.8191520442889918,
+            "cos_theta_plus_beta": 0.8191520442889918,
+            "direct_front_face_illumination": true
+          },
+          {
+            "backslope_deg": 20,
+            "normal_dot_toward_radar": 0.5735764363510462,
+            "cos_theta_plus_beta": 0.573576436351046,
+            "direct_front_face_illumination": true
+          },
+          {
+            "backslope_deg": 55,
+            "normal_dot_toward_radar": -4.0322985726417523e-19,
+            "cos_theta_plus_beta": 6.123233995736766e-17,
+            "direct_front_face_illumination": false
+          },
+          {
+            "backslope_deg": 60,
+            "normal_dot_toward_radar": -0.08715574274765799,
+            "cos_theta_plus_beta": -0.08715574274765801,
+            "direct_front_face_illumination": false
+          }
+        ],
+        "flat_target_normal_cosine": 0.8191520442889918,
+        "flat_terrain_ray_clear": true,
+        "positive_local_cosine_but_ridge_blocks": true,
+        "ridge_above_ray_m": 100,
+        "grazing_boundary_deg": 55
+      },
+      "tolerance": {
+        "normal_dot_identity_absolute_error": 1e-14
+      }
+    },
+    {
+      "id": "distant_parallel_ray_shadow_length",
+      "status": "PASS",
+      "model_and_scope": "Vertical object on level ground, distant parallel rays; not general mountain geometry.",
+      "metrics": {
+        "ray_ground_intersection_x_m": 28.00830152838839,
+        "height_times_tan_theta_m": 28.008301528388387
+      },
+      "tolerance": {
+        "absolute_error_m": 1e-12
+      }
+    },
+    {
+      "id": "finite_chirp_matched_filter_and_measured_mainlobe",
+      "status": "PASS",
+      "model_and_scope": "Finite centered rectangular LFM pulse; quadrature of p(t)conj(p(t-q)); first null found by root search on that integral. 1/B is a high-BT scale, not an exact finite-pulse null.",
+      "metrics": {
+        "cases": [
+          {
+            "time_bandwidth_product": 16,
+            "bandwidth_Hz": 799999.9999999999,
+            "duration_s": 2e-05,
+            "integrated_peak_over_T": 1.0,
+            "numeric_first_null_delay_s": 1.3397459621556132e-06,
+            "B_times_numeric_first_null": 1.0717967697244903,
+            "null_response_over_peak": 2.653323102218778e-16,
+            "relative_error_of_1_over_B_scale": 0.07179676972449034,
+            "max_normalized_quadrature_error_against_exact_autocorrelation": 1.7377981208720455e-08,
+            "initial_root_bracket_has_sign_change": true
+          },
+          {
+            "time_bandwidth_product": 64,
+            "bandwidth_Hz": 3199999.9999999995,
+            "duration_s": 2e-05,
+            "integrated_peak_over_T": 1.0,
+            "numeric_first_null_delay_s": 3.1754163448145837e-07,
+            "B_times_numeric_first_null": 1.0161332303406667,
+            "null_response_over_peak": 1.8442428345012475e-15,
+            "relative_error_of_1_over_B_scale": 0.016133230340666715,
+            "max_normalized_quadrature_error_against_exact_autocorrelation": 2.2186347158794215e-08,
+            "initial_root_bracket_has_sign_change": true
+          },
+          {
+            "time_bandwidth_product": 256,
+            "bandwidth_Hz": 12799999.999999998,
+            "duration_s": 2e-05,
+            "integrated_peak_over_T": 1.0,
+            "numeric_first_null_delay_s": 7.843258350778502e-08,
+            "B_times_numeric_first_null": 1.003937068899648,
+            "null_response_over_peak": 3.176373552203626e-16,
+            "relative_error_of_1_over_B_scale": 0.003937068899648066,
+            "max_normalized_quadrature_error_against_exact_autocorrelation": 2.312437965078077e-08,
+            "initial_root_bracket_has_sign_change": true
+          }
+        ],
+        "quadrature_points": 8193,
+        "sinc_definition": "sin(pi*x)/(pi*x)",
+        "range_null_scale": "c * measured_delay / 2"
+      },
+      "tolerance": {
+        "normalized_null_response": 1e-10,
+        "normalized_quadrature_error": 2e-07,
+        "first_null_approx_relative_error_at_BT256": 0.005
+      }
+    },
+    {
+      "id": "exact_range_history_and_quadratic_approximation",
+      "status": "PASS",
+      "model_and_scope": "Straight constant-speed broadside, stationary point; long-double Euclidean range compared with its second-order approximation. Small relative range error alone does not ensure small SAR phase error.",
+      "metrics": {
+        "R0_m": 853000.0,
+        "speed_m_s": 7500.0,
+        "wavelength_m": 0.0566,
+        "ideal_stripmap_aperture_m": 4827.98,
+        "max_range_error_m": 6.8391673266887665e-06,
+        "max_propagation_phase_error_rad": 0.0015184365957736235,
+        "larger_offset_examples": [
+          {
+            "offset_over_R0": 0.001,
+            "range_error_m": 1.0652001947164536e-07,
+            "propagation_phase_error_rad": 2.364964739451327e-05
+          },
+          {
+            "offset_over_R0": 0.01,
+            "range_error_m": 0.0010661967098712921,
+            "propagation_phase_error_rad": 0.236717720919665
+          },
+          {
+            "offset_over_R0": 0.05,
+            "range_error_m": 0.6655745414318517,
+            "propagation_phase_error_rad": 147.7713137652792
+          },
+          {
+            "offset_over_R0": 0.1,
+            "range_error_m": 10.609518388053402,
+            "propagation_phase_error_rad": 2355.5325106738087
+          }
+        ]
+      },
+      "tolerance": {
+        "ideal_aperture_range_error_m": 1e-05,
+        "ideal_aperture_phase_error_rad": 0.003
+      }
+    },
+    {
+      "id": "doppler_from_phase_and_two_way_range_rate",
+      "status": "PASS",
+      "model_and_scope": "f_D=(1/2pi)dphi/deta=-2/lambda*dR/deta with phi=-4pi*R/lambda; approach positive, recession negative for this convention.",
+      "metrics": {
+        "cases": [
+          {
+            "eta_s": -0.3,
+            "phase_derivative_Hz": 699.0476804309869,
+            "range_derivative_Hz": 699.0476804308252,
+            "exact_doppler_Hz": 699.0476884552241,
+            "quadratic_doppler_Hz": 699.0501203401838,
+            "derivative_error_Hz": 8.024237217796326e-06
+          },
+          {
+            "eta_s": -0.1,
+            "phase_derivative_Hz": 233.01657907951136,
+            "range_derivative_Hz": 233.01657907954373,
+            "exact_doppler_Hz": 233.01661670983015,
+            "quadratic_doppler_Hz": 233.01670678006124,
+            "derivative_error_Hz": 3.763031878634138e-05
+          },
+          {
+            "eta_s": 0.0,
+            "phase_derivative_Hz": 0.0,
+            "range_derivative_Hz": -0.0,
+            "exact_doppler_Hz": -0.0,
+            "quadratic_doppler_Hz": -0.0,
+            "derivative_error_Hz": 0.0
+          },
+          {
+            "eta_s": 0.1,
+            "phase_derivative_Hz": -233.01657907951136,
+            "range_derivative_Hz": -233.01657907954373,
+            "exact_doppler_Hz": -233.01661670983015,
+            "quadratic_doppler_Hz": -233.01670678006124,
+            "derivative_error_Hz": 3.763031878634138e-05
+          },
+          {
+            "eta_s": 0.3,
+            "phase_derivative_Hz": -699.0476804309869,
+            "range_derivative_Hz": -699.0476804308252,
+            "exact_doppler_Hz": -699.0476884552241,
+            "quadratic_doppler_Hz": -699.0501203401838,
+            "derivative_error_Hz": 8.024237217796326e-06
+          }
+        ]
+      },
+      "tolerance": {
+        "finite_difference_error_Hz": 0.001,
+        "phase_vs_range_identity_error_Hz": 1e-08
+      }
+    },
+    {
+      "id": "same_scatter_interferogram_sign_and_LOS",
+      "status": "PASS",
+      "model_and_scope": "Same scattering phase; s=A*exp(i*phi), phi=-4piR/lambda+phi_scat; I12=s1*conj(s2) has +4pi(R2-R1)/lambda. LOS positive toward radar has opposite range sign.",
+      "metrics": {
+        "cases": [
+          {
+            "R2_minus_R1_m": -0.001,
+            "measured_wrapped_phase_rad": -0.22642108798027044,
+            "unwrapped_ideal_phase_rad": -0.22642109215061573,
+            "complex_unit_phase_error": 4.170345291400026e-09,
+            "reversing_conjugate_reverses_phase_error": 0.0
+          },
+          {
+            "R2_minus_R1_m": 0.001,
+            "measured_wrapped_phase_rad": 0.22642111778259283,
+            "unwrapped_ideal_phase_rad": 0.22642109215061573,
+            "complex_unit_phase_error": 2.5631977103914713e-08,
+            "reversing_conjugate_reverses_phase_error": 0.0
+          },
+          {
+            "R2_minus_R1_m": 0.02775,
+            "measured_wrapped_phase_rad": -3.968374295837407e-09,
+            "unwrapped_ideal_phase_rad": 6.283185307179586,
+            "complex_unit_phase_error": 3.968374050908047e-09,
+            "reversing_conjugate_reverses_phase_error": 0.0
+          }
+        ],
+        "positive_toward_radar_displacement_m": 0.001,
+        "Euclidean_range_change_m": -0.0009999999998626663
+      },
+      "tolerance": {
+        "complex_phase_error": 1e-07,
+        "LOS_range_error_m": 1e-12
+      }
+    },
+    {
+      "id": "window_coherence_Cauchy_Schwarz_and_order_of_operations",
+      "status": "PASS",
+      "model_and_scope": "Complex window inner product normalized by both energies. Nonzero denominator required; zero-energy windows must be masked. Scaled vectors attain equality; alternating phase cancels.",
+      "metrics": {
+        "random_windows": 2000,
+        "samples_per_window": 32,
+        "max_independent_window_coherence": 0.4349736112426669,
+        "max_scaled_vector_deviation_from_one": 4.440892098500626e-16,
+        "correct_sum_then_modulus": 0.0,
+        "incorrect_modulus_then_sum": 1.0
+      },
+      "tolerance": {
+        "Cauchy_Schwarz_roundoff": 1e-12
+      }
+    },
+    {
+      "id": "field_sum_vs_power_sum",
+      "status": "PASS",
+      "model_and_scope": "Fields sum before detection. Equal opposing fields have zero coherent intensity although separate detected powers sum to two.",
+      "metrics": {
+        "interference_identity_max_error": 2.6645352591003757e-15,
+        "opposing_field_detected_after_sum": 1.4997597826618576e-32,
+        "opposing_separate_power_sum": 2
+      },
+      "tolerance": {
+        "identity_absolute_error": 1e-13
+      }
+    },
+    {
+      "id": "circular_complex_Gaussian_intensity_exponential_CDF",
+      "status": "PASS",
+      "model_and_scope": "Independent real/imag Gaussian with variance mu/2; zero mean and circular symmetry. Intensity computed from both components and compared with exponential CDF, not generated from an exponential RNG. This excludes deterministic point targets and textured mixtures.",
+      "metrics": {
+        "independent_samples": 400000,
+        "mu": 2.5,
+        "empirical_CDF_max_error": 0.0013253994268445368,
+        "DKW_CDF_threshold": 0.0042586174015935355,
+        "DKW_false_failure_bound": 1e-06
+      },
+      "tolerance": {
+        "CDF_max_error": 0.0042586174015935355
+      }
+    },
+    {
+      "id": "independent_multilook_mean_variance_and_ENL",
+      "status": "PASS",
+      "model_and_scope": "Independent equal-mean looks from circular complex Gaussian; linear intensities averaged. Sample variance uses ddof=1. Spatial correlation, texture and filtering change ENL interpretation.",
+      "metrics": {
+        "seed": 20261014,
+        "samples_per_look_setting": 400000,
+        "cases": [
+          {
+            "independent_looks": 1,
+            "estimated_mean": 2.503305742060231,
+            "expected_mean": 2.5,
+            "estimated_variance_ddof1": 6.248347761777928,
+            "expected_variance": 6.25,
+            "estimated_ENL": 1.0029114699033046,
+            "expected_ENL": 1,
+            "relative_mean_error": 0.0013222968240924615,
+            "relative_variance_error": 0.0002643581155316044,
+            "relative_ENL_error": 0.0029114699033045977,
+            "relative_mean_tolerance": 0.009486832980505138,
+            "relative_variance_tolerance": 0.02683281572999748,
+            "relative_ENL_tolerance": 0.018973665961010275,
+            "passed": true
+          },
+          {
+            "independent_looks": 2,
+            "estimated_mean": 2.5026300827913857,
+            "expected_mean": 2.5,
+            "estimated_variance_ddof1": 3.12142955797143,
+            "expected_variance": 3.125,
+            "estimated_ENL": 2.0065028586974583,
+            "expected_ENL": 2,
+            "relative_mean_error": 0.0010520331165542185,
+            "relative_variance_error": 0.0011425414491423869,
+            "relative_ENL_error": 0.003251429348729129,
+            "relative_mean_tolerance": 0.006708203932499369,
+            "relative_variance_tolerance": 0.021213203435596427,
+            "relative_ENL_tolerance": 0.016431676725154984,
+            "passed": true
+          },
+          {
+            "independent_looks": 4,
+            "estimated_mean": 2.4998359251423246,
+            "expected_mean": 2.5,
+            "estimated_variance_ddof1": 1.567240108736135,
+            "expected_variance": 1.5625,
+            "estimated_ENL": 3.987378588512318,
+            "expected_ENL": 4,
+            "relative_mean_error": 6.562994307013348e-05,
+            "relative_variance_error": 0.0030336695911263867,
+            "relative_ENL_error": 0.0031553528719204804,
+            "relative_mean_tolerance": 0.004743416490252569,
+            "relative_variance_tolerance": 0.017748239349298846,
+            "relative_ENL_tolerance": 0.015,
+            "passed": true
+          },
+          {
+            "independent_looks": 8,
+            "estimated_mean": 2.499430939301154,
+            "expected_mean": 2.5,
+            "estimated_variance_ddof1": 0.7838580723316669,
+            "expected_variance": 0.78125,
+            "estimated_ENL": 7.969752740764715,
+            "expected_ENL": 8,
+            "relative_mean_error": 0.00022762427953837427,
+            "relative_variance_error": 0.003338332584533754,
+            "relative_ENL_error": 0.003780907404410616,
+            "relative_mean_tolerance": 0.0033541019662496844,
+            "relative_variance_tolerance": 0.01573213272255227,
+            "relative_ENL_tolerance": 0.014230249470757707,
+            "passed": true
+          }
+        ]
+      },
+      "tolerance": {
+        "rule": "six asymptotic standard errors from gamma moments; case-specific tolerances shown"
+      }
+    },
+    {
+      "id": "dB_amplitude_power_and_averaging",
+      "status": "PASS",
+      "model_and_scope": "Same reference, positive amplitude A and power A^2. Mean power is formed in the linear domain.",
+      "metrics": {
+        "max_power_vs_amplitude_db_error": 8.881784197001252e-16,
+        "linear_mean_of_0_01_and_0_1_to_dB": -12.59637310505756,
+        "arithmetic_average_of_minus20_and_minus10_dB": -15.0,
+        "minus30_dB_to_power": 0.001
+      },
+      "tolerance": {
+        "db_absolute_error": 1e-12,
+        "roundtrip_power_relative_error": 1e-12
+      }
+    },
+    {
+      "id": "attenuation_depth_and_roughness_phase_scale",
+      "status": "PASS",
+      "model_and_scope": "Uniform exponential field attenuation; power is field modulus squared. Roughness phase relation is a local-plane far-field approximation, not a universal classification.",
+      "metrics": {
+        "field_depth_1_over_alpha_m": 5.0,
+        "power_depth_1_over_2alpha_m": 2.5,
+        "field_fraction_at_field_depth": 0.36787944117144233,
+        "power_fraction_at_power_depth": 0.36787944117144233,
+        "Rayleigh_limit_phase_rad": 1.5707963267948966
+      },
+      "tolerance": {
+        "absolute_identity_error": 1e-14
+      }
+    },
+    {
+      "id": "point_target_radar_energy_chain",
+      "status": "PASS",
+      "model_and_scope": "Specified far-field point-target cross section, no propagation losses; not an image brightness correction.",
+      "metrics": {
+        "staged_received_power_W": 5.277554837312429e-20,
+        "direct_radar_equation_W": 5.2775548373124304e-20,
+        "distance_doubled_power_ratio": 0.0625
+      },
+      "tolerance": {
+        "power_relative_error": 1e-13
+      }
+    },
+    {
+      "id": "current_markdown_numerical_examples",
+      "status": "PASS",
+      "model_and_scope": "Displayed values read from current Markdown, checked against calculations with stated rounding precision. Missing/changed claims fail rather than silently checking an obsolete duplicate.",
+      "metrics": {
+        "examples": [
+          {
+            "example": "chapter1_5_405GHz_wavelength",
+            "displayed_value": 5.55,
+            "computed_value": 5.546716003700277,
+            "unit": "cm",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.003283996299722425,
+            "passed": true
+          },
+          {
+            "example": "chapter1_1mm_interferogram_phase",
+            "displayed_value": 0.226,
+            "computed_value": 0.22642109215061573,
+            "unit": "rad",
+            "rounding_absolute_tolerance": 0.0005,
+            "absolute_error": 0.00042109215061572614,
+            "passed": true
+          },
+          {
+            "example": "chapter1_1mm_phase_degrees",
+            "displayed_value": 13.0,
+            "computed_value": 12.972972972972972,
+            "unit": "degree",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.027027027027028083,
+            "passed": true
+          },
+          {
+            "example": "chapter1_full_range_phase_cycle",
+            "displayed_value": 2.775,
+            "computed_value": 2.775,
+            "unit": "cm",
+            "rounding_absolute_tolerance": 0.0005,
+            "absolute_error": 0.0,
+            "passed": true
+          },
+          {
+            "example": "chapter2_RAR_azimuth",
+            "displayed_value": 4828.0,
+            "computed_value": 4827.98,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.5,
+            "absolute_error": 0.020000000000436557,
+            "passed": true
+          },
+          {
+            "example": "chapter2_antenna_for_20m_RAR",
+            "displayed_value": 2414.0,
+            "computed_value": 2413.99,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.5,
+            "absolute_error": 0.010000000000218279,
+            "passed": true
+          },
+          {
+            "example": "chapter2_uncompressed_0_1us",
+            "displayed_value": 15.0,
+            "computed_value": 15.0,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.5,
+            "absolute_error": 0.0,
+            "passed": true
+          },
+          {
+            "example": "chapter2_45degree_ground_resolution",
+            "displayed_value": 21.2,
+            "computed_value": 21.213203435596423,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.013203435596423674,
+            "passed": true
+          },
+          {
+            "example": "chapter2_15_55MHz_slant_resolution",
+            "displayed_value": 9.65,
+            "computed_value": 9.646302250803858,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.003697749196142297,
+            "passed": true
+          },
+          {
+            "example": "chapter2_23degree_ground_resolution",
+            "displayed_value": 24.7,
+            "computed_value": 24.687826352869312,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.01217364713068747,
+            "passed": true
+          },
+          {
+            "example": "chapter2_32MHz_sample_spacing",
+            "displayed_value": 4.69,
+            "computed_value": 4.6875,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.002500000000000391,
+            "passed": true
+          },
+          {
+            "example": "chapter3_100m_20degree_foreslope_projection",
+            "displayed_value": 25.9,
+            "computed_value": 25.881904510252074,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.01809548974792463,
+            "passed": true
+          },
+          {
+            "example": "chapter3_linear_mean_then_dB",
+            "displayed_value": -12.6,
+            "computed_value": -12.59637310505756,
+            "unit": "dB",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.003626894942438952,
+            "passed": true
+          }
+        ]
+      },
+      "tolerance": {
+        "rule": "half of the final displayed decimal place, per case"
+      }
+    }
+  ],
+  "text_corrections_required": [],
+  "interpretation": [
+    "No result establishes real satellite resolution, measurement accuracy or current mission status.",
+    "The finite chirp first null converges to 1/B; the finite-window correction is explicitly measured.",
+    "Second-order range accuracy must also be assessed in propagation phase, not relative distance alone.",
+    "Positive local illumination cosine does not exclude global terrain obstruction.",
+    "ENL=number of looks requires independent equal-mean fully developed speckle; estimated variance uses ddof=1.",
+    "Relative paths and Path-based report output are portable; only NumPy is a third-party requirement."
+  ]
+}

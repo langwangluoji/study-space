@@ -9,7 +9,7 @@ next: false
 
 教材、课件、代码与来源索引，按课程集中查找。网页用于阅读；Notebook 和 Python 脚本下载后在本地环境运行。
 
-<span id="ml"></span><span id="geodesy"></span>
+<span id="insar"></span><span id="ml"></span><span id="geodesy"></span>
 
 <ResourceLibrary />
 

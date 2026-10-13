@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 410" role="img" aria-labelledby="title desc">
+<title id="title">理想点目标雷达方程的能量链</title><desc id="desc">发射功率通过去程空间扩散到达目标，目标按散射截面把能量送回，回程再次扩散，接收天线按有效面积收集功率。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#176b7a"/></marker></defs>
+<rect width="1000" height="410" rx="12" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" fill="#17384f">
+<text x="35" y="40" font-size="25" font-weight="700">R⁻⁴ 来自去程与回程各一次空间扩散</text>
+<g stroke="#90b4ba" fill="#e9f3f2" stroke-width="2"><rect x="35" y="90" width="205" height="126" rx="10"/><rect x="275" y="90" width="205" height="126" rx="10"/><rect x="515" y="90" width="205" height="126" rx="10"/><rect x="755" y="90" width="210" height="126" rx="10"/></g>
+<g font-size="20" text-anchor="middle"><text x="137" y="125">发射与天线</text><text x="137" y="165">Pt × Gt</text><text x="137" y="195" font-size="16">设置入射能量</text><text x="377" y="125">目标处入射密度</text><text x="377" y="165">Sinc = Pt Gt / (4πR²)</text><text x="377" y="195" font-size="16">去程：空间扩散</text><text x="617" y="125">雷达处回波密度</text><text x="617" y="165" font-size="17">Sback = Sinc σ / (4πR²)</text><text x="617" y="195" font-size="16">散射截面 σ 与回程扩散</text><text x="860" y="125">接收功率</text><text x="860" y="165">Pr = Sback Ae</text><text x="860" y="195" font-size="16">Ae = Gr λ² / (4π)</text></g>
+<g stroke="#176b7a" stroke-width="2.5" marker-end="url(#arrow)"><path d="M242 152H272"/><path d="M482 152H512"/><path d="M722 152H752"/></g>
+<text x="35" y="270" font-size="22">合并：Pr = Pt Gt Gr λ² σ / [(4π)³ R⁴]</text>
+<text x="35" y="315" font-size="18">R 是单程距离；σ 为给定波长、极化与方向的点目标散射截面。</text>
+<text x="35" y="350" font-size="18">理想远场、单站、未计损耗；SAR 地表定标还涉及面积、聚焦与实际处理。</text>
+<text x="35" y="382" font-size="17">距离加倍 → 点目标理想回波功率变为 1/16；不能据此手动给全部像元乘 R⁴。</text>
+</g></svg>

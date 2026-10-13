@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="420" viewBox="0 0 1080 420" role="img" aria-labelledby="title desc">
+<title id="title">电场极化的端点轨迹</title><desc id="desc">同一空间位置上观察两个正交电场分量，同相形成线极化，等幅且相差四分之一周期形成圆极化，一般形成椭圆极化。</desc>
+<rect width="1080" height="420" rx="14" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#17384f">
+<text x="32" y="40" font-size="24" font-weight="700">固定空间位置，看电场矢量端点怎样运动</text>
+<text x="32" y="76" font-size="19">Ex = ax cos(ωt)；Ey = ay cos(ωt + δ)；传播方向垂直于图面</text>
+<g stroke="#92a8b8" stroke-width="2"><path d="M60 224 H317 M187 107 V326"/><path d="M411 224 H669 M540 107 V326"/><path d="M763 224 H1020 M892 107 V326"/></g>
+<g font-size="18"><text x="296" y="250">Ex</text><text x="193" y="124">Ey</text><text x="650" y="250">Ex</text><text x="548" y="124">Ey</text><text x="1000" y="250">Ex</text><text x="900" y="124">Ey</text></g>
+<path d="M114 286 L260 161" fill="none" stroke="#197ca0" stroke-width="5"/>
+<circle cx="540" cy="224" r="86" fill="none" stroke="#197ca0" stroke-width="5"/>
+<ellipse cx="892" cy="224" rx="96" ry="58" transform="rotate(-24 892 224)" fill="none" stroke="#197ca0" stroke-width="5"/>
+<g fill="#b56328"><circle cx="236" cy="182" r="7"/><circle cx="601" cy="163" r="7"/><circle cx="969" cy="177" r="7"/></g>
+<g font-size="21" font-weight="700"><text x="142" y="363">线极化</text><text x="497" y="363">圆极化</text><text x="839" y="363">椭圆极化</text></g>
+<g font-size="18"><text x="114" y="397">δ = 0 或 π</text><text x="436" y="397">ax = ay，δ = ±π/2</text><text x="809" y="397">一般非退化情况</text></g>
+</g></svg>
