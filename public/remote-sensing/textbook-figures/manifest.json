@@ -1,0 +1,328 @@
+{
+  "policy": {
+    "method": "Original PDF page rendered by pdftoppm at 150 dpi and cropped without redrawing, relabeling or removing figure captions and original credits.",
+    "context": "Selected figures for bilingual course study; source PDF books remain local references.",
+    "coordinates": "crop_px uses [left, top, right, bottom] in the full-page 150 dpi rendering."
+  },
+  "figures": [
+    {
+      "id": "book-ccrs-information-chain",
+      "book_id": "ccrs",
+      "title_zh": "遥感的七环节信息链",
+      "title_en": "The seven-element remote sensing process",
+      "page": 5,
+      "printed_page": "5",
+      "figure_number": "Section 1.1, unnumbered figure",
+      "credit": "© CCRS / CCT · Canada Centre for Remote Sensing",
+      "crop_px": [
+        172,
+        962,
+        640,
+        1342
+      ],
+      "target_anchor": "rs1-information-chain",
+      "note_zh": "按A–G追踪能源/照明、大气、目标、传感器记录、传输与处理、解释与分析、应用。B在下行与上行路径均出现；这是典型反射成像链，热发射观测与非成像探测也属于遥感。",
+      "note_en": "Follow A–G through illumination, atmosphere, target, recording, transmission and processing, interpretation and analysis, and application. B occurs on both downward and upward paths. This is a typical reflected-energy imaging chain; emitted-energy observations and non-imaging sensing also belong to remote sensing.",
+      "dimensions": {
+        "width": 468,
+        "height": 380
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-ccrs-information-chain.webp",
+      "source": "Canada Centre for Remote Sensing, Fundamentals of Remote Sensing",
+      "source_file": "Fundamentals_of_Remote_Sensing_(Canada_Centre_for_Remote_Sensing)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-atmospheric-paths",
+      "book_id": "campbell",
+      "title_zh": "到达传感器的辐射有哪些路径",
+      "title_en": "Components of radiation reaching the sensor",
+      "page": 77,
+      "printed_page": "38",
+      "figure_number": "2.9",
+      "credit": "Based on Campbell and Ran (1993). Image by Susmita Sen.",
+      "crop_px": [
+        116,
+        142,
+        937,
+        680
+      ],
+      "target_anchor": "rs2-atmosphere",
+      "note_zh": "按原图箭头：Iₛ是太阳照明经目标地表反射到传感器的贡献；Iₒ是不经地表、由大气散射进入视线的路径辐射；Iᴅ先到地物，再经大气漫散射进入传感器，图中屋顶提供了另一条地表—大气路径。Iᴅ不能直接当作天空漫射照明的同义词。此图解释可见及邻近太阳反射波段；热发射、荧光、其他多次散射需另建模型，分项不可重复计数。",
+      "note_en": "Following the original arrows, Iₛ is solar illumination reflected by the target surface toward the sensor; Iₒ is atmospheric scattering into the line of sight without visiting the ground; Iᴅ first reaches a surface, then is diffusely scattered by the atmosphere toward the sensor, with the roof illustrating another surface–atmosphere path. Iᴅ is not simply a synonym for diffuse sky illumination. The figure concerns visible and nearby solar-reflective bands. Thermal emission, fluorescence and further multiple scattering require additional modelling; avoid double-counting components.",
+      "dimensions": {
+        "width": 821,
+        "height": 538
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-atmospheric-paths.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-brdf",
+      "book_id": "campbell",
+      "title_zh": "反射的方向性与照明角度",
+      "title_en": "Directional reflectance and illumination angles",
+      "page": 84,
+      "printed_page": "45",
+      "figure_number": "2.16",
+      "credit": "Calculated by Pierre Villeneuve. Image by Susmita Sen.",
+      "crop_px": [
+        112,
+        137,
+        936,
+        858
+      ],
+      "target_anchor": "rs2-reflectance-brdf",
+      "note_zh": "Incident zenith angle意为入射天顶角；两幅半球上的色标展示不同观察方向的反射方向性。照明和观察方向都应记录，不能把半球色值当作波长光谱。原图展示方向变化，不定义BRDF与BRF的量纲关系；二者仍按正文公式区分。",
+      "note_en": "Incident zenith angle describes the illumination direction; the hemispherical color scales show directional variation with viewing direction. Record both illumination and viewing geometry. These colors are not a wavelength spectrum. The figure illustrates angular variation, while the text separately defines BRDF and BRF and their units.",
+      "dimensions": {
+        "width": 824,
+        "height": 721
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-brdf.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-surface-spectra",
+      "book_id": "campbell",
+      "title_zh": "植被与清水的光谱响应和能量分配",
+      "title_en": "Vegetation and clear-water spectral response and energy partition",
+      "page": 87,
+      "printed_page": "48",
+      "figure_number": "2.19",
+      "credit": "Image by Susmita Sen.",
+      "crop_px": [
+        116,
+        631,
+        937,
+        1349
+      ],
+      "target_anchor": "rs2-spectral-signatures",
+      "note_zh": "Reflectance为反射率，NIR为近红外；入射能量分为反射、吸收和透射。活叶近红外反射增大，清静水体的近红外反射较弱。曲线是示意，不是固定的类别指纹；浑水、叶片结构、背景混合与观察条件会改变像元光谱。",
+      "note_en": "Reflectance and NIR (near infrared) label the response curves; incident energy is reflected, absorbed, or transmitted. Living leaves show stronger NIR reflection, while clear, calm water has weak NIR reflectance. These are schematic patterns rather than fixed class fingerprints: turbidity, leaf structure, mixed backgrounds, and observation conditions change pixel spectra.",
+      "dimensions": {
+        "width": 821,
+        "height": 718
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-surface-spectra.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-orbital-inclination",
+      "book_id": "campbell",
+      "title_zh": "轨道倾角和地球自转方向",
+      "title_en": "Orbital inclination and Earth's rotation",
+      "page": 102,
+      "printed_page": "63",
+      "figure_number": "3.9",
+      "credit": "From NASA.",
+      "crop_px": [
+        112,
+        145,
+        934,
+        465
+      ],
+      "target_anchor": "rs3-elements",
+      "note_zh": "Orbital inclination为轨道倾角，Earth’s rotation为地球自转。轨道倾角由赤道平面量至轨道平面，与卫星当前纬度、姿态或传感器侧摆角不同；再结合轨道类型图讨论顺行、逆行和近极轨道。",
+      "note_en": "Orbital inclination is measured from the equatorial plane to the orbital plane. It differs from current satellite latitude, attitude, and sensor off-nadir angle. Use this geometry with the orbit-family figure to discuss prograde, retrograde, and near-polar orbits.",
+      "dimensions": {
+        "width": 822,
+        "height": 320
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-orbital-inclination.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-orbit-families",
+      "book_id": "campbell",
+      "title_zh": "轨道高度分类与太阳同步、地球静止轨道",
+      "title_en": "Orbit altitude classes, sun-synchronous and geostationary orbits",
+      "page": 102,
+      "printed_page": "63",
+      "figure_number": "3.10",
+      "credit": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition, Figure 3.10.",
+      "crop_px": [
+        112,
+        926,
+        936,
+        1349
+      ],
+      "target_anchor": "rs3-orbits",
+      "note_zh": "LEO/MEO按高度范围分类；SSO通过轨道面在地心惯性系中的进动，匹配太阳平均视运动，近似保持同类节点过境的平均地方太阳时。这些类别可以交叉。图中GEO表示地球静止，GTO表示地球静止转移轨道。图非比例绘制；近极轨道不自动太阳同步，太阳高度也不全年恒定。",
+      "note_en": "LEO/MEO classify altitude, while SSO matches orbital-plane precession in an Earth-centred inertial frame to the Sun’s mean apparent motion, keeping mean local solar time approximately consistent for comparable node crossings. These categories can overlap. GEO here is geostationary and GTO is geostationary transfer. The figure is not to scale; near-polar does not automatically mean sun-synchronous or constant seasonal solar elevation.",
+      "dimensions": {
+        "width": 824,
+        "height": 423
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-orbit-families.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-ground-tracks",
+      "book_id": "campbell",
+      "title_zh": "Landsat轨迹、幅宽与影像条带",
+      "title_en": "Landsat tracks, swath width and image strips",
+      "page": 104,
+      "printed_page": "65",
+      "figure_number": "3.11",
+      "credit": "From NASA.",
+      "crop_px": [
+        112,
+        727,
+        935,
+        1373
+      ],
+      "target_anchor": "rs3-timing",
+      "note_zh": "条带显示降轨观测在地表的方向与横向覆盖宽度，帮助区分卫星地面轨迹和具有宽度的成像条带。拼接图来自多个轨道或影像，不能解释成一次过境覆盖美国，也不能从静态拼图推断重访周期。",
+      "note_en": "The strips show descending-track orientation and cross-track coverage width. Distinguish the satellite ground track from a finite-width image swath. This composite combines multiple tracks or scenes; it is not coverage from a single pass and does not by itself establish revisit time.",
+      "dimensions": {
+        "width": 823,
+        "height": 646
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-ground-tracks.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-pushbroom-whiskbroom",
+      "book_id": "campbell",
+      "title_zh": "推扫线阵与摆扫扫描镜对照",
+      "title_en": "Pushbroom linear array and whiskbroom scan mirror",
+      "page": 156,
+      "printed_page": "117",
+      "figure_number": "5.1",
+      "credit": "Image by Susmita Sen.",
+      "crop_px": [
+        112,
+        136,
+        936,
+        646
+      ],
+      "target_anchor": "rs4-scanning",
+      "note_zh": "(a) Linear array（线阵）同时接收一行，依靠Forward motion（平台前进）形成沿轨方向；(b) Scan mirror（扫描镜）跨轨扫描，逐像元形成一行。横向扫描与平台前进是两个不同动作。再看IFOV图辨认单个探测器足迹；长驻留时间还受像元尺度、速度和信噪比要求约束。",
+      "note_en": "(a) A linear array receives a line simultaneously; forward platform motion builds the along-track dimension. (b) A scan mirror sweeps across track and samples the line pixel by pixel. Cross-track scanning and forward motion are distinct. Relate this to the IFOV footprint; dwell time also depends on sampling scale, speed, and signal-to-noise requirements.",
+      "dimensions": {
+        "width": 824,
+        "height": 510
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-pushbroom-whiskbroom.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-ifov",
+      "book_id": "campbell",
+      "title_zh": "瞬时视场与地面足迹",
+      "title_en": "Instantaneous field of view and ground footprint",
+      "page": 157,
+      "printed_page": "118",
+      "figure_number": "5.3",
+      "credit": "Image by Susmita Sen.",
+      "crop_px": [
+        115,
+        950,
+        938,
+        1349
+      ],
+      "target_anchor": "rs4-ifov",
+      "note_zh": "本站IFOV表示某方向角宽，GIFOV表示其地面几何投影，注明沿轨或横轨；教材也将地面区域称IFOV。平地天底、β为全角弧度且H为相对地面高度时，该方向宽度g=2Htan(β/2)，小角时g≈Hβ。这是几何足迹；GSD是采样间距，GRD须连同目标对比度、噪声及分辨判据解释，不能当最小检测尺寸。",
+      "note_en": "Here IFOV is angular width in a stated direction and GIFOV its geometric ground projection, specifying along/across track; the textbook also calls the ground area IFOV. For flat nadir geometry, β is full angular width in radians and H is height above ground: g=2Htan(β/2), or g≈Hβ for small angles. This is a geometric footprint. GSD is sampling spacing; GRD requires target contrast, noise and a resolution criterion, rather than a minimum detectable size.",
+      "dimensions": {
+        "width": 823,
+        "height": 399
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-ifov.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-campbell-sar-geometry",
+      "book_id": "campbell",
+      "title_zh": "侧视雷达的斜距、角度与距离向",
+      "title_en": "Side-looking radar: slant range, angles and range direction",
+      "page": 250,
+      "printed_page": "211",
+      "figure_number": "8.7",
+      "credit": "Image by Susmita Sen.",
+      "crop_px": [
+        112,
+        729,
+        937,
+        1349
+      ],
+      "target_anchor": "rs4-radar",
+      "note_zh": "本图为正侧视简化几何：沿轨对应方位，跨轨地面方向对应地距，传播时间首先给斜距。Look angle在平台处相对天底方向量取，Depression angle相对同一参考水平面量取，二者互余。Incidence angle在目标处量取目标指向传感器的视线与参考地表向上法线之夹角；Local incidence angle改用实际局部法线。两处参考竖直平行时，look与参考incidence才相等；局部坡面还会改变局部入射角。",
+      "note_en": "This is simplified broadside geometry: along track is azimuth, across-track ground direction is ground range, and travel time first gives slant range. Look angle is measured at the platform from nadir; depression angle uses the same reference horizontal, making them complementary. At the target, incidence angle uses the target-to-sensor line and reference upward surface normal; local incidence uses the actual terrain normal. Look and reference incidence are equal only when the reference verticals are parallel; slope further changes local incidence.",
+      "dimensions": {
+        "width": 825,
+        "height": 620
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-campbell-sar-geometry.webp",
+      "source": "Campbell, Wynne and Thomas (2023), Introduction to Remote Sensing, Sixth Edition",
+      "source_file": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "dpi": 150
+    },
+    {
+      "id": "book-ccrs-speckle",
+      "book_id": "ccrs",
+      "title_zh": "均匀目标也会出现相干斑",
+      "title_en": "Speckle can occur over a homogeneous target",
+      "page": 110,
+      "printed_page": "110",
+      "figure_number": "Section 3.6, unnumbered A/B comparison",
+      "credit": "© CCRS / CCT · Canada Centre for Remote Sensing",
+      "crop_px": [
+        446,
+        844,
+        839,
+        1243
+      ],
+      "target_anchor": "rs4-radar",
+      "note_zh": "A表示没有相干斑影响时均匀区域的理想平均色调，B表示分辨单元内散射波相干叠加后亮暗波动。相干斑不等于地物类别变化，也不能仅由单像元亮度推断目标属性。多视与空间滤波都可降低波动，但对空间细节和统计估计有不同影响。",
+      "note_en": "A represents the ideal uniform mean tone without speckle; B shows bright and dark fluctuations from coherent interference of scattering returns within resolution cells. Speckle does not imply changing land-cover classes, and one pixel's brightness alone does not establish target properties. Multilooking and spatial filtering reduce fluctuations with different effects on spatial detail and statistical estimation.",
+      "dimensions": {
+        "width": 393,
+        "height": 399
+      },
+      "kind": "textbook",
+      "src": "/remote-sensing/textbook-figures/book-ccrs-speckle.webp",
+      "source": "Canada Centre for Remote Sensing, Fundamentals of Remote Sensing",
+      "source_file": "Fundamentals_of_Remote_Sensing_(Canada_Centre_for_Remote_Sensing)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "source_sha256": "5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0",
+      "dpi": 150
+    }
+  ]
+}

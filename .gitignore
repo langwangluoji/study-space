@@ -5,6 +5,9 @@ docs/lecture-*.md
 docs/cifar10-practice.md
 docs/read-*.md
 reports/screenshots/
+reports/textbook-pages/
+reports/textbook-dual-end-review.md
+reports/textbook-web-review.txt
 __pycache__/
 docs/_fragments/generated/
 docs/.vitepress/resource-catalog.json

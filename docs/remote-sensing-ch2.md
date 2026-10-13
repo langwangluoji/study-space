@@ -17,7 +17,7 @@ next:
 
 传感器收到的是辐射，学习者想知道的却是材料、温度或环境状态。两者如何连接？本章先定义波与测量量，再说明辐射产生、传播和地物响应，最后把这些过程连接成解释框架。主来源是《第2章.pdf》99个文件页，与《遥感汇总.pdf》文件第1–99页对应；英文班补充来源为DOCX Lecture 2（XML段落62–388）和《遥感原理与应用笔记.pdf》文件第1–3页。
 
-所有公式使用绝对温度K。波长未特别说明时按SI单位m代入；按μm展示的谱量必须同步转换数值。讲义原图用于解释关系；旧图、定性图与缺少测量条件的曲线不能当作材料的精确测量谱。课件中的错字、单位错误和省略条件在相关概念旁说明。
+所有公式使用绝对温度K。波长未特别说明时按SI单位m代入；按μm展示的谱量必须同步转换数值。讲义原图与明确标注来源的教材原图用于解释关系；旧图、定性图与缺少测量条件的曲线不能当作材料的精确测量谱。课件中的错字、单位错误和省略条件在相关概念旁说明。
 
 </div>
 
@@ -25,7 +25,7 @@ next:
 
 A sensor receives radiation, but a learner wants to understand materials, temperature or environmental conditions. How are they connected? This chapter first defines waves and measurement quantities, then develops radiation production, propagation and target response, and finally connects these processes into an interpretation framework. The main source is the 99-file-page *第2章.pdf*, corresponding to file pages 1–99 of *遥感汇总.pdf*. English-class supplements are DOCX Lecture 2 (XML paragraphs 62–388) and *遥感原理与应用笔记.pdf*, file pages 1–3.
 
-Temperatures in the equations are absolute temperatures in kelvins. Unless stated otherwise, wavelengths entered into SI equations are in metres. Spectral quantities displayed per micrometre require a corresponding numerical conversion. Original lecture figures explain relationships; historical or qualitative curves without stated measurement conditions are not precise measured spectra. Source typos, unit errors and omitted conditions are explained beside the relevant concepts.
+Temperatures in the equations are absolute temperatures in kelvins. Unless stated otherwise, wavelengths entered into SI equations are in metres. Spectral quantities displayed per micrometre require a corresponding numerical conversion. Original lecture and explicitly sourced textbook figures explain relationships; historical or qualitative curves without stated measurement conditions are not precise measured spectra. Source typos, unit errors and omitted conditions are explained beside the relevant concepts.
 
 </div>
 
@@ -41,6 +41,8 @@ $$c=\lambda\nu,\qquad c=299\,792\,458\ \mathrm{m\,s^{-1}}.$$
 
 介质中应使用传播相速度$v$，即$v=\lambda\nu$；跨介质传播时频率保持相应边界条件所要求的一致，波长可因折射率改变。常用真空波长描述遥感波谱，不能把真空光速不加说明地当作所有介质中的传播速度。波长短意味着频率高，却不等于某像元记录的总辐射更强。
 
+还要区分<strong>振幅（amplitude）</strong>与<strong>相位（phase）</strong>：振幅描述电磁场振荡的幅度，相位描述周期中的位置。对同一介质中的相干平面波，时间平均能流密度与场振幅的平方有关；场振幅本身不以W m$^{-2}$表示。教材的示意波峰高度可用来理解振幅，不能把它直接当作光谱辐照度。
+
 光的量子描述把能量交换写成光子形式。单个光子的能量记为$q_{\mathrm{ph}}$，避免与稍后表示辐照度的$E$混淆：
 
 $$q_{\mathrm{ph}}=h\nu=\frac{hc}{\lambda},\qquad h=6.62607015\times10^{-34}\ \mathrm{J\,s}.$$
@@ -51,6 +53,8 @@ $$q_{\mathrm{ph}}=h\nu=\frac{hc}{\lambda},\qquad h=6.62607015\times10^{-34}\ \ma
 
 <strong>偏振（polarization）</strong>描述电场振动的方向与轨迹。线偏振、圆偏振与椭圆偏振属于偏振状态；雷达中的HH、VV、HV、VH分别说明发射和接收通道的极化组合，不是波长分类。<strong>多普勒效应（Doppler effect）</strong>指相对运动引起接收频率变化，可为运动测量和SAR方位处理提供信息。其大小依速度在视线方向的分量与传播几何而变，不能只凭目标是否运动判断相同频移。
 
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-wave-properties)：Campbell等第六版 PDF 64–66, 70–71, 85–86页（印刷 25–27, 31–32, 46–47页），2.2 The Electromagnetic Spectrum; 2.4 Radiation Laws; 2.6 Polarization；CCRS教程 PDF 7–8页（印刷 7–8页），1.2 Electromagnetic Radiation。比较波长、频率、振幅与相位；哪个属性描述光子能量，哪个影响相干干涉？
+
 来源：《第2章.pdf》文件第5–16页；DOCX Lecture 2波动与光子部分。这里统一使用$\nu$表示频率，部分资料用$f$，两者可表示同一物理量。
 
 
@@ -60,6 +64,7 @@ $$q_{\mathrm{ph}}=h\nu=\frac{hc}{\lambda},\qquad h=6.62607015\times10^{-34}\ \ma
 | --- | --- | --- |
 | 波长 λ | Wavelength | 同相位空间间隔，m；真空 c=λν。 |
 | 频率 ν | Frequency | 每秒周期数，Hz；不是辐射强度。 |
+| 振幅 / 相位 | Amplitude / phase | 场振荡幅度 / 周期位置；场振幅不是瓦数，稳定相位关系决定干涉。 |
 | 干涉/衍射/偏振 | Interference/diffraction/polarization | 相位叠加、有限孔径传播、电场方向分别描述不同波动属性。 |
 
 </div>
@@ -72,6 +77,8 @@ $$c=\lambda\nu,\qquad c=299\,792\,458\ \mathrm{m\,s^{-1}}.$$
 
 In a medium, use the phase velocity $v$, so that $v=\lambda\nu$. Frequency remains consistent with the boundary conditions across a stationary interface, while wavelength can change with refractive index. Remote sensing spectra are commonly described using vacuum wavelength. The vacuum speed of light must not be silently applied to every medium. A shorter wavelength means a higher frequency, not necessarily more total radiation in a pixel measurement.
 
+Also distinguish <strong>amplitude (振幅)</strong> from <strong>phase (相位)</strong>: amplitude describes the magnitude of field oscillation, while phase identifies a position within the cycle. For a coherent plane wave in the same medium, time-averaged energy flux density is related to squared field amplitude; field amplitude itself is not measured in W m$^{-2}$. The textbook wave height illustrates amplitude, rather than directly specifying spectral irradiance.
+
 The quantum description expresses energy exchange in photons. We write the energy of one photon as $q_{\mathrm{ph}}$ to avoid conflict with irradiance $E$, introduced below:
 
 $$q_{\mathrm{ph}}=h\nu=\frac{hc}{\lambda},\qquad h=6.62607015\times10^{-34}\ \mathrm{J\,s}.$$
@@ -82,6 +89,8 @@ A shorter-wavelength photon carries more energy, but radiant flux also depends o
 
 <strong>Polarization (偏振)</strong> describes the direction and trajectory of electric-field oscillation. Linear, circular and elliptical polarization are states of polarization. Radar HH, VV, HV and VH specify transmitted and received polarization combinations; they are not wavelength classes. The <strong>Doppler effect</strong> is a received-frequency change due to relative motion, useful in motion measurement and SAR azimuth processing. Its magnitude depends on the line-of-sight velocity component and propagation geometry. Moving targets do not all produce the same shift.
 
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-wave-properties): Campbell et al., sixth edition, PDF pp. 64–66, 70–71, 85–86 (printed pp. 25–27, 31–32, 46–47), 2.2 The Electromagnetic Spectrum; 2.4 Radiation Laws; 2.6 Polarization; CCRS tutorial, PDF pp. 7–8 (printed pp. 7–8), 1.2 Electromagnetic Radiation. Compare wavelength, frequency, amplitude and phase: which describes photon energy, and which governs coherent interference?
+
 Sources: *第2章.pdf*, file pages 5–16; the wave and photon material in DOCX Lecture 2. Frequency is consistently written $\nu$ here; some sources use $f$ for the same quantity.
 
 
@@ -91,6 +100,7 @@ Sources: *第2章.pdf*, file pages 5–16; the wave and photon material in DOCX 
 | --- | --- | --- |
 | 波长 λ | Wavelength | Spatial separation of equal phase, m; c=λν in vacuum. |
 | 频率 ν | Frequency | Cycles per second, Hz; not radiation intensity. |
+| 振幅 / 相位 | Amplitude / phase | Field oscillation magnitude / cycle position; field amplitude is not wattage, and stable phase relationships govern interference. |
 | 干涉/衍射/偏振 | Interference/diffraction/polarization | Phase superposition, finite-aperture propagation and electric-field orientation are distinct properties. |
 
 </div>
@@ -114,11 +124,21 @@ Sources: *第2章.pdf*, file pages 5–16; the wave and photon material in DOCX 
 
 表中8–14 μm是常见地表热遥感窗口表述，不是全部红外或全部热辐射的定义。热物体也可在其他波长发射，热红外仪器常在该范围内选取更窄的实际波段，避开特定吸收。笔记中的800–1400 nm应理解为0.8–1.4 μm，不能替代8–14 μm；课件维恩常数的mm/μm错误也说明单位必须与数字一起检查。
 
+| 概念 | English term | 决定因素与可比较条件 |
+| --- | --- | --- |
+| 波谱区域 | Spectral region | 波长命名约定；不同教材边界可不同。 |
+| 大气窗口 | Atmospheric window | 给定路径与大气状态下相对高透射；不是仪器规格。 |
+| 仪器波段 | Instrument band | 实际光谱响应函数；相同区域名称不保证相同测量。 |
+
+Campbell第六版PDF第68、70页的微波范围正文有μm与m/mm混写；本章采用约1 mm–1 m的入门范围，并以实际仪器频率或波长为准。其表2.3与其他教程使用的命名界限不同，不能据此把近红外与短波红外边界理解成物理突变。
+
 再区分三个问题：<strong>波谱区域</strong>给波长区间命名，<strong>大气窗口</strong>描述特定路径上大气透射较好的区间，<strong>仪器波段</strong>由仪器响应函数决定。三者并不等同。仪器的“中心波长”只是摘要信息，实际测量往往按光谱响应$R_i(\lambda)$对一个区间内的辐亮度加权。例如可定义归一化的波段平均辐亮度
 
 $$\overline{L}_i=\frac{\int R_i(\lambda)L_\lambda\,\mathrm{d}\lambda}{\int R_i(\lambda)\,\mathrm{d}\lambda}.$$
 
 此式约定响应的定义和积分单位一致，所得平均量沿用$L_\lambda$的光谱单位；它不同于对波长积分后的总辐亮度。真实产品还需遵循相应仪器与定标元数据。两个仪器即使都称“近红外”，响应曲线不同，也可能对同一目标给出不同观测。光谱分辨率则涉及能区分多细的光谱结构，不能只数波段个数。
+
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-spectrum)：Campbell等第六版 PDF 66–70页（印刷 27–31页），2.2 The Electromagnetic Spectrum; 2.3 Major Divisions; Tables 2.1–2.3；CCRS教程 PDF 9–11, 41–42页（印刷 9–11, 41–42页），1.3 The Electromagnetic Spectrum; 2.4 Spectral Resolution。区分命名区间、透射窗口与仪器响应；注意教材正文的微波单位勘误。
 
 来源：《第2章.pdf》文件第17–25、61–64页；笔记文件第1页。仪器响应积分为帮助连接光谱量与测量的教学补充。
 
@@ -139,11 +159,21 @@ The <strong>electromagnetic spectrum</strong> arranges wavelengths continuously.
 
 The 8–14 μm interval is a common surface thermal-observation window, not a definition of all infrared or all thermal radiation. Warm objects emit at other wavelengths too. Thermal instruments often select narrower bands within this interval to avoid particular absorption. The notes' 800–1400 nm interval is 0.8–1.4 μm, not 8–14 μm. The slides' mm/μm error in Wien's constant likewise shows why units and numbers must be checked together.
 
+| Concept | 中文术语 | Determining factors and comparison conditions |
+| --- | --- | --- |
+| Spectral region | 波谱区域 | A wavelength naming convention; boundaries can differ between textbooks. |
+| Atmospheric window | 大气窗口 | Relatively high transmission for an atmosphere and path; not an instrument specification. |
+| Instrument band | 仪器波段 | The actual spectral response function; the same region name does not ensure the same measurement. |
+
+The microwave-range prose on PDF pages 68 and 70 of Campbell's sixth edition mixes μm with m/mm. This chapter uses approximately 1 mm–1 m for introductory discussion and checks actual instrument frequency or wavelength. Its Table 2.3 also uses naming boundaries different from other tutorials; NIR/SWIR boundaries are conventions, not abrupt physical transitions.
+
 Distinguish three concepts. A <strong>spectral region</strong> names wavelengths; an <strong>atmospheric window</strong> describes relatively high atmospheric transmission for a specified path; an <strong>instrument band</strong> is defined by the instrument's response function. They are not interchangeable. A centre wavelength is only a summary. An instrument usually weights radiance over an interval using its spectral response $R_i(\lambda)$. A normalized band-average radiance can be defined as
 
 $$\overline{L}_i=\frac{\int R_i(\lambda)L_\lambda\,\mathrm{d}\lambda}{\int R_i(\lambda)\,\mathrm{d}\lambda}.$$
 
 The response convention and integration units must be consistent. This average retains the spectral units of $L_\lambda$ and differs from wavelength-integrated radiance. Actual products also follow instrument-specific calibration and metadata conventions. Two sensors both described as “NIR” can measure a target differently if their response functions differ. Spectral resolution concerns the fineness of distinguishable spectral structure, not simply the number of bands.
+
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-spectrum): Campbell et al., sixth edition, PDF pp. 66–70 (printed pp. 27–31), 2.2 The Electromagnetic Spectrum; 2.3 Major Divisions; Tables 2.1–2.3; CCRS tutorial, PDF pp. 9–11, 41–42 (printed pp. 9–11, 41–42), 1.3 The Electromagnetic Spectrum; 2.4 Spectral Resolution. Separate named regions, transmission windows and instrument response; check the microwave-unit correction.
 
 Sources: *第2章.pdf*, file pages 17–25 and 61–64; notes file page 1. The instrument-response integral is a teaching supplement connecting spectral quantities with measurements.
 
@@ -177,6 +207,8 @@ $\theta$为传播方向与面法线夹角，$\mathrm{d}A\cos\theta$为投影面�
 | 光谱辐亮度 | $L_\lambda$ | W m$^{-2}$ sr$^{-1}$ m$^{-1}$ | 另按每米波长计 |
 
 光谱量表示单位光谱间隔内的量，不是在符号后添下标而保持单位不变。$L_\lambda$按每米表示时，$L=\int L_\lambda\,\mathrm{d}\lambda$；若改按每μm，数值为每米数值的$10^{-6}$倍。频率谱$L_\nu$也不能直接把横轴标签从波长换成频率：需满足$L_\lambda|\mathrm{d}\lambda|=L_\nu|\mathrm{d}\nu|$，即$L_\nu=L_\lambda\lambda^2/c$。这也是按波长与按频率绘出的谱峰不能简单互换的原因。
+
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-radiometry)：Campbell等第六版 PDF 71页（印刷 32页），2.4 Radiation Laws: radiant flux, irradiance and radiant exitance。用单位区分通量、辐照度与出射度；方向与光谱密度的推导在本节展开。
 
 来源：DOCX段落178–209和笔记文件第1–2页。此节是英文班辐射度量学的系统补充，不宣称中文课件已完整列出全部量。
 
@@ -218,6 +250,8 @@ Here $\theta$ is the angle between propagation direction and surface normal; $\m
 | Spectral radiance | $L_\lambda$ | W m$^{-2}$ sr$^{-1}$ m$^{-1}$ | Additionally per metre of wavelength |
 
 A spectral quantity is per unit spectral interval; adding a subscript does not leave the unit unchanged. With $L_\lambda$ defined per metre, $L=\int L_\lambda\,\mathrm{d}\lambda$. Its numerical value per micrometre is $10^{-6}$ times the per-metre value. A frequency spectrum $L_\nu$ also requires more than relabelling the wavelength axis: $L_\lambda|\mathrm{d}\lambda|=L_\nu|\mathrm{d}\nu|$, giving $L_\nu=L_\lambda\lambda^2/c$. This is why wavelength- and frequency-based peak locations cannot be interchanged by a simple reciprocal substitution.
+
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-radiometry): Campbell et al., sixth edition, PDF pp. 71 (printed pp. 32), 2.4 Radiation Laws: radiant flux, irradiance and radiant exitance. Use units to distinguish flux, irradiance and exitance; this section develops directional and spectral-density definitions further.
 
 Sources: DOCX paragraphs 178–209 and notes file pages 1–2. This section systematizes English-class radiometry; it does not claim that the Chinese slides already list every quantity in full.
 
@@ -269,6 +303,8 @@ $$B_\lambda\approx\frac{2ck_BT}{\lambda^4},\qquad B_\nu\approx\frac{2k_BT\nu^2}{
 
 两式属于不同谱变量，单位也相应不同；不能把$\lambda^{-2}$不加单位地作为$B_\lambda$。在约300 K、10 μm时$x$约4.8，远不满足此近似；在足够长的微波波长才更适用。用适用条件选择定律，远比记住一个“长波公式”可靠。
 
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-blackbody-laws)：Campbell等第六版 PDF 71–72页（印刷 32–33页），2.4 Radiation Laws; Equations 2.2–2.5; Figure 2.5。先判定光谱量或全谱量，再核对单位、温度与近似条件。
+
 来源：《第2章.pdf》文件第26–31页，配图来自第31页；DOCX Lecture 2与笔记文件第2页。$\pi$积分、SI谱单位及近似条件在此展开说明。
 
 
@@ -313,6 +349,8 @@ $$B_\lambda\approx\frac{2ck_BT}{\lambda^4},\qquad B_\nu\approx\frac{2k_BT\nu^2}{
 
 The equations refer to different spectral variables and have corresponding different units. A $\lambda^{-2}$ expression without a defined unit must not be used for $B_\lambda$. At about 300 K and 10 μm, $x$ is about 4.8, far outside this approximation. Sufficiently long microwave wavelengths are more suitable. Choosing a law by its applicability conditions is more reliable than memorising a “longwave formula”.
 
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-blackbody-laws): Campbell et al., sixth edition, PDF pp. 71–72 (printed pp. 32–33), 2.4 Radiation Laws; Equations 2.2–2.5; Figure 2.5. Identify spectral versus wavelength-integrated quantities, then check units, temperature and approximation conditions.
+
 Sources: *第2章.pdf*, file pages 26–31, with the figure from page 31; DOCX Lecture 2 and notes file page 2. The $\pi$ integral, SI spectral units and approximation conditions are developed explicitly here.
 
 
@@ -335,6 +373,8 @@ Sources: *第2章.pdf*, file pages 26–31, with the figure from page 31; DOCX L
 
 对同一入射束或匹配定义的入射分布，能量守恒给出<strong>反射率</strong>$\rho$、<strong>吸收率</strong>$\alpha$和<strong>透射率</strong>$\tau$的关系$\rho+\alpha+\tau=1$，三者都是无量纲。对于不透明体，$\tau=0$。<strong>基尔霍夫定律（Kirchhoff's law）</strong>在热平衡、通常的互易材料条件下，把相同波长、相应匹配方向与偏振条件下的发射率与吸收率联系起来：$\varepsilon_\lambda=\alpha_\lambda$。不能跨波长套用，也不能直接写$\varepsilon=\rho$。只有进一步满足不透明及相应光谱/角度定义匹配时，才有$\varepsilon_\lambda=1-\rho_\lambda$；这并不允许用可见光反射率推断热红外发射率。
 
+<strong>灰体（graybody）</strong>在讨论的光谱范围内具有近似不随波长变化、且小于1的发射率；<strong>选择性辐射体（selective radiator）</strong>的发射率随波长变化。真实物体不是仅因发射率小于1就一定是灰体，灰体是限定范围的模型。Campbell第10章图10.6可对照这一区别。
+
 表面温度还受热传导、热容量、热惯量、蒸发和能量收支影响。发射率描述辐射比例，热惯量描述热响应能力，两者不是同一个物性，不能照抄原资料中的简单单调联系。
 
 <strong>亮度温度（brightness temperature，简称亮温）</strong>$T_B$是用同一辐射定义下的等效黑体表示测得辐亮度时所需的温度。对于已知单色辐亮度$L_\lambda$，由$B_\lambda(T_B)=L_\lambda$反解：
@@ -352,6 +392,8 @@ $t_\lambda$是路径透射率，$T_s$为地表温度，$L_{\lambda,\uparrow}$是
 仅在瑞利-金斯区间，忽略反射背景和大气、采用相同频率或相同匹配波段定义时，辐亮度近似与温度成正比，才有$T_B\approx\varepsilon T$。约300 K地表的10 μm热红外不满足该近似；本站不沿用原稿无条件的$T_B=\varepsilon T$。
 
 一个公式演算能看清区别：设单色观测为10 μm，表面300 K，发射率0.9，并刻意忽略背景与大气。普朗克式给出的黑体谱辐亮度约为9.924 W m$^{-2}$ sr$^{-1}$ μm$^{-1}$，实际发射为其0.9倍；逆普朗克得到亮温约293.6 K，而直接相乘会得到270 K。这个例子不是地表温度产品，而是验证热红外不能套用瑞利-金斯线性关系。
+
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-emissivity-brightness-temperature)：Campbell等第六版 PDF 299–303页（印刷 260–264页），10.6 Thermal Properties of Objects; 10.7 Land Surface Temperature; Figure 10.6；CCRS教程 PDF 50–51页（印刷 50–51页），2.9 Thermal Imaging。对比灰体与选择性辐射体，并说明亮温为何不直接等于地表真实温度。
 
 来源：《第2章.pdf》文件第31–36页；热成像参照《第4章.pdf》文件第23–29页；DOCX Lecture 2实际物体部分。原稿第32、35页的热物性和亮温简化在此限定。
 
@@ -373,6 +415,8 @@ Real surfaces are usually not blackbodies. <strong>Emissivity (发射率)</stron
 
 For one incident beam, or an incident distribution with matching definitions, energy conservation gives $\rho+\alpha+\tau=1$ for <strong>reflectance</strong>, <strong>absorptivity</strong> and <strong>transmittance</strong>, all dimensionless. An opaque body has $\tau=0$. <strong>Kirchhoff's law</strong> relates emissivity and absorptivity in thermal equilibrium for conventional reciprocal materials, at the same wavelength and appropriately matched direction and polarization: $\varepsilon_\lambda=\alpha_\lambda$. It must not be applied across wavelengths, and it does not state $\varepsilon=\rho$. Only with additional opacity and matching spectral/angular definitions does $\varepsilon_\lambda=1-\rho_\lambda$ follow. Visible reflectance therefore cannot simply determine thermal-infrared emissivity.
 
+A <strong>graybody (灰体)</strong> has approximately wavelength-independent emissivity below 1 over the spectral range being modelled; a <strong>selective radiator (选择性辐射体)</strong> has wavelength-dependent emissivity. Emissivity below 1 alone does not make every real object a graybody: the graybody is a range-limited model. Compare Figure 10.6 in Campbell's Chapter 10.
+
 Surface temperature also depends on heat conduction, heat capacity, thermal inertia, evaporation and energy balance. Emissivity describes a radiation ratio; thermal inertia describes thermal response. They are different physical properties, without the universal simple monotonic relationship implied by parts of the source.
 
 <strong>Brightness temperature (亮度温度 or 亮温)</strong> $T_B$ is the temperature an equivalent blackbody needs to reproduce measured radiance under the same radiation definition. For monochromatic radiance $L_\lambda$, inversion of $B_\lambda(T_B)=L_\lambda$ gives
@@ -390,6 +434,8 @@ Here $t_\lambda$ is path transmittance, $T_s$ is surface temperature, and $L_{\l
 Only in the Rayleigh-Jeans regime, with atmosphere and reflected background neglected and matching frequency or band definitions, is radiance approximately proportional to temperature, giving $T_B\approx\varepsilon T$. Thermal infrared at 10 μm for a roughly 300 K surface does not satisfy this approximation. The source's unconditional $T_B=\varepsilon T$ is therefore not used.
 
 A calculation makes the distinction concrete. Assume monochromatic observation at 10 μm of a 300 K surface with emissivity 0.9, deliberately neglecting background and atmosphere. Planck's law gives blackbody spectral radiance of about 9.924 W m$^{-2}$ sr$^{-1}$ μm$^{-1}$; actual emission is 0.9 times this value. Inverse Planck gives a brightness temperature of about 293.6 K, whereas direct multiplication would give 270 K. This is a formula demonstration, not a surface-temperature product: it verifies why the linear Rayleigh-Jeans relation does not apply in this thermal-infrared example.
+
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-emissivity-brightness-temperature): Campbell et al., sixth edition, PDF pp. 299–303 (printed pp. 260–264), 10.6 Thermal Properties of Objects; 10.7 Land Surface Temperature; Figure 10.6; CCRS tutorial, PDF pp. 50–51 (printed pp. 50–51), 2.9 Thermal Imaging. Compare graybodies and selective radiators, and explain why brightness temperature need not equal physical surface temperature.
 
 Sources: *第2章.pdf*, file pages 31–36; thermal imaging in *第4章.pdf*, file pages 23–29; real-surface material in DOCX Lecture 2. The source's thermal-property and brightness-temperature simplifications on pages 32 and 35 are qualified here.
 
@@ -425,6 +471,8 @@ Sources: *第2章.pdf*, file pages 31–36; thermal imaging in *第4章.pdf*, fi
 
 应用上，夜间热影像仍可观测不同地物的热状态，却不能仅凭夜间亮暗推断材料；白天近红外植被较亮也不表明叶片温度高。解释之前应先识别能量来源，再选择反射或热发射模型，必要时采用混合模型。
 
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-solar-terrestrial)：Campbell等第六版 PDF 81–82, 88–89页（印刷 42–43, 49–50页），2.5 Overview of Energy Interactions; 2.7 Summary; Figures 2.13, 2.20–2.22；CCRS教程 PDF 14–15, 19页（印刷 14–15, 19页），1.4 Interactions with the Atmosphere; 1.6 Passive vs. Active Sensing。连接太阳与地球谱峰和三种能量路径；全球平均收支不等于局部瞬时辐照度。
+
 来源：《第2章.pdf》文件第37–45页；DOCX Lecture 2太阳/地球辐射部分。5800 K与300 K用于量级示例，非某次卫星观测的测量值。
 
 </div>
@@ -441,11 +489,20 @@ Read the actual content of each original figure first. Page 21 shows reflection,
 
 Night-time thermal imagery can observe different thermal states, yet night-time brightness alone cannot identify material. Daytime vegetation brightness in NIR also does not indicate hot leaves. Identify the energy source first, then choose a reflection model, thermal-emission model or a mixed model when necessary.
 
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-solar-terrestrial): Campbell et al., sixth edition, PDF pp. 81–82, 88–89 (printed pp. 42–43, 49–50), 2.5 Overview of Energy Interactions; 2.7 Summary; Figures 2.13, 2.20–2.22; CCRS tutorial, PDF pp. 14–15, 19 (printed pp. 14–15, 19), 1.4 Interactions with the Atmosphere; 1.6 Passive vs. Active Sensing. Connect solar/terrestrial peaks with the three energy paths; a global-average budget is not local instantaneous irradiance.
+
 Sources: *第2章.pdf*, file pages 37–45; the solar and terrestrial material in DOCX Lecture 2. The 5800 K and 300 K values illustrate scale; they are not measurements from a particular satellite acquisition.
 
 </div>
 
 ## 2.7 大气吸收、散射与窗口 · Atmospheric absorption, scattering and windows {#rs2-atmosphere}
+
+<!-- textbook-figures-rs2-atmosphere:start -->
+
+<RsFigure id="book-campbell-atmospheric-paths" />
+
+<!-- textbook-figures-rs2-atmosphere:end -->
+
 
 <RsFigure id="windows" />
 
@@ -465,7 +522,18 @@ $$t_\lambda=\exp(-\delta_\lambda),\qquad \delta_\lambda=\int_{\mathrm{path}}\kap
 
 $\delta_\lambda$为无量纲光学厚度，$\kappa_{\mathrm{ext},\lambda}$单位m$^{-1}$。式中描述直达部分，不把散射进入视线的辐射一并等价成透射。一个初步的传感器端关系是$L_{\lambda,\mathrm{sensor}}\approx t_\lambda L_{\lambda,\mathrm{surface}}+L_{\lambda,\mathrm{path}}$；路径辐射可包含散射或发射贡献，而复杂地表—大气耦合、多次散射还需要更完整模型。
 
+| 辐射贡献 | English term | 路径与含义 |
+| --- | --- | --- |
+| 直接照明 | Direct illumination | 太阳辐射未被散射即到达目标；随后可被地表反射。 |
+| 漫射照明 | Diffuse illumination | 先经大气散射再照到地表；阴影中仍可存在。 |
+| 路径辐射 | Path radiance | 大气直接向视线散射或发射的贡献；不等于地表反射。 |
+| 邻近效应 | Adjacency effect | 邻近地表辐射经大气散射等进入观测；可混合空间信息。 |
+
+气态<strong>水汽（water vapour）</strong>的分子吸收，与液态<strong>水滴（water droplets）</strong>的粒子散射要分开。教程中“红外较少受散射”的概括表示特定粒径与波长下影响较弱，不代表散射为零，也不代表吸收与云遮挡消失。
+
 地表遥感通常希望选窗口减小干扰，但<strong>大气遥感可能主动选择吸收带</strong>来测量气体、云或温度剖面。窗口不是所有遥感的必要条件。薄雾使暗水体可见信号增加，就是路径散射改变对比度的例子。大气校正要估计相关状态和模型，不能保证凭一种固定处理就适用于所有日期、地形与波段。
+
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-atmosphere)：Campbell等第六版 PDF 73–80页（印刷 34–41页），2.5 Interactions with the Atmosphere; Figures 2.6–2.12; Table 2.4；CCRS教程 PDF 12–15页（印刷 12–15页），1.4 Interactions with the Atmosphere。追踪直接、漫射与路径辐射，区分水汽吸收与水滴散射。
 
 来源：《第2章.pdf》文件第46–64页；笔记文件第3页。原稿第53页的米氏幂律已限定；消光积分为解释窗口和路径的教学补充。
 
@@ -498,7 +566,18 @@ $$t_\lambda=\exp(-\delta_\lambda),\qquad \delta_\lambda=\int_{\mathrm{path}}\kap
 
 where $\delta_\lambda$ is dimensionless optical depth and $\kappa_{\mathrm{ext},\lambda}$ has units m$^{-1}$. This describes the direct component, not radiation scattered into the line of sight. A preliminary at-sensor relationship is $L_{\lambda,\mathrm{sensor}}\approx t_\lambda L_{\lambda,\mathrm{surface}}+L_{\lambda,\mathrm{path}}$. Path radiance may include scattering or emission, while multiple scattering and coupled atmosphere-surface interactions need a fuller model.
 
+| Radiation contribution | 中文术语 | Path and meaning |
+| --- | --- | --- |
+| Direct illumination | 直接照明 | Solar radiation reaches the target without scattering, then may be reflected. |
+| Diffuse illumination | 漫射照明 | Radiation first scattered by the atmosphere illuminates the surface, including shadows. |
+| Path radiance | 路径辐射 | Radiation scattered or emitted by the atmosphere into the viewing direction; distinct from surface reflection. |
+| Adjacency effect | 邻近效应 | Radiation from neighbouring surfaces enters an observation through atmospheric scattering or related transport, mixing spatial information. |
+
+Distinguish molecular absorption by gaseous <strong>water vapour (水汽)</strong> from particle scattering by liquid <strong>water droplets (水滴)</strong>. Tutorial summaries about less scattering in infrared mean weaker effects for particular sizes and wavelengths, rather than zero scattering or the disappearance of absorption and cloud obstruction.
+
 Surface remote sensing often selects windows to reduce interference, but <strong>atmospheric remote sensing may deliberately select absorption bands</strong> to measure gases, clouds or temperature profiles. A window is not necessary for every remote sensing task. Haze increasing visible signals over dark water illustrates how path scattering changes contrast. Atmospheric correction estimates relevant states and processes; no single fixed procedure is guaranteed to suit every date, terrain and band.
+
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-atmosphere): Campbell et al., sixth edition, PDF pp. 73–80 (printed pp. 34–41), 2.5 Interactions with the Atmosphere; Figures 2.6–2.12; Table 2.4; CCRS tutorial, PDF pp. 12–15 (printed pp. 12–15), 1.4 Interactions with the Atmosphere. Trace direct, diffuse and path contributions; distinguish water-vapour absorption from droplet scattering.
 
 Sources: *第2章.pdf*, file pages 46–64; notes file page 3. The slides' Mie power-law statement on file page 53 is qualified. The extinction integral supplements the explanation of windows and paths.
 
@@ -517,9 +596,18 @@ Sources: *第2章.pdf*, file pages 46–64; notes file page 3. The slides' Mie p
 
 ## 2.8 反射几何、朗伯表面与BRDF · Reflection geometry, Lambertian surfaces and BRDF {#rs2-reflectance-brdf}
 
+<!-- textbook-figures-rs2-reflectance-brdf:start -->
+
+<RsFigure id="book-campbell-brdf" />
+
+<!-- textbook-figures-rs2-reflectance-brdf:end -->
+
+
 
 <RsFigure id="reflection" />
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+在同一入射波长和照明条件下，以入射总通量为分母，完整统计全部反射、透射方向及偏振分量时，入射辐射的吸收率$\alpha_\lambda$、反射率$\rho_\lambda$与透射率$\tau_\lambda$满足$\alpha_\lambda+\rho_\lambda+\tau_\lambda=1$；对不透明介质可令$\tau_\lambda\approx0$。上式的反射率和透射率统计全部出射通量，某一观察方向的BRF不能直接代入。这是入射能量的分配，物体自身热发射不能作为第四项直接并入此比例。吸收后产生的荧光是另一种光谱贡献，不能把包含荧光和热发射的总出射光谱直接称为反射光谱。
 
 光照到地物后，离开的辐射不一定向各方向平均分配。<strong>镜面反射（specular reflection）</strong>把能量集中在与入射方向相关的镜面方向，平静水面可能出现耀斑；<strong>漫反射（diffuse reflection）</strong>向较广方向分配反射能量。真实表面常兼有方向性成分，粗糙与平滑也相对于波长而言。水面在某方向很亮，不意味着它在所有方向都有很高的反射率。
 
@@ -539,9 +627,13 @@ $$\rho_{\mathrm{dh},\lambda}=\int_{\mathrm{hemisphere}} f_r\cos\theta_r\,\mathrm
 
 <strong>反射率（reflectance）</strong>一般是指定波长及入射、出射角度范围下的反射/入射能量比例；<strong>反照率（albedo）</strong>在地表能量收支中通常指一定光谱范围和实际照明条件下向上半球总反射与总入射的比值。反照率、某一观测方向的反射率产品与BRDF不同，还需说明是否为光谱、宽带、方向—半球或其他积分约定。很多遥感产品输出的是特定几何下的反射率估计或反射因子，使用时应查产品定义，而不假定其就是宽带反照率。
 
+<strong>双向反射因子（bidirectional reflectance factor, BRF）</strong>把目标在同一照明和观测几何下的辐亮度，与理想完全反射朗伯参考面的辐亮度相比，是无量纲量。定向聚集使某些几何下的BRF可大于1，这不意味着半球总反射能量超过入射能量。BRF不是BRDF去掉单位后的简称；对理想双向定义，数值上有BRF=π·BRDF，但实际产品还取决于照明、视场和积分约定。
+
 这解释了为什么同一地物不同观测角度会“变亮”：太阳、冠层与视线的相对位置改变阴影和可见散射结构。将不同日期或不同侧视角的影像比较时，BRDF效应可能与真实变化混合。地形坡面又改变局部入射与观测角，不能只使用整幅影像同一个太阳角描述所有面片。
 
-来源：《第2章.pdf》文件第65–75页及反射几何相关内容；DOCX Lecture 2 BRDF部分。角度积分与术语范围为本节教学展开。
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-reflectance-brdf)：Campbell等第六版 PDF 82–84, 86页（印刷 43–45, 47页），2.6 Interactions with Surfaces: Reflection, BRDF, Reflectance; Figures 2.14–2.16；CCRS教程 PDF 16–17页（印刷 16–17页），1.5 Radiation–Target Interactions。用方向与单位区分辐亮度、强度、反射率、BRDF和BRF。
+
+来源：《第2章.pdf》文件第65–75页及反射几何相关内容；DOCX Lecture 2 BRDF部分；赵英时等教材文件第46–48页补充BRF区分；Campbell等第六版文件第76–89页核对路径辐射、表面相互作用、BRDF与三种观测能量路径。角度积分与术语范围为本节教学展开。
 
 
 <!-- rs-concept-table-rs2-reflectance-brdf -->
@@ -553,10 +645,13 @@ $$\rho_{\mathrm{dh},\lambda}=\int_{\mathrm{hemisphere}} f_r\cos\theta_r\,\mathrm
 | 朗伯表面 | Lambertian surface | 理想方向分布，L与观察方向无关；M=πL。 |
 | 反射率/反照率 | Reflectance/albedo | 说明波长与方向积分范围；反照率也可为光谱量。 |
 | BRDF | Bidirectional reflectance distribution function | 出射辐亮度/入射辐照度，sr⁻¹；不是无量纲反射率。 |
+| BRF | Bidirectional reflectance factor | 与同几何下理想朗伯参考面的辐亮度之比，通常无量纲；不等于BRDF。 |
 
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
+
+For the same incident wavelength and illumination, using incident total flux as the denominator and including all reflected/transmitted directions and polarisation components, absorptance $\alpha_\lambda$, reflectance $\rho_\lambda$ and transmittance $\tau_\lambda$ satisfy $\alpha_\lambda+\rho_\lambda+\tau_\lambda=1$; an opaque medium has $\tau_\lambda\approx0$. The reflected and transmitted fractions include all outgoing flux; a viewing-direction BRF cannot be substituted. This partitions incident energy; the object's own thermal emission is not simply a fourth term. Fluorescence following absorption is a separate spectral contribution, so a total outgoing spectrum containing fluorescence and thermal emission is not simply a reflected spectrum.
 
 Radiation leaving an illuminated surface is not necessarily distributed evenly across directions. <strong>Specular reflection</strong> concentrates energy around the mirror direction associated with the incident beam, producing effects such as glint on calm water. <strong>Diffuse reflection</strong> distributes reflected energy more broadly. Real surfaces commonly combine directional components; smoothness and roughness are also relative to wavelength. Water appearing bright in one viewing direction does not mean it has high reflectance in every direction.
 
@@ -576,9 +671,13 @@ A Lambertian surface has $f_r=\rho_\lambda/\pi$. This distinguishes a directiona
 
 <strong>Reflectance</strong> generally denotes the reflected-to-incident energy ratio under specified wavelength and angular ranges. In surface energy budgets, <strong>albedo</strong> commonly denotes total upward hemispheric reflection relative to total incident radiation over a spectral range and illumination condition. Albedo, a directional reflectance product and BRDF differ. One must specify spectral versus broadband treatment, directional-hemispherical integration or another convention. Many remote sensing products provide a reflectance estimate or reflectance factor at a particular geometry; consult the product definition rather than assuming it is broadband albedo.
 
+The <strong>bidirectional reflectance factor (BRF, 双向反射因子)</strong> compares target radiance with that of an ideal perfectly reflecting Lambertian reference under the same illumination and viewing geometry. It is dimensionless. Directional concentration can make BRF exceed 1 in some geometries without total hemispheric reflected energy exceeding incident energy. BRF is not a unit-free synonym for BRDF; under the ideal bidirectional definition BRF is numerically related to BRDF by BRF=π·BRDF, while real products still depend on their illumination, field-of-view and integration conventions.
+
 This explains why one target can appear brighter from another direction: changing the Sun-canopy-view geometry changes shadows and visible scattering structures. BRDF effects can be mixed with real changes when comparing dates or side-looking angles. Sloping terrain also changes local illumination and viewing angles, so one image-wide solar angle cannot describe every surface patch completely.
 
-Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry material; the BRDF section in DOCX Lecture 2. Angular integration and terminology scope are developed here for teaching.
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-reflectance-brdf): Campbell et al., sixth edition, PDF pp. 82–84, 86 (printed pp. 43–45, 47), 2.6 Interactions with Surfaces: Reflection, BRDF, Reflectance; Figures 2.14–2.16; CCRS tutorial, PDF pp. 16–17 (printed pp. 16–17), 1.5 Radiation–Target Interactions. Use direction and units to distinguish radiance, intensity, reflectance, BRDF and BRF.
+
+Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry material; the BRDF section in DOCX Lecture 2; Zhao et al., file pages 46–48, for the BRF distinction; and Campbell et al., sixth edition, file pages 76–89, for path radiance, surface interaction, BRDF and the three observing-energy paths. Angular integration and terminology scope are developed here for teaching.
 
 
 <!-- rs-concept-table-rs2-reflectance-brdf -->
@@ -590,10 +689,18 @@ Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry ma
 | 朗伯表面 | Lambertian surface | Ideal direction-independent radiance L; M=πL. |
 | 反射率/反照率 | Reflectance/albedo | State spectral/angular integration conventions; albedo may be spectral. |
 | BRDF | Bidirectional reflectance distribution function | Outgoing radiance per incident irradiance, sr⁻¹; not dimensionless reflectance. |
+| BRF | Bidirectional reflectance factor | Radiance relative to an ideal Lambertian reference under matched geometry; normally dimensionless and different from BRDF. |
 
 </div>
 
 ## 2.9 地物光谱与概念综合 · Surface spectra and integrated interpretation {#rs2-spectral-signatures}
+
+<!-- textbook-figures-rs2-spectral-signatures:start -->
+
+<RsFigure id="book-campbell-surface-spectra" />
+
+<!-- textbook-figures-rs2-spectral-signatures:end -->
+
 
 <RsFigure id="vegetation" />
 
@@ -607,12 +714,34 @@ Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry ma
 
 <strong>地物光谱特征（spectral signature）</strong>描述目标响应随波长的变化模式。上面的讲义原图分别展示植被、水体、干燥土壤与岩矿案例；横轴是波长，纵轴按各原图标注读取。这些曲线不是每一种实际地物都必须符合的模板，不能脱离测量条件从图中反推精确含量。原课件的相关谱图适合作为真实材料或课堂案例的来源对照，应用时仍需辨明材料状态、测量条件和坐标。
 
+更稳妥的说法是<strong>光谱响应模式（spectral response pattern）</strong>：它强调曲线是在特定波段响应、尺度、状态、环境、大气与观测几何下得到的一组相对定量观测，而不是对某类地物永久不变、唯一对应的“指纹”。还要区分测量层级：实验室的<strong>材料光谱（material spectrum）</strong>描述受控样品；<strong>端元或组分光谱（endmember/component spectrum）</strong>描述混合模型中的代表成分；<strong>像元光谱（pixel spectrum）</strong>还包含空间混合、点扩散、背景、大气与几何影响。三者可以相互支持，但不能直接等同。
+
+<!-- rs-concept-table-rs2-spectral-levels -->
+
+| 概念 | English term | 适用范围与常见误读 |
+| --- | --- | --- |
+| 光谱特征/光谱标志 | Spectral signature | 教学中的辨识性称呼；不保证对类别唯一或跨条件不变。 |
+| 光谱响应模式 | Spectral response pattern | 明确波段、状态、尺度、环境和几何条件的一组观测。 |
+| 材料光谱 | Material spectrum | 受控样品响应；不能直接代替冠层、地块或城市像元。 |
+| 端元/组分光谱 | Endmember/component spectrum | 混合模型中的代表成分；端元选择依模型与场景。 |
+| 像元光谱 | Pixel spectrum | 传感器实际样本，可能含多组分、背景、大气和空间响应。 |
+
 | 讲义原图 | 实际图例与坐标 | 读图重点与边界 |
 | --- | --- | --- |
 | 第79页植被 | 桦树、松树、枞树；横轴波长μm，纵轴标光谱反射率 | 比较约红区至近红外的上升和树种曲线差异；纵轴缺明确比例单位时不补造精确反射率。 |
 | 第83页水体 | 星湖湖水；横轴400–800 nm，纵轴反射率% | 是特定湖水案例，不能据此读取SWIR响应或推广到全部水体。 |
 | 第91页土壤 | 粉砂、砂、腐泥；横轴波长μm，纵轴反射率% | 比较材料曲线与形状，不将原图指定条件推广到任意含水量。 |
 | 第89页岩石 | 石灰岩、长石砂岩、页岩、安山岩、玄武岩；纵轴反射率% | 横轴0.8与1.2之间刻度印为1.6，存在疑似笔误；保留原图，只作曲线趋势与类别对照，不据此读取精确吸收位置。 |
+
+教材还讨论荧光，需与反射和热发射分开：
+
+| 机制 | English term | 能量与解释边界 |
+| --- | --- | --- |
+| 反射 | Reflection | 通常在近似相同波长重新分配入射辐射；光谱与几何共同影响信号。 |
+| 荧光 | Fluorescence | 吸收激发能后产生较短时间尺度的发光，常在不同波长；叶绿素荧光需与反射背景分离。 |
+| 热发射 | Thermal emission | 与温度和发射率有关；不要求目标此刻被太阳照亮。 |
+
+<strong>太阳诱导叶绿素荧光（solar-induced chlorophyll fluorescence, SIF）</strong>是太阳激发后产生的弱发光；它与红边的反射曲线形状不同。荧光可支持光合活动研究，但一次荧光或近红外观测仍不能单独诊断某一种胁迫。
 
 植被的可见区响应与色素吸收相关，红光常有明显吸收，绿色区域相对较高；近红外反射与叶片内部结构及冠层多次散射有关，常从红区向近红外快速上升，称为<strong>红边（red edge）</strong>；短波红外中的水吸收影响含水量相关响应。叶片光谱不能直接等同于冠层像元光谱：叶面积、叶片方向、阴影、土壤背景、物候和观测几何都参与其中。红边位置或植被指数可为分析提供线索，却不是单独诊断某一种病害的充分证据。
 
@@ -624,7 +753,9 @@ Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry ma
 
 最后把本章各节连接起来。传感器波段信号是光谱响应加权后的结果，地表辐射由太阳反射与自身发射等组成，大气又改变传播与增加路径贡献，观测几何影响方向响应。因此某像元变化的合理解释应依次问：测量的是辐亮度还是反射率？使用哪种波段响应？能量主要从哪里来？大气和角度是否已处理？目标状态还是背景发生变化？单位、条件和证据一旦明确，后面的[平台与轨道](/remote-sensing-ch3)以及[扫描和成像](/remote-sensing-ch4)才有共同的物理基础。
 
-来源：《第2章.pdf》文件第76–99页，插入原图分别来自第79、83、91、89页；DOCX段落485–498提供植被等跨讲次补充。本站保留讲义曲线及其原始标注，不宣称图上所有测量条件已知；原资料与勘误的完整索引见[来源页](/remote-sensing-sources)。
+[教材对照阅读](/remote-sensing-sources#rs-book-rs2-spectral-signatures)：Campbell等第六版 PDF 85–87页（印刷 46–48页），2.6 Fluorescence; Spectral Properties of Objects; Figure 2.19；CCRS教程 PDF 17–18页（印刷 17–18页），1.5 Radiation–Target Interactions: leaves, water, spectral response。对照荧光与反射；解释同类目标的光谱为何会随时间、空间和观测条件变化。
+
+来源：《第2章.pdf》文件第76–99页，插入原图分别来自第79、83、91、89页；DOCX段落485–498提供植被等跨讲次补充；赵英时等教材文件第68–69页补充响应模式与光谱层级；Campbell等第六版文件第86–87页用于核对光谱响应随空间、时间和观测条件变化的边界。本站保留讲义曲线及其原始标注，不宣称图上所有测量条件已知；原资料与勘误的完整索引见[来源页](/remote-sensing-sources)。
 
 </div>
 
@@ -632,12 +763,34 @@ Sources: *第2章.pdf*, file pages 65–75 and associated reflection-geometry ma
 
 A <strong>spectral signature (地物光谱特征)</strong> describes how a target response varies with wavelength. The original lecture figures above separately show vegetation, water, dry-soil and rock examples. Their horizontal axes show wavelength; read each figure's own vertical label. These curves are not mandatory templates for every real target and cannot yield precise concentrations without measurement conditions. They provide material or classroom-case comparisons, while material state, measurement conditions and axes still need to be identified.
 
+The more cautious term <strong>spectral response pattern</strong> stresses that a curve is a set of relative quantitative observations under particular band responses, scale, state, environment, atmosphere and viewing geometry, rather than a permanent one-to-one fingerprint for a class. Measurement levels also differ. A laboratory <strong>material spectrum</strong> describes a controlled sample; an <strong>endmember or component spectrum</strong> represents a component in a mixture model; a <strong>pixel spectrum</strong> additionally contains spatial mixing, point spreading, background, atmosphere and geometry. The levels can support one another but are not interchangeable.
+
+<!-- rs-concept-table-rs2-spectral-levels -->
+
+| 概念 | English term | Scope and common misreading |
+| --- | --- | --- |
+| 光谱特征/光谱标志 | Spectral signature | A useful teaching label, without guaranteed class uniqueness or invariance across conditions. |
+| 光谱响应模式 | Spectral response pattern | Observations with the bands, state, scale, environment and geometry stated. |
+| 材料光谱 | Material spectrum | Controlled-sample response; not automatically a canopy, field or urban-pixel spectrum. |
+| 端元/组分光谱 | Endmember/component spectrum | A representative mixture-model component; its choice depends on model and scene. |
+| 像元光谱 | Pixel spectrum | An instrument sample that may include mixtures, background, atmosphere and spatial response. |
+
 | Original lecture figure | Actual legend and coordinates | Interpretation and limits |
 | --- | --- | --- |
 | Page 79: vegetation | Birch, pine and fir; wavelength in μm horizontally, spectral reflectance vertically | Compare the red-to-NIR rise and species differences. Do not invent precise reflectance values when a fractional/percentage unit is not explicitly stated. |
 | Page 83: water | Xinghu lake water; 400–800 nm horizontally, reflectance % vertically | A particular lake-water example; it does not display SWIR response or represent every water body. |
 | Page 91: soil | Silt, sand and muck (腐泥); wavelength in μm, reflectance % | Compare material curves and shapes without extending the specified source conditions to every moisture state. |
 | Page 89: rocks | Limestone, arkosic sandstone, shale, andesite and basalt; reflectance % vertically | The horizontal tick between 0.8 and 1.2 is printed as 1.6, an apparent typo. Retain the original and compare trends/classes qualitatively; do not derive exact absorption positions from that scale. |
+
+The textbook also introduces fluorescence, which differs from reflection and thermal emission:
+
+| Mechanism | 中文术语 | Energy and interpretation limits |
+| --- | --- | --- |
+| Reflection | 反射 | Redistributes incident radiation, usually at approximately the same wavelength; spectra and geometry affect the signal. |
+| Fluorescence | 荧光 | Short-timescale luminescence following absorption of excitation energy, commonly at another wavelength; chlorophyll fluorescence must be separated from reflected background. |
+| Thermal emission | 热发射 | Depends on temperature and emissivity; does not require current sunlight. |
+
+<strong>Solar-induced chlorophyll fluorescence (SIF, 太阳诱导叶绿素荧光)</strong> is weak luminescence following solar excitation, distinct from the reflected-spectrum shape of the red edge. It supports study of photosynthetic activity, but one fluorescence or NIR observation does not independently diagnose a particular stress.
 
 Vegetation's visible response is associated with pigment absorption. Red light commonly has strong absorption, with relatively higher response in green. NIR reflection depends on internal leaf structure and multiple scattering in the canopy. The steep transition from red to NIR is called the <strong>red edge</strong>. SWIR water absorption influences moisture-related responses. A leaf spectrum is not automatically a canopy-pixel spectrum: leaf area, orientation, shadow, soil background, phenology and viewing geometry all contribute. A red-edge position or vegetation index can provide evidence, but is not sufficient by itself to diagnose one particular disease.
 
@@ -649,6 +802,8 @@ Two common expressions require context. <strong>Different spectra for the same m
 
 Connect the chapter's concepts at the end. A sensor band weights radiation by spectral response. Surface radiation combines reflected sunlight, thermal emission and other relevant contributions; the atmosphere modifies propagation and adds path radiance; geometry controls directional response. A defensible explanation of a changing pixel asks in sequence: is the quantity radiance or reflectance? Which band response was used? What supplies most of the energy? Have atmosphere and angle been handled? Did the target state or its background change? Clear units, conditions and evidence establish the common physical foundation for [platforms and orbits](/remote-sensing-ch3) and [scanning and imaging](/remote-sensing-ch4).
 
-Sources: *第2章.pdf*, file pages 76–99, with the inserted originals from pages 79, 83, 91 and 89; DOCX paragraphs 485–498 supplement vegetation across lecture boundaries. The site retains lecture curves and original labels without claiming that every measurement condition is known. See the [source page](/remote-sensing-sources) for the complete material and corrections index.
+[Textbook comparison and reading](/remote-sensing-sources#rs-book-rs2-spectral-signatures): Campbell et al., sixth edition, PDF pp. 85–87 (printed pp. 46–48), 2.6 Fluorescence; Spectral Properties of Objects; Figure 2.19; CCRS tutorial, PDF pp. 17–18 (printed pp. 17–18), 1.5 Radiation–Target Interactions: leaves, water, spectral response. Compare fluorescence and reflection; explain why spectra of one target class vary with time, space and observing conditions.
+
+Sources: *第2章.pdf*, file pages 76–99, with the inserted originals from pages 79, 83, 91 and 89; DOCX paragraphs 485–498 supplement vegetation across lecture boundaries; Zhao et al., file pages 68–69, supplement response patterns and spectral levels; and Campbell et al., sixth edition, file pages 86–87, qualify how spectra vary with space, time and observing conditions. The site retains lecture curves and original labels without claiming that every measurement condition is known. See the [source page](/remote-sensing-sources) for the complete material and corrections index.
 
 </div>

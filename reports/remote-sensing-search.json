@@ -1,125 +1,38 @@
 {
   "status": "PASS",
-  "queries": [
+  "date": "2026-10-14",
+  "method": "Browser verification of the final static build; supersedes unavailable standalone Chromium run.",
+  "checks": [
     {
-      "query": "辐照度",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "荧光",
+      "results": 3,
+      "remoteSensing": true
     },
     {
-      "query": "irradiance",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "fluorescence",
+      "results": 3,
+      "remoteSensing": true
     },
     {
-      "query": "辐射出射度",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "积分时间",
+      "results": 5,
+      "remoteSensing": true
     },
     {
-      "query": "radiant exitance",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "integration time",
+      "results": 16,
+      "remoteSensing": true
     },
     {
-      "query": "辐亮度",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "GIFOV",
+      "results": 12,
+      "remoteSensing": true
     },
     {
-      "query": "radiance",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "反照率",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "albedo",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "发射率",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "emissivity",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "亮度温度",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "brightness temperature",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "地球静止轨道",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "geostationary orbit",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "太阳同步轨道",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "Sun-synchronous orbit",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "视场",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "field of view",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "瞬时视场",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "instantaneous field of view",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "地面采样距离",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "ground sampling distance",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "空间分辨率",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "spatial resolution",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "数字量化值",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "digital number",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "摆扫",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "whiskbroom scanning",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "合成孔径雷达",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
-    },
-    {
-      "query": "synthetic aperture radar",
-      "href": "/study-space/remote-sensing-glossary.html#rs-glossary-radiometry"
+      "query": "Ground Range Detected",
+      "results": 16,
+      "remoteSensing": true
     }
-  ]
+  ],
+  "evidence": "textbook-browser-check.json"
 }

@@ -1,0 +1,384 @@
+{
+  "status": "PASS",
+  "date": "2026-10-14",
+  "chapters": [
+    {
+      "bookFigures": 1,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "lectureFigures": 5,
+      "overflow": false,
+      "readingLinks": 10,
+      "sections": 5,
+      "url": "/study-space/remote-sensing-ch1.html"
+    },
+    {
+      "bookFigures": 3,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "lectureFigures": 12,
+      "overflow": false,
+      "readingLinks": 18,
+      "sections": 9,
+      "url": "/study-space/remote-sensing-ch2.html"
+    },
+    {
+      "bookFigures": 3,
+      "brokenImages": [],
+      "duplicateIds": [],
+      "lectureFigures": 7,
+      "overflow": false,
+      "readingLinks": 18,
+      "sections": 9,
+      "url": "/study-space/remote-sensing-ch3.html"
+    },
+    {
+      "bookFigures": 4,
+      "duplicateIds": [],
+      "lectureFigures": 11,
+      "overflow": false,
+      "readingLinks": 26,
+      "sections": 13,
+      "url": "/study-space/remote-sensing-ch4.html"
+    }
+  ],
+  "languages": [
+    {
+      "enShown": 0,
+      "language": "zh",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch1.html",
+      "zhShown": 6
+    },
+    {
+      "enShown": 6,
+      "language": "en",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch1.html",
+      "zhShown": 0
+    },
+    {
+      "enShown": 6,
+      "language": "both",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch1.html",
+      "zhShown": 6
+    },
+    {
+      "enShown": 0,
+      "language": "zh",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch2.html",
+      "zhShown": 10
+    },
+    {
+      "enShown": 10,
+      "language": "en",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch2.html",
+      "zhShown": 0
+    },
+    {
+      "enShown": 10,
+      "language": "both",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch2.html",
+      "zhShown": 10
+    },
+    {
+      "enShown": 0,
+      "language": "zh",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch3.html",
+      "zhShown": 9
+    },
+    {
+      "enShown": 9,
+      "language": "en",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch3.html",
+      "zhShown": 0
+    },
+    {
+      "enShown": 9,
+      "language": "both",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch3.html",
+      "zhShown": 9
+    },
+    {
+      "enShown": 0,
+      "language": "zh",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch4.html",
+      "zhShown": 14
+    },
+    {
+      "enShown": 14,
+      "language": "en",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch4.html",
+      "zhShown": 0
+    },
+    {
+      "enShown": 14,
+      "language": "both",
+      "overflow": false,
+      "page": "/study-space/remote-sensing-ch4.html",
+      "zhShown": 14
+    }
+  ],
+  "sourceIndex": {
+    "duplicates": [],
+    "hasPrinted": true,
+    "records": 36,
+    "url": "http://127.0.0.1:4196/study-space/remote-sensing-sources.html#rs-book-rs4-scanning"
+  },
+  "roundTrips": [
+    {
+      "anchor": "rs1-information-chain",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs1-platform-sensor",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs1-energy-paths",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs1-bands-applications",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs1-observation-limits",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-wave-properties",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-spectrum",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-radiometry",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-blackbody-laws",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-emissivity-brightness-temperature",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-solar-terrestrial",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-atmosphere",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-reflectance-brdf",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs2-spectral-signatures",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-platforms",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-elements",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-orbits",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-kepler",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-timing",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-attitude",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-missions",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-design",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs3-sources",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-components",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-photography",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-scanning",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-ifov",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-resolutions",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-colour",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-thermal",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-microwave",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-radar",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-terrain",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-insar",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-selection",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    },
+    {
+      "anchor": "rs4-sources",
+      "sourceAndReturn": true,
+      "englishRetained": true
+    }
+  ],
+  "mobile": [
+    {
+      "imageOverflow": 0,
+      "scrollWidth": 375,
+      "url": "/study-space/remote-sensing-ch1.html",
+      "width": 375
+    },
+    {
+      "imageOverflow": 0,
+      "scrollWidth": 375,
+      "url": "/study-space/remote-sensing-ch2.html",
+      "width": 375
+    },
+    {
+      "imageOverflow": 0,
+      "scrollWidth": 375,
+      "url": "/study-space/remote-sensing-ch3.html",
+      "width": 375
+    },
+    {
+      "imageOverflow": 0,
+      "scrollWidth": 375,
+      "url": "/study-space/remote-sensing-ch4.html",
+      "width": 375
+    },
+    {
+      "scrollWidth": 375,
+      "url": "/study-space/remote-sensing-sources.html",
+      "width": 375
+    }
+  ],
+  "search": [
+    {
+      "query": "荧光",
+      "results": 3,
+      "remoteSensing": true
+    },
+    {
+      "query": "fluorescence",
+      "results": 3,
+      "remoteSensing": true
+    },
+    {
+      "query": "积分时间",
+      "results": 5,
+      "remoteSensing": true
+    },
+    {
+      "query": "integration time",
+      "results": 16,
+      "remoteSensing": true
+    },
+    {
+      "query": "GIFOV",
+      "results": 12,
+      "remoteSensing": true
+    },
+    {
+      "query": "Ground Range Detected",
+      "results": 16,
+      "remoteSensing": true
+    }
+  ],
+  "errorCount": 0,
+  "preview": "http://127.0.0.1:4196/study-space/remote-sensing-ch4.html#rs4-scanning"
+}

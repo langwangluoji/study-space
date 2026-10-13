@@ -279,5 +279,38 @@
     "preview": "/remote-sensing-sources.html",
     "format": "PDF",
     "localOnly": true
+  },
+  {
+    "id": "rs-ccrs-fundamentals",
+    "title": "Fundamentals of Remote Sensing",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "Canada Centre for Remote Sensing",
+    "description": "258文件页；用于信息链、轨道与幅宽、扫描驻留时间、雷达散射和相干斑补充。属经典入门教程，旧任务参数不作当前规格。",
+    "preview": "/remote-sensing-sources.html",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "rs-zhao-analysis",
+    "title": "遥感应用分析原理与方法（第二版）",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "赵英时等 · 科学出版社 · 2013",
+    "description": "521文件页；用于数据—信息链、光谱响应模式、BRF、SRF、MTF、角度特征和扫描/雷达概念补充。",
+    "preview": "/remote-sensing-sources.html",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "rs-campbell-introduction",
+    "title": "Introduction to Remote Sensing, Sixth Edition",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "James B. Campbell · Randolph H. Wynne · Valerie A. Thomas · Guilford Press · 2023",
+    "description": "675文件页；老师推荐教材。用于遥感定义、轨道与覆盖、扫描、IFOV/GRD、驻留时间、光谱/辐射性能及SAR概念核对。",
+    "preview": "/remote-sensing-sources.html",
+    "format": "PDF",
+    "localOnly": true
   }
 ]

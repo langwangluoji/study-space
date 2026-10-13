@@ -16,6 +16,24 @@ Bilingual Terminology and Concept Contrasts
 
 同一术语保留中文首选名、标准英文与必要缩写。 / Chinese preferred names, standard English terms and common abbreviations are kept together.
 
+## 观测数据、数据产品与信息产品 / Observations, data products and information products {#rs-glossary-workflow}
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+观测数据（observational data）是传感器记录及其定标表达；影像/数据产品（image/data product）是经处理、定位和质量说明后可使用的数据；信息产品（information product）来自解译、反演或分类并面向应用。数据不自动等于信息，辅助数据与验证可形成反馈。
+
+[回到正文](./remote-sensing-ch1.html#rs1-information-chain)
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Observational data are sensor records and their calibrated expressions. Image/data products are processed, located and quality-described datasets. Information products result from interpretation, retrieval or classification for an application. Data do not automatically equal information; ancillary data and validation can create feedback.
+
+[Read the explanation](./remote-sensing-ch1.html#rs1-information-chain)
+
+</div>
+
 ## 平台、传感器与探测器 / Platform, sensor and detector {#rs-glossary-system}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
@@ -70,21 +88,39 @@ Radiant energy Q is measured in J and radiant flux Φ in W. Irradiance E and rad
 
 </div>
 
-## 反射率、反照率、发射率与BRDF / Reflectance, albedo, emissivity and BRDF {#rs-glossary-surface}
+## 反射率、反照率、BRDF与BRF / Reflectance, albedo, BRDF and BRF {#rs-glossary-surface}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-反射率（reflectance）、吸收率（absorptivity）和透射率（transmittance）是能量比例；匹配同一条件时三者和为1。反照率（albedo）需说明半球与光谱积分口径，也可为光谱量。发射率（emissivity）比较实际物体与同温黑体；基尔霍夫关系需匹配波长/方向等条件。双向反射分布函数（BRDF）是出射辐亮度对入射辐照度的比，单位sr⁻¹，不是无量纲反射率。
+反射率（reflectance）和反照率（albedo）是需说明光谱及方向积分口径的比值。双向反射分布函数（BRDF）是出射辐亮度对入射辐照度的比，单位sr⁻¹；双向反射因子（BRF）与同几何下理想朗伯参考面比较，为无量纲量。BRF不是BRDF的无单位简称。
 
-[回到正文](./remote-sensing-ch2.html)
+[回到正文](./remote-sensing-ch2.html#rs2-reflectance-brdf)
 
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-Reflectance, absorptivity and transmittance are energy fractions that sum to one under matched conditions. Albedo requires a stated hemispherical and spectral integration convention and may be spectral. Emissivity compares emission with a blackbody at the same temperature; Kirchhoff relations require matched wavelength/directional conditions. BRDF is outgoing radiance per incident irradiance, in sr⁻¹.
+Reflectance and albedo are ratios that require spectral and angular integration conventions. BRDF is outgoing radiance per incident irradiance, in sr⁻¹. BRF compares radiance with an ideal Lambertian reference under matched geometry and is dimensionless. BRF is not a unit-free synonym for BRDF.
 
-[Read the explanation](./remote-sensing-ch2.html)
+[Read the explanation](./remote-sensing-ch2.html#rs2-reflectance-brdf)
+
+</div>
+
+## 光谱标志、响应模式与像元光谱 / Spectral signatures, response patterns and pixel spectra {#rs-glossary-spectral-levels}
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+光谱标志（spectral signature）是教学中的辨识性称呼；光谱响应模式（spectral response pattern）强调波段、状态、尺度、环境和几何条件。材料光谱、端元/组分光谱与像元光谱处于不同测量或建模层级，不能直接等同。
+
+[回到正文](./remote-sensing-ch2.html#rs2-spectral-signatures)
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Spectral signature is a useful identification label, while spectral response pattern stresses bands, state, scale, environment and geometry. Material, endmember/component and pixel spectra occupy different measurement or modelling levels and are not interchangeable.
+
+[Read the explanation](./remote-sensing-ch2.html#rs2-spectral-signatures)
 
 </div>
 
@@ -142,11 +178,11 @@ The orbital period is one revolution. A ground-track repeat cycle describes repe
 
 </div>
 
-## FOV、IFOV、幅宽、GSD与空间分辨率 / FOV, IFOV, swath, GSD and spatial resolution {#rs-glossary-geometry}
+## IFOV、GSD、GRD、像元、PSF/MTF与空间分辨率 / IFOV, GSD, GRD, pixels, PSF/MTF and spatial resolution {#rs-glossary-geometry}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-视场角（FOV）是整体角范围，瞬时视场角（IFOV）是单探元瞬时角范围；幅宽（swath width）是地面覆盖长度。地面采样间距（GSD）描述相邻样本的地面间隔；空间分辨率（spatial resolution）描述区分细节的能力。天底、平地、小角度下地面足迹约H·IFOV，仍不自动等于GSD或有效分辨率。
+IFOV是单探元瞬时角范围；地面足迹是其投影响应范围；GSD是相邻样本间距；GRD按规定目标、对比度、噪声与判据描述可分辨地面尺度，区别于SAR的Ground Range Detected产品；产品像元大小是交付格网尺寸。PSF/MTF描述空间响应和对比度传递。检测到小目标不等于分辨其内部细节，重采样也不新增观测细节。
 
 [回到正文](./remote-sensing-ch4.html#rs4-ifov)
 
@@ -154,17 +190,17 @@ The orbital period is one revolution. A ground-track repeat cycle describes repe
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-FOV is the total angular field and IFOV an instantaneous detector angular field; swath width is a ground length. GSD is sample spacing on the ground, whereas spatial resolution is the ability to distinguish spatial detail. The nadir/flat-ground/small-angle footprint approximation H·IFOV does not automatically equal GSD or effective resolution.
+IFOV is a detector angular field; footprint is its projected response extent; GSD is adjacent-sample spacing; GRD is ground resolving scale under specified target, contrast, noise and criteria, distinct from a SAR Ground Range Detected product; product pixel size is a delivered grid dimension. PSF/MTF describe spatial response and contrast transfer. Detecting a small target does not resolve its internal detail, and resampling adds no new observation.
 
 [Read the explanation](./remote-sensing-ch4.html#rs4-ifov)
 
 </div>
 
-## 四类分辨率与量化位深 / Four resolutions and quantization bit depth {#rs-glossary-resolution}
+## 四类分辨率、SRF、SNR与角度采样 / Four resolutions, SRF, SNR and angular sampling {#rs-glossary-resolution}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-空间（spatial）、光谱（spectral）、辐射（radiometric）、时间（temporal）分辨率对应空间细节、波长区分、辐射差异与时间采样。波段多不必光谱分辨率高，文件位数也不必反映探测器灵敏度。n位有2ⁿ个码值，但有效区分还受输入范围、噪声和定标影响。
+空间、光谱、辐射、时间分辨率分别对应空间细节、波长区分、辐射差异与时间采样。SRF/FWHM描述通道响应与带宽，动态范围、SNR和定标限制有效辐射区分；角度采样说明照明与观察方向。波段数、文件位数和像元数都不能单独代表实际分辨能力。
 
 [回到正文](./remote-sensing-ch4.html#rs4-resolutions)
 
@@ -172,7 +208,7 @@ FOV is the total angular field and IFOV an instantaneous detector angular field;
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-Spatial, spectral, radiometric and temporal resolutions concern spatial detail, spectral separation, radiation differences and sampling in time. More bands do not necessarily mean finer spectral resolution, and file bit depth does not specify detector sensitivity. n bits provide 2ⁿ codes, while effective discrimination also depends on input range, noise and calibration.
+Spatial, spectral, radiometric and temporal resolutions concern spatial detail, wavelength discrimination, radiation differences and time sampling. SRF/FWHM describe channel response and bandwidth; dynamic range, SNR and calibration limit effective radiometric discrimination; angular sampling states illumination/view directions. Band, bit and pixel counts do not alone specify actual resolving ability.
 
 [Read the explanation](./remote-sensing-ch4.html#rs4-resolutions)
 
@@ -214,11 +250,11 @@ Panchromatic generally uses one broad band; multispectral uses selected bands; h
 
 </div>
 
-## 摆扫、推扫与CCD / Whiskbroom, pushbroom and CCD {#rs-glossary-scan}
+## 摆扫、推扫、驻留/积分时间与CCD / Whiskbroom, pushbroom, dwell/integration time and CCD {#rs-glossary-scan}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-摆扫（whiskbroom, across-track scanning）用扫描机构横跨地面逐点或多探元分段采集；推扫（pushbroom, along-track scanning）用横跨幅宽的线阵同时采集一行，平台运动提供沿轨维度。CCD是器件类型，不是推扫的同义词。
+摆扫用扫描机构依次采集横轨位置；推扫用横跨幅宽的线阵同时积分一行，平台运动提供沿轨维度。驻留时间（dwell time）是地面单元处于探元视场中的可观测时段；积分时间（integration time）是实际累积响应的时长，受驻留、读出、SNR和运动模糊约束，二者不必相等。CCD是器件类型，不是推扫同义词。
 
 [回到正文](./remote-sensing-ch4.html#rs4-scanning)
 
@@ -226,17 +262,17 @@ Panchromatic generally uses one broad band; multispectral uses selected bands; h
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-Whiskbroom/across-track scanning uses a scanning mechanism to acquire points or detector segments across the ground. Pushbroom/along-track scanning records a cross-track detector line simultaneously; platform motion supplies the along-track dimension. CCD names a detector technology, not a synonym for pushbroom.
+Whiskbroom samples cross-track positions sequentially; pushbroom integrates a cross-track line while platform motion supplies along-track sampling. Dwell time is the interval a ground cell stays in the detector field; integration time is the actual accumulation interval, constrained by dwell, readout, SNR and motion blur. They need not be equal. CCD is a detector technology, not a synonym for pushbroom.
 
 [Read the explanation](./remote-sensing-ch4.html#rs4-scanning)
 
 </div>
 
-## 后向散射、极化、RAR与SAR / Backscatter, polarization, RAR and SAR {#rs-glossary-radar}
+## 雷达散射、极化、RAR与SAR / Radar scattering, polarization, RAR and SAR {#rs-glossary-radar}
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-后向散射（backscatter）是返回传感器方向的散射；极化（polarization）描述电场方向，HH/VV/HV/VH注明发射/接收约定。真实孔径雷达（RAR）使用物理天线孔径，合成孔径雷达（SAR）利用运动中的相干回波处理形成等效孔径，不能当普通影像拼接。
+后向散射受相对粗糙度、局部入射角、介电性质、含水量、波长、极化和结构共同控制。表面散射、体散射与双反射是不同机制。RAR使用物理天线孔径；SAR相干处理运动中的回波形成等效孔径，不能当普通影像拼接。
 
 [回到正文](./remote-sensing-ch4.html#rs4-radar)
 
@@ -244,7 +280,25 @@ Whiskbroom/across-track scanning uses a scanning mechanism to acquire points or 
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-Backscatter returns toward the sensor. Polarization describes electric-field orientation, with transmit/receive conventions stated for HH/VV/HV/VH. Real aperture radar (RAR) uses a physical antenna aperture; SAR coherently processes echoes during platform motion to synthesise an effective aperture rather than stitching ordinary images.
+Backscatter is jointly controlled by relative roughness, local incidence angle, dielectric properties, moisture, wavelength, polarisation and structure. Surface, volume and double-bounce scattering are distinct mechanisms. RAR uses a physical aperture; SAR coherently focuses motion-dependent echoes rather than stitching ordinary images.
+
+[Read the explanation](./remote-sensing-ch4.html#rs4-radar)
+
+</div>
+
+## 相干斑、多视、滤波与定标 / Speckle, multilooking, filtering and calibration {#rs-glossary-speckle}
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+相干斑（speckle）来自分辨单元内相干回波的随机干涉，不等同普通加性噪声或真实纹理。多视与空间滤波可降低起伏，但常牺牲空间细节或边缘；辐射定标建立物理尺度，不能替代去斑。
+
+[回到正文](./remote-sensing-ch4.html#rs4-radar)
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Speckle comes from random interference among coherent returns within a resolution cell, not ordinary additive noise or true texture. Multilooking and spatial filtering reduce fluctuation but commonly sacrifice spatial detail or edges. Radiometric calibration establishes a physical scale and does not replace despeckling.
 
 [Read the explanation](./remote-sensing-ch4.html#rs4-radar)
 

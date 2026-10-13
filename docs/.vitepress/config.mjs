@@ -26,8 +26,12 @@ function renderSearch(src,env,md){
   // Build-only tokens improve Chinese substring retrieval; published prose is untouched.
   return md.render(src,env).replace(/(<p\b[^>]*>)([\s\S]*?)(<\/p>)/g,(_,open,body,close)=>{
     const plain=body.replace(/<mjx-container[\s\S]*?<\/mjx-container>/g,' ').replace(/<[^>]+>/g,' ');
-    const words=[...segmenter.segment(plain)].filter(s=>s.isWordLike&&/[\u3400-\u9fff]/.test(s.segment)).map(s=>s.segment);
-    return open+body+'<span aria-hidden="true"> '+[...new Set(words)].join(' ')+' </span>'+close;
+    const tokens=[],run=[],flush=()=>{for(let i=0;i<run.length;i++)for(let n=1;n<=Math.min(4,run.length-i);n++)tokens.push(run.slice(i,i+n).join(''));run.length=0};
+    for(const part of segmenter.segment(plain)){
+      if(part.isWordLike&&/[\u3400-\u9fff]/.test(part.segment))run.push(part.segment);else flush();
+    }
+    flush();
+    return open+body+'<span aria-hidden="true"> '+[...new Set(tokens)].join(' ')+' </span>'+close;
   });
 }
 export default defineConfig({

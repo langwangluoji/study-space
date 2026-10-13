@@ -44,7 +44,9 @@ The prerequisites are basic physics, trigonometry and elementary calculus. When 
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-读扫描图时，把平台前进方向与扫描方向分开；读轨道图时，把卫星绕地运动与地球自转分开；读光谱图时，先看横纵轴、单位和条件，再判断曲线差异。所有知识图采用讲义原图，注明文件页与汇总页；图注说明适用条件。原图的历史参数和旧译名不自动成为当前事实。
+读扫描图时，把平台前进方向与扫描方向分开；读轨道图时，把卫星绕地运动与地球自转分开；读光谱图时，先看横纵轴、单位和条件，再判断曲线差异。讲义原图与精选英文教材原图均注明来源、页码和适用条件；教材图保留原图号、英文标签与署名。原图的历史参数和旧译名按原语境解释。
+
+前四章全部36个主知识节均有[逐节教材对照与阅读入口](/remote-sensing-sources#rs-sources-crosswalk)，以老师推荐的 *Introduction to Remote Sensing* 第六版核对主线，CCRS教程和赵英时教材补充理解。阅读时先理解正文，再用对应教材小节与原图检查概念、量纲和条件。
 
 可用[双语术语与概念对照](./remote-sensing-glossary.html)比较相近概念，或用[来源、配图与勘误索引](./remote-sensing-sources.html)回查课件。第一章以现有概述整理稿补建；第二至第四章有完整中文课件范围，英文班Lecture编号另做映射。详情见来源页。
 
@@ -52,7 +54,9 @@ The prerequisites are basic physics, trigonometry and elementary calculus. When 
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-In a scanning diagram, distinguish platform motion from the scan direction. In an orbit diagram, distinguish satellite motion from Earth rotation. In a spectral plot, read the axes, units and conditions before interpreting the curves. All lesson illustrations are original lecture figures, with chapter/compiled pages and assumptions explained in captions. Historical specifications and older terminology are kept in their original context.
+In a scanning diagram, distinguish platform motion from the scan direction. In an orbit diagram, distinguish satellite motion from Earth rotation. In a spectral plot, read the axes, units and conditions before interpreting the curves. Original lecture figures and selected English textbook figures have sources, pages and assumptions. Textbook excerpts retain original figure numbers, English labels and credits. Historical specifications and older terminology are kept in their original context.
+
+All 36 main sections in the four existing chapters have [section-by-section textbook reading links](/remote-sensing-sources#rs-sources-crosswalk). The instructor-recommended sixth edition of *Introduction to Remote Sensing* checks the main concepts; the CCRS tutorial and Zhao textbook supplement them. Read the lesson first, then use the matching textbook section and original figure to check concepts, units and conditions.
 
 Use the [bilingual glossary](./remote-sensing-glossary.html) to compare related concepts and the [sources, figures and errata index](./remote-sensing-sources.html) to locate the original materials. Chapter 1 is reconstructed from the available introductory summary; Chapters 2–4 have full Chinese lecture coverage. English Lecture numbers are mapped separately on the source page.
 

@@ -25,9 +25,19 @@ Remote Sensing Platforms and Orbital Characteristics
 
 地基平台包括支架、车辆和地面观测设施，适合光谱测量、现场实验和与卫星观测对照。航空平台包括飞机、无人机、飞艇等，可按任务安排飞行路线，常用于较小区域的精细调查。航天平台包括卫星、空间站等，可以持续建立大范围观测记录。课件给出的高度范围是典型示例，不是各类别在所有场景下的严格边界；“近距离感知”也不必接触目标。
 
+| 平台类别 | English | 适合的观测 | 主要约束 |
+| --- | --- | --- | --- |
+| 地基 | Ground-based | 现场光谱、定标与验证 | 样本代表性与卫星像元尺度匹配 |
+| 航空 | Airborne | 可安排航线的局部精细调查、快速响应 | 航程、载荷、振动、天气与飞行时间 |
+| 航天 | Spaceborne | 广域、系统性重复观测与长期档案 | 轨道机会、载荷设计、通信与任务调度 |
+
+英文教材中的UAV（uncrewed/unmanned aerial vehicle）指飞行器；UAS（uncrewed/unmanned aerial system）还包含控制、通信和支持部分。用无人机获得细像元仍需可靠定位、辐射定标及现场验证，不能仅凭低空就保证质量。
+
 平台越高，在相同角视场下通常覆盖越宽，但一个固定角足迹对应的地面范围也更大。它不是“越低一定越清晰”的充分条件：口径、探测器、波段、运动、噪声及处理都会影响成像。地基测量能帮助解释卫星信号，却可能只代表一小块地表；卫星像元可能包含植物、裸土和阴影。多平台联合观测的意义，是比较这些不同尺度下的测量。
 
 来源：第3章课件文件页3–8（汇总102–107）；英文整理资料关于平台与传感器的段落25–36。
+
+教材对照阅读：[平台与载荷、平台选择 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-platforms)。
 
 </div>
 
@@ -39,19 +49,36 @@ The platform supplies position, pointing, power, a controlled thermal environmen
 
 Ground-based platforms include instrument stands, vehicles and fixed observing facilities. They support spectral measurements, field experiments and comparisons with satellite observations. Airborne platforms include aircraft, uncrewed aircraft and airships; their routes can be arranged for detailed surveys of particular areas. Spaceborne platforms include satellites and space stations and can build long records over large regions. The altitude ranges in the slides are typical examples rather than universal classification boundaries. Proximal sensing does not necessarily involve contact with a target.
 
+| Platform class | 中文 | Suitable observations | Main constraints |
+| --- | --- | --- | --- |
+| Ground-based | 地基 | Field spectra, calibration and validation | Sample representativeness and matching satellite-pixel scales |
+| Airborne | 航空 | Planned local surveys with fine detail and rapid response | Range, payload, vibration, weather and flight time |
+| Spaceborne | 航天 | Broad, systematic repeat coverage and long archives | Orbital opportunities, payload design, communications and scheduling |
+
+UAV (uncrewed/unmanned aerial vehicle) denotes the aircraft; UAS (uncrewed/unmanned aerial system) also includes control, communications and support components. Fine pixels from a drone still require reliable positioning, radiometric calibration and field validation. Low altitude alone does not guarantee quality.
+
 For the same angular field of view, a higher platform usually covers a wider area, while a fixed angular footprint also becomes larger on the ground. Lower altitude alone does not guarantee a clearer image: aperture, detector design, wavelength, motion, noise and processing also matter. A field measurement can help explain a satellite signal but may represent only a small patch. A satellite pixel can contain plants, bare soil and shadows together. Combining platforms helps connect measurements made at these different scales.
 
 Sources: Chapter 3, file pages 3–8 (compilation pages 102–107); English summary paragraphs 25–36.
+
+Textbook comparison: [Platforms, payloads and platform choice · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-platforms).
 
 </div>
 
 ## 3.2 怎样描述一条轨道 / Describing an orbit with six elements {#rs3-elements}
 
+<!-- textbook-figures-rs3-elements:start -->
+
+<RsFigure id="book-campbell-orbital-inclination" />
+
+<!-- textbook-figures-rs3-elements:end -->
+
+
 
 <RsFigure id="orbital-elements" />
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-先采用理想的地心二体模型：地球与卫星之间只有中心引力，地球为椭球的影响、大气阻力、日月引力与推力暂不计入。束缚轨道是椭圆，地心位于一个焦点，而不在椭圆中心。近地点（perigee）离地心最近，远地点（apogee）最远；这里的距离是地心距离，不是离地高度。
+先采用理想的地心二体模型：地球与卫星之间只有中心引力，地球非球形引力场、大气阻力、日月引力与推力暂不计入。束缚轨道是椭圆，地心位于一个焦点，而不在椭圆中心。近地点（perigee）离地心最近，远地点（apogee）最远；这里的距离是地心距离，不是离地高度。
 
 六个经典轨道根数（classical orbital elements）依次回答大小形状、空间定向和沿轨位置。下表采用常用符号，避免课件字体识别将不同角度混在一起。
 
@@ -71,6 +98,8 @@ Sources: Chapter 3, file pages 3–8 (compilation pages 102–107); English summ
 当 $a$、$e$ 已定义时，二体椭圆的近、远地点地心距离分别为 $r_p=a(1-e)$、$r_a=a(1+e)$。若要换成离地高度，仍需减去相应的地球表面半径；不能直接称 $a$ 为“轨道高度”。这一点会直接影响下一节周期公式是否用对。
 
 来源：第3章课件文件页9–13（汇总108–112），并按标准符号规范近地点幅角与真近点角。
+
+教材对照阅读：[六个经典轨道根数 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-elements)。
 
 </div>
 
@@ -97,9 +126,18 @@ With $a$ and $e$ defined, the perigee and apogee geocentric distances in the two
 
 Source: Chapter 3, file pages 9–13 (compilation pages 108–112), with standardised notation for argument of perigee and true anomaly.
 
+Textbook comparison: [Six classical orbital elements · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-elements).
+
 </div>
 
 ## 3.3 同步的对象究竟是什么 / Geosynchronous, geostationary and sun-synchronous {#rs3-orbits}
+
+<!-- textbook-figures-rs3-orbits:start -->
+
+<RsFigure id="book-campbell-orbit-families" />
+
+<!-- textbook-figures-rs3-orbits:end -->
+
 
 <RsFigure id="orbits" />
 
@@ -123,6 +161,8 @@ Source: Chapter 3, file pages 9–13 (compilation pages 108–112), with standar
 
 近圆形、近极地、太阳同步和重复地面轨迹分别解决高度稳定、大范围纬度覆盖、照明可比性和重复观测几何四个问题。它们可以组合，却不能互相推出。比较不同时相反射率时，近似一致的太阳时有帮助，仍需要考虑季节和大气条件。
 
+升轨是否在白昼取决于轨道设计。例如教材中的Terra为上午降轨观测、Aqua为下午升轨观测，两者都采用太阳同步轨道。不能把某一任务“白昼在降轨”的安排当成所有太阳同步卫星的定义。
+
 来源：第3章课件文件页9–17、21–27；[NASA轨道说明](https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/)用于核对同步定义与季节照明条件。课件“太阳光照角始终一致”在此作条件校订。
 
 
@@ -134,6 +174,8 @@ Source: Chapter 3, file pages 9–13 (compilation pages 108–112), with standar
 | 地球静止 | Geostationary | 赤道、圆形、顺行、恒星日周期同时满足。 |
 | 极轨/近极轨 | Polar/near-polar | 描述轨道面倾角，近极不必通过两极。 |
 | 太阳同步 | Sun-synchronous | 交点进动配合年运动，同类过境平均太阳时近似固定。 |
+
+教材对照阅读：[同步轨道、太阳时与升降轨 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-orbits)。
 
 </div>
 
@@ -151,6 +193,8 @@ Read the diagram in two stages. First inspect the orbital plane relative to the 
 
 Near-circular, near-polar, sun-synchronous and repeating-ground-track are separate properties. They support approximately stable altitude, broad latitude coverage, comparable illumination and repeated viewing geometry respectively. They can be combined but do not imply each other. Similar solar time helps comparisons of reflectance through time, while seasonal and atmospheric differences still need consideration.
 
+Whether an ascending pass is in daylight depends on orbit design. In the textbook examples, Terra observes on a morning descending pass, whereas Aqua observes on an afternoon ascending pass; both use sun-synchronous orbits. One mission's daylight-descending arrangement is not part of the definition of every sun-synchronous orbit.
+
 Sources: Chapter 3, file pages 9–17 and 21–27; [NASA's orbit guide](https://science.nasa.gov/earth/earth-observatory/catalog-of-earth-satellite-orbits/) checks synchronism definitions and seasonal illumination. The slide claim of an always-identical illumination angle is qualified here.
 
 
@@ -162,6 +206,8 @@ Sources: Chapter 3, file pages 9–17 and 21–27; [NASA's orbit guide](https://
 | 地球静止 | Geostationary | Equatorial, circular, prograde and sidereal-day period together. |
 | 极轨/近极轨 | Polar/near-polar | Describes inclination; near-polar need not cross both poles. |
 | 太阳同步 | Sun-synchronous | Nodal precession matches annual motion to keep comparable-pass mean solar time approximately fixed. |
+
+Textbook comparison: [Synchronous orbits, solar time and ascending/descending passes · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-orbits).
 
 </div>
 
@@ -189,6 +235,8 @@ $$
 
 来源：第3章课件文件页19–20；英文班笔记文件页8–10；英文整理资料轨道补充段落543–574。以上为教学二体模型，不替代精密星历计算。
 
+教材对照阅读：[开普勒模型、半长轴与周期 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-kepler)。
+
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
@@ -213,9 +261,18 @@ The slides also compare satellite speed and subsatellite-point speed. Neglecting
 
 Sources: Chapter 3, file pages 19–20; English-class notes, file pages 8–10; English summary orbital supplement, paragraphs 543–574. These teaching equations do not replace precise ephemeris calculations.
 
+Textbook comparison: [Kepler model, semi-major axis and period · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-kepler).
+
 </div>
 
 ## 3.5 一圈、重访与重复轨迹 / One orbit, revisit and a repeating ground track {#rs3-timing}
+
+<!-- textbook-figures-rs3-timing:start -->
+
+<RsFigure id="book-campbell-ground-tracks" />
+
+<!-- textbook-figures-rs3-timing:end -->
+
 
 <RsFigure id="ground-track" />
 
@@ -224,6 +281,8 @@ Sources: Chapter 3, file pages 19–20; English-class notes, file pages 8–10; 
 星下点（subsatellite point）在本章球形地球示意中，是地心到卫星连线与地面的交点。它随时间连成地面轨迹（ground track）。在精确椭球定位中，应注明采用地心投影还是大地垂足的定义。星下点也不等于传感器正在看的地方：侧视仪器可以观测轨迹一侧。
 
 地球在卫星绕行期间继续自转，因此下一圈通常落在另一条地面轨迹上。读地面轨迹图时先看标示的经纬度、升降轨箭头和圈次。地图上的弯曲线是三维运动投影到二维地图的结果，不代表卫星在太空中沿波浪形路径飞行；经度边界两侧的断线常是同一条轨迹跨过地图边界。轨迹线不是影像的宽度，线旁的带状区域才代表某个载荷的幅宽。
+
+把轨道与影像覆盖连接起来，可以依次问四件事：轨道给出平台何时经过和中心轨迹；传感器<strong>幅宽（swath width）</strong>把轨迹扩展为地面覆盖带；侧摆和纬度处的相邻幅宽重叠改变可达机会；过境地方太阳时与季节共同影响反射波段的照明。宽幅可以缩短某些地区的重访机会，却不自动提高空间分辨率，也不保证每次机会都实际采集或无云。
 
 | 时间概念 | 它回答的问题 | 需要明确的条件 |
 | --- | --- | --- |
@@ -238,7 +297,7 @@ Sources: Chapter 3, file pages 19–20; English-class notes, file pages 8–10; 
 
 课件把“覆盖周期（重访周期）”并列使用；网站按上表拆开。在选数据时记录来源实际说的是固定轨道重复、最大/平均重访，还是某星座的可调度时间。所谓时间分辨率也必须先说明这个口径，详见[第四章四类分辨率](/remote-sensing-ch4#rs4-resolutions)。
 
-来源：第3章课件文件页14–20、27、41；英文班笔记文件页5。图为观测关系示意，不用于读出具体任务的精确重访数值。
+来源：第3章课件文件页14–20、27、41；英文班笔记文件页5；CCRS教材文件第36–38页补充轨道、幅宽、纬度重叠与重访关系；Campbell等第六版文件第101–105页核对轨道、地面轨迹、幅宽、场景和像元概念，第232–234页用于限定太阳同步轨道的地方太阳时含义。图为观测关系示意，不用于读出具体任务的精确重访数值。
 
 
 <!-- rs-concept-table-rs3-timing -->
@@ -250,6 +309,8 @@ Sources: Chapter 3, file pages 19–20; English-class notes, file pages 8–10; 
 | 重访间隔 | Revisit interval | 再次获得目标观测机会，受幅宽、侧摆、纬度和星座影响。 |
 | 有效观测 | Usable observation | 观测机会还须满足云、质量和任务安排。 |
 
+教材对照阅读：[周期、重访、重复轨迹与覆盖 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-timing)。
+
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
@@ -257,6 +318,8 @@ Sources: Chapter 3, file pages 19–20; English-class notes, file pages 8–10; 
 In this chapter's spherical-Earth diagram, the subsatellite point is where the line from Earth's centre to the satellite meets the surface. Its path through time is the ground track. Precise positioning on an ellipsoid should state whether a geocentric projection or geodetic normal-foot definition is used. The subsatellite point is not necessarily the point being observed: a side-looking instrument can view beside the track.
 
 Earth keeps rotating while the satellite completes an orbit, so the next orbit usually produces another ground track. First read the map's latitude and longitude, ascending/descending arrows and orbit numbers. A curved line on a map is a projection of three-dimensional motion, not a wavy path through space. A break at opposite longitude boundaries often represents one continuous track crossing the map edge. The track line itself has no image width; a surrounding strip represents the swath of a particular instrument.
+
+Connect orbit and image coverage with four questions. The orbit sets when the platform passes and where the centre track falls. Sensor <strong>swath width</strong> expands that track into a ground strip. Pointing and latitude-dependent overlap between adjacent swaths change access opportunities. Local solar time of overpass and season jointly affect illumination in reflective bands. A wider swath can shorten revisit opportunities for some regions, but does not automatically improve spatial resolution or guarantee an acquired, cloud-free image.
 
 | Time concept | Question answered | Conditions to state |
 | --- | --- | --- |
@@ -271,7 +334,7 @@ Imagine a satellite returning quickly after one orbit, while Earth's rotation ha
 
 The slides use “coverage period (revisit period)” together; this page separates the meanings. When choosing data, record whether a source describes fixed-track repetition, maximum or average revisit, or a constellation's scheduling opportunity. Temporal resolution also needs this definition; see [the four resolutions in Chapter 4](/remote-sensing-ch4#rs4-resolutions).
 
-Sources: Chapter 3, file pages 14–20, 27 and 41; English-class notes, file page 5. The diagram illustrates observing relationships rather than precise revisit numbers for a mission.
+Sources: Chapter 3, file pages 14–20, 27 and 41; English-class notes, file page 5; CCRS, file pages 36–38, for the orbit–swath–latitude–revisit relationship; Campbell et al., sixth edition, file pages 101–105, for orbit, ground track, swath, scene and pixel, and file pages 232–234 for the local-solar-time qualification of sun-synchronous orbits. The diagram illustrates observing relationships rather than precise revisit numbers for a mission.
 
 
 <!-- rs-concept-table-rs3-timing -->
@@ -282,6 +345,8 @@ Sources: Chapter 3, file pages 14–20, 27 and 41; English-class notes, file pag
 | 轨迹重复周期 | Ground-track repeat cycle | Ground-track pattern repetition, depending on orbital/rotation relationships. |
 | 重访间隔 | Revisit interval | Next opportunity to observe a target; depends on swath, pointing, latitude and constellation. |
 | 有效观测 | Usable observation | An opportunity that also meets cloud, quality and scheduling requirements. |
+
+Textbook comparison: [Period, revisit, repeat track and coverage · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-timing).
 
 </div>
 
@@ -301,9 +366,17 @@ Sources: Chapter 3, file pages 14–20, 27 and 41; English-class notes, file pag
 
 立体观测（stereo observation）从不同位置或指向观察同一地物。地物高度会使其在不同影像中产生视差（parallax）；通过对应点、成像几何和定向信息可以估计三维结构。它可以是不同轨道的跨轨立体，也可以利用前视/后视相机或转向实现沿轨立体。侧摆只是获得不同视线的手段，不自动保证影像有足够重叠、可匹配纹理和精确定位。
 
+多角度、立体与多时相都可能使用多景影像，但目的不同。多角度观测强调改变观察方向，用于研究BRDF、冠层或结构方向性；立体观测强调视差与三维几何；多时相观测强调目标随时间的变化。同一次侧摆重访可能同时改变时间和角度，分析时仍应把两个变量分开。
+
+| 观测组织 | English term | 首要变化量 | 主要信息 |
+| --- | --- | --- | --- |
+| 多角度 | Multi-angle observation | 观察方向 | 方向反射、散射或结构特征 |
+| 立体 | Stereo observation | 有基线的视线几何 | 视差、高程和三维形态 |
+| 多时相 | Multitemporal observation | 获取时间 | 状态变化与过程演变 |
+
 读姿态图时，固定平台中心，分别跟随三个转动箭头看视线落点如何移动；再比较“整颗卫星朝向改变”和“扫描镜在传感器内部转动”。两者都能改变地面视线，却不是同一个运动。图中的倾斜程度用于突出关系，不代表某卫星的实际允许侧摆角。
 
-来源：第3章课件文件页28–37、62、66；第4章推扫与立体观测部分。历史姿态仪精度在本页不泛化为现役任务性能。
+来源：第3章课件文件页28–37、62、66；第4章推扫与立体观测部分；赵英时等教材文件第59–60页补充角度特征。历史姿态仪精度在本页不泛化为现役任务性能。
 
 
 <!-- rs-concept-table-rs3-attitude -->
@@ -314,6 +387,8 @@ Sources: Chapter 3, file pages 14–20, 27 and 41; English-class notes, file pag
 | 滚转/俯仰/偏航 | Roll/pitch/yaw | 绕规定机体系轴旋转；正负号和顺序查任务约定。 |
 | 离天底角 | Off-nadir angle | 角顶点在传感器，相对天底方向。 |
 | 入射角 | Incidence angle | 角顶点在目标，相对当地法线，一般不等于离天底角。 |
+
+教材对照阅读：[位置、姿态、观测角与立体 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-attitude)。
 
 </div>
 
@@ -329,9 +404,17 @@ Side-looking or off-nadir pointing increases the accessible area, but can length
 
 Stereo observation views the same feature from different positions or directions. Height produces different image positions, creating parallax. Corresponding features, imaging geometry and orientation information can then support three-dimensional reconstruction. Stereo can be across-track from different orbits, or along-track using forward/backward cameras or pointing. Off-nadir pointing provides different viewing directions but does not by itself guarantee adequate overlap, matchable texture or accurate geolocation.
 
+Multi-angle, stereo and multitemporal data can all involve several images, but their purposes differ. Multi-angle observation changes viewing direction to study BRDF and directional canopy or structural effects. Stereo observation emphasises parallax and three-dimensional geometry. Multitemporal observation emphasises change through time. One pointed revisit can change both time and angle; analysis should still separate the variables.
+
+| Observation organisation | English term | Primary variable | Main information |
+| --- | --- | --- | --- |
+| 多角度 | Multi-angle observation | Viewing direction | Directional reflectance, scattering or structure |
+| 立体 | Stereo observation | View geometry with a baseline | Parallax, elevation and 3-D form |
+| 多时相 | Multitemporal observation | Acquisition time | State change and process evolution |
+
 To read the attitude diagram, keep the platform centre fixed and follow each rotation arrow to see how the viewing footprint changes. Then distinguish rotation of the entire spacecraft from movement of a scanning mirror inside a sensor. Both can redirect the view but are different motions. The exaggerated tilts illustrate relationships rather than a specific satellite's permitted pointing angles.
 
-Sources: Chapter 3, file pages 28–37, 62 and 66; Chapter 4's pushbroom and stereo sections. Historical attitude-instrument accuracies are not presented as current mission performance.
+Sources: Chapter 3, file pages 28–37, 62 and 66; Chapter 4's pushbroom and stereo sections; Zhao et al., file pages 59–60, for angular characteristics. Historical attitude-instrument accuracies are not presented as current mission performance.
 
 
 <!-- rs-concept-table-rs3-attitude -->
@@ -342,6 +425,8 @@ Sources: Chapter 3, file pages 28–37, 62 and 66; Chapter 4's pushbroom and ste
 | 滚转/俯仰/偏航 | Roll/pitch/yaw | Rotations about stated body axes; signs/order follow mission conventions. |
 | 离天底角 | Off-nadir angle | At the sensor, relative to nadir. |
 | 入射角 | Incidence angle | At the target, relative to the local normal; generally differs from off-nadir angle. |
+
+Textbook comparison: [Position, attitude, viewing angles and stereo · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-attitude).
 
 </div>
 
@@ -365,6 +450,8 @@ Sources: Chapter 3, file pages 28–37, 62 and 66; Chapter 4's pushbroom and ste
 
 来源：第3章课件文件页38–113、114–168、169–186；[USGS Landsat 8](https://www.usgs.gov/landsat-missions/landsat-8)核对载荷名称；[NASA Terra MODIS](https://terra.nasa.gov/about/terra-instruments/modis)核对离散波段。中国任务在本节按课件历史案例讲解用途，不新增未核实的当前状态或精确参数。
 
+教材对照阅读：[历史任务与传感器组合 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-missions)。
+
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
@@ -385,6 +472,8 @@ Historical aerial photography, electronic scanning, multispectral observation, p
 
 Sources: Chapter 3, file pages 38–113, 114–168 and 169–186; [USGS Landsat 8](https://www.usgs.gov/landsat-missions/landsat-8) for instrument identity; [NASA Terra MODIS](https://terra.nasa.gov/about/terra-instruments/modis) for discrete bands. Chinese missions are discussed as historical course examples, without new unverified current-status or precise-parameter claims.
 
+Textbook comparison: [Historical missions and sensor combinations · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-missions).
+
 </div>
 
 ## 3.8 从学习任务到观测选择 / Choosing observations for a task {#rs3-design}
@@ -401,6 +490,8 @@ Sources: Chapter 3, file pages 38–113, 114–168 and 169–186; [USGS Landsat 
 
 例如，比较两个日期的耕地变化，不应只选像元最小的影像。先确认它们是否覆盖同一地区、观测季节是否合适、是否有足够光谱信息，再检查云、观测角、定标和几何配准。长期比较还需将变化与太阳照明、季节性生长和处理版本区分。本章给出平台与几何框架，第四章继续解释这些条件怎样在传感器内形成。
 
+教材对照阅读：[任务到平台与观测条件 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-design)。
+
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
@@ -412,6 +503,8 @@ The four resolutions concern spatial detail, wavelength discrimination, radiomet
 Finer spatial sampling often increases data volume. Narrower bands usually collect less energy and place greater demands on signal-to-noise ratio. Wider swaths increase coverage but also raise edge-geometry and instrument-design considerations. Pointing can shorten revisit for a region while changing viewing angle. More satellites provide opportunities but require attention to inter-satellite calibration. These are design trade-offs, not universal equations that apply identically to every sensor.
 
 For example, comparing farmland on two dates requires more than choosing the smallest pixels. Check common coverage, suitable seasons and spectral information, then clouds, viewing angles, calibration and geometric registration. Long-term analysis must distinguish target change from illumination, seasonal growth and processing-version differences. This chapter supplies the platform and geometry framework; Chapter 4 explains how sensor mechanisms create these observations.
+
+Textbook comparison: [From a task to platforms and observing conditions · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-design).
 
 </div>
 
@@ -425,6 +518,8 @@ For example, comparing farmland on two dates requires more than choosing the sma
 
 继续阅读[第四章传感器与成像](/remote-sensing-ch4)，理解同一条轨道上摆扫、推扫和侧视雷达怎样得到不同影像。术语可在[双语术语表](/remote-sensing-glossary)检索；资料定位见[来源与勘误](/remote-sensing-sources)。
 
+教材对照阅读：[第三章教材阅读路线 · 原文小节与PDF/印刷页对照](/remote-sensing-sources#rs-book-rs3-sources)。
+
 </div>
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
@@ -434,5 +529,7 @@ This chapter reorganises the 186 file pages of the local Chapter 3 slides, corre
 The reading route is platform and payload → six elements → orbit types → periods and ground tracks → attitude and viewing geometry → observation choice. NASA and USGS documentation correct synchronism conditions, Landsat 8 instrument identity and MODIS spectral classification. Old operational-status tables, national rankings and unverified exact parameters are not reused as current facts. Teaching diagrams do not represent measured orbital products or true scale.
 
 Continue to [Chapter 4: sensors and imaging](/remote-sensing-ch4) to see how whiskbroom, pushbroom and side-looking radar systems produce different imagery from a platform. Search terms in the [bilingual glossary](/remote-sensing-glossary) and locate evidence in [sources and corrections](/remote-sensing-sources).
+
+Textbook comparison: [Chapter 3 textbook reading route · sections and PDF/printed-page mapping](/remote-sensing-sources#rs-book-rs3-sources).
 
 </div>
