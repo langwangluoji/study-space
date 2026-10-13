@@ -13,7 +13,7 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
  try{
   for(const slug of slugs){
    const r=await page.goto(base+slug+'.html',{waitUntil:'networkidle'});assert.equal(r.status(),200);
-   const sidebar=await page.locator('.VPSidebar').innerText();assert(sidebar.includes('第一章 大地测量绪论')&&sidebar.includes('第二章 椭球面数学性质'));assert(!sidebar.includes('第八单元'));
+   const sidebar=await page.locator('.VPSidebar').innerText();if(slug==='geodesy-sources')assert(sidebar.includes('全部资源'));else assert(sidebar.includes('第一章 大地测量绪论')&&sidebar.includes('第二章 椭球面数学性质'));assert(!sidebar.includes('第八单元'));
    assert.equal(await page.locator('mjx-merror,[data-mjx-error]').count(),0);
    await page.locator('.vp-doc img[loading=lazy]').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
    await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));

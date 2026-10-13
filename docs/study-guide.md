@@ -1,5 +1,7 @@
 # 重新学习的阅读路线
 
+<div class="course-quicklinks"><a href="/study-space/courses.html">选择课程 →</a><a href="/study-space/review-guide.html">转到期末复习 →</a></div>
+
 已经上过课却仍跟不上推导时，可以从一条完整的计算链重新建立联系。先读主线，再展开真正卡住的证明；每次回到同一个样本、向量或几何点，辨认下一式改变了什么。遇到生疏术语，先补它在当前步骤中的作用，再继续推导。
 
 ## 机器学习：从预测走到可靠的学习

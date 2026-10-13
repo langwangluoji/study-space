@@ -13,51 +13,7 @@
       "dark": false
     },
     {
-      "slug": "course-ml",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-1",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-2",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-3",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -79,18 +35,7 @@
       "dark": false
     },
     {
-      "slug": "read-notebook",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -101,7 +46,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -112,7 +57,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -123,7 +68,7 @@
       "dark": false
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -134,29 +79,18 @@
       "dark": false
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
       "slug": "book-prml",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "book-mml",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -178,7 +112,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -189,62 +123,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "verification",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -255,40 +134,29 @@
       "dark": false
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -299,84 +167,51 @@
       "dark": false
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 1440,
-      "theme": "light",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 1440,
       "theme": "light",
       "viewport": 1440,
@@ -398,51 +233,7 @@
       "dark": true
     },
     {
-      "slug": "course-ml",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-1",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-2",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-3",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -464,18 +255,7 @@
       "dark": true
     },
     {
-      "slug": "read-notebook",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -486,7 +266,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -497,7 +277,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -508,7 +288,7 @@
       "dark": true
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -519,29 +299,18 @@
       "dark": true
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
       "slug": "book-prml",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "book-mml",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -563,7 +332,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -574,62 +343,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "verification",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -640,40 +354,29 @@
       "dark": true
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -684,84 +387,51 @@
       "dark": true
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
       "scroll": 1440,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 1440,
-      "theme": "dark",
-      "viewport": 1440,
-      "scroll": 1440,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 1440,
       "theme": "dark",
       "viewport": 1440,
@@ -783,51 +453,7 @@
       "dark": false
     },
     {
-      "slug": "course-ml",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-1",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-2",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-3",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -849,18 +475,7 @@
       "dark": false
     },
     {
-      "slug": "read-notebook",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -871,7 +486,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -882,7 +497,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -893,7 +508,7 @@
       "dark": false
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -904,29 +519,18 @@
       "dark": false
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
       "slug": "book-prml",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "book-mml",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -948,7 +552,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -959,62 +563,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "verification",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -1025,40 +574,29 @@
       "dark": false
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -1069,84 +607,51 @@
       "dark": false
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 390,
       "theme": "light",
       "viewport": 390,
       "scroll": 390,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 390,
-      "theme": "light",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 390,
       "theme": "light",
       "viewport": 390,
@@ -1168,51 +673,7 @@
       "dark": true
     },
     {
-      "slug": "course-ml",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-1",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-2",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-3",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1234,18 +695,7 @@
       "dark": true
     },
     {
-      "slug": "read-notebook",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1256,7 +706,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1267,7 +717,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1278,7 +728,7 @@
       "dark": true
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1289,29 +739,18 @@
       "dark": true
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
       "slug": "book-prml",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "book-mml",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1333,7 +772,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1344,62 +783,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "verification",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1410,40 +794,29 @@
       "dark": true
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1454,84 +827,51 @@
       "dark": true
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
       "scroll": 390,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 390,
-      "theme": "dark",
-      "viewport": 390,
-      "scroll": 390,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 390,
       "theme": "dark",
       "viewport": 390,
@@ -1553,51 +893,7 @@
       "dark": false
     },
     {
-      "slug": "course-ml",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-1",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-2",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "lecture-3",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1619,18 +915,7 @@
       "dark": false
     },
     {
-      "slug": "read-notebook",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1641,7 +926,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1652,7 +937,7 @@
       "dark": false
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1663,7 +948,7 @@
       "dark": false
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1674,29 +959,18 @@
       "dark": false
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
       "slug": "book-prml",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "book-mml",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1718,7 +992,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1729,62 +1003,7 @@
       "dark": false
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "verification",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1795,40 +1014,29 @@
       "dark": false
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1839,84 +1047,51 @@
       "dark": false
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 320,
       "theme": "light",
       "viewport": 320,
       "scroll": 320,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": false
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 320,
-      "theme": "light",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": false
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 320,
       "theme": "light",
       "viewport": 320,
@@ -1938,51 +1113,7 @@
       "dark": true
     },
     {
-      "slug": "course-ml",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-1",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 535,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-2",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 450,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "lecture-3",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 389,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "cifar10-practice",
+      "slug": "courses",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2004,18 +1135,7 @@
       "dark": true
     },
     {
-      "slug": "read-notebook",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 8,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "read-sources",
+      "slug": "review-guide",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2026,7 +1146,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-cifar10_mlp_tutorial",
+      "slug": "study-guide",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2037,7 +1157,7 @@
       "dark": true
     },
     {
-      "slug": "read-downloads-rewrite_reference_checks",
+      "slug": "contribute",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2048,7 +1168,7 @@
       "dark": true
     },
     {
-      "slug": "read-README",
+      "slug": "course-ml",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2059,29 +1179,18 @@
       "dark": true
     },
     {
-      "slug": "textbooks",
+      "slug": "course-geodesy",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 0,
+      "math": 1,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
       "slug": "book-prml",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "book-mml",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2103,7 +1212,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-1",
+      "slug": "read-README",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2114,62 +1223,7 @@
       "dark": true
     },
     {
-      "slug": "slides-lecture-2",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "slides-lecture-3",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "verification",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 2,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "course-geodesy",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 0,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-intro-models",
+      "slug": "read-notebook",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2180,40 +1234,29 @@
       "dark": true
     },
     {
-      "slug": "geodesy-intro-frames",
+      "slug": "lecture-1",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 18,
+      "math": 595,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-observations",
+      "slug": "lecture-3",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 36,
+      "math": 393,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-intro-gravity",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 45,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-ellipsoid",
+      "slug": "geodesy-source-s1",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2224,84 +1267,51 @@
       "dark": true
     },
     {
-      "slug": "geodesy-math",
+      "slug": "geodesy-source-s2",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 52,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-ellipsoid-coordinates",
+      "slug": "geodesy-source-s3",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 76,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-local-directions",
+      "slug": "geodesy-source-s4",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 35,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-curvature",
+      "slug": "geodesy-source-s5",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
       "scroll": 320,
-      "math": 48,
+      "math": 0,
       "errors": 0,
       "brokenImages": [],
       "dark": true
     },
     {
-      "slug": "geodesy-normal-curvature",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 103,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-metric",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 85,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-sources",
-      "width": 320,
-      "theme": "dark",
-      "viewport": 320,
-      "scroll": 320,
-      "math": 1,
-      "errors": 0,
-      "brokenImages": [],
-      "dark": true
-    },
-    {
-      "slug": "geodesy-plan",
+      "slug": "geodesy-source-s6",
       "width": 320,
       "theme": "dark",
       "viewport": 320,
@@ -2331,11 +1341,21 @@
     "Softmax alternate Jacobian direct anchor expands",
     "direct proof anchor expands ancestor",
     "knowledge hub links to course and resources",
+    "resource pages use resource sidebar and context",
+    "ordinary resource anchor preserves course filter",
+    "geodesy resources expose six downloadable originals",
+    "resource URL survives reload and reset clears legacy course hash",
+    "empty result reset restores keyboard focus",
+    "combined resource filters, empty reset and actual notebook download",
+    "continue reading restores last course anchor",
+    "same-page reading anchor saved",
+    "corrupt or obsolete reading record safely falls back",
     "Vue diagram responds after route switch",
     "mobile separate menus 390",
     "mobile separate menus 320",
     "PDF page hash preserved",
     "PDF, PPTX, notebook, scripts and marker paths reachable",
+    "all six geodesy downloads preserve original SHA-256",
     "geodesy interactive, mobile, search and source pages"
   ],
   "runtimeErrors": []

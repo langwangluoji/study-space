@@ -1,5 +1,7 @@
 # 机器学习 · 阅读路径
 
+<div class="course-quicklinks"><a href="/study-space/review-guide.html#ml">期末复习路线 →</a><a href="/study-space/resources.html#ml">教材、课件与代码 ↗</a></div>
+
 重新学习时，可先沿[阅读路线](study-guide.html)建立本章与前后知识的联系，再进入具体专题。必要推导在正文展开；附加证明用于追踪尚未理解的步骤。
 
 

@@ -1,1 +1,103 @@
-{"siteTitle":"课程知识库","updated":"2026-10-10","courses":[{"id":"ml","title":"图像分析与机器学习","category":"计算机与数据科学","url":"course-ml.html","description":"从线性回归、概率分类到多层感知机，保留教材式推导与关键算例。","chapters":[{"id":"lecture-1","title":"线性回归与最小二乘","url":"lecture-1.html","type":"理论","points":15},{"id":"lecture-2","title":"线性分类与感知机","url":"lecture-2.html","type":"理论","points":6},{"id":"lecture-3","title":"非线性回归与多层感知机","url":"lecture-3.html","type":"理论","points":5},{"id":"cifar10-practice","title":"CIFAR-10 · MLP 实践","url":"cifar10-practice.html","type":"可选实践","points":16}]}]}
+{
+  "siteTitle": "Study Space · 学习空间",
+  "courses": [
+    {
+      "id": "ml",
+      "title": "图像分析与机器学习",
+      "category": "计算机与数据科学",
+      "url": "course-ml.html",
+      "description": "沿着预测、分类与网络的计算链，连接教材推导和可运行实验。",
+      "status": "前三讲与实践已整理",
+      "chapters": [
+        {
+          "id": "lecture-1",
+          "title": "第一讲 · 回归与可靠预测",
+          "url": "lecture-1.html",
+          "points": 15
+        },
+        {
+          "id": "lecture-2",
+          "title": "第二讲 · 线性分类与概率",
+          "url": "lecture-2.html",
+          "points": 6
+        },
+        {
+          "id": "lecture-3",
+          "title": "第三讲 · 神经网络与反向传播",
+          "url": "lecture-3.html",
+          "points": 5
+        },
+        {
+          "id": "cifar10-practice",
+          "title": "实践 · CIFAR-10 MLP",
+          "url": "cifar10-practice.html",
+          "points": 16
+        }
+      ]
+    },
+    {
+      "id": "geodesy",
+      "title": "大地测量",
+      "category": "测绘与地球空间科学",
+      "url": "course-geodesy.html",
+      "description": "从地球参考模型走向椭球坐标、局部方向、曲率、弧长与面积。",
+      "status": "绪论与椭球主线已整理",
+      "chapters": [
+        {
+          "id": "geodesy-intro",
+          "title": "第一章 大地测量绪论",
+          "url": "geodesy-intro.html",
+          "topics": [
+            {
+              "slug": "geodesy-intro-models",
+              "title": "研究对象与参考模型"
+            },
+            {
+              "slug": "geodesy-intro-frames",
+              "title": "位置表达与坐标框架"
+            },
+            {
+              "slug": "geodesy-intro-observations",
+              "title": "空间观测怎样约束位置"
+            },
+            {
+              "slug": "geodesy-intro-gravity",
+              "title": "地球形状与重力场"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-ellipsoid",
+          "title": "第二章 椭球面数学性质",
+          "url": "geodesy-ellipsoid.html",
+          "topics": [
+            {
+              "slug": "geodesy-math",
+              "title": "曲线 曲面与坐标表达"
+            },
+            {
+              "slug": "geodesy-ellipsoid-coordinates",
+              "title": "旋转椭球与三种纬度"
+            },
+            {
+              "slug": "geodesy-local-directions",
+              "title": "椭球上的局部方向"
+            },
+            {
+              "slug": "geodesy-curvature",
+              "title": "曲线曲率与子午曲率半径"
+            },
+            {
+              "slug": "geodesy-normal-curvature",
+              "title": "法曲率与方向曲率"
+            },
+            {
+              "slug": "geodesy-metric",
+              "title": "曲面度量 弧长与面积"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

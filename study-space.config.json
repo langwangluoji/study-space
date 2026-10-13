@@ -1,0 +1,6 @@
+{
+  "courses": [
+    {"id":"ml","title":"图像分析与机器学习","subtitle":"IMAGE ANALYSIS & MACHINE LEARNING","field":"计算机与数据科学","summary":"沿着预测、分类与网络的计算链，连接教材推导和可运行实验。","entry":"/course-ml.html","start":"/lecture-1.html#a1","source":"/read-sources.html","scope":"3 讲理论 · 16 步实践","tags":["回归与分类","神经网络","CIFAR-10"],"prerequisites":"基础线性代数、求导、条件概率","status":"前三讲与实践已整理"},
+    {"id":"geodesy","title":"大地测量","subtitle":"GEODESY & GEODETIC CONTROL","field":"测绘与地球空间科学","summary":"从地球参考模型走向椭球坐标、局部方向、曲率、弧长与面积。","entry":"/course-geodesy.html","start":"/geodesy-intro.html","source":"/geodesy-sources.html","scope":"2 个主章 · 10 个专题","tags":["参考模型","椭球几何","坐标交互"],"prerequisites":"基础微积分、向量与矩阵","status":"绪论与椭球主线已整理"}
+  ]
+}

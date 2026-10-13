@@ -7,3 +7,5 @@ docs/read-*.md
 reports/screenshots/
 __pycache__/
 docs/_fragments/generated/
+docs/.vitepress/resource-catalog.json
+docs/geodesy-source-s*.md
