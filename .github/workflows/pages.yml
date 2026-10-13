@@ -26,8 +26,8 @@ jobs:
       - run: npm run check
       - run: pip install -r requirements-geodesy.txt
       - run: python scripts/verify_geodesy.py
-      - run: python scripts/verify_insar.py
       - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu
+      - run: python scripts/verify_insar.py
       - run: npm run check:math
       - run: npx playwright install --with-deps chromium
       - run: node scripts/check-ui.cjs

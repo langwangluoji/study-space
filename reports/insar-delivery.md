@@ -30,3 +30,5 @@
 本地独立分支feat/insar-foundations，提交前main=1168322f80640fdb8c39219077dadbd851628e33。最终网页源码、数学/浏览器检查和自动发布流程一起进入PR；原始InSAR文件夹的四PDF保持原样，其他任务checkout未写入。
 
 正文改动后运行python scripts/package-insar.py、python scripts/verify_insar.py和正常构建；图像清单验证原页校验值，原创图由包脚本更新。README登记唯一维护源。自动检查通过后按用户网站扩充授权合并并由GitHub Pages发布，最终发布状态另行记录。
+
+首轮PR服务器构建和大地数学检查通过，InSAR数学检查因顺序早于NumPy依赖安装失败。已将该步骤移到requirements-checks.txt安装之后，保持原有固定NumPy版本2.3.5和所有核验，不跳过检查；后续以修正提交的完整CI结果为准。
