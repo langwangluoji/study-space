@@ -27,7 +27,7 @@ node scripts/check-ui.cjs
 
 ## 内容在哪里编辑
 
-大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；原始文件保留本地。来源与工作流署名见 docs/geodesy-sources.md。
+大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；原始文件保留本地，六份校验一致的副本接入资料库，PDF支持预览。来源与工作流署名见 docs/geodesy-sources.md。
 
 | 内容 | 唯一维护源 |
 | --- | --- |
@@ -41,9 +41,19 @@ node scripts/check-ui.cjs
 
 `docs/lecture-*.md`、`docs/cifar10-practice.md`、`docs/read-*.md` 和 `docs/_fragments/generated/` 由脚本生成并已忽略。整讲入口通过 Markdown include 组合片段；开发时编辑片段会自动刷新。新增知识点或调整课程配置后重新启动 `npm run dev`。
 
-`public/` 仅维护静态文件，构建时复制到网站根路径；教材、课件、历史结果、下载与 `MISSION.md` 不改名。不往其中添加手写 HTML 正文或搜索索引。
+`public/` 仅维护静态文件，构建时复制到网站根路径；教材、课件、历史结果、下载与 `MISSION.md` 不改名。大地原资料副本位于 `public/geodesy/materials/`，公开清单只保留原文件名、大小和 SHA-256，不包含本地路径。不往其中添加手写 HTML 正文或搜索索引。
 
 ## 新增课程与知识点
+
+### 学习空间入口与资源清单
+
+首页、课程目录使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖机器学习与大地测量。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的正文，不把未完成范围写成已完成。
+
+资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。可下载文件使用 `file`，可选 PDF 使用 `alternate`；外部下载使用 `external`，作者项目使用 `source`，版本发布页使用 `release`；尚未公开的原件只设 `localOnly: true`，不能同时提供下载字段。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径；原件放在 `public/`。生成器检查预览及下载文件、归属、重复 ID 和公开状态，并从实际文件获取大小，从已有 PDF 核对记录读取页数。不要手工修改生成的 `public/resources-catalog.json`。需要生成原件阅读页时设置 `reader: "pdf"` 或 `reader: "file"`，并提供 `file` 与唯一 `preview` 页面地址；生成页随清单更新，课程返回链接由所属课程清单取得。大地原件以 `materialId` 连接公开校验清单。
+
+资料新增只需更新清单和实际文件，再运行 `npm run build`。章节修订保持旧锚点，更新来源与范围。新增第三门课程可先运行 `node scripts/add-course.mjs --slug remote-sensing --title 遥感基础` 创建课程入口、首章与来源模板；填入实际内容、修订状态与来源后再发布。新课程默认使用 `<slug>-` 章节前缀，导航自动按前缀匹配；需要更多章节时更新清单中的 `chapters`。这个命令不会读取或上传本地私人资料，不会生成经过核验的知识正文。
+
+### 机器学习讲次与知识点
 
 在 `course.config.json` 新增讲次或知识点记录，包含 `slug`、`title`、`sections`；每个 section 指定唯一 `id`、`title`、`source`。按配置顺序生成长页，左侧导航同步生成，搜索自动检索渲染后的正文。
 

@@ -6,6 +6,8 @@ next: {"text": "第一章 大地测量绪论", "link": "/geodesy-intro"}
 
 # 大地测量
 
+<div class="course-quicklinks"><a href="/study-space/review-guide.html#geodesy">期末复习路线 →</a><a href="/study-space/resources.html#geodesy">原资料与来源索引 ↗</a></div>
+
 重新学习时，可先沿[阅读路线](study-guide.html)建立本章与前后知识的联系，再进入具体专题。必要推导在正文展开；附加证明用于追踪尚未理解的步骤。
 
 

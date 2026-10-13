@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const args=process.argv.slice(2), read=flag=>args[args.indexOf(flag)+1];
+const slug=args.includes('--slug')?read('--slug'):'',title=args.includes('--title')?read('--title'):'';
+if(!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(slug)||!title||/[\r\n<>]/.test(title))throw Error('用法：node scripts/add-course.mjs --slug remote-sensing --title 遥感基础');
+const root=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const manifest=path.join(root,'study-space.config.json'), space=JSON.parse(fs.readFileSync(manifest,'utf8'));
+if(space.courses.some(c=>c.id===slug))throw Error('课程 ID 已存在: '+slug);
+const pages=[['course-'+slug,`# ${title}\n\n本课程正在整理，当前模板尚未形成完整知识库。\n\n## 阅读起点\n\n[第一章：待整理的知识主线](${slug}-intro.html)\n\n## 资料与范围\n\n[来源登记](${slug}-sources.html)。请先记录课程范围，再补充经过核对的正文。`],[slug+'-intro',`# ${title} · 第一章\n\n本页为待整理模板。\n\n## 当前问题\n\n填写本章要解释的问题、读者需要的基础和学习目标。\n\n## 知识主线\n\n按问题、符号、推导、条件与已有算例组织正文。\n\n## 来源对应\n\n[资料登记](${slug}-sources.html)。记录原文页码和修订依据。`],[slug+'-sources',`# ${title} · 资料来源\n\n尚未登记来源。\n\n## 来源登记\n\n| 编号 | 标题与作者 | 版本 | 对应章节与页码 | 公开状态 |\n| --- | --- | --- | --- | --- |\n\n## 差异与修订\n\n记录符号约定、适用条件、勘误与核对结果。`]];
+for(const [name] of pages)if(fs.existsSync(path.join(root,'docs',name+'.md')))throw Error('不会覆盖现有页面: '+name);
+for(const [name,body] of pages)fs.writeFileSync(path.join(root,'docs',name+'.md'),'---\nprev: false\nnext: false\n---\n\n'+body+'\n',{flag:'wx'});
+space.courses.push({id:slug,title,subtitle:'',field:'新课程 · 待整理',summary:'课程来源与知识章节正在整理。',entry:'/course-'+slug+'.html',start:'/'+slug+'-intro.html',source:'/'+slug+'-sources.html',scope:'范围待确认',tags:['待整理'],prerequisites:'待确认',status:'待整理',chapters:[{slug:slug+'-intro',title:'第一章 · 待整理'}]});
+fs.writeFileSync(manifest,JSON.stringify(space,null,2)+'\n');
+console.log(`已创建 ${title} 的入口、首章与来源模板。请填入内容并更新状态，再运行 npm run build。`);
