@@ -30,6 +30,14 @@ sidebar: false
         <ul class="hub-tags" aria-label="大地测量课程内容"><li>两个主要大章</li><li>坐标交互算例</li><li>原课件几何图</li></ul>
         <a class="hub-entry" href="/study-space/course-geodesy.html">进入课程 <span aria-hidden="true">→</span></a>
       </article>
+      <article class="hub-course">
+        <p class="hub-eyebrow">测绘与地球空间科学</p>
+        <h3><a href="/study-space/course-remote-sensing.html">遥感原理与基础</a></h3>
+        <p class="hub-subtitle">Remote Sensing Principles and Fundamentals</p>
+        <p>沿辐射、平台轨道与传感器成像建立理解，结合双语讲解、课件原图与扫描交互。</p>
+        <ul class="hub-tags" aria-label="遥感课程内容"><li>前四章双语</li><li>轨道与扫描图解</li><li>概念辨析</li></ul>
+        <a class="hub-entry" href="/study-space/course-remote-sensing.html">进入课程 <span aria-hidden="true">→</span></a>
+      </article>
     </section>
     <aside class="hub-resources" aria-labelledby="hub-materials">
       <div class="hub-section-heading"><h2 id="hub-materials">资料与工具</h2><span>RESOURCES</span></div>

@@ -1,0 +1,432 @@
+{
+  "date": "2026-10-13",
+  "scope": "First four chapters only. File pages are one-based; no claim of verbatim/full-figure reproduction.",
+  "original_figures_only": true,
+  "concept_table_policy": "Paired Chinese/English tables alongside continuous explanations",
+  "coverage": [
+    {
+      "chapter": 1,
+      "url": "remote-sensing-ch1.html",
+      "treatment": "Sourced introductory reconstruction; original Lecture 1 slides unavailable",
+      "primary": "English DOCX Lecture 1, XML paragraphs 4–61",
+      "supplement": "Chapter 2 pages 3–4,24–25; Chapter 3 pages 3–8",
+      "limitation": "Lecture 1 screenshots not embedded; numbered bibliography absent"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-wave-properties",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        5,
+        16
+      ],
+      "compiled_pages": [
+        5,
+        16
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-spectrum",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        17,
+        25
+      ],
+      "compiled_pages": [
+        17,
+        25
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-radiometry",
+      "chapter_file": "第2章.pdf",
+      "file_pages": null,
+      "compiled_pages": null,
+      "treatment": "conceptual explanation; historical device tables remain reference context",
+      "supplement": "English summary/notes definitions, or Gaofen survey task conventions"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-blackbody-laws",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        26,
+        36
+      ],
+      "compiled_pages": [
+        26,
+        36
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-emissivity-brightness-temperature",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        32,
+        36
+      ],
+      "compiled_pages": [
+        32,
+        36
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-solar-terrestrial",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        37,
+        45
+      ],
+      "compiled_pages": [
+        37,
+        45
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-atmosphere",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        46,
+        64
+      ],
+      "compiled_pages": [
+        46,
+        64
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-reflectance-brdf",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        65,
+        74
+      ],
+      "compiled_pages": [
+        65,
+        74
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 2,
+      "url": "remote-sensing-ch2.html#rs2-spectral-signatures",
+      "chapter_file": "第2章.pdf",
+      "file_pages": [
+        75,
+        99
+      ],
+      "compiled_pages": [
+        75,
+        99
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-platforms",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        3,
+        8
+      ],
+      "compiled_pages": [
+        102,
+        107
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-elements",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        9,
+        13
+      ],
+      "compiled_pages": [
+        108,
+        112
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-orbits",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        9,
+        17
+      ],
+      "compiled_pages": [
+        108,
+        116
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-kepler",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        14,
+        20
+      ],
+      "compiled_pages": [
+        113,
+        119
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-timing",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        14,
+        27
+      ],
+      "compiled_pages": [
+        113,
+        126
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-attitude",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        28,
+        37
+      ],
+      "compiled_pages": [
+        127,
+        136
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-missions",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        38,
+        186
+      ],
+      "compiled_pages": [
+        137,
+        285
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 3,
+      "url": "remote-sensing-ch3.html#rs3-design",
+      "chapter_file": "第3章.pdf",
+      "file_pages": [
+        169,
+        186
+      ],
+      "compiled_pages": [
+        268,
+        285
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-components",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        2,
+        5
+      ],
+      "compiled_pages": [
+        287,
+        290
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-photography",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        6,
+        6
+      ],
+      "compiled_pages": [
+        291,
+        291
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-scanning",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        7,
+        22
+      ],
+      "compiled_pages": [
+        292,
+        307
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-scanning",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        52,
+        85
+      ],
+      "compiled_pages": [
+        337,
+        370
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-ifov",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        14,
+        19
+      ],
+      "compiled_pages": [
+        299,
+        304
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-resolutions",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        86,
+        88
+      ],
+      "compiled_pages": [
+        371,
+        373
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-colour",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        6,
+        88
+      ],
+      "compiled_pages": [
+        291,
+        373
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-thermal",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        23,
+        51
+      ],
+      "compiled_pages": [
+        308,
+        336
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-microwave",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        89,
+        97
+      ],
+      "compiled_pages": [
+        374,
+        382
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-radar",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        98,
+        114
+      ],
+      "compiled_pages": [
+        383,
+        399
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-terrain",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        115,
+        125
+      ],
+      "compiled_pages": [
+        400,
+        410
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-insar",
+      "chapter_file": "第4章.pdf",
+      "file_pages": [
+        126,
+        130
+      ],
+      "compiled_pages": [
+        411,
+        415
+      ],
+      "treatment": "conceptual explanation; historical device tables remain reference context"
+    },
+    {
+      "chapter": 4,
+      "url": "remote-sensing-ch4.html#rs4-selection",
+      "chapter_file": "第4章.pdf",
+      "file_pages": null,
+      "compiled_pages": null,
+      "treatment": "conceptual explanation; historical device tables remain reference context",
+      "supplement": "English summary/notes definitions, or Gaofen survey task conventions"
+    }
+  ],
+  "outside_scope": [
+    "Compiled PDF chapters 5–9",
+    "Unverified current satellite operational status",
+    "Exact specifications without model/version/official verification",
+    "Full textbook/PDF uploads"
+  ]
+}

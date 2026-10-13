@@ -1,5 +1,11 @@
 # 资料中心
 
+## 遥感原理与基础 {#remote-sensing}
+
+[前四章双语学习路径](course-remote-sensing.html) · [双语术语与概念对照](remote-sensing-glossary.html) · [来源、13幅课件图与勘误索引](remote-sensing-sources.html)
+
+原资料包括第2–4章中文课件、“遥感汇总”、英文课程总结与笔记、高分卫星调研。整份原PDF和DOCX保留本地；网站呈现重新编写的双语正文、带页码的课件图及原创教学示意。
+
 ## 大地测量课程资料 {#geodesy}
 
 [两主章的阅读路径](course-geodesy.html) · [六份原资料与页码索引](geodesy-sources.html) · [课程维护方案](geodesy-plan.html)

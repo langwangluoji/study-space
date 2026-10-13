@@ -1,0 +1,749 @@
+{
+  "policy": "Course figure excerpts; original PDFs retained locally. File pages are 1-based; printed pages unmarked. Author/third-party credits retained in figures or adjacent captions.",
+  "figures": [
+    {
+      "id": "workflow",
+      "src": "/remote-sensing/figures/lecture-workflow.webp",
+      "title_zh": "遥感系统与信息处理流程",
+      "title_en": "Remote sensing workflow",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 3,
+      "summary_page": 102,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "英文图中上半部分是数据获取，下半部分是信息提取；本章补充验证环节。",
+      "note_en": "The upper part covers acquisition; the lower part covers information extraction. Validation is added in the text.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "spectrum",
+      "src": "/remote-sensing/figures/lecture-spectrum.webp",
+      "title_zh": "电磁波谱",
+      "title_en": "Electromagnetic spectrum",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 18,
+      "summary_page": 18,
+      "printed_page": null,
+      "credit": "CCRS/CCT",
+      "note_zh": "原图用于定性比较尺度，波谱边界采用课程约定；nm与μm相差1000倍。",
+      "note_en": "Use this historical figure qualitatively. Band boundaries depend on convention; 1 μm equals 1000 nm.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "blackbody",
+      "src": "/remote-sensing/figures/lecture-blackbody.webp",
+      "title_zh": "黑体曲线的温度比较",
+      "title_en": "Blackbody spectra at different temperatures",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 31,
+      "summary_page": 31,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "原图纵轴单位不完整，只读峰值移动与曲线形状；定量值以正文普朗克公式为准。",
+      "note_en": "The original vertical-axis units are incomplete. Use it for qualitative peak/shape comparisons; use the stated Planck formula for numerical values.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "windows",
+      "src": "/remote-sensing/figures/lecture-windows.webp",
+      "title_zh": "大气窗口与辐射来源",
+      "title_en": "Atmospheric windows and radiation sources",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 62,
+      "summary_page": 62,
+      "printed_page": null,
+      "credit": "CCRS/CCT",
+      "note_zh": "窗口透过率依大气与路径变化；曲线是教学对照，不能从旧位图精确读取边界。",
+      "note_en": "Transmission depends on the atmosphere and path. Do not extract precise window boundaries from this legacy raster.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "vegetation",
+      "src": "/remote-sensing/figures/lecture-vegetation.webp",
+      "title_zh": "植被光谱曲线",
+      "title_en": "Vegetation spectra",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 79,
+      "summary_page": 79,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "比较红光吸收、红边与近红外反射，不将图中单条曲线推广到全部植被。",
+      "note_en": "Compare red absorption, the red edge and near-infrared reflectance; no one curve represents every plant.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "sun-sync",
+      "src": "/remote-sensing/figures/lecture-sun-sync.webp",
+      "title_zh": "太阳同步轨道的课件示意",
+      "title_en": "Sun-synchronous orbit in the lecture",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 25,
+      "summary_page": 124,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "原图较低清；同类过境平均地方太阳时近似保持，太阳高度角仍随季节变化。",
+      "note_en": "The raster is low resolution. Similar passes retain approximately the same mean local solar time, while solar elevation varies seasonally.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "ifov",
+      "src": "/remote-sensing/figures/lecture-ifov.webp",
+      "title_zh": "瞬时视场与地面足迹",
+      "title_en": "IFOV and ground footprint",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 14,
+      "summary_page": 299,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "β≈d/f、g≈Hβ只用于天底、平坦地面、小角度；图中的地面长度不要误读成角量。",
+      "note_en": "The approximations β≈d/f and g≈Hβ require nadir viewing, flat terrain and small angles. Distinguish ground lengths from angles.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "pushbroom",
+      "src": "/remote-sensing/figures/lecture-pushbroom.webp",
+      "title_zh": "线阵沿轨推扫",
+      "title_en": "Along-track pushbroom scanning",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 53,
+      "summary_page": 338,
+      "printed_page": null,
+      "credit": "CCRS/CCT",
+      "note_zh": "探测器线阵横跨幅宽，平台沿轨前进；同时记录一行，不是逐点横向摆动。",
+      "note_en": "The detector line spans the swath, while platform motion is along track. A line is captured simultaneously.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "whiskbroom",
+      "src": "/remote-sensing/figures/lecture-whiskbroom.webp",
+      "title_zh": "MSS摆扫的扫描行",
+      "title_en": "MSS whiskbroom scan lines",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 12,
+      "summary_page": 297,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "主动扫描指扫描镜正在工作的行段，不表示这里是主动发射能量的遥感；MSS是被动光学系统。",
+      "note_en": "The active scan segment refers to mirror operation, not active illumination. MSS is a passive optical system.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "orbital-elements",
+      "src": "/remote-sensing/figures/lecture-orbital-elements.webp",
+      "title_zh": "轨道参数的几何关系",
+      "title_en": "Geometry of orbital elements",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 12,
+      "summary_page": 111,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "地心、轨道面、赤道面与近远地点分别标识；六参数定义与时间基准见正文。",
+      "note_en": "Separate the Earth centre, orbital plane, equatorial plane and apsides; see the text for the six parameters and time reference.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "ground-track",
+      "src": "/remote-sensing/figures/lecture-ground-track.webp",
+      "title_zh": "星下点与地面轨迹",
+      "title_en": "Subsatellite point and ground track",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 18,
+      "summary_page": 117,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "轨迹是星下点随时间形成的曲线，轨道周期不是地面目标重访周期。",
+      "note_en": "A ground track is the time path of the subsatellite point. The orbital period is not a target revisit interval.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "radar-terrain",
+      "src": "/remote-sensing/figures/lecture-radar-terrain.webp",
+      "title_zh": "透视收缩、叠掩与雷达阴影",
+      "title_en": "Foreshortening, layover and radar shadow",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 117,
+      "summary_page": 402,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "课件旧译“前倾/覆盖”分别对应透视收缩/叠掩；注意b、a回波距离排序与无照射区域。",
+      "note_en": "The older labels correspond to foreshortening/layover. Read the range ordering of a and b and distinguish unilluminated terrain.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "radar-geometry",
+      "src": "/remote-sensing/figures/lecture-radar-geometry.webp",
+      "title_zh": "侧视雷达的成像方向",
+      "title_en": "Directions in side-looking radar imaging",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 100,
+      "summary_page": 385,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "距离向与方位向对应不同分辨机制；不能将平台前进方向当作测距方向。",
+      "note_en": "Range and azimuth have different resolution mechanisms. Platform motion is not the ranging direction.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "wave",
+      "src": "/remote-sensing/figures/lecture-wave.webp",
+      "title_zh": "电磁波传播示意",
+      "title_en": "Electromagnetic wave propagation",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 5,
+      "summary_page": 5,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "电场、磁场和传播方向按理想平面横波理解；不是物体沿图形曲线移动。",
+      "note_en": "For an ideal plane transverse wave, distinguish electric field, magnetic field and propagation; the curve is not a material trajectory.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "energy-balance",
+      "src": "/remote-sensing/figures/lecture-energy-balance.webp",
+      "title_zh": "入射、反射、吸收和透射",
+      "title_en": "Incident, reflected, absorbed and transmitted radiation",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 21,
+      "summary_page": 21,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "箭头表示能量路径；反射、透射、吸收份额需按同一波段与角度条件比较。",
+      "note_en": "Arrows represent energy paths; compare fractions under matched spectral and angular conditions.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "solar-source",
+      "src": "/remote-sensing/figures/lecture-solar-source.webp",
+      "title_zh": "自然辐射源：太阳",
+      "title_en": "Natural radiation source: the Sun",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 24,
+      "summary_page": 24,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "太阳是常见反射波段的能量来源；被动热红外还接收目标自身热辐射。",
+      "note_en": "The Sun supplies reflected-band illumination; passive thermal infrared also receives target emission.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "active-source",
+      "src": "/remote-sensing/figures/lecture-active-source.webp",
+      "title_zh": "人工辐射源：雷达和激光",
+      "title_en": "Artificial sources: radar and laser",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 25,
+      "summary_page": 25,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "主动发射的分类不保证穿云或全天候；波长和观测条件仍重要。",
+      "note_en": "Active illumination alone does not guarantee cloud penetration or all-weather sensing.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "reflection",
+      "src": "/remote-sensing/figures/lecture-reflection.webp",
+      "title_zh": "镜面与漫反射",
+      "title_en": "Specular and diffuse reflection",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 70,
+      "summary_page": 70,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "读出入射和出射方向；朗伯模型要求辐亮度方向不变，不是每方向强度相同。",
+      "note_en": "Read incident/outgoing directions. A Lambertian model has direction-independent radiance, not equal intensity in every direction.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "orbits",
+      "src": "/remote-sensing/figures/lecture-orbits.webp",
+      "title_zh": "卫星轨道面的分类",
+      "title_en": "Classification of orbital planes",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 9,
+      "summary_page": 108,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "按轨道面与赤道面的夹角读图；静止和太阳同步还需要时间及进动条件。",
+      "note_en": "Classify the orbital-plane inclination first; stationarity and Sun synchronization require additional conditions.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "geostationary",
+      "src": "/remote-sensing/figures/lecture-geostationary.webp",
+      "title_zh": "赤道与地球静止轨道",
+      "title_en": "Equatorial and geostationary orbits",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 16,
+      "summary_page": 115,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "课件图用于赤道几何；地球静止还要求圆形、顺行及恒星日周期，赤道轨道本身不充分。",
+      "note_en": "The figure illustrates equatorial geometry. Geostationary also requires circular prograde motion and sidereal-day period; equatorial alone is insufficient.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "precession",
+      "src": "/remote-sensing/figures/lecture-precession.webp",
+      "title_zh": "太阳同步的轨道面进动",
+      "title_en": "Nodal precession for Sun synchronization",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 24,
+      "summary_page": 123,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "原文的光照角不变是简化表述；同类过境平均地方太阳时近似相同，太阳高度随季节变化。",
+      "note_en": "The constant-illumination-angle wording is simplified; comparable passes maintain mean local solar time while solar elevation changes seasonally.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "attitude",
+      "src": "/remote-sensing/figures/lecture-attitude.webp",
+      "title_zh": "高度变化与三个姿态角",
+      "title_en": "Altitude variation and three attitude angles",
+      "source": "第3章.pdf · 冯甜甜课程课件",
+      "page": 32,
+      "summary_page": 131,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "高度变化是位置变化，滚动/俯仰/航偏是姿态；旋转符号与轴方向按正文约定。",
+      "note_en": "Altitude is position, whereas roll/pitch/yaw describe attitude; use the stated axis/sign convention.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "sensor-structure",
+      "src": "/remote-sensing/figures/lecture-sensor-structure.webp",
+      "title_zh": "传感器的收集、探测、处理和输出",
+      "title_en": "Collection, detection, processing and output",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 4,
+      "summary_page": 289,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "方框是系统功能，探测器只是其中一部分。",
+      "note_en": "The boxes are system functions; the detector is one component.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "photography",
+      "src": "/remote-sensing/figures/lecture-photography.webp",
+      "title_zh": "中心投影与颜色显示",
+      "title_en": "Central projection and colour display",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 6,
+      "summary_page": 291,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "摄影几何与RGB映射是不同问题；假彩色不是地物真实颜色。",
+      "note_en": "Projection geometry and RGB mapping are distinct; false colour is not physical target colour.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "spectral-cube",
+      "src": "/remote-sensing/figures/lecture-spectral-cube.webp",
+      "title_zh": "成像光谱仪数据立方",
+      "title_en": "Imaging-spectrometer data cube",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 88,
+      "summary_page": 373,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "两个维度为空间，一个为波段；原页历史数值不作为所有高光谱仪或现役设备参数。",
+      "note_en": "Two dimensions are spatial and one spectral; historical values are not universal/current specifications.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "backscatter",
+      "src": "/remote-sensing/figures/lecture-backscatter.webp",
+      "title_zh": "雷达发射与后向散射回波",
+      "title_en": "Radar transmission and backscatter",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 94,
+      "summary_page": 379,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "返回天线方向的散射才形成后向回波；不是全部反射能量都返回雷达。",
+      "note_en": "Only scattering toward the antenna produces backscatter; not all reflected energy returns.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "sar-aperture",
+      "src": "/remote-sensing/figures/lecture-sar-aperture.webp",
+      "title_zh": "合成孔径雷达的沿轨观测",
+      "title_en": "Along-track synthetic-aperture observations",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 108,
+      "summary_page": 393,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "平台运动提供多次相干回波，按相位和传播几何聚焦，不是拼接普通影像。",
+      "note_en": "Motion supplies multiple coherent echoes focused using phase/propagation geometry, not ordinary image stitching.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "insar",
+      "src": "/remote-sensing/figures/lecture-insar.webp",
+      "title_zh": "SAR强度与相位图像",
+      "title_en": "SAR intensity and phase images",
+      "source": "第4章.pdf · 冯甜甜课程课件",
+      "page": 127,
+      "summary_page": 412,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "原页旧称相干雷达；这里区分复SAR幅相、干涉方法与相干性，不将相位颜色直接当形变。",
+      "note_en": "The original uses an older name; distinguish complex SAR, interferometry and coherence, and do not equate phase colours with displacement.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "water-spectrum",
+      "src": "/remote-sensing/figures/lecture-water-spectrum.webp",
+      "title_zh": "水体光谱",
+      "title_en": "Water spectra",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 83,
+      "summary_page": 83,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "清洁水与含泥沙、叶绿素的水不同；原页的近红外近零反射需限定水体条件。",
+      "note_en": "Clear water differs from turbid/chlorophyll-rich water; near-zero NIR reflectance requires the stated water conditions.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "soil-spectrum",
+      "src": "/remote-sensing/figures/lecture-soil-spectrum.webp",
+      "title_zh": "干燥土壤光谱",
+      "title_en": "Dry-soil spectra",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 91,
+      "summary_page": 91,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "原图特定干燥条件与土壤类型，不代表含水量任意时的固定光谱。",
+      "note_en": "Specific dry conditions and soil types are shown, not a universal moisture-independent spectrum.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    },
+    {
+      "id": "rock-spectrum",
+      "src": "/remote-sensing/figures/lecture-rock-spectrum.webp",
+      "title_zh": "岩石矿物光谱",
+      "title_en": "Rock and mineral spectra",
+      "source": "第2章.pdf · 冯甜甜课程课件",
+      "page": 89,
+      "summary_page": 89,
+      "printed_page": null,
+      "credit": "",
+      "note_zh": "材料成分、风化、含水量与粒径都能改变曲线；图中类型是课堂示例。 原图横轴在0.8与1.2之间印有1.6，疑似刻度笔误；仅定性比较，不据此读取精确波长。",
+      "note_en": "Composition, weathering, moisture and grain size change spectra; the plotted materials are lecture examples. The axis prints 1.6 between 0.8 and 1.2, a suspected tick-label typo; compare qualitatively without extracting precise wavelengths.",
+      "crop_px": [
+        50,
+        225,
+        1970,
+        1425
+      ],
+      "source_sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "dimensions": [
+        1920,
+        1200
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "quantity": "Lambertian angular integral",
+      "value": 3.141592653589793,
+      "expected": 3.141592653589793
+    },
+    {
+      "quantity": "Planck integral vs Stefan-Boltzmann constant",
+      "computed": 5.6703744191856106e-08,
+      "reference": 5.670374419e-08
+    },
+    {
+      "quantity": "Wavelength-density peak",
+      "T_K": 300,
+      "lambda_um": 9.65923985061724
+    },
+    {
+      "quantity": "Wavelength-density peak",
+      "T_K": 5800,
+      "lambda_um": 0.49961585434227107
+    },
+    {
+      "quantity": "Wavelength-density peak",
+      "T_K": 6000,
+      "lambda_um": 0.4829619925308621
+    },
+    {
+      "quantity": "Emission-only monochromatic brightness temperature",
+      "Ts_K": 300,
+      "emissivity": 0.9,
+      "lambda_um": 10,
+      "TB_K": 293.60056568749394,
+      "epsilon_times_T_is_not_TIR_result": 270
+    },
+    {
+      "quantity": "Nadir flat-ground footprint",
+      "H_m": 700000,
+      "IFOV_rad": 0.0001,
+      "footprint_m": 70.00000005833334,
+      "swath15deg_km": 184.31349662235417
+    },
+    {
+      "quantity": "Ideal circular 700km orbit",
+      "period_minutes": 98.62363058735733,
+      "sidereal_groundtrack_shift_deg": -24.723413295784955,
+      "not_revisit": true
+    },
+    {
+      "quantity": "Ideal compressed radar resolution",
+      "bandwidth_Hz": 20000000.0,
+      "slant_m": 7.49481145,
+      "ground30deg_m": 14.989622900000002
+    },
+    {
+      "quantity": "Magnitude of two-way LOS phase relation",
+      "lambda_m": 0.03,
+      "phase_pi_rad": 3.141592653589793,
+      "LOS_m": 0.0075,
+      "sign_requires_convention": true
+    },
+    {
+      "quantity": "Magnitude of two-way LOS phase relation",
+      "lambda_m": 0.056,
+      "phase_pi_rad": 3.141592653589793,
+      "LOS_m": 0.014,
+      "sign_requires_convention": true
+    }
+  ],
+  "scope": "Numerical teaching equations under stated assumptions; not validation of all source figures, satellite specifications, actual retrievals or SAR products."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "slug": "course-remote-sensing",
+      "formulas": 0,
+      "concepts": 2,
+      "languagePairs": 2,
+      "bytes": 4641
+    },
+    {
+      "slug": "remote-sensing-ch1",
+      "formulas": 0,
+      "concepts": 5,
+      "languagePairs": 6,
+      "bytes": 27046
+    },
+    {
+      "slug": "remote-sensing-ch2",
+      "formulas": 262,
+      "concepts": 9,
+      "languagePairs": 10,
+      "bytes": 60735
+    },
+    {
+      "slug": "remote-sensing-ch3",
+      "formulas": 93,
+      "concepts": 9,
+      "languagePairs": 9,
+      "bytes": 46996
+    },
+    {
+      "slug": "remote-sensing-ch4",
+      "formulas": 100,
+      "concepts": 13,
+      "languagePairs": 14,
+      "bytes": 42598
+    },
+    {
+      "slug": "remote-sensing-glossary",
+      "formulas": 0,
+      "concepts": 15,
+      "languagePairs": 15,
+      "bytes": 15411
+    },
+    {
+      "slug": "remote-sensing-sources",
+      "formulas": 0,
+      "concepts": 5,
+      "languagePairs": 4,
+      "bytes": 14709
+    }
+  ]
+}

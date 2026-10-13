@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node scripts/generate.mjs",
+    "generate": "node scripts/generate.mjs && node scripts/generate-remote-reference.mjs",
     "dev": "npm run generate && vitepress dev docs --host 127.0.0.1",
     "build": "npm run generate && vitepress build docs && node scripts/check.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
