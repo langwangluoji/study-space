@@ -42,4 +42,3 @@ if(errors.length)throw Error(errors.join('\n'));
 fs.writeFileSync('public/remote-sensing/textbook-crosswalk.json',JSON.stringify({scope:'Existing Chapters 1–4',sections:maps,figures:bookFigures.map(f=>({id:f.id,anchor:f.target_anchor}))},null,2)+'\n');
 fs.writeFileSync('reports/textbook-crosswalk-check.json',JSON.stringify({status:'PASS',sections:maps.length,languageLinks:maps.length*2,textbookFigures:bookFigures.length,chapters:[1,2,3,4]},null,2)+'\n');
 console.log('Textbook crosswalk: '+maps.length+' sections, '+maps.length*2+' bilingual reading links, '+bookFigures.length+' figures.');
-
