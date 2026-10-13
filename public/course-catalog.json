@@ -124,6 +124,20 @@
           "title": "主线与公式索引"
         }
       ]
+    },
+    {
+      "id": "remote-sensing",
+      "title": "遥感基础",
+      "category": "遥感与地球空间科学",
+      "url": "course-remote-sensing.html",
+      "description": "在线阅读第2–9章教师课件、汇总和参考教材，结合原资料建立辐射、平台、传感器与图像处理的学习路线。",
+      "status": "原资料可在线阅读 · 整理讲义尚未接入",
+      "chapters": [
+        {
+          "slug": "remote-sensing-sources",
+          "title": "原资料范围与来源"
+        }
+      ]
     }
   ]
 }

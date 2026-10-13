@@ -7,17 +7,24 @@ next: false
 
 # 资料中心
 
-教材、课件、代码与来源索引，按课程集中查找。网页用于阅读；Notebook 和 Python 脚本下载后在本地环境运行。
+教材、课件、代码与来源索引，按课程集中查找。四门课程的 43 份原资料提供在线预览；PPTX、DOCX 同时保留原件与 PDF 导出。Notebook 和 Python 脚本下载后在本地环境运行。
 
-<span id="insar"></span><span id="ml"></span><span id="geodesy"></span>
+<span id="insar"></span><span id="ml"></span><span id="geodesy"></span><span id="remote-sensing"></span>
 
 <ResourceLibrary />
 
 ## 获取与使用
 
-**站内下载**提供已经公开的原文件；**外部下载**跳转作者或维护项目；**仅本地存档**说明原资料尚未在网站提供全文和下载，按钮通向对应说明与出处。原资料保留原作者署名，网页中的解释与勘误不修改原件。
+选择“在线阅读”进入资料专页。PDF 可按页查看；Office 资料用导出的 PDF 预览，并保留原 PPTX 或 DOCX 的获取入口。原件与预览文件分别记录名称、大小和校验信息，原作者署名与原内容保持不变；网页中的解释与勘误不修改原件。大文件需要一定加载时间，可在阅读页查看加载状态。
 
-大地测量的六份原资料已接入本站资料库，PDF 支持预览与下载，DOCX 与 PPTX 下载后用兼容阅读器打开。[来源与页码索引](geodesy-sources.html)对应知识讲解与配图，[原件清单](geodesy/materials/manifest.json)记录文件大小和校验值。机器学习实践的环境要求和运行预算见[实践说明](cifar10-practice.html#p0)。LeeDL 大文件下载若无法打开，可从[版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)获取。
+| 课程 | 原资料范围 | 来源与学习范围 |
+| --- | --- | --- |
+| 图像分析与机器学习 | 15 讲教师 PPTX、PRML、MML、LeeDL 教材 | [前三讲与实践的来源](read-sources.html)；完整原资料范围超出当前讲义 |
+| 大地测量 | 6 份讲义、教材与辅助材料 | [来源与页码索引](geodesy-sources.html)对应已整理知识，[原件清单](geodesy/materials/manifest.json)保留既有校验 |
+| InSAR 原理与应用 | 3 份教师课件、1 本参考书 | [来源与修订](insar-sources.html)说明前三章实际使用与核读范围 |
+| 遥感基础 | 第 2–9 章课件、汇总、3 本教材及补充资料 | [原资料索引](remote-sensing-sources.html)；主站当前接入原资料阅读 |
+
+**原资料可全文预览不表示全部内容已有整理讲义，也不表示已经逐页审校。** 课程入口与来源索引说明当前知识整理范围。机器学习实践的环境要求和运行预算见[实践说明](cifar10-practice.html#p0)；LeeDL 的[维护项目版本页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)保留为外部出处。
 
 ## 核验与历史结果
 

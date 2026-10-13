@@ -24,6 +24,7 @@ jobs:
           python-version: '3.11'
       - run: npm ci
       - run: npm run check
+      - run: node scripts/verify-materials.mjs
       - run: pip install -r requirements-geodesy.txt
       - run: python scripts/verify_geodesy.py
       - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu
@@ -32,6 +33,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: node scripts/check-ui.cjs
       - run: node scripts/check-insar-ui.cjs
+      - run: node scripts/check-materials-ui.cjs
       - uses: actions/upload-artifact@v4
         with:
           name: notes-preview

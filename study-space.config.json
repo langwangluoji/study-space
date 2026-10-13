@@ -71,6 +71,30 @@
           "title": "主线与公式索引"
         }
       ]
+    },
+    {
+      "id": "remote-sensing",
+      "title": "遥感基础",
+      "subtitle": "REMOTE SENSING · ORIGINAL MATERIALS",
+      "field": "遥感与地球空间科学",
+      "summary": "在线阅读第2–9章教师课件、汇总和参考教材，结合原资料建立辐射、平台、传感器与图像处理的学习路线。",
+      "entry": "/course-remote-sensing.html",
+      "start": "/remote-sensing-sources.html#materials",
+      "source": "/remote-sensing-sources.html",
+      "scope": "15份原资料 · 第2–9章课件与3本参考教材",
+      "tags": [
+        "电磁辐射",
+        "平台与传感器",
+        "图像处理"
+      ],
+      "prerequisites": "基础物理、微积分与地图概念；按原资料难度阅读",
+      "status": "原资料可在线阅读 · 整理讲义尚未接入",
+      "chapters": [
+        {
+          "slug": "remote-sensing-sources",
+          "title": "原资料范围与来源"
+        }
+      ]
     }
   ]
 }

@@ -1,18 +1,21 @@
-# 李宏毅深度学习教程
+---
+title: "李宏毅深度学习教程 · v1.2.4"
+prev: false
+next: false
+---
 
-[返回资料中心](resources.html#ml) · [机器学习课程](course-ml.html)
+# 李宏毅深度学习教程 · v1.2.4
 
-课程教材与原课件由站点维护者提供，用于课程学习；保留原作者署名。大体积教材另提供维护项目的完整下载入口。
+[返回资料中心](resources.html#ml) · <a href="/study-space/material-viewer/index.html?id=leedl&download=1" target="_blank" rel="noopener">下载原 PDF</a>
 
-## 李宏毅深度学习教程 {#r-3}
+李宏毅 · Datawhale 整理项目。326 PDF文件页。完整v1.2.4教程；版本发布与维护项目入口保留作出处。原资料范围可能超出已整理讲义。
 
-教程维护项目提供阅读和下载入口。
+<MaterialReader id="leedl" title="李宏毅深度学习教程 · v1.2.4" />
 
-[访问教材官方／维护项目](https://github.com/datawhalechina/leedl-tutorial)
+326 个文件页。窗口阅读原 PDF 全文，页码按文件页计算。
 
-[在线阅读／下载公开 PDF](https://github.com/datawhalechina/leedl-tutorial/releases/download/v1.2.4/LeeDL_Tutorial_v.1.2.4.pdf)
+## 对应知识与来源
 
-完整教材约142 MB，当前提供维护项目的下载入口；GitHub可能直接下载文件，下载后用PDF阅读器打开。
+[课程总览](course-ml.html) · [来源与页码索引](read-sources.html)
 
-
-下载遇到问题时，可从[版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)选择 PDF 附件。
+原资料保留原署名与内容，网页整理的范围以课程总览和来源索引为准。

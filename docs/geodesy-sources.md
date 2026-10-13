@@ -13,7 +13,7 @@
 | S5 | [现代大地控制测量](geodesy-source-s5.html) | <a href="/study-space/geodesy/materials/S5-geodetic-control.pdf" download>PDF</a> |
 | S6 | [轨道力学基础](geodesy-source-s6.html) | <a href="/study-space/geodesy/materials/S6-orbital-mechanics.pptx" download>PPTX</a> |
 
-PDF 可在对应页面预览；DOCX、PPTX 请下载后打开。下载文件保留原内容，SHA-256 与本地存档一致，见[原件校验清单](geodesy/materials/manifest.json)。全文可下载不表示全部内容均已整理成课程正文。
+六份资料均可在对应页面预览；DOCX、PPTX 使用保持原排版的 PDF 导出版阅读，并保留原件下载。下载文件保留原内容，SHA-256 与本地存档一致，见[原件校验清单](geodesy/materials/manifest.json)。全文可下载不表示全部内容均已整理成课程正文。
 
 ## 主资料与辅助资料
 

@@ -29,6 +29,7 @@ def offline(md):
     md=md.replace('](resources.html#insar)','](https://langwangluoji.github.io/study-space/resources.html#insar)')
     md=md.replace('](insar/figures/','](../配图/')
     md=md.replace('](insar/downloads/insar-first-three-chapters.zip)','](https://langwangluoji.github.io/study-space/insar/downloads/insar-first-three-chapters.zip)')
+    md=re.sub(r'\]\((material-[a-z0-9-]+\.html(?:#[^)]*)?)\)',r'](https://langwangluoji.github.io/study-space/\1)',md)
     return md
 output=root/'public/insar/downloads/insar-first-three-chapters.zip'
 output.parent.mkdir(parents=True,exist_ok=True)

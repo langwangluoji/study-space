@@ -6,7 +6,7 @@
 
 [PRML](#r-1) · [MML](#r-2) · [李宏毅深度学习教程](#r-3)
 
-课程教材与原课件由站点维护者提供，用于课程学习；保留原作者署名。大体积教材另提供维护项目的完整下载入口。
+课程教材与原课件由站点维护者提供，用于课程学习；保留原作者署名。三本教材均有在线阅读窗口，原件可下载，作者与维护项目链接用于核对出处。
 
 ## Pattern Recognition and Machine Learning {#r-1}
 
@@ -32,7 +32,7 @@
 
 [在线阅读／下载公开 PDF](https://github.com/datawhalechina/leedl-tutorial/releases/download/v1.2.4/LeeDL_Tutorial_v.1.2.4.pdf)
 
-完整教材约142 MB，当前提供维护项目的下载入口；GitHub可能直接下载文件，下载后用PDF阅读器打开。
+完整教材约142 MB，[进入本站在线阅读窗口](book-leedl.html)，支持按需加载、跳页和原 PDF 下载。
 
 
 下载遇到问题时，可从[版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)选择 PDF 附件。

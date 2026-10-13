@@ -15,7 +15,11 @@ const sidebar={'/':spaceSidebar,'/geodesy-':geodesySidebar,'/course-geodesy':geo
 resourceSidebar[1].collapsed=true;resourceSidebar[2].collapsed=true;
 for(const prefix of ['/course-ml','/lecture-','/cifar10-practice'])sidebar[prefix]=mlSidebar;
 resourceSidebar.find(section=>section.text==='大地测量资料').items.push(...resources.filter(r=>r.course==='geodesy'&&r.reader).map(r=>({text:r.title,link:r.preview})));
-for(const prefix of ['/resources','/textbooks','/book-','/slides-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source'])sidebar[prefix]=resourceSidebar;
+for(const prefix of ['/resources','/textbooks','/book-','/slides-','/material-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source'])sidebar[prefix]=resourceSidebar;
+for(const c of space.courses){
+  const readers=resources.filter(r=>r.course===c.id&&r.reader==='archive'&&r.preview.startsWith('/material-'));
+  if(readers.length)resourceSidebar.push({text:c.title+' · 原资料',collapsed:true,items:readers.map(r=>({text:r.title,link:r.preview}))});
+}
 for(const c of space.courses.filter(c=>!['ml','geodesy'].includes(c.id))){
   const navigation=[{text:c.title,items:[{text:'课程总览',link:c.entry},...(c.chapters??[]).map(ch=>({text:ch.title,link:'/'+ch.slug})),{text:'资料来源',link:c.source}]}];
   sidebar['/course-'+c.id]=navigation;sidebar['/'+c.id+'-']=navigation;
@@ -41,7 +45,7 @@ export default defineConfig({
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',
     docFooter:{prev:'上一页',next:'下一页'},lastUpdated:{text:'最近更新'},
-    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|lecture-|cifar10-practice|geodesy-(?!source|plan)|course-insar|insar-)'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|textbooks|book-|slides-|read-(?!README)|geodesy-source)'},{text:'共建',link:'/contribute'}],
+    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|lecture-|cifar10-practice|geodesy-(?!source|plan)|course-insar|insar-|course-remote-sensing|remote-sensing-)'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source)'},{text:'共建',link:'/contribute'}],
     // VitePress prioritizes slash depth and otherwise preserves insertion order.
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),

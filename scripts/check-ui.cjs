@@ -3,6 +3,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve('docs/.vitepress/dist'),prefix='/study-space/';
 const courseCount=JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.length;
 const resourceCount=JSON.parse(fs.readFileSync('resources.config.json','utf8')).length;
+const archivePages=new Set(JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.reader==='archive').map(r=>r.preview.slice(1).replace(/\.html$/,'')));
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png','.pdf':'application/pdf','.py':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8','.ipynb':'application/json'};
 const server=http.createServer((req,res)=>{
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400).end();return}
@@ -19,7 +20,17 @@ async function run(){
  const errors=[],cases=[],checks=[];fs.mkdirSync('reports/screenshots',{recursive:true});
  try{
  browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
- const observe=p=>{p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)})};
+ const observe=p=>{
+  p.on('pageerror',e=>errors.push(e.message));
+  p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)});
+  p.context().route('https://raw.githubusercontent.com/langwangluoji/study-space/**',async route=>{
+   const m=route.request().url().match(/\/materials\/storage\/([a-f\d]{64})\/(\d{5}\.bin)$/);
+   if(!m)return route.continue();
+   const file=path.resolve('materials/storage',m[1],m[2]);
+   if(!fs.existsSync(file))return route.fulfill({status:404,body:'Missing archive part'});
+   await route.fulfill({status:200,contentType:'application/octet-stream',headers:{'Access-Control-Allow-Origin':'*'},body:fs.readFileSync(file)});
+  });
+ };
  let page=await browser.newPage();observe(page);
  const pages=['index','course-ml','lecture-1','lecture-2','lecture-3','cifar10-practice','resources','read-notebook','read-sources','read-downloads-cifar10_mlp_tutorial','read-downloads-rewrite_reference_checks','read-README','textbooks','book-prml','book-mml','book-leedl','slides-lecture-1','slides-lecture-2','slides-lecture-3','verification','course-geodesy',...JSON.parse(fs.readFileSync('geodesy.config.json','utf8')).flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-sources','geodesy-plan'];
  pages.push(...JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.filter(c=>!['ml','geodesy'].includes(c.id)).flatMap(c=>[c.entry.slice(1).replace(/\.html$/,''),c.source.slice(1).replace(/\.html$/,''),...(c.chapters??[]).map(ch=>ch.slug)]));
@@ -29,13 +40,16 @@ async function run(){
   for(const theme of ['light','dark']){
    await page.addInitScript(t=>localStorage.setItem('vitepress-theme-appearance',t),theme);
    for(const slug of (process.env.UI_PAGES?process.env.UI_PAGES.split(','):pages)){
-    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html'),{waitUntil:'networkidle'});
+    // This matrix verifies parent-page layout; PDF rendering and byte-range
+    // traffic are covered by check-materials-ui.cjs with explicit ready checks.
+    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html'),{waitUntil:archivePages.has(slug)?'domcontentloaded':'networkidle',timeout:60000});
+    if(archivePages.has(slug)){await page.locator('.vp-doc').waitFor();await page.waitForFunction(t=>document.documentElement.classList.contains('dark')===(t==='dark'),theme)}
     const defaultOpen=await page.locator('.vp-doc details[open]').count();assert.equal(defaultOpen,0,'Extras must start closed: '+slug);
     await page.evaluate(()=>document.querySelectorAll('.vp-doc details').forEach(d=>d.open=true));
     await page.locator('.vp-doc img[loading=lazy]').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
     await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));
     const report=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,math:document.querySelectorAll('mjx-container').length,errors:document.querySelectorAll('[data-mjx-error],merror').length,brokenImages:[...document.querySelectorAll('.vp-doc img')].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),dark:document.documentElement.classList.contains('dark')}));
-    assert(report.scroll<=width+1,`Page overflow: ${slug} ${width} ${report.scroll}`);assert.equal(report.errors,0,slug+' math');assert.deepEqual(report.brokenImages,[],slug+' images');assert.equal(report.dark,theme==='dark');
+    assert(report.scroll<=width+1,`Page overflow: ${slug} ${width} ${report.scroll}`);assert.equal(report.errors,0,slug+' math');assert.deepEqual(report.brokenImages,[],slug+' images');assert.equal(report.dark,theme==='dark',slug+' '+theme+' theme');
     cases.push({slug,width,theme,...report});
     if(['index','courses','resources','review-guide','course-ml','lecture-1','lecture-3'].includes(slug))await page.screenshot({path:`reports/screenshots/${slug}-${width}-${theme}.png`});
    }
