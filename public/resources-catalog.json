@@ -225,5 +225,61 @@
     "description": "六份来源的页码对应、配图位置与知识覆盖范围。",
     "preview": "/geodesy-sources.html",
     "format": "网页"
+  },
+  {
+    "id": "insar-l1",
+    "title": "第一讲 · 微波遥感基础",
+    "course": "insar",
+    "type": "课件",
+    "author": "张磊、梁鸿俞 · 同济大学",
+    "description": "202609，92 PDF 文件页。用于课堂范围与配图；原件保留本地存档。",
+    "preview": "/insar-sources.html#sources",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "insar-l2",
+    "title": "第二讲 · 合成孔径雷达成像原理",
+    "course": "insar",
+    "type": "课件",
+    "author": "同济大学 InSAR 原理与应用课程",
+    "description": "202609，106 PDF 文件页。对应侧视、两向分辨率、脉冲压缩与合成孔径。",
+    "preview": "/insar-sources.html#sources",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "insar-l3",
+    "title": "第三讲 · SAR 图像特征及解译",
+    "course": "insar",
+    "type": "课件",
+    "author": "同济大学 InSAR 原理与应用课程",
+    "description": "202610，59 PDF 文件页。以参数、极化与几何为主，统计部分由教材补足。",
+    "preview": "/insar-sources.html#sources",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "insar-book",
+    "title": "时间序列 InSAR 技术与应用",
+    "course": "insar",
+    "type": "教材",
+    "author": "廖明生、王腾 · 科学出版社，2014",
+    "description": "259 页扫描本。核读相关 SAR/InSAR 基础页，不提供全文下载。",
+    "preview": "/insar-sources.html#sources",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "insar-lecture-package",
+    "title": "InSAR 前三章 · 离线讲义与配图",
+    "course": "insar",
+    "type": "讲义",
+    "author": "Study Space · 据课堂课件与参考书整理",
+    "description": "三章 Markdown、公式索引、来源与教学配图。与网站正文同源，完整教材和课件不包含在包内。",
+    "preview": "/course-insar.html",
+    "file": "/insar/downloads/insar-first-three-chapters.zip",
+    "format": "ZIP",
+    "bytes": 9449046
   }
 ]

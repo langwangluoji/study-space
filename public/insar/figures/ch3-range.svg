@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc">
+<title id="title">斜距与地距：角度及局部距离压缩</title><desc id="desc">左侧雷达高度H、单程斜距R和水平地距G组成直角三角形，入射角theta从竖直方向量起。右侧等长地段在20度和45度下投影为不同斜距长度。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse"><path d="M0 0L6 3L0 6" fill="none" stroke="#345d89" stroke-width="1.4"/></marker></defs>
+<rect width="1000" height="610" rx="16" fill="#f7fafc"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#18364f">
+<text x="40" y="47" font-size="27" font-weight="bold">斜距按回波时间排序，地距沿水平参考面量取</text>
+<rect x="32" y="75" width="445" height="365" rx="12" fill="white" stroke="#d9e3ec"/><rect x="497" y="75" width="470" height="365" rx="12" fill="white" stroke="#d9e3ec"/>
+<circle cx="112" cy="122" r="12" fill="#315f96"/><text x="135" y="129" font-size="22">雷达</text>
+<line x1="112" y1="135" x2="112" y2="370" stroke="#7892aa" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="112" y1="122" x2="414" y2="370" stroke="#315f96" stroke-width="3"/>
+<line x1="65" y1="370" x2="442" y2="370" stroke="#627b65" stroke-width="3"/>
+<path d="M112 181 Q137 181 153 156" fill="none" stroke="#d08c2d" stroke-width="3"/><text x="133" y="206" font-size="24" fill="#a36c21">θ</text>
+<line x1="79" y1="128" x2="79" y2="368" stroke="#345d89" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="45" y="254" font-size="22">H</text>
+<line x1="117" y1="402" x2="412" y2="402" stroke="#345d89" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/><text x="253" y="426" font-size="22">G</text>
+<text x="288" y="236" font-size="24">R</text><text x="111" y="356" font-size="18">星下点</text><circle cx="414" cy="370" r="5" fill="#c7762e"/><text x="369" y="354" font-size="18">目标</text>
+<text x="523" y="114" font-size="23" font-weight="bold">同为 100 m 的地面宽度</text>
+<text x="523" y="163" font-size="21">近距：θ = 20°</text><rect x="523" y="182" width="137" height="28" rx="4" fill="#74a9cf"/><text x="523" y="244" font-size="21">ΔR ≈ 100 sin20° = 34.2 m</text>
+<text x="523" y="293" font-size="21">远距：θ = 45°</text><rect x="523" y="312" width="283" height="28" rx="4" fill="#315f96"/><text x="523" y="375" font-size="21">ΔR ≈ 100 sin45° = 70.7 m</text>
+<text x="40" y="493" font-size="25">R² = H² + G²　　dR/dG = sinθ　　ρG ≈ ρR / sinθ</text>
+<text x="40" y="538" font-size="21">近距压缩更强；重采样变密不会提高实际空间分辨率。</text>
+<text x="40" y="577" font-size="18" fill="#566e82">假设：平坦参考面、局部二维几何，忽略地球曲率。图形不按真实比例绘制。</text>
+</g></svg>

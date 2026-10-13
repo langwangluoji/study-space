@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="600" viewBox="0 0 1080 600" role="img" aria-labelledby="title desc">
+<title id="title">波长、往返距离与复数相位</title><desc id="desc">上部用正弦波示意一个波长。左下示意雷达与地面目标间的单程斜距和双程时延。右下用复平面解释振幅和相位。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8Z" fill="#315b78"/></marker></defs>
+<rect width="1080" height="600" rx="14" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#17384f">
+<text x="36" y="42" font-size="25" font-weight="700">同一个波：空间周期、传播路径、接收相位</text>
+<text x="38" y="82" font-size="19">固定时刻：相邻同相位位置相隔一个波长 λ</text>
+<path d="M45 170 H1010" stroke="#92a8b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M55 170 C95 85 135 85 175 170 S255 255 295 170 S375 85 415 170 S495 255 535 170 S615 85 655 170 S735 255 775 170 S855 85 895 170 S975 255 1015 170" fill="none" stroke="#197ca0" stroke-width="4"/>
+<path d="M115 108 V92 H355 V108" stroke="#b56328" stroke-width="2" fill="none"/>
+<text x="780" y="82" font-size="19" fill="#99501f">λ；v = fλ</text>
+<text x="38" y="284" font-size="20" font-weight="700">往返传播：R 是单程斜距</text>
+<path d="M90 325 l55 0 -10 35 -40 0Z" fill="#d4e8f2" stroke="#315b78" stroke-width="2"/>
+<path d="M75 338 h-20 m95 0 h25" stroke="#315b78" stroke-width="5"/>
+<text x="58" y="393" font-size="18">雷达</text>
+<path d="M180 330 L468 450" stroke="#197ca0" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M468 470 L180 350" stroke="#b56328" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="315" y="352" font-size="19">去程 R</text><text x="280" y="442" font-size="19">回程 R</text>
+<path d="M395 478 h135" stroke="#315b78" stroke-width="4"/><circle cx="475" cy="466" r="7" fill="#b56328"/>
+<text x="418" y="508" font-size="18">地面目标</text>
+<text x="38" y="552" font-size="20">τ = 2R/c；φ传播 = −4πR/λ</text>
+<path d="M600 294 V561" stroke="#dae4eb" stroke-width="2"/>
+<text x="640" y="284" font-size="20" font-weight="700">接收基带：s = A exp(iφ)</text>
+<path d="M681 478 H1010 M748 532 V319" stroke="#92a8b8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1005" y="505" font-size="18">I</text><text x="768" y="333" font-size="18">Q</text>
+<path d="M748 478 L931 360" stroke="#197ca0" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M816 478 A68 68 0 0 0 805 441" fill="none" stroke="#b56328" stroke-width="3"/>
+<text x="822" y="450" font-size="19" fill="#99501f">φ</text><text x="858" y="386" font-size="21">A</text>
+<path d="M931 360 V478" stroke="#92a8b8" stroke-dasharray="6 5" stroke-width="2"/>
+<text x="650" y="552" font-size="19">强度 ∝ A²；相位只保留到 2π 周期</text>
+</g></svg>

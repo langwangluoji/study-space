@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="730" viewBox="0 0 1100 730" role="img" aria-labelledby="title desc">
+<title id="title">线性调频与匹配滤波的脉冲压缩</title><desc id="desc">长脉冲内部频率线性变化，正确延迟的模板让相位对齐，匹配滤波输出形成时间尺度约为1除以B的主峰。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#345b7d"/></marker></defs>
+<rect width="1100" height="730" rx="18" fill="#f7fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19364e">
+<text x="43" y="49" font-size="27" font-weight="bold">长脉冲保留能量，频率结构帮助定位</text>
+<rect x="40" y="74" width="468" height="282" rx="14" fill="#fff" stroke="#c4d4df"/>
+<text x="65" y="109" font-size="22" font-weight="bold">发射：线性调频 chirp</text>
+<path d="M111 283 V147 M111 283 H449" stroke="#345b7d" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M151 258 L399 160" stroke="#1769a0" stroke-width="4"/>
+<path d="M151 282 V259 M399 282 V160" stroke="#8ca5b6" stroke-dasharray="5 5"/>
+<text x="71" y="157" font-size="21">频率</text><text x="424" y="316" font-size="21">t</text>
+<text x="254" y="308" font-size="22">时宽 T</text>
+<text x="292" y="193" font-size="22">带宽 B</text>
+<text x="65" y="341" font-size="20">基带频率 f(t) = Kt，B ≈ |K|T</text>
+<rect x="552" y="74" width="508" height="282" rx="14" fill="#fff" stroke="#c4d4df"/>
+<text x="578" y="109" font-size="22" font-weight="bold">接收：模板平移并取复共轭</text>
+<text x="578" y="149" font-size="20">正确延迟：相位抵消，同向贡献相加</text>
+<g stroke="#1769a0" stroke-width="4" marker-end="url(#arrow)"><path d="M611 197 H679"/><path d="M724 197 H792"/><path d="M837 197 H905"/></g>
+<text x="578" y="242" font-size="20">错误延迟：相位旋转，贡献互相抵消</text>
+<g stroke="#b55a28" stroke-width="4" marker-end="url(#arrow)"><path d="M640 282 L686 259"/><path d="M763 282 L746 246"/><path d="M874 280 L834 302"/></g>
+<text x="578" y="335" font-size="19">匹配使用完整波形，而非单一时刻频率</text>
+<path d="M526 378 V408" stroke="#345b7d" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="40" y="426" width="1020" height="272" rx="14" fill="#edf4f9" stroke="#c4d4df"/>
+<text x="66" y="462" font-size="23" font-weight="bold">压缩后的输出：正确延迟处形成主峰</text>
+<path d="M151 600 H717 M430 613 V480" stroke="#345b7d" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M174 599 C196 589 213 611 231 600 C249 581 265 618 287 600 C307 566 327 633 348 600 C368 543 396 490 430 485 C464 490 492 543 512 600 C533 633 553 566 573 600 C595 618 611 581 629 600 C647 611 664 589 686 599" stroke="#1769a0" stroke-width="3" fill="none"/>
+<path d="M430 615 V650 M512 607 V650" stroke="#8ca5b6" stroke-dasharray="4 4"/>
+<path d="M432 645 H509" stroke="#345b7d" stroke-width="2"/>
+<text x="438" y="671" font-size="21">≈ 1/B</text>
+<text x="348" y="635" font-size="20">峰中心 τ₀</text>
+<text x="727" y="570" font-size="23">δR ≈ c / (2B)</text>
+<text x="727" y="613" font-size="19">带宽大 → 主瓣窄</text>
+<text x="727" y="648" font-size="19">时宽长 → 发射能量较多</text>
+<text x="78" y="673" font-size="18">示意：曲线未按比例绘制</text>
+</g></svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="690" viewBox="0 0 1100 690" role="img" aria-labelledby="title desc">
+<title id="title">原始回波、SLC、检测强度产品与干涉处理</title><desc id="desc">原始快慢时间复数回波经过两方向聚焦形成保留振幅和相位的SLC。SLC可以形成强度产品，也可与配准SLC形成干涉图；检测后的常规强度产品不保留原复数相位。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#345b7d"/></marker></defs>
+<rect width="1100" height="690" rx="18" fill="#f7fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19364e">
+<text x="43" y="49" font-size="27" font-weight="bold">成像后仍保留复数，才有后续干涉的输入</text>
+<rect x="49" y="100" width="302" height="139" rx="14" fill="#fff" stroke="#8baec5" stroke-width="2"/>
+<text x="78" y="139" font-size="24" font-weight="bold">原始回波 Raw</text>
+<text x="78" y="176" font-size="21">复数信号 r(t, η)</text>
+<text x="78" y="210" font-size="19">快时间 × 慢时间记录</text>
+<path d="M354 169 H468" stroke="#345b7d" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="365" y="127" font-size="19">距离压缩</text><text x="365" y="213" font-size="19">方位聚焦</text>
+<rect x="480" y="100" width="566" height="139" rx="14" fill="#e7f1f9" stroke="#1769a0" stroke-width="2"/>
+<text x="510" y="139" font-size="24" font-weight="bold">单视复数影像 SLC</text>
+<text x="510" y="177" font-size="23">s = I + iQ = A exp(iφ)</text>
+<text x="510" y="212" font-size="19">A 表示振幅；φ 保留相位；强度为 A²</text>
+<g stroke="#345b7d" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M639 242 V302 H303 V352"/><path d="M869 242 V352"/></g>
+<text x="59" y="326" font-size="19">检测、常见多视及地距处理</text>
+<text x="722" y="312" font-size="19">另一幅相容 SLC + 精确配准</text>
+<rect x="49" y="368" width="482" height="154" rx="14" fill="#fff7ed" stroke="#c4925b" stroke-width="2"/>
+<text x="77" y="410" font-size="24" font-weight="bold">GRD 等检测强度产品</text>
+<text x="77" y="449" font-size="22">主要存实数强度或相关量</text>
+<text x="77" y="488" font-size="20">常用于地物识别、洪水范围、强度变化</text>
+<rect x="581" y="368" width="465" height="154" rx="14" fill="#eef5ee" stroke="#7f9f7e" stroke-width="2"/>
+<text x="610" y="410" font-size="24" font-weight="bold">复数干涉图</text>
+<text x="610" y="449" font-size="23">s₁s₂* → 相位 φ₁ − φ₂</text>
+<text x="610" y="488" font-size="20">相位还含几何、大气、散射变化等因素</text>
+<rect x="49" y="553" width="997" height="94" rx="14" fill="#edf4f9"/>
+<text x="74" y="591" font-size="21">每个检测值 |s|² 对应许多可能的相位，无法从强度恢复原复数角度。</text>
+<text x="74" y="627" font-size="20">SLC 格式必要但不充分：模式、覆盖、轨道、配准和相干性仍需相容。</text>
+</g></svg>

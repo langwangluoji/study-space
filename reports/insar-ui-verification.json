@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": [
+    "dedicated course sidebar and page context",
+    "insar-microwave all figures open and close",
+    "insar-imaging all figures open and close",
+    "insar-interpretation all figures open and close",
+    "all figure bytes match provenance manifest",
+    "SVG text bounding boxes remain within viewBox",
+    "InSAR filter, local-only originals and actual matching ZIP download",
+    "Chinese search retrieves InSAR chapter",
+    "deep extra anchor expands and continue-reading preserves it",
+    "mobile dedicated course menu"
+  ],
+  "runtimeErrors": []
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title desc">
+<title id="title">距离历程、二次相位与合成孔径聚焦</title><desc id="desc">直线匀速平台从三个位置观测同一点，距离在正侧视位置最短；相位为负的双程传播相位，经过相位补偿后相干累加。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#345b7d"/></marker></defs>
+<rect width="1100" height="760" rx="18" fill="#f7fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#19364e">
+<text x="43" y="48" font-size="27" font-weight="bold">同一目标，在不同平台位置留下不同相位</text>
+<rect x="40" y="74" width="1020" height="305" rx="14" fill="#fff" stroke="#c4d4df"/>
+<path d="M111 151 H965" stroke="#345b7d" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="750" y="124" font-size="22">直线航迹，速度 v</text>
+<circle cx="216" cy="151" r="10" fill="#1769a0"/><circle cx="512" cy="151" r="10" fill="#1769a0"/><circle cx="808" cy="151" r="10" fill="#1769a0"/>
+<path d="M216 151 L512 313 L808 151 M512 151 V313" stroke="#1769a0" stroke-width="3" fill="none"/>
+<circle cx="512" cy="313" r="8" fill="#b55a28"/>
+<text x="157" y="121" font-size="21">接近 η &lt; 0</text><text x="468" y="120" font-size="21">η = 0</text><text x="764" y="192" font-size="21">离开 η &gt; 0</text>
+<text x="274" y="258" font-size="22">R(η)</text><text x="534" y="243" font-size="22">R₀</text>
+<text x="443" y="347" font-size="21">静止目标</text>
+<text x="660" y="303" font-size="22">R(η) = √(R₀² + v²η²)</text>
+<rect x="40" y="402" width="496" height="219" rx="14" fill="#fff" stroke="#c4d4df"/>
+<text x="64" y="438" font-size="22" font-weight="bold">传播相位随慢时间近似二次变化</text>
+<path d="M107 583 H491 M296 589 V466" stroke="#345b7d" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M142 573 Q296 381 451 573" stroke="#1769a0" stroke-width="3" fill="none"/>
+<text x="306" y="474" font-size="19">φ₀</text><text x="465" y="609" font-size="20">η</text>
+<text x="101" y="609" font-size="19">接近：fD &gt; 0</text><text x="333" y="609" font-size="19">离开：fD &lt; 0</text>
+<rect x="558" y="402" width="502" height="219" rx="14" fill="#edf4f9" stroke="#c4d4df"/>
+<text x="581" y="438" font-size="22" font-weight="bold">按候选位置补相位，再相干累加</text>
+<text x="581" y="482" font-size="21">未补偿</text>
+<g stroke="#b55a28" stroke-width="3" marker-end="url(#arrow)"><path d="M718 480 L755 456"/><path d="M817 478 V454"/><path d="M906 480 L871 459"/></g>
+<text x="581" y="536" font-size="21">正确补偿</text>
+<g stroke="#1769a0" stroke-width="3" marker-end="url(#arrow)"><path d="M718 531 H760"/><path d="M813 531 H855"/><path d="M908 531 H950"/></g>
+<text x="581" y="593" font-size="20">同相增强 → 方位响应集中到正确位置</text>
+<text x="63" y="666" font-size="23">φ(η) ≈ φ₀ − 2πv²η²/(λR₀)</text>
+<text x="598" y="666" font-size="23">fD(η) ≈ −2v²η/(λR₀)</text>
+<text x="63" y="719" font-size="21">理想正侧视条带：Lsa ≈ R₀λ/La → BD ≈ 2v/La → δa ≈ La/2</text>
+</g></svg>

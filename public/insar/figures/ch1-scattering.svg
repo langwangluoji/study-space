@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="660" viewBox="0 0 1080 660" role="img" aria-labelledby="title desc">
+<title id="title">入射角、粗糙度与介质路径</title><desc id="desc">局部入射角从地表法线量起。光滑表面反射可能不返回雷达；两处表面高差使双程路径不同；进入介质的斜路径长于对应的垂直厚度。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#315b78"/></marker></defs>
+<rect width="1080" height="660" rx="14" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#17384f">
+<text x="30" y="42" font-size="25" font-weight="700">回到雷达的能量，由局部几何与材料共同决定</text>
+<text x="35" y="87" font-size="20" font-weight="700">光滑表面：总反射强，不等于后向散射强</text>
+<path d="M55 272 H475" stroke="#315b78" stroke-width="4"/>
+<path d="M270 110 V300" stroke="#92a8b8" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="281" y="130" font-size="18">局部法线</text>
+<path d="M115 131 L268 270" stroke="#197ca0" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M272 270 L427 131" stroke="#b56328" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="75" y="112" font-size="18">来自雷达</text><text x="352" y="112" font-size="18">镜面反射方向</text>
+<path d="M270 195 A75 75 0 0 0 215 220" fill="none" stroke="#197ca0" stroke-width="2"/>
+<text x="230" y="183" font-size="20">θi</text>
+<text x="55" y="314" font-size="18">θi 从法线量起；并非从地表量起</text>
+<path d="M545 72 V625" stroke="#dae4eb" stroke-width="2"/>
+<text x="585" y="87" font-size="20" font-weight="700">两处高差：相对波长才有意义</text>
+<path d="M594 284 H997 M694 242 H920" stroke="#92a8b8" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M595 281 Q642 307 692 244 Q735 212 791 270 T994 280" fill="none" stroke="#315b78" stroke-width="4"/>
+<path d="M649 119 L787 270 M591 119 L701 242" stroke="#197ca0" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M940 242 V284 M927 242 H953 M927 284 H953" stroke="#b56328" stroke-width="2"/>
+<text x="958" y="270" font-size="20">h</text>
+<text x="583" y="324" font-size="19">双程路径差约 2h cosθi</text>
+<text x="583" y="357" font-size="19">相位差约 4πh cosθi / λ</text>
+<text x="35" y="389" font-size="20" font-weight="700">介质内传播：衰减按实际路径累积</text>
+<rect x="55" y="422" width="420" height="145" fill="#deebdf"/>
+<path d="M55 422 H475" stroke="#315b78" stroke-width="3"/>
+<path d="M171 383 L198 422 L301 553" stroke="#197ca0" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<path d="M330 422 V553 M318 422 H342 M318 553 H342" stroke="#b56328" stroke-width="2"/>
+<text x="350" y="493" font-size="19">垂直厚度</text>
+<text x="141" y="512" font-size="18">实际路径 ℓ</text>
+<text x="56" y="602" font-size="19">A(ℓ) = A(0) exp(−αℓ)</text>
+<text x="583" y="420" font-size="20" font-weight="700">材料改变界面反射，也改变内部损耗</text>
+<text x="583" y="470" font-size="19">光滑、无损、非磁性、垂直入射近似：</text>
+<text x="583" y="509" font-size="20">r = (1 − n) / (1 + n)；n = √ε′r</text>
+<text x="583" y="555" font-size="19">实际地物还要考虑粗糙度、体散射、极化</text>
+<text x="583" y="594" font-size="19">以及波长、入射角和观测方向</text>
+<text x="35" y="641" font-size="17" fill="#526d7f">示意图不按尺度绘制；光滑判据与穿透深度只能在相应模型条件下使用。</text>
+</g></svg>
