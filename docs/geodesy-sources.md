@@ -1,6 +1,19 @@
 # 大地测量资料来源与图像索引
 
-两个主章分别依据用户提供的绪论与椭球讲义，四份辅助材料按推导需要引用。页码默认按 PDF 文件从 1 开始计数；课件印刷页码与文件页不相同时分别注明。原文件保留在本地编号存档，网页加入必要的几何配图与重新编排的讲解。
+两个主章分别依据用户提供的绪论与椭球讲义，四份辅助材料按推导需要引用。页码默认按 PDF 文件从 1 开始计数；课件印刷页码与文件页不相同时分别注明。原文件保留本地编号存档，同时提供校验一致的站内下载，网页加入必要的几何配图与重新编排的讲解。
+
+## 原资料阅读与下载
+
+| 编号 | 阅读或文件说明 | 下载原件 |
+| --- | --- | --- |
+| S1 | [大地测量绪论](geodesy-source-s1.html) | <a href="/study-space/geodesy/materials/S1-introduction.pdf" download>PDF</a> |
+| S2 | [向量微积分常用公式](geodesy-source-s2.html) | <a href="/study-space/geodesy/materials/S2-vector-calculus.pdf" download>PDF</a> |
+| S3 | [椭球面数学性质](geodesy-source-s3.html) | <a href="/study-space/geodesy/materials/S3-ellipsoid.pdf" download>PDF</a> |
+| S4 | [坐标分量与坐标轴旋转](geodesy-source-s4.html) | <a href="/study-space/geodesy/materials/S4-coordinate-rotation.docx" download>DOCX</a> |
+| S5 | [现代大地控制测量](geodesy-source-s5.html) | <a href="/study-space/geodesy/materials/S5-geodetic-control.pdf" download>PDF</a> |
+| S6 | [轨道力学基础](geodesy-source-s6.html) | <a href="/study-space/geodesy/materials/S6-orbital-mechanics.pptx" download>PPTX</a> |
+
+PDF 可在对应页面预览；DOCX、PPTX 请下载后打开。下载文件保留原内容，SHA-256 与本地存档一致，见[原件校验清单](geodesy/materials/manifest.json)。全文可下载不表示全部内容均已整理成课程正文。
 
 ## 主资料与辅助资料
 

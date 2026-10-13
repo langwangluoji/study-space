@@ -1,57 +1,26 @@
+---
+title: 资料中心
+aside: false
+prev: false
+next: false
+---
+
 # 资料中心
 
-## 遥感原理与基础 {#remote-sensing}
+教材、课件、代码与来源索引，按课程集中查找。网页用于阅读；Notebook 和 Python 脚本下载后在本地环境运行。
 
-[前四章双语学习路径](course-remote-sensing.html) · [双语术语与概念对照](remote-sensing-glossary.html) · [来源、13幅课件图与勘误索引](remote-sensing-sources.html)
+<span id="ml"></span><span id="geodesy"></span>
 
-原资料包括第2–4章中文课件、“遥感汇总”、英文课程总结与笔记、高分卫星调研。整份原PDF和DOCX保留本地；网站呈现重新编写的双语正文、带页码的课件图及原创教学示意。
+<ResourceLibrary />
 
-## 大地测量课程资料 {#geodesy}
+## 获取与使用
 
-[两主章的阅读路径](course-geodesy.html) · [六份原资料与页码索引](geodesy-sources.html) · [课程维护方案](geodesy-plan.html)
+**站内下载**提供已经公开的原文件；**外部下载**跳转作者或维护项目；**仅本地存档**说明原资料尚未在网站提供全文和下载，按钮通向对应说明与出处。原资料保留原作者署名，网页中的解释与勘误不修改原件。
 
-主内容为绪论与椭球面数学性质，其他材料辅助解释和核对。轨道课件只参考坐标变换；原文件在本地存档，配图保留来源页码。
-
-## 机器学习课程资料 {#ml}
-
-[课程阅读路径](course-ml.html) · [三讲与实践的来源说明](read-sources.html) · [维护指南](read-README.html)
-
-## 原教材
-
-| 教材 | 在线阅读 | 原文件 |
-| --- | --- | --- |
-| Bishop · PRML | [第 3–5 章参考](book-prml.html) | [PDF](books/prml.pdf) |
-| Deisenroth、Faisal、Ong · MML | [数学背景参考](book-mml.html) | [PDF](books/mml.pdf) |
-| 李宏毅深度学习教程 | [版本与阅读入口](book-leedl.html) | [维护项目](https://github.com/datawhalechina/leedl-tutorial) |
-
-教材和课件保留原作者署名，按本站原有资料入口提供；网页中的解释与勘误不修改原文件。
-
-## 教师课件
-
-| 讲次 | PDF 预览 | 原 PPTX |
-| --- | --- | --- |
-| 第一讲 · 线性回归与最小二乘 | [阅读](slides-lecture-1.html) | [下载](slides/lecture-1.pptx) |
-| 第二讲 · 线性分类与感知机 | [阅读](slides-lecture-2.html) | [下载](slides/lecture-2.pptx) |
-| 第三讲 · 非线性回归与多层感知机 | [阅读](slides-lecture-3.html) | [下载](slides/lecture-3.pptx) |
-
-## 可运行代码
-
-| 内容 | 自动生成的阅读版 | 下载源文件 |
-| --- | --- | --- |
-| CIFAR-10 实践脚本 | [阅读](read-downloads-cifar10_mlp_tutorial.html) | [Python](downloads/cifar10_mlp_tutorial.py) |
-| P0–P15 逐步 Notebook | [阅读](read-notebook.html) | [Notebook](downloads/CIFAR10_MLP_逐步练习.ipynb) |
-| 独立数学核验 | [阅读](read-downloads-rewrite_reference_checks.html) | [Python](downloads/rewrite_reference_checks.py) |
-
-浏览器用于阅读，真实训练在 Python/PyTorch 环境运行。需安装 NumPy、PyTorch、torchvision 和 matplotlib；命令与预算见[实践 P0](cifar10-practice.html#p0)和[快速检查 P10](cifar10-practice.html#p10)。Notebook 从上到下执行并使用正确内核，运行标记 <a href="/study-space/MISSION.md">MISSION.md</a> 保持原路径。
+大地测量的六份原资料已接入本站资料库，PDF 支持预览与下载，DOCX 与 PPTX 下载后用兼容阅读器打开。[来源与页码索引](geodesy-sources.html)对应知识讲解与配图，[原件清单](geodesy/materials/manifest.json)记录文件大小和校验值。遥感原资料目前按本地存档建立索引，前四章正文使用31幅带页码的讲义原图和双语概念表；详见[来源、配图与勘误](remote-sensing-sources.html)。机器学习实践的环境要求和运行预算见[实践说明](cifar10-practice.html#p0)。LeeDL 大文件下载若无法打开，可从[版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)获取。
 
 ## 核验与历史结果
 
-[本次核验记录](verification.html)。此前已保存的 quick run 环境、摘要及图片保留在 `verified-results/`；本次不重新训练、不更新历史数值。
+[内容核验记录](verification.html) · [资料来源说明](read-sources.html) · [知识库共建](contribute.html)
 
-<details><summary>历史资料｜原环境与结果</summary>
-
-### 旧实验资料入口
-
-[训练曲线](/verified-results/history.png) · [混淆矩阵](/verified-results/confusion_matrix.png) · [误分类样本](/verified-results/misclassified_examples.png)
-
-</details>
+历史 quick run 的[训练曲线](/verified-results/history.png)、[混淆矩阵](/verified-results/confusion_matrix.png)和[误分类样本](/verified-results/misclassified_examples.png)保留原结果，不代表此次重新训练或完整实验性能。运行标记 <a href="/study-space/MISSION.md">MISSION.md</a> 保持原路径。

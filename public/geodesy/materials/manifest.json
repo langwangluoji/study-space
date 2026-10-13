@@ -1,0 +1,44 @@
+[
+  {
+    "id": "S1",
+    "original": "大地测量 绪论(1).pdf",
+    "file": "S1-introduction.pdf",
+    "bytes": 2909512,
+    "sha256": "91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975"
+  },
+  {
+    "id": "S2",
+    "original": "向量微积分常用公式.pdf",
+    "file": "S2-vector-calculus.pdf",
+    "bytes": 210461,
+    "sha256": "071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967"
+  },
+  {
+    "id": "S3",
+    "original": "1椭球面数学性质   课程讲义.pdf",
+    "file": "S3-ellipsoid.pdf",
+    "bytes": 2296160,
+    "sha256": "d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf"
+  },
+  {
+    "id": "S4",
+    "original": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+    "file": "S4-coordinate-rotation.docx",
+    "bytes": 616066,
+    "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994"
+  },
+  {
+    "id": "S5",
+    "original": "现代大地控制测量_12803034.pdf",
+    "file": "S5-geodetic-control.pdf",
+    "bytes": 36686825,
+    "sha256": "057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3"
+  },
+  {
+    "id": "S6",
+    "original": "轨道力学基础（4学时）(1).pptx",
+    "file": "S6-orbital-mechanics.pptx",
+    "bytes": 7610549,
+    "sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87"
+  }
+]

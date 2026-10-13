@@ -1,0 +1,10 @@
+{
+  "resource": "LeeDL v1.2.4",
+  "status": 206,
+  "host": "release-assets.githubusercontent.com",
+  "contentType": "application/octet-stream",
+  "contentRange": "bytes 0-1023/141945163",
+  "firstBytes": "%PDF-1.5\n%??",
+  "readBytes": 1024,
+  "scope": "range request and PDF header only; not full-file checksum"
+}

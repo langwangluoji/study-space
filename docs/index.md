@@ -1,50 +1,30 @@
 ---
 layout: page
-title: 课程知识库
+title: 从资料到理解
 sidebar: false
 ---
 
 <main class="library-hub">
-  <header class="hub-intro">
-    <p class="hub-eyebrow">COURSES · NOTES · RESOURCES</p>
-    <h1>课程知识库</h1>
-    <p class="hub-lead">按课程学习，按问题查阅。</p>
-    <p>讲义、数学笔记与实践资料，在这里汇合。选择一门课程开始连续阅读，也可以通过顶部搜索直接找到需要的知识点。</p>
+  <header class="space-hero">
+    <div class="hero-contours" aria-hidden="true"><svg viewBox="0 0 600 600" fill="none"><g stroke="currentColor"><ellipse cx="300" cy="300" rx="250" ry="100" transform="rotate(-35 300 300)"/><ellipse cx="300" cy="300" rx="225" ry="140" transform="rotate(-35 300 300)"/><ellipse cx="300" cy="300" rx="200" ry="180" transform="rotate(-35 300 300)"/><ellipse cx="300" cy="300" rx="175" ry="220" transform="rotate(-35 300 300)"/><path d="M60 300h480M300 60v480"/></g><circle cx="300" cy="300" r="5" fill="currentColor"/></svg></div>
+    <p class="hub-eyebrow">STUDY SPACE / 开放的学习空间</p>
+    <h1>把分散的资料，<br>连成自己的<span>知识。</span></h1>
+    <p class="hero-lead">从一门课程开始，沿着问题理解推导。<br>教材、课件与实践在这里汇合，为自学与期末复习建立清晰的路径。</p>
+    <div class="hero-actions"><a class="space-button primary" href="/study-space/courses.html">探索课程 <span aria-hidden="true">→</span></a><a class="space-button" href="/study-space/resources.html">查找学习资料 <span aria-hidden="true">↗</span></a></div>
+    <div class="hero-topics"><span>机器学习</span><span>大地测量</span><span>多源知识整理</span></div>
   </header>
-  <div class="hub-columns">
-    <section aria-labelledby="hub-courses">
-      <div class="hub-section-heading"><h2 id="hub-courses">课程与笔记</h2><span>COURSES &amp; NOTES</span></div>
-      <article class="hub-course">
-        <p class="hub-eyebrow">计算机与数据科学</p>
-        <h3><a href="/study-space/course-ml.html">图像分析与机器学习</a></h3>
-        <p class="hub-subtitle">Image Analysis &amp; Machine Learning</p>
-        <p>从回归预测、概率分类到神经网络，结合教材推导与可运行的实践，理解模型怎样学习、怎样评价。</p>
-        <ul class="hub-tags" aria-label="课程内容"><li>三讲连续笔记</li><li>CIFAR-10 实践</li><li>教材与课件</li></ul>
-        <a class="hub-entry" href="/study-space/course-ml.html">进入课程 <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="hub-course">
-        <p class="hub-eyebrow">测绘与地球空间科学</p>
-        <h3><a href="/study-space/course-geodesy.html">大地测量</a></h3>
-        <p class="hub-subtitle">Geodesy &amp; Geodetic Control</p>
-        <p>以绪论与椭球数学性质为主线，从一般曲线和曲面走向椭球坐标、曲率、弧长与面积的完整推导。</p>
-        <ul class="hub-tags" aria-label="大地测量课程内容"><li>两个主要大章</li><li>坐标交互算例</li><li>原课件几何图</li></ul>
-        <a class="hub-entry" href="/study-space/course-geodesy.html">进入课程 <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="hub-course">
-        <p class="hub-eyebrow">测绘与地球空间科学</p>
-        <h3><a href="/study-space/course-remote-sensing.html">遥感原理与基础</a></h3>
-        <p class="hub-subtitle">Remote Sensing Principles and Fundamentals</p>
-        <p>沿辐射、平台轨道与传感器成像建立理解，结合双语讲解、课件原图与扫描交互。</p>
-        <ul class="hub-tags" aria-label="遥感课程内容"><li>前四章双语</li><li>轨道与扫描图解</li><li>概念辨析</li></ul>
-        <a class="hub-entry" href="/study-space/course-remote-sensing.html">进入课程 <span aria-hidden="true">→</span></a>
-      </article>
-    </section>
-    <aside class="hub-resources" aria-labelledby="hub-materials">
-      <div class="hub-section-heading"><h2 id="hub-materials">资料与工具</h2><span>RESOURCES</span></div>
-      <a class="hub-resource" href="/study-space/resources.html"><strong>资料中心 <span aria-hidden="true">↗</span></strong><span>教师课件、原始资料与下载入口</span></a>
-      <a class="hub-resource" href="/study-space/textbooks.html"><strong>教材阅读 <span aria-hidden="true">↗</span></strong><span>PRML、MML 与深度学习教材</span></a>
-      <a class="hub-resource" href="/study-space/read-notebook.html"><strong>实践笔记 <span aria-hidden="true">↗</span></strong><span>逐步练习、代码与运行说明</span></a>
-      <a class="hub-resource" href="/study-space/read-README.html"><strong>笔记维护 <span aria-hidden="true">↗</span></strong><span>编辑内容、预览与数学核验</span></a>
-    </aside>
-  </div>
+  <ContinueReading />
+  <section class="hub-course-section" aria-labelledby="hub-courses">
+    <div class="hub-section-heading"><div><p class="hub-eyebrow">EXPLORE / 课程与知识</p><h2 id="hub-courses">选择一条学习主线</h2></div><a href="/study-space/courses.html">全部课程 <span aria-hidden="true">→</span></a></div>
+    <CourseLibrary compact />
+  </section>
+  <section class="hub-paths" aria-labelledby="hub-paths-title">
+    <div class="hub-section-heading"><div><p class="hub-eyebrow">YOUR WAY / 按目标学习</p><h2 id="hub-paths-title">今天，从哪里开始？</h2></div></div>
+    <div class="path-grid">
+      <a class="hub-resource path-card" href="/study-space/study-guide.html"><span class="path-number">01 / SELF STUDY</span><strong>从头理解一门课 <span aria-hidden="true">→</span></strong><span>先修基础、阅读顺序与知识衔接，找到适合自己的起点。</span></a>
+      <a class="hub-resource path-card" href="/study-space/review-guide.html"><span class="path-number">02 / REVIEW</span><strong>为期末串起重点 <span aria-hidden="true">→</span></strong><span>按概念、推导和易混条件复习，直接回到对应正文。</span></a>
+      <a class="hub-resource path-card" href="/study-space/resources.html"><span class="path-number">03 / RESOURCES</span><strong>找到原始资料 <span aria-hidden="true">↗</span></strong><span>按课程和类型筛选教材、课件、代码，在线阅读或下载。</span></a>
+    </div>
+  </section>
+  <section class="hub-growing"><p class="hub-eyebrow">KNOWLEDGE IN PROGRESS</p><h2>知识可以持续生长。</h2><p>把新的资料放回课程脉络，保留出处，核对差异，让每一次整理都有迹可循。</p><a href="/study-space/contribute.html">了解知识库的整理与共建 <span aria-hidden="true">→</span></a></section>
 </main>

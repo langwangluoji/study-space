@@ -9,16 +9,24 @@ import SourceFigure from './SourceFigure.vue';
 import RsLanguage from './RsLanguage.vue';
 import RsFigure from './RsFigure.vue';
 import {installRsSearchHooks,revealRsTarget} from './remoteSensingLanguage.js';
+import ResourceLibrary from './ResourceLibrary.vue';
+import CourseLibrary from './CourseLibrary.vue';
+import ContinueReading from './ContinueReading.vue';
+import PageContext from './PageContext.vue';
+import {readingTitle} from './reading-targets.js';
 import './style.css';
+import './space.css';
 import './rs.css';
 export default {
   extends:DefaultTheme,
-  Layout(){return h(DefaultTheme.Layout)},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure)},
+  Layout(){return h(DefaultTheme.Layout,null,{'doc-before':()=>h(PageContext)})},
+  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{
       await nextTick();
+      const title=readingTitle(route.path);
+      if(title)try{localStorage.setItem('study-space-last-reading-v1',JSON.stringify({path:route.path+location.hash,title}))}catch{}
       let id;try{id=decodeURIComponent(location.hash.slice(1))}catch{return}
       const target=document.getElementById(id);
       if(!target)return;
