@@ -3,7 +3,7 @@ pdfjs.GlobalWorkerOptions.workerSrc=new URL('../vendor/pdfjs/pdf.worker.min.js',
 const args=new URLSearchParams(location.search),id=args.get('id');
 document.body.classList.toggle('dark',args.get('theme')==='dark');
 const el=s=>document.getElementById(s),base=new URL('../',location.href),status=el('status');
-let record,pdf,transport,loadingTask,textLayer,current=Number(location.hash.match(/page=(\d+)/)?.[1]||1),generation=0,renderTask,retryAction='preview';
+let record,resource,pdf,transport,loadingTask,textLayer,current=Number(location.hash.match(/page=(\d+)/)?.[1]||1),generation=0,renderTask,retryAction='preview';
 const requests=new Map(),cache=new Map();
 function report(message,error=false,action='preview'){status.textContent=message;status.classList.toggle('error',error);el('retry').hidden=!error;if(error)retryAction=action}
 async function partBytes(part){
@@ -40,13 +40,29 @@ async function showPage(){
 async function open(){
  try{
   ++generation;transport?.abort();renderTask?.cancel();textLayer?.cancel();report('正在加载原资料…');await loadingTask?.destroy();pdf=null;cache.clear();document.body.dataset.ready='false';
-  report('正在加载原资料…');const records=await (await fetch(new URL('materials/catalog.json',base))).json();record=records.find(r=>r.id===id);if(!record)throw Error('未找到这份资料。');el('title').textContent=record.title;document.title=record.title+' · 原资料';
+  const response=await fetch(new URL('resources-catalog.json',base),{cache:'no-store'});if(!response.ok)throw Error('资料入口暂时无法读取，请重试。');
+  const resources=await response.json();resource=resources.find(r=>r.archiveId===id||r.id===id);
+  if(resource?.reader==='publisher'){
+   record=null;el('title').textContent=resource.title;document.title=resource.title+' · 正版获取';
+   for(const name of ['prev','next','page','zoom','full'])el(name).disabled=true;
+   el('paper').hidden=true;el('download').textContent='前往正版获取';el('download').href=resource.accessUrl;el('download').target='_blank';el('download').rel='noopener noreferrer';
+   el('hint').replaceChildren();const link=document.createElement('a');link.href=resource.accessUrl;link.target='_blank';link.rel='noopener noreferrer';link.textContent=resource.accessLabel||'出版社正版入口';el('hint').append(link);
+   if(resource.excerptUrl){const excerpt=document.createElement('a');excerpt.href=resource.excerptUrl;excerpt.target='_blank';excerpt.rel='noopener noreferrer';excerpt.textContent='出版社试读';el('hint').append(' · ',excerpt)}
+   report('请通过出版社获取正版教材或查看试读。');document.body.dataset.ready='true';return;
+  }
+  const records=await (await fetch(new URL('materials/catalog.json',base))).json();record=records.find(r=>r.id===id);if(!record)throw Error('未找到这份资料。');
+  if(resource?.publicCopy){
+   const url=resource.file.replace(/^\//,''),source={url,bytes:resource.bytes,sha256:resource.publicSha256,filename:resource.title+'（公开副本）.pdf',mime:'application/pdf',pages:resource.pages};
+   record={...record,title:resource.title+'（公开副本）',original:source,preview:source};el('download').textContent='下载公开副本';el('hint').textContent=resource.description;
+  }
+  el('title').textContent=record.title;document.title=record.title+' · 原资料';
   const source=record.preview;transport=source.parts?new ArchiveTransport(source):null;
   loadingTask=pdfjs.getDocument({...(transport?{range:transport,length:source.bytes,rangeChunkSize:131072,disableAutoFetch:true,disableStream:true}:{url:new URL(source.url,base).href}),isEvalSupported:false,cMapUrl:new URL('../vendor/pdfjs/cmaps/',import.meta.url).href,cMapPacked:true,standardFontDataUrl:new URL('../vendor/pdfjs/standard_fonts/',import.meta.url).href,wasmUrl:new URL('../vendor/pdfjs/wasm/',import.meta.url).href});
   pdf=await loadingTask.promise;el('total').textContent='/ '+pdf.numPages;el('page').max=pdf.numPages;await showPage();if(args.get('download')==='1')await downloadOriginal();
  }catch(e){report('预览暂未完成：'+e.message,true)}
 }
 async function downloadOriginal(){
+ if(resource?.reader==='publisher')return;
  if(!record)return;const original=record.original;report('正在准备原文件下载…');
  try{
   if(original.url){const a=document.createElement('a');a.href=new URL(original.url,base);a.download=original.filename;a.click();report('已开始下载原文件。');return}
@@ -67,7 +83,7 @@ el('prev').onclick=()=>{current--;showPage()};el('next').onclick=()=>{current++;
 // pending page request. Recreate this frame, retaining the requested page,
 // rather than waiting indefinitely for that old worker to settle.
 el('retry').onclick=()=>{if(retryAction==='download')return downloadOriginal();history.replaceState(null,'',location.pathname+location.search+'#page='+current);location.reload()};
-el('download').onclick=e=>{e.preventDefault();downloadOriginal()};
+el('download').onclick=e=>{if(resource?.reader==='publisher')return;e.preventDefault();downloadOriginal()};
 // The parent propagates citation page changes through the iframe fragment.
 // A fragment navigation keeps this document alive, so render the new page.
 addEventListener('hashchange',()=>{const page=Number(location.hash.match(/page=(\d+)/)?.[1]||1);if(page!==current){current=page;showPage()}});

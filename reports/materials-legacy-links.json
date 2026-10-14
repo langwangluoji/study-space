@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "startedAt": "2026-10-14T01:04:52.590Z",
+  "root": "public",
+  "storage": "materials\\storage",
+  "catalogPath": "public\\materials\\catalog.json",
+  "networkMode": "raw GitHub parts mapped to immutable local files",
+  "cases": [
+    {
+      "name": "ML PPT first/last page and desktop zoom",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "ML PPT phone fit/zoom and dark theme",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "InSAR scanned textbook original page",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "leedl chunked on-demand first/middle/last",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "rs-campbell-introduction chunked on-demand first/middle/last",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "RS legacy links follow configured access and anonymous public copy",
+      "status": "pass",
+      "first": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 692,
+        "samples": 8930,
+        "textSpans": 158,
+        "displayedPage": "1",
+        "status": "第 1 / 6 页",
+        "total": 6,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 442,
+        "samples": 8930,
+        "textSpans": 130,
+        "displayedPage": "6",
+        "status": "第 6 / 6 页",
+        "total": 6,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "publicCopyBytes": 251599,
+      "publicCopySha256": "743ddce248dca9fcb0625c5dde462a7b17de18fccb01f72584a7e66da31d0a18",
+      "legacyDownloadStatuses": [
+        {
+          "id": "rs-gaofen",
+          "status": 200
+        }
+      ],
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:57371/study-space/remote-sensing/materials/rs-gaofen.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:57371/study-space/material-viewer/viewer.js",
+            "sha256": "31215d8f1aa1191a4e364f607da2a11caa1fdd981bc59ffde43e145e246ae1fb",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Word 20-page PDF reading copy",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Built parent page deep links and synchronizes LeeDL iframe",
+      "status": "not-run",
+      "reason": "Reader-only root has no generated parent page; run default built-site root for this check."
+    },
+    {
+      "name": "Chunk fetch 503 shows error and recovers on retry",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Later chunk 503 rebuilds loaded PDF and retains selected page",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Real service-worker DOCX and Chinese PPTX downloads SHA-256",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    }
+  ],
+  "downloads": [],
+  "errors": [],
+  "serverDownloadRequests": [],
+  "selectedCasePattern": "RS legacy links",
+  "optionalLocalInventoryChecked": false,
+  "catalogRecords": 43,
+  "partURLs": 163,
+  "finishedAt": "2026-10-14T01:04:55.059Z"
+}

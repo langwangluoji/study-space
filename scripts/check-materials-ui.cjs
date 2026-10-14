@@ -227,6 +227,41 @@ async function run(){
     ...(knownBlank?{beforeLast,knownBlankEvidence:'Original file p675 visually rendered with Poppler and inspected: white; original p674 also has no extracted text, so p673 verifies visible content. Exception is pinned to the original SHA-256.'}:{})};
   }finally{await context.close()}
  });
+ await caseRun('RS legacy links follow configured access and anonymous public copy',async()=>{
+  const resources=JSON.parse(fs.readFileSync(path.join(root,'resources-catalog.json'),'utf8'));
+  const {context,page,tracker}=await routedContext(parts);
+  try{
+   const publisherIDs=resources.filter(r=>r.reader==='publisher').map(r=>r.id);
+   for(const id of publisherIDs){
+    const resource=resources.find(r=>r.id===id);
+    await page.goto(`${origin}${prefix}material-viewer/index.html?id=${id}&download=1`,{waitUntil:'domcontentloaded'});
+    await page.waitForFunction(()=>document.body.dataset.ready==='true',null,{timeout});
+    assert.equal(await page.locator('#download').getAttribute('href'),resource.accessUrl);
+    assert(await page.locator('#page').isDisabled());assert(await page.locator('#paper').isHidden());
+    assert.equal(tracker.requests.length,0,'Publisher portal must not fetch archived scans');
+   }
+   const resource=resources.find(r=>r.id==='rs-gaofen'),first=await go(page,'rs-gaofen');assert.equal(first.total,6);
+   const last=await jump(page,6);assert.equal(tracker.requests.length,0,'Public copy must not fetch private original chunks');
+   const pending=page.waitForEvent('download',{timeout});await page.locator('#download').click();const download=await pending;
+   assert.equal(await download.failure(),null);const bytes=fs.readFileSync(await download.path());assert.equal(bytes.length,resource.bytes);assert.equal(hash(bytes),resource.publicSha256);
+   assert(download.suggestedFilename().includes('公开副本'));
+   assertNoErrors(tracker);
+   // Old service-worker download routes must apply the same access rules.
+   await page.evaluate(async()=>{await navigator.serviceWorker.register('../material-download-worker.js',{scope:'../'});await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',resolve,{once:true}))});
+   const rules=await page.evaluate(async publisherIDs=>{
+    const base=new URL('../',location.href),results=[];
+    for(const id of [...publisherIDs,'rs-gaofen']){
+     const response=await fetch(new URL('material-download/'+id+'/original.pdf',base));
+     results.push({id,status:response.status,url:response.url,bytes:response.status===200?Array.from(new Uint8Array(await response.arrayBuffer())):null});
+    }return results;
+   },publisherIDs);
+   assert.deepEqual(rules.slice(0,publisherIDs.length).map(r=>r.status),publisherIDs.map(()=>403));assert.equal(hash(Buffer.from(rules.at(-1).bytes)),resource.publicSha256);
+   assert.equal(tracker.requests.length,0);assert.deepEqual(tracker.pageErrors,[]);
+   assert.deepEqual(tracker.httpErrors.filter(e=>!/^HTTP 403 .*\/material-download\/rs-(campbell-introduction|zhao-analysis)\/original\.pdf$/.test(e)),[]);
+   assert.deepEqual(tracker.consoleErrors.filter(e=>!e.includes('403')),[]);
+   return {first,last,publicCopyBytes:bytes.length,publicCopySha256:hash(bytes),legacyDownloadStatuses:rules.map(r=>({id:r.id,status:r.status}))};
+  }finally{await context.close()}
+ });
  await caseRun('Word 20-page PDF reading copy',async()=>{
   const {context,page,tracker}=await routedContext(parts);
   try{const first=await go(page,'rs-english-summary');assert.equal(first.total,20);
