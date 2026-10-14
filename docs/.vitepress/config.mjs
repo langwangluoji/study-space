@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
+import {outlineLifecycleGuard} from '../../scripts/outline-lifecycle.mjs';
 const courses=JSON.parse(fs.readFileSync(new URL('../../course.config.json',import.meta.url),'utf8'));
 const geodesy=JSON.parse(fs.readFileSync(new URL('../../geodesy.config.json',import.meta.url),'utf8'));
 const space=JSON.parse(fs.readFileSync(new URL('../../study-space.config.json',import.meta.url),'utf8'));
@@ -12,10 +13,13 @@ const resourceSidebar=[{text:'资料中心',items:[{text:'全部资源',link:'/r
 resourceSidebar.push({text:'InSAR 资料',collapsed:true,items:[{text:'来源与配图索引',link:'/insar-sources'},{text:'离线讲义',link:'/course-insar'}]});
 const spaceSidebar=[{text:'学习空间',items:[{text:'课程目录',link:'/courses'},{text:'自学路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources'}]},{text:'共建与维护',items:[{text:'知识库共建',link:'/contribute'},{text:'详细维护指南',link:'/read-README'},{text:'内容核验记录',link:'/verification'}]}];
 const sidebar={'/':spaceSidebar,'/geodesy-':geodesySidebar,'/course-geodesy':geodesySidebar};
+resourceSidebar[0].items.push({text:'资料扩展与阅读建议',link:'/extensions'},{text:'下载与使用帮助',link:'/site-guide#downloads'});
+spaceSidebar[0].items.push({text:'资料扩展',link:'/extensions'},{text:'使用说明',link:'/site-guide'});
+spaceSidebar[1].items.unshift({text:'制作者主页',link:'/about'});
 resourceSidebar[1].collapsed=true;resourceSidebar[2].collapsed=true;
 for(const prefix of ['/course-ml','/lecture-','/cifar10-practice'])sidebar[prefix]=mlSidebar;
 resourceSidebar.find(section=>section.text==='大地测量资料').items.push(...resources.filter(r=>r.course==='geodesy'&&r.reader).map(r=>({text:r.title,link:r.preview})));
-for(const prefix of ['/resources','/textbooks','/book-','/slides-','/material-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source','/remote-sensing-sources','/remote-sensing-glossary'])sidebar[prefix]=resourceSidebar;
+for(const prefix of ['/resources','/extensions','/textbooks','/book-','/slides-','/material-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source','/remote-sensing-sources','/remote-sensing-glossary'])sidebar[prefix]=resourceSidebar;
 for(const c of space.courses.filter(c=>c.id!=='remote-sensing')){
   const readers=resources.filter(r=>r.course===c.id&&r.reader==='archive'&&r.preview.startsWith('/material-'));
   if(readers.length)resourceSidebar.push({text:c.title+' · 原资料',collapsed:true,items:readers.map(r=>({text:r.title,link:r.preview}))});
@@ -42,7 +46,7 @@ function renderSearch(src,env,md){
 export default defineConfig({
   title:'Study Space · 学习空间', description:'从多源资料到连贯知识：课程自学、期末复习、教材课件与资源下载。', lang:'zh-CN',
   base:'/study-space/', cleanUrls:false,
-  vite:{publicDir:fileURLToPath(new URL('../../public',import.meta.url)),define:{'import.meta.env.VITE_EXTRA_EXTENSIONS':JSON.stringify('py,ipynb,pptx')}},
+  vite:{publicDir:fileURLToPath(new URL('../../public',import.meta.url)),plugins:[outlineLifecycleGuard()],define:{'import.meta.env.VITE_EXTRA_EXTENSIONS':JSON.stringify('py,ipynb,pptx')}},
   srcExclude:['_fragments/**'], ignoreDeadLinks:false, lastUpdated:true,
   head:[['link',{rel:'icon',href:'/study-space/assets/favicon.svg'}],['script',{},`try{if(!localStorage.getItem('vitepress-theme-appearance')){var t=localStorage.getItem('ml-course-theme');if(t==='dark'||t==='light')localStorage.setItem('vitepress-theme-appearance',t)}}catch(e){}`]],
   markdown:{math:true},
@@ -50,11 +54,11 @@ export default defineConfig({
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',
     docFooter:{prev:'上一页',next:'下一页'},lastUpdated:{text:'最近更新'},
-    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source|remote-sensing-(sources|glossary))'},{text:'共建',link:'/contribute'}],
+    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source|remote-sensing-(sources|glossary))'},{text:'共建',link:'/contribute'},{text:'制作者',link:'/about'}],
     // VitePress prioritizes slash depth and otherwise preserves insertion order.
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),
     search:{provider:'local',options:{_render:renderSearch,detailedView:false,locales:{root:{translations:{button:{buttonText:'搜索笔记',buttonAriaLabel:'搜索课程笔记'},modal:{displayDetails:'显示上下文',resetButtonTitle:'清除搜索',backButtonTitle:'返回',noResultsText:'没有找到相关笔记',footer:{selectText:'选择',navigateText:'切换',closeText:'关闭'}}}}}}},
-    footer:{message:'从资料建立理解，让知识持续生长。保留原作者署名与来源，按课程范围整理。',copyright:'Study Space · 学习空间'}
+    footer:{message:'从资料建立理解，让知识持续生长。<br><a href="/study-space/about.html">制作者与网站介绍</a> · <a href="/study-space/site-guide.html">使用说明</a> · <a href="/study-space/contribute.html">共同完善</a>',copyright:'Study Space · 学习空间'}
   }
 });

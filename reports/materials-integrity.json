@@ -17,7 +17,7 @@
   "uniqueSourceVersions": 61,
   "storedParts": 163,
   "storedBytes": 1103484064,
-  "publicBytes": 137291722,
+  "publicBytes": 137631841,
   "checks": [
     "All original files reconstruct to their SHA-256",
     "All PDF export bytes match their recorded SHA-256",

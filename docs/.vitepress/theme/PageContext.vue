@@ -11,7 +11,8 @@ const context=computed(()=>{
   if(/^(course-ml|lecture-|cifar10-practice)/.test(p))return {label:'机器学习',href:'/course-ml.html'};
   const course=space.courses.filter(c=>!['ml','geodesy'].includes(c.id)).find(c=>p===c.entry.slice(1)||p.startsWith(c.id+'-'));
   if(course)return {label:course.title,href:course.entry};
-  if(/^(resources|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source)/.test(p))return {label:'资料中心',href:'/resources.html'};
+  if(/^(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source)/.test(p))return {label:'资料中心',href:'/resources.html'};
+  if(p.startsWith('about'))return {label:'关于网站',href:'/about.html'};
   return {label:'学习空间',href:'/courses.html'};
 });
 </script>

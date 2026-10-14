@@ -1,5 +1,6 @@
 ---
 title: 资料中心
+pageClass: supporting-page
 aside: false
 prev: false
 next: false
@@ -8,6 +9,8 @@ next: false
 # 资料中心
 
 教材、课件、代码与来源索引，按课程集中查找。四门课程的原课件与学习资料提供在线预览；PPTX、DOCX 同时保留原件与 PDF 导出。Notebook 和 Python 脚本下载后在本地环境运行。
+
+<div class="course-quicklinks"><a href="/study-space/extensions.html">不知道选哪份？按问题找扩展资料 →</a><a href="/study-space/textbooks.html">查看教材用途与范围 →</a><a href="/study-space/site-guide.html#downloads">预览与下载帮助 →</a></div>
 
 <span id="insar"></span><span id="ml"></span><span id="geodesy"></span><span id="remote-sensing"></span>
 

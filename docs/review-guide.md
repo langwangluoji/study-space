@@ -1,5 +1,6 @@
 ---
 title: 期末复习路线
+pageClass: supporting-page
 prev: false
 next: false
 ---
@@ -7,6 +8,14 @@ next: false
 # 期末复习路线
 
 先对照教师公布的考试范围，再用下面的路线串起知识。这里覆盖本站已有课程内容，不推定考试题型、重点分值或尚未整理的章节。需要补概念时，回到[自学路线](study-guide.html)；查原件时进入[资料中心](resources.html)。
+
+<div class="course-quicklinks"><a href="#ml">机器学习</a><a href="#geodesy">大地测量</a><a href="#remote-sensing">遥感原理</a><a href="#insar">InSAR</a><a href="/study-space/extensions.html">卡住时补资料 →</a></div>
+
+## 开始前，先整理三个位置
+
+把教师要求的范围、对应正文链接和原课件页码放在一起。先恢复每章要解决的问题，再检查公式的对象、假设、单位和推导步骤；暂时说不清的地方标出位置，回读或查来源。这样可以减少在整本教材之间反复翻找。
+
+复习表是已有内容的阅读索引。需要补充解释时使用[资料扩展](extensions.html)，需要原文件时使用[资料中心](resources.html)。
 
 ## 机器学习：串起模型、目标与求解 {#ml}
 
