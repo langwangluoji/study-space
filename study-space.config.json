@@ -2,8 +2,8 @@
   "courses": [
     {
       "id": "ml",
-      "title": "图像分析与机器学习",
-      "subtitle": "IMAGE ANALYSIS & MACHINE LEARNING",
+      "title": "机器学习与遥感图像分析",
+      "subtitle": "MACHINE LEARNING & REMOTE SENSING IMAGE ANALYSIS",
       "field": "计算机与数据科学",
       "summary": "沿着预测、分类与网络的计算链，连接教材推导和可运行实验。",
       "entry": "/course-ml.html",

@@ -114,3 +114,10 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 教材与教师 PPT/PDF、已有 `verified-results/` 保持原样。本次迁移不重新训练 CIFAR-10。历史 quick run 仅证明当时的代码流程，不能作为完整实验性能。教师课件为课程范围依据，网页补足解释与核对；原课件勘误在正文注明，不修改课件文件。
 
 复算记录见 [核验记录](verification.html)，教材版本与原路径见 [来源说明](read-sources.html)。
+
+
+## 制作者主页与辅助页面
+
+`creator.config.json` 维护制作者的公开姓名、GitHub 昵称、主页与头像。`contributors.config.json` 维护资料贡献者的公开身份、链接和具体支持范围，贡献者与原资料作者分别署名；公开头像副本位于 `public/creator/`。网站介绍在 `docs/about.md`，课程范围和资源条目数由统一清单渲染。
+
+`learning-paths.config.json` 维护资料扩展的学习问题、按需阅读建议、资源 ID 和返回正文链接。推荐资料引用资源清单中的已有 ID，生成器检查归属与目标页面；不是整本必读清单。`docs/textbooks.md` 说明教材用途与获取范围，`docs/site-guide.md` 解释使用与下载。反馈与资料推荐模板位于 `.github/ISSUE_TEMPLATE/`，入口只打开表单，不自动提交。

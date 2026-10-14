@@ -1,0 +1,23 @@
+name: 内容或使用问题
+description: 反馈解释、公式、显示或下载问题
+title: "[反馈] "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 页面与位置
+      description: 页面网址、标题或锚点；下载问题请附文件名。
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题与现象
+      description: 哪里有疑问或错误？显示问题可补充设备与浏览器。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 依据与建议
+      description: 可填写来源、页码、计算过程或建议的表达方式。

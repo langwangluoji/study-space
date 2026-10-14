@@ -1,6 +1,22 @@
+---
+title: 自学与回读路线
+pageClass: supporting-page
+prev: false
+next: false
+---
+
 # 重新学习的阅读路线
 
 <div class="course-quicklinks"><a href="/study-space/courses.html">选择课程 →</a><a href="/study-space/review-guide.html">转到期末复习 →</a></div>
+
+## 先选适合自己的起点
+
+<div class="guide-entry-grid">
+<article class="guide-entry"><h3>第一次接触这门课</h3><p>先读课程总览的范围和先修基础，选一个章节连续阅读。需要术语时在当前位置补定义，不必同时打开所有资料。</p><a href="/study-space/courses.html">先看课程范围 →</a></article>
+<article class="guide-entry"><h3>已经学过，但某一步卡住</h3><p>用搜索定位知识点，再按下面的主线恢复联系；缺数学基础、原图或代码例子时，按问题选择补充资料。</p><a href="/study-space/extensions.html">找到对应的补充材料 →</a></article>
+</div>
+
+每次阅读可以只完成一个小闭环：读懂一个问题，跟一次已有计算或图解，记录仍不清楚的条件，最后回到主线。网站入口和本地学习记录的说明见[使用指南](site-guide.html)。
 
 已经上过课却仍跟不上推导时，可以从一条完整的计算链重新建立联系。先读主线，再展开真正卡住的证明；每次回到同一个样本、向量或几何点，辨认下一式改变了什么。遇到生疏术语，先补它在当前步骤中的作用，再继续推导。
 

@@ -6,12 +6,13 @@ const route=useRoute();
 const feedback=computed(()=> 'https://github.com/langwangluoji/study-space/issues/new?title='+encodeURIComponent('内容反馈：'+route.path.split('/').pop())+'&body='+encodeURIComponent('页面：https://langwangluoji.github.io'+route.path+'\n\n具体位置或锚点：\n\n问题与依据：\n\n建议修订：\n'));
 const context=computed(()=>{
   const p=route.path.replace('/study-space/','');
-  if(/^remote-sensing-(sources|glossary)/.test(p))return {label:'资料中心',href:'/resources.html'};
+  if(/^(remote-sensing-(sources|glossary)|insar-sources)/.test(p))return {label:'资料中心',href:'/resources.html'};
   if(/^(course-geodesy|geodesy-(?!source|plan))/.test(p))return {label:'大地测量',href:'/course-geodesy.html'};
-  if(/^(course-ml|lecture-|cifar10-practice)/.test(p))return {label:'机器学习',href:'/course-ml.html'};
+  if(/^(course-ml|lecture-|cifar10-practice)/.test(p))return {label:space.courses.find(c=>c.id==='ml').title,href:'/course-ml.html'};
   const course=space.courses.filter(c=>!['ml','geodesy'].includes(c.id)).find(c=>p===c.entry.slice(1)||p.startsWith(c.id+'-'));
   if(course)return {label:course.title,href:course.entry};
-  if(/^(resources|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source)/.test(p))return {label:'资料中心',href:'/resources.html'};
+  if(/^(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source)/.test(p))return {label:'资料中心',href:'/resources.html'};
+  if(p.startsWith('about'))return {label:'关于网站',href:'/about.html'};
   return {label:'学习空间',href:'/courses.html'};
 });
 </script>

@@ -1,0 +1,23 @@
+name: 推荐学习资料
+description: 为已有问题或课程补充资料
+title: "[资料] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: 资料名称与来源
+      description: 标题、作者、版本和公开来源网址。
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 想补充哪个问题
+      description: 对应课程、章节或知识点；说明为什么有帮助。
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: 获取方式与建议阅读范围
+      description: 可填写公开访问方式、页码及与现有材料的差异。请勿在 Issue 中上传未获公开授权的完整教材或私人资料。

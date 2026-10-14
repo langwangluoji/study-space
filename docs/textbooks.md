@@ -1,38 +1,64 @@
+---
+title: 教材与延伸阅读
+pageClass: supporting-page
+prev: false
+next: false
+---
+
 # 教材与延伸阅读
 
-[返回资料中心](resources.html#ml) · [机器学习课程](course-ml.html)
+先明确要补的知识，再选择教材与章节。这里说明各门课程已使用的教材、阅读用途和获取边界；具体页码由课程来源索引给出。按问题找资料可以直接进入[资料扩展](extensions.html)。
 
-## 本页目录
+<div class="course-quicklinks"><a href="#ml-books">机器学习</a><a href="#geo-books">大地测量</a><a href="#rs-books">遥感原理</a><a href="#insar-books">InSAR</a><a href="/study-space/resources.html">全部资料 →</a></div>
 
-[PRML](#r-1) · [MML](#r-2) · [李宏毅深度学习教程](#r-3)
+## 机器学习：理论、数学与实践 {#ml-books}
 
-课程教材与原课件由站点维护者提供，用于课程学习；保留原作者署名。三本教材均有在线阅读窗口，原件可下载，作者与维护项目链接用于核对出处。
+### Pattern Recognition and Machine Learning {#r-1}
 
-## Pattern Recognition and Machine Learning {#r-1}
+Christopher M. Bishop。第 3 章连接线性回归，第 4 章连接概率分类，第 5 章连接神经网络。适合已经读过课程主线、希望核对概率假设和推导的读者；先补数学基础时可转到下方 MML。
 
-第3章线性回归、第4章概率分类、第5章神经网络。
+[站内阅读](book-prml.html) · <a href="/study-space/books/prml.pdf" download>下载 PDF</a> · [教材官方页](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/) · [返回回归主线](lecture-1.html#a1)
 
-[访问教材官方／维护项目](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)
+### Mathematics for Machine Learning {#r-2}
 
-<a href="/study-space/books/prml.pdf" target="_blank" rel="noopener noreferrer">打开 PDF</a> · <a href="/study-space/books/prml.pdf" download>下载 PDF</a>
+Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续优化和线性回归的基础。遇到矩阵维度或导数不清楚时，先补当前步骤所需的定义，再回到正文。
 
-## Mathematics for Machine Learning {#r-2}
+[站内阅读](book-mml.html) · <a href="/study-space/books/mml.pdf" download>下载 PDF</a> · [作者网站](https://mml-book.github.io/) · [数学基础阅读建议](extensions.html#ml-foundations)
 
-线性代数、概率分布、连续优化及线性回归；作者网站提供教材。
+### 李宏毅深度学习教程 · v1.2.4 {#r-3}
 
-[访问教材官方／维护项目](https://mml-book.github.io/)
+李宏毅课程、Datawhale 整理项目。作为神经网络与深度学习的扩展材料；对照当前第三讲与实践时，先找相应主题，不把整套教程都当作本课程的必读或考试范围。
 
-<a href="/study-space/books/mml.pdf" target="_blank" rel="noopener noreferrer">打开 PDF</a> · <a href="/study-space/books/mml.pdf" download>下载 PDF</a>
+[站内预览与原件获取](book-leedl.html) · [维护项目](https://github.com/datawhalechina/leedl-tutorial) · [版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4) · [接回反向传播与代码](extensions.html#ml-network)
 
-## 李宏毅深度学习教程 {#r-3}
+完整 PDF 约 142 MB，站内已提供原资料阅读和下载入口；外部维护项目与版本发布页仍保留作出处和备用获取方式。大文件需要更长加载时间，下载后可使用本地阅读器。
 
-教程维护项目提供阅读和下载入口。
+## 大地测量：回到参考模型与椭球几何 {#geo-books}
 
-[访问教材官方／维护项目](https://github.com/datawhalechina/leedl-tutorial)
+《现代大地控制测量》用于绪论相关背景与核对；椭球数学性质以课程原讲义为主。前者有 294 文件页，网站使用范围与页码对应见[大地测量来源索引](geodesy-sources.html)，没有把全书等同于当前两章内容。
 
-[在线阅读／下载公开 PDF](https://github.com/datawhalechina/leedl-tutorial/releases/download/v1.2.4/LeeDL_Tutorial_v.1.2.4.pdf)
+[教材预览与下载](geodesy-source-s5.html) · [椭球原讲义](geodesy-source-s3.html) · [向量与旋转补充材料](extensions.html#geo-geometry) · [本课程全部资源](resources.html?course=geodesy)
 
-完整教材约142 MB，[进入本站在线阅读窗口](book-leedl.html)，支持按需加载、跳页和原 PDF 下载。
+## 遥感原理：英文教材与逐节对照 {#rs-books}
 
+| 参考教材 | 在当前课程中的用途 | 获取状态 |
+| --- | --- | --- |
+| [Campbell、Wynne、Thomas，Introduction to Remote Sensing，第六版，2023](material-rs-campbell-introduction.html) | 教师推荐教材；核对遥感定义、轨道、扫描、分辨率与 SAR 基础概念 | 原资料预览与下载；另附出版社入口 |
+| [Canada Centre for Remote Sensing，Fundamentals of Remote Sensing](material-rs-ccrs-fundamentals.html) | 经典入门教程，辅助信息链、扫描、雷达与相干斑的解释 | 全文预览与原件下载；历史任务参数不作当前规格 |
+| [赵英时等，《遥感应用分析原理与方法》第二版，2013](material-rs-zhao-analysis.html) | 补充数据—信息链、光谱响应、角度特征和成像概念 | 原资料预览与下载；实际使用范围见来源索引 |
 
-下载遇到问题时，可从[版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)选择 PDF 附件。
+前四章的 36 个主知识节已有教材对照，标明 PDF 文件页、印刷页和返回正文的位置。资料的预览、下载和出版社入口以资料卡为准。完整原资料可获取，也不表示其全部内容已整理为网站讲义或逐页审校。
+
+[逐节教材对照](remote-sensing-sources.html#rs-sources-crosswalk) · [英文教材原图索引](remote-sensing-sources.html#rs-sources-textbook-figures) · [双语概念表](remote-sensing-glossary.html) · [扫描与分辨率阅读建议](extensions.html#rs-imaging)
+
+## InSAR：按课堂前三讲使用参考书 {#insar-books}
+
+廖明生、王腾，《时间序列 InSAR 技术与应用》，科学出版社，2014。当前参考书用于辅助课堂前三讲的 SAR/InSAR 基础解释，课本章号与本站章号不同。扫描本的页图核读范围见[来源与实际使用范围](insar-sources.html#sources)，并非整本逐式审校。
+
+完整教材与三份课堂 PDF 已有独立的原资料预览、下载入口；离线讲义包则是本站整理的三章内容、配图与索引，两者分别提供。
+
+[资料与页码索引](insar-sources.html) · [主线与公式索引](insar-review.html) · [离线讲义说明](course-insar.html) · [本课程资料](resources.html?course=insar)
+
+## 读教材时，留下返回的位置
+
+从正文进入教材前，记下正在解决的问题；阅读后用自己的语言解释定义、条件与关键步骤，再返回原知识点。原文、课堂符号与本站表达若有差异，优先核对各自前提；需要修订的地方可以[提供具体反馈](contribute.html#feedback)。预览和下载问题见[使用说明](site-guide.html#downloads)。

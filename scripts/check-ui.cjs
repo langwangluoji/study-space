@@ -4,7 +4,7 @@ const root=path.resolve('docs/.vitepress/dist'),prefix='/study-space/';
 const courseCount=JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.length;
 const resourceCount=JSON.parse(fs.readFileSync('resources.config.json','utf8')).length;
 const archivePages=new Set(JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.reader==='archive').map(r=>r.preview.slice(1).replace(/\.html$/,'')));
-const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png','.pdf':'application/pdf','.py':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8','.ipynb':'application/json'};
+const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.pdf':'application/pdf','.py':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8','.ipynb':'application/json'};
 const server=http.createServer((req,res)=>{
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400).end();return}
  if(!pathname.startsWith(prefix)){res.writeHead(404).end();return}
@@ -21,7 +21,7 @@ async function run(){
  try{
  browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
  const observe=p=>{
-  p.on('pageerror',e=>errors.push(e.message));
+  p.on('pageerror',e=>{errors.push(e.message);console.error('Runtime error at '+p.url(),e.stack)});
   p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)});
   p.context().route('https://raw.githubusercontent.com/langwangluoji/study-space/**',async route=>{
    const m=route.request().url().match(/\/materials\/storage\/([a-f\d]{64})\/(\d{5}\.bin)$/);
@@ -37,7 +37,7 @@ async function run(){
  await page.addInitScript(()=>{if(window.top!==window)return;const t=new URLSearchParams(location.search).get('__ui_theme');if(t)localStorage.setItem('vitepress-theme-appearance',t)});
  const pages=['index','course-ml','lecture-1','lecture-2','lecture-3','cifar10-practice','resources','read-notebook','read-sources','read-downloads-cifar10_mlp_tutorial','read-downloads-rewrite_reference_checks','read-README','textbooks','book-prml','book-mml','book-leedl','slides-lecture-1','slides-lecture-2','slides-lecture-3','verification','course-geodesy',...JSON.parse(fs.readFileSync('geodesy.config.json','utf8')).flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-sources','geodesy-plan'];
  pages.push(...JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.filter(c=>!['ml','geodesy'].includes(c.id)).flatMap(c=>[c.entry.slice(1).replace(/\.html$/,''),c.source.slice(1).replace(/\.html$/,''),...(c.chapters??[]).map(ch=>ch.slug)]));
- pages.push('courses','review-guide','study-guide','contribute',...Array.from({length:6},(_,i)=>'geodesy-source-s'+(i+1)));
+ pages.push('courses','review-guide','study-guide','contribute','about','extensions','site-guide',...Array.from({length:6},(_,i)=>'geodesy-source-s'+(i+1)));
  pages.push('course-remote-sensing',...JSON.parse(fs.readFileSync('remote-sensing.config.json','utf8')).chapters.map(c=>c.slug),'remote-sensing-glossary','remote-sensing-sources');
  for(const width of (process.env.UI_WIDTHS?process.env.UI_WIDTHS.split(',').map(Number):[1440,390,320])){
   await page.setViewportSize({width,height:900});
@@ -54,7 +54,7 @@ async function run(){
     const report=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,math:document.querySelectorAll('mjx-container').length,errors:document.querySelectorAll('[data-mjx-error],merror').length,brokenImages:[...document.querySelectorAll('.vp-doc img')].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),dark:document.documentElement.classList.contains('dark')}));
     assert(report.scroll<=width+1,`Page overflow: ${slug} ${width} ${report.scroll}`);assert.equal(report.errors,0,slug+' math');assert.deepEqual(report.brokenImages,[],slug+' images');assert.equal(report.dark,theme==='dark',slug+' '+theme+' theme');
     cases.push({slug,width,theme,...report});
-    if(['index','courses','resources','review-guide','course-ml','lecture-1','lecture-3','remote-sensing-ch2','remote-sensing-ch4'].includes(slug))await page.screenshot({path:`reports/screenshots/${slug}-${width}-${theme}.png`});
+    if(['index','courses','resources','review-guide','course-ml','lecture-1','lecture-3','remote-sensing-ch2','remote-sensing-ch4','about','extensions','site-guide'].includes(slug))await page.screenshot({path:`reports/screenshots/${slug}-${width}-${theme}.png`});
    }
   }
   console.log('UI width',width,'PASS');
@@ -87,7 +87,13 @@ async function run(){
  await page.goto(origin+prefix+'lecture-1.html#a8-gaussian-update',{waitUntil:'networkidle'});assert(await page.locator('#a8-gaussian-update').evaluate(el=>el.closest('details').open));checks.push('direct proof anchor expands ancestor');
  await page.goto(origin+prefix,{waitUntil:'networkidle'});assert.equal(await page.locator('.hub-course').count(),courseCount);assert.equal(await page.locator('.VPSidebar').count(),0);await page.locator('.hub-entry').first().click();await page.waitForURL('**/course-ml.html');await page.goto(origin+prefix,{waitUntil:'networkidle'});await page.locator('.hub-resource[href$="/resources.html"]').click();await page.waitForURL('**/resources.html');checks.push('knowledge hub links to course and resources');
  await page.setViewportSize({width:1440,height:900});
- for(const slug of ['resources','book-prml','read-notebook','geodesy-sources']){await page.goto(origin+prefix+slug+'.html',{waitUntil:'networkidle'});assert((await page.locator('.VPSidebar').innerText()).includes('全部资源'));assert.equal(await page.locator('.VPSidebar a[href*="lecture-1.html#a1"]').count(),0);assert((await page.locator('.page-context').innerText()).includes('资料中心'))}checks.push('resource pages use resource sidebar and context');
+ for(const slug of ['resources','extensions','textbooks','book-prml','read-notebook','geodesy-sources']){await page.goto(origin+prefix+slug+'.html',{waitUntil:'networkidle'});assert((await page.locator('.VPSidebar').innerText()).includes('全部资源'));assert.equal(await page.locator('.VPSidebar a[href*="lecture-1.html#a1"]').count(),0);assert((await page.locator('.page-context').innerText()).includes('资料中心'))}checks.push('resource pages use resource sidebar and context');
+ await page.goto(origin+prefix+'extensions.html',{waitUntil:'networkidle'});assert.equal(await page.locator('.extension-grid .guide-card').count(),8);
+ for(const c of JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses){await page.getByRole('button',{name:c.title,exact:true}).click();assert.equal(await page.locator('.extension-grid .guide-card').count(),2);assert.equal(await page.getByRole('button',{name:c.title,exact:true}).getAttribute('aria-pressed'),'true')}
+ await page.getByRole('button',{name:'全部课程',exact:true}).click();await page.locator('#ml-foundations .guide-return').click();await page.waitForURL('**/lecture-1.html#a2');await page.locator('#a2').waitFor();assert(await page.locator('#a2').isVisible());checks.push('extension filters cover all four courses and return to the intended knowledge anchor');
+ await page.locator('.VPNavBarMenuLink').filter({hasText:'制作者'}).click();await page.waitForURL('**/about.html');await page.locator('.scope-card').first().waitFor();assert.equal(await page.locator('.scope-card').count(),courseCount);assert.equal(await page.locator('.creator-identity img').count(),1);assert(await page.locator('.creator-identity').innerText().then(t=>t.includes('Siyu Zhou')&&t.includes('@langwangluoji')));assert.equal(await page.locator('.VPSidebar').count(),0);assert.equal(await page.locator('.contributor-card a[href="https://github.com/annie-wang19"]').count(),1);assert((await page.locator('.contributor-card').allTextContents()).join(' ').includes('整理部分遥感相关资料'));assert.equal(await page.locator('.contributor-card a[href="https://github.com/ww713"]').count(),1);assert((await page.locator('.contributor-card').allTextContents()).join(' ').includes('感谢他提供遥感 PPT 资料'));checks.push('creator entry uses public GitHub identity, local avatar, current course scope and contributor acknowledgment');
+ await page.getByRole('button',{name:'搜索课程笔记',exact:true}).click();await page.locator('input[type=search]').fill('学习记录保存在哪里');await page.locator('.VPLocalSearchBox a[href*="site-guide"]').first().click();await page.waitForURL('**/site-guide.html#records');await page.locator('#records').waitFor();assert(await page.locator('#records').isVisible());checks.push('usage guide is reachable through knowledge search');
+ await page.goto(origin+prefix+'textbooks.html#r-1',{waitUntil:'networkidle'});assert(await page.locator('#r-1').isVisible());for(const id of ['r-2','r-3'])assert.equal(await page.locator('#'+id).count(),1);checks.push('legacy textbook anchors remain available');
  await page.goto(origin+prefix+'resources.html#geodesy',{waitUntil:'networkidle'});assert.equal(await page.getByLabel('课程',{exact:true}).inputValue(),'geodesy');assert.equal(await page.locator('.resource-card').count(),7);assert.equal(await page.locator('.resource-card a[download]').count(),6);
  await page.locator('#获取与使用 .header-anchor').click();assert.equal(await page.getByLabel('课程',{exact:true}).inputValue(),'geodesy');checks.push('ordinary resource anchor preserves course filter');
  await page.getByLabel('获取方式',{exact:true}).selectOption('download');assert.equal(await page.locator('.resource-card').count(),6);checks.push('geodesy resources expose six downloadable originals');

@@ -25,11 +25,19 @@ function archive(file,filename,expected,format){
   }
   processed.set(sha256,{parts});return {...result,parts};
 }
+// Keep this small Word export on Pages so previewing it does not require raw GitHub access.
+const localPreviews={'geo-s4':'geodesy/materials/S4-coordinate-rotation-preview.pdf'};
+const previewSource=r=>{
+ const relative=localPreviews[r.id];if(!relative)return r.pdf_preview_path;
+ const destination=path.join(publicRoot,relative),data=fs.readFileSync(r.pdf_preview_path);
+ if(hash(data)!==r.pdf_preview_sha256)throw Error('PDF export hash changed: '+r.id);
+ fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,data);return destination;
+};
 const catalog=records.map(r=>({
   id:r.id,title:r.title,course:r.course,type:r.type,author:r.author,format:r.format,
   coverageNote:r.coverage_note,
-  original:archive(r.source_path,r.original_filename,r.sha256,r.format),
-  preview:{...archive(r.pdf_preview_path,r.format==='PDF'?r.original_filename:r.id+'.pdf',r.pdf_preview_sha256,'PDF'),pages:r.pdf_preview_pages,kind:r.format==='PDF'?'original-pdf':'office-pdf-export'}
+  original:archive(r.id==='geo-s4'?path.join(publicRoot,'geodesy/materials/S4-coordinate-rotation.docx'):r.source_path,r.original_filename,r.sha256,r.format),
+  preview:{...archive(previewSource(r),r.format==='PDF'?r.original_filename:r.id+'.pdf',r.pdf_preview_sha256,'PDF'),pages:r.pdf_preview_pages,kind:r.format==='PDF'?'original-pdf':'office-pdf-export'}
 }));
 fs.mkdirSync('public/materials',{recursive:true});
 fs.writeFileSync('public/materials/catalog.json',JSON.stringify(catalog,null,2)+'\n');

@@ -1,10 +1,12 @@
 {
   "status": "PASS",
   "checks": [
+    "four courses each own exactly one collapsible library; all 49 resources have a unique visible index entry, including ML lectures 1–15",
     "one collapsible remote-sensing group with three subgroups and all 15 material links; keyboard expansion works",
     "all 15 remote-sensing materials retain downloads; the two textbook originals and supplemental publisher links are visible",
     "all 15 entries retain resource navigation and correctly enter the unified archive reader or public PDF; publisher links are supplemental",
     "original PDF page hashes and lecture-figure source links are preserved",
+    "InSAR source index uses the unified resource navigation; ML course title and breadcrumb use the combined course name",
     "resource cards and sidebar fit 390px and 320px phone screens"
   ],
   "errors": [],

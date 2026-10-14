@@ -3,7 +3,7 @@
   "courses": [
     {
       "id": "ml",
-      "title": "图像分析与机器学习",
+      "title": "机器学习与遥感图像分析",
       "category": "计算机与数据科学",
       "url": "course-ml.html",
       "description": "沿着预测、分类与网络的计算链，连接教材推导和可运行实验。",
