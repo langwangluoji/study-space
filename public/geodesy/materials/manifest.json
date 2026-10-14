@@ -40,5 +40,19 @@
     "file": "S6-orbital-mechanics.pptx",
     "bytes": 7610549,
     "sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87"
+  },
+  {
+    "id": "S7",
+    "original": "2大地线 （测地线 ）.pdf",
+    "file": "S7-geodesics.pdf",
+    "bytes": 960185,
+    "sha256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f"
+  },
+  {
+    "id": "S8",
+    "original": "3椭球面上大地坐标的计算(1).pdf",
+    "file": "S8-coordinate-computation-1.pdf",
+    "bytes": 1417195,
+    "sha256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99"
   }
 ]

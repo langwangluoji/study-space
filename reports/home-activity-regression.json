@@ -247,7 +247,7 @@
     "usage guide is reachable through knowledge search",
     "legacy textbook anchors remain available",
     "ordinary resource anchor preserves course filter",
-    "geodesy resources expose six downloadable originals",
+    "geodesy resources expose all downloadable originals",
     "resource URL survives reload and reset clears legacy course hash",
     "empty result reset restores keyboard focus",
     "combined resource filters, empty reset and actual notebook download",
@@ -263,7 +263,7 @@
     "mobile separate menus 320",
     "PDF page hash preserved",
     "PDF, PPTX, notebook, scripts and marker paths reachable",
-    "all six geodesy downloads preserve original SHA-256",
+    "all eight geodesy downloads preserve original SHA-256",
     "geodesy interactive, mobile, search and source pages"
   ],
   "runtimeErrors": []

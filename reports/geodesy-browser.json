@@ -1,14 +1,15 @@
 {
   "status": "PASS",
-  "pages": 20,
+  "pages": 28,
   "checks": [
-    "20 pages, two main chapters, 4+6 topic routes, formula rendering and source images",
-    "89 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof",
-    "all 13 main reading pages: correct pager titles, destinations, boundaries and next click",
+    "28 pages, four main chapters, 4+6+2+4 topic routes, formula rendering and source images",
+    "128 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof",
+    "all 21 main reading pages: correct pager titles, destinations, boundaries and next click",
     "coordinate boundaries, empty input and persisted learning mark",
     "active/passive rotation and keyboard control",
     "figure enlargement, provenance, Escape, close button and focus restoration",
     "theorem cross-page search",
+    "new Clairaut, Gauss and vertical-deflection concepts searchable",
     "320px/390px light/dark topics, formulas and image dialog",
     "legacy chapter and auxiliary anchors preserved",
     "ML homepage/sidebar/formula regression"

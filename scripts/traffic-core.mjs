@@ -24,6 +24,8 @@ export function counterValues(json) {
 }
 export function validateHistory(history,config) {
   if(history?.version!==1||history.startDate!==config.startDate||history.timeZone!==config.timeZone||history.endpoint!==config.endpoint||!Array.isArray(history.days))throw Error('History source does not match');
+  if(history.updatedAt!==null&&!Number.isFinite(Date.parse(history.updatedAt)))throw Error('Invalid archive timestamp');
+  if(history.activation&&(!Number.isFinite(Date.parse(history.activation.confirmedAt))||!/^[a-f\d]{40}$/.test(history.activation.commit)||!/^https:\/\/github\.com\/langwangluoji\/study-space\/actions\/runs\/\d+$/.test(history.activation.runUrl)))throw Error('Invalid activation record');
   const seen=new Set();
   for(const d of history.days){
     if(!validDate(d.date)||d.date<config.startDate||seen.has(d.date)||![d.pv,d.uv].every(n=>Number.isSafeInteger(n)&&n>=0)||typeof d.complete!=='boolean'||!Number.isFinite(Date.parse(d.observedAt)))throw Error('Invalid history day');

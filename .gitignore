@@ -1,5 +1,8 @@
 node_modules/
 reports/traffic-history-seed-repo/
+.local-python/
+reports/new-lectures-web-review.txt
+reports/new-lectures-web-review.png
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 docs/lecture-*.md

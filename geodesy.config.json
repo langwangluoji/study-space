@@ -50,5 +50,41 @@
         "title": "曲面度量 弧长与面积"
       }
     ]
+  },
+  {
+    "slug": "geodesy-geodesics",
+    "title": "第三章 大地线（测地线）",
+    "topics": [
+      {
+        "slug": "geodesy-geodesic-geometry",
+        "title": "法截弧与大地线"
+      },
+      {
+        "slug": "geodesy-geodesic-equations",
+        "title": "克莱劳定理与微分方程"
+      }
+    ]
+  },
+  {
+    "slug": "geodesy-computation",
+    "title": "第四章 椭球面上大地坐标的计算",
+    "topics": [
+      {
+        "slug": "geodesy-observation-reduction",
+        "title": "地面方向与边长归算"
+      },
+      {
+        "slug": "geodesy-spherical-triangles",
+        "title": "球面角超与三角形解算"
+      },
+      {
+        "slug": "geodesy-gauss-derivation",
+        "title": "高斯平均引数的推导"
+      },
+      {
+        "slug": "geodesy-gauss-solution",
+        "title": "大地主题正算与反算"
+      }
+    ]
   }
 ]

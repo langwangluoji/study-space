@@ -164,7 +164,8 @@ async function run(){
  assert(fs.existsSync(catalogPath),'Generate public/materials/catalog.json first');
  assert(fs.existsSync(path.join(root,'material-viewer/index.html')),'Build/copy the viewer into MATERIAL_UI_ROOT first');
  const records=JSON.parse(fs.readFileSync(catalogPath,'utf8'));
- assert.equal(records.length,43,'All 43 material records must be published');
+ const indexed = JSON.parse(fs.readFileSync(path.join(site,'resources.config.json'),'utf8')).filter(r=>r.archiveId||r.publicCopy);
+ assert.equal(records.length,new Set(indexed.map(r=>r.archiveId||r.id)).size,'All indexed material records must be published');
  const byId=new Map(records.map(r=>[r.id,r])),parts=sourceParts(records);
  // The private source inventory is useful locally, but must not be a CI dependency.
  if(fs.existsSync(inputPath)){
@@ -178,6 +179,21 @@ async function run(){
  fs.mkdirSync(screenRoot,{recursive:true});await startServer();
  browser=await chromium.launch({headless:true,timeout:30000,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{}),
   ...(process.env.PLAYWRIGHT_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE}:{})});
+
+ for(const id of ['geo-s7','geo-s8'])await caseRun(id+' new geodesy PDF first middle last and original download',async()=>{
+  const record=byId.get(id);assert(record.original.url&&record.preview.url);
+  const {context,page,tracker}=await routedContext(parts,{width:390,height:844});
+  try{
+   const first=await go(page,id,1,'dark');assert.equal(first.total,expectedPages(id));
+   const middle=await jump(page,Math.ceil(first.total/2));const last=await jump(page,first.total);
+   assert.equal(last.documentWidth,390,'Fit original PDF must not overflow phone viewport');
+   const pending=page.waitForEvent('download',{timeout});await page.locator('#download').click();const download=await pending;
+   assert.equal(await download.failure(),null);assert.equal(download.suggestedFilename(),record.original.filename);
+   const bytes=fs.readFileSync(await download.path());assert.equal(hash(bytes),record.original.sha256);
+   await page.screenshot({path:path.join(screenRoot,id+'-last-page.png')});assertNoErrors(tracker);
+   return {id,first,middle,last,originalSHA256:hash(bytes),filename:download.suggestedFilename()};
+  }finally{await context.close()}
+ });
 
  await caseRun('ML PPT first/last page and desktop zoom',async()=>{
   const {context,page,tracker}=await routedContext(parts);

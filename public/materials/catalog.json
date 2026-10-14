@@ -2706,5 +2706,55 @@
       "pages": 6,
       "kind": "original-pdf"
     }
+  },
+  {
+    "id": "geo-s7",
+    "title": "大地线（测地线） · 原讲义",
+    "course": "geodesy",
+    "type": "课件",
+    "author": "同济大学大地测量教研室",
+    "format": "PDF",
+    "coverageNote": "原讲义完整保留，包括封面、插入说明与习题；正文按知识结构重新讲解，页码见来源索引。",
+    "original": {
+      "filename": "2大地线 （测地线 ）.pdf",
+      "bytes": 960185,
+      "sha256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S7-geodesics.pdf"
+    },
+    "preview": {
+      "filename": "2大地线 （测地线 ）.pdf",
+      "bytes": 960185,
+      "sha256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S7-geodesics.pdf",
+      "pages": 11,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "geo-s8",
+    "title": "椭球面上大地坐标的计算(1) · 原讲义",
+    "course": "geodesy",
+    "type": "课件",
+    "author": "同济大学大地测量教研室",
+    "format": "PDF",
+    "coverageNote": "原讲义完整保留，包括封面、插入说明与习题；正文按知识结构重新讲解，页码见来源索引。",
+    "original": {
+      "filename": "3椭球面上大地坐标的计算(1).pdf",
+      "bytes": 1417195,
+      "sha256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S8-coordinate-computation-1.pdf"
+    },
+    "preview": {
+      "filename": "3椭球面上大地坐标的计算(1).pdf",
+      "bytes": 1417195,
+      "sha256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S8-coordinate-computation-1.pdf",
+      "pages": 28,
+      "kind": "original-pdf"
+    }
   }
 ]
