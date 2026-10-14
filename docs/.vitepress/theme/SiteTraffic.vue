@@ -10,9 +10,11 @@ const calendarViewport=ref(null);
 let timer;
 const label=computed(()=>metric.value==='uv'?'去重访客':'页面访问');
 const years=computed(()=>Array.from({length:Math.max(1,Number(today.value.slice(0,4))-Number(config.startDate.slice(0,4))+1)},(_,i)=>Number(config.startDate.slice(0,4))+i));
-const days=computed(()=>{const map=new Map((history.value?.days??[]).map(d=>[d.date,d]));if(traffic.live?.date===today.value)map.set(today.value,traffic.live);return map});
-const total=computed(()=>historyState.value==='ready'&&traffic.state==='ready'?cumulativeTotal(history.value,today.value,traffic.live,config.startDate):null);
-const todayUV=computed(()=>traffic.state==='ready'&&traffic.live?.date===today.value?traffic.live.uv:null);
+const storedToday=computed(()=>history.value?.days.find(d=>d.date===today.value));
+const counterRegressed=computed(()=>traffic.live?.date===today.value&&storedToday.value&&(traffic.live.pv<storedToday.value.pv||traffic.live.uv<storedToday.value.uv));
+const days=computed(()=>{const map=new Map((history.value?.days??[]).map(d=>[d.date,d]));if(traffic.live?.date===today.value&&!counterRegressed.value)map.set(today.value,traffic.live);return map});
+const total=computed(()=>historyState.value==='ready'&&traffic.state==='ready'&&!counterRegressed.value?cumulativeTotal(history.value,today.value,traffic.live,config.startDate):null);
+const todayUV=computed(()=>traffic.state==='ready'&&traffic.live?.date===today.value&&!counterRegressed.value?traffic.live.uv:null);
 const cells=computed(()=>calendarDays(year.value));
 const months=computed(()=>Array.from({length:12},(_,i)=>{const first=`${year.value}-${String(i+1).padStart(2,'0')}-01`;const offset=datesBetween(`${year.value}-01-01`,first).length-1;return {label:(i+1)+'月',left:30+Math.floor((new Date(`${year.value}-01-01T00:00:00Z`).getUTCDay()+offset)/7)*16}}));
 const selectedDay=computed(()=>days.value.get(selected.value));
@@ -56,7 +58,7 @@ onUnmounted(()=>clearInterval(timer));
   <section id="site-traffic" class="hub-activity traffic-section" aria-labelledby="traffic-title">
     <div class="hub-section-heading"><div><p class="hub-eyebrow">FOOTPRINTS / 访问足迹</p><h2 id="traffic-title">每一次来访，都留下足迹。</h2></div><a :href="withBase('/site-guide.html#traffic')">统计口径 <span aria-hidden="true">↗</span></a></div>
     <div class="traffic-summary"><div><span>总访问次数</span><strong data-stat="total">{{number(total)}}</strong><small>启用后累计的页面浏览</small></div><div><span>今日浏览人数</span><strong data-stat="today">{{number(todayUV)}}</strong><small>按匿名标识去重估算</small></div><p>自 {{config.startDate}} 启用后记录 · 北京时间<small v-if="history?.activation">上线确认 {{new Date(history.activation.confirmedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false})}}</small></p></div>
-    <div class="traffic-status" role="status"><span v-if="busy">正在读取访问记录…</span><span v-else-if="traffic.state==='unavailable'">实时统计暂不可用，稍后可重新读取。</span><span v-else-if="historyState==='unavailable'">历史记录暂不可用，累计值等待完整记录。</span><span v-else-if="total===null">历史正在归档，累计值等待完整记录。</span><span v-else>今日数据实时读取 · 历史按小时归档<span v-if="history?.updatedAt"> · 最近归档 {{new Date(history.updatedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false})}}</span></span><button type="button" :disabled="busy" @click="refresh">{{busy?'读取中':'重新读取'}}</button></div>
+    <div class="traffic-status" role="status"><span v-if="busy">正在读取访问记录…</span><span v-else-if="counterRegressed">实时统计暂不可用（计数回退），已保留归档记录。</span><span v-else-if="traffic.state==='unavailable'">实时统计暂不可用，稍后可重新读取。</span><span v-else-if="historyState==='unavailable'">历史记录暂不可用，累计值等待完整记录。</span><span v-else-if="total===null">历史正在归档，累计值等待完整记录。</span><span v-else>今日数据实时读取 · 历史按小时归档<span v-if="history?.updatedAt"> · 最近归档 {{new Date(history.updatedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false})}}</span></span><button type="button" :disabled="busy" @click="refresh">{{busy?'读取中':'重新读取'}}</button></div>
     <div class="traffic-panel">
       <div class="traffic-panel-heading"><div><h3>一年的来访日历</h3><p>选择一天查看当日记录。</p></div><label>年份<select v-model.number="year" aria-label="访问历史年份" @change="selected=year===Number(today.slice(0,4))?today:year+'-12-31'"><option v-for="y in years" :key="y" :value="y">{{y}}</option></select></label></div>
       <div class="activity-tabs" role="group" aria-label="访问历史指标"><button :aria-pressed="metric==='uv'" @click="metric='uv'">去重访客</button><button :aria-pressed="metric==='pv'" @click="metric='pv'">页面访问</button></div>
