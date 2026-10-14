@@ -44,7 +44,7 @@ onUnmounted(()=>{stop?.();window.removeEventListener('hashchange',syncUrl);windo
     <div class="resource-result"><p role="status" aria-live="polite" aria-atomic="true">{{filtered.length}} / {{resources.length}} 份资料</p><button type="button" @click="reset">重置筛选</button></div>
     <div class="resource-grid">
       <article v-for="r in filtered" :key="r.id" class="resource-card">
-        <div class="resource-meta"><span>{{r.type}} · {{r.format}}</span><span :class="['availability', {local:r.localOnly}]">{{r.localOnly?'仅本地存档':r.file||r.archiveId?'原件可下载':r.external?'外部下载':'在线索引'}}</span></div>
+        <div class="resource-meta"><span>{{r.type}} · {{r.format}}</span><span :class="['availability', {local:r.localOnly}]">{{r.localOnly?'仅本地存档':r.publicCopy?'公开副本可下载':r.accessUrl?'官方获取':r.file||r.archiveId?'原件可下载':r.external?'外部下载':'在线索引'}}</span></div>
         <h3>{{r.title}}</h3><p class="resource-author">{{r.author}}<template v-if="r.pages"> · {{r.pages}} 页</template><template v-if="r.bytes"> · {{size(r.bytes)}}</template></p><p>{{r.description}}</p><span class="resource-course">{{labels[r.course]}}</span>
         <div class="resource-actions">
           <a :href="withBase(r.preview)" :aria-label="'阅读：'+r.title">{{r.localOnly?'查看说明与出处':r.reader==='file'?'阅读资料说明':'在线阅读'}} <span aria-hidden="true">→</span></a>
@@ -52,7 +52,8 @@ onUnmounted(()=>{stop?.();window.removeEventListener('hashchange',syncUrl);windo
           <a v-else-if="r.archiveId" :href="withBase('/material-viewer/index.html')+'?id='+encodeURIComponent(r.archiveId)+'&download=1'" :aria-label="'下载 '+r.format+'：'+r.title" target="_blank" rel="noopener">下载 {{r.format}}</a>
           <a v-if="r.alternate" :href="withBase(r.alternate)" :aria-label="'下载 PDF：'+r.title" download>下载 PDF</a>
           <a v-if="r.release" :href="r.release" target="_blank" rel="noopener noreferrer">版本发布页 ↗</a>
-          <a v-if="r.external" :href="r.external" :aria-label="'外部 PDF 直链：'+r.title" target="_blank" rel="noopener noreferrer">PDF 直链 ↗</a>
+          <a v-if="r.external" :href="r.external" :aria-label="'外部 PDF 直链：'+r.title" target="_blank" rel="noopener noreferrer">{{r.externalLabel??'PDF 直链'}} ↗</a>
+          <a v-if="r.accessUrl" :href="r.accessUrl" target="_blank" rel="noopener noreferrer">{{r.accessLabel??'官方阅读与获取'}} ↗</a>
           <a v-if="r.source" :href="r.source" target="_blank" rel="noopener noreferrer">作者／维护项目 ↗</a>
         </div>
       </article>

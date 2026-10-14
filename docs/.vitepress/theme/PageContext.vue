@@ -6,6 +6,7 @@ const route=useRoute();
 const feedback=computed(()=> 'https://github.com/langwangluoji/study-space/issues/new?title='+encodeURIComponent('内容反馈：'+route.path.split('/').pop())+'&body='+encodeURIComponent('页面：https://langwangluoji.github.io'+route.path+'\n\n具体位置或锚点：\n\n问题与依据：\n\n建议修订：\n'));
 const context=computed(()=>{
   const p=route.path.replace('/study-space/','');
+  if(/^remote-sensing-(sources|glossary)/.test(p))return {label:'资料中心',href:'/resources.html'};
   if(/^(course-geodesy|geodesy-(?!source|plan))/.test(p))return {label:'大地测量',href:'/course-geodesy.html'};
   if(/^(course-ml|lecture-|cifar10-practice)/.test(p))return {label:'机器学习',href:'/course-ml.html'};
   const course=space.courses.filter(c=>!['ml','geodesy'].includes(c.id)).find(c=>p===c.entry.slice(1)||p.startsWith(c.id+'-'));

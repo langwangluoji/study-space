@@ -7,7 +7,7 @@ next: false
 
 # 资料中心
 
-教材、课件、代码与来源索引，按课程集中查找。四门课程的 43 份原资料提供在线预览；PPTX、DOCX 同时保留原件与 PDF 导出。Notebook 和 Python 脚本下载后在本地环境运行。
+教材、课件、代码与来源索引，按课程集中查找。四门课程的原课件与学习资料提供在线预览；PPTX、DOCX 同时保留原件与 PDF 导出。Notebook 和 Python 脚本下载后在本地环境运行。
 
 <span id="insar"></span><span id="ml"></span><span id="geodesy"></span><span id="remote-sensing"></span>
 
@@ -22,7 +22,7 @@ next: false
 | 图像分析与机器学习 | 15 讲教师 PPTX、PRML、MML、LeeDL 教材 | [前三讲与实践的来源](read-sources.html)；完整原资料范围超出当前讲义 |
 | 大地测量 | 6 份讲义、教材与辅助材料 | [来源与页码索引](geodesy-sources.html)对应已整理知识，[原件清单](geodesy/materials/manifest.json)保留既有校验 |
 | InSAR 原理与应用 | 3 份教师课件、1 本参考书 | [来源与修订](insar-sources.html)说明前三章实际使用与核读范围 |
-| 遥感基础 | 15 份原资料：第 2–9 章课件、汇总、3 本教材及补充资料，均可在线预览和下载 | [前四章双语讲义](course-remote-sensing.html)已整理；[来源与原资料索引](remote-sensing-sources.html)保留教材对照、配图及勘误 |
+| 遥感基础 | 15 份资料：课件、汇总、CCRS教程及补充资料支持在线阅读和下载；两本商业教材提供出版社正版入口 | [前四章双语讲义](course-remote-sensing.html)已整理；[来源与原资料索引](remote-sensing-sources.html)保留教材对照、配图及勘误 |
 
 **原资料可全文预览不表示全部内容已有整理讲义，也不表示已经逐页审校。** 课程入口与来源索引说明当前知识整理范围。机器学习实践的环境要求和运行预算见[实践说明](cifar10-practice.html#p0)；LeeDL 的[维护项目版本页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4)保留为外部出处。
 

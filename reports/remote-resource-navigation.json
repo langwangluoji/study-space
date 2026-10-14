@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "one collapsible remote-sensing group with three subgroups and all 15 material links; keyboard expansion works",
+    "13 public material downloads are distinct from two legitimate publisher-access entries",
+    "all 15 entries retain resource navigation and correctly enter the unified reader, public PDF or publisher portal",
+    "original PDF page hashes and lecture-figure source links are preserved",
+    "resource cards and sidebar fit 390px and 320px phone screens"
+  ],
+  "errors": [],
+  "scope": "navigation regression; unified PDF.js rendering and original bytes are verified separately"
+}
