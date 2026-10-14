@@ -3,15 +3,19 @@
   "startDate": "2026-10-14",
   "timeZone": "Asia/Shanghai",
   "endpoint": "https://busuanzi.9420.ltd/api",
-  "activation": null,
-  "updatedAt": "2026-10-14T07:14:47.061Z",
+  "activation": {
+    "confirmedAt": "2026-10-14T08:20:10Z",
+    "commit": "3c9f671760b1f3ffa95198d55a0b68a188d58144",
+    "runUrl": "https://github.com/langwangluoji/study-space/actions/runs/38532698910"
+  },
+  "updatedAt": "2026-10-14T08:20:18.241Z",
   "days": [
     {
       "date": "2026-10-14",
       "pv": 0,
       "uv": 0,
       "complete": false,
-      "observedAt": "2026-10-14T07:14:47.061Z"
+      "observedAt": "2026-10-14T08:20:18.241Z"
     }
   ],
   "errors": []
