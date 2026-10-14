@@ -1,4 +1,4 @@
-# 机器学习 · 阅读路径
+# 机器学习与遥感图像分析 · 阅读路径
 
 <div class="course-quicklinks"><a href="/study-space/review-guide.html#ml">期末复习路线 →</a><a href="/study-space/resources.html#ml">教材、课件与代码 ↗</a></div>
 
