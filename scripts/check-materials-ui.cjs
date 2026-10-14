@@ -113,7 +113,7 @@ async function waitRendered(page,n,{allowBlank=false}={}){
  const result=await page.waitForFunction(expected=>{
   const c=document.querySelector('#canvas'),s=document.querySelector('#status');
   if(s?.classList.contains('error'))return {error:s.textContent};
-  return c?.dataset.page===String(expected)&&c.width>0&&c.height>0&&/^第 \d+ \/ \d+ 页$/.test(s?.textContent||'');
+  return c?.dataset.page===String(expected)&&c.width>0&&c.height>0&&(/^第 \d+ \/ \d+ 页$/.test(s?.textContent||'')||(document.body.classList.contains('continuous')&&document.body.dataset.ready==='true'&&document.querySelectorAll('.continuous-page canvas[data-page]').length===Number(document.querySelector('#page').max)));
  },n,{timeout});
  const state=await result.jsonValue();await result.dispose();
  if(state?.error)throw Error(state.error);
@@ -376,6 +376,37 @@ async function run(){
    return {id:'leedl',first,afterFirst,injected503Requests:injected,errorStatus,recovered,next,
     afterRetry:snapshot(tracker),expectedHTTPErrors:tracker.httpErrors,expectedConsoleErrors:tracker.consoleErrors};
   }finally{caseItem.statusTimeline=await page.evaluate(()=>window.__materialStatusTimeline).catch(()=>[]);await context.close()}
+ });
+
+ await caseRun('Geodesy Word preview and original download with raw GitHub unavailable',async()=>{
+  const record=byId.get('geo-s4');assert(record.preview.url&&record.original.url,'Small Word material uses same-origin files');
+  const {context,page,tracker}=await routedContext(parts,{width:390,height:844});let rawRequests=0;
+  await context.route('https://raw.githubusercontent.com/**',route=>{rawRequests++;return route.abort('failed')});
+  await context.addInitScript(()=>{delete Uint8Array.prototype.toHex;delete Uint8Array.prototype.toBase64;delete Uint8Array.fromBase64});
+  await context.route('**/material-viewer/pdf-worker.js',route=>route.fulfill({status:200,contentType:'text/javascript',body:"delete Uint8Array.prototype.toHex;delete Uint8Array.prototype.toBase64;delete Uint8Array.fromBase64;await import('./typed-array-compat.js');await import('../vendor/pdfjs/pdf.worker.min.js');"}));
+  try{
+   const first=await go(page,'geo-s4');assert.equal(first.total,5);assert(first.nonwhite>0);
+   assert.equal(await page.locator('.continuous-page canvas[data-page]').count(),5);
+   const ink=await page.locator('.continuous-page canvas').evaluateAll(canvases=>canvases.map(c=>{const ctx=c.getContext('2d');let count=0;for(let y=0;y<c.height;y+=Math.max(1,Math.floor(c.height/100)))for(let x=0;x<c.width;x+=Math.max(1,Math.floor(c.width/100))){const p=ctx.getImageData(x,y,1,1).data;if(p[3]&&Math.min(p[0],p[1],p[2])<238)count++}return count}));assert(ink.every(n=>n>0),'All five continuous pages contain painted original content');
+   assert(await page.locator('#prev').isHidden());assert(await page.locator('#next').isHidden());assert(await page.locator('#page').isHidden());
+   assert.equal(await page.evaluate(()=>new Uint8Array([0,15,255]).toHex()),'000fff');
+   assert.equal(await page.evaluate(()=>Uint8Array.fromBase64('AA//').toHex()),'000fff');
+   assert.equal(await page.evaluate(()=>new Uint8Array([0,15,255]).toBase64()),'AA//');
+   await page.locator('#zoom').selectOption('1');await page.waitForFunction(()=>document.body.dataset.ready==='true'&&document.querySelectorAll('.continuous-page canvas[data-page]').length===5);
+   await page.locator('#zoom').selectOption('2');await page.waitForFunction(()=>document.body.dataset.ready==='true'&&document.querySelectorAll('.continuous-page canvas[data-page]').length===5);
+   await page.locator('#paper').evaluate(e=>e.scrollTop=e.scrollHeight);
+   assert.equal(await page.locator('#paper').evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(245, 247, 248)');
+   assert.equal(await page.locator('html').evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(255, 255, 255)');
+   assert.equal(await page.evaluate(()=>document.documentElement.scrollTop),0,'Continuous page scrolling stays inside the reading panel');
+   assert(await page.locator('body>.hiddenCanvasElement').evaluateAll(canvases=>canvases.every(c=>getComputedStyle(c).visibility==='hidden'&&getComputedStyle(c).position==='absolute')),'PDF.js measurement canvases never appear below the document');
+   assert.notEqual(await page.evaluate(()=>document.elementFromPoint(innerWidth/2,innerHeight-5)?.tagName),'CANVAS','No helper canvas creates a black region at the viewport bottom');
+   await page.screenshot({path:path.join(screenRoot,'geodesy-word-continuous-bottom.png')});
+   const pending=page.waitForEvent('download',{timeout});await page.locator('#download').click();const download=await pending;
+   assert.equal(await download.failure(),null);assert.equal(download.suggestedFilename(),record.original.filename);
+   const bytes=fs.readFileSync(await download.path());assert.equal(hash(bytes),record.original.sha256);assert.equal(bytes.length,record.original.bytes);
+   assert.equal(rawRequests,0,'Preview and original must not request raw GitHub');assertNoErrors(tracker);
+   return {id:'geo-s4',pages:5,continuous:true,missingNativeEncoders:true,rawRequests,originalSHA256:hash(bytes),filename:download.suggestedFilename()};
+  }finally{await context.close()}
  });
 
  await caseRun('Real service-worker DOCX and Chinese PPTX downloads SHA-256',async()=>{

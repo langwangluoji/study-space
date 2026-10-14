@@ -1091,30 +1091,16 @@
       "bytes": 616066,
       "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994",
       "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      "parts": [
-        {
-          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994/00000.bin",
-          "start": 0,
-          "bytes": 616066,
-          "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994"
-        }
-      ]
+      "url": "geodesy/materials/S4-coordinate-rotation.docx"
     },
     "preview": {
       "filename": "geo-s4.pdf",
       "bytes": 520807,
       "sha256": "59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936",
       "mime": "application/pdf",
-      "parts": [
-        {
-          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936/00000.bin",
-          "start": 0,
-          "bytes": 520807,
-          "sha256": "59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936"
-        }
-      ],
       "pages": 5,
-      "kind": "office-pdf-export"
+      "kind": "office-pdf-export",
+      "url": "geodesy/materials/S4-coordinate-rotation-preview.pdf"
     }
   },
   {
