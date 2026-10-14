@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "checks": 624,
+  "pages": [
+    {
+      "slug": "course-optimization",
+      "bytes": 5010,
+      "math": 0
+    },
+    {
+      "slug": "optimization-prerequisites",
+      "bytes": 234,
+      "math": 0
+    },
+    {
+      "slug": "optimization-reading",
+      "bytes": 5526,
+      "math": 4
+    },
+    {
+      "slug": "optimization-sources",
+      "bytes": 8743,
+      "math": 14
+    },
+    {
+      "slug": "optimization-bv-01",
+      "bytes": 7996,
+      "math": 32
+    },
+    {
+      "slug": "optimization-bv-02",
+      "bytes": 7712,
+      "math": 50
+    },
+    {
+      "slug": "optimization-bv-03",
+      "bytes": 9984,
+      "math": 76
+    },
+    {
+      "slug": "optimization-bv-04",
+      "bytes": 9475,
+      "math": 71
+    },
+    {
+      "slug": "optimization-bv-05",
+      "bytes": 10985,
+      "math": 73
+    },
+    {
+      "slug": "optimization-bv-06",
+      "bytes": 11149,
+      "math": 79
+    },
+    {
+      "slug": "optimization-bv-07",
+      "bytes": 12115,
+      "math": 84
+    },
+    {
+      "slug": "optimization-bv-08",
+      "bytes": 14361,
+      "math": 91
+    },
+    {
+      "slug": "optimization-bv-09",
+      "bytes": 12336,
+      "math": 78
+    },
+    {
+      "slug": "optimization-bv-10",
+      "bytes": 11082,
+      "math": 78
+    },
+    {
+      "slug": "optimization-bv-11",
+      "bytes": 14582,
+      "math": 90
+    },
+    {
+      "slug": "optimization-nw-01",
+      "bytes": 7768,
+      "math": 9
+    },
+    {
+      "slug": "optimization-nw-02",
+      "bytes": 8095,
+      "math": 36
+    },
+    {
+      "slug": "optimization-nw-03",
+      "bytes": 9069,
+      "math": 30
+    },
+    {
+      "slug": "optimization-nw-04",
+      "bytes": 9303,
+      "math": 35
+    },
+    {
+      "slug": "optimization-nw-05",
+      "bytes": 8301,
+      "math": 41
+    },
+    {
+      "slug": "optimization-nw-06",
+      "bytes": 8568,
+      "math": 32
+    },
+    {
+      "slug": "optimization-nw-07",
+      "bytes": 10240,
+      "math": 34
+    },
+    {
+      "slug": "optimization-nw-08",
+      "bytes": 9279,
+      "math": 26
+    },
+    {
+      "slug": "optimization-nw-09",
+      "bytes": 10281,
+      "math": 24
+    },
+    {
+      "slug": "optimization-nw-10",
+      "bytes": 7662,
+      "math": 46
+    },
+    {
+      "slug": "optimization-nw-11",
+      "bytes": 5747,
+      "math": 35
+    },
+    {
+      "slug": "optimization-nw-12",
+      "bytes": 7202,
+      "math": 36
+    },
+    {
+      "slug": "optimization-nw-13",
+      "bytes": 6885,
+      "math": 40
+    },
+    {
+      "slug": "optimization-nw-14",
+      "bytes": 5779,
+      "math": 28
+    },
+    {
+      "slug": "optimization-nw-15",
+      "bytes": 6270,
+      "math": 25
+    },
+    {
+      "slug": "optimization-nw-16",
+      "bytes": 8186,
+      "math": 46
+    },
+    {
+      "slug": "optimization-nw-17",
+      "bytes": 7492,
+      "math": 42
+    },
+    {
+      "slug": "optimization-nw-18",
+      "bytes": 8396,
+      "math": 27
+    },
+    {
+      "slug": "optimization-nw-19",
+      "bytes": 8750,
+      "math": 39
+    },
+    {
+      "slug": "optimization-bv-a",
+      "bytes": 5852,
+      "math": 46
+    },
+    {
+      "slug": "optimization-bv-b",
+      "bytes": 5511,
+      "math": 42
+    },
+    {
+      "slug": "optimization-bv-c",
+      "bytes": 5915,
+      "math": 43
+    },
+    {
+      "slug": "optimization-nw-a",
+      "bytes": 4562,
+      "math": 15
+    },
+    {
+      "slug": "optimization-nw-b",
+      "bytes": 3188,
+      "math": 13
+    }
+  ],
+  "numerics": "analytic stationary conditions, Armijo inequality, exact scalar LQR and linear Gaussian posterior; synthetic data only"
+}

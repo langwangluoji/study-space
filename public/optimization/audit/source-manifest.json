@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-14",
+  "sources": [
+    {
+      "name": "Convex Optimization》Stephen Boyd.pdf",
+      "sha256": "40d976c83c18cce1900eff8c41bd5ad408c102b813af39d05ff85678ccf8d76e",
+      "physical_pages": 714,
+      "body_page_offset": 14
+    },
+    {
+      "name": "Numerical  optimization.pdf",
+      "sha256": "596827fbf644f51e3c525ec1a1db16a4e001cd53840700d604bb8aa23279554e",
+      "physical_pages": 686,
+      "body_page_offset": 22
+    }
+  ],
+  "lectures": [
+    {
+      "path": "docs/optimization-bv-01.md",
+      "sha256": "9103a23b58b850c7a6a3149b22db3854f1b982df036515a73c2348d408f62ba2"
+    },
+    {
+      "path": "docs/optimization-bv-02.md",
+      "sha256": "e067a635c5db11ede0059d8a59a2cd64c98233d8a54e3cd5a0c75da3e4224c7e"
+    },
+    {
+      "path": "docs/optimization-bv-03.md",
+      "sha256": "94e88b7264cbd6bad6382a2a831e46e607a31258b04c826fe4b2026109e8dee7"
+    },
+    {
+      "path": "docs/optimization-bv-04.md",
+      "sha256": "f66f8b736c073eb0d24dfd4c3593ed51130fba5d9f868aeee04b283c593725bc"
+    },
+    {
+      "path": "docs/optimization-bv-05.md",
+      "sha256": "595529c34e73eaa0cb0de168ea0bdc16c988c411750708ec421b4f155e3170b9"
+    },
+    {
+      "path": "docs/optimization-bv-06.md",
+      "sha256": "ca1c65a5686a0413dee0ffd69b324c44db2861f6075e4112b2000a9115bc26b1"
+    },
+    {
+      "path": "docs/optimization-bv-07.md",
+      "sha256": "0816bbf55812c3d0701b1cafdf8f025a3d45464ef18c4ab5ccc0b2657b32b1c4"
+    },
+    {
+      "path": "docs/optimization-bv-08.md",
+      "sha256": "2afea7660c53d975912e0beb646636c158cbd999a5920d6796be235c24852956"
+    },
+    {
+      "path": "docs/optimization-bv-09.md",
+      "sha256": "d860c5eb7be9c1ce77d432a0c59e4446ea8367185035fe827ae6604a71295c3a"
+    },
+    {
+      "path": "docs/optimization-bv-10.md",
+      "sha256": "77f66587247e675551a6fe64191711e95e8ff40cda4d6d8f6625affe1e018eb2"
+    },
+    {
+      "path": "docs/optimization-bv-11.md",
+      "sha256": "e8d35a3efe409a36d223b5321d1cf194c1d9de3c21370d7835aa9ea7ea1e8398"
+    },
+    {
+      "path": "docs/optimization-bv-a.md",
+      "sha256": "fb659b42c6d9f1d71c1527761f0b8af94f8f53bac2213176a386ab8bd6065e83"
+    },
+    {
+      "path": "docs/optimization-bv-b.md",
+      "sha256": "cbf6d74514b45601f4835272ad8ade52a82d2b0000639df66bfe650bbda3b830"
+    },
+    {
+      "path": "docs/optimization-bv-c.md",
+      "sha256": "861640edca368e52185cd6b3f317298835360f8bb951a9e8a22df8bb5e8ebfd2"
+    },
+    {
+      "path": "docs/optimization-nw-01.md",
+      "sha256": "637457332f214555d3d96767382b0a043ff54a298f475ab78d03f7eb5169b55b"
+    },
+    {
+      "path": "docs/optimization-nw-02.md",
+      "sha256": "172200c44af0951ac6cfc1becc8a01fba8e9ad7175eb8b28bb6cb1b563e15611"
+    },
+    {
+      "path": "docs/optimization-nw-03.md",
+      "sha256": "7297eeb4be26c1d74db536e765830ffb5e3ad878ea9937d96055c79ecc27bbf0"
+    },
+    {
+      "path": "docs/optimization-nw-04.md",
+      "sha256": "48241080bdf59fbedaa3f769c0c4958ea01451785ddaf177fb776788b172a4a7"
+    },
+    {
+      "path": "docs/optimization-nw-05.md",
+      "sha256": "0cf9ec76500763c02cb9aaf5ab266892cf52ce2b41cf5319ff13c85ba870dcc8"
+    },
+    {
+      "path": "docs/optimization-nw-06.md",
+      "sha256": "e620767400fdb69a468fe1a63cc7f3ba8d00fbaf6a6e995faac93d6d1e31da30"
+    },
+    {
+      "path": "docs/optimization-nw-07.md",
+      "sha256": "7f674910297f9e3633603b4c6a4ef6e76b34273fa12855b41ad04b80bb68cfb7"
+    },
+    {
+      "path": "docs/optimization-nw-08.md",
+      "sha256": "235cd8863b32ecbd52f03d296ed03655d6ae03f8241ceea17896d50890c93bd9"
+    },
+    {
+      "path": "docs/optimization-nw-09.md",
+      "sha256": "39567a8831e908e9a45810710cffe3ba073dfff554f2d075de43c43c34ab7a5e"
+    },
+    {
+      "path": "docs/optimization-nw-10.md",
+      "sha256": "8b4be093e27b3c84486834aa9c119b333779e716391926853decece2a7677db8"
+    },
+    {
+      "path": "docs/optimization-nw-11.md",
+      "sha256": "9f06bb97f4751c37a9961f747182d3b23a8a71ef62c2e5bb9da3c840efac7778"
+    },
+    {
+      "path": "docs/optimization-nw-12.md",
+      "sha256": "dcb807b0fe98b59f48f4f47d5c71e78d4a486cd7428bed3e238b6ffea7292aa3"
+    },
+    {
+      "path": "docs/optimization-nw-13.md",
+      "sha256": "9d3903b386efb714ba42c927e9e6aa00d1cd0bc08cd1df74b5db53db16126681"
+    },
+    {
+      "path": "docs/optimization-nw-14.md",
+      "sha256": "a6ff496175ad5d6d0323b1197309a2cd03254b0f74df3721da8be24ca2031ba6"
+    },
+    {
+      "path": "docs/optimization-nw-15.md",
+      "sha256": "485501bcedc3400b9bbd295bfa55d77dbfd1323baa026ca52762c30e12b34c94"
+    },
+    {
+      "path": "docs/optimization-nw-16.md",
+      "sha256": "aa365f2a78a8f8571650a139481e4fb63ff9231ba4eb07e6941ac6dff538e15c"
+    },
+    {
+      "path": "docs/optimization-nw-17.md",
+      "sha256": "b30f25b53c7e78dca3e48dda74f9286dd173b8ee86a97e6ab95ce6b3591fedda"
+    },
+    {
+      "path": "docs/optimization-nw-18.md",
+      "sha256": "44e328da4fa1e69643913080a361eb29ad9262936c4edbad8f077a160e0ccb64"
+    },
+    {
+      "path": "docs/optimization-nw-19.md",
+      "sha256": "88c6a227f4dc385219d7ff0860ceb725015ea5ecbfe1f7325f776f7fae23610e"
+    },
+    {
+      "path": "docs/optimization-nw-a.md",
+      "sha256": "ec405e4a81391ff757b9bd8936ad23f569b88a01d087301ff91de0542e8804c6"
+    },
+    {
+      "path": "docs/optimization-nw-b.md",
+      "sha256": "a6d6c472b88093d006e4f3b0f01ceeac2fe3a9d23edea0fd7938571ada792c28"
+    }
+  ],
+  "limits": "Main concepts and conditions guided; not all long proofs, exercises or errata reproduced."
+}

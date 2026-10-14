@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-14",
+  "source": "E:/Document/FILE_package/Class/最优化/Convex Optimization》Stephen Boyd.pdf",
+  "version": "2004 first edition / seventh printing with corrections 2009",
+  "method": "实际读取本地boyd-extracted全文对应页，核验主节及关键三阶标题与原公式，按附录顺序写作后复核。",
+  "page_rule": "printed+14 = PDF physical, 1-based",
+  "inspected_key_printed_pages": [
+    633,
+    637,
+    639,
+    640,
+    642,
+    645,
+    646,
+    648,
+    650,
+    651,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    661,
+    664,
+    668,
+    669,
+    671,
+    672,
+    678,
+    681,
+    682,
+    683
+  ],
+  "revisions_and_decisions": [
+    "B.1保留二次线性项系数2，依据B.1/B.3一致形式；不机械沿用提取中个别后续式漏2的表现。",
+    "B页增加无严格可行反例x²<=0 => x<=0，明确证书充分性与必要性的逻辑不同。",
+    "C保留原C.5欠定方程标题；最小二乘只作为与正文连接的补充。",
+    "A函数箭头约定按本书原文解释；闭函数及奇异Schur补条件完整。"
+  ],
+  "remaining_limits": "未渲染PDF附录图页；本次文本/公式源复核，不声明全部证明逐行重证。附录不作为前置测试。",
+  "appendices": [
+    {
+      "appendix": "A",
+      "file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-a.md",
+      "bytes": 5811,
+      "sections": [
+        {
+          "section": "A.1",
+          "source_title": "Norms",
+          "printed_page": 633,
+          "pdf_physical_page": 647,
+          "lecture_heading": "A.1 Norms · 长度、距离与对偶长度",
+          "coverage": "内积、范数、等价、算子、对偶；矩阵内积与核范数。",
+          "condition_check": "有限维范数等价；算子范数需输入/输出度量；dual核范数对应谱范数。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "A.2",
+          "source_title": "Analysis",
+          "printed_page": 637,
+          "pdf_physical_page": 651,
+          "lecture_heading": "A.2 Analysis · 开闭、极限与上下界",
+          "coverage": "内部/开闭、边界闭包、紧、有界、sup/inf。",
+          "condition_check": "有限维闭且有界紧；存在性需非空及连续等条件；inf未必达到。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "A.3",
+          "source_title": "Functions",
+          "printed_page": 639,
+          "pdf_physical_page": 653,
+          "lecture_heading": "A.3 Functions · 函数记号也包含定义域",
+          "coverage": "原书函数箭头约定、连续、闭函数。",
+          "condition_check": "dom可以是箭头输入空间子集；闭函数不是闭域也不自动有最优点。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "A.4",
+          "source_title": "Derivatives",
+          "printed_page": 640,
+          "pdf_physical_page": 654,
+          "lecture_heading": "A.4 Derivatives · 一阶与二阶局部模型",
+          "coverage": "Jacobian、gradient、链式法则、Hessian、矩阵导数。",
+          "condition_check": "梯度列向量/导数行矩阵区分；logdet用正定域及迹内积。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "A.5",
+          "source_title": "Linear algebra",
+          "printed_page": 645,
+          "pdf_physical_page": 659,
+          "lecture_heading": "A.5 Linear algebra · 从空间到分解与Schur补",
+          "coverage": "值域零空间、对称/广义特征分解、SVD、伪逆、Schur补。",
+          "condition_check": "广义特征值此处B正定；奇异Schur补需值域条件。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        }
+      ]
+    },
+    {
+      "appendix": "B",
+      "file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-b.md",
+      "bytes": 5470,
+      "sections": [
+        {
+          "section": "B.1",
+          "source_title": "Single constraint quadratic optimization",
+          "printed_page": 653,
+          "pdf_physical_page": 667,
+          "lecture_heading": "B.1 Single constraint quadratic optimization · 单个二次约束",
+          "coverage": "单二次不等式、非凸、对偶SDP与lifted松弛。",
+          "condition_check": "对偶有限需H PSD且d在range(H)；强对偶需单二次约束严格可行；值相等不自动原始达到。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "B.2",
+          "source_title": "The S-procedure",
+          "printed_page": 655,
+          "pdf_physical_page": 669,
+          "lecture_heading": "B.2 The S-procedure · 用矩阵证明二次蕴含",
+          "coverage": "二次蕴含矩阵乘子证书、椭球包含、无严格可行反例。",
+          "condition_check": "前提二次式存在严格负点时单实二次约束S-lemma等价；一般多约束只有充分性；不泛化等式/复变量。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "B.3",
+          "source_title": "The field of values of two symmetric matrices",
+          "printed_page": 656,
+          "pdf_physical_page": 670,
+          "lecture_heading": "B.3 The field of values of two symmetric matrices",
+          "coverage": "两个指定二次评价可从PSD矩阵还原到向量，凸锥几何。",
+          "condition_check": "保留两个评价、对称实矩阵、PSD X；不说X=xxT或推广任意数量。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "B.4",
+          "source_title": "Proofs of the strong duality results",
+          "printed_page": 657,
+          "pdf_physical_page": 671,
+          "lecture_heading": "B.4 Proofs of the strong duality results · 证明的连接线",
+          "coverage": "严格可行、矩阵择一、rank-reduction、增广坐标0/非0、下界蕴含。",
+          "condition_check": "增广末坐标0需独立处理；不能直接除以0；完整构造回原文。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        }
+      ]
+    },
+    {
+      "appendix": "C",
+      "file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-c.md",
+      "bytes": 5874,
+      "sections": [
+        {
+          "section": "C.1",
+          "source_title": "Matrix structure and algorithm complexity",
+          "printed_page": 661,
+          "pdf_physical_page": 675,
+          "lecture_heading": "C.1 Matrix structure and algorithm complexity",
+          "coverage": "非奇异系统、flop、矩阵乘积次序、结构。",
+          "condition_check": "flop不等于运行秒数；稀疏原矩阵不保证因子稀疏。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "C.2",
+          "source_title": "Solving linear equations with factored matrices",
+          "printed_page": 664,
+          "pdf_physical_page": 678,
+          "lecture_heading": "C.2 Solving linear equations with factored matrices",
+          "coverage": "对角/三角/正交/置换、factor-solve、多右端重用。",
+          "condition_check": "同矩阵可以重用数值分解；同模式不能无条件重用数值因子。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "C.3",
+          "source_title": "LU, Cholesky, and LDLT factorization",
+          "printed_page": 668,
+          "pdf_physical_page": 682,
+          "lecture_heading": "C.3 LU, Cholesky, and LDLᵀ factorization",
+          "coverage": "三分解、主元、稀疏符号/数值分解与填充。",
+          "condition_check": "Cholesky需SPD；LDLT不定系统允许2x2块；LU/LDLT主元依赖数值。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "C.4",
+          "source_title": "Block elimination and Schur complements",
+          "printed_page": 672,
+          "pdf_physical_page": 686,
+          "lecture_heading": "C.4 Block elimination and Schur complements",
+          "coverage": "消元Schur补、结构、matrix inversion lemma。",
+          "condition_check": "被消块与相关系统可逆；稠密分块本身不省成本；low-rank条件与填充明确。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        },
+        {
+          "section": "C.5",
+          "source_title": "Solving underdetermined linear equations",
+          "printed_page": 681,
+          "pdf_physical_page": 695,
+          "lecture_heading": "C.5 Solving underdetermined linear equations",
+          "coverage": "子块特解、QR、矩形LU、零空间；与正文LS连接。",
+          "condition_check": "p<n且满行秩；QR最小范数来自正交性；额外LS说明非本节题名，不假称独立LS节。",
+          "self_review": "保存后对照原附录主节与关键公式复核，数学分隔配对。",
+          "limitations": "导读解释核心内容，不逐行复现全部证明/长公式/成本分析。"
+        }
+      ]
+    }
+  ],
+  "final_revision": "2026-10-14: original-chapter organization; full-manuscript review corrections recorded in optimization-final-review.md"
+}

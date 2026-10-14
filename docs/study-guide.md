@@ -65,3 +65,6 @@ next: false
 ### 大地测量的后续计算路线
 
 从[大地线](geodesy-geodesics.html)理解曲面上最直的路径，用[微分方程](geodesy-geodesic-equations.html)联系位置和方向；先读[观测归算](geodesy-observation-reduction.html)，再读[角超与三角形](geodesy-spherical-triangles.html)，最后跟随[高斯推导](geodesy-gauss-derivation.html)和[正反算演示](geodesy-gauss-solution.html#gauss-example)。先辨认参考面、角度分支和长度类型，再代入公式。
+## 最优化：按两本教材章节阅读
+
+[双教材目录](course-optimization.html)分别保留原书11章与19章顺序。直接从[Boyd第1章](optimization-bv-01.html)或[Nocedal–Wright第1章](optimization-nw-01.html)进入。数学基础随正文解释，英文辅助与原著页码在当前位置查阅；学习、控制和导航的联系融入相关概念。

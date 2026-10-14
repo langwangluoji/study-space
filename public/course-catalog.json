@@ -196,6 +196,136 @@
           "url": "remote-sensing-ch4.html"
         }
       ]
+    },
+    {
+      "id": "optimization",
+      "title": "最优化 · 双教材讲义",
+      "category": "数学、学习与动态系统",
+      "url": "course-optimization.html",
+      "description": "按Boyd与Nocedal–Wright原书章节连续讲述，解释概念、公式与条件；在相应知识中联系学习、控制和导航。",
+      "status": "30章详解与原文对照",
+      "chapters": [
+        {
+          "slug": "optimization-bv-01",
+          "title": "第1章 · Introduction · 引言"
+        },
+        {
+          "slug": "optimization-bv-02",
+          "title": "第2章 · Convex sets · 凸集"
+        },
+        {
+          "slug": "optimization-bv-03",
+          "title": "第3章 · Convex functions · 凸函数"
+        },
+        {
+          "slug": "optimization-bv-04",
+          "title": "第4章 · Convex optimization problems · 凸优化问题"
+        },
+        {
+          "slug": "optimization-bv-05",
+          "title": "第5章 · Duality · 对偶"
+        },
+        {
+          "slug": "optimization-bv-06",
+          "title": "第6章 · Approximation and fitting · 逼近与拟合"
+        },
+        {
+          "slug": "optimization-bv-07",
+          "title": "第7章 · Statistical estimation · 统计估计"
+        },
+        {
+          "slug": "optimization-bv-08",
+          "title": "第8章 · Geometric problems · 几何问题"
+        },
+        {
+          "slug": "optimization-bv-09",
+          "title": "第9章 · Unconstrained minimization · 无约束极小化"
+        },
+        {
+          "slug": "optimization-bv-10",
+          "title": "第10章 · Equality constrained minimization · 等式约束极小化"
+        },
+        {
+          "slug": "optimization-bv-11",
+          "title": "第11章 · Interior-point methods · 内点法"
+        },
+        {
+          "slug": "optimization-nw-01",
+          "title": "第1章 · Introduction · 引言"
+        },
+        {
+          "slug": "optimization-nw-02",
+          "title": "第2章 · Fundamentals of Unconstrained Optimization · 无约束基础"
+        },
+        {
+          "slug": "optimization-nw-03",
+          "title": "第3章 · Line Search Methods · 线搜索"
+        },
+        {
+          "slug": "optimization-nw-04",
+          "title": "第4章 · Trust-Region Methods · 信赖域"
+        },
+        {
+          "slug": "optimization-nw-05",
+          "title": "第5章 · Conjugate Gradient Methods · 共轭梯度"
+        },
+        {
+          "slug": "optimization-nw-06",
+          "title": "第6章 · Quasi-Newton Methods · 拟牛顿"
+        },
+        {
+          "slug": "optimization-nw-07",
+          "title": "第7章 · Large-Scale Unconstrained Optimization · 大规模优化"
+        },
+        {
+          "slug": "optimization-nw-08",
+          "title": "第8章 · Calculating Derivatives · 导数计算"
+        },
+        {
+          "slug": "optimization-nw-09",
+          "title": "第9章 · Derivative-Free Optimization · 无导数优化"
+        },
+        {
+          "slug": "optimization-nw-10",
+          "title": "第10章 · Least-Squares Problems · 最小二乘"
+        },
+        {
+          "slug": "optimization-nw-11",
+          "title": "第11章 · Nonlinear Equations · 非线性方程"
+        },
+        {
+          "slug": "optimization-nw-12",
+          "title": "第12章 · Theory of Constrained Optimization · 约束理论"
+        },
+        {
+          "slug": "optimization-nw-13",
+          "title": "第13章 · Linear Programming: The Simplex Method · LP单纯形法"
+        },
+        {
+          "slug": "optimization-nw-14",
+          "title": "第14章 · Linear Programming: Interior-Point Methods · LP内点法"
+        },
+        {
+          "slug": "optimization-nw-15",
+          "title": "第15章 · Fundamentals of Algorithms for Nonlinear Constrained Optimization · 约束算法基础"
+        },
+        {
+          "slug": "optimization-nw-16",
+          "title": "第16章 · Quadratic Programming · 二次规划"
+        },
+        {
+          "slug": "optimization-nw-17",
+          "title": "第17章 · Penalty and Augmented Lagrangian Methods · 罚与增广拉格朗日"
+        },
+        {
+          "slug": "optimization-nw-18",
+          "title": "第18章 · Sequential Quadratic Programming · SQP"
+        },
+        {
+          "slug": "optimization-nw-19",
+          "title": "第19章 · Interior-Point Methods for Nonlinear Programming · 非线性内点法"
+        }
+      ]
     }
   ]
 }

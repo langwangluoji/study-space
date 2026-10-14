@@ -1,0 +1,1856 @@
+{
+  "audit_date": "2026-10-14",
+  "source_file": "E:/Document/FILE_package/Class/最优化/Convex Optimization》Stephen Boyd.pdf",
+  "version": "2004 first edition; seventh printing with corrections 2009",
+  "method": "本地pypdf文本与实际章节页比对；从正文抽取三级小节标题，主节与目录核对；完成后逐节反查并落实5.7等修订。",
+  "page_rule": "PDF physical page = printed page + 14, 1-based",
+  "review_scope": "章节1–5全部主节与实际三级小节标题映射；核心条件按主题复核。仅对文本数学内容作源复核，网页渲染由主代理独立双端审阅。",
+  "self_assessment": {
+    "structure": "5章主节全覆盖，按原书次序；三级小节映射记录。",
+    "clarity": "连续解释和过渡，英文卡每章1个，无统一自测/进度/手算模板。",
+    "accuracy": "发现并纠正5.7结构误述；强调存在性、相对内部、KKT逻辑方向、边界权重、强择一条件。",
+    "remaining_limitations": "不声称完整证明所有定理；3.4二阶准凸条件与5.8非线性强择一定理只讲作用与限制，细节回原书；所有应用联系是简短解释，非独立课程。"
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-01.md",
+      "bytes": 7996,
+      "chapter_revision": "补§1.5例子/练习说明；三种凸用途按1.4.3原书排列；删除周计划与评估门槛。",
+      "sections": [
+        {
+          "section": "1.1",
+          "source_title": "Mathematical optimization",
+          "printed_page": 1,
+          "pdf_physical_page": 15,
+          "lecture_heading": "Mathematical optimization · 数学最优化",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "变量与参数分开；可行性含定义域；最优点与值区分。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "1.1.1",
+              "source_title": "Applications",
+              "printed_page": 2,
+              "pdf_physical_page": 16,
+              "lecture_heading": "Mathematical optimization · 数学最优化",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "变量与参数分开；可行性含定义域；最优点与值区分。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.1.2",
+              "source_title": "Solving optimization problems",
+              "printed_page": 3,
+              "pdf_physical_page": 17,
+              "lecture_heading": "Mathematical optimization · 数学最优化",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "变量与参数分开；可行性含定义域；最优点与值区分。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "1.2",
+          "source_title": "Least-squares and linear programming",
+          "printed_page": 4,
+          "pdf_physical_page": 18,
+          "lecture_heading": "Least-squares and linear programming · 两个成熟的起点",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "最小二乘唯一性需满列秩；LP允许仿射；实际计算不推荐显式逆。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "1.2.1",
+              "source_title": "Least-squares problems",
+              "printed_page": 4,
+              "pdf_physical_page": 18,
+              "lecture_heading": "Least-squares and linear programming · 两个成熟的起点",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小二乘唯一性需满列秩；LP允许仿射；实际计算不推荐显式逆。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.2.2",
+              "source_title": "Linear programming",
+              "printed_page": 6,
+              "pdf_physical_page": 20,
+              "lecture_heading": "Least-squares and linear programming · 两个成熟的起点",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小二乘唯一性需满列秩；LP允许仿射；实际计算不推荐显式逆。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "1.3",
+          "source_title": "Convex optimization",
+          "printed_page": 7,
+          "pdf_physical_page": 21,
+          "lecture_heading": "Convex optimization · 从特例到一类问题",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "凸定义域与目标/不等式凸、等式仿射齐全；严格凸不保证存在。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "1.3.1",
+              "source_title": "Solving convex optimization problems",
+              "printed_page": 7,
+              "pdf_physical_page": 21,
+              "lecture_heading": "Convex optimization · 从特例到一类问题",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "凸定义域与目标/不等式凸、等式仿射齐全；严格凸不保证存在。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.3.2",
+              "source_title": "Using convex optimization",
+              "printed_page": 8,
+              "pdf_physical_page": 22,
+              "lecture_heading": "Convex optimization · 从特例到一类问题",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "凸定义域与目标/不等式凸、等式仿射齐全；严格凸不保证存在。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "1.4",
+          "source_title": "Nonlinear optimization",
+          "printed_page": 9,
+          "pdf_physical_page": 23,
+          "lecture_heading": "Nonlinear optimization · 非凸问题中的取舍",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "局部/全局界不同；三种凸用途与1.4.3真实结构一致；松弛解未必原始可行。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "1.4.1",
+              "source_title": "Local optimization",
+              "printed_page": 9,
+              "pdf_physical_page": 23,
+              "lecture_heading": "Nonlinear optimization · 非凸问题中的取舍",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "局部/全局界不同；三种凸用途与1.4.3真实结构一致；松弛解未必原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.4.2",
+              "source_title": "Global optimization",
+              "printed_page": 10,
+              "pdf_physical_page": 24,
+              "lecture_heading": "Nonlinear optimization · 非凸问题中的取舍",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "局部/全局界不同；三种凸用途与1.4.3真实结构一致；松弛解未必原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.4.3",
+              "source_title": "Role of convex optimization in nonconvex problems",
+              "printed_page": 10,
+              "pdf_physical_page": 24,
+              "lecture_heading": "Nonlinear optimization · 非凸问题中的取舍",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "局部/全局界不同；三种凸用途与1.4.3真实结构一致；松弛解未必原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "1.5",
+          "source_title": "Outline",
+          "printed_page": 11,
+          "pdf_physical_page": 25,
+          "lecture_heading": "Outline · 全书如何推进",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "1.5.1",
+              "source_title": "Part I: Theory",
+              "printed_page": 11,
+              "pdf_physical_page": 25,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.5.2",
+              "source_title": "Part II: Applications",
+              "printed_page": 12,
+              "pdf_physical_page": 26,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.5.3",
+              "source_title": "Part III: Algorithms",
+              "printed_page": 12,
+              "pdf_physical_page": 26,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.5.4",
+              "source_title": "Appendices",
+              "printed_page": 13,
+              "pdf_physical_page": 27,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.5.5",
+              "source_title": "Comments on examples",
+              "printed_page": 13,
+              "pdf_physical_page": 27,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "1.5.6",
+              "source_title": "Comments on exercises",
+              "printed_page": 14,
+              "pdf_physical_page": 28,
+              "lecture_heading": "Outline · 全书如何推进",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "真实三部分与附录顺序；取消按周计划与评估关卡。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "1.6",
+          "source_title": "Notation",
+          "printed_page": 14,
+          "pdf_physical_page": 28,
+          "lecture_heading": "Notation · 把符号当成阅读线索",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "向量逐分量序与矩阵半正定序区分。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": []
+        }
+      ],
+      "lecture_sha256": "9103a23b58b850c7a6a3149b22db3854f1b982df036515a73c2348d408f62ba2"
+    },
+    {
+      "chapter": 2,
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-02.md",
+      "bytes": 7712,
+      "chapter_revision": "补透视映射与正分母、正常锥四条件、严格/弱分离差别、双对偶条件。",
+      "sections": [
+        {
+          "section": "2.1",
+          "source_title": "Affine and convex sets",
+          "printed_page": 21,
+          "pdf_physical_page": 35,
+          "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.1.1",
+              "source_title": "Lines and line segments",
+              "printed_page": 21,
+              "pdf_physical_page": 35,
+              "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.1.2",
+              "source_title": "Affine sets",
+              "printed_page": 21,
+              "pdf_physical_page": 35,
+              "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.1.3",
+              "source_title": "Affine dimension and relative interior",
+              "printed_page": 23,
+              "pdf_physical_page": 37,
+              "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.1.4",
+              "source_title": "Convex sets",
+              "printed_page": 23,
+              "pdf_physical_page": 37,
+              "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.1.5",
+              "source_title": "Cones",
+              "printed_page": 25,
+              "pdf_physical_page": 39,
+              "lecture_heading": "Affine and convex sets · 仿射集与凸集",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "仿射和凸组合的系数范围；锥与凸锥区分；相对内部依赖仿射包。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "2.2",
+          "source_title": "Some important examples",
+          "printed_page": 27,
+          "pdf_physical_page": 41,
+          "lecture_heading": "Some important examples · 常见集合",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.2.1",
+              "source_title": "Hyperplanes and halfspaces",
+              "printed_page": 27,
+              "pdf_physical_page": 41,
+              "lecture_heading": "Some important examples · 常见集合",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.2.2",
+              "source_title": "Euclidean balls and ellipsoids",
+              "printed_page": 29,
+              "pdf_physical_page": 43,
+              "lecture_heading": "Some important examples · 常见集合",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.2.3",
+              "source_title": "Norm balls and norm cones",
+              "printed_page": 30,
+              "pdf_physical_page": 44,
+              "lecture_heading": "Some important examples · 常见集合",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.2.4",
+              "source_title": "Polyhedra",
+              "printed_page": 31,
+              "pdf_physical_page": 45,
+              "lecture_heading": "Some important examples · 常见集合",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.2.5",
+              "source_title": "The positive semidefinite cone",
+              "printed_page": 34,
+              "pdf_physical_page": 48,
+              "lecture_heading": "Some important examples · 常见集合",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "椭球正定条件；多面体可能无界/空；PSD不是逐元素非负。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "2.3",
+          "source_title": "Operations that preserve convexity",
+          "printed_page": 35,
+          "pdf_physical_page": 49,
+          "lecture_heading": "Operations that preserve convexity · 保持凸性的集合操作",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "集合交与仿射像/逆像；透视和分式保持正分母。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.3.1",
+              "source_title": "Intersection",
+              "printed_page": 36,
+              "pdf_physical_page": 50,
+              "lecture_heading": "Operations that preserve convexity · 保持凸性的集合操作",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "集合交与仿射像/逆像；透视和分式保持正分母。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.3.2",
+              "source_title": "Affine functions",
+              "printed_page": 36,
+              "pdf_physical_page": 50,
+              "lecture_heading": "Operations that preserve convexity · 保持凸性的集合操作",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "集合交与仿射像/逆像；透视和分式保持正分母。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.3.3",
+              "source_title": "Linear-fractional and perspective functions",
+              "printed_page": 39,
+              "pdf_physical_page": 53,
+              "lecture_heading": "Operations that preserve convexity · 保持凸性的集合操作",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "集合交与仿射像/逆像；透视和分式保持正分母。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "2.4",
+          "source_title": "Generalized inequalities",
+          "printed_page": 43,
+          "pdf_physical_page": 57,
+          "lecture_heading": "Generalized inequalities · 广义不等式",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "正常锥四条件；最小/极小不混同。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.4.1",
+              "source_title": "Proper cones and generalized inequalities",
+              "printed_page": 43,
+              "pdf_physical_page": 57,
+              "lecture_heading": "Generalized inequalities · 广义不等式",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥四条件；最小/极小不混同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.4.2",
+              "source_title": "Minimum and minimal elements",
+              "printed_page": 45,
+              "pdf_physical_page": 59,
+              "lecture_heading": "Generalized inequalities · 广义不等式",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥四条件；最小/极小不混同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "2.5",
+          "source_title": "Separating and supporting hyperplanes",
+          "printed_page": 46,
+          "pdf_physical_page": 60,
+          "lecture_heading": "Separating and supporting hyperplanes · 分离与支撑超平面",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "非空不相交凸集弱分离；严格分离不自动；点与闭凸集可严格分离。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.5.1",
+              "source_title": "Separating hyperplane theorem",
+              "printed_page": 46,
+              "pdf_physical_page": 60,
+              "lecture_heading": "Separating and supporting hyperplanes · 分离与支撑超平面",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非空不相交凸集弱分离；严格分离不自动；点与闭凸集可严格分离。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.5.2",
+              "source_title": "Supporting hyperplanes",
+              "printed_page": 50,
+              "pdf_physical_page": 64,
+              "lecture_heading": "Separating and supporting hyperplanes · 分离与支撑超平面",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非空不相交凸集弱分离；严格分离不自动；点与闭凸集可严格分离。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "2.6",
+          "source_title": "Dual cones and generalized inequalities",
+          "printed_page": 51,
+          "pdf_physical_page": 65,
+          "lecture_heading": "Dual cones and generalized inequalities · 对偶锥",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "对偶总闭凸；双对偶等于原锥需闭凸；正常锥对偶正常。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "2.6.1",
+              "source_title": "Dual cones",
+              "printed_page": 51,
+              "pdf_physical_page": 65,
+              "lecture_heading": "Dual cones and generalized inequalities · 对偶锥",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "对偶总闭凸；双对偶等于原锥需闭凸；正常锥对偶正常。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.6.2",
+              "source_title": "Dual generalized inequalities",
+              "printed_page": 53,
+              "pdf_physical_page": 67,
+              "lecture_heading": "Dual cones and generalized inequalities · 对偶锥",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "对偶总闭凸；双对偶等于原锥需闭凸；正常锥对偶正常。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "2.6.3",
+              "source_title": "Minimum and minimal elements via dual inequalities",
+              "printed_page": 54,
+              "pdf_physical_page": 68,
+              "lecture_heading": "Dual cones and generalized inequalities · 对偶锥",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "对偶总闭凸；双对偶等于原锥需闭凸；正常锥对偶正常。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        }
+      ],
+      "lecture_sha256": "e067a635c5db11ede0059d8a59a2cd64c98233d8a54e3cd5a0c75da3e4224c7e"
+    },
+    {
+      "chapter": 3,
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-03.md",
+      "bytes": 9984,
+      "chapter_revision": "源目录复核后补次水平/上图/Jensen扩展、准凸保持运算与凸阈值族；指出指示函数不是0/1。",
+      "sections": [
+        {
+          "section": "3.1",
+          "source_title": "Basic properties and examples",
+          "printed_page": 67,
+          "pdf_physical_page": 81,
+          "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.1.1",
+              "source_title": "Definition",
+              "printed_page": 67,
+              "pdf_physical_page": 81,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.2",
+              "source_title": "Extended-value extensions",
+              "printed_page": 68,
+              "pdf_physical_page": 82,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.3",
+              "source_title": "First-order conditions",
+              "printed_page": 69,
+              "pdf_physical_page": 83,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.4",
+              "source_title": "Second-order conditions",
+              "printed_page": 71,
+              "pdf_physical_page": 85,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.5",
+              "source_title": "Examples",
+              "printed_page": 71,
+              "pdf_physical_page": 85,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.6",
+              "source_title": "Sublevel sets",
+              "printed_page": 75,
+              "pdf_physical_page": 89,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.7",
+              "source_title": "Epigraph",
+              "printed_page": 75,
+              "pdf_physical_page": 89,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.8",
+              "source_title": "Jensen’s inequality and extensions",
+              "printed_page": 77,
+              "pdf_physical_page": 91,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.1.9",
+              "source_title": "Inequalities",
+              "printed_page": 78,
+              "pdf_physical_page": 92,
+              "lecture_heading": "Basic properties and examples · 定义、判据与例子",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "开凸定义域/可微或二次可微判据；严格凸不等同处处H正定；上图与次水平不同。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "3.2",
+          "source_title": "Operations that preserve convexity",
+          "printed_page": 79,
+          "pdf_physical_page": 93,
+          "lecture_heading": "Operations that preserve convexity · 构造新函数",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.2.1",
+              "source_title": "Nonnegative weighted sums",
+              "printed_page": 79,
+              "pdf_physical_page": 93,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.2.2",
+              "source_title": "Composition with an affine mapping",
+              "printed_page": 79,
+              "pdf_physical_page": 93,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.2.3",
+              "source_title": "Pointwise maximum and supremum",
+              "printed_page": 80,
+              "pdf_physical_page": 94,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.2.4",
+              "source_title": "Composition",
+              "printed_page": 83,
+              "pdf_physical_page": 97,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.2.5",
+              "source_title": "Minimization",
+              "printed_page": 87,
+              "pdf_physical_page": 101,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.2.6",
+              "source_title": "Perspective of a function",
+              "printed_page": 89,
+              "pdf_physical_page": 103,
+              "lecture_heading": "Operations that preserve convexity · 构造新函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "非负权重；复合曲率+单调性+定义域；部分极小需联合凸；透视t>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "3.3",
+          "source_title": "The conjugate function",
+          "printed_page": 90,
+          "pdf_physical_page": 104,
+          "lecture_heading": "The conjugate function · 共轭函数",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "共轭为上确界可为∞；双共轭恢复需适当闭凸。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.3.1",
+              "source_title": "Definition and examples",
+              "printed_page": 91,
+              "pdf_physical_page": 105,
+              "lecture_heading": "The conjugate function · 共轭函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "共轭为上确界可为∞；双共轭恢复需适当闭凸。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.3.2",
+              "source_title": "Basic properties",
+              "printed_page": 94,
+              "pdf_physical_page": 108,
+              "lecture_heading": "The conjugate function · 共轭函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "共轭为上确界可为∞；双共轭恢复需适当闭凸。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "3.4",
+          "source_title": "Quasiconvex functions",
+          "printed_page": 95,
+          "pdf_physical_page": 109,
+          "lecture_heading": "Quasiconvex functions · 准凸函数",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.4.1",
+              "source_title": "Definition and examples",
+              "printed_page": 95,
+              "pdf_physical_page": 109,
+              "lecture_heading": "Quasiconvex functions · 准凸函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.4.2",
+              "source_title": "Basic properties",
+              "printed_page": 98,
+              "pdf_physical_page": 112,
+              "lecture_heading": "Quasiconvex functions · 准凸函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.4.3",
+              "source_title": "Differentiable quasiconvex functions",
+              "printed_page": 99,
+              "pdf_physical_page": 113,
+              "lecture_heading": "Quasiconvex functions · 准凸函数",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.4.4",
+              "source_title": "Operations that preserve quasiconvexity",
+              "printed_page": 101,
+              "pdf_physical_page": 115,
+              "lecture_heading": "Quasiconvex functions · 准凸函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.4.5",
+              "source_title": "Representation via family of convex functions",
+              "printed_page": 103,
+              "pdf_physical_page": 117,
+              "lecture_heading": "Quasiconvex functions · 准凸函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "准凸次水平定义；零梯度不保证最优；准凸求和不封闭；分式例p≥0,q>0。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "3.5",
+          "source_title": "Log-concave and log-convex functions",
+          "printed_page": 104,
+          "pdf_physical_page": 118,
+          "lecture_heading": "Log-concave and log-convex functions · 对数凸与对数凹",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "正值/零的扩展处理；log凸⇒凸，log凹未必凹；积分要求联合log凹及可积。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.5.1",
+              "source_title": "Definition",
+              "printed_page": 104,
+              "pdf_physical_page": 118,
+              "lecture_heading": "Log-concave and log-convex functions · 对数凸与对数凹",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正值/零的扩展处理；log凸⇒凸，log凹未必凹；积分要求联合log凹及可积。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.5.2",
+              "source_title": "Properties",
+              "printed_page": 105,
+              "pdf_physical_page": 119,
+              "lecture_heading": "Log-concave and log-convex functions · 对数凸与对数凹",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正值/零的扩展处理；log凸⇒凸，log凹未必凹；积分要求联合log凹及可积。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "3.6",
+          "source_title": "Convexity with respect to generalized inequalities",
+          "printed_page": 108,
+          "pdf_physical_page": 122,
+          "lecture_heading": "Convexity with respect to generalized inequalities",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "正常锥偏序与对偶锥评价；矩阵不能逐元素替代。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "3.6.1",
+              "source_title": "Monotonicity with respect to a generalized inequality",
+              "printed_page": 108,
+              "pdf_physical_page": 122,
+              "lecture_heading": "Convexity with respect to generalized inequalities",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥偏序与对偶锥评价；矩阵不能逐元素替代。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "3.6.2",
+              "source_title": "Convexity with respect to a generalized inequality",
+              "printed_page": 109,
+              "pdf_physical_page": 123,
+              "lecture_heading": "Convexity with respect to generalized inequalities",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥偏序与对偶锥评价；矩阵不能逐元素替代。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        }
+      ],
+      "lecture_sha256": "94e88b7264cbd6bad6382a2a831e46e607a31258b04c826fe4b2026109e8dee7"
+    },
+    {
+      "chapter": 4,
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-04.md",
+      "bytes": 9475,
+      "chapter_revision": "完整保持4.1–4.7；补GP正变量正系数、QCQP各约束PSD、Pareto边界权重限制。",
+      "sections": [
+        {
+          "section": "4.1",
+          "source_title": "Optimization problems",
+          "printed_page": 127,
+          "pdf_physical_page": 141,
+          "lecture_heading": "Optimization problems · 先把问题说清楚",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "inf/达到区别；不可行∞；等价改写保持对象明确；oracle不自动给性质。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.1.1",
+              "source_title": "Basic terminology",
+              "printed_page": 127,
+              "pdf_physical_page": 141,
+              "lecture_heading": "Optimization problems · 先把问题说清楚",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "inf/达到区别；不可行∞；等价改写保持对象明确；oracle不自动给性质。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.1.2",
+              "source_title": "Expressing problems in standard form",
+              "printed_page": 129,
+              "pdf_physical_page": 143,
+              "lecture_heading": "Optimization problems · 先把问题说清楚",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "inf/达到区别；不可行∞；等价改写保持对象明确；oracle不自动给性质。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.1.3",
+              "source_title": "Equivalent problems",
+              "printed_page": 130,
+              "pdf_physical_page": 144,
+              "lecture_heading": "Optimization problems · 先把问题说清楚",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "inf/达到区别；不可行∞；等价改写保持对象明确；oracle不自动给性质。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.1.4",
+              "source_title": "Parameter and oracle problem descriptions",
+              "printed_page": 136,
+              "pdf_physical_page": 150,
+              "lecture_heading": "Optimization problems · 先把问题说清楚",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "inf/达到区别；不可行∞；等价改写保持对象明确；oracle不自动给性质。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.2",
+          "source_title": "Convex optimization",
+          "printed_page": 136,
+          "pdf_physical_page": 150,
+          "lecture_heading": "Convex optimization · 标准形式与全局性",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.2.1",
+              "source_title": "Convex optimization problems in standard form",
+              "printed_page": 136,
+              "pdf_physical_page": 150,
+              "lecture_heading": "Convex optimization · 标准形式与全局性",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.2.2",
+              "source_title": "Local and global optima",
+              "printed_page": 138,
+              "pdf_physical_page": 152,
+              "lecture_heading": "Convex optimization · 标准形式与全局性",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.2.3",
+              "source_title": "An optimality criterion for differentiable f0",
+              "printed_page": 139,
+              "pdf_physical_page": 153,
+              "lecture_heading": "Convex optimization · 标准形式与全局性",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.2.4",
+              "source_title": "Equivalent convex problems",
+              "printed_page": 142,
+              "pdf_physical_page": 156,
+              "lecture_heading": "Convex optimization · 标准形式与全局性",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.2.5",
+              "source_title": "Quasiconvex optimization",
+              "printed_page": 144,
+              "pdf_physical_page": 158,
+              "lecture_heading": "Convex optimization · 标准形式与全局性",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "标准凸形式三条件；最优存在独立；准凸二分需阈值可行性表示与初始界。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.3",
+          "source_title": "Linear optimization problems",
+          "printed_page": 146,
+          "pdf_physical_page": 160,
+          "lecture_heading": "Linear optimization problems · LP及分式形式",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "线性分式正分母；辅助变量须约束。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.3.1",
+              "source_title": "Examples",
+              "printed_page": 148,
+              "pdf_physical_page": 162,
+              "lecture_heading": "Linear optimization problems · LP及分式形式",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "线性分式正分母；辅助变量须约束。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.3.2",
+              "source_title": "Linear-fractional programming",
+              "printed_page": 151,
+              "pdf_physical_page": 165,
+              "lecture_heading": "Linear optimization problems · LP及分式形式",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "线性分式正分母；辅助变量须约束。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.4",
+          "source_title": "Quadratic optimization problems",
+          "printed_page": 152,
+          "pdf_physical_page": 166,
+          "lecture_heading": "Quadratic optimization problems · QP、QCQP与SOCP",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "目标P PSD；QCQP每个约束PSD；SOCP右端隐含非负；QP结构不推出控制稳定。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.4.1",
+              "source_title": "Examples",
+              "printed_page": 153,
+              "pdf_physical_page": 167,
+              "lecture_heading": "Quadratic optimization problems · QP、QCQP与SOCP",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "目标P PSD；QCQP每个约束PSD；SOCP右端隐含非负；QP结构不推出控制稳定。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.4.2",
+              "source_title": "Second-order cone programming",
+              "printed_page": 156,
+              "pdf_physical_page": 170,
+              "lecture_heading": "Quadratic optimization problems · QP、QCQP与SOCP",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "目标P PSD；QCQP每个约束PSD；SOCP右端隐含非负；QP结构不推出控制稳定。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.5",
+          "source_title": "Geometric programming",
+          "printed_page": 160,
+          "pdf_physical_page": 174,
+          "lecture_heading": "Geometric programming · 几何规划与对数换元",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "GP正变量正系数；任意实指数；posynomial不等式/monomial等式；对数换元。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.5.1",
+              "source_title": "Monomials and posynomials",
+              "printed_page": 160,
+              "pdf_physical_page": 174,
+              "lecture_heading": "Geometric programming · 几何规划与对数换元",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "GP正变量正系数；任意实指数；posynomial不等式/monomial等式；对数换元。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.5.2",
+              "source_title": "Geometric programming",
+              "printed_page": 161,
+              "pdf_physical_page": 175,
+              "lecture_heading": "Geometric programming · 几何规划与对数换元",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "GP正变量正系数；任意实指数；posynomial不等式/monomial等式；对数换元。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.5.3",
+              "source_title": "Geometric program in convex form",
+              "printed_page": 162,
+              "pdf_physical_page": 176,
+              "lecture_heading": "Geometric programming · 几何规划与对数换元",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "GP正变量正系数；任意实指数；posynomial不等式/monomial等式；对数换元。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.5.4",
+              "source_title": "Examples",
+              "printed_page": 163,
+              "pdf_physical_page": 177,
+              "lecture_heading": "Geometric programming · 几何规划与对数换元",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "GP正变量正系数；任意实指数；posynomial不等式/monomial等式；对数换元。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.6",
+          "source_title": "Generalized inequality constraints",
+          "printed_page": 167,
+          "pdf_physical_page": 181,
+          "lecture_heading": "Generalized inequality constraints · SDP与锥约束",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "正常锥约束；SDP对称仿射矩阵；未知乘积不是LMI。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.6.1",
+              "source_title": "Conic form problems",
+              "printed_page": 168,
+              "pdf_physical_page": 182,
+              "lecture_heading": "Generalized inequality constraints · SDP与锥约束",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥约束；SDP对称仿射矩阵；未知乘积不是LMI。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.6.2",
+              "source_title": "Semidefinite programming",
+              "printed_page": 168,
+              "pdf_physical_page": 182,
+              "lecture_heading": "Generalized inequality constraints · SDP与锥约束",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "正常锥约束；SDP对称仿射矩阵；未知乘积不是LMI。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.6.3",
+              "source_title": "Examples",
+              "printed_page": 169,
+              "pdf_physical_page": 183,
+              "lecture_heading": "Generalized inequality constraints · SDP与锥约束",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "正常锥约束；SDP对称仿射矩阵；未知乘积不是LMI。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "4.7",
+          "source_title": "Vector optimization",
+          "printed_page": 174,
+          "pdf_physical_page": 188,
+          "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "4.7.1",
+              "source_title": "General and convex vector optimization problems",
+              "printed_page": 174,
+              "pdf_physical_page": 188,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.7.2",
+              "source_title": "Optimal points and values",
+              "printed_page": 175,
+              "pdf_physical_page": 189,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.7.3",
+              "source_title": "Pareto optimal points and values",
+              "printed_page": 177,
+              "pdf_physical_page": 191,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.7.4",
+              "source_title": "Scalarization",
+              "printed_page": 178,
+              "pdf_physical_page": 192,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.7.5",
+              "source_title": "Multicriterion optimization",
+              "printed_page": 181,
+              "pdf_physical_page": 195,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "4.7.6",
+              "source_title": "Examples",
+              "printed_page": 184,
+              "pdf_physical_page": 198,
+              "lecture_heading": "Vector optimization · 多个目标与Pareto权衡",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "最小/极小/Pareto区分；内点对偶权重保证Pareto，边界权重需筛选；非凸加权不覆盖全部。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        }
+      ],
+      "lecture_sha256": "f66f8b736c073eb0d24dfd4c3593ed51130fba5d9f868aeee04b283c593725bc"
+    },
+    {
+      "chapter": 5,
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-bv-05.md",
+      "bytes": 10985,
+      "chapter_revision": "复核实际§5.7后发现初稿将它泛化为范数/熵例题介绍；已替换为真正的三小节：引入变量等式、变换目标、隐式约束。另补矩阵混合博弈、几何多准则、价格解释与原始恢复限制。",
+      "sections": [
+        {
+          "section": "5.1",
+          "source_title": "The Lagrange dual function",
+          "printed_page": 215,
+          "pdf_physical_page": 229,
+          "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.1.1",
+              "source_title": "The Lagrangian",
+              "printed_page": 215,
+              "pdf_physical_page": 229,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.1.2",
+              "source_title": "The Lagrange dual function",
+              "printed_page": 216,
+              "pdf_physical_page": 230,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.1.3",
+              "source_title": "Lower bounds on optimal value",
+              "printed_page": 216,
+              "pdf_physical_page": 230,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.1.4",
+              "source_title": "Linear approximation interpretation",
+              "printed_page": 216,
+              "pdf_physical_page": 230,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.1.5",
+              "source_title": "Examples",
+              "printed_page": 218,
+              "pdf_physical_page": 232,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.1.6",
+              "source_title": "The Lagrange dual function and conjugate functions",
+              "printed_page": 221,
+              "pdf_physical_page": 235,
+              "lecture_heading": "The Lagrange dual function · 拉格朗日对偶函数",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "λ≥0，ν自由；全定义域下确界；局部极小不能给证书；对偶总凹。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.2",
+          "source_title": "The Lagrange dual problem",
+          "printed_page": 223,
+          "pdf_physical_page": 237,
+          "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.2.1",
+              "source_title": "Making dual constraints explicit",
+              "printed_page": 224,
+              "pdf_physical_page": 238,
+              "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.2.2",
+              "source_title": "Weak duality",
+              "printed_page": 225,
+              "pdf_physical_page": 239,
+              "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.2.3",
+              "source_title": "Strong duality and Slater’s constraint qualification",
+              "printed_page": 226,
+              "pdf_physical_page": 240,
+              "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.2.4",
+              "source_title": "Examples",
+              "printed_page": 227,
+              "pdf_physical_page": 241,
+              "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.2.5",
+              "source_title": "Mixed strategies for matrix games",
+              "printed_page": 230,
+              "pdf_physical_page": 244,
+              "lecture_heading": "The Lagrange dual problem · 弱对偶、强对偶与Slater",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "弱/强对偶分开；Slater凸+relint+等式；有限值对偶达到，不保证原始达到；弱化仿射版。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.3",
+          "source_title": "Geometric interpretation",
+          "printed_page": 232,
+          "pdf_physical_page": 246,
+          "lecture_heading": "Geometric interpretation · 对偶的几何",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "几何支撑界与触及；非凸界未必紧；分离假设对应Slater。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.3.1",
+              "source_title": "Weak and strong duality via set of values",
+              "printed_page": 232,
+              "pdf_physical_page": 246,
+              "lecture_heading": "Geometric interpretation · 对偶的几何",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "几何支撑界与触及；非凸界未必紧；分离假设对应Slater。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.3.2",
+              "source_title": "Proof of strong duality under constraint qualification",
+              "printed_page": 234,
+              "pdf_physical_page": 248,
+              "lecture_heading": "Geometric interpretation · 对偶的几何",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "几何支撑界与触及；非凸界未必紧；分离假设对应Slater。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.3.3",
+              "source_title": "Multicriterion interpretation",
+              "printed_page": 236,
+              "pdf_physical_page": 250,
+              "lecture_heading": "Geometric interpretation · 对偶的几何",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "几何支撑界与触及；非凸界未必紧；分离假设对应Slater。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.4",
+          "source_title": "Saddle-point interpretation",
+          "printed_page": 237,
+          "pdf_physical_page": 251,
+          "lecture_heading": "Saddle-point interpretation · 鞍点解释",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "鞍点不等式量词方向；达到及零gap；min/max不可任意交换。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.4.1",
+              "source_title": "Max-min characterization of weak and strong duality",
+              "printed_page": 237,
+              "pdf_physical_page": 251,
+              "lecture_heading": "Saddle-point interpretation · 鞍点解释",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "鞍点不等式量词方向；达到及零gap；min/max不可任意交换。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.4.2",
+              "source_title": "Saddle-point interpretation",
+              "printed_page": 238,
+              "pdf_physical_page": 252,
+              "lecture_heading": "Saddle-point interpretation · 鞍点解释",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "鞍点不等式量词方向；达到及零gap；min/max不可任意交换。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.4.3",
+              "source_title": "Game interpretation",
+              "printed_page": 239,
+              "pdf_physical_page": 253,
+              "lecture_heading": "Saddle-point interpretation · 鞍点解释",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "鞍点不等式量词方向；达到及零gap；min/max不可任意交换。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.4.4",
+              "source_title": "Price or tax interpretation",
+              "printed_page": 240,
+              "pdf_physical_page": 254,
+              "lecture_heading": "Saddle-point interpretation · 鞍点解释",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "鞍点不等式量词方向；达到及零gap；min/max不可任意交换。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.5",
+          "source_title": "Optimality conditions",
+          "printed_page": 241,
+          "pdf_physical_page": 255,
+          "lecture_heading": "Optimality conditions · 从界到最优证书",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.5.1",
+              "source_title": "Certificate of suboptimality and stopping criteria",
+              "printed_page": 241,
+              "pdf_physical_page": 255,
+              "lecture_heading": "Optimality conditions · 从界到最优证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.5.2",
+              "source_title": "Complementary slackness",
+              "printed_page": 242,
+              "pdf_physical_page": 256,
+              "lecture_heading": "Optimality conditions · 从界到最优证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.5.3",
+              "source_title": "KKT optimality conditions",
+              "printed_page": 243,
+              "pdf_physical_page": 257,
+              "lecture_heading": "Optimality conditions · 从界到最优证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.5.4",
+              "source_title": "Mechanics interpretation of KKT conditions",
+              "printed_page": 246,
+              "pdf_physical_page": 260,
+              "lecture_heading": "Optimality conditions · 从界到最优证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.5.5",
+              "source_title": "Solving the primal problem via the dual",
+              "printed_page": 248,
+              "pdf_physical_page": 262,
+              "lecture_heading": "Optimality conditions · 从界到最优证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "证书双侧可行；凸可微KKT充分不另需Slater；必要性约束资格；恢复需原始可行。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.6",
+          "source_title": "Perturbation and sensitivity analysis",
+          "printed_page": 249,
+          "pdf_physical_page": 263,
+          "lecture_heading": "Perturbation and sensitivity analysis · 扰动与影子价格",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "扰动方向约定；全局界需强对偶+对偶达到；导数解释另需可微。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.6.1",
+              "source_title": "The perturbed problem",
+              "printed_page": 249,
+              "pdf_physical_page": 263,
+              "lecture_heading": "Perturbation and sensitivity analysis · 扰动与影子价格",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "扰动方向约定；全局界需强对偶+对偶达到；导数解释另需可微。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.6.2",
+              "source_title": "A global inequality",
+              "printed_page": 250,
+              "pdf_physical_page": 264,
+              "lecture_heading": "Perturbation and sensitivity analysis · 扰动与影子价格",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "扰动方向约定；全局界需强对偶+对偶达到；导数解释另需可微。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.6.3",
+              "source_title": "Local sensitivity analysis",
+              "printed_page": 251,
+              "pdf_physical_page": 265,
+              "lecture_heading": "Perturbation and sensitivity analysis · 扰动与影子价格",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "扰动方向约定；全局界需强对偶+对偶达到；导数解释另需可微。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.7",
+          "source_title": "Examples",
+          "printed_page": 253,
+          "pdf_physical_page": 267,
+          "lecture_heading": "Examples · 将结构落实到模型",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "三种等价改写影响对偶；目标单调变换不是数值值不变；定义域隐式约束保留。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.7.1",
+              "source_title": "Introducing new variables and equality constraints",
+              "printed_page": 253,
+              "pdf_physical_page": 267,
+              "lecture_heading": "Examples · 将结构落实到模型",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "三种等价改写影响对偶；目标单调变换不是数值值不变；定义域隐式约束保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.7.2",
+              "source_title": "Transforming the objective",
+              "printed_page": 256,
+              "pdf_physical_page": 270,
+              "lecture_heading": "Examples · 将结构落实到模型",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "三种等价改写影响对偶；目标单调变换不是数值值不变；定义域隐式约束保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.7.3",
+              "source_title": "Implicit constraints",
+              "printed_page": 257,
+              "pdf_physical_page": 271,
+              "lecture_heading": "Examples · 将结构落实到模型",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "三种等价改写影响对偶；目标单调变换不是数值值不变；定义域隐式约束保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.8",
+          "source_title": "Theorems of alternatives",
+          "printed_page": 258,
+          "pdf_physical_page": 272,
+          "lecture_heading": "Theorems of alternatives · 不可行性的证书",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "weak至少一套不可行/strong恰一套可行区分；给定线性Farkas版完整符号；非线性需资格和达到。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.8.1",
+              "source_title": "Weak alternatives via the dual function",
+              "printed_page": 258,
+              "pdf_physical_page": 272,
+              "lecture_heading": "Theorems of alternatives · 不可行性的证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "weak至少一套不可行/strong恰一套可行区分；给定线性Farkas版完整符号；非线性需资格和达到。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.8.2",
+              "source_title": "Strong alternatives",
+              "printed_page": 260,
+              "pdf_physical_page": 274,
+              "lecture_heading": "Theorems of alternatives · 不可行性的证书",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "weak至少一套不可行/strong恰一套可行区分；给定线性Farkas版完整符号；非线性需资格和达到。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.8.3",
+              "source_title": "Examples",
+              "printed_page": 261,
+              "pdf_physical_page": 275,
+              "lecture_heading": "Theorems of alternatives · 不可行性的证书",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "weak至少一套不可行/strong恰一套可行区分；给定线性Farkas版完整符号；非线性需资格和达到。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        },
+        {
+          "section": "5.9",
+          "source_title": "Generalized inequalities",
+          "printed_page": 264,
+          "pdf_physical_page": 278,
+          "lecture_heading": "Generalized inequalities · 锥对偶与矩阵证书",
+          "coverage": "关键概念与条件覆盖；详细证明及全部例题未展开",
+          "condition_check": "乘子属于dual cone；矩阵迹内积；互补非逐元素；强择一附加条件保留。",
+          "revision": "按实际小节目录复核并保留原书顺序；新增或纠正点见chapter_revision",
+          "limitations": "导读不是教材全文替代；具体证明和原题请回原著定位阅读。",
+          "subsections": [
+            {
+              "section": "5.9.1",
+              "source_title": "The Lagrange dual",
+              "printed_page": 264,
+              "pdf_physical_page": 278,
+              "lecture_heading": "Generalized inequalities · 锥对偶与矩阵证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "乘子属于dual cone；矩阵迹内积；互补非逐元素；强择一附加条件保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.9.2",
+              "source_title": "Optimality conditions",
+              "printed_page": 266,
+              "pdf_physical_page": 280,
+              "lecture_heading": "Generalized inequalities · 锥对偶与矩阵证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "乘子属于dual cone；矩阵迹内积；互补非逐元素；强择一附加条件保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.9.3",
+              "source_title": "Perturbation and sensitivity analysis",
+              "printed_page": 268,
+              "pdf_physical_page": 282,
+              "lecture_heading": "Generalized inequalities · 锥对偶与矩阵证书",
+              "coverage": "导读覆盖：对应主题融入本节连续叙述",
+              "condition_check": "乘子属于dual cone；矩阵迹内积；互补非逐元素；强择一附加条件保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            },
+            {
+              "section": "5.9.4",
+              "source_title": "Theorems of alternatives",
+              "printed_page": 269,
+              "pdf_physical_page": 283,
+              "lecture_heading": "Generalized inequalities · 锥对偶与矩阵证书",
+              "coverage": "部分覆盖：主要作用/限制已说明，证明或全部例子未展开",
+              "condition_check": "乘子属于dual cone；矩阵迹内积；互补非逐元素；强择一附加条件保留。",
+              "revision": "对照该小节标题与相关页核实，避免把相邻小节内容误认成本节",
+              "limitations": "不逐段复述，不声称涵盖原书每个推导与例题。"
+            }
+          ]
+        }
+      ],
+      "lecture_sha256": "595529c34e73eaa0cb0de168ea0bdc16c988c411750708ec421b4f155e3170b9"
+    }
+  ],
+  "final_revision": "2026-10-14: original-chapter organization; full-manuscript review corrections recorded in optimization-final-review.md"
+}

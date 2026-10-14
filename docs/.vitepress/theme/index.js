@@ -22,14 +22,20 @@ import SiteUpdates from './SiteUpdates.vue';
 import SiteTraffic from './SiteTraffic.vue';
 import {recordTrafficVisit} from './traffic.js';
 import {readingTitle} from './reading-targets.js';
+import OptimizationLab from './OptimizationLab.vue';
+import OptimizationReading from './OptimizationReading.vue';
+import OptimizationNotebook from './OptimizationNotebook.vue';
+import OptimizationLocalReader from './OptimizationLocalReader.vue';
+import OptimizationFusion from './OptimizationFusion.vue';
 import './style.css';
 import './space.css';
 import './rs.css';
 import './activity.css';
+import './optimization.css';
 export default {
   extends:DefaultTheme,
   Layout(){return h(DefaultTheme.Layout,null,{'doc-before':()=>h(PageContext)})},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('MaterialReader',MaterialReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading);app.component('LearningExtensions',LearningExtensions);app.component('CreatorIdentity',CreatorIdentity);app.component('SiteScope',SiteScope);app.component('Contributors',Contributors);app.component('SiteUpdates',SiteUpdates);app.component('SiteTraffic',SiteTraffic)},
+  enhanceApp({app}){app.component('OptimizationFusion',OptimizationFusion);app.component('OptimizationLocalReader',OptimizationLocalReader);app.component('OptimizationNotebook',OptimizationNotebook);app.component('OptimizationReading',OptimizationReading);app.component('OptimizationLab',OptimizationLab);app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('MaterialReader',MaterialReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading);app.component('LearningExtensions',LearningExtensions);app.component('CreatorIdentity',CreatorIdentity);app.component('SiteScope',SiteScope);app.component('Contributors',Contributors);app.component('SiteUpdates',SiteUpdates);app.component('SiteTraffic',SiteTraffic)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{

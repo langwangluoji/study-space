@@ -1,0 +1,510 @@
+{
+  "review_scope": "NW10-19 source fidelity and readable mathematical explanation; only these ten chapter pages and this report edited",
+  "source_basis": "Local extracted full chapter files with verified printed/PDF page labels. All ten lecture pages read; selected original theorem/algorithm pages reread. No claim to reproduce every proof line.",
+  "review_rounds": [
+    {
+      "round": 1,
+      "work": "read all ten pages, compare principal conditions to actual source chapters, identify specific explanatory gaps and one local sensitivity scope correction"
+    },
+    {
+      "round": 2,
+      "work": "save 19 targeted improvements, expand mathematical reasons rather than append templates or separate applications"
+    },
+    {
+      "round": 3,
+      "work": "verify source page labels, actual insertion lines and math block pairs; retain original correct conclusions and declare proof/render limits"
+    }
+  ],
+  "summary": {
+    "targeted_revisions": 19,
+    "chapters_reviewed": 10,
+    "actual_maths_or_scope_corrections": [
+      "12.8 local multiplier sensitivity is not generally conditional on strong duality",
+      "12.5 explicitly distinguishes LICQ necessary theorem from CQ-free sufficient theorem",
+      "17.2 separates first/second-order exact-penalty conclusions"
+    ],
+    "otherwise": "Many initial statements were already correct; additions address depth, conditions, derivation and algorithm boundaries rather than inventing errors."
+  },
+  "chapter_checks": [
+    {
+      "chapter": 10,
+      "bytes_utf8": 7630,
+      "display_math_blocks": 3,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 11,
+      "bytes_utf8": 5715,
+      "display_math_blocks": 3,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 12,
+      "bytes_utf8": 7170,
+      "display_math_blocks": 2,
+      "reading_cards": 0,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 13,
+      "bytes_utf8": 6776,
+      "display_math_blocks": 2,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 14,
+      "bytes_utf8": 5656,
+      "display_math_blocks": 2,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 15,
+      "bytes_utf8": 5751,
+      "display_math_blocks": 1,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 16,
+      "bytes_utf8": 7234,
+      "display_math_blocks": 1,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 17,
+      "bytes_utf8": 6666,
+      "display_math_blocks": 2,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 18,
+      "bytes_utf8": 7698,
+      "display_math_blocks": 1,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    },
+    {
+      "chapter": 19,
+      "bytes_utf8": 8718,
+      "display_math_blocks": 1,
+      "reading_cards": 1,
+      "new_assessment_templates": 0,
+      "main_section_order": "retained",
+      "render_test": "not run by peer reviewer; root performs whole-site build and browser inspection"
+    }
+  ],
+  "revisions": [
+    {
+      "chapter": 10,
+      "section": "10.3",
+      "issue_type": "条件细化/推导补充",
+      "before": "GN只有当前满列秩的解释，统一满秩与有界level set的定理条件未展开",
+      "actual_revision": "增加下降内积推导、秩亏方程仍相容、Theorem10.1光滑/统一奇异值下界/Wolfe/局部性",
+      "source_printed_pages": [
+        254,
+        255,
+        256,
+        257
+      ],
+      "source_pdf_physical_pages": [
+        276,
+        277,
+        278,
+        279
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-10-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-10.md",
+      "lecture_line": 48,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 10,
+      "section": "10.3/LM",
+      "issue_type": "条件补全/实现说明",
+      "before": "LM只有移位方程，缺少半径互补和秩亏时阻尼的具体意义",
+      "actual_revision": "补Lemma10.2可行与互补、正阻尼唯一性、增广QR、算法阻尼不创造识别信息",
+      "source_printed_pages": [
+        258,
+        259
+      ],
+      "source_pdf_physical_pages": [
+        280,
+        281
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-10-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-10.md",
+      "lecture_line": 62,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 11,
+      "section": "11.1",
+      "issue_type": "条件细化",
+      "before": "非精确Newton只说精度应匹配，未给三类速度及非SPD求解器边界",
+      "actual_revision": "补Theorem11.3 forcing条件、GMRES和J-vector，说明普通CG不能直接用于一般J",
+      "source_printed_pages": [
+        277,
+        278
+      ],
+      "source_pdf_physical_pages": [
+        299,
+        300
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-11-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-11.md",
+      "lecture_line": 23,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 11,
+      "section": "11.2",
+      "issue_type": "易读性/简短推导",
+      "before": "非精确方向何时下降未具体解释",
+      "actual_revision": "加入欧氏forcing残差xi推导gTp≤-(1-eta)||r||²，保留导数/实际残差条件",
+      "source_printed_pages": [
+        278,
+        285,
+        287
+      ],
+      "source_pdf_physical_pages": [
+        300,
+        307,
+        309
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-11-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-11.md",
+      "lecture_line": 47,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 12,
+      "section": "12.5",
+      "issue_type": "关键条件澄清",
+      "before": "临界锥与必要/充分条件写得较概括，可能误读为共享LICQ或所有活动约束都变等式",
+      "actual_revision": "明确正/零活动乘子方向，Theorem12.5需LICQ，12.6充分性不额外需LICQ；严格互补下才将临界锥化为活动零空间",
+      "source_printed_pages": [
+        330,
+        332,
+        333,
+        337
+      ],
+      "source_pdf_physical_pages": [
+        352,
+        354,
+        355,
+        359
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-12-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-12.md",
+      "lecture_line": 58,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 12,
+      "section": "12.8",
+      "issue_type": "来源边界/数学纠正",
+      "before": "原文将强对偶列为乘子敏感性背景，容易把非凸局部敏感性误解成依赖强对偶",
+      "actual_revision": "改为解分支/值函数可微条件，区分原书局部敏感性与凸强对偶下全局支撑界",
+      "source_printed_pages": [
+        341,
+        342
+      ],
+      "source_pdf_physical_pages": [
+        363,
+        364
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-12-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-12.md",
+      "lecture_line": 72,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 13,
+      "section": "13.3",
+      "issue_type": "易读性/证书推导",
+      "before": "约化成本为何给全LP最优证书只作直觉说明",
+      "actual_revision": "补BTy=cB,sB=0,sN=reduced cost逐项满足KKT的推导",
+      "source_printed_pages": [
+        367,
+        368
+      ],
+      "source_pdf_physical_pages": [
+        389,
+        390
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-13-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-13.md",
+      "lecture_line": 43,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 13,
+      "section": "13.5",
+      "issue_type": "条件澄清/实现边界",
+      "before": "PhaseI未细分中间违背和已求到的正最优值",
+      "actual_revision": "补辅助目标零 iff 原LP可行；正最优值才证不可行；零人工变量仍留基需处理",
+      "source_printed_pages": [
+        378,
+        379
+      ],
+      "source_pdf_physical_pages": [
+        400,
+        401
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-13-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-13.md",
+      "lecture_line": 57,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 14,
+      "section": "14.1",
+      "issue_type": "符号澄清/间隙推导",
+      "before": "原文已正确限制可行间隙，但Newton中mu的当前平均互补角色未明示",
+      "actual_revision": "保留原有可行性限定，增加目标差=xTs+yTrp-xTrd，明确当前mu=xTs/n与中心参数",
+      "source_printed_pages": [
+        393,
+        394,
+        397
+      ],
+      "source_pdf_physical_pages": [
+        415,
+        416,
+        419
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-14-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-14.md",
+      "lecture_line": 25,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 15,
+      "section": "15.4",
+      "issue_type": "原节覆盖补充",
+      "before": "merit部分只有l1，原书其他平滑/非光滑精确形式略去",
+      "actual_revision": "补不平方l2的非光滑性、Fletcher x依赖乘子形式与固定乘子ALM区别，明示满行秩与成本",
+      "source_printed_pages": [
+        435,
+        436
+      ],
+      "source_pdf_physical_pages": [
+        457,
+        458
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-15-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-15.md",
+      "lecture_line": 41,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 16,
+      "section": "16.1",
+      "issue_type": "易读性/关键推导",
+      "before": "KKT可逆的约化正定理由只有结论",
+      "actual_revision": "补齐次系统证明，说明KKT不定与可逆不矛盾",
+      "source_printed_pages": [
+        451,
+        452
+      ],
+      "source_pdf_physical_pages": [
+        473,
+        474
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-16-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-16.md",
+      "lecture_line": 25,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 16,
+      "section": "16.4",
+      "issue_type": "资格条件澄清",
+      "before": "退化讨论正确但没有显式说明线性约束QP无需活动LICQ来获得必要KKT",
+      "actual_revision": "补原书技术点：线性约束资格、凸QP KKT充分性与乘子不唯一",
+      "source_printed_pages": [
+        464
+      ],
+      "source_pdf_physical_pages": [
+        486
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-16-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-16.md",
+      "lecture_line": 47,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 17,
+      "section": "17.2",
+      "issue_type": "定理层次澄清",
+      "before": "精确罚把一阶和二阶条件笼统合并，阈值与严格性的层次不够明确",
+      "actual_revision": "按Theorem17.3区分局部与严格局部结论、绝对乘子阈值；Theorem17.4区分不可行驻点",
+      "source_printed_pages": [
+        507,
+        508,
+        509
+      ],
+      "source_pdf_physical_pages": [
+        529,
+        530,
+        531
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-17-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-17.md",
+      "lecture_line": 33,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 17,
+      "section": "17.3",
+      "issue_type": "易读性/局部曲率推导",
+      "before": "为什么有限罚参数可以有效只作定性解释",
+      "actual_revision": "补可行真乘子处WL+rho JTJ、切向/法向作用、LICQ+SOSC局部严格极小，保留未知乘子与非全局限制",
+      "source_printed_pages": [
+        517,
+        518
+      ],
+      "source_pdf_physical_pages": [
+        539,
+        540
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-17-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-17.md",
+      "lecture_line": 51,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 18,
+      "section": "18.3",
+      "issue_type": "关键构造补全",
+      "before": "Lagrangian拟牛顿梯度差只说合理处理乘子，未解释同一乘子与阻尼",
+      "actual_revision": "补两端固定新乘子定义，说明混入乘子变化与负曲率风险、damped BFGS",
+      "source_printed_pages": [
+        536,
+        537
+      ],
+      "source_pdf_physical_pages": [
+        558,
+        559
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-18-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-18.md",
+      "lecture_line": 40,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 18,
+      "section": "18.7",
+      "issue_type": "条件精确化",
+      "before": "全局化和局部速度都是概括条件，未展示具体原定理限制",
+      "actual_revision": "补Theorem18.3 QP可行/有界/罚余量，18.4参数乘子对近解与Lipschitz二阶，18.5投影曲率判据",
+      "source_printed_pages": [
+        556,
+        557,
+        558
+      ],
+      "source_pdf_physical_pages": [
+        578,
+        579,
+        580
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-18-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-18.md",
+      "lecture_line": 62,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 19,
+      "section": "19.3",
+      "issue_type": "术语解释/曲率机制",
+      "before": "惯性检查未解释数学对象，原始和primaldual差别仅概述",
+      "actual_revision": "定义inertia正负零数量及目标(n+m,l+m,0)；比较mu S^-2与S^-1Lambda及Newton改写非不变",
+      "source_printed_pages": [
+        570,
+        573,
+        574
+      ],
+      "source_pdf_physical_pages": [
+        592,
+        595,
+        596
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-19-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-19.md",
+      "lecture_line": 36,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 19,
+      "section": "19.7",
+      "issue_type": "收敛范围补全",
+      "before": "已提醒非凸局部性，但内层不能完成的定理三类结局未具体说明",
+      "actual_revision": "补19.1内层精度与参数趋零条件，19.2不渐近可行/资格失败/理想驻点三个分支",
+      "source_printed_pages": [
+        568,
+        587,
+        589,
+        590,
+        591
+      ],
+      "source_pdf_physical_pages": [
+        590,
+        609,
+        611,
+        612,
+        613
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-19-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-19.md",
+      "lecture_line": 66,
+      "status": "revised and source-page checked"
+    },
+    {
+      "chapter": 19,
+      "section": "19.8",
+      "issue_type": "条件细化/算法参数解释",
+      "before": "超线性仅泛指参数和精度，未包含边界参数趋1",
+      "actual_revision": "补Assumptions19.1、局部merit/filter不活跃、tau趋1及mu/容差协调式，明确局部用途",
+      "source_printed_pages": [
+        591,
+        592
+      ],
+      "source_pdf_physical_pages": [
+        613,
+        614
+      ],
+      "source_text_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-research\\nw-19-source.txt",
+      "lecture_file": "E:\\Document\\FILE_package\\Class\\机器学习\\optimization-course\\docs\\optimization-nw-19.md",
+      "lecture_line": 72,
+      "status": "revised and source-page checked"
+    }
+  ],
+  "remaining_limits": [
+    "Full sparse factorization and algorithm pseudocode details remain original-book reading tasks.",
+    "Whole-site math/component browser rendering is assigned to root, not confirmed here.",
+    "Modern navigation/control/deep learning mentions are bridges, not claims of dedicated chapters in these books."
+  ]
+}

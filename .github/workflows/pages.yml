@@ -24,6 +24,7 @@ jobs:
           python-version: '3.11'
       - run: npm ci
       - run: npm run check
+      - run: node scripts/check-optimization.mjs
       - run: node scripts/check-traffic.mjs
       - run: node scripts/verify-materials.mjs
       - run: node scripts/check-remote-content.mjs

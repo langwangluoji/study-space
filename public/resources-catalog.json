@@ -773,5 +773,41 @@
     "pages": 6,
     "publicSha256": "743ddce248dca9fcb0625c5dde462a7b17de18fccb01f72584a7e66da31d0a18",
     "bytes": 251599
+  },
+  {
+    "id": "opt-boyd",
+    "title": "Convex Optimization · 双书目录与阅读导引",
+    "course": "optimization",
+    "type": "教材",
+    "author": "Stephen Boyd · Lieven Vandenberghe · Cambridge University Press · 2004",
+    "format": "PDF",
+    "preview": "/optimization-sources.html",
+    "external": "https://stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+    "source": "https://stanford.edu/~boyd/cvxbook/",
+    "description": "本地714页版本已核验；正文印刷页+14为PDF页。作者提供公开阅读入口；本站原创导读与交互见课程正文。"
+  },
+  {
+    "id": "opt-nocedal",
+    "title": "Numerical Optimization · Second Edition",
+    "course": "optimization",
+    "type": "教材",
+    "author": "Jorge Nocedal · Stephen J. Wright · Springer · 2006",
+    "format": "PDF",
+    "preview": "/optimization-sources.html",
+    "accessUrl": "https://link.springer.com/book/10.1007/978-0-387-40065-5",
+    "accessLabel": "Springer 教材页面",
+    "description": "本地686页第二版已核验；正文印刷页+22为PDF页。可在来源页选择本地PDF配合阅读。"
+  },
+  {
+    "id": "opt-examples",
+    "title": "最优化可复算教学脚本",
+    "course": "optimization",
+    "type": "代码",
+    "author": "Study Space 原创教学示例",
+    "format": "PY",
+    "preview": "/optimization-nw-10.html",
+    "file": "/optimization/optimization_examples.py",
+    "description": "最小二乘、线性高斯估计、二次控制与KKT的解析小例，可供相关章节复算，需要NumPy。",
+    "bytes": 2002
   }
 ]

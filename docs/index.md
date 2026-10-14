@@ -11,7 +11,7 @@ sidebar: false
     <h1>把分散的资料，<br>连成自己的<span>知识。</span></h1>
     <p class="hero-lead">从一门课程开始，沿着问题理解推导。<br>教材、课件与实践在这里汇合，为自学与期末复习建立清晰的路径。</p>
     <div class="hero-actions"><a class="space-button primary" href="/study-space/courses.html">探索课程 <span aria-hidden="true">→</span></a><a class="space-button" href="/study-space/resources.html">查找学习资料 <span aria-hidden="true">↗</span></a></div>
-    <div class="hero-topics"><span>机器学习</span><span>大地测量</span><span>多源知识整理</span></div>
+    <div class="hero-topics"><span>机器学习</span><span>大地测量</span><span>最优化 · 控制 · 导航</span></div>
   </header>
   <ContinueReading />
   <section class="hub-course-section" aria-labelledby="hub-courses">

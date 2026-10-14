@@ -1,0 +1,6 @@
+/* Keep short inline symbols readable without one-pixel overflow scrollbars.
+   Long displays retain the site's normal horizontal scrolling. */
+.optimization-lecture .vp-doc mjx-container:not([display="true"]){scrollbar-width:none}
+.optimization-lecture .vp-doc mjx-container:not([display="true"])::-webkit-scrollbar{display:none}
+.optimization-lecture .vp-doc p{line-height:2}
+.optimization-lecture .vp-doc h2{margin-top:44px}
