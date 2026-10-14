@@ -26,5 +26,11 @@ sidebar: false
       <a class="hub-resource path-card" href="/study-space/resources.html"><span class="path-number">03 / RESOURCES</span><strong>找到原始资料 <span aria-hidden="true">↗</span></strong><span>按课程和类型筛选教材、课件、代码，在线阅读或下载。</span></a>
     </div>
   </section>
+
+  <section id="site-updates" class="hub-activity" aria-labelledby="updates-title">
+    <div class="hub-section-heading"><div><p class="hub-eyebrow">WHAT'S NEW / 内容更新</p><h2 id="updates-title">最近，这里又生长了一点。</h2></div><a href="/study-space/updates.html">全部更新 <span aria-hidden="true">→</span></a></div>
+    <SiteUpdates compact />
+  </section>
+  <SiteTraffic />
   <section class="hub-growing"><p class="hub-eyebrow">KNOWLEDGE IN PROGRESS</p><h2>知识可以持续生长。</h2><p>把新的资料放回课程脉络，保留出处，核对差异，让每一次整理都有迹可循。</p><div class="directory-tools"><a href="/study-space/extensions.html">按问题发现扩展资料 →</a><a href="/study-space/about.html">认识制作者与这个空间 →</a><a href="/study-space/contribute.html">参与整理与共建 →</a></div></section>
 </main>

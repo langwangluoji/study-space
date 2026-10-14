@@ -1,0 +1,39 @@
+{
+  "status": "IMPLEMENTED_AND_LOCALLY_VERIFIED",
+  "baseline": "7cca6fd",
+  "provider": "https://busuanzi.9420.ltd/api",
+  "providerDocs": "https://github.com/soxft/busuanzi/wiki/API",
+  "skill": "C:/Users/user/.codex/skills/browser-collab/SKILL.md",
+  "webMode": "Pro",
+  "webReview": "reports/home-activity-web-review.txt",
+  "decisions": [
+    {
+      "topic": "Anonymous identity and single POST",
+      "result": "Reuse returned anonymous token, serialize SPA visits, normalize pathname, exclude hash/query changes and automated browsers; isolated service and fixture browser tests passed"
+    },
+    {
+      "topic": "Day finalization",
+      "result": "Shanghai date captured at the browse event; recently completed three days re-read; complete means day-end read, never a provider seal; activation records first successful Pages confirmation with source SHA/run URL"
+    },
+    {
+      "topic": "Failures and privacy",
+      "result": "Validate numeric data and archive provenance, keep trusted data on failure/regression; no retry of timed-out POST; no-referrer and date-only key; no personal logs in public history"
+    },
+    {
+      "topic": "Dashboard",
+      "result": "Only PV is cumulative; daily UV stays daily; today replaces its JSON row; gaps stay unknown and break curves; start day marked partial; content updates exclude archive commits"
+    }
+  ],
+  "verification": [
+    "reports/traffic-logic.json",
+    "reports/traffic-provider.json",
+    "reports/home-activity-ui.json",
+    "reports/home-activity-regression.json"
+  ],
+  "limitations": [
+    "Public third-party counter availability is not guaranteed",
+    "UV is an anonymous estimate, not authenticated natural people",
+    "Blocked/offline/failed collection can miss visits",
+    "Scheduled archive times may be delayed; no invented historical counts"
+  ]
+}

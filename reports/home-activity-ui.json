@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "fixtureData": true,
+  "cases": [
+    {
+      "width": 1440,
+      "theme": "light",
+      "slug": "index",
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "slug": "updates.html",
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "slug": "index",
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "slug": "updates.html",
+      "scroll": 1440
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "slug": "index",
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "theme": "light",
+      "slug": "updates.html",
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "slug": "index",
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "theme": "dark",
+      "slug": "updates.html",
+      "scroll": 1024
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "slug": "index",
+      "scroll": 390
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "slug": "updates.html",
+      "scroll": 390
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "slug": "index",
+      "scroll": 390
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "slug": "updates.html",
+      "scroll": 390
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "slug": "index",
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "slug": "updates.html",
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "slug": "index",
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "slug": "updates.html",
+      "scroll": 320
+    }
+  ],
+  "checks": [
+    "16 desktop/mobile and light/dark layouts; automated browser exclusion",
+    "Daily sums exclude host counters and do not double-count today from JSON",
+    "Keyboard calendar navigation uses a single day tab stop; activation day is partial",
+    "PV/UV, range control and accessible daily table agree",
+    "Missing historical day stays unknown and breaks the trend; total is withheld",
+    "429, malformed response, counter regression and history failure preserve data and expose state",
+    "Content-update category filter includes the actual InSAR and geodesy releases",
+    "First load, SPA path and refresh count once; hash/query/read retry do not; anonymous identity persists"
+  ],
+  "runtimeErrors": []
+}

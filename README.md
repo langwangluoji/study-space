@@ -116,6 +116,16 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 复算记录见 [核验记录](verification.html)，教材版本与原路径见 [来源说明](read-sources.html)。
 
 
+## 内容更新与访问历史
+
+`site-updates.config.json` 维护真实内容更新，按发布时间倒序排列，首页显示最近三条，`docs/updates.md` 显示完整记录。重要内容修订随发布补充一条，指向具体课程、资料或帮助页面；历史条目的 `sourceCommit` 保留发布依据，不自动把每个技术提交当作内容更新。
+
+`traffic.config.json` 固定启用日期、北京时间、日期计数地址和统计来源。使用 soxft/busuanzi 公共 GET/POST API，日期路径作为每日站内页面浏览的独立计数器，避免混入同一 GitHub Pages 域名下其他项目。总访问由逐日页面访问求和，不使用域名级 `site_pv`。同页锚点不提交访问，localhost、自动化浏览器和服务端构建不提交。POST 超时不重试，避免已经计数后再次提交。
+
+先创建 `traffic-history` 分支和 `history.json`，再发布启用统计的网页。历史 JSON 只保存每日 PV/UV、观察时间与日终读取状态，不保存访客日志。Pages 首次成功部署后记录 `activation.confirmedAt`、源码版本和运行链接，作为可复查的上线确认，不能表述为统计服务的首位访客时刻。`.github/workflows/traffic-history.yml` 计划每小时使用 GET 只读查询，将汇总写入独立分支；它不触发 main 的整站重建。日期结束后再读取才标记 `complete`（表示已经日终读取，不是服务端封账），最近三天持续复核迟到计数；任务延迟会在后续运行补齐全部未结算日期，计数回退或失败时保留已有数据并让工作流报错。不要把缺失记录手动写成零，也不要更换服务后沿用原计数日期命名空间。
+
+服务属于第三方公共部署，持续可用性不能保证；可迁移汇总数据，但切换来源必须明确划分计数区间。定期保存历史 JSON。首页显示实时/归档状态与未知数据；出现归档失败，检查 Actions 的 Archive daily site traffic 工作流，恢复后手动运行即可补读。统计口径和可能漏记的情况见 `docs/site-guide.md#traffic`。
+
 ## 制作者主页与辅助页面
 
 `creator.config.json` 维护制作者的公开姓名、GitHub 昵称、主页与头像。`contributors.config.json` 维护资料贡献者的公开身份、链接和具体支持范围，贡献者与原资料作者分别署名；公开头像副本位于 `public/creator/`。网站介绍在 `docs/about.md`，课程范围和资源条目数由统一清单渲染。

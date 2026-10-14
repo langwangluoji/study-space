@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "namespace": "isolated test, excluded from website daily counters",
+  "before": {
+    "page_pv": 3,
+    "page_uv": 2,
+    "site_pv": 3,
+    "site_uv": 2
+  },
+  "firstPost": {
+    "page_pv": 4,
+    "page_uv": 3,
+    "site_pv": 4,
+    "site_uv": 3
+  },
+  "identityReusePost": {
+    "page_pv": 5,
+    "page_uv": 3,
+    "site_pv": 5,
+    "site_uv": 3
+  },
+  "readOnly": {
+    "page_pv": 5,
+    "page_uv": 3,
+    "site_pv": 5,
+    "site_uv": 3
+  },
+  "cors": [
+    "x-bsz-referer, Authorization"
+  ]
+}
