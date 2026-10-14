@@ -12,7 +12,7 @@ async function run(){
   // integration checks; this regression exercises navigation into that reader.
   const allResources=JSON.parse(fs.readFileSync('resources.config.json','utf8'));
   const space=JSON.parse(fs.readFileSync('study-space.config.json','utf8'));
-  const names={ml:space.courses.find(c=>c.id==='ml').title+'资料',geodesy:'大地测量资料',insar:'InSAR 资料','remote-sensing':'遥感资料'};
+  const names={...Object.fromEntries(space.courses.map(c=>[c.id,c.title+'资料'])),geodesy:'大地测量资料',insar:'InSAR 资料','remote-sensing':'遥感资料'};
   for(const course of space.courses){
    await page.goto(base+'resources.html?course='+course.id,{waitUntil:'networkidle'});
    const entries=allResources.filter(r=>r.course===course.id);
@@ -24,13 +24,13 @@ async function run(){
    if((await group.getAttribute('class')).includes('collapsed'))await group.locator(':scope > .item').press('Enter');
    const subgroups=group.locator('.VPSidebarItem.level-1.collapsible');
    for(let i=0;i<await subgroups.count();i++){const sub=subgroups.nth(i);if((await sub.getAttribute('class')).includes('collapsed'))await sub.locator(':scope > .item').click()}
-   for(const resource of entries){const link=group.locator(`a[href$="${resource.preview}"]`);assert.equal(await link.count(),1,'Unique resource entry: '+resource.id);assert(await link.isVisible(),'Reachable resource entry: '+resource.id)}
+   for(const resource of entries){const link=group.getByRole('link',{name:resource.title,exact:true});assert.equal(await link.count(),1,'Unique resource entry: '+resource.id);assert((await link.getAttribute('href')).endsWith(resource.preview),'Correct resource destination: '+resource.id);assert(await link.isVisible(),'Reachable resource entry: '+resource.id)}
    if(course.id==='ml'){
     assert.equal(await page.getByLabel('课程',{exact:true}).locator('option[value="ml"]').textContent(),'机器学习与遥感图像分析');
     for(let n=1;n<=15;n++)assert(entries.some(r=>r.id==='slide-'+n),'ML lecture retained: '+n);
    }
   }
-  checks.push('four courses each own exactly one collapsible library; all 49 resources have a unique visible index entry, including ML lectures 1–15');
+  checks.push(`${space.courses.length} courses each own one collapsible library; all ${allResources.length} resources have unique titled entries, including ML lectures 1–15`);
   const resources=allResources.filter(r=>r.course==='remote-sensing');
   await page.goto(base+'resources.html?course=remote-sensing',{waitUntil:'networkidle'});assert.equal(await page.locator('.resource-card').count(),15);assert.equal(await page.locator('.resource-card .availability.local').count(),0);
   const rootGroup=page.locator('.VPSidebarItem.level-0').filter({has:page.getByRole('heading',{name:'遥感资料',exact:true})});assert.equal(await rootGroup.count(),1);assert((await rootGroup.getAttribute('class')).includes('collapsed'));
@@ -50,7 +50,7 @@ async function run(){
   checks.push('original PDF page hashes and lecture-figure source links are preserved');
   await page.goto(base+'insar-sources.html',{waitUntil:'domcontentloaded'});
   assert((await page.locator('.page-context').innerText()).includes('资料中心'));
-  assert.equal(await page.locator('.VPSidebarItem.level-0').count(),5);
+  assert.equal(await page.locator('.VPSidebarItem.level-0').count(),space.courses.length+1);
   await page.goto(base+'course-ml.html',{waitUntil:'domcontentloaded'});
   assert((await page.locator('.vp-doc h1').innerText()).includes('机器学习与遥感图像分析'));
   assert((await page.locator('.page-context').innerText()).includes('机器学习与遥感图像分析'));

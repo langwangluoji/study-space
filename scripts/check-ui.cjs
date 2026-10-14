@@ -52,8 +52,12 @@ async function run(){
    for(const slug of (process.env.UI_PAGES?process.env.UI_PAGES.split(','):pages)){
     // This matrix verifies parent-page layout; PDF rendering and byte-range
     // traffic are covered by check-materials-ui.cjs with explicit ready checks.
-    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html')+'?__ui_theme='+theme,{waitUntil:archivePages.has(slug)?'domcontentloaded':'networkidle',timeout:60000});
-    if(archivePages.has(slug)){await page.locator('.vp-doc').waitFor();await page.waitForFunction(t=>document.documentElement.classList.contains('dark')===(t==='dark'),theme)}
+    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html')+'?__ui_theme='+theme,{waitUntil:'domcontentloaded',timeout:60000});
+    // Vue assigns this marker after mount/hydration. Wait for actual parent
+    // readiness and fonts, rather than a fixed network-idle delay per page.
+    // Embedded PDF rendering remains covered by check-materials-ui.cjs.
+    await page.waitForFunction(t=>document.getElementById('app')?.__vue_app__&&document.documentElement.classList.contains('dark')===(t==='dark'),theme);
+    await page.evaluate(()=>document.fonts.ready);
     const defaultOpen=await page.locator('.vp-doc details[open]').count();assert.equal(defaultOpen,0,'Extras must start closed: '+slug);
     await page.evaluate(()=>document.querySelectorAll('.vp-doc details').forEach(d=>d.open=true));
     await page.locator('.vp-doc img[loading=lazy]').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
