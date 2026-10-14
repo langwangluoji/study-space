@@ -101,7 +101,7 @@ async function routedContext(parts,{width=1280,height=900}={}){
   p.on('pageerror',e=>tracker.pageErrors.push(e.message));
   p.on('console',m=>{if(m.type()==='error')tracker.consoleErrors.push(m.text())});
   p.on('response',r=>{if(r.status()>=400)tracker.httpErrors.push(`HTTP ${r.status()} ${r.url()}`);
-   if(new URL(r.url()).pathname.endsWith('/material-viewer/viewer.js'))r.body().then(bytes=>tracker.readerModules.push({url:r.url(),sha256:hash(bytes),
+   if(new URL(r.url()).pathname.endsWith('/material-viewer/viewer.js'))r.body().then(bytes=>tracker.readerModules.push({url:r.url(),sha256:hash(bytes),hasHashchangeListener:bytes.toString().includes("addEventListener('hashchange'"),
     retryHandler:bytes.toString().match(/el\('retry'\)\.onclick=([^;]+)/)?.[1]})).catch(()=>{});
   });
  });
@@ -235,27 +235,46 @@ async function run(){
   }finally{await context.close()}
  });
 
- if(fs.existsSync(path.join(root,'book-leedl.html')))await caseRun('Built parent page embeds a readable LeeDL iframe',async()=>{
+ if(fs.existsSync(path.join(root,'book-leedl.html')))await caseRun('Built parent page deep links and synchronizes LeeDL iframe',async caseItem=>{
   const {context,page,tracker}=await routedContext(parts);
   try{let parentLoadObserved=false;page.on('load',()=>{parentLoadObserved=true});
-   await page.goto(`${origin}${prefix}book-leedl.html`,{waitUntil:'domcontentloaded'});
+   await page.goto(`${origin}${prefix}book-leedl.html#page=163`,{waitUntil:'domcontentloaded'});
    const iframe=page.locator('iframe[src*="material-viewer"]').first();await iframe.scrollIntoViewIfNeeded();
+   caseItem.stage='waiting-parent-initial-page163';
    await page.waitForFunction(()=>{
     const frame=document.querySelector('iframe[src*="material-viewer"]');
-    return frame?.contentDocument?.querySelector('#canvas')?.dataset.page==='1';
+    return frame?.contentDocument?.querySelector('#canvas')?.dataset.page==='163';
    },null,{timeout});
    const handle=await iframe.elementHandle(),frame=await handle.contentFrame();assert(frame,'Embedded reader frame exists');
-   const first=await waitRendered(frame,1);assert.equal(first.total,expectedPages('leedl'));
+   const first=await waitRendered(frame,163);assert.equal(first.total,expectedPages('leedl'));
    const parent=await page.evaluate(()=>({readyState:document.readyState,title:document.title,
     iframeSrc:document.querySelector('iframe[src*="material-viewer"]').getAttribute('src'),
     documentWidth:document.documentElement.scrollWidth,viewport:innerWidth}));
    assert(parent.documentWidth<=parent.viewport+1,'Embedded parent does not overflow horizontally');
-   const network=snapshot(tracker);assert(network.uniqueBytes<byId.get('leedl').preview.bytes,'Embedded first page is still on demand');
-   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent.png')});assertNoErrors(tracker);
-   return {id:'leedl',first,parent,parentLoadObserved,readyCondition:'parent DOMContentLoaded followed by iframe completed canvas render',network};
-  }finally{await context.close()}
+   assert(parent.iframeSrc.endsWith('#page=163'),'Hydrated iframe URL reflects the original parent citation page');
+   const firstFrameURL=frame.url();assert(firstFrameURL.endsWith('#page=163'),'Actual iframe location reflects page 163');
+   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent-page163.png')});
+   await page.evaluate(()=>{location.hash='#page=200'});
+   caseItem.stage='waiting-parent-hashchange-page200';
+   const afterParentHashChange=await waitRendered(frame,200);
+   const synchronized=await page.evaluate(()=>({parentURL:location.href,
+    iframeSrc:document.querySelector('iframe[src*="material-viewer"]').getAttribute('src')}));
+   const frameURL=frame.url();assert(synchronized.iframeSrc.endsWith('#page=200'));
+   assert(frameURL.endsWith('#page=200'),'Fragment-only iframe navigation is handled by the reader');
+   const network=snapshot(tracker);assert(network.uniqueBytes<byId.get('leedl').preview.bytes,'Embedded citation pages are still on demand');
+   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent-page200.png')});assertNoErrors(tracker);
+   return {id:'leedl',first,parent,firstFrameURL,afterParentHashChange,synchronized,frameURL,parentLoadObserved,
+    readyCondition:'parent DOMContentLoaded then iframe page163 render; parent hashchange then iframe page200 render',network};
+  }finally{
+   caseItem.embedDiagnostics=await page.evaluate(()=>{const f=document.querySelector('iframe[src*="material-viewer"]'),d=f?.contentDocument;return {
+    parentURL:location.href,parentHash:location.hash,iframeSrc:f?.getAttribute('src'),frameURL:f?.contentWindow?.location.href,
+    frameHash:f?.contentWindow?.location.hash,pageInput:d?.querySelector('#page')?.value,status:d?.querySelector('#status')?.textContent,
+    canvasPage:d?.querySelector('#canvas')?.dataset.page,bodyReady:d?.body?.dataset.ready}}).catch(e=>({error:e.message}));
+   await page.screenshot({path:path.join(screenRoot,'embedded-parent-hash-diagnostics.png')}).catch(()=>{});
+   await context.close();
+  }
  });
- else report.cases.push({name:'Built parent page embeds a readable LeeDL iframe',status:'not-run',reason:'Reader-only root has no generated parent page; run default built-site root for this check.'});
+ else report.cases.push({name:'Built parent page deep links and synchronizes LeeDL iframe',status:'not-run',reason:'Reader-only root has no generated parent page; run default built-site root for this check.'});
 
  await caseRun('Chunk fetch 503 shows error and recovers on retry',async()=>{
   const {context,page,tracker}=await routedContext(parts);

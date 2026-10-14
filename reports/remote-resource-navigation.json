@@ -2,8 +2,8 @@
   "status": "PASS",
   "checks": [
     "one collapsible remote-sensing group with three subgroups and all 15 material links; keyboard expansion works",
-    "13 public material downloads are distinct from two legitimate publisher-access entries",
-    "all 15 entries retain resource navigation and correctly enter the unified reader, public PDF or publisher portal",
+    "all 15 remote-sensing materials retain downloads; the two textbook originals and supplemental publisher links are visible",
+    "all 15 entries retain resource navigation and correctly enter the unified archive reader or public PDF; publisher links are supplemental",
     "original PDF page hashes and lecture-figure source links are preserved",
     "resource cards and sidebar fit 390px and 320px phone screens"
   ],

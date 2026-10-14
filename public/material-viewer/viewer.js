@@ -68,4 +68,7 @@ el('prev').onclick=()=>{current--;showPage()};el('next').onclick=()=>{current++;
 // rather than waiting indefinitely for that old worker to settle.
 el('retry').onclick=()=>{if(retryAction==='download')return downloadOriginal();history.replaceState(null,'',location.pathname+location.search+'#page='+current);location.reload()};
 el('download').onclick=e=>{e.preventDefault();downloadOriginal()};
+// The parent propagates citation page changes through the iframe fragment.
+// A fragment navigation keeps this document alive, so render the new page.
+addEventListener('hashchange',()=>{const page=Number(location.hash.match(/page=(\d+)/)?.[1]||1);if(page!==current){current=page;showPage()}});
 let resized;addEventListener('resize',()=>{clearTimeout(resized);resized=setTimeout(()=>{if(el('zoom').value==='fit')showPage()},250)});addEventListener('pagehide',()=>{renderTask?.cancel();pdf?.destroy()});open();
