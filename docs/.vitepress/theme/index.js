@@ -4,6 +4,7 @@ import { useRoute, useRouter } from 'vitepress';
 import LearningMark from './LearningMark.vue';
 import ConceptViz from './ConceptViz.vue';
 import PdfReader from './PdfReader.vue';
+import MaterialReader from './MaterialReader.vue';
 import GeodesyLab from './GeodesyLab.vue';
 import SourceFigure from './SourceFigure.vue';
 import RsLanguage from './RsLanguage.vue';
@@ -20,7 +21,7 @@ import './rs.css';
 export default {
   extends:DefaultTheme,
   Layout(){return h(DefaultTheme.Layout,null,{'doc-before':()=>h(PageContext)})},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading)},
+  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('MaterialReader',MaterialReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{

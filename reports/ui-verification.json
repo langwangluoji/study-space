@@ -4251,7 +4251,7 @@
     "resource URL survives reload and reset clears legacy course hash",
     "empty result reset restores keyboard focus",
     "combined resource filters, empty reset and actual notebook download",
-    "remote-sensing source files are indexed as local archives",
+    "all remote-sensing originals have online readers and downloads",
     "remote-sensing Chinese, English and bilingual modes persist across chapters",
     "lecture figure dialog opens and closes with keyboard",
     "English remote-sensing search reveals bilingual context",

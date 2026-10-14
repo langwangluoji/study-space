@@ -3,6 +3,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
 const root=path.resolve('docs/.vitepress/dist'),prefix='/study-space/';
 const courseCount=JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.length;
 const resourceCount=JSON.parse(fs.readFileSync('resources.config.json','utf8')).length;
+const archivePages=new Set(JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.reader==='archive').map(r=>r.preview.slice(1).replace(/\.html$/,'')));
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png','.pdf':'application/pdf','.py':'text/plain; charset=utf-8','.md':'text/plain; charset=utf-8','.ipynb':'application/json'};
 const server=http.createServer((req,res)=>{
  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400).end();return}
@@ -19,8 +20,21 @@ async function run(){
  const errors=[],cases=[],checks=[];fs.mkdirSync('reports/screenshots',{recursive:true});
  try{
  browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
- const observe=p=>{p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)})};
+ const observe=p=>{
+  p.on('pageerror',e=>errors.push(e.message));
+  p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)});
+  p.context().route('https://raw.githubusercontent.com/langwangluoji/study-space/**',async route=>{
+   const m=route.request().url().match(/\/materials\/storage\/([a-f\d]{64})\/(\d{5}\.bin)$/);
+   if(!m)return route.continue();
+   const file=path.resolve('materials/storage',m[1],m[2]);
+   if(!fs.existsSync(file))return route.fulfill({status:404,body:'Missing archive part'});
+   await route.fulfill({status:200,contentType:'application/octet-stream',headers:{'Access-Control-Allow-Origin':'*'},body:fs.readFileSync(file)});
+  });
+ };
  let page=await browser.newPage();observe(page);
+ // Init scripts also run in child frames. Only the parent owns the site's
+ // theme; let the standalone reader receive its theme from the iframe URL.
+ await page.addInitScript(()=>{if(window.top!==window)return;const t=new URLSearchParams(location.search).get('__ui_theme');if(t)localStorage.setItem('vitepress-theme-appearance',t)});
  const pages=['index','course-ml','lecture-1','lecture-2','lecture-3','cifar10-practice','resources','read-notebook','read-sources','read-downloads-cifar10_mlp_tutorial','read-downloads-rewrite_reference_checks','read-README','textbooks','book-prml','book-mml','book-leedl','slides-lecture-1','slides-lecture-2','slides-lecture-3','verification','course-geodesy',...JSON.parse(fs.readFileSync('geodesy.config.json','utf8')).flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-sources','geodesy-plan'];
  pages.push(...JSON.parse(fs.readFileSync('study-space.config.json','utf8')).courses.filter(c=>!['ml','geodesy'].includes(c.id)).flatMap(c=>[c.entry.slice(1).replace(/\.html$/,''),c.source.slice(1).replace(/\.html$/,''),...(c.chapters??[]).map(ch=>ch.slug)]));
  pages.push('courses','review-guide','study-guide','contribute',...Array.from({length:6},(_,i)=>'geodesy-source-s'+(i+1)));
@@ -28,15 +42,17 @@ async function run(){
  for(const width of (process.env.UI_WIDTHS?process.env.UI_WIDTHS.split(',').map(Number):[1440,390,320])){
   await page.setViewportSize({width,height:900});
   for(const theme of ['light','dark']){
-   await page.addInitScript(t=>localStorage.setItem('vitepress-theme-appearance',t),theme);
    for(const slug of (process.env.UI_PAGES?process.env.UI_PAGES.split(','):pages)){
-    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html'),{waitUntil:'networkidle'});
+    // This matrix verifies parent-page layout; PDF rendering and byte-range
+    // traffic are covered by check-materials-ui.cjs with explicit ready checks.
+    await page.goto(origin+prefix+(slug==='index'?'':slug+'.html')+'?__ui_theme='+theme,{waitUntil:archivePages.has(slug)?'domcontentloaded':'networkidle',timeout:60000});
+    if(archivePages.has(slug)){await page.locator('.vp-doc').waitFor();await page.waitForFunction(t=>document.documentElement.classList.contains('dark')===(t==='dark'),theme)}
     const defaultOpen=await page.locator('.vp-doc details[open]').count();assert.equal(defaultOpen,0,'Extras must start closed: '+slug);
     await page.evaluate(()=>document.querySelectorAll('.vp-doc details').forEach(d=>d.open=true));
     await page.locator('.vp-doc img[loading=lazy]').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
     await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));
     const report=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,math:document.querySelectorAll('mjx-container').length,errors:document.querySelectorAll('[data-mjx-error],merror').length,brokenImages:[...document.querySelectorAll('.vp-doc img')].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),dark:document.documentElement.classList.contains('dark')}));
-    assert(report.scroll<=width+1,`Page overflow: ${slug} ${width} ${report.scroll}`);assert.equal(report.errors,0,slug+' math');assert.deepEqual(report.brokenImages,[],slug+' images');assert.equal(report.dark,theme==='dark');
+    assert(report.scroll<=width+1,`Page overflow: ${slug} ${width} ${report.scroll}`);assert.equal(report.errors,0,slug+' math');assert.deepEqual(report.brokenImages,[],slug+' images');assert.equal(report.dark,theme==='dark',slug+' '+theme+' theme');
     cases.push({slug,width,theme,...report});
     if(['index','courses','resources','review-guide','course-ml','lecture-1','lecture-3','remote-sensing-ch2','remote-sensing-ch4'].includes(slug))await page.screenshot({path:`reports/screenshots/${slug}-${width}-${theme}.png`});
    }
@@ -80,7 +96,7 @@ async function run(){
  await page.getByRole('button',{name:'重置筛选'}).click();await page.reload({waitUntil:'networkidle'});assert.equal(await page.getByLabel('课程',{exact:true}).inputValue(),'all');assert.equal(await page.locator('.resource-card').count(),resourceCount);assert(!['#ml','#geodesy','#remote-sensing','#insar'].includes(new URL(page.url()).hash));checks.push('resource URL survives reload and reset clears legacy course hash');
  await page.getByLabel('搜索资源',{exact:true}).fill('不存在的资源词');assert(await page.getByText('没有匹配的资料',{exact:true}).isVisible());await page.getByRole('button',{name:'查看全部资料'}).click();await page.waitForFunction(()=>document.activeElement?.getAttribute('aria-label')==='搜索资源');checks.push('empty result reset restores keyboard focus');
  await page.getByLabel('课程',{exact:true}).selectOption('ml');await page.getByLabel('类型',{exact:true}).selectOption('代码');const notebookCard=page.locator('.resource-card').filter({hasText:'逐步练习 Notebook'});const downloading=page.waitForEvent('download');await notebookCard.getByRole('link',{name:'下载 IPYNB'}).click();const download=await downloading;assert.equal(download.suggestedFilename(),'CIFAR10_MLP_逐步练习.ipynb');checks.push('combined resource filters, empty reset and actual notebook download');
- const remoteResourceCount=JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.course==='remote-sensing').length;await page.goto(origin+prefix+'resources.html?course=remote-sensing',{waitUntil:'networkidle'});assert.equal(await page.locator('.resource-card').count(),remoteResourceCount);assert.equal(await page.locator('.resource-card .availability.local').count(),remoteResourceCount);checks.push('remote-sensing source files are indexed as local archives');
+ const remoteResourceCount=JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.course==='remote-sensing').length;await page.goto(origin+prefix+'resources.html?course=remote-sensing',{waitUntil:'networkidle'});assert.equal(await page.locator('.resource-card').count(),remoteResourceCount);assert.equal(await page.locator('.resource-card .availability.local').count(),0);await page.getByLabel('获取方式',{exact:true}).selectOption('download');assert.equal(await page.locator('.resource-card').count(),remoteResourceCount);checks.push('all remote-sensing originals have online readers and downloads');
  await page.goto(origin+prefix+'remote-sensing-ch4.html#rs4-scanning',{waitUntil:'networkidle'});const language=page.getByLabel(/阅读语言/);assert.equal(await language.inputValue(),'zh');assert(await page.locator('[data-rs-lang="zh"]').first().isVisible());assert.equal(await page.locator('[data-rs-lang="en"]').first().isVisible(),false);await language.selectOption('en');assert(await page.locator('[data-rs-lang="en"]').first().isVisible());assert.equal(await page.locator('[data-rs-lang="zh"]').first().isVisible(),false);await page.goto(origin+prefix+'remote-sensing-ch3.html',{waitUntil:'networkidle'});assert.equal(await page.getByLabel(/Reading language/).inputValue(),'en');await page.getByLabel(/Reading language/).selectOption('both');assert(await page.locator('[data-rs-lang="zh"]').first().isVisible());assert(await page.locator('[data-rs-lang="en"]').first().isVisible());checks.push('remote-sensing Chinese, English and bilingual modes persist across chapters');
  const figureButton=page.locator('.rs-figure-open').first();await figureButton.click();assert.equal(await page.locator('.rs-figure-dialog[open]').count(),1);await page.keyboard.press('Escape');assert.equal(await page.locator('.rs-figure-dialog[open]').count(),0);checks.push('lecture figure dialog opens and closes with keyboard');
  await page.getByRole('button',{name:'搜索课程笔记',exact:true}).click();await page.locator('input[type=search]').fill('brightness temperature');const rsResult=page.locator('.VPLocalSearchBox a[href*="remote-sensing-ch2"]').first();await rsResult.waitFor();await rsResult.click();await page.waitForFunction(()=>document.documentElement.dataset.rsLanguage==='both');checks.push('English remote-sensing search reveals bilingual context');

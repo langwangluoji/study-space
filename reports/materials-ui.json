@@ -1,0 +1,1112 @@
+{
+  "status": "pass",
+  "startedAt": "2026-10-13T23:51:31.959Z",
+  "root": "docs\\.vitepress\\dist",
+  "storage": "materials\\storage",
+  "catalogPath": "public\\materials\\catalog.json",
+  "networkMode": "raw GitHub parts mapped to immutable local files",
+  "cases": [
+    {
+      "name": "ML PPT first/last page and desktop zoom",
+      "status": "pass",
+      "id": "slide-1",
+      "first": {
+        "width": 1252,
+        "height": 704,
+        "nonwhite": 9329,
+        "samples": 9797,
+        "textSpans": 5,
+        "displayedPage": "1",
+        "status": "第 1 / 63 页",
+        "total": 63,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1252,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1252,
+        "height": 704,
+        "nonwhite": 808,
+        "samples": 9797,
+        "textSpans": 21,
+        "displayedPage": "63",
+        "status": "第 63 / 63 页",
+        "total": 63,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1252,
+        "paperScrollWidth": 1280
+      },
+      "at100": {
+        "width": 960,
+        "height": 540,
+        "nonwhite": 674,
+        "samples": 8640,
+        "textSpans": 21,
+        "displayedPage": "63",
+        "status": "第 63 / 63 页",
+        "total": 63,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 960,
+        "paperScrollWidth": 1280
+      },
+      "at200": {
+        "width": 1920,
+        "height": 1080,
+        "nonwhite": 613,
+        "samples": 8280,
+        "textSpans": 21,
+        "displayedPage": "63",
+        "status": "第 63 / 63 页",
+        "total": 63,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1920,
+        "paperScrollWidth": 1944
+      },
+      "network": {
+        "requests": 0,
+        "requestedBytes": 0,
+        "uniqueBytes": 0,
+        "uniqueParts": 0,
+        "partUrls": []
+      },
+      "consoleErrors": [],
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ML PPT phone fit/zoom and dark theme",
+      "status": "pass",
+      "id": "slide-1",
+      "fit": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 8864,
+        "samples": 9282,
+        "textSpans": 5,
+        "displayedPage": "1",
+        "status": "第 1 / 63 页",
+        "total": 63,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "enlarged": {
+        "width": 1920,
+        "height": 1080,
+        "nonwhite": 7874,
+        "samples": 8280,
+        "textSpans": 5,
+        "displayedPage": "1",
+        "status": "第 1 / 63 页",
+        "total": 63,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 1920,
+        "paperScrollWidth": 1932
+      },
+      "network": {
+        "requests": 0,
+        "requestedBytes": 0,
+        "uniqueBytes": 0,
+        "uniqueParts": 0,
+        "partUrls": []
+      },
+      "consoleErrors": [],
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InSAR scanned textbook original page",
+      "status": "pass",
+      "id": "insar-book",
+      "first": {
+        "width": 905,
+        "height": 1314,
+        "nonwhite": 8273,
+        "samples": 8554,
+        "textSpans": 0,
+        "displayedPage": "1",
+        "status": "第 1 / 259 页",
+        "total": 259,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 905.9375,
+        "paperScrollWidth": 1280
+      },
+      "page34": {
+        "width": 905,
+        "height": 1314,
+        "nonwhite": 942,
+        "samples": 8554,
+        "textSpans": 0,
+        "displayedPage": "34",
+        "status": "第 34 / 259 页",
+        "total": 259,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 905.9375,
+        "paperScrollWidth": 1280
+      },
+      "network": {
+        "requests": 2,
+        "requestedBytes": 8867646,
+        "uniqueBytes": 8867646,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00007.bin"
+        ]
+      },
+      "consoleErrors": [],
+      "diagnostics": {
+        "network": {
+          "requests": 2,
+          "requestedBytes": 8867646,
+          "uniqueBytes": 8867646,
+          "uniqueParts": 2,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00007.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "leedl chunked on-demand first/middle/last",
+      "status": "pass",
+      "id": "leedl",
+      "totalBytes": 141945163,
+      "totalParts": 17,
+      "first": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 72,
+        "samples": 8648,
+        "textSpans": 23,
+        "displayedPage": "1",
+        "status": "第 1 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "middle": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 786,
+        "samples": 8648,
+        "textSpans": 87,
+        "displayedPage": "163",
+        "status": "第 163 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 284,
+        "samples": 8648,
+        "textSpans": 91,
+        "displayedPage": "326",
+        "status": "第 326 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "afterFirst": {
+        "requests": 2,
+        "requestedBytes": 16116043,
+        "uniqueBytes": 16116043,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+        ]
+      },
+      "afterJumps": {
+        "requests": 4,
+        "requestedBytes": 32893259,
+        "uniqueBytes": 32893259,
+        "uniqueParts": 4,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+        ]
+      },
+      "firstReadFraction": 0.1135371058751752,
+      "deferredChunks": [
+        "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+        "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+      ],
+      "consoleErrors": [],
+      "diagnostics": {
+        "network": {
+          "requests": 4,
+          "requestedBytes": 32893259,
+          "uniqueBytes": 32893259,
+          "uniqueParts": 4,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rs-campbell-introduction chunked on-demand first/middle/last",
+      "status": "pass",
+      "id": "rs-campbell-introduction",
+      "totalBytes": 157674250,
+      "totalParts": 19,
+      "first": {
+        "width": 1008,
+        "height": 1440,
+        "nonwhite": 5993,
+        "samples": 8280,
+        "textSpans": 0,
+        "displayedPage": "1",
+        "status": "第 1 / 675 页",
+        "total": 675,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1008,
+        "paperScrollWidth": 1280
+      },
+      "middle": {
+        "width": 1008,
+        "height": 1440,
+        "nonwhite": 888,
+        "samples": 8280,
+        "textSpans": 282,
+        "displayedPage": "337",
+        "status": "第 337 / 675 页",
+        "total": 675,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1008,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1008,
+        "height": 1440,
+        "nonwhite": 0,
+        "samples": 8280,
+        "textSpans": 0,
+        "displayedPage": "675",
+        "status": "第 675 / 675 页",
+        "total": 675,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1008,
+        "paperScrollWidth": 1280
+      },
+      "afterFirst": {
+        "requests": 3,
+        "requestedBytes": 23456522,
+        "uniqueBytes": 23456522,
+        "uniqueParts": 3,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00018.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00016.bin"
+        ]
+      },
+      "afterJumps": {
+        "requests": 7,
+        "requestedBytes": 55301652,
+        "uniqueBytes": 40233738,
+        "uniqueParts": 5,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00018.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00016.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00009.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00010.bin"
+        ]
+      },
+      "firstReadFraction": 0.14876571158575355,
+      "deferredChunks": [
+        "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00009.bin",
+        "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00010.bin"
+      ],
+      "consoleErrors": [],
+      "beforeLast": {
+        "width": 1008,
+        "height": 1440,
+        "nonwhite": 150,
+        "samples": 8280,
+        "textSpans": 13,
+        "displayedPage": "673",
+        "status": "第 673 / 675 页",
+        "total": 675,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1008,
+        "paperScrollWidth": 1280
+      },
+      "knownBlankEvidence": "Original file p675 visually rendered with Poppler and inspected: white; original p674 also has no extracted text, so p673 verifies visible content. Exception is pinned to the original SHA-256.",
+      "diagnostics": {
+        "network": {
+          "requests": 7,
+          "requestedBytes": 55301652,
+          "uniqueBytes": 40233738,
+          "uniqueParts": 5,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00018.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00016.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00009.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00010.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Word 20-page PDF reading copy",
+      "status": "pass",
+      "id": "rs-english-summary",
+      "first": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 664,
+        "samples": 8930,
+        "textSpans": 158,
+        "displayedPage": "1",
+        "status": "第 1 / 20 页",
+        "total": 20,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 559,
+        "samples": 8930,
+        "textSpans": 8,
+        "displayedPage": "20",
+        "status": "第 20 / 20 页",
+        "total": 20,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "network": {
+        "requests": 1,
+        "requestedBytes": 1959304,
+        "uniqueBytes": 1959304,
+        "uniqueParts": 1,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin"
+        ]
+      },
+      "consoleErrors": [],
+      "diagnostics": {
+        "network": {
+          "requests": 1,
+          "requestedBytes": 1959304,
+          "uniqueBytes": 1959304,
+          "uniqueParts": 1,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Built parent page embeds a readable LeeDL iframe",
+      "status": "pass",
+      "id": "leedl",
+      "first": {
+        "width": 594,
+        "height": 840,
+        "nonwhite": 146,
+        "samples": 9306,
+        "textSpans": 23,
+        "displayedPage": "1",
+        "status": "第 1 / 326 页",
+        "total": 326,
+        "documentWidth": 622,
+        "viewport": 622,
+        "paperWidth": 622,
+        "canvasCSSWidth": 594,
+        "paperScrollWidth": 622
+      },
+      "parent": {
+        "readyState": "complete",
+        "title": "李宏毅深度学习教程 · v1.2.4 | Study Space · 学习空间",
+        "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light",
+        "documentWidth": 1280,
+        "viewport": 1280
+      },
+      "parentLoadObserved": true,
+      "readyCondition": "parent DOMContentLoaded followed by iframe completed canvas render",
+      "network": {
+        "requests": 2,
+        "requestedBytes": 16116043,
+        "uniqueBytes": 16116043,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+        ]
+      },
+      "diagnostics": {
+        "network": {
+          "requests": 2,
+          "requestedBytes": 16116043,
+          "uniqueBytes": 16116043,
+          "uniqueParts": 2,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Chunk fetch 503 shows error and recovers on retry",
+      "status": "pass",
+      "id": "insar-l3",
+      "injected503Requests": 1,
+      "errorStatus": "文件暂时无法读取，请稍后重试。",
+      "recovered": {
+        "width": 1252,
+        "height": 704,
+        "nonwhite": 4236,
+        "samples": 9797,
+        "textSpans": 10,
+        "displayedPage": "1",
+        "status": "第 1 / 59 页",
+        "total": 59,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1252,
+        "paperScrollWidth": 1280
+      },
+      "network": {
+        "requests": 1,
+        "requestedBytes": 5424256,
+        "uniqueBytes": 5424256,
+        "uniqueParts": 1,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin"
+        ]
+      },
+      "expectedHTTPErrors": [
+        "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin"
+      ],
+      "expectedConsoleErrors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "diagnostics": {
+        "network": {
+          "requests": 1,
+          "requestedBytes": 5424256,
+          "uniqueBytes": 5424256,
+          "uniqueParts": 1,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [
+          "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin"
+        ],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Later chunk 503 rebuilds loaded PDF and retains selected page",
+      "status": "pass",
+      "beforeRetry": {
+        "status": "文件暂时无法读取，请稍后重试。",
+        "network": {
+          "requests": 2,
+          "requestedBytes": 16116043,
+          "uniqueBytes": 16116043,
+          "uniqueParts": 2,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+          ]
+        }
+      },
+      "afterRetryClick": {
+        "status": "正在加载原资料…",
+        "network": {
+          "requests": 2,
+          "requestedBytes": 16116043,
+          "uniqueBytes": 16116043,
+          "uniqueParts": 2,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+          ]
+        }
+      },
+      "statusTimeline": [
+        {
+          "time": 24.100000001490116,
+          "stage": "initial",
+          "status": "正在加载原资料…",
+          "error": false
+        },
+        {
+          "time": 468.70000000298023,
+          "stage": "initial",
+          "status": "正在载入第 163 页…",
+          "error": false
+        },
+        {
+          "time": 1071.8999999985099,
+          "stage": "initial",
+          "status": "第 163 / 326 页",
+          "error": false
+        },
+        {
+          "time": 1144.7000000029802,
+          "stage": "initial",
+          "status": "正在载入第 164 页…",
+          "error": false
+        },
+        {
+          "time": 1344.6000000014901,
+          "stage": "initial",
+          "status": "第 164 / 326 页",
+          "error": false
+        }
+      ],
+      "id": "leedl",
+      "first": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 72,
+        "samples": 8648,
+        "textSpans": 23,
+        "displayedPage": "1",
+        "status": "第 1 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "afterFirst": {
+        "requests": 2,
+        "requestedBytes": 16116043,
+        "uniqueBytes": 16116043,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+        ]
+      },
+      "injected503Requests": 2,
+      "errorStatus": "文件暂时无法读取，请稍后重试。",
+      "recovered": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 786,
+        "samples": 8648,
+        "textSpans": 87,
+        "displayedPage": "163",
+        "status": "第 163 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "next": {
+        "width": 1190,
+        "height": 1683,
+        "nonwhite": 795,
+        "samples": 8648,
+        "textSpans": 114,
+        "displayedPage": "164",
+        "status": "第 164 / 326 页",
+        "total": 326,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1190.546875,
+        "paperScrollWidth": 1280
+      },
+      "afterRetry": {
+        "requests": 6,
+        "requestedBytes": 49009302,
+        "uniqueBytes": 32893259,
+        "uniqueParts": 4,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+        ]
+      },
+      "expectedHTTPErrors": [
+        "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+        "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+      ],
+      "expectedConsoleErrors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "diagnostics": {
+        "network": {
+          "requests": 6,
+          "requestedBytes": 49009302,
+          "uniqueBytes": 32893259,
+          "uniqueParts": 4,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [
+          "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "HTTP 503 https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
+        ],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          },
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Real service-worker DOCX and Chinese PPTX downloads SHA-256",
+      "status": "pass",
+      "downloads": [
+        {
+          "id": "rs-english-summary",
+          "filename": "2451561_Chatper1_summary.docx",
+          "chineseFilename": false,
+          "bytes": 1918804,
+          "sha256": "527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f",
+          "serviceWorkerPartRequests": 1,
+          "before": {
+            "requests": 1,
+            "requestedBytes": 1959304,
+            "uniqueBytes": 1959304,
+            "uniqueParts": 1,
+            "partUrls": [
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin"
+            ]
+          },
+          "after": {
+            "requests": 2,
+            "requestedBytes": 3878108,
+            "uniqueBytes": 3878108,
+            "uniqueParts": 2,
+            "partUrls": [
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin",
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f/00000.bin"
+            ]
+          }
+        },
+        {
+          "id": "slide-11",
+          "filename": "11-图像目标检测-3-Transformer类.pptx",
+          "chineseFilename": true,
+          "bytes": 4995922,
+          "sha256": "106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441",
+          "serviceWorkerPartRequests": 1,
+          "before": {
+            "requests": 1,
+            "requestedBytes": 1587276,
+            "uniqueBytes": 1587276,
+            "uniqueParts": 1,
+            "partUrls": [
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin"
+            ]
+          },
+          "after": {
+            "requests": 2,
+            "requestedBytes": 6583198,
+            "uniqueBytes": 6583198,
+            "uniqueParts": 2,
+            "partUrls": [
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin",
+              "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441/00000.bin"
+            ]
+          }
+        }
+      ],
+      "diagnostics": {
+        "network": {
+          "requests": 2,
+          "requestedBytes": 6583198,
+          "uniqueBytes": 6583198,
+          "uniqueParts": 2,
+          "partUrls": [
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441/00000.bin"
+          ]
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": true
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
+            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "id": "rs-english-summary",
+      "filename": "2451561_Chatper1_summary.docx",
+      "chineseFilename": false,
+      "bytes": 1918804,
+      "sha256": "527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f",
+      "serviceWorkerPartRequests": 1,
+      "before": {
+        "requests": 1,
+        "requestedBytes": 1959304,
+        "uniqueBytes": 1959304,
+        "uniqueParts": 1,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin"
+        ]
+      },
+      "after": {
+        "requests": 2,
+        "requestedBytes": 3878108,
+        "uniqueBytes": 3878108,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f/00000.bin"
+        ]
+      }
+    },
+    {
+      "id": "slide-11",
+      "filename": "11-图像目标检测-3-Transformer类.pptx",
+      "chineseFilename": true,
+      "bytes": 4995922,
+      "sha256": "106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441",
+      "serviceWorkerPartRequests": 1,
+      "before": {
+        "requests": 1,
+        "requestedBytes": 1587276,
+        "uniqueBytes": 1587276,
+        "uniqueParts": 1,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin"
+        ]
+      },
+      "after": {
+        "requests": 2,
+        "requestedBytes": 6583198,
+        "uniqueBytes": 6583198,
+        "uniqueParts": 2,
+        "partUrls": [
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441/00000.bin"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "serverDownloadRequests": [],
+  "selectedCasePattern": null,
+  "optionalLocalInventoryChecked": true,
+  "catalogRecords": 43,
+  "partURLs": 163,
+  "downloadDiagnostics": [
+    {
+      "id": "rs-english-summary",
+      "url": "http://127.0.0.1:55393/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
+      "filename": "2451561_Chatper1_summary.docx",
+      "worker": {
+        "controller": true,
+        "registrationActive": true,
+        "status": "已开始下载原文件；文件较大时请等待浏览器完成。"
+      }
+    },
+    {
+      "id": "slide-11",
+      "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+      "filename": "11-图像目标检测-3-Transformer类.pptx",
+      "worker": {
+        "controller": true,
+        "registrationActive": true,
+        "status": "已开始下载原文件；文件较大时请等待浏览器完成。"
+      }
+    }
+  ],
+  "finishedAt": "2026-10-13T23:51:48.918Z"
+}

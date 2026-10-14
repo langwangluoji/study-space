@@ -1,0 +1,2724 @@
+[
+  {
+    "id": "prml",
+    "title": "Pattern Recognition and Machine Learning",
+    "course": "ml",
+    "type": "教材",
+    "author": "Christopher M. Bishop",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "prml.pdf",
+      "bytes": 7473207,
+      "sha256": "1f59e27187f0388617697fa89c27ec7ec327faa79b50098ca212b81b636d38f2",
+      "mime": "application/pdf",
+      "url": "books/prml.pdf"
+    },
+    "preview": {
+      "filename": "prml.pdf",
+      "bytes": 7473207,
+      "sha256": "1f59e27187f0388617697fa89c27ec7ec327faa79b50098ca212b81b636d38f2",
+      "mime": "application/pdf",
+      "url": "books/prml.pdf",
+      "pages": 746,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "mml",
+    "title": "Mathematics for Machine Learning",
+    "course": "ml",
+    "type": "教材",
+    "author": "Deisenroth · Faisal · Ong",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "mml.pdf",
+      "bytes": 17565898,
+      "sha256": "3f87b70c64a35d30ec4e565b4d5cfd18fe913002d3b3bed44691c7d0838911bc",
+      "mime": "application/pdf",
+      "url": "books/mml.pdf"
+    },
+    "preview": {
+      "filename": "mml.pdf",
+      "bytes": 17565898,
+      "sha256": "3f87b70c64a35d30ec4e565b4d5cfd18fe913002d3b3bed44691c7d0838911bc",
+      "mime": "application/pdf",
+      "url": "books/mml.pdf",
+      "pages": 417,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "leedl",
+    "title": "李宏毅深度学习教程 · v1.2.4",
+    "course": "ml",
+    "type": "教材",
+    "author": "李宏毅 · Datawhale 整理项目",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "LeeDL_Tutorial_v.1.2.4.pdf",
+      "bytes": 141945163,
+      "sha256": "5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "b8ee2738d1d8fd673ec7229f510ca9db3f9c90b2bc266ebeada0341c4d10aeb1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "93b9dade5853a3d02060b1795f396ffcf5ea295a0d6c052e5dd9c4428ae6f44a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "2dcfa96ca8e2fb9939abcb7d936325cbd325f8ea50e19ce6bcad66402f534fda"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "af047ddae1f68f2da5a29135bb735001ca0a7657e7223a628b4015617bc21d5f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "c097edeb8db0333868dc53821131abd1f2a78c562b68e98cfe21c1300ac9cff1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "3063ba64741da7ff0c5c9e0a476a202595fa16d16bfba5cfca5fc8cc1d63265e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "5fce9313c82522c9e813e4cacfe506751887cd711e1e84b60cb82c312b675893"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "f4e1bbbcb986fbf932452b8bdb0cffe6124e0a39444068072dd1c7c0b270810b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "ba62e3f7dcb2f1f08326469464c10f8097c4b970eee4f7bd5ee6b147fdf51ed7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "fb5c8ac6c605d5e7e29cd858a1ab6e2954af6b10131b90567fd572f7518d02f1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "894f32cebf4f1ed44b2e23a4898198533f176ad1aaf5f8b5f893dc31198234ef"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "e280ed948e648b7cb553bcd036ccbc2569386e9903b126808281bc5bc6d4fb50"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "5a13bc0d5f5da202961c9ac8dba1a56b32d66125f6b4dab81a2fc260f9fd539a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "5c6ae37db730778a5344fb0af9df5d87dd11621a4f9d31111e1cbe2df488c479"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "88a9206703d0052700060f4142885fbcfe9b20eed354e84709c3ffa633e31629"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00015.bin",
+          "start": 125829120,
+          "bytes": 8388608,
+          "sha256": "089b5cd9d9f4f5aa03ea7b8150869375435afcc878ce8fbd074ba742de9af328"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+          "start": 134217728,
+          "bytes": 7727435,
+          "sha256": "c2b55433c25d051c64bb8d0a004b98cf55b6dc8c8d16d9358945280c506c6661"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "LeeDL_Tutorial_v.1.2.4.pdf",
+      "bytes": 141945163,
+      "sha256": "5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "b8ee2738d1d8fd673ec7229f510ca9db3f9c90b2bc266ebeada0341c4d10aeb1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "93b9dade5853a3d02060b1795f396ffcf5ea295a0d6c052e5dd9c4428ae6f44a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "2dcfa96ca8e2fb9939abcb7d936325cbd325f8ea50e19ce6bcad66402f534fda"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "af047ddae1f68f2da5a29135bb735001ca0a7657e7223a628b4015617bc21d5f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "c097edeb8db0333868dc53821131abd1f2a78c562b68e98cfe21c1300ac9cff1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "3063ba64741da7ff0c5c9e0a476a202595fa16d16bfba5cfca5fc8cc1d63265e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "5fce9313c82522c9e813e4cacfe506751887cd711e1e84b60cb82c312b675893"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "f4e1bbbcb986fbf932452b8bdb0cffe6124e0a39444068072dd1c7c0b270810b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "ba62e3f7dcb2f1f08326469464c10f8097c4b970eee4f7bd5ee6b147fdf51ed7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "fb5c8ac6c605d5e7e29cd858a1ab6e2954af6b10131b90567fd572f7518d02f1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "894f32cebf4f1ed44b2e23a4898198533f176ad1aaf5f8b5f893dc31198234ef"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "e280ed948e648b7cb553bcd036ccbc2569386e9903b126808281bc5bc6d4fb50"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "5a13bc0d5f5da202961c9ac8dba1a56b32d66125f6b4dab81a2fc260f9fd539a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "5c6ae37db730778a5344fb0af9df5d87dd11621a4f9d31111e1cbe2df488c479"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "88a9206703d0052700060f4142885fbcfe9b20eed354e84709c3ffa633e31629"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00015.bin",
+          "start": 125829120,
+          "bytes": 8388608,
+          "sha256": "089b5cd9d9f4f5aa03ea7b8150869375435afcc878ce8fbd074ba742de9af328"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+          "start": 134217728,
+          "bytes": 7727435,
+          "sha256": "c2b55433c25d051c64bb8d0a004b98cf55b6dc8c8d16d9358945280c506c6661"
+        }
+      ],
+      "pages": 326,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "slide-1",
+    "title": "第一讲 · 线性回归与最小二乘",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "1-线性回归与最小二乘.pptx",
+      "bytes": 8065620,
+      "sha256": "aa25cc4366a63c4e07ada59415d222abbd01e1de285c6b4b42cd030e14d30755",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/aa25cc4366a63c4e07ada59415d222abbd01e1de285c6b4b42cd030e14d30755/00000.bin",
+          "start": 0,
+          "bytes": 8065620,
+          "sha256": "aa25cc4366a63c4e07ada59415d222abbd01e1de285c6b4b42cd030e14d30755"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-1.pdf",
+      "bytes": 3976061,
+      "sha256": "6b583df51dfbab5129cefb8fffc0ad0c238c11a8a98380f0964343199fb25cf2",
+      "mime": "application/pdf",
+      "url": "slides/lecture-1.pdf",
+      "pages": 63,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-2",
+    "title": "第二讲 · 线性分类与感知机",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "2-线性分类与感知机.pptx",
+      "bytes": 6079164,
+      "sha256": "3f87e1ec47d4db13b294f443840a4a90c0ff5642f666285675bd730ddd948a55",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/3f87e1ec47d4db13b294f443840a4a90c0ff5642f666285675bd730ddd948a55/00000.bin",
+          "start": 0,
+          "bytes": 6079164,
+          "sha256": "3f87e1ec47d4db13b294f443840a4a90c0ff5642f666285675bd730ddd948a55"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-2.pdf",
+      "bytes": 2481374,
+      "sha256": "6280c23dfb15a141597e3fa6016406fa14e5c699b33f297113710db9cbd83765",
+      "mime": "application/pdf",
+      "url": "slides/lecture-2.pdf",
+      "pages": 58,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-3",
+    "title": "第三讲 · 非线性回归与多层感知机",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "3-非线性回归与多层感知机.pptx",
+      "bytes": 6715871,
+      "sha256": "818156b8fde8bfb846f585e9dce6d3ada1648d1f52882566cd7349673f293c54",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/818156b8fde8bfb846f585e9dce6d3ada1648d1f52882566cd7349673f293c54/00000.bin",
+          "start": 0,
+          "bytes": 6715871,
+          "sha256": "818156b8fde8bfb846f585e9dce6d3ada1648d1f52882566cd7349673f293c54"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-3.pdf",
+      "bytes": 3537954,
+      "sha256": "b6cfdb5e6ee8eef4bf8c899253383fcc826afa4d2dd2cf93be77077d72bd8e9c",
+      "mime": "application/pdf",
+      "url": "slides/lecture-3.pdf",
+      "pages": 49,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-4",
+    "title": "第四讲 · 多层感知机与手工图像特征-含平时作业1",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "4-多层感知机与手工图像特征-含平时作业1.pptx",
+      "bytes": 8359594,
+      "sha256": "05bdba09f3462e95a2dd420afae38cb0f21dad7706b7d39cd0e80386a114ece6",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/05bdba09f3462e95a2dd420afae38cb0f21dad7706b7d39cd0e80386a114ece6/00000.bin",
+          "start": 0,
+          "bytes": 8359594,
+          "sha256": "05bdba09f3462e95a2dd420afae38cb0f21dad7706b7d39cd0e80386a114ece6"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-4.pdf",
+      "bytes": 1689990,
+      "sha256": "bbe6477ef54d54275bf5baffadde60c6f58dec2b4d14b6f4e08aba8931c53aba",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/bbe6477ef54d54275bf5baffadde60c6f58dec2b4d14b6f4e08aba8931c53aba/00000.bin",
+          "start": 0,
+          "bytes": 1689990,
+          "sha256": "bbe6477ef54d54275bf5baffadde60c6f58dec2b4d14b6f4e08aba8931c53aba"
+        }
+      ],
+      "pages": 36,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-5",
+    "title": "第五讲 · 卷积神经网络与图像分类-平时作业2",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "5-卷积神经网络与图像分类-平时作业2.pptx",
+      "bytes": 22229716,
+      "sha256": "8cf3431b33f3d9a597f828b821ad28c4e7d250b526bc47c199840962f74a7dd1",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/8cf3431b33f3d9a597f828b821ad28c4e7d250b526bc47c199840962f74a7dd1/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "254d5f049946e64ff6d8eb5f415bf4705f948ed3a9411531f729a572c5e74dba"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/8cf3431b33f3d9a597f828b821ad28c4e7d250b526bc47c199840962f74a7dd1/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "0e75590501ec114fb0e58f53ff8520b52c78c8b7feaefcd90511e642189cc4f4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/8cf3431b33f3d9a597f828b821ad28c4e7d250b526bc47c199840962f74a7dd1/00002.bin",
+          "start": 16777216,
+          "bytes": 5452500,
+          "sha256": "03399a457556eec5bb4ab9a5ee8e7bf3065c3916766b138851bbab445074b75d"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-5.pdf",
+      "bytes": 2873661,
+      "sha256": "e512668fa9035fa8da953dd4ec24720c82d2b278cfaf37eed32032930098d5b1",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e512668fa9035fa8da953dd4ec24720c82d2b278cfaf37eed32032930098d5b1/00000.bin",
+          "start": 0,
+          "bytes": 2873661,
+          "sha256": "e512668fa9035fa8da953dd4ec24720c82d2b278cfaf37eed32032930098d5b1"
+        }
+      ],
+      "pages": 77,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-6",
+    "title": "第六讲 · Transformer-ViT与图像分类-含平时作业3",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "6-Transformer-ViT与图像分类-含平时作业3.pptx",
+      "bytes": 15881152,
+      "sha256": "13c7592f1239cae046207614f76cdbb93981aa3ca028f26d2e873862a88a145e",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/13c7592f1239cae046207614f76cdbb93981aa3ca028f26d2e873862a88a145e/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "3b40344c787c2c6c64d4e53c82e5ff58553620e4ddb732c7f9988b0bdc8cf986"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/13c7592f1239cae046207614f76cdbb93981aa3ca028f26d2e873862a88a145e/00001.bin",
+          "start": 8388608,
+          "bytes": 7492544,
+          "sha256": "cf9a7cd52c6dc2ec98fcb7016612c4fecf60dfd8044a7aeb0b80a5e528431719"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-6.pdf",
+      "bytes": 2326199,
+      "sha256": "42d345a390130b4dff1e0cd9d24064169301f9fc9ac719f1a2566e6f3804dcd2",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/42d345a390130b4dff1e0cd9d24064169301f9fc9ac719f1a2566e6f3804dcd2/00000.bin",
+          "start": 0,
+          "bytes": 2326199,
+          "sha256": "42d345a390130b4dff1e0cd9d24064169301f9fc9ac719f1a2566e6f3804dcd2"
+        }
+      ],
+      "pages": 42,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-7",
+    "title": "第七讲 · 自监督学习与视觉特征表示1_重构-含平时作业4",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "7-自监督学习与视觉特征表示1_重构-含平时作业4.pptx",
+      "bytes": 31178628,
+      "sha256": "9aadd9165af164a49db3e04f67e7c0536271a4da6eebd0e4733d7c94c87cdc3f",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9aadd9165af164a49db3e04f67e7c0536271a4da6eebd0e4733d7c94c87cdc3f/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "a681676aa7383c7458caf25656d3967ec67570f73923a7b1c5b5d87cfe495e04"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9aadd9165af164a49db3e04f67e7c0536271a4da6eebd0e4733d7c94c87cdc3f/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "ca316660b34d9a9dbaf41cf7a031f57cddd6eaf7aaa7bd83123b043d37d44e4b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9aadd9165af164a49db3e04f67e7c0536271a4da6eebd0e4733d7c94c87cdc3f/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "cbcf07c49b6d224cfde89b3699ee47ab265ae9b5b28a391146a5ffb42eb2f771"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9aadd9165af164a49db3e04f67e7c0536271a4da6eebd0e4733d7c94c87cdc3f/00003.bin",
+          "start": 25165824,
+          "bytes": 6012804,
+          "sha256": "aec22997fd171432c3f68205a627478e459a29c5cac5d8b2c469dd8bbec32aa9"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-7.pdf",
+      "bytes": 3086736,
+      "sha256": "4048cb60135d128db86e7a2c8302cfe04b49e3bf9ffa6300e8e7d6339dc1dd87",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4048cb60135d128db86e7a2c8302cfe04b49e3bf9ffa6300e8e7d6339dc1dd87/00000.bin",
+          "start": 0,
+          "bytes": 3086736,
+          "sha256": "4048cb60135d128db86e7a2c8302cfe04b49e3bf9ffa6300e8e7d6339dc1dd87"
+        }
+      ],
+      "pages": 57,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-8",
+    "title": "第八讲 · 自监督学习与视觉特征表示2_对比-含平时作业5",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "8-自监督学习与视觉特征表示2_对比-含平时作业5.pptx",
+      "bytes": 23260577,
+      "sha256": "160dff94074498d7e9d7cfcfa0963e648ac2b26d5d523f105511e17ff831ec42",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/160dff94074498d7e9d7cfcfa0963e648ac2b26d5d523f105511e17ff831ec42/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "aed7dbc3657487658463f78c4f2be67b90b678d247b0cb35f36dc0bebe565732"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/160dff94074498d7e9d7cfcfa0963e648ac2b26d5d523f105511e17ff831ec42/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "199d6287478a676db3d8c6eb3f0121743ced9128728077149242d6cee744b0b7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/160dff94074498d7e9d7cfcfa0963e648ac2b26d5d523f105511e17ff831ec42/00002.bin",
+          "start": 16777216,
+          "bytes": 6483361,
+          "sha256": "653aaf5b9d07b8968d6c7c2819a0e71e27f285de8a70eebc266bbbe8d81ddd27"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-8.pdf",
+      "bytes": 2999844,
+      "sha256": "f49de5e909efd37ffcdebe7130ea6e142563a3f6d00708a5de45729d539621f1",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f49de5e909efd37ffcdebe7130ea6e142563a3f6d00708a5de45729d539621f1/00000.bin",
+          "start": 0,
+          "bytes": 2999844,
+          "sha256": "f49de5e909efd37ffcdebe7130ea6e142563a3f6d00708a5de45729d539621f1"
+        }
+      ],
+      "pages": 79,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-9",
+    "title": "第九讲 · 图像目标检测-1-FasterRCNN和SSD-含平时作业6",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "9-图像目标检测-1-FasterRCNN和SSD-含平时作业6.pptx",
+      "bytes": 50275706,
+      "sha256": "6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "5b7ca373955a15aac3b9c26df3fc84d1e30695594094b8c8c37bee152b539d1f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "cb18744bdfd47c55131fd6f4a2da57684277bb43217375e522cf2d640cda5016"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "3ed6c753eb8ebe1c966360ae23b72a700a4b3f5ea559cdb544e9c6e6afb09728"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "4c11507e2b6d4bff2a74e904e58431b2b14fd60050ca02d2ef54daec03f1fc5c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "018dfcda6d6d112f7e9aade0378d0a5ee831c3bfedeb5190807929b5a722b158"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/6fb8385187241948dcc6b43329618e20839207bd25c2c8301ebe213736ed45df/00005.bin",
+          "start": 41943040,
+          "bytes": 8332666,
+          "sha256": "01c274299eb4c1e652033906615158be1dfc0c48b54d79daa3974a8b238a548e"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-9.pdf",
+      "bytes": 2456624,
+      "sha256": "055dffa43c487e05bedb0d1eaec968b0d542c054767a5f636aa22d9036e58a19",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/055dffa43c487e05bedb0d1eaec968b0d542c054767a5f636aa22d9036e58a19/00000.bin",
+          "start": 0,
+          "bytes": 2456624,
+          "sha256": "055dffa43c487e05bedb0d1eaec968b0d542c054767a5f636aa22d9036e58a19"
+        }
+      ],
+      "pages": 49,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-10",
+    "title": "第十讲 · 图像目标检测-2-YOLO-含平时作业7",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "10-图像目标检测-2-YOLO-含平时作业7.pptx",
+      "bytes": 8134459,
+      "sha256": "4e0ef001a2ea730ead52a33200a43aa62b65e1a9ac7b33d8f4a216b00477672c",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4e0ef001a2ea730ead52a33200a43aa62b65e1a9ac7b33d8f4a216b00477672c/00000.bin",
+          "start": 0,
+          "bytes": 8134459,
+          "sha256": "4e0ef001a2ea730ead52a33200a43aa62b65e1a9ac7b33d8f4a216b00477672c"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-10.pdf",
+      "bytes": 1969255,
+      "sha256": "66a8c2cc2965681c36791cd1b9be623f54361ca22f1f54b9f7c7c9db126c9a8a",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/66a8c2cc2965681c36791cd1b9be623f54361ca22f1f54b9f7c7c9db126c9a8a/00000.bin",
+          "start": 0,
+          "bytes": 1969255,
+          "sha256": "66a8c2cc2965681c36791cd1b9be623f54361ca22f1f54b9f7c7c9db126c9a8a"
+        }
+      ],
+      "pages": 43,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-11",
+    "title": "第十一讲 · 图像目标检测-3-Transformer类",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "11-图像目标检测-3-Transformer类.pptx",
+      "bytes": 4995922,
+      "sha256": "106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441/00000.bin",
+          "start": 0,
+          "bytes": 4995922,
+          "sha256": "106f7924acb6ae9306e422aaa109d0ea49af647812e0cd7d9bac7b2a92031441"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-11.pdf",
+      "bytes": 1587276,
+      "sha256": "e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453/00000.bin",
+          "start": 0,
+          "bytes": 1587276,
+          "sha256": "e9179ec9299d3049e25e9079965abe39cce7790fd119aede77e83b5976887453"
+        }
+      ],
+      "pages": 29,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-12",
+    "title": "第十二讲 · 图像语义分割-CNN类-v2-含平时作业8",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "12-图像语义分割-CNN类-v2-含平时作业8.pptx",
+      "bytes": 19684829,
+      "sha256": "1440f7bc564d8c3c35a841e07d9c0ddf3bef50bf5c2ca1e21e85ef92f38623c7",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1440f7bc564d8c3c35a841e07d9c0ddf3bef50bf5c2ca1e21e85ef92f38623c7/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "d28f95c979dc4122fdfda7950cb043a340c4aefc53296b393a362dbfa53a2ab3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1440f7bc564d8c3c35a841e07d9c0ddf3bef50bf5c2ca1e21e85ef92f38623c7/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "6d2bcc99960c4a7eea8d1c4010290c1ef08be5c74921ee903737f581cf5bb18e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1440f7bc564d8c3c35a841e07d9c0ddf3bef50bf5c2ca1e21e85ef92f38623c7/00002.bin",
+          "start": 16777216,
+          "bytes": 2907613,
+          "sha256": "7dec1a5e92c73d2681bd1eb5af2a81809b89d35a40a1f5e009c899080284c89e"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-12.pdf",
+      "bytes": 2299664,
+      "sha256": "656940f19e2c395f4ab1350b56736712b7dd2c61a40ce4de6cdc7c5242c079b4",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/656940f19e2c395f4ab1350b56736712b7dd2c61a40ce4de6cdc7c5242c079b4/00000.bin",
+          "start": 0,
+          "bytes": 2299664,
+          "sha256": "656940f19e2c395f4ab1350b56736712b7dd2c61a40ce4de6cdc7c5242c079b4"
+        }
+      ],
+      "pages": 41,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-13",
+    "title": "第十三讲 · 图像语义分割-ViT类",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "13-图像语义分割-ViT类.pptx",
+      "bytes": 19233004,
+      "sha256": "9d168b154ed85d75cda8b1b53a314995aebcc8ed93c7beabacfc4fc0542aa1b0",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9d168b154ed85d75cda8b1b53a314995aebcc8ed93c7beabacfc4fc0542aa1b0/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "435e86b56806ee1b85eb3fbc0372df13a5e9b587c11472c86de928f22c095cdf"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9d168b154ed85d75cda8b1b53a314995aebcc8ed93c7beabacfc4fc0542aa1b0/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "3113ed9812002a313bf2a84c626dc3652aff53587557f1b15d4d8cae171936ae"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9d168b154ed85d75cda8b1b53a314995aebcc8ed93c7beabacfc4fc0542aa1b0/00002.bin",
+          "start": 16777216,
+          "bytes": 2455788,
+          "sha256": "4836f47270d28af1bf3c4d3925d16e5d4ca719123413e662d2b412af7ded05ff"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-13.pdf",
+      "bytes": 2131957,
+      "sha256": "b548514e9e4014deea1b3eabaa8e5ad8b22f0783232ccf96ede48ce19228ef0a",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b548514e9e4014deea1b3eabaa8e5ad8b22f0783232ccf96ede48ce19228ef0a/00000.bin",
+          "start": 0,
+          "bytes": 2131957,
+          "sha256": "b548514e9e4014deea1b3eabaa8e5ad8b22f0783232ccf96ede48ce19228ef0a"
+        }
+      ],
+      "pages": 37,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-14",
+    "title": "第十四讲 · 图像关键点估计",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "14-图像关键点估计.pptx",
+      "bytes": 20618236,
+      "sha256": "ceb83a3b35524c6af2f2c2af43456a0e774afd4e3daf77ee06d2e06a9d2cf5b7",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/ceb83a3b35524c6af2f2c2af43456a0e774afd4e3daf77ee06d2e06a9d2cf5b7/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "d059dad66005a467ee8fb37eb4971cecde8a4c4554e3cbfa3377b4b076998feb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/ceb83a3b35524c6af2f2c2af43456a0e774afd4e3daf77ee06d2e06a9d2cf5b7/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "f62f745847fe2910e1279ade635b63ef8dea55434464ff59f8206f47ee04b8f5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/ceb83a3b35524c6af2f2c2af43456a0e774afd4e3daf77ee06d2e06a9d2cf5b7/00002.bin",
+          "start": 16777216,
+          "bytes": 3841020,
+          "sha256": "7cfb0971f86e4f2cc6a503acefb2a7738b37b6ebcddd1b5bb6479683099f3485"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-14.pdf",
+      "bytes": 2218005,
+      "sha256": "0d300e05925802ba7dc6a039a58a7688e3a3ed9f7c201d696ce729c3357ebf25",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/0d300e05925802ba7dc6a039a58a7688e3a3ed9f7c201d696ce729c3357ebf25/00000.bin",
+          "start": 0,
+          "bytes": 2218005,
+          "sha256": "0d300e05925802ba7dc6a039a58a7688e3a3ed9f7c201d696ce729c3357ebf25"
+        }
+      ],
+      "pages": 37,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "slide-15",
+    "title": "第十五讲 · 其他图像分析任务入门",
+    "course": "ml",
+    "type": "课件",
+    "author": "张绍明 · 图像分析与机器学习课程课件",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "15-其他图像分析任务入门.pptx",
+      "bytes": 33813395,
+      "sha256": "2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "88c677ab9dbfee71194de91867492c40126f27cc7849679c098a73e26eb900c8"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "a0fb87740df3f0827a70e990840b96a0a248697277101f2e6b376e5547d6aa42"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "d9a517ec161e032e092ed2039b96b5673254084201f88b9fadc5528d92808440"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "97ad20c353ea183a380b88e1b4d1cf7eb04ce34d3f02c963eeb8481790f6b67a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2bb67707d9a3089984b5fc7dcecbe48e0dc13a15771b05149b1fdfae098101b2/00004.bin",
+          "start": 33554432,
+          "bytes": 258963,
+          "sha256": "be6516b839da7d644e36f6fe35e1650e715c405c6fb15d1e85f0bee3fd40d10d"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "slide-15.pdf",
+      "bytes": 2634373,
+      "sha256": "7e172292827e89e5650b853216386b4b74b4e727f5162c4c6efaea106530d08a",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/7e172292827e89e5650b853216386b4b74b4e727f5162c4c6efaea106530d08a/00000.bin",
+          "start": 0,
+          "bytes": 2634373,
+          "sha256": "7e172292827e89e5650b853216386b4b74b4e727f5162c4c6efaea106530d08a"
+        }
+      ],
+      "pages": 35,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "geo-s1",
+    "title": "大地测量绪论 · 原讲义",
+    "course": "geodesy",
+    "type": "课件",
+    "author": "用户提供的课程讲义 · S1",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "大地测量 绪论(1).pdf",
+      "bytes": 2909512,
+      "sha256": "91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975/00000.bin",
+          "start": 0,
+          "bytes": 2909512,
+          "sha256": "91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "大地测量 绪论(1).pdf",
+      "bytes": 2909512,
+      "sha256": "91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S1-introduction.pdf",
+      "pages": 29,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "geo-s2",
+    "title": "向量微积分常用公式",
+    "course": "geodesy",
+    "type": "辅助资料",
+    "author": "用户提供的补充材料 · S2",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "向量微积分常用公式.pdf",
+      "bytes": 210461,
+      "sha256": "071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967/00000.bin",
+          "start": 0,
+          "bytes": 210461,
+          "sha256": "071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "向量微积分常用公式.pdf",
+      "bytes": 210461,
+      "sha256": "071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S2-vector-calculus.pdf",
+      "pages": 8,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "geo-s3",
+    "title": "椭球面数学性质 · 原讲义",
+    "course": "geodesy",
+    "type": "课件",
+    "author": "用户提供的课程讲义 · S3",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "1椭球面数学性质   课程讲义.pdf",
+      "bytes": 2296160,
+      "sha256": "d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf/00000.bin",
+          "start": 0,
+          "bytes": 2296160,
+          "sha256": "d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "1椭球面数学性质   课程讲义.pdf",
+      "bytes": 2296160,
+      "sha256": "d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S3-ellipsoid.pdf",
+      "pages": 60,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "geo-s4",
+    "title": "坐标分量旋转与坐标轴旋转的关系",
+    "course": "geodesy",
+    "type": "辅助资料",
+    "author": "用户提供的补充材料 · S4",
+    "format": "DOCX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+      "bytes": 616066,
+      "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994/00000.bin",
+          "start": 0,
+          "bytes": 616066,
+          "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "geo-s4.pdf",
+      "bytes": 520807,
+      "sha256": "59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936/00000.bin",
+          "start": 0,
+          "bytes": 520807,
+          "sha256": "59ce5de498bfc583bde1be77ab30d1c4dbe82fac6df6fd87f368c6ef105c7936"
+        }
+      ],
+      "pages": 5,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "geo-s5",
+    "title": "现代大地控制测量",
+    "course": "geodesy",
+    "type": "教材",
+    "author": "用户提供的教材 · S5",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "现代大地控制测量_12803034.pdf",
+      "bytes": 36686825,
+      "sha256": "057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "ab70a30155245c73ea6035d7d15d22b590e400278ca3851ce774a5e48ffc4f5c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "44ef351f8cc15e25dd1e6990d4a8e42c524a40c326984319510a8cde5e59da08"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "c977cc5cb8976b31cceefebfbecd36796df799e085c36a9ca5be063d52f61a3d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "0dbb7c39fbf0f7c0d3408525aedb3415a4af83d8d3a8984c1589e3bc90273651"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3/00004.bin",
+          "start": 33554432,
+          "bytes": 3132393,
+          "sha256": "9d283c91cb24c05ef2b35f00a0310d2a430279d1f6b5400c907ea27a21a12166"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "现代大地控制测量_12803034.pdf",
+      "bytes": 36686825,
+      "sha256": "057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3",
+      "mime": "application/pdf",
+      "url": "geodesy/materials/S5-geodetic-control.pdf",
+      "pages": 294,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "geo-s6",
+    "title": "轨道力学基础",
+    "course": "geodesy",
+    "type": "辅助资料",
+    "author": "用户提供的课件 · S6",
+    "format": "PPTX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "轨道力学基础（4学时）(1).pptx",
+      "bytes": 7610549,
+      "sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87/00000.bin",
+          "start": 0,
+          "bytes": 7610549,
+          "sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "geo-s6.pdf",
+      "bytes": 1990726,
+      "sha256": "96eb54502da43dc578e6269182a4adf6f57f8cb27c9dedf2f83c7935b7ef80b0",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/96eb54502da43dc578e6269182a4adf6f57f8cb27c9dedf2f83c7935b7ef80b0/00000.bin",
+          "start": 0,
+          "bytes": 1990726,
+          "sha256": "96eb54502da43dc578e6269182a4adf6f57f8cb27c9dedf2f83c7935b7ef80b0"
+        }
+      ],
+      "pages": 84,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "insar-l1",
+    "title": "第一讲 · 微波遥感基础",
+    "course": "insar",
+    "type": "课件",
+    "author": "张磊、梁鸿俞 · 同济大学",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第一讲-微波遥感基础-202609(1).pdf",
+      "bytes": 9208019,
+      "sha256": "adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "7fa955954eb05593ca0e43a990f5d4d431adf69c90817fb8681ae57b20845f89"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f/00001.bin",
+          "start": 8388608,
+          "bytes": 819411,
+          "sha256": "45f4bfb9ef90d509371ab5d6a790ac49afff1db081c36bbf4361ddb325a3db3f"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第一讲-微波遥感基础-202609(1).pdf",
+      "bytes": 9208019,
+      "sha256": "adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "7fa955954eb05593ca0e43a990f5d4d431adf69c90817fb8681ae57b20845f89"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f/00001.bin",
+          "start": 8388608,
+          "bytes": 819411,
+          "sha256": "45f4bfb9ef90d509371ab5d6a790ac49afff1db081c36bbf4361ddb325a3db3f"
+        }
+      ],
+      "pages": 92,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "insar-l2",
+    "title": "第二讲 · 合成孔径雷达成像原理",
+    "course": "insar",
+    "type": "课件",
+    "author": "同济大学 InSAR 原理与应用课程",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第二讲-合成孔径雷达成像原理-202609.pdf",
+      "bytes": 10657029,
+      "sha256": "f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "a2a3ea39621f239238ccdae54c393737558bb01c294ee62b985b865f71447ccb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56/00001.bin",
+          "start": 8388608,
+          "bytes": 2268421,
+          "sha256": "fead7ec8fbdb9c2c90c4c0c916d28619d540436f5e38335e29eb51aa43155f1e"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第二讲-合成孔径雷达成像原理-202609.pdf",
+      "bytes": 10657029,
+      "sha256": "f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "a2a3ea39621f239238ccdae54c393737558bb01c294ee62b985b865f71447ccb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56/00001.bin",
+          "start": 8388608,
+          "bytes": 2268421,
+          "sha256": "fead7ec8fbdb9c2c90c4c0c916d28619d540436f5e38335e29eb51aa43155f1e"
+        }
+      ],
+      "pages": 106,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "insar-l3",
+    "title": "第三讲 · SAR 图像特征及解译",
+    "course": "insar",
+    "type": "课件",
+    "author": "同济大学 InSAR 原理与应用课程",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第三讲-SAR图像特征及解译-202610.pdf",
+      "bytes": 5424256,
+      "sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
+          "start": 0,
+          "bytes": 5424256,
+          "sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第三讲-SAR图像特征及解译-202610.pdf",
+      "bytes": 5424256,
+      "sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
+          "start": 0,
+          "bytes": 5424256,
+          "sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74"
+        }
+      ],
+      "pages": 59,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "insar-book",
+    "title": "时间序列 InSAR 技术与应用",
+    "course": "insar",
+    "type": "教材",
+    "author": "廖明生、王腾 · 科学出版社，2014",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "时间序列InSAR技术与应用_(廖明生，王腾)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 59199294,
+      "sha256": "19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "fa4967e48f3a1625e2aa76ecf3f2ceb429569e8599f501f545552a45f2d28d6f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "01bfbaffd51fab9c3889ecf3d0be72e8d8b62f6d7959fceecc74f0c8919f769f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "b82c98c89784839db34c5a480536a26b92f2b00d1789c85acfba16d919c90d92"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "faf25a390619a818153fc966d8de23140938167301544806fdf2ecd4f45d5797"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "d21089f9b6623f61f917fba9cbbb2c38f27a4979505ae8d823c9e03741c4743d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "8ba901438750d953bbdf822784e2258bff4533a065a26c6cd5d6650551415842"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "b556d0a2281a75fb75c0b80cc99046a49ebbd64ae197b1b0aa5e7510d8dd7255"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00007.bin",
+          "start": 58720256,
+          "bytes": 479038,
+          "sha256": "df9264f37ed34bf2b8a576fa358e383996396bb37ddcb9736e1665daf3091081"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "时间序列InSAR技术与应用_(廖明生，王腾)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 59199294,
+      "sha256": "19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "fa4967e48f3a1625e2aa76ecf3f2ceb429569e8599f501f545552a45f2d28d6f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "01bfbaffd51fab9c3889ecf3d0be72e8d8b62f6d7959fceecc74f0c8919f769f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "b82c98c89784839db34c5a480536a26b92f2b00d1789c85acfba16d919c90d92"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "faf25a390619a818153fc966d8de23140938167301544806fdf2ecd4f45d5797"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "d21089f9b6623f61f917fba9cbbb2c38f27a4979505ae8d823c9e03741c4743d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "8ba901438750d953bbdf822784e2258bff4533a065a26c6cd5d6650551415842"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "b556d0a2281a75fb75c0b80cc99046a49ebbd64ae197b1b0aa5e7510d8dd7255"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea/00007.bin",
+          "start": 58720256,
+          "bytes": 479038,
+          "sha256": "df9264f37ed34bf2b8a576fa358e383996396bb37ddcb9736e1665daf3091081"
+        }
+      ],
+      "pages": 259,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch2",
+    "title": "第二章 · 遥感电磁辐射基础",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第2章.pdf",
+      "bytes": 7497004,
+      "sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977/00000.bin",
+          "start": 0,
+          "bytes": 7497004,
+          "sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第2章.pdf",
+      "bytes": 7497004,
+      "sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977/00000.bin",
+          "start": 0,
+          "bytes": 7497004,
+          "sha256": "001f31a1f869120c145c3b52d28b45ba555d997ff2450c7573f6169f548ac977"
+        }
+      ],
+      "pages": 99,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch3",
+    "title": "第三章 · 遥感平台及运行特点",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第3章.pdf",
+      "bytes": 51987642,
+      "sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "2cc5db68ddcab8fb69fc96e9e69ddbf174622ffd9bc33c158f8487a12a0b97c7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "801fa2303eebbcd66a57ce155be64e7745be1beba51821933d34ea57ef4b6b95"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "b68d8ba742e6524664436104ffc45715e3149d78a4cc1e7c29125570767983b0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "a1d36cf2e2c23cc3e925cf9196601bc72e4dbfd1edea38d1061b54fb66540b4a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "0d88d094b47863bf1c9ad5b40d8fb744f1969a9a31d05765caf41cbb6fe67a69"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "327d77ae93280eed4991f66098686f7e331214f1885f9be91447815f76f86d52"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00006.bin",
+          "start": 50331648,
+          "bytes": 1655994,
+          "sha256": "99ce777640f179642954ee2d94c25825c409df6fdb158e7a2b7006fe449d5e23"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第3章.pdf",
+      "bytes": 51987642,
+      "sha256": "b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "2cc5db68ddcab8fb69fc96e9e69ddbf174622ffd9bc33c158f8487a12a0b97c7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "801fa2303eebbcd66a57ce155be64e7745be1beba51821933d34ea57ef4b6b95"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "b68d8ba742e6524664436104ffc45715e3149d78a4cc1e7c29125570767983b0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "a1d36cf2e2c23cc3e925cf9196601bc72e4dbfd1edea38d1061b54fb66540b4a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "0d88d094b47863bf1c9ad5b40d8fb744f1969a9a31d05765caf41cbb6fe67a69"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "327d77ae93280eed4991f66098686f7e331214f1885f9be91447815f76f86d52"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b16e23b8e9701e3d75c208c4cd5280087b5f121ac2e301a1832f78a4a446239f/00006.bin",
+          "start": 50331648,
+          "bytes": 1655994,
+          "sha256": "99ce777640f179642954ee2d94c25825c409df6fdb158e7a2b7006fe449d5e23"
+        }
+      ],
+      "pages": 186,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch4",
+    "title": "第四章 · 遥感传感器及成像原理",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第4章.pdf",
+      "bytes": 13541049,
+      "sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "c71feaed8f38f147d688193a8afe913ba3e1cc370f46ca8f610d34480497689a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b/00001.bin",
+          "start": 8388608,
+          "bytes": 5152441,
+          "sha256": "e21a5c4ae568614befc5905db441bacfc7d7b6f8f0efeb5322bf187c83c62db3"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第4章.pdf",
+      "bytes": 13541049,
+      "sha256": "2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "c71feaed8f38f147d688193a8afe913ba3e1cc370f46ca8f610d34480497689a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2e95d2ad81d6f6342230379e9e744dcc9393ff33043b6f8668a5abae4fa8183b/00001.bin",
+          "start": 8388608,
+          "bytes": 5152441,
+          "sha256": "e21a5c4ae568614befc5905db441bacfc7d7b6f8f0efeb5322bf187c83c62db3"
+        }
+      ],
+      "pages": 130,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch5",
+    "title": "第五章 · 遥感图像的几何处理",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第5章.pdf",
+      "bytes": 12540919,
+      "sha256": "522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "87551d6513dbafe9a2366618b247c0b4c24afbf9426f8077db8721d9522bd930"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb/00001.bin",
+          "start": 8388608,
+          "bytes": 4152311,
+          "sha256": "f03f5ef7f389a7e8e844ef1ae21d41640dc7527798e2b45230ad4048428df495"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第5章.pdf",
+      "bytes": 12540919,
+      "sha256": "522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "87551d6513dbafe9a2366618b247c0b4c24afbf9426f8077db8721d9522bd930"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/522ccf8a2743061f1f9095406088d1dc91b19d439f08c635fbffc92013a815eb/00001.bin",
+          "start": 8388608,
+          "bytes": 4152311,
+          "sha256": "f03f5ef7f389a7e8e844ef1ae21d41640dc7527798e2b45230ad4048428df495"
+        }
+      ],
+      "pages": 155,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch6",
+    "title": "第六章 · 遥感图像的辐射处理",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第6章.pdf",
+      "bytes": 9273773,
+      "sha256": "5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "99e7b85758f2b18ca075dead45c34448785dbca14297a554ff597dfe2ec8ed5d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6/00001.bin",
+          "start": 8388608,
+          "bytes": 885165,
+          "sha256": "c7cfb6ed4eec4e20a39cac36e95091a2a3c19754cd4c4461aa9deb456e4ca2aa"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第6章.pdf",
+      "bytes": 9273773,
+      "sha256": "5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "99e7b85758f2b18ca075dead45c34448785dbca14297a554ff597dfe2ec8ed5d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5c5babff96bb1a5418eecb3444aad58ba507cb0729bde2d0b8c7e7b10ef456e6/00001.bin",
+          "start": 8388608,
+          "bytes": 885165,
+          "sha256": "c7cfb6ed4eec4e20a39cac36e95091a2a3c19754cd4c4461aa9deb456e4ca2aa"
+        }
+      ],
+      "pages": 102,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch7",
+    "title": "第七章 · 遥感图像判读",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第7章.pdf",
+      "bytes": 4853446,
+      "sha256": "062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662/00000.bin",
+          "start": 0,
+          "bytes": 4853446,
+          "sha256": "062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第7章.pdf",
+      "bytes": 4853446,
+      "sha256": "062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662/00000.bin",
+          "start": 0,
+          "bytes": 4853446,
+          "sha256": "062e953dcfbaf5dc6dbd6d757134e1aed2a6072eb65f51edb788ba7433bc6662"
+        }
+      ],
+      "pages": 80,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch8",
+    "title": "第八章 · 遥感图像自动识别分类",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第8章.pdf",
+      "bytes": 5280127,
+      "sha256": "49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183/00000.bin",
+          "start": 0,
+          "bytes": 5280127,
+          "sha256": "49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第8章.pdf",
+      "bytes": 5280127,
+      "sha256": "49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183/00000.bin",
+          "start": 0,
+          "bytes": 5280127,
+          "sha256": "49ad87a59dc1ac6f705b70e5710855433e96938de582b200b74ff80de5b38183"
+        }
+      ],
+      "pages": 79,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ch9",
+    "title": "第九章 · 遥感技术的应用",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "冯甜甜课程课件",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "第9章.pdf",
+      "bytes": 28452709,
+      "sha256": "2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "1fb30f255d6ca2338962b8da4c127cf5fa9094265e419a24fd0814242ed4d980"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "66e3152d7d4acabaaff0d2c7d501fbdcd56b1c54ed96c8745321a1b2abc4c620"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "94a7f7215080f7452abe87d5a97522268ebdc1ec8ed1da1ddcd7f0c82a9bbdf3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00003.bin",
+          "start": 25165824,
+          "bytes": 3286885,
+          "sha256": "e7c72bbdb2eb5bb6e745fe2e0ba99d83358fa451a5fba4b39232f29cb8d6ee98"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "第9章.pdf",
+      "bytes": 28452709,
+      "sha256": "2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "1fb30f255d6ca2338962b8da4c127cf5fa9094265e419a24fd0814242ed4d980"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "66e3152d7d4acabaaff0d2c7d501fbdcd56b1c54ed96c8745321a1b2abc4c620"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "94a7f7215080f7452abe87d5a97522268ebdc1ec8ed1da1ddcd7f0c82a9bbdf3"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/2253e2838035c1b05f5efcdd815c613dd51153088dcc2088069f45adb1885a14/00003.bin",
+          "start": 25165824,
+          "bytes": 3286885,
+          "sha256": "e7c72bbdb2eb5bb6e745fe2e0ba99d83358fa451a5fba4b39232f29cb8d6ee98"
+        }
+      ],
+      "pages": 101,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-summary",
+    "title": "遥感汇总",
+    "course": "remote-sensing",
+    "type": "课件",
+    "author": "课程教师课件汇总",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "遥感汇总.pdf",
+      "bytes": 129779728,
+      "sha256": "f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "854a1f2f831ebe4e83801c6625c126c3c362c3dfc9d6255443fe62962dadd498"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "9d9e91de1788da49c26748c1ec421378fc57fb8eeb6e24a61b5e6c8f2a8a4b7c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "fdf67e0780abb0016df9cf60c06fbb8097d2e3c9cb0420d728e270828e44e762"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "1470dc4ab529ad26b289153105f5764a4c78774f662c7c8be9048f5b1eb98cbe"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "57596aee35d39e6af7624a278bec281e7f31fbfe09f21e2cb890292a3420bcb5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "abc70aae2f554b68b41b623ac2fb53e4c8970907084498fa4bc77c5428c9dee7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "f47b15cc08cd9f4562aa74b85ae497670310b546372f29f8f91e5032984f2254"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "25a5c2ce17d972a75c3a59dbf9b8e7dd94b041b5df9695a590cbe2ce09d5bfc1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "03c4abcce807e52cc36baae9ba883bcf56ea190a02b64b0476cf5d21f44b47b6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "f298ddb9bbef43b05a51fd97544e46d83a522054fbea2411cb4feca5ec00eddd"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "b3cc0fdbc8d090261c02e9b48ea5c14f506f479c5917acfb4113c578b54be91e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "473f79a3e569a532e90e6d0eee614ff23a12f2dae7fe3419941a6d19be8c76bb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "ec33aa6bbdc391975ff5f52a6b141b52ecb20e8192983e8d7fd2c75fd5d6f66f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "f46e776660313c73ea297ed436b59f987056d4935fa5a69d97b7718c4391a731"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "42ccb70e3d81394bdab68f6db83e02d753199fda1089fa2c0585a9f585cff6ca"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00015.bin",
+          "start": 125829120,
+          "bytes": 3950608,
+          "sha256": "86821e335b2741bfaac69164b39d8d33b8e944da014363465541c886540e81fb"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "遥感汇总.pdf",
+      "bytes": 129779728,
+      "sha256": "f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "854a1f2f831ebe4e83801c6625c126c3c362c3dfc9d6255443fe62962dadd498"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "9d9e91de1788da49c26748c1ec421378fc57fb8eeb6e24a61b5e6c8f2a8a4b7c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "fdf67e0780abb0016df9cf60c06fbb8097d2e3c9cb0420d728e270828e44e762"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "1470dc4ab529ad26b289153105f5764a4c78774f662c7c8be9048f5b1eb98cbe"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "57596aee35d39e6af7624a278bec281e7f31fbfe09f21e2cb890292a3420bcb5"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "abc70aae2f554b68b41b623ac2fb53e4c8970907084498fa4bc77c5428c9dee7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "f47b15cc08cd9f4562aa74b85ae497670310b546372f29f8f91e5032984f2254"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "25a5c2ce17d972a75c3a59dbf9b8e7dd94b041b5df9695a590cbe2ce09d5bfc1"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "03c4abcce807e52cc36baae9ba883bcf56ea190a02b64b0476cf5d21f44b47b6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "f298ddb9bbef43b05a51fd97544e46d83a522054fbea2411cb4feca5ec00eddd"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "b3cc0fdbc8d090261c02e9b48ea5c14f506f479c5917acfb4113c578b54be91e"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "473f79a3e569a532e90e6d0eee614ff23a12f2dae7fe3419941a6d19be8c76bb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "ec33aa6bbdc391975ff5f52a6b141b52ecb20e8192983e8d7fd2c75fd5d6f66f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "f46e776660313c73ea297ed436b59f987056d4935fa5a69d97b7718c4391a731"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "42ccb70e3d81394bdab68f6db83e02d753199fda1089fa2c0585a9f585cff6ca"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/f6d5c1ef4c27055e8714627ed1e8192f98cc6d30bfb24d6b1724b004e6ade402/00015.bin",
+          "start": 125829120,
+          "bytes": 3950608,
+          "sha256": "86821e335b2741bfaac69164b39d8d33b8e944da014363465541c886540e81fb"
+        }
+      ],
+      "pages": 932,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-ccrs-fundamentals",
+    "title": "Fundamentals of Remote Sensing",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "Canada Centre for Remote Sensing",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "Fundamentals_of_Remote_Sensing_(Canada_Centre_for_Remote_Sensing)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 13031289,
+      "sha256": "5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "2d8b8a0d33a6046427a8668e9c499fa9ebdcf600ac96b4932521f444a20a9a2f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0/00001.bin",
+          "start": 8388608,
+          "bytes": 4642681,
+          "sha256": "11737fa0a2c101d3983369ba71b91aaf377de18a8746c52cb08ddaca47ec152c"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "Fundamentals_of_Remote_Sensing_(Canada_Centre_for_Remote_Sensing)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 13031289,
+      "sha256": "5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "2d8b8a0d33a6046427a8668e9c499fa9ebdcf600ac96b4932521f444a20a9a2f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5aafe8c246af1e302b6c95baf5270451b4b5d83c1ed3ac3aaa9e1221204713b0/00001.bin",
+          "start": 8388608,
+          "bytes": 4642681,
+          "sha256": "11737fa0a2c101d3983369ba71b91aaf377de18a8746c52cb08ddaca47ec152c"
+        }
+      ],
+      "pages": 258,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-zhao-analysis",
+    "title": "遥感应用分析原理与方法（第二版）",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "赵英时等 · 科学出版社 · 2013",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "遥感应用分析原理与方法_(赵英时)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 44413159,
+      "sha256": "4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "5e0f5205803a74500fbf5c2a8bdc3ab1838a90f85cd18b8a092a3f6b69366dfa"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "4b74a1af317458b15b971644fdc06ee86129b278b63c033097adff1ffd404240"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "d59befb8c4edca20d1c54821d4cd074ed3ed398571955fe229e02febe431376b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "14ff86b236ddd6ea4fdc3145ab672a6223f39f0dcd92cbb73a5d24917d93226b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "6775844aceab32d6c9862daad75f981576806a090af15be567c8ed18e45cbe28"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00005.bin",
+          "start": 41943040,
+          "bytes": 2470119,
+          "sha256": "015ac96919566b61374a72799e19a00d6b9fc77ac067298b085628c653e96107"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "遥感应用分析原理与方法_(赵英时)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 44413159,
+      "sha256": "4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "5e0f5205803a74500fbf5c2a8bdc3ab1838a90f85cd18b8a092a3f6b69366dfa"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "4b74a1af317458b15b971644fdc06ee86129b278b63c033097adff1ffd404240"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "d59befb8c4edca20d1c54821d4cd074ed3ed398571955fe229e02febe431376b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "14ff86b236ddd6ea4fdc3145ab672a6223f39f0dcd92cbb73a5d24917d93226b"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "6775844aceab32d6c9862daad75f981576806a090af15be567c8ed18e45cbe28"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/4037a1cb2f78135302bd5bde7a1fa6bf894185f96ce66f681a101e04bcc4ec6c/00005.bin",
+          "start": 41943040,
+          "bytes": 2470119,
+          "sha256": "015ac96919566b61374a72799e19a00d6b9fc77ac067298b085628c653e96107"
+        }
+      ],
+      "pages": 521,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-campbell-introduction",
+    "title": "Introduction to Remote Sensing, Sixth Edition",
+    "course": "remote-sensing",
+    "type": "参考教材",
+    "author": "James B. Campbell · Randolph H. Wynne · Valerie A. Thomas · Guilford Press · 2023",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 157674250,
+      "sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "66a0676b6983874d623b6785276b1c4e96417d22ca6d77267eb9c3b18616220d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "3bdc212986a6e7ae1384c4c0891722d8ea81fb144628f2a4b3e6b431bab77d18"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "f800b34f4b58eb0dce0ba5bbb178826ed18ce45154315914934accfc1d86b914"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "9414eaf20d90057845e21d027161b4e524c5afacd59dc015d9cd08ab2ed327c4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "420c8f4979787abe87f93b5070ee1e90f61adc9d35efa40b1cfac8a92bf1ce3f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "047065a07b907bea7add7690a86c7f53cd9e3d79e19fb64b3f921dbf384307fb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "f1a1b43d72c6eb88a5a1e59050d823edc017ccd632bff712d2665677307a5311"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "cd4a62b3cad86124a4802fc830194e875200d0742107e3978ac3b2ca78ed29bf"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "b7159849523b2b86ab7fdc79cd7dc005e97fb6a8ad8e8933b40114d124662896"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "7aa0b6ceb1f83882f2baa4ec3d122afa11a06ffaeb6936b6a90b0c9897f9e85a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "e135417606b73b467ef330df95631435b30d0ee16d7e7f90a7f0ae202b8be208"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "69902cc38a2c7454f97cb2ad1b0febe31734ecdbef24a7d7c2186698a37a1e41"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "12f01f01895a91581dcaaf6f2876149d626dffac673859231f0fd8f631234083"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "675d2ec0fe186a6bab08692736bd4e72ff9ae3567e6cdf4b2af62f8f43232890"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "9709ad46f6743ae6b4239e7a5f0a0aa4d9c256167f685394597e3bfab8c6dc6f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00015.bin",
+          "start": 125829120,
+          "bytes": 8388608,
+          "sha256": "9f6e93674002cbe9bed7adf826e75eda2d1bc74545b165eaf7cd7cbe403997a7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00016.bin",
+          "start": 134217728,
+          "bytes": 8388608,
+          "sha256": "32a6441ee52936932e032c4ea91129666d589861c0a60c4b89893d311de3a5f0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00017.bin",
+          "start": 142606336,
+          "bytes": 8388608,
+          "sha256": "9be668144635a3953b766720748dada2fa466ae89619e7ec3c4feb3cefff542d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00018.bin",
+          "start": 150994944,
+          "bytes": 6679306,
+          "sha256": "a5268957d17ce84649439fa675ac4ebb23865f7a7dfd86fe573615b0e6eae2d4"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+      "bytes": 157674250,
+      "sha256": "d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "66a0676b6983874d623b6785276b1c4e96417d22ca6d77267eb9c3b18616220d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "3bdc212986a6e7ae1384c4c0891722d8ea81fb144628f2a4b3e6b431bab77d18"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "f800b34f4b58eb0dce0ba5bbb178826ed18ce45154315914934accfc1d86b914"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "9414eaf20d90057845e21d027161b4e524c5afacd59dc015d9cd08ab2ed327c4"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00004.bin",
+          "start": 33554432,
+          "bytes": 8388608,
+          "sha256": "420c8f4979787abe87f93b5070ee1e90f61adc9d35efa40b1cfac8a92bf1ce3f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00005.bin",
+          "start": 41943040,
+          "bytes": 8388608,
+          "sha256": "047065a07b907bea7add7690a86c7f53cd9e3d79e19fb64b3f921dbf384307fb"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00006.bin",
+          "start": 50331648,
+          "bytes": 8388608,
+          "sha256": "f1a1b43d72c6eb88a5a1e59050d823edc017ccd632bff712d2665677307a5311"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00007.bin",
+          "start": 58720256,
+          "bytes": 8388608,
+          "sha256": "cd4a62b3cad86124a4802fc830194e875200d0742107e3978ac3b2ca78ed29bf"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00008.bin",
+          "start": 67108864,
+          "bytes": 8388608,
+          "sha256": "b7159849523b2b86ab7fdc79cd7dc005e97fb6a8ad8e8933b40114d124662896"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00009.bin",
+          "start": 75497472,
+          "bytes": 8388608,
+          "sha256": "7aa0b6ceb1f83882f2baa4ec3d122afa11a06ffaeb6936b6a90b0c9897f9e85a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00010.bin",
+          "start": 83886080,
+          "bytes": 8388608,
+          "sha256": "e135417606b73b467ef330df95631435b30d0ee16d7e7f90a7f0ae202b8be208"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00011.bin",
+          "start": 92274688,
+          "bytes": 8388608,
+          "sha256": "69902cc38a2c7454f97cb2ad1b0febe31734ecdbef24a7d7c2186698a37a1e41"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00012.bin",
+          "start": 100663296,
+          "bytes": 8388608,
+          "sha256": "12f01f01895a91581dcaaf6f2876149d626dffac673859231f0fd8f631234083"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00013.bin",
+          "start": 109051904,
+          "bytes": 8388608,
+          "sha256": "675d2ec0fe186a6bab08692736bd4e72ff9ae3567e6cdf4b2af62f8f43232890"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00014.bin",
+          "start": 117440512,
+          "bytes": 8388608,
+          "sha256": "9709ad46f6743ae6b4239e7a5f0a0aa4d9c256167f685394597e3bfab8c6dc6f"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00015.bin",
+          "start": 125829120,
+          "bytes": 8388608,
+          "sha256": "9f6e93674002cbe9bed7adf826e75eda2d1bc74545b165eaf7cd7cbe403997a7"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00016.bin",
+          "start": 134217728,
+          "bytes": 8388608,
+          "sha256": "32a6441ee52936932e032c4ea91129666d589861c0a60c4b89893d311de3a5f0"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00017.bin",
+          "start": 142606336,
+          "bytes": 8388608,
+          "sha256": "9be668144635a3953b766720748dada2fa466ae89619e7ec3c4feb3cefff542d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d4ede094820cd90029ed2495d8011a56769d1c0b8d6454713c79bc3f9ff3d7b2/00018.bin",
+          "start": 150994944,
+          "bytes": 6679306,
+          "sha256": "a5268957d17ce84649439fa675ac4ebb23865f7a7dfd86fe573615b0e6eae2d4"
+        }
+      ],
+      "pages": 675,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-notes",
+    "title": "遥感原理与应用笔记",
+    "course": "remote-sensing",
+    "type": "课程笔记",
+    "author": "课程辅助资料",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "遥感原理与应用笔记.pdf",
+      "bytes": 34915009,
+      "sha256": "9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "f5992bab8d4ddcdfeb6c3a76e6f9083f19d5dd69f7cabf7ee7d78c4584752d0d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "f13fa3466629609ab5314486d99e42c859b3d006bcccea29ade1f7be652e146d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "ef9abe8de93e9804a983d897f88008efdcff7e8ddb605d85b6c2e1d10a0a78c6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "fdd48db2a5449c10b1d44ae3520b51e7a28cfb633030720d058226aa657e59ea"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00004.bin",
+          "start": 33554432,
+          "bytes": 1360577,
+          "sha256": "215b608fee4bd4b01a0e60ce98c8058b6a863a9876e5c1350e8026128618ff01"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "遥感原理与应用笔记.pdf",
+      "bytes": 34915009,
+      "sha256": "9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00000.bin",
+          "start": 0,
+          "bytes": 8388608,
+          "sha256": "f5992bab8d4ddcdfeb6c3a76e6f9083f19d5dd69f7cabf7ee7d78c4584752d0d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00001.bin",
+          "start": 8388608,
+          "bytes": 8388608,
+          "sha256": "f13fa3466629609ab5314486d99e42c859b3d006bcccea29ade1f7be652e146d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00002.bin",
+          "start": 16777216,
+          "bytes": 8388608,
+          "sha256": "ef9abe8de93e9804a983d897f88008efdcff7e8ddb605d85b6c2e1d10a0a78c6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00003.bin",
+          "start": 25165824,
+          "bytes": 8388608,
+          "sha256": "fdd48db2a5449c10b1d44ae3520b51e7a28cfb633030720d058226aa657e59ea"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/9e581d0019dc0178d81cf30c7a940941a0fb72523719306bba25adbca2085d5b/00004.bin",
+          "start": 33554432,
+          "bytes": 1360577,
+          "sha256": "215b608fee4bd4b01a0e60ce98c8058b6a863a9876e5c1350e8026128618ff01"
+        }
+      ],
+      "pages": 11,
+      "kind": "original-pdf"
+    }
+  },
+  {
+    "id": "rs-english-summary",
+    "title": "英文课程总结 · Lecture 1–3",
+    "course": "remote-sensing",
+    "type": "课程笔记",
+    "author": "英文班课程资料",
+    "format": "DOCX",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "2451561_Chatper1_summary.docx",
+      "bytes": 1918804,
+      "sha256": "527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f/00000.bin",
+          "start": 0,
+          "bytes": 1918804,
+          "sha256": "527b3a49dd8db65c9c2cd5d90cc7a753e99b1715ff7adebc72e8b2f3eb76212f"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "rs-english-summary.pdf",
+      "bytes": 1959304,
+      "sha256": "d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669/00000.bin",
+          "start": 0,
+          "bytes": 1959304,
+          "sha256": "d0babb26f37dedabb37234808399a14dc652c13d413b1809c6ee6fc54549b669"
+        }
+      ],
+      "pages": 20,
+      "kind": "office-pdf-export"
+    }
+  },
+  {
+    "id": "rs-gaofen",
+    "title": "我国高分系列卫星传感器四种分辨率调研",
+    "course": "remote-sensing",
+    "type": "调研资料",
+    "author": "课程调研资料",
+    "format": "PDF",
+    "coverageNote": "原资料范围可能超出已整理讲义；提供原件预览不表示全部内容已有网站讲义。",
+    "original": {
+      "filename": "我国高分系列卫星传感器四种分辨率调研.pdf",
+      "bytes": 291528,
+      "sha256": "b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498/00000.bin",
+          "start": 0,
+          "bytes": 291528,
+          "sha256": "b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498"
+        }
+      ]
+    },
+    "preview": {
+      "filename": "我国高分系列卫星传感器四种分辨率调研.pdf",
+      "bytes": 291528,
+      "sha256": "b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498",
+      "mime": "application/pdf",
+      "parts": [
+        {
+          "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498/00000.bin",
+          "start": 0,
+          "bytes": 291528,
+          "sha256": "b5b90526e6756e446509853e5ab150daeb68cb0669e3b9755c5990e5ee271498"
+        }
+      ],
+      "pages": 6,
+      "kind": "original-pdf"
+    }
+  }
+]

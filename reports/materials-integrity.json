@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "originals": 43,
+  "byCourse": {
+    "ml": 18,
+    "geodesy": 6,
+    "insar": 4,
+    "remote-sensing": 15
+  },
+  "previewPages": 6572,
+  "originalBytes": 1095778748,
+  "uniqueSourceVersions": 61,
+  "storedParts": 163,
+  "storedBytes": 1103484064,
+  "publicBytes": 137039178,
+  "checks": [
+    "All original files reconstruct to their SHA-256",
+    "All PDF export bytes match their recorded SHA-256",
+    "Every original has a resource reader and original download",
+    "Chunk URLs use immutable commit revisions",
+    "Large archives remain outside the Pages artifact"
+  ]
+}

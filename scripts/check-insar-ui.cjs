@@ -45,10 +45,10 @@ async function run(){
  checks.push('SVG text bounding boxes remain within viewBox');
  await page.goto(base+'resources.html#insar',{waitUntil:'networkidle'});
  assert.equal(await page.getByLabel('课程',{exact:true}).inputValue(),'insar');assert.equal(await page.locator('.resource-card').count(),5);
- assert.equal(await page.locator('.resource-card a[download]').count(),1);await page.getByLabel('获取方式',{exact:true}).selectOption('download');assert.equal(await page.locator('.resource-card').count(),1);
+ assert.equal(await page.locator('.resource-card a[aria-label^="下载 "]').count(),5);await page.getByLabel('获取方式',{exact:true}).selectOption('download');assert.equal(await page.locator('.resource-card').count(),5);
  const downloadEvent=page.waitForEvent('download');await page.getByRole('link',{name:'下载 ZIP：InSAR 前三章 · 离线讲义与配图',exact:true}).click();const download=await downloadEvent;assert.equal(download.suggestedFilename(),'insar-first-three-chapters.zip');
  const bytes=await page.request.get(base+'insar/downloads/insar-first-three-chapters.zip');assert.equal(crypto.createHash('sha256').update(await bytes.body()).digest('hex'),crypto.createHash('sha256').update(fs.readFileSync('public/insar/downloads/insar-first-three-chapters.zip')).digest('hex'));
- checks.push('InSAR filter, local-only originals and actual matching ZIP download');
+ checks.push('InSAR filter, four readable downloadable originals and actual matching ZIP download');
  await page.goto(base+'course-insar.html',{waitUntil:'networkidle'});await page.getByRole('button',{name:'搜索课程笔记',exact:true}).click();await page.locator('input[type=search]').fill('相干斑');
  const result=page.locator('.VPLocalSearchBox a[href*="insar-interpretation.html"]').first();await result.waitFor();await result.click();await page.waitForURL('**/insar-interpretation.html*');checks.push('Chinese search retrieves InSAR chapter');
  await page.goto(base+'insar-imaging.html#i2-example-bandwidth',{waitUntil:'networkidle'});assert(await page.locator('#i2-example-bandwidth').evaluate(el=>el.closest('details').open));await page.goto(base,{waitUntil:'networkidle'});assert((await page.locator('.continue-reading').getAttribute('href')).includes('insar-imaging.html#i2-example-bandwidth'));checks.push('deep extra anchor expands and continue-reading preserves it');
