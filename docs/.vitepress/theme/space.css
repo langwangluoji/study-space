@@ -127,3 +127,51 @@
   .hub-section-heading { align-items: start; }
 }
 @media(prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; animation-duration: 0s !important; } }
+
+/* Supporting pages share a quieter, readable card layout. */
+.supporting-page .vp-doc p, .supporting-page .vp-doc li { font-family: var(--vp-font-family-base); }
+.guide-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 14px; }
+.guide-tabs button { padding: 8px 14px; border: 1px solid var(--line); border-radius: 6px; font-size: 13px; line-height: 1.6; background: var(--space-card); }
+.guide-tabs button[aria-pressed=true] { background: var(--accent); color: var(--vp-c-bg); border-color: var(--accent); }
+.guide-tabs :focus-visible, .guide-card a:focus-visible, .scope-card a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.vp-doc .guide-count { color: var(--vp-c-text-2); font-size: 13px; }
+.extension-grid, .principle-grid, .scope-grid, .guide-entry-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin: 24px 0; }
+.guide-card, .scope-card, .guide-entry { min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 10px; background: var(--space-card); }
+.guide-card { display: flex; flex-direction: column; }
+.vp-doc .guide-label, .guide-label { color: var(--accent); font: 600 11px/1.7 var(--vp-font-family-base); letter-spacing: .04em; margin: 0; }
+.vp-doc .guide-card h3, .vp-doc .scope-card h3, .vp-doc .guide-entry h3 { margin: 12px 0; font: 600 19px/1.6 var(--vp-font-family-base); }
+.vp-doc .guide-card p, .vp-doc .scope-card p, .vp-doc .guide-entry p { font: 14px/1.85 var(--vp-font-family-base); color: var(--vp-c-text-2); margin: 8px 0; }
+.vp-doc .guide-card ol { padding-left: 20px; margin: 14px 0 20px; font-size: 13px; }
+.extension-materials { padding-top: 16px; border-top: 1px solid var(--line); margin-top: auto; }
+.extension-materials > span { font-size: 11px; color: var(--vp-c-text-2); }
+.extension-materials a { display: block; font-size: 13px; margin: 12px 0; }
+.extension-materials small { display: block; font-size: 11px; color: var(--vp-c-text-2); margin-top: 2px; text-decoration: none; }
+.guide-return { padding-top: 12px; font-size: 13px; }
+.vp-doc .resource-access { font-size: 12px; color: var(--vp-c-text-2); }
+.creator-hero { padding: 16px 0 28px; }
+.creator-identity { display: flex; align-items: center; gap: 26px; }
+.creator-identity img, .creator-monogram { width: 96px; height: 96px; flex-shrink: 0; border-radius: 24px; border: 1px solid var(--line); }
+.creator-monogram { display: grid; place-items: center; font: 28px Georgia,serif; color: var(--accent); background: var(--vp-c-bg-soft); }
+.vp-doc .creator-identity h1 { font-size: clamp(30px,4vw,46px); line-height: 1.25; margin: 10px 0; }
+.vp-doc .creator-handle { color: var(--vp-c-text-2); font-size: 13px; margin: 0; overflow-wrap: anywhere; }
+.vp-doc .creator-lead { font-size: 22px; color: var(--vp-c-text-1); margin: 32px 0 14px; font-weight: 500; }
+.creator-note { padding: 18px 22px; border-left: 3px solid var(--space-gold); background: var(--vp-c-bg-soft); border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.9; margin: 26px 0; }
+.scope-summary { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-top: 24px; }
+.scope-summary strong { color: var(--accent); font-size: 22px; }
+.scope-summary span, .scope-card > span { font-size: 12px; color: var(--vp-c-text-2); }
+.scope-card > a { display: block; font-size: 13px; margin-top: 18px; }
+.vp-doc .creator-signoff { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 40px; color: var(--accent); font-size: 13px; }
+.guide-entry a { display: inline-block; margin-top: 14px; font-size: 13px; }
+@media(max-width:760px) {
+  .extension-grid, .principle-grid, .scope-grid, .guide-entry-grid { grid-template-columns: 1fr; }
+  .guide-card, .scope-card, .guide-entry { padding: 20px; }
+  .creator-identity { gap: 18px; }
+  .creator-identity img, .creator-monogram { width: 72px; height: 72px; border-radius: 18px; }
+  .vp-doc .creator-identity h1 { font-size: 30px; }
+  .vp-doc .creator-lead { font-size: 19px; }
+}
+@media(max-width:360px) {
+  .creator-identity { align-items: flex-start; gap: 14px; }
+  .creator-identity img, .creator-monogram { width: 56px; height: 56px; border-radius: 14px; }
+  .vp-doc .creator-identity h1 { font-size: 25px; }
+}

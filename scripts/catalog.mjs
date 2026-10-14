@@ -54,6 +54,15 @@ export function generateCatalog(){
     }
     return result;
   });
+  const paths=JSON.parse(fs.readFileSync('learning-paths.config.json','utf8'));
+  const pathIds=new Set();
+  for(const p of paths){
+    if(!p.id||pathIds.has(p.id)||!courses.has(p.course))throw Error('扩展路线 ID 或课程无效: '+p.id);
+    pathIds.add(p.id);
+    if(!p.title||!p.purpose||!p.returnLabel||!Array.isArray(p.steps)||!p.steps.length)throw Error('扩展路线说明不完整: '+p.id);
+    if(!Array.isArray(p.resources)||!p.resources.length||p.resources.some(id=>!resources.some(r=>r.id===id&&r.course===p.course)))throw Error('扩展路线资料无效: '+p.id);
+    if(!fs.existsSync(localPath(p.returnTo,'docs').replace(/\.html$/,'.md')))throw Error('扩展路线返回页缺失: '+p.id);
+  }
   fs.writeFileSync('docs/.vitepress/resource-catalog.json',JSON.stringify(enriched,null,2)+'\n');
   fs.writeFileSync('public/resources-catalog.json',JSON.stringify(enriched,null,2)+'\n');
   const ml=JSON.parse(fs.readFileSync('course.config.json','utf8'));

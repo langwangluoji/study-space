@@ -13,6 +13,9 @@ import ResourceLibrary from './ResourceLibrary.vue';
 import CourseLibrary from './CourseLibrary.vue';
 import ContinueReading from './ContinueReading.vue';
 import PageContext from './PageContext.vue';
+import LearningExtensions from './LearningExtensions.vue';
+import CreatorIdentity from './CreatorIdentity.vue';
+import SiteScope from './SiteScope.vue';
 import {readingTitle} from './reading-targets.js';
 import './style.css';
 import './space.css';
@@ -20,7 +23,7 @@ import './rs.css';
 export default {
   extends:DefaultTheme,
   Layout(){return h(DefaultTheme.Layout,null,{'doc-before':()=>h(PageContext)})},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading)},
+  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading);app.component('LearningExtensions',LearningExtensions);app.component('CreatorIdentity',CreatorIdentity);app.component('SiteScope',SiteScope)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{

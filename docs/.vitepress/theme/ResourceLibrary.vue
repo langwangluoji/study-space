@@ -45,7 +45,7 @@ onUnmounted(()=>{stop?.();window.removeEventListener('hashchange',syncUrl);windo
     <div class="resource-grid">
       <article v-for="r in filtered" :key="r.id" class="resource-card">
         <div class="resource-meta"><span>{{r.type}} · {{r.format}}</span><span :class="['availability', {local:r.localOnly}]">{{r.localOnly?'仅本地存档':r.external?'外部下载':r.file?'站内下载':'在线索引'}}</span></div>
-        <h3>{{r.title}}</h3><p class="resource-author">{{r.author}}<template v-if="r.pages"> · {{r.pages}} 页</template><template v-if="r.bytes"> · {{size(r.bytes)}}</template></p><p>{{r.description}}</p><span class="resource-course">{{labels[r.course]}}</span>
+        <h3>{{r.title}}</h3><p class="resource-author">{{r.author}}<template v-if="r.pages"> · {{r.pages}} 页</template><template v-if="r.bytes"> · {{size(r.bytes)}}</template></p><p>{{r.description}}</p><p v-if="r.localOnly" class="resource-access">原件仅维护者本地存档，本站不提供全文下载。</p><span class="resource-course">{{labels[r.course]}}</span>
         <div class="resource-actions">
           <a :href="withBase(r.preview)" :aria-label="'阅读：'+r.title">{{r.localOnly?'查看说明与出处':r.reader==='file'?'阅读资料说明':'在线阅读'}} <span aria-hidden="true">→</span></a>
           <a v-if="r.file" :href="withBase(r.file)" :aria-label="'下载 '+r.format+'：'+r.title" download>下载 {{r.format}}</a>

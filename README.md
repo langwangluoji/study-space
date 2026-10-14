@@ -51,11 +51,17 @@ InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwa
 
 ### 学习空间入口与资源清单
 
-首页、课程目录使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖机器学习与大地测量。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的正文，不把未完成范围写成已完成。
+首页、课程目录与制作者页的范围说明使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖清单中的全部课程。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的正文，不把未完成范围写成已完成。
 
 资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。可下载文件使用 `file`，可选 PDF 使用 `alternate`；外部下载使用 `external`，作者项目使用 `source`，版本发布页使用 `release`；尚未公开的原件只设 `localOnly: true`，不能同时提供下载字段。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径；原件放在 `public/`。生成器检查预览及下载文件、归属、重复 ID 和公开状态，并从实际文件获取大小，从已有 PDF 核对记录读取页数。不要手工修改生成的 `public/resources-catalog.json`。需要生成原件阅读页时设置 `reader: "pdf"` 或 `reader: "file"`，并提供 `file` 与唯一 `preview` 页面地址；生成页随清单更新，课程返回链接由所属课程清单取得。大地原件以 `materialId` 连接公开校验清单。
 
-资料新增只需更新清单和实际文件，再运行 `npm run build`。章节修订保持旧锚点，更新来源与范围。新增第三门课程可先运行 `node scripts/add-course.mjs --slug remote-sensing --title 遥感基础` 创建课程入口、首章与来源模板；填入实际内容、修订状态与来源后再发布。新课程默认使用 `<slug>-` 章节前缀，导航自动按前缀匹配；需要更多章节时更新清单中的 `chapters`。这个命令不会读取或上传本地私人资料，不会生成经过核验的知识正文。
+资料新增只需更新清单和实际文件，再运行 `npm run build`。章节修订保持旧锚点，更新来源与范围。新增课程可用 `node scripts/add-course.mjs --slug new-course --title 新课程` 创建课程入口、首章与来源模板；将示例 ID 与标题换成尚未注册的课程，填入实际内容、修订状态与来源后再发布。新课程默认使用 `<slug>-` 章节前缀，导航自动按前缀匹配；需要更多章节时更新清单中的 `chapters`。这个命令不会读取或上传本地私人资料，不会生成经过核验的知识正文。
+
+### 制作者主页与辅助页面
+
+`creator.config.json` 维护制作者公开姓名、GitHub 昵称、主页、头像路径与仓库；头像来源保留在 `avatarSource`，本地副本在 `public/creator/`。不在没有依据时补写个人经历。网站介绍在 `docs/about.md`，其中课程范围与资源条目数使用统一清单。
+
+`learning-paths.config.json` 维护资料扩展的学习问题、建议顺序、资源 ID 与返回正文链接。推荐资料引用 `resources.config.json` 的现有 ID；生成器检查课程归属与返回页，构建继续检查锚点。路线是按需补充，不是整本必读要求。`docs/textbooks.md` 说明教材用途与获取范围，`docs/site-guide.md` 维护网站使用与下载帮助。反馈和资料推荐模板在 `.github/ISSUE_TEMPLATE/`；入口只打开表单，不自动提交。
 
 ### 机器学习讲次与知识点
 

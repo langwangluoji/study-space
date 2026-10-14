@@ -26,5 +26,5 @@ sidebar: false
       <a class="hub-resource path-card" href="/study-space/resources.html"><span class="path-number">03 / RESOURCES</span><strong>找到原始资料 <span aria-hidden="true">↗</span></strong><span>按课程和类型筛选教材、课件、代码，在线阅读或下载。</span></a>
     </div>
   </section>
-  <section class="hub-growing"><p class="hub-eyebrow">KNOWLEDGE IN PROGRESS</p><h2>知识可以持续生长。</h2><p>把新的资料放回课程脉络，保留出处，核对差异，让每一次整理都有迹可循。</p><a href="/study-space/contribute.html">了解知识库的整理与共建 <span aria-hidden="true">→</span></a></section>
+  <section class="hub-growing"><p class="hub-eyebrow">KNOWLEDGE IN PROGRESS</p><h2>知识可以持续生长。</h2><p>把新的资料放回课程脉络，保留出处，核对差异，让每一次整理都有迹可循。</p><div class="directory-tools"><a href="/study-space/extensions.html">按问题发现扩展资料 →</a><a href="/study-space/about.html">认识制作者与这个空间 →</a><a href="/study-space/contribute.html">参与整理与共建 →</a></div></section>
 </main>
