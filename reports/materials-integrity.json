@@ -1,8 +1,11 @@
 {
   "status": "PASS",
   "originals": 43,
-  "publisherReferences": 2,
-  "publicCopies": 1,
+  "access": {
+    "archive": 42,
+    "publisher": 0,
+    "publicCopy": 1
+  },
   "byCourse": {
     "ml": 18,
     "geodesy": 6,
@@ -14,11 +17,11 @@
   "uniqueSourceVersions": 61,
   "storedParts": 163,
   "storedBytes": 1103484064,
-  "publicBytes": 137627329,
+  "publicBytes": 137631841,
   "checks": [
     "All original files reconstruct to their SHA-256",
     "All PDF export bytes match their recorded SHA-256",
-    "Every archived source has a public reader/download, publisher access, or a declared public copy",
+    "Every material has indexed access through an archive reader, reviewed public copy or legitimate publisher portal",
     "Chunk URLs use immutable commit revisions",
     "Large archives remain outside the Pages artifact"
   ]

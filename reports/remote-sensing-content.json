@@ -6,7 +6,7 @@
       "formulas": 0,
       "concepts": 2,
       "languagePairs": 2,
-      "bytes": 6061
+      "bytes": 5998
     },
     {
       "slug": "remote-sensing-ch1",
@@ -48,7 +48,7 @@
       "formulas": 0,
       "concepts": 49,
       "languagePairs": 43,
-      "bytes": 126097
+      "bytes": 121924
     }
   ]
 }

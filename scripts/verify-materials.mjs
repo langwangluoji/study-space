@@ -29,13 +29,21 @@ for(const r of catalog){
   }
 }
 const resources=JSON.parse(fs.readFileSync('resources.config.json','utf8'));
+const access={archive:0,publisher:0,publicCopy:0};
 for(const r of catalog){
-  const resource=resources.find(s=>s.archiveId===r.id)||resources.find(s=>s.id===r.id&&(s.reader==='publisher'||s.publicCopy));
-  assert(resource,'Original missing from resource library: '+r.id);assert.equal(resource.course,r.course);assert(!resource.localOnly);
-  if(resource.reader==='publisher'){assert(/^https:\/\//.test(resource.accessUrl));assert(!resource.archiveId,'Publisher entry must not expose the archived full scan')}
-  if(resource.publicCopy){assert(resource.file&&fs.existsSync(path.join('public',resource.file)));assert(!resource.archiveId,'Public copy must not link to the original archived file')}
+  const resource=resources.find(s=>s.archiveId===r.id||s.id===r.id);
+  assert(resource,'Material missing from resource library: '+r.id);assert.equal(resource.course,r.course);assert(!resource.localOnly);
+  if(resource.reader==='publisher'){
+    assert(/^https:\/\/(?:www\.)?(?:guilford\.com|sciencep\.com)\//.test(resource.accessUrl),'Invalid publisher portal: '+r.id);
+    assert(!resource.file&&!resource.archiveId,'Publisher entry must not claim a scanned-file download');access.publisher++;
+  }else if(resource.publicCopy){
+    assert(resource.file?.startsWith('/remote-sensing/materials/')&&!resource.file.includes('..'),'Invalid public-copy location');
+    assert(/^[a-f\d]{64}$/.test(resource.publicSha256),'Public copy needs its reviewed SHA-256');
+    assert.equal(hash(fs.readFileSync(path.join('public',resource.file.slice(1)))),resource.publicSha256,'Reviewed public copy differs: '+r.id);
+    assert.notEqual(resource.publicSha256,r.original.sha256,'Public copy unexpectedly equals the identifying original');access.publicCopy++;
+  }else{assert.equal(resource.archiveId,r.id,'Missing original archive reader: '+r.id);access.archive++}
 }
 function size(dir){return fs.readdirSync(dir,{withFileTypes:true}).reduce((n,f)=>n+(f.isDirectory()?size(path.join(dir,f.name)):fs.statSync(path.join(dir,f.name)).size),0)}
 const publicBytes=size('public');assert(publicBytes<850*1024*1024,'Public deploy exceeds budget');
-const report={status:'PASS',originals:catalog.length,publisherReferences:resources.filter(r=>r.reader==='publisher').length,publicCopies:resources.filter(r=>r.publicCopy).length,byCourse:Object.fromEntries([...new Set(catalog.map(r=>r.course))].map(c=>[c,catalog.filter(r=>r.course===c).length])),previewPages:catalog.reduce((n,r)=>n+r.preview.pages,0),originalBytes:catalog.reduce((n,r)=>n+r.original.bytes,0),uniqueSourceVersions:verified.size,storedParts:parts,storedBytes,publicBytes,checks:['All original files reconstruct to their SHA-256','All PDF export bytes match their recorded SHA-256','Every archived source has a public reader/download, publisher access, or a declared public copy','Chunk URLs use immutable commit revisions','Large archives remain outside the Pages artifact']};
+const report={status:'PASS',originals:catalog.length,access,byCourse:Object.fromEntries([...new Set(catalog.map(r=>r.course))].map(c=>[c,catalog.filter(r=>r.course===c).length])),previewPages:catalog.reduce((n,r)=>n+r.preview.pages,0),originalBytes:catalog.reduce((n,r)=>n+r.original.bytes,0),uniqueSourceVersions:verified.size,storedParts:parts,storedBytes,publicBytes,checks:['All original files reconstruct to their SHA-256','All PDF export bytes match their recorded SHA-256','Every material has indexed access through an archive reader, reviewed public copy or legitimate publisher portal','Chunk URLs use immutable commit revisions','Large archives remain outside the Pages artifact']};
 fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/materials-integrity.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

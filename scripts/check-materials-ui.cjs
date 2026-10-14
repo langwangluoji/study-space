@@ -101,7 +101,7 @@ async function routedContext(parts,{width=1280,height=900}={}){
   p.on('pageerror',e=>tracker.pageErrors.push(e.message));
   p.on('console',m=>{if(m.type()==='error')tracker.consoleErrors.push(m.text())});
   p.on('response',r=>{if(r.status()>=400)tracker.httpErrors.push(`HTTP ${r.status()} ${r.url()}`);
-   if(new URL(r.url()).pathname.endsWith('/material-viewer/viewer.js'))r.body().then(bytes=>tracker.readerModules.push({url:r.url(),sha256:hash(bytes),
+   if(new URL(r.url()).pathname.endsWith('/material-viewer/viewer.js'))r.body().then(bytes=>tracker.readerModules.push({url:r.url(),sha256:hash(bytes),hasHashchangeListener:bytes.toString().includes("addEventListener('hashchange'"),
     retryHandler:bytes.toString().match(/el\('retry'\)\.onclick=([^;]+)/)?.[1]})).catch(()=>{});
   });
  });
@@ -227,6 +227,41 @@ async function run(){
     ...(knownBlank?{beforeLast,knownBlankEvidence:'Original file p675 visually rendered with Poppler and inspected: white; original p674 also has no extracted text, so p673 verifies visible content. Exception is pinned to the original SHA-256.'}:{})};
   }finally{await context.close()}
  });
+ await caseRun('RS legacy links follow configured access and anonymous public copy',async()=>{
+  const resources=JSON.parse(fs.readFileSync(path.join(root,'resources-catalog.json'),'utf8'));
+  const {context,page,tracker}=await routedContext(parts);
+  try{
+   const publisherIDs=resources.filter(r=>r.reader==='publisher').map(r=>r.id);
+   for(const id of publisherIDs){
+    const resource=resources.find(r=>r.id===id);
+    await page.goto(`${origin}${prefix}material-viewer/index.html?id=${id}&download=1`,{waitUntil:'domcontentloaded'});
+    await page.waitForFunction(()=>document.body.dataset.ready==='true',null,{timeout});
+    assert.equal(await page.locator('#download').getAttribute('href'),resource.accessUrl);
+    assert(await page.locator('#page').isDisabled());assert(await page.locator('#paper').isHidden());
+    assert.equal(tracker.requests.length,0,'Publisher portal must not fetch archived scans');
+   }
+   const resource=resources.find(r=>r.id==='rs-gaofen'),first=await go(page,'rs-gaofen');assert.equal(first.total,6);
+   const last=await jump(page,6);assert.equal(tracker.requests.length,0,'Public copy must not fetch private original chunks');
+   const pending=page.waitForEvent('download',{timeout});await page.locator('#download').click();const download=await pending;
+   assert.equal(await download.failure(),null);const bytes=fs.readFileSync(await download.path());assert.equal(bytes.length,resource.bytes);assert.equal(hash(bytes),resource.publicSha256);
+   assert(download.suggestedFilename().includes('公开副本'));
+   assertNoErrors(tracker);
+   // Old service-worker download routes must apply the same access rules.
+   await page.evaluate(async()=>{await navigator.serviceWorker.register('../material-download-worker.js',{scope:'../'});await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(resolve=>navigator.serviceWorker.addEventListener('controllerchange',resolve,{once:true}))});
+   const rules=await page.evaluate(async publisherIDs=>{
+    const base=new URL('../',location.href),results=[];
+    for(const id of [...publisherIDs,'rs-gaofen']){
+     const response=await fetch(new URL('material-download/'+id+'/original.pdf',base));
+     results.push({id,status:response.status,url:response.url,bytes:response.status===200?Array.from(new Uint8Array(await response.arrayBuffer())):null});
+    }return results;
+   },publisherIDs);
+   assert.deepEqual(rules.slice(0,publisherIDs.length).map(r=>r.status),publisherIDs.map(()=>403));assert.equal(hash(Buffer.from(rules.at(-1).bytes)),resource.publicSha256);
+   assert.equal(tracker.requests.length,0);assert.deepEqual(tracker.pageErrors,[]);
+   assert.deepEqual(tracker.httpErrors.filter(e=>!/^HTTP 403 .*\/material-download\/rs-(campbell-introduction|zhao-analysis)\/original\.pdf$/.test(e)),[]);
+   assert.deepEqual(tracker.consoleErrors.filter(e=>!e.includes('403')),[]);
+   return {first,last,publicCopyBytes:bytes.length,publicCopySha256:hash(bytes),legacyDownloadStatuses:rules.map(r=>({id:r.id,status:r.status}))};
+  }finally{await context.close()}
+ });
  await caseRun('Word 20-page PDF reading copy',async()=>{
   const {context,page,tracker}=await routedContext(parts);
   try{const first=await go(page,'rs-english-summary');assert.equal(first.total,20);
@@ -235,27 +270,46 @@ async function run(){
   }finally{await context.close()}
  });
 
- if(fs.existsSync(path.join(root,'book-leedl.html')))await caseRun('Built parent page embeds a readable LeeDL iframe',async()=>{
+ if(fs.existsSync(path.join(root,'book-leedl.html')))await caseRun('Built parent page deep links and synchronizes LeeDL iframe',async caseItem=>{
   const {context,page,tracker}=await routedContext(parts);
   try{let parentLoadObserved=false;page.on('load',()=>{parentLoadObserved=true});
-   await page.goto(`${origin}${prefix}book-leedl.html`,{waitUntil:'domcontentloaded'});
+   await page.goto(`${origin}${prefix}book-leedl.html#page=163`,{waitUntil:'domcontentloaded'});
    const iframe=page.locator('iframe[src*="material-viewer"]').first();await iframe.scrollIntoViewIfNeeded();
+   caseItem.stage='waiting-parent-initial-page163';
    await page.waitForFunction(()=>{
     const frame=document.querySelector('iframe[src*="material-viewer"]');
-    return frame?.contentDocument?.querySelector('#canvas')?.dataset.page==='1';
+    return frame?.contentDocument?.querySelector('#canvas')?.dataset.page==='163';
    },null,{timeout});
    const handle=await iframe.elementHandle(),frame=await handle.contentFrame();assert(frame,'Embedded reader frame exists');
-   const first=await waitRendered(frame,1);assert.equal(first.total,expectedPages('leedl'));
+   const first=await waitRendered(frame,163);assert.equal(first.total,expectedPages('leedl'));
    const parent=await page.evaluate(()=>({readyState:document.readyState,title:document.title,
     iframeSrc:document.querySelector('iframe[src*="material-viewer"]').getAttribute('src'),
     documentWidth:document.documentElement.scrollWidth,viewport:innerWidth}));
    assert(parent.documentWidth<=parent.viewport+1,'Embedded parent does not overflow horizontally');
-   const network=snapshot(tracker);assert(network.uniqueBytes<byId.get('leedl').preview.bytes,'Embedded first page is still on demand');
-   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent.png')});assertNoErrors(tracker);
-   return {id:'leedl',first,parent,parentLoadObserved,readyCondition:'parent DOMContentLoaded followed by iframe completed canvas render',network};
-  }finally{await context.close()}
+   assert(parent.iframeSrc.endsWith('#page=163'),'Hydrated iframe URL reflects the original parent citation page');
+   const firstFrameURL=frame.url();assert(firstFrameURL.endsWith('#page=163'),'Actual iframe location reflects page 163');
+   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent-page163.png')});
+   await page.evaluate(()=>{location.hash='#page=200'});
+   caseItem.stage='waiting-parent-hashchange-page200';
+   const afterParentHashChange=await waitRendered(frame,200);
+   const synchronized=await page.evaluate(()=>({parentURL:location.href,
+    iframeSrc:document.querySelector('iframe[src*="material-viewer"]').getAttribute('src')}));
+   const frameURL=frame.url();assert(synchronized.iframeSrc.endsWith('#page=200'));
+   assert(frameURL.endsWith('#page=200'),'Fragment-only iframe navigation is handled by the reader');
+   const network=snapshot(tracker);assert(network.uniqueBytes<byId.get('leedl').preview.bytes,'Embedded citation pages are still on demand');
+   await page.screenshot({path:path.join(screenRoot,'embedded-leedl-parent-page200.png')});assertNoErrors(tracker);
+   return {id:'leedl',first,parent,firstFrameURL,afterParentHashChange,synchronized,frameURL,parentLoadObserved,
+    readyCondition:'parent DOMContentLoaded then iframe page163 render; parent hashchange then iframe page200 render',network};
+  }finally{
+   caseItem.embedDiagnostics=await page.evaluate(()=>{const f=document.querySelector('iframe[src*="material-viewer"]'),d=f?.contentDocument;return {
+    parentURL:location.href,parentHash:location.hash,iframeSrc:f?.getAttribute('src'),frameURL:f?.contentWindow?.location.href,
+    frameHash:f?.contentWindow?.location.hash,pageInput:d?.querySelector('#page')?.value,status:d?.querySelector('#status')?.textContent,
+    canvasPage:d?.querySelector('#canvas')?.dataset.page,bodyReady:d?.body?.dataset.ready}}).catch(e=>({error:e.message}));
+   await page.screenshot({path:path.join(screenRoot,'embedded-parent-hash-diagnostics.png')}).catch(()=>{});
+   await context.close();
+  }
  });
- else report.cases.push({name:'Built parent page embeds a readable LeeDL iframe',status:'not-run',reason:'Reader-only root has no generated parent page; run default built-site root for this check.'});
+ else report.cases.push({name:'Built parent page deep links and synchronizes LeeDL iframe',status:'not-run',reason:'Reader-only root has no generated parent page; run default built-site root for this check.'});
 
  await caseRun('Chunk fetch 503 shows error and recovers on retry',async()=>{
   const {context,page,tracker}=await routedContext(parts);

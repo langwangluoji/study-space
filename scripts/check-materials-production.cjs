@@ -17,7 +17,12 @@ async function run(){
   await page.goto(base+'material-viewer/index.html?id='+id+'#page='+number,{waitUntil:'domcontentloaded',timeout:120000});await ready(page,number);assert.equal(await page.locator('#total').textContent(),'/ '+records.find(r=>r.id===id).preview.pages);report.readers.push({id,page:number,status:await page.locator('#status').textContent()});
  }
  await page.goto(base+'book-leedl.html#page=163',{waitUntil:'domcontentloaded',timeout:120000});
+ await page.locator('.material-reader iframe').scrollIntoViewIfNeeded();
  const iframe=page.frameLocator('.material-reader iframe');await iframe.locator('#canvas[data-page="163"]').waitFor({timeout:180000});report.readers.push({id:'leedl',page:163,embedded:true});
+ await page.evaluate(()=>{location.hash='#page=200'});await iframe.locator('#canvas[data-page="200"]').waitFor({timeout:180000});report.readers.push({id:'leedl',page:200,embedded:true,parentHashChanged:true});
+ for(const id of ['rs-zhao-analysis','rs-campbell-introduction']){
+  await page.goto(base+'material-'+id+'.html#page=4',{waitUntil:'domcontentloaded',timeout:120000});await page.locator('.material-reader iframe').scrollIntoViewIfNeeded();await page.frameLocator('.material-reader iframe').locator('#canvas[data-page="4"]').waitFor({timeout:180000});report.readers.push({id,page:4,embedded:true});
+ }
  // Exercise actual remote streaming, not mocked archive routes.
  const original=records.find(r=>r.id==='slide-11').original;await page.goto(base+'material-viewer/index.html?id=slide-11',{waitUntil:'domcontentloaded',timeout:120000});await ready(page,1);
  const pending=page.waitForEvent('download',{timeout:180000});await page.locator('#download').click();const download=await pending;assert.equal(await download.failure(),null);assert.equal(download.suggestedFilename(),original.filename);const bytes=fs.readFileSync(await download.path());assert.equal(bytes.length,original.bytes);assert.equal(hash(bytes),original.sha256);report.downloads.push({id:'slide-11',filename:original.filename,bytes:bytes.length,sha256:original.sha256});

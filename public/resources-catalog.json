@@ -666,11 +666,15 @@
     "type": "参考教材",
     "author": "赵英时等 · 科学出版社 · 2013",
     "format": "PDF",
-    "reader": "publisher",
+    "archiveId": "rs-zhao-analysis",
+    "reader": "archive",
     "preview": "/material-rs-zhao-analysis.html",
     "description": "521 PDF文件页。第二版参考教材，保留原书内容与历史说明。原资料范围可能超出已整理讲义。",
     "accessUrl": "https://www.sciencep.com/",
-    "accessLabel": "科学出版社（按书名查询）"
+    "accessLabel": "科学出版社（按书名查询）",
+    "bytes": 44413159,
+    "pages": 521,
+    "originalFilename": "遥感应用分析原理与方法_(赵英时)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf"
   },
   {
     "id": "rs-campbell-introduction",
@@ -679,12 +683,16 @@
     "type": "参考教材",
     "author": "James B. Campbell · Randolph H. Wynne · Valerie A. Thomas · Guilford Press · 2023",
     "format": "PDF",
-    "reader": "publisher",
+    "archiveId": "rs-campbell-introduction",
+    "reader": "archive",
     "preview": "/material-rs-campbell-introduction.html",
     "description": "675 PDF文件页。第六版教师推荐参考教材，保留原书内容。原资料范围可能超出已整理讲义。",
     "accessUrl": "https://www.guilford.com/books/Introduction-to-Remote-Sensing/Campbell-Wynne-Thomas/9781462549405",
     "accessLabel": "出版社目录、试读与电子书",
-    "excerptUrl": "https://www.guilford.com/excerpts/campbell2_preface.pdf?t=1"
+    "excerptUrl": "https://www.guilford.com/excerpts/campbell2_preface.pdf?t=1",
+    "bytes": 157674250,
+    "pages": 675,
+    "originalFilename": "Introduction_to_Remote_Sensing,_6th_Edition_(James_B._Campbell,_Randolph_H._Wynne_etc.)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf"
   },
   {
     "id": "rs-notes",

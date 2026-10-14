@@ -43,11 +43,11 @@ Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续�
 
 | 参考教材 | 在当前课程中的用途 | 获取状态 |
 | --- | --- | --- |
-| [Campbell、Wynne、Thomas，Introduction to Remote Sensing，第六版，2023](material-rs-campbell-introduction.html) | 教师推荐教材；核对遥感定义、轨道、扫描、分辨率与 SAR 基础概念 | 出版社正版获取；本站提供逐节定位与精选图 |
+| [Campbell、Wynne、Thomas，Introduction to Remote Sensing，第六版，2023](material-rs-campbell-introduction.html) | 教师推荐教材；核对遥感定义、轨道、扫描、分辨率与 SAR 基础概念 | 原资料预览与下载；另附出版社入口 |
 | [Canada Centre for Remote Sensing，Fundamentals of Remote Sensing](material-rs-ccrs-fundamentals.html) | 经典入门教程，辅助信息链、扫描、雷达与相干斑的解释 | 全文预览与原件下载；历史任务参数不作当前规格 |
-| [赵英时等，《遥感应用分析原理与方法》第二版，2013](material-rs-zhao-analysis.html) | 补充数据—信息链、光谱响应、角度特征和成像概念 | 出版社正版获取，实际使用范围见来源索引 |
+| [赵英时等，《遥感应用分析原理与方法》第二版，2013](material-rs-zhao-analysis.html) | 补充数据—信息链、光谱响应、角度特征和成像概念 | 原资料预览与下载；实际使用范围见来源索引 |
 
-前四章的 36 个主知识节已有教材对照，标明 PDF 文件页、印刷页和返回正文的位置。Campbell 与赵英时的商业教材通过出版社获取，本站不分发完整扫描版；其余资料的获取状态以资料卡为准。完整原资料可获取，也不表示其全部内容已整理为网站讲义或逐页审校。
+前四章的 36 个主知识节已有教材对照，标明 PDF 文件页、印刷页和返回正文的位置。资料的预览、下载和出版社入口以资料卡为准。完整原资料可获取，也不表示其全部内容已整理为网站讲义或逐页审校。
 
 [逐节教材对照](remote-sensing-sources.html#rs-sources-crosswalk) · [英文教材原图索引](remote-sensing-sources.html#rs-sources-textbook-figures) · [双语概念表](remote-sensing-glossary.html) · [扫描与分辨率阅读建议](extensions.html#rs-imaging)
 

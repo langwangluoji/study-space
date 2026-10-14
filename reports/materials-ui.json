@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "startedAt": "2026-10-13T23:51:31.959Z",
+  "startedAt": "2026-10-14T00:44:49.648Z",
   "root": "docs\\.vitepress\\dist",
   "storage": "materials\\storage",
   "catalogPath": "public\\materials\\catalog.json",
@@ -91,55 +91,7 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:62000/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -147,8 +99,9 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -209,25 +162,7 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "http://127.0.0.1:55393/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:62000/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -235,8 +170,9 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -304,8 +240,9 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -409,8 +346,9 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -533,8 +471,9 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -600,25 +539,38 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
       }
     },
     {
-      "name": "Built parent page embeds a readable LeeDL iframe",
+      "name": "Built parent page deep links and synchronizes LeeDL iframe",
       "status": "pass",
+      "stage": "waiting-parent-hashchange-page200",
+      "embedDiagnostics": {
+        "parentURL": "http://127.0.0.1:62000/study-space/book-leedl.html#page=200",
+        "parentHash": "#page=200",
+        "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
+        "frameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
+        "frameHash": "#page=200",
+        "pageInput": "200",
+        "status": "第 200 / 326 页",
+        "canvasPage": "200",
+        "bodyReady": "true"
+      },
       "id": "leedl",
       "first": {
         "width": 594,
         "height": 840,
-        "nonwhite": 146,
+        "nonwhite": 1102,
         "samples": 9306,
-        "textSpans": 23,
-        "displayedPage": "1",
-        "status": "第 1 / 326 页",
+        "textSpans": 87,
+        "displayedPage": "163",
+        "status": "第 163 / 326 页",
         "total": 326,
         "documentWidth": 622,
         "viewport": 622,
@@ -629,31 +581,56 @@
       "parent": {
         "readyState": "complete",
         "title": "李宏毅深度学习教程 · v1.2.4 | Study Space · 学习空间",
-        "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light",
+        "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light#page=163",
         "documentWidth": 1280,
         "viewport": 1280
       },
+      "firstFrameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=163",
+      "afterParentHashChange": {
+        "width": 594,
+        "height": 840,
+        "nonwhite": 1120,
+        "samples": 9306,
+        "textSpans": 133,
+        "displayedPage": "200",
+        "status": "第 200 / 326 页",
+        "total": 326,
+        "documentWidth": 622,
+        "viewport": 622,
+        "paperWidth": 622,
+        "canvasCSSWidth": 594,
+        "paperScrollWidth": 622
+      },
+      "synchronized": {
+        "parentURL": "http://127.0.0.1:62000/study-space/book-leedl.html#page=200",
+        "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light#page=200"
+      },
+      "frameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
       "parentLoadObserved": true,
-      "readyCondition": "parent DOMContentLoaded followed by iframe completed canvas render",
+      "readyCondition": "parent DOMContentLoaded then iframe page163 render; parent hashchange then iframe page200 render",
       "network": {
-        "requests": 2,
-        "requestedBytes": 16116043,
-        "uniqueBytes": 16116043,
-        "uniqueParts": 2,
+        "requests": 4,
+        "requestedBytes": 32893259,
+        "uniqueBytes": 32893259,
+        "uniqueParts": 4,
         "partUrls": [
           "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
-          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+          "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
         ]
       },
       "diagnostics": {
         "network": {
-          "requests": 2,
-          "requestedBytes": 16116043,
-          "uniqueBytes": 16116043,
-          "uniqueParts": 2,
+          "requests": 4,
+          "requestedBytes": 32893259,
+          "uniqueBytes": 32893259,
+          "uniqueParts": 4,
           "partUrls": [
             "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00000.bin",
-            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin"
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00016.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin"
           ]
         },
         "pageErrors": [],
@@ -662,8 +639,9 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -722,23 +700,18 @@
         "consoleErrors": [
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [
-          {
-            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          }
-        ],
+        "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -775,31 +748,31 @@
       },
       "statusTimeline": [
         {
-          "time": 24.100000001490116,
+          "time": 36,
           "stage": "initial",
           "status": "正在加载原资料…",
           "error": false
         },
         {
-          "time": 468.70000000298023,
+          "time": 684.3999999985099,
           "stage": "initial",
           "status": "正在载入第 163 页…",
           "error": false
         },
         {
-          "time": 1071.8999999985099,
+          "time": 1465.7999999970198,
           "stage": "initial",
           "status": "第 163 / 326 页",
           "error": false
         },
         {
-          "time": 1144.7000000029802,
+          "time": 1540.8999999985099,
           "stage": "initial",
           "status": "正在载入第 164 页…",
           "error": false
         },
         {
-          "time": 1344.6000000014901,
+          "time": 1739.5,
           "stage": "initial",
           "status": "第 164 / 326 页",
           "error": false
@@ -905,29 +878,18 @@
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [
-          {
-            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          },
-          {
-            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
-            "error": "net::ERR_ABORTED",
-            "serviceWorker": false,
-            "expectedDownloadNavigation": false
-          }
-        ],
+        "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -1008,7 +970,7 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+            "url": "http://127.0.0.1:62000/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": true
@@ -1016,8 +978,9 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:55393/study-space/material-viewer/viewer.js",
-            "sha256": "5894611c55345692fe25b84516df7157b317d0d01b16c435790088779acc56e2",
+            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
+            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
         ]
@@ -1083,13 +1046,13 @@
   "errors": [],
   "serverDownloadRequests": [],
   "selectedCasePattern": null,
-  "optionalLocalInventoryChecked": true,
+  "optionalLocalInventoryChecked": false,
   "catalogRecords": 43,
   "partURLs": 163,
   "downloadDiagnostics": [
     {
       "id": "rs-english-summary",
-      "url": "http://127.0.0.1:55393/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
+      "url": "http://127.0.0.1:62000/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
       "filename": "2451561_Chatper1_summary.docx",
       "worker": {
         "controller": true,
@@ -1099,7 +1062,7 @@
     },
     {
       "id": "slide-11",
-      "url": "http://127.0.0.1:55393/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+      "url": "http://127.0.0.1:62000/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
       "filename": "11-图像目标检测-3-Transformer类.pptx",
       "worker": {
         "controller": true,
@@ -1108,5 +1071,5 @@
       }
     }
   ],
-  "finishedAt": "2026-10-13T23:51:48.918Z"
+  "finishedAt": "2026-10-14T00:45:08.043Z"
 }

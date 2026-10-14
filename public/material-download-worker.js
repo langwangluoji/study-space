@@ -3,7 +3,11 @@ self.addEventListener('install',()=>self.skipWaiting());self.addEventListener('a
 self.addEventListener('fetch',event=>{
  const url=new URL(event.request.url),prefix=base.pathname+'material-download/';if(url.origin!==base.origin||!url.pathname.startsWith(prefix))return;
  event.respondWith((async()=>{
-  const id=decodeURIComponent(url.pathname.slice(prefix.length).split('/')[0]),records=await (await fetch(new URL('materials/catalog.json',base))).json(),record=records.find(r=>r.id===id);if(!record)return new Response('未找到原文件',{status:404});
+  const id=decodeURIComponent(url.pathname.slice(prefix.length).split('/')[0]),resourcesResponse=await fetch(new URL('resources-catalog.json',base),{cache:'no-store'});if(!resourcesResponse.ok)throw Error('资料入口暂时无法读取');
+  const resources=await resourcesResponse.json(),resource=resources.find(r=>r.archiveId===id||r.id===id);
+  if(resource?.reader==='publisher')return new Response('请通过出版社正版入口获取教材。',{status:403});
+  if(resource?.publicCopy)return Response.redirect(new URL(resource.file.replace(/^\//,''),base),302);
+  const records=await (await fetch(new URL('materials/catalog.json',base))).json(),record=records.find(r=>r.id===id);if(!record)return new Response('未找到原文件',{status:404});
   const file=record.original;if(file.url)return Response.redirect(new URL(file.url,base),302);
   let index=0;const stream=new ReadableStream({async pull(controller){
    if(index>=file.parts.length){controller.close();return}
