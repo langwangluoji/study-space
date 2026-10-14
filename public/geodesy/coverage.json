@@ -1048,7 +1048,7 @@
       "file_page": 28,
       "status": "source-and-example",
       "topic": "geodesy-gauss-solution",
-      "note": "原习题完整保留；两组数据作为WGS84计算演示，不冒称原题椭球；原页未指定椭球，演示明确选择WGS84",
+      "note": "原习题完整保留；两组数据作为WGS84计算演示，不冒称原题椭球；原页未指定椭球，演示明确选择WGS84；放大核对小数角分记号并按原值转换，原题小数角秒另行处理",
       "anchor": "geodesy-gauss-solution.html",
       "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
       "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",

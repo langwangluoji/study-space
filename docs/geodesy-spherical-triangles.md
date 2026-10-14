@@ -57,7 +57,7 @@ F\simeq\frac{ab\sin\gamma'}2
 \left[1+\frac{a^2+b^2+c^2}{24R^2}\right].
 $$
 
-最低阶可直接用 $\gamma$ 代替 $\gamma'$：$\varepsilon\simeq ab\sin\gamma/(2R^2)$。讲义对40km以内边长给出的高阶项数量级是特定小三角形情形的估计；做严格误差预算还应检查形状和采用的半径。为避免混淆，这里的 $a$ 表示三角形边，下一专题的 $\Delta A$ 表示方位角差。
+最低阶可直接用 $\gamma$ 代替 $\gamma'$：$\varepsilon\simeq ab\sin\gamma/(2R^2)$。讲义写边长小于40km时第二项对角超的影响小于 $0.0004''$；这是它给出的工程数量级估计；做严格误差预算还应检查形状和采用的半径。为避免混淆，这里的 $a$ 表示三角形边，下一专题的 $\Delta A$ 表示方位角差。
 
 小三角形的球面角 $\alpha,\beta,\gamma$ 归算为 $\alpha'=\alpha-\varepsilon/3$ 等之后，有
 

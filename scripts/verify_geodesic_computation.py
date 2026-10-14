@@ -235,12 +235,17 @@ def examples():
          'position_error_vs_GeographicLib_m':Geodesic.WGS84.Inverse(math.degrees(b),math.degrees(l),ref['lat2'],ref['lon2'])['s12']}
     def RA(B,A):
         M,N=radii(B);return M*N/(N*math.cos(A)**2+M*math.sin(A)**2)
-    R1=RA(dms(38,22,3),dms(56,38,6));R2=RA(dms(38,30,6),dms(236,45,6));Rm=(R1+R2)/2
+    # Source p28 uses decimal arcminutes: 22'.3 = 22.3', not 22'03".
+    decimal_minutes=lambda degrees,minutes:math.radians(degrees+minutes/60)
+    assert abs(decimal_minutes(38,22.3)-dms(38,22,18))<1e-15
+    R1=RA(decimal_minutes(38,22.3),decimal_minutes(56,38.6))
+    R2=RA(decimal_minutes(38,30.6),decimal_minutes(236,45.6));Rm=(R1+R2)/2
     D,H1,H2=28678.456,4130.46,3950.67
     chord=math.sqrt((D*D-(H2-H1)**2)/((1+H1/R1)*(1+H2/R2)))
     q0=math.sqrt(D*D-(H2-H1)**2)
     arc=2*Rm*math.asin(chord/(2*Rm));approx=q0*(1-(H1+H2)/(2*Rm))+q0**3/(24*Rm**2)
-    out['slope_example']={'RA12_m':R1,'RA21_m':R2,'chord_m':chord,'local_circle_arc_m':arc,
+    out['slope_example']={'source_angle_notation':'decimal arcminutes: B1=38deg22.3min; B2=38deg30.6min; A12=56deg38.6min; A21=236deg45.6min',
+                          'RA12_m':R1,'RA21_m':R2,'chord_m':chord,'local_circle_arc_m':arc,
                           'first_order_engineering_arc_m':approx,'difference_m':approx-arc}
     return out
 

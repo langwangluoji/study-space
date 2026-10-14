@@ -39,12 +39,13 @@
     "inverse_A12_deg": 75.69160055565968,
     "position_error_vs_GeographicLib_m": 5.816665920651419e-08,
     "slope_example": {
-      "RA12_m": 6378385.243119509,
-      "RA21_m": 6378512.813340141,
-      "chord_m": 28659.73730284274,
-      "local_circle_arc_m": 28659.761411675372,
-      "first_order_engineering_arc_m": 28659.74995790795,
-      "difference_m": -0.011453767423518002
+      "source_angle_notation": "decimal arcminutes: B1=38deg22.3min; B2=38deg30.6min; A12=56deg38.6min; A21=236deg45.6min",
+      "RA12_m": 6378391.203127334,
+      "RA21_m": 6378521.18227626,
+      "chord_m": 28659.737323145968,
+      "local_circle_arc_m": 28659.76143192449,
+      "first_order_engineering_arc_m": 28659.749978258984,
+      "difference_m": -0.011453665505541721
     }
   },
   "cases": 192,
