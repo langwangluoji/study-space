@@ -162,6 +162,13 @@
 .scope-card > a { display: block; font-size: 13px; margin-top: 18px; }
 .vp-doc .creator-signoff { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 40px; color: var(--accent); font-size: 13px; }
 .guide-entry a { display: inline-block; margin-top: 14px; font-size: 13px; }
+.contributor-grid { display: grid; gap: 16px; margin: 26px 0; }
+.contributor-card { display: flex; align-items: flex-start; gap: 20px; padding: 24px; border: 1px solid var(--line); border-radius: 10px; background: var(--space-card); }
+.contributor-card img { flex-shrink: 0; width: 64px; height: 64px; border-radius: 16px; }
+.contributor-card > div { min-width: 0; }
+.vp-doc .contributor-card h3 { margin: 6px 0; font-size: 20px; }
+.vp-doc .contributor-card p { font-size: 14px; margin: 8px 0 0; color: var(--vp-c-text-2); }
+.vp-doc .contributor-card .contributor-handle { font-size: 12px; }
 @media(max-width:760px) {
   .extension-grid, .principle-grid, .scope-grid, .guide-entry-grid { grid-template-columns: 1fr; }
   .guide-card, .scope-card, .guide-entry { padding: 20px; }
@@ -169,6 +176,8 @@
   .creator-identity img, .creator-monogram { width: 72px; height: 72px; border-radius: 18px; }
   .vp-doc .creator-identity h1 { font-size: 30px; }
   .vp-doc .creator-lead { font-size: 19px; }
+  .contributor-card { padding: 18px; gap: 14px; }
+  .contributor-card img { width: 48px; height: 48px; border-radius: 12px; }
 }
 @media(max-width:360px) {
   .creator-identity { align-items: flex-start; gap: 14px; }
