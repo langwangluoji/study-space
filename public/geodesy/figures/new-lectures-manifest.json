@@ -1,0 +1,37 @@
+[
+  {
+    "source": "S7",
+    "file_page": 3,
+    "file": "S7-relative-sections.png",
+    "transform": "full-page rendering, no semantic edits",
+    "sha256": "952a9c89014c9589ed062d358f06dd527ddc7c01a0f9f2494c085747a0d64981"
+  },
+  {
+    "source": "S7",
+    "file_page": 9,
+    "file": "S7-geodesic-differentials.png",
+    "transform": "full-page rendering, no semantic edits",
+    "sha256": "4adeee0e5f812b6490728a93c921234821f2a4b6bff9ac5b5c23008afbf332d3"
+  },
+  {
+    "source": "S8",
+    "file_page": 4,
+    "file": "S8-direction-reductions.png",
+    "transform": "full-page rendering, no semantic edits",
+    "sha256": "96328a0b85642b5f1121d9d61023f805b7e04c54a744f640456f64831ff5fc00"
+  },
+  {
+    "source": "S8",
+    "file_page": 13,
+    "file": "S8-spherical-lune.png",
+    "transform": "full-page rendering, no semantic edits",
+    "sha256": "e2ec5417841d2cef3d450d645f9f4cbd642b1f1d27ef681d2e52aa3a1d6fbcb1"
+  },
+  {
+    "source": "S8",
+    "file_page": 20,
+    "file": "S8-gauss-midpoint.png",
+    "transform": "full-page rendering, no semantic edits",
+    "sha256": "6fbb6048882b6002847016d2373e7e4f393e01d455ff139160c13c5507efd40f"
+  }
+]

@@ -1,23 +1,23 @@
 {
   "status": "PASS",
-  "originals": 43,
+  "originals": 45,
   "access": {
-    "archive": 42,
+    "archive": 44,
     "publisher": 0,
     "publicCopy": 1
   },
   "byCourse": {
     "ml": 18,
-    "geodesy": 6,
+    "geodesy": 8,
     "insar": 4,
     "remote-sensing": 15
   },
-  "previewPages": 6572,
-  "originalBytes": 1095778748,
-  "uniqueSourceVersions": 61,
+  "previewPages": 6611,
+  "originalBytes": 1098156128,
+  "uniqueSourceVersions": 63,
   "storedParts": 161,
   "storedBytes": 1102347191,
-  "publicBytes": 138149432,
+  "publicBytes": 181120120,
   "checks": [
     "All original files reconstruct to their SHA-256",
     "All PDF export bytes match their recorded SHA-256",

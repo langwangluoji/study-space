@@ -22,7 +22,7 @@ export function generateCatalog(){
   const versions=JSON.parse(fs.readFileSync('reports/source-versions.json','utf8'));
   const materials=JSON.parse(fs.readFileSync('public/geodesy/materials/manifest.json','utf8'));
   const archives=JSON.parse(fs.readFileSync('public/materials/catalog.json','utf8'));
-  const materialPages={S1:29,S2:8,S3:60,S5:294};
+  const materialPages={S1:29,S2:8,S3:60,S5:294,S7:11,S8:28};
   for(const r of resources.filter(r=>r.reader)){
     const output=localPath(r.preview,'docs').replace(/\.html$/,'.md');
     if(!['pdf','file','archive','publisher'].includes(r.reader)||(!r.file&&!['archive','publisher'].includes(r.reader)))throw Error('无效资料阅读配置: '+r.id);

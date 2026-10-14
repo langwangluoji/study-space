@@ -39,6 +39,8 @@ next: false
 | 曲面与纬度 | [数学工具](geodesy-math.html)、[三种纬度](geodesy-ellipsoid-coordinates.html) | 比较同一个点的三种角度；切向与法向怎样得到 |
 | 局部方向 | [椭球上的局部方向](geodesy-local-directions.html) | 经度、纬度变化怎样联系东、北、外法线方向 |
 | 曲率与方向 | [曲线与子午曲率](geodesy-curvature.html)、[法曲率](geodesy-normal-curvature.html) | 曲线主法线与曲面法线的区别；方向怎样改变曲率 |
+| 大地线 | [法截弧辨析](geodesy-geodesic-geometry.html)、[克莱劳与微分方程](geodesy-geodesic-equations.html) | 局部最短、主法线指向、守恒量与前进方位角 |
+| 观测与坐标计算 | [归算](geodesy-observation-reduction.html)、[球面三角形](geodesy-spherical-triangles.html)、[高斯正反算](geodesy-gauss-solution.html) | 三差、三种长度、中点与均值、象限和误差边界 |
 | 长度与面积 | [度量、弧长与面积](geodesy-metric.html) | 从第一基本形式走到积分；截断误差和迭代残差的区别 |
 
 公式核对时特别注意角度单位、椭球参数、三种纬度，以及曲率半径的方向约定。需要回到课件核对页码时使用[资料来源索引](geodesy-sources.html)。当前大地测量版本保持连贯讲解，不另设习题或自测。

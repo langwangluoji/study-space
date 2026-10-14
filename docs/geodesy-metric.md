@@ -1,6 +1,6 @@
 ---
 prev: {"text": "法曲率与方向曲率", "link": "/geodesy-normal-curvature"}
-next: false
+next: {"text":"第三章 大地线（测地线）","link":"/geodesy-geodesics"}
 ---
 
 # 曲面度量 弧长与面积
@@ -241,3 +241,5 @@ $$
 从绪论的参考面选择出发，我们已经把椭球方程变成坐标、局部基、曲率和度量。站星观测需在同一框架内计算位置差，地面长度与面积则需采用相应路径的积分；椭球几何为这些计算提供载体，高度的物理意义仍由第一章讨论的重力场与高程系统确定。
 
 <LearningMark section="ge-metric" />
+
+下一步沿[大地线](geodesy-geodesics.html)确定连接两点的曲线路径，再把[地面观测归算](geodesy-observation-reduction.html)为椭球上的方向和长度，进入大地主题正反算。
