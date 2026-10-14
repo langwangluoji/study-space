@@ -29,9 +29,9 @@ Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续�
 
 李宏毅课程、Datawhale 整理项目。作为神经网络与深度学习的扩展材料；对照当前第三讲与实践时，先找相应主题，不把整套教程都当作本课程的必读或考试范围。
 
-[阅读与获取说明](book-leedl.html) · [维护项目](https://github.com/datawhalechina/leedl-tutorial) · [版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4) · [接回反向传播与代码](extensions.html#ml-network)
+[站内预览与原件获取](book-leedl.html) · [维护项目](https://github.com/datawhalechina/leedl-tutorial) · [版本发布页](https://github.com/datawhalechina/leedl-tutorial/releases/tag/v1.2.4) · [接回反向传播与代码](extensions.html#ml-network)
 
-完整 PDF 约 142 MB，由外部维护项目提供；直链可能触发下载。打不开时，从版本发布页获取附件，再使用本地阅读器。
+完整 PDF 约 142 MB，站内已提供原资料阅读和下载入口；外部维护项目与版本发布页仍保留作出处和备用获取方式。大文件需要更长加载时间，下载后可使用本地阅读器。
 
 ## 大地测量：回到参考模型与椭球几何 {#geo-books}
 
@@ -43,11 +43,11 @@ Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续�
 
 | 参考教材 | 在当前课程中的用途 | 获取状态 |
 | --- | --- | --- |
-| Campbell、Wynne、Thomas，Introduction to Remote Sensing，第六版，2023 | 教师推荐教材；核对遥感定义、轨道、扫描、分辨率与 SAR 基础概念 | 原件本地存档，本站提供逐节定位与精选图 |
-| Canada Centre for Remote Sensing，Fundamentals of Remote Sensing | 经典入门教程，辅助信息链、扫描、雷达与相干斑的解释 | 原件本地存档；历史任务参数不作当前规格 |
-| 赵英时等，《遥感应用分析原理与方法》第二版，2013 | 补充数据—信息链、光谱响应、角度特征和成像概念 | 原件本地存档，使用范围见来源索引 |
+| [Campbell、Wynne、Thomas，Introduction to Remote Sensing，第六版，2023](material-rs-campbell-introduction.html) | 教师推荐教材；核对遥感定义、轨道、扫描、分辨率与 SAR 基础概念 | 出版社正版获取；本站提供逐节定位与精选图 |
+| [Canada Centre for Remote Sensing，Fundamentals of Remote Sensing](material-rs-ccrs-fundamentals.html) | 经典入门教程，辅助信息链、扫描、雷达与相干斑的解释 | 全文预览与原件下载；历史任务参数不作当前规格 |
+| [赵英时等，《遥感应用分析原理与方法》第二版，2013](material-rs-zhao-analysis.html) | 补充数据—信息链、光谱响应、角度特征和成像概念 | 出版社正版获取，实际使用范围见来源索引 |
 
-前四章的 36 个主知识节已有教材对照，标明 PDF 文件页、印刷页和返回正文的位置；原件仅维护者本地存档，完整教材没有站内全文下载。
+前四章的 36 个主知识节已有教材对照，标明 PDF 文件页、印刷页和返回正文的位置。Campbell 与赵英时的商业教材通过出版社获取，本站不分发完整扫描版；其余资料的获取状态以资料卡为准。完整原资料可获取，也不表示其全部内容已整理为网站讲义或逐页审校。
 
 [逐节教材对照](remote-sensing-sources.html#rs-sources-crosswalk) · [英文教材原图索引](remote-sensing-sources.html#rs-sources-textbook-figures) · [双语概念表](remote-sensing-glossary.html) · [扫描与分辨率阅读建议](extensions.html#rs-imaging)
 
@@ -55,7 +55,7 @@ Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续�
 
 廖明生、王腾，《时间序列 InSAR 技术与应用》，科学出版社，2014。当前参考书用于辅助课堂前三讲的 SAR/InSAR 基础解释，课本章号与本站章号不同。扫描本的页图核读范围见[来源与实际使用范围](insar-sources.html#sources)，并非整本逐式审校。
 
-完整教材与三份课堂 PDF 为本地存档；可下载的离线讲义包是本站整理的三章内容、配图与索引。
+完整教材与三份课堂 PDF 已有独立的原资料预览、下载入口；离线讲义包则是本站整理的三章内容、配图与索引，两者分别提供。
 
 [资料与页码索引](insar-sources.html) · [主线与公式索引](insar-review.html) · [离线讲义说明](course-insar.html) · [本课程资料](resources.html?course=insar)
 

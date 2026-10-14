@@ -30,7 +30,7 @@ next: {text: 第一章 · 微波遥感基础, link: /insar-microwave}
 
 第一次阅读按三章顺序走，每个公式同时看图中的对象。复习时从[主线与易混概念](insar-review.html)回到对应正文，重点恢复条件和推导。遇到原课件表述差异，可查[资料来源、页码与修订](insar-sources.html)。
 
-[资料中心中的 InSAR 资料](resources.html#insar)登记三份课件和一本参考书。原件保留本地存档，网站提供整理后的讲义、有限教学配图与来源索引；完整教材没有在本站提供下载。
+[资料中心中的 InSAR 资料](resources.html#insar)提供三份课件和一本参考书的完整在线预览：[第一讲](material-insar-l1.html)、[第二讲](material-insar-l2.html)、[第三讲](material-insar-l3.html)与[时间序列 InSAR 参考书](material-insar-book.html)。原资料保留作者署名与内容；整理讲义、教学配图和来源索引帮助建立知识联系。完整原件可阅读，不表示全书与后续课堂内容已经整理或逐式核验。
 
 ## 当前覆盖范围 {#scope}
 

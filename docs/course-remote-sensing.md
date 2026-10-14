@@ -15,7 +15,7 @@ Remote Sensing Principles and Fundamentals
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
-传感器接收到的是辐射信号，我们希望知道的却是植被、温度、地形或变化。这套资料沿着“目标怎样改变辐射—平台如何安排观测—传感器怎样形成影像”的顺序，建立从观测到解释的联系。前四章对应课程主线，中英文讲解保留同样的定义、公式条件和图像解释。
+传感器接收到的是辐射信号，我们希望知道的却是植被、温度、地形或变化。这套资料沿着“目标怎样改变辐射—平台如何安排观测—传感器怎样形成影像”的顺序，建立从观测到解释的联系。前四章对应课程主线，中英文讲解保留同样的定义、公式条件和图像解释。另有[15份原资料在线阅读与下载入口](./remote-sensing-sources.html#rs-sources-materials)，包含第2–9章课件、汇总、三本教材及补充资料；原件范围超出已整理的前四章。
 
 基础要求为高中物理、基本三角关系与初等微积分。首次遇到术语时先理解它描述的是对象、过程、几何量还是物理量，再查看英文名和相近概念。可在每页选择中文、English或双语；配图支持放大，扫描和轨道原图配有分步骤读图说明。
 
@@ -23,7 +23,7 @@ Remote Sensing Principles and Fundamentals
 
 <div class="rs-lang" data-rs-lang="en" lang="en">
 
-A sensor records radiation, whereas we want information about vegetation, temperature, terrain or change. These notes connect observations to interpretation through the sequence <strong>target–radiation interaction → observing platform → image formation</strong>. The first four chapters preserve the same definitions, assumptions and figure explanations in Chinese and English.
+A sensor records radiation, whereas we want information about vegetation, temperature, terrain or change. These notes connect observations to interpretation through the sequence <strong>target–radiation interaction → observing platform → image formation</strong>. The first four chapters preserve the same definitions, assumptions and figure explanations in Chinese and English. The [15 original materials are also available for online reading and download](./remote-sensing-sources.html#rs-sources-materials), including Chapter 2–9 lecture PDFs, the compilation, three textbooks and supplements; their scope extends beyond the four completed chapters.
 
 The prerequisites are basic physics, trigonometry and elementary calculus. When encountering a term, first ask whether it describes an object, a process, geometry or a physical quantity. Select Chinese, English or bilingual reading on each page. Source figures can be enlarged; scanning and orbit figures have step-by-step reading explanations.
 

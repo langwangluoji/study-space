@@ -1,0 +1,6 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>原资料在线阅读</title><link rel="stylesheet" href="viewer.css"></head><body>
+<header><strong id="title">原资料在线阅读</strong><a id="download" href="#">下载原文件</a></header>
+<nav aria-label="原资料阅读工具"><button id="prev" aria-label="上一页">上一页</button><label>第 <input id="page" type="number" min="1" value="1" aria-label="页码"> 页</label><span id="total">/ —</span><button id="next" aria-label="下一页">下一页</button><label>缩放 <select id="zoom" aria-label="缩放"><option value="fit">适应宽度</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option></select></label><button id="full">全屏阅读</button></nav>
+<p id="status" role="status" aria-live="polite">正在加载原资料…</p><button id="retry" hidden>重新加载</button>
+<main id="paper"><div id="page-wrap"><canvas id="canvas" aria-label="原资料页图"></canvas><div id="text" class="textLayer"></div></div></main><p id="hint">原 PDF 保留原内容；PPT、Word 阅读版保持原排版，动画和编辑功能请下载原文件查看。</p>
+<script type="module" src="viewer.js"></script></body></html>

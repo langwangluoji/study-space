@@ -21,7 +21,7 @@ const labels=Object.fromEntries(space.courses.map(c=>[c.id,c.title]));
         <p class="guide-label">{{labels[p.course]}}</p><h3>{{p.title}}</h3><p>{{p.purpose}}</p>
         <ol aria-label="按需阅读建议"><li v-for="step in p.steps" :key="step">{{step}}</li></ol>
         <div class="extension-materials"><span>按需查阅 · 不要求整本读完</span>
-          <a v-for="id in p.resources" :key="id" :href="withBase(materials[id].preview)">{{materials[id].title}} <small>{{materials[id].localOnly?'来源说明 · 原件仅维护者存档':materials[id].reader==='file'?'资料说明 · 可下载原件':'阅读入口'}}</small></a>
+          <a v-for="id in p.resources" :key="id" :href="withBase(materials[id].preview)">{{materials[id].title}} <small>{{materials[id].localOnly?'来源说明 · 原件仅维护者存档':materials[id].reader==='publisher'?'逐节引用 · 出版社获取':materials[id].publicCopy?'在线预览 · 公开副本可下载':materials[id].archiveId?'在线预览 · 原件可下载':materials[id].reader==='file'?'资料说明 · 可下载原件':'阅读入口'}}</small></a>
           <p v-if="p.resources.includes('insar-lecture-package')" class="resource-access">离线包不含课堂 PDF 与完整教材。</p>
         </div>
         <a class="guide-return" :href="withBase(p.returnTo)">{{p.returnLabel}} <span aria-hidden="true">→</span></a>

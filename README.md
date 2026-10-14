@@ -19,6 +19,8 @@ npm run preview
 python -m pip install -r requirements-checks.txt
 npm run check:math
 node scripts/check-ui.cjs
+node scripts/verify-materials.mjs
+node scripts/check-materials-ui.cjs
 ```
 
 `build` 先检查课程配置与缺失片段，生成入口和来源阅读页，再构建并核对内部链接、42 个旧锚点和公式渲染。`check:math` 做 NumPy、中心差分与 PyTorch 自动微分核对，并运行不下载数据的合成 smoke。UI 检查需安装 Playwright 和 Chromium；可用 `PLAYWRIGHT_MODULE` 指向已有模块，`PLAYWRIGHT_CHANNEL=msedge` 使用本机 Edge。
@@ -27,11 +29,13 @@ node scripts/check-ui.cjs
 
 ## 内容在哪里编辑
 
-InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwave.md`、`docs/insar-imaging.md`、`docs/insar-interpretation.md`；总览、公式索引和来源分别维护在 `course-insar.md`、`insar-review.md`、`insar-sources.md`。在 `study-space.config.json` 的 `insar` 记录维护顺序，资料记录在 `resources.config.json`。原PDF不包含在仓库，有限引用图和原创SVG在 `public/insar/figures/`，图像清单区分原图与原创。源原件校验清单不含本地路径。
+InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwave.md`、`docs/insar-imaging.md`、`docs/insar-interpretation.md`；总览、公式索引和来源分别维护在 `course-insar.md`、`insar-review.md`、`insar-sources.md`。在 `study-space.config.json` 的 `insar` 记录维护顺序，资料记录在 `resources.config.json`。三份原PDF与教材已接入资料阅读页，档案记录在 `public/materials/catalog.json`；有限引用图和原创SVG在 `public/insar/figures/`，图像清单区分原图与原创。公开原件清单不含本地路径。
 
 正文或原创配图修订后先运行 `python scripts/package-insar.py` 更新离线讲义，再构建。该脚本验证原图校验值、更新原创图校验值，并把网页专用图片组件转换成可离线阅读的Markdown图片和相对链接。数学核验运行 `python scripts/verify_insar.py`（NumPy），浏览器专项运行 `node scripts/check-insar-ui.cjs`；既有UI脚本自动从课程清单取得新课程页与数量，避免写死两门课程。老师原件或教材不是讲义下载包的一部分。
 
-大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；原始文件保留本地，六份校验一致的副本接入资料库，PDF支持预览。来源与工作流署名见 docs/geodesy-sources.md。
+大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；六份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
+
+遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文仍按当前已整理的前三讲与实践标明范围。
 
 | 内容 | 唯一维护源 |
 | --- | --- |
@@ -51,17 +55,19 @@ InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwa
 
 ### 学习空间入口与资源清单
 
-首页、课程目录与制作者页的范围说明使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖清单中的全部课程。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的正文，不把未完成范围写成已完成。
+首页、课程目录使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖机器学习、大地测量、InSAR与遥感基础。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的页面；原资料课程明确标注可读范围，不把未完成讲义写成已完成。
 
-资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。可下载文件使用 `file`，可选 PDF 使用 `alternate`；外部下载使用 `external`，作者项目使用 `source`，版本发布页使用 `release`；尚未公开的原件只设 `localOnly: true`，不能同时提供下载字段。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径；原件放在 `public/`。生成器检查预览及下载文件、归属、重复 ID 和公开状态，并从实际文件获取大小，从已有 PDF 核对记录读取页数。不要手工修改生成的 `public/resources-catalog.json`。需要生成原件阅读页时设置 `reader: "pdf"` 或 `reader: "file"`，并提供 `file` 与唯一 `preview` 页面地址；生成页随清单更新，课程返回链接由所属课程清单取得。大地原件以 `materialId` 连接公开校验清单。
+资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。43份原资料以 `archiveId` 对应 `public/materials/catalog.json` 中的稳定ID；其中原件与PDF预览分别记录文件名、大小、SHA-256与页数。PPTX、DOCX的PDF预览是导出副本，不能替代原件下载。可复用的站内原文件保留 `file`，可选 PDF 使用 `alternate`；作者项目使用 `source`，版本发布页使用 `release`。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径。不要手工修改生成的 `public/resources-catalog.json`。
 
-资料新增只需更新清单和实际文件，再运行 `npm run build`。章节修订保持旧锚点，更新来源与范围。新增课程可用 `node scripts/add-course.mjs --slug new-course --title 新课程` 创建课程入口、首章与来源模板；将示例 ID 与标题换成尚未注册的课程，填入实际内容、修订状态与来源后再发布。新课程默认使用 `<slug>-` 章节前缀，导航自动按前缀匹配；需要更多章节时更新清单中的 `chapters`。这个命令不会读取或上传本地私人资料，不会生成经过核验的知识正文。
+新原资料阅读页使用 `reader: "archive"`、`archiveId` 与唯一 `preview` 地址，由生成器接入资料阅读组件；原件与预览的存储地址由档案清单维护。PRML、MML和前三讲旧阅读页保留原URL与阅读器，并附档案ID以兼容已有链接。大地原件的 `materialId` 继续连接既有公开校验清单；网站讲义整理范围与原件完整范围分别记录。
 
-### 制作者主页与辅助页面
+阅读器使用本地随站部署的 PDF.js **5.6.205**，授权文件保留在 `public/vendor/pdfjs/LICENSE`。CMap、标准字体和 WASM 同时随站部署。大资料按 8 MiB 切分到 `materials/storage/<sha256>/`，不放进 `public/` 或 Pages 产物；已有原文件复用站内地址。原件和导出的 PDF 各有独立 SHA-256，内容相同的版本复用同一存储。网页按页请求，下载服务逐块验证并流式返回原件，只拦截 `material-download/` 路由，不缓存网站页面。
 
-`creator.config.json` 维护制作者公开姓名、GitHub 昵称、主页、头像路径与仓库；头像来源保留在 `avatarSource`，本地副本在 `public/creator/`。不在没有依据时补写个人经历。网站介绍在 `docs/about.md`，其中课程范围与资源条目数使用统一清单。
+新增归档时，在本地准备包含原件路径、原件 SHA-256、PDF 导出路径及 SHA-256、页数与稳定 ID 的输入清单，运行 `node scripts/prepare-materials.mjs <本地输入清单.json> PREPARE`。先提交并上传 `.gitattributes` 与 `materials/storage/`，再用该数据提交的完整 SHA 重新运行脚本生成公开目录；本地绝对路径不会写入目录。公开片段 URL 固定到数据提交。发布 PR 必须使用 **merge commit**，保留数据提交作为主分支祖先，避免压缩合并后原数据提交失去可达引用。更新版本使用新 SHA 目录，不覆盖旧原件。
 
-`learning-paths.config.json` 维护资料扩展的学习问题、建议顺序、资源 ID 与返回正文链接。推荐资料引用 `resources.config.json` 的现有 ID；生成器检查课程归属与返回页，构建继续检查锚点。路线是按需补充，不是整本必读要求。`docs/textbooks.md` 说明教材用途与获取范围，`docs/site-guide.md` 维护网站使用与下载帮助。反馈和资料推荐模板在 `.github/ISSUE_TEMPLATE/`；入口只打开表单，不自动提交。
+`verify-materials.mjs` 校验所有片段、拼接后的完整文件与每个原件的资源入口。`check-materials-ui.cjs` 用实际浏览器测试大书跨片段跳页、扫描页、Office 预览、手机缩放与服务下载的完整哈希；CI 将 raw 请求映射到已克隆的原字节，不依赖维护者的本地输入路径。上线后另检查实际远程原资料与阅读窗口。
+
+资料新增需更新资源配置与档案清单，再运行 `npm run build`。章节修订保持旧锚点，更新来源与范围。新增课程可用 `node scripts/add-course.mjs --slug <新课程ID> --title <课程名>` 创建入口、首章与来源模板；使用尚未占用的ID，填入实际内容、修订状态与来源后再发布。新课程默认使用 `<slug>-` 章节前缀，导航自动按前缀匹配；需要更多章节时更新清单中的 `chapters`。只提供原资料的课程不应生成空壳讲义。这个命令不会读取或上传本地私人资料，不会生成经过核验的知识正文。
 
 ### 机器学习讲次与知识点
 
@@ -106,3 +112,10 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 教材与教师 PPT/PDF、已有 `verified-results/` 保持原样。本次迁移不重新训练 CIFAR-10。历史 quick run 仅证明当时的代码流程，不能作为完整实验性能。教师课件为课程范围依据，网页补足解释与核对；原课件勘误在正文注明，不修改课件文件。
 
 复算记录见 [核验记录](verification.html)，教材版本与原路径见 [来源说明](read-sources.html)。
+
+
+## 制作者主页与辅助页面
+
+`creator.config.json` 维护制作者的公开姓名、GitHub 昵称、主页与头像。`contributors.config.json` 维护资料贡献者的公开身份、链接和具体支持范围，贡献者与原资料作者分别署名；公开头像副本位于 `public/creator/`。网站介绍在 `docs/about.md`，课程范围和资源条目数由统一清单渲染。
+
+`learning-paths.config.json` 维护资料扩展的学习问题、按需阅读建议、资源 ID 和返回正文链接。推荐资料引用资源清单中的已有 ID，生成器检查归属与目标页面；不是整本必读清单。`docs/textbooks.md` 说明教材用途与获取范围，`docs/site-guide.md` 解释使用与下载。反馈与资料推荐模板位于 `.github/ISSUE_TEMPLATE/`，入口只打开表单，不自动提交。

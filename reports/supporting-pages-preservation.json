@@ -1,5 +1,6 @@
 {
   "status": "PASS",
+  "baseline": "899f918",
   "checked": 80,
   "normalization": "CRLF/LF in text only",
   "changed": []
