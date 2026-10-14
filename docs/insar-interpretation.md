@@ -158,39 +158,50 @@ $$
 **第一步，写出坡面点的位置和它的斜距。** 用 $s$ 表示从坡脚沿坡走过的实际长度，$0\leq s\leq L$，因此水平、竖直增量分别是 $s\cos\alpha$ 和 $s\sin\alpha$：
 
 $$
-T(s)=\bigl(x_0+s\cos\alpha,\ z_0+s\sin\alpha\bigr),
-\qquad
-R(s)=\sqrt{\bigl(x_0+s\cos\alpha-x_S\bigr)^2+
-\bigl(z_0+s\sin\alpha-z_S\bigr)^2}.
+\begin{aligned}
+x(s)&=x_0+s\cos\alpha,\\
+z(s)&=z_0+s\sin\alpha,\\
+R(s)&=\sqrt{[x(s)-x_S]^2+[z(s)-z_S]^2}.
+\end{aligned}
 $$
 
 **第二步，对沿坡距离 $s$ 求导。** 令 $x(s)$、$z(s)$ 分别为 $T(s)$ 的两个分量；平方根的求导给出
 
 $$
+\begin{aligned}
 \frac{\mathrm dR}{\mathrm ds}
-=\frac{[x(s)-x_S]\cos\alpha+[z(s)-z_S]\sin\alpha}{R(s)}.
+&=\frac{x(s)-x_S}{R(s)}\cos\alpha\\
+&\quad+\frac{z(s)-z_S}{R(s)}\sin\alpha.
+\end{aligned}
 $$
 
 在当前“目标在雷达右下方”的剖面里，视线与竖直向下方向的夹角为 $\theta(s)$。沿视线的水平比例为 $\sin\theta(s)$，竖直比例为 $-\cos\theta(s)$，所以
 
 $$
-\frac{x(s)-x_S}{R(s)}=\sin\theta(s),\qquad
-\frac{z(s)-z_S}{R(s)}=-\cos\theta(s).
+\begin{aligned}
+\frac{x(s)-x_S}{R(s)}&=\sin\theta(s),\\
+\frac{z(s)-z_S}{R(s)}&=-\cos\theta(s).
+\end{aligned}
 $$
 
 代回上一式，才得到课堂的投影系数：
 
 $$
+\begin{aligned}
 \frac{\mathrm dR}{\mathrm ds}
-=\sin\theta(s)\cos\alpha-\cos\theta(s)\sin\alpha
-=\sin\bigl(\theta(s)-\alpha\bigr).
+&=\sin\theta(s)\cos\alpha\\
+&\quad-\cos\theta(s)\sin\alpha\\
+&=\sin\bigl(\theta(s)-\alpha\bigr).
+\end{aligned}
 $$
 
 **第三步，从局部导数得到整段图像长度。** 在尚未反转次序的前坡上，$R$ 随 $s$ 增大，整段斜距跨度为
 
 $$
-L_R=R(L)-R(0)
-=\int_0^L\sin\bigl(\theta(s)-\alpha\bigr)\,\mathrm ds.
+\begin{aligned}
+L_R&=R(L)-R(0)\\
+&=\int_0^L\sin\bigl(\theta(s)-\alpha\bigr)\,\mathrm ds.
+\end{aligned}
 $$
 
 若坡段相比斜距很短，视线角度沿坡变化可以忽略，便可近似取同一个 $\theta$。令课件的 $\omega=\theta-\alpha$，这是距离剖面中的**带符号角**；积分中系数近似为常数，于是
