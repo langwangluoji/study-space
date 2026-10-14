@@ -26,6 +26,9 @@ async function run(){
  await page.goto(base+'insar-imaging.html#i2-range-history',{waitUntil:'networkidle'});await page.screenshot({path:'reports/screenshots/insar-illustrated-formula.png'});
  for(const slug of ['insar-microwave','insar-imaging','insar-interpretation']){
   await page.goto(base+slug+'.html',{waitUntil:'networkidle'});
+  // Optional original figures are read after opening their derivation panel.
+  while(await page.locator('details:not([open]) > summary').count())await page.locator('details:not([open]) > summary').first().click();
+  assert.equal(await page.locator('mjx-merror,[data-mjx-error]').count(),0);
   const figures=page.locator('.source-figure .figure-open');
   for(let i=0;i<await figures.count();i++){
    await figures.nth(i).click();const dlg=page.locator('dialog[open]');assert.equal(await dlg.count(),1);
@@ -43,6 +46,22 @@ async function run(){
   assert.deepEqual(clipped,[],f.file+' clipped labels');
  }
  checks.push('SVG text bounding boxes remain within viewBox');
+ const coverage=JSON.parse(fs.readFileSync('public/insar/ppt-coverage.json','utf8'));
+ await page.goto(base+'insar-sources.html#ppt-coverage',{waitUntil:'networkidle'});
+ const coverageLinks=page.locator('a[href*="material-insar-l"][href*="#page="]');
+ assert.equal(await coverageLinks.count(),257,'All original lecture pages have reading links');
+ for(const lecture of coverage.lectures){
+  assert.equal(await page.locator(`a[href*="${lecture.chapter}.html#"]`).count()>=lecture.pages.length,true);
+ }
+ checks.push('257 PPT source pages point to current lesson anchors and original-page readers');
+ for(const [slug,anchor] of [['insar-microwave','microwave-penetration-depth'],['insar-imaging','i2-prf-window'],['insar-interpretation','insar-interpretation-foreshortening'],['insar-interpretation','insar-interpretation-image-orientation']]){
+  await page.setViewportSize({width:390,height:900});await page.goto(base+slug+'.html#'+anchor,{waitUntil:'networkidle'});
+  assert(await page.locator('#'+anchor).isVisible());assert.equal(await page.locator('mjx-merror,[data-mjx-error]').count(),0);
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Updated formulas must not overflow the phone document');
+  await page.screenshot({path:'reports/screenshots/'+anchor+'-mobile.png'});
+ }
+ await page.setViewportSize({width:1440,height:1000});
+ checks.push('new penetration, PRF, foreshortening derivation and image-orientation sections fit mobile screens');
  await page.goto(base+'resources.html#insar',{waitUntil:'networkidle'});
  assert.equal(await page.getByLabel('课程',{exact:true}).inputValue(),'insar');assert.equal(await page.locator('.resource-card').count(),5);
  assert.equal(await page.locator('.resource-card a[aria-label^="下载 "]').count(),5);await page.getByLabel('获取方式',{exact:true}).selectOption('download');assert.equal(await page.locator('.resource-card').count(),5);

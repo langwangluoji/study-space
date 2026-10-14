@@ -26,12 +26,33 @@ next: false
 
 符号索引：$L_a$ 是物理天线沿飞行方向的长度；$B$ 是有效信号带宽，单位 Hz；$\tau$ 与 $\Delta t$ 单位为 s；$\delta R,\delta g,\delta a$ 单位为 m。$\mu_I,\sigma_I^2$ 分别为强度均值与方差。不要用像元间距替代分辨率。
 
+## 把课堂中间环节补回公式链 {#ppt-formula-chain}
+
+课件不只给出最后的分辨率和干涉公式，也讲传播、天线、系统参数和图像几何。下面按“传播到目标—形成观测范围—组织回波—读图”的顺序恢复这些中间环节。公式的图、定义与推导在对应正文，不以这一张表代替理解。
+
+| 课堂关系 | 对应对象与条件 | 回到正文 |
+| --- | --- | --- |
+| $E=h_{\mathrm P}f,\ p=h_{\mathrm P}/\lambda$ | 自由空间光子的能量、动量；$h_{\mathrm P}$ 为普朗克常数，与地形高度 $h$ 不同 | [波与光子的描述](insar-microwave.html#microwave-wave-particle) |
+| $d_A=1/\alpha,\ d_P=1/(2\alpha)$ | 均匀介质单程幅度、功率分别降至 $1/e$ 的深度；两者相差二倍，不能混用 | [介电性质与穿透推导](insar-microwave.html#microwave-penetration-depth) |
+| $\sigma(\Omega)=4\pi(dP_s/d\Omega)/S_{\mathrm{inc}}$ | 给定散射方向的截面，入射量是功率密度；后向方向再接到单站雷达方程 | [方向散射截面](insar-microwave.html#microwave-scattering-cross-section) |
+| $\beta_v\approx\lambda/W_a,\ \beta_h\approx\lambda/L_a$ | 天线宽控制距离平面的波束角，天线长控制方位波束角；量级式，角度使用弧度 | [波束与幅宽](insar-imaging.html#i2-antenna-swath) |
+| $W_g\approx R\beta_v/\cos\theta$ | 窄波束、平地、同一波束口径的几何幅宽；不能替代卫星模式的名义幅宽 | [ERS 课堂算例](insar-imaging.html#i2-antenna-swath) |
+| $P_A=k_{\mathrm B}T_A B$ | 理想匹配条件、Rayleigh–Jeans 近似下的天线可用噪声功率；天线温度是方向图对亮温的加权量 | [亮温与天线温度](insar-imaging.html#i2-radiometer) |
+| $\mathrm{PRI}=1/\mathrm{PRF}$ | 沿轨采样与接收时间窗要同时满足；只比较两个上下界不能保证脉冲时序可用 | [PRF 与接收窗](insar-imaging.html#i2-prf-window) |
+| $L_r=L\sin\omega,\ F_p=100(1-\sin\omega)\%$ | $L$ 为坡面真实长度，$L_r$ 为局部斜距投影；正常顺序的照明坡面才可解释为压缩百分比 | [前坡与后坡](insar-interpretation.html#insar-interpretation-front-back-table) |
+| $S_s=R_F-R_T=hR_F/H,\ h=S_s\cos\theta_F$ | 二维平地直线射线模型；$R_F$ 指阴影远端，$S_s$ 是缺失斜距区间，不是地面阴影长度 | [阴影几何](insar-interpretation.html#insar-interpretation-shadow-height) |
+
+课件的云层经验衰减式保留原页及趋势解释。其波长单位和有效频段没有充分来源支持时，不把系数当作可直接代入的工程模型。卫星表也保留课件年份、模式与参数口径：像元间距、空间分辨率、幅宽和重复周期需要分别比较。
+
 ## 易混概念放回同一个对象 {#distinctions}
 
 | 比较 | 区别 | 实际影响 |
 | --- | --- | --- |
 | 主动微波／被动微波 | 自己发射并接收回波／测量自然辐射 | 夜间能力不能作为二者唯一分类依据 |
 | 波长／带宽 | 载波空间周期／信号占用频率范围 | 更短波长不自动得到更细距离分辨率 |
+| 亮温／天线温度 | 按辐射亮度定义的等效温度／天线方向图对亮温的加权量 | 一条 $kTB$ 式不能直接把接收功率等同某个地物的真实温度 |
+| 波束覆盖幅宽／系统名义幅宽 | 从波束几何估计的覆盖／特定模式处理与获取能力 | 必须统一波束宽度定义和模式，才能比较课堂几何值与产品表 |
+| 幅度穿透深度／功率穿透深度 | $e^{-\alpha z}$／$e^{-2\alpha z}$ 的 $1/e$ 深度 | 相同介质下前者为后者二倍；雷达双程损耗还要另算 |
 | 距离向／方位向 | 按回波延迟定位／按沿轨相位历程聚焦 | 两向的分辨机理和公式不同 |
 | 分辨率／像元间距 | 能分开多近的目标／图像采样格网间隔 | 更密像元不等于新增信息 |
 | 振幅／强度／相位 | 复向量长度／长度平方／复向量角度 | 相位丢失后不能从灰度恢复干涉 |

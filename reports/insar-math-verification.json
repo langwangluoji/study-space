@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "schema_version": 1,
-  "generated_at_UTC": "2026-10-13T16:15:46.064283+00:00",
+  "generated_at_UTC": "2026-10-14T04:12:29.420656+00:00",
   "runtime": {
     "python": "3.12.14",
     "numpy": "2.3.5"
@@ -11,18 +11,18 @@
   "sources": [
     {
       "path": "docs/insar-microwave.md",
-      "sha256": "ed86d8ff46b56be7f123eeb3a56bce57cbad30f39fda1a0ebe1a46690e66284b"
+      "sha256": "75d6780efbc00d20d1b35c5a0939d17ba9c057f52133bbadc5e6ae4ce2670169"
     },
     {
       "path": "docs/insar-imaging.md",
-      "sha256": "8ea6ec8c5bf82b8ad2242f026af284b12f720c25f5bb07b24870faec90b1f43b"
+      "sha256": "f8fff6f7f19c2873f7192c588fe01c5d55de212f8c4aad848aaa92f2037e4674"
     },
     {
       "path": "docs/insar-interpretation.md",
-      "sha256": "35bd3c42b20ba27ffbbd5864190c84ebb0d09bb23943b463f3c2f5b2dd89fb68"
+      "sha256": "446ef9c9da20c63138d7f2ffe819955b1ba792a1e98275a8cdad1fcc01263cb4"
     }
   ],
-  "check_count": 16,
+  "check_count": 23,
   "failed_checks": [],
   "checks": [
     {
@@ -649,12 +649,269 @@
             "rounding_absolute_tolerance": 0.005,
             "absolute_error": 0.003626894942438952,
             "passed": true
+          },
+          {
+            "example": "chapter1_weak_loss_power_depth",
+            "displayed_value": 0.382,
+            "computed_value": 0.3819718634205488,
+            "unit": "m",
+            "rounding_absolute_tolerance": 5e-05,
+            "absolute_error": 2.8136579451221166e-05,
+            "passed": true
+          },
+          {
+            "example": "chapter1_weak_loss_amplitude_depth",
+            "displayed_value": 0.7639,
+            "computed_value": 0.7639437268410976,
+            "unit": "m",
+            "rounding_absolute_tolerance": 5e-05,
+            "absolute_error": 4.3726841097546654e-05,
+            "passed": true
+          },
+          {
+            "example": "chapter1_exact_complex_attenuation",
+            "displayed_value": 1.3088,
+            "computed_value": 1.3088152221850025,
+            "unit": "1/m",
+            "rounding_absolute_tolerance": 5e-05,
+            "absolute_error": 1.5222185002494726e-05,
+            "passed": true
+          },
+          {
+            "example": "chapter2_ERS_narrow_beam_swath",
+            "displayed_value": 52.45,
+            "computed_value": 52.44926174905222,
+            "unit": "km",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.0007382509477835697,
+            "passed": true
+          },
+          {
+            "example": "chapter2_ERS_exact_beam_swath",
+            "displayed_value": 52.47,
+            "computed_value": 52.47084403454348,
+            "unit": "km",
+            "rounding_absolute_tolerance": 0.005,
+            "absolute_error": 0.000844034543483474,
+            "passed": true
+          },
+          {
+            "example": "chapter2_complete_PRF_budget",
+            "displayed_value": 3328.0,
+            "computed_value": 3327.926351631372,
+            "unit": "Hz",
+            "rounding_absolute_tolerance": 0.5,
+            "absolute_error": 0.07364836862780066,
+            "passed": true
+          },
+          {
+            "example": "chapter3_shadow_height_from_slant",
+            "displayed_value": 41.0,
+            "computed_value": 40.95760221444959,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.0423977855504134,
+            "passed": true
+          },
+          {
+            "example": "chapter3_shadow_wrong_ground_measure",
+            "displayed_value": 71.4,
+            "computed_value": 71.40740033710573,
+            "unit": "m",
+            "rounding_absolute_tolerance": 0.05,
+            "absolute_error": 0.007400337105721633,
+            "passed": true
           }
         ]
       },
       "tolerance": {
         "rule": "half of the final displayed decimal place, per case"
       }
+    },
+    {
+      "id": "ppt_complex_permittivity_penetration",
+      "status": "PASS",
+      "model_and_scope": "e^(i omega t - i k z), epsilon=epsilon'-i epsilon'', passive homogeneous nonmagnetic medium; exact complex propagation independently checks amplitude versus power 1/e depth.",
+      "metrics": {
+        "epsilon_real": 4.0,
+        "epsilon_loss": 0.04,
+        "wavelength_m": 0.0566,
+        "amplitude_depth_m": 0.9008282377604881,
+        "power_depth_m": 0.4504141188802441,
+        "weak_loss_power_depth_m": 0.45040848895006375,
+        "approximation_relative_error": 1.249945315728862e-05
+      },
+      "tolerance": {
+        "weak_loss_relative_error": 2e-05
+      }
+    },
+    {
+      "id": "ppt_swath_from_beam_endpoints",
+      "status": "PASS",
+      "model_and_scope": "Planar ground, symmetric small elevation beam; nominal mission swath is a separate system specification.",
+      "metrics": {
+        "exact_beam_footprint_m": 52470.84403454348,
+        "narrow_beam_footprint_m": 52449.26174905222,
+        "relative_error": 0.0004113195792515567,
+        "azimuth_beam_arcminutes": 19.457646722642757
+      },
+      "tolerance": {
+        "small_angle_relative_error": 0.0005
+      }
+    },
+    {
+      "id": "ppt_shadow_height_ray_intersection",
+      "status": "PASS",
+      "model_and_scope": "Straight rays, planar receiving ground; Sr is range to shadow far endpoint, Ss=Sr-Rtop; ground shadow length is a different quantity. No height inversion claimed for general terrain.",
+      "metrics": {
+        "rows": [
+          {
+            "height_m": 5.0,
+            "slant_shadow_m": 6.103872943807346,
+            "ground_shadow_m": 3.501037691048623,
+            "height_from_slant_m": 5.000000000000054,
+            "height_error_m": 5.417888360170764e-14
+          },
+          {
+            "height_m": 100.0,
+            "slant_shadow_m": 122.07745887614556,
+            "ground_shadow_m": 70.02075382097098,
+            "height_from_slant_m": 99.99999999999996,
+            "height_error_m": 4.263256414560601e-14
+          },
+          {
+            "height_m": 350.0,
+            "slant_shadow_m": 427.27110606650956,
+            "ground_shadow_m": 245.07263837339838,
+            "height_from_slant_m": 349.99999999999994,
+            "height_error_m": 5.684341886080802e-14
+          }
+        ],
+        "far_endpoint_angle_deg": 35.0
+      },
+      "tolerance": {}
+    },
+    {
+      "id": "ppt_foreshortening_percentage_and_signed_slope",
+      "status": "PASS",
+      "model_and_scope": "Fp is 100*(1-Lr/L) for an ordered illuminated local slope; negative projection flags reversed range order, rather than a physical percentage greater than 100.",
+      "metrics": {
+        "lecture_table_max_rounding_error": 0.035182233306969124,
+        "signed_slopes": [
+          {
+            "slope_deg": -15,
+            "ray_derivative": 0.766044443098508,
+            "analytic_projection": 0.7660444431189779,
+            "error": 2.0469848038828786e-11
+          },
+          {
+            "slope_deg": 0,
+            "ray_derivative": 0.573576436336225,
+            "analytic_projection": 0.573576436351046,
+            "error": 1.482103328953599e-11
+          },
+          {
+            "slope_deg": 15,
+            "ray_derivative": 0.3420201433073089,
+            "analytic_projection": 0.3420201433256687,
+            "error": 1.8359813669377445e-11
+          },
+          {
+            "slope_deg": 40,
+            "ray_derivative": -0.08715574273992388,
+            "analytic_projection": -0.08715574274765818,
+            "error": 7.734299312112114e-12
+          }
+        ]
+      },
+      "tolerance": {}
+    },
+    {
+      "id": "ppt_sar_optical_height_displacement_sign",
+      "status": "PASS",
+      "model_and_scope": "Same vertical point on flat reference ground; SAR uses constant range intersection; optical is an ideal nadir pinhole projection.",
+      "metrics": {
+        "sar_displacement_m": -142.86776652932167,
+        "optical_displacement_m": 70.01000142877456
+      },
+      "tolerance": {}
+    },
+    {
+      "id": "ppt_abcd_acquisition_coordinate_order",
+      "status": "PASS",
+      "model_and_scope": "North-up ground AB/CD, rows increase in slow time and columns increase in slant range; planar cardinal-direction schematic, before geocoding. Arbitrary product matrix conventions must be read from metadata.",
+      "metrics": {
+        "cases": [
+          {
+            "track": "ascending",
+            "look_side": "left",
+            "recorded_rows": [
+              "DC",
+              "BA"
+            ],
+            "expected": [
+              "DC",
+              "BA"
+            ],
+            "passed": true
+          },
+          {
+            "track": "descending",
+            "look_side": "left",
+            "recorded_rows": [
+              "AB",
+              "CD"
+            ],
+            "expected": [
+              "AB",
+              "CD"
+            ],
+            "passed": true
+          },
+          {
+            "track": "ascending",
+            "look_side": "right",
+            "recorded_rows": [
+              "CD",
+              "AB"
+            ],
+            "expected": [
+              "CD",
+              "AB"
+            ],
+            "passed": true
+          },
+          {
+            "track": "descending",
+            "look_side": "right",
+            "recorded_rows": [
+              "BA",
+              "DC"
+            ],
+            "expected": [
+              "BA",
+              "DC"
+            ],
+            "passed": true
+          }
+        ]
+      },
+      "tolerance": {}
+    },
+    {
+      "id": "ppt_prf_full_transmit_and_echo_timing",
+      "status": "PASS",
+      "model_and_scope": "Single-channel monostatic transmit/receive exclusion, uncompressed echo duration, guard intervals only for switching; enumerated pulse-phase placement rejects the one-transmit-width counterexample. Length budget remains necessary, not sufficient.",
+      "metrics": {
+        "counterexample_PRI_us": 400.0,
+        "transmit_width_us": 50.0,
+        "one_width_budget_us": 370.00000000000006,
+        "full_budget_us": 420.0,
+        "feasible_start_count": 0,
+        "lecture_example_swath_delay_us": 260.48741899284914,
+        "zero_guard_max_PRF_Hz": 3327.926351631372
+      },
+      "tolerance": {}
     }
   ],
   "text_corrections_required": [],

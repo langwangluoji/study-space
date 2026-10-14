@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "baseline": "cbfc9fdac4ff70021506d4e4e8fa702b0fe01d08",
+  "chapters": [
+    {
+      "chapter": "insar-microwave",
+      "oldAnchors": 17,
+      "currentAnchors": 35,
+      "missing": [],
+      "characters": 34288,
+      "figures": 20
+    },
+    {
+      "chapter": "insar-imaging",
+      "oldAnchors": 28,
+      "currentAnchors": 41,
+      "missing": [],
+      "characters": 31845,
+      "figures": 19
+    },
+    {
+      "chapter": "insar-interpretation",
+      "oldAnchors": 17,
+      "currentAnchors": 32,
+      "missing": [],
+      "characters": 34945,
+      "figures": 29
+    }
+  ]
+}

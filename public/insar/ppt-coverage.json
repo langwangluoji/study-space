@@ -1,0 +1,2562 @@
+{
+  "schema_version": 1,
+  "scope": "课堂前三讲逐页主题与讲义对照；主要公式由原图、推导及独立数值复核，非全部任务参数认证",
+  "lectures": [
+    {
+      "id": "L1",
+      "title": "第一讲 · 微波遥感基础",
+      "chapter": "insar-microwave",
+      "source": "第一讲-微波遥感基础-202609(1).pdf",
+      "source_sha256": "adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f",
+      "lesson_sha256": "75d6780efbc00d20d1b35c5a0939d17ba9c057f52133bbadc5e6ae4ce2670169",
+      "pages": [
+        {
+          "page": 1,
+          "title": "课程封面",
+          "anchor": "insar-microwave",
+          "note": "保留标题与原课件出处，正文重排为连续知识链",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 2,
+          "title": "四部分内容提纲",
+          "anchor": "insar-microwave",
+          "note": "保留标题与原课件出处，正文重排为连续知识链",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 3,
+          "title": "理论与实践课程目标",
+          "anchor": "microwave-observation",
+          "note": "补测量、解释、处理及算法目标与后续章节连接",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 4,
+          "title": "教材及网络参考资料",
+          "anchor": "microwave-sources",
+          "note": "保留课件与教材出处及补充/修正边界",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 5,
+          "title": "课时、考试、评分及软件准备",
+          "anchor": "microwave-sources",
+          "note": "标记为原课件行政页，仅由源资料保留；不当作科学概念缺失",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "source_only",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 6,
+          "title": "全课程讲次及课时安排",
+          "anchor": "microwave-sources",
+          "note": "标记为原课件行政页，仅由源资料保留；不当作科学概念缺失",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "source_only",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 7,
+          "title": "测绘的位置、位移与属性",
+          "anchor": "microwave-observation",
+          "note": "补空间位置、属性及GNSS/RS/GIS分工",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 8,
+          "title": "现代测绘及GNSS、RS、GIS",
+          "anchor": "microwave-observation",
+          "note": "补空间位置、属性及GNSS/RS/GIS分工",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 9,
+          "title": "电磁学与空间信息感知",
+          "anchor": "microwave-history",
+          "note": "用电磁学—传播—感知链说明，历史图作为来源背景",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 10,
+          "title": "电磁波感知示意图",
+          "anchor": "microwave-history",
+          "note": "用电磁学—传播—感知链说明，历史图作为来源背景",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 11,
+          "title": "电磁波谱与反射/热红外",
+          "anchor": "microwave-spectrum",
+          "note": "补波谱、能量来源和光学/微波比较表",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "范围作为课程分类，重叠边界非绝对定义"
+        },
+        {
+          "page": 12,
+          "title": "光学与微波影像对比",
+          "anchor": "microwave-spectrum",
+          "note": "补波谱、能量来源和光学/微波比较表",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "范围作为课程分类，重叠边界非绝对定义"
+        },
+        {
+          "page": 13,
+          "title": "遥感波段分类与研究问题",
+          "anchor": "microwave-spectrum",
+          "note": "补波谱、能量来源和光学/微波比较表",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "范围作为课程分类，重叠边界非绝对定义"
+        },
+        {
+          "page": 14,
+          "title": "微波频段名称与波长范围",
+          "anchor": "microwave-wavelength",
+          "note": "保留波段并补频率换算和应用条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "c=fλ；波长与频率单位闭合"
+        },
+        {
+          "page": 15,
+          "title": "波长与频率对应",
+          "anchor": "microwave-wavelength",
+          "note": "保留波段并补频率换算和应用条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "c=fλ；波长与频率单位闭合"
+        },
+        {
+          "page": 16,
+          "title": "云雨雪中的传播优势",
+          "anchor": "microwave-penetration",
+          "note": "区分云层传播与地物穿透，保留撒哈拉例并限定干燥低损耗条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "不将全天候理解为大气影响为零；波长趋势需材料条件"
+        },
+        {
+          "page": 17,
+          "title": "云覆盖与全天时需求",
+          "anchor": "microwave-penetration",
+          "note": "区分云层传播与地物穿透，保留撒哈拉例并限定干燥低损耗条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "不将全天候理解为大气影响为零；波长趋势需材料条件"
+        },
+        {
+          "page": 18,
+          "title": "撒哈拉SIR-A与光学影像",
+          "anchor": "microwave-penetration",
+          "note": "区分云层传播与地物穿透，保留撒哈拉例并限定干燥低损耗条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "不将全天候理解为大气影响为零；波长趋势需材料条件"
+        },
+        {
+          "page": 19,
+          "title": "波长、湿度与穿透趋势",
+          "anchor": "microwave-penetration",
+          "note": "区分云层传播与地物穿透，保留撒哈拉例并限定干燥低损耗条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "不将全天候理解为大气影响为零；波长趋势需材料条件"
+        },
+        {
+          "page": 20,
+          "title": "高度计、海面高度与风场",
+          "anchor": "microwave-capabilities",
+          "note": "补高度计、散射计、DEM、地震、冰川等观测量与成果联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "相位能够提供信息需干涉几何及相干条件"
+        },
+        {
+          "page": 21,
+          "title": "回波振幅、相位及干涉",
+          "anchor": "microwave-capabilities",
+          "note": "补高度计、散射计、DEM、地震、冰川等观测量与成果联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "相位能够提供信息需干涉几何及相干条件"
+        },
+        {
+          "page": 22,
+          "title": "巴楚干涉相位与DEM",
+          "anchor": "microwave-capabilities",
+          "note": "补高度计、散射计、DEM、地震、冰川等观测量与成果联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "相位能够提供信息需干涉几何及相干条件"
+        },
+        {
+          "page": 23,
+          "title": "巴姆地震形变与冰川流动",
+          "anchor": "microwave-capabilities",
+          "note": "补高度计、散射计、DEM、地震、冰川等观测量与成果联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "相位能够提供信息需干涉几何及相干条件"
+        },
+        {
+          "page": 24,
+          "title": "微波技术优势汇总",
+          "anchor": "microwave-capabilities",
+          "note": "补高度计、散射计、DEM、地震、冰川等观测量与成果联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "相位能够提供信息需干涉几何及相干条件"
+        },
+        {
+          "page": 25,
+          "title": "几何畸变、信噪比与限制",
+          "anchor": "microwave-capabilities",
+          "note": "保留侧视畸变、噪声及解译限制并连接第三章",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 26,
+          "title": "微波遥感四阶段",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 27,
+          "title": "古代光学思想与小孔成像",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 28,
+          "title": "微粒说与波动说的历史",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 29,
+          "title": "杨氏双缝干涉",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 30,
+          "title": "法拉第电磁感应",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 31,
+          "title": "菲索齿轮测光速",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 32,
+          "title": "麦克斯韦电磁理论",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 33,
+          "title": "赫兹实验与马可尼通信",
+          "anchor": "microwave-history",
+          "note": "凝练四阶段与光学—电磁学发展主线；不逐字重复历史轶事",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史年份以原课件为背景；不作为新的官方日期认证"
+        },
+        {
+          "page": 34,
+          "title": "Radar含义与早期雷达",
+          "anchor": "microwave-observation",
+          "note": "补Radio Detection And Ranging与测距含义",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 35,
+          "title": "脉冲、真实孔径与SAR起源",
+          "anchor": "microwave-history",
+          "note": "补脉冲雷达、真实孔径、SAR与星载发展四阶段",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史参数仅作课程背景；不宣称逐条官方认证"
+        },
+        {
+          "page": 36,
+          "title": "空间微波遥感与SEASAT",
+          "anchor": "microwave-history",
+          "note": "补脉冲雷达、真实孔径、SAR与星载发展四阶段",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史参数仅作课程背景；不宣称逐条官方认证"
+        },
+        {
+          "page": 37,
+          "title": "1990年代多国SAR任务",
+          "anchor": "microwave-history",
+          "note": "补脉冲雷达、真实孔径、SAR与星载发展四阶段",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史参数仅作课程背景；不宣称逐条官方认证"
+        },
+        {
+          "page": 38,
+          "title": "雷达演进事件图",
+          "anchor": "microwave-history",
+          "note": "补脉冲雷达、真实孔径、SAR与星载发展四阶段",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "历史参数仅作课程背景；不宣称逐条官方认证"
+        },
+        {
+          "page": 39,
+          "title": "现代国际SAR任务谱系",
+          "anchor": "microwave-missions",
+          "note": "以任务族、波段、分辨率与测量目的组织比较；日期以共享来源核验记录为准",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "参数属于任务/模式，不能用最高分辨率替代所有产品分辨率"
+        },
+        {
+          "page": 40,
+          "title": "我国早期样机及机载SAR",
+          "anchor": "microwave-history",
+          "note": "补样机、星载实验及民用应用的发展链",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "行政/历史事实凝练保留，不逐字复述"
+        },
+        {
+          "page": 41,
+          "title": "我国星载微波探测实验",
+          "anchor": "microwave-history",
+          "note": "补样机、星载实验及民用应用的发展链",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "行政/历史事实凝练保留，不逐字复述"
+        },
+        {
+          "page": 42,
+          "title": "HJ-1C与高分三号",
+          "anchor": "microwave-history",
+          "note": "补样机、星载实验及民用应用的发展链",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "行政/历史事实凝练保留，不逐字复述"
+        },
+        {
+          "page": 43,
+          "title": "国产SAR任务示意",
+          "anchor": "microwave-missions",
+          "note": "补国产任务原表及功能比较阅读，标记课程时点/模式边界",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "波段/最高分辨率/用途不是唯一工程能力指标"
+        },
+        {
+          "page": 44,
+          "title": "国产SAR波段、分辨率与应用表",
+          "anchor": "microwave-missions",
+          "note": "补国产任务原表及功能比较阅读，标记课程时点/模式边界",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "波段/最高分辨率/用途不是唯一工程能力指标"
+        },
+        {
+          "page": 45,
+          "title": "波粒二象性、光子能量和动量",
+          "anchor": "microwave-wave-particle",
+          "note": "补光子能量、动量式及与SAR相位描述的联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "E=hf=hc/λ，p=h/λ；说明光子动量与功率P区分"
+        },
+        {
+          "page": 46,
+          "title": "电磁场与波的四要素",
+          "anchor": "microwave-wave-function",
+          "note": "补传播方向、k、ω、幅值、初相及单位",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "ψ=A sin(kz−ωt+φ0)，k=2π/λ，ω=2πf"
+        },
+        {
+          "page": 47,
+          "title": "沿z传播的正弦波函数",
+          "anchor": "microwave-wave-function",
+          "note": "补传播方向、k、ω、幅值、初相及单位",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "ψ=A sin(kz−ωt+φ0)，k=2π/λ，ω=2πf"
+        },
+        {
+          "page": 48,
+          "title": "角频率、初相与旋转矢量",
+          "anchor": "microwave-wave-function",
+          "note": "将相位写成kz−ωt+φ0并给出传播/单位对应",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "corrected",
+          "formula_check": "原页κ(z−ωt+φ0)按ω为角频率、φ0为相位解读时量纲不闭合；正文修正"
+        },
+        {
+          "page": 49,
+          "title": "单程路径差、相位差与距离",
+          "anchor": "microwave-range-phase",
+          "note": "补单程路径3λ/4→270°，雷达单程斜距同变化对应540°，说明符号及缠绕",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "φ=−4πR/λ；I12=s1 conj(s2)，Δφ12=+4π(R2−R1)/λ"
+        },
+        {
+          "page": 50,
+          "title": "波的叠加原理",
+          "anchor": "microwave-interference",
+          "note": "补复数和到强度，解释相长/相消",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "|s1+s2|²=A1²+A2²+2A1A2 cosΔφ"
+        },
+        {
+          "page": 51,
+          "title": "两波叠加图",
+          "anchor": "microwave-interference",
+          "note": "补复数和到强度，解释相长/相消",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "|s1+s2|²=A1²+A2²+2A1A2 cosΔφ"
+        },
+        {
+          "page": 52,
+          "title": "相干性与干涉条件",
+          "anchor": "microwave-interference",
+          "note": "解释稳定相对相位；同频不保证统计相干",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "corrected",
+          "formula_check": "随机相位变化使平均交叉项消退"
+        },
+        {
+          "page": 53,
+          "title": "三个波源振幅与旁瓣",
+          "anchor": "microwave-array",
+          "note": "原图配有限等比和推导，说明路径差、波束与旁瓣",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "N=3，δa=0得到3A；δa=π得到A；零分母取极限"
+        },
+        {
+          "page": 54,
+          "title": "阵列天线与能量集中",
+          "anchor": "microwave-array",
+          "note": "原图配有限等比和推导，说明路径差、波束与旁瓣",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "N=3，δa=0得到3A；δa=π得到A；零分母取极限"
+        },
+        {
+          "page": 55,
+          "title": "衍射与角分辨率限制",
+          "anchor": "microwave-diffraction",
+          "note": "补有限孔径角宽尺度与目标散射尺度",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "θ量级λ/D，非所有天线统一精确常数"
+        },
+        {
+          "page": 56,
+          "title": "极化的电场轨迹定义",
+          "anchor": "microwave-polarization",
+          "note": "补给定位置的电场端点轨迹与传播平面",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 57,
+          "title": "同相正交分量及合成振幅",
+          "anchor": "microwave-polarization",
+          "note": "补同相线极化峰值√2A，圆极化瞬时长度A；区分均方及接收复幅",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "同相峰值√(A²+A²)=√2A；两案例平均Ex²+Ey²=A²"
+        },
+        {
+          "page": 58,
+          "title": "分量相位差与椭圆",
+          "anchor": "microwave-polarization",
+          "note": "用归一化x、y消去时间推椭圆方程并列退化条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "x²+y²−2xy cosδ=sin²δ；δ=0或π退化直线"
+        },
+        {
+          "page": 59,
+          "title": "线、圆、椭圆轨迹",
+          "anchor": "microwave-polarization",
+          "note": "用归一化x、y消去时间推椭圆方程并列退化条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "x²+y²−2xy cosδ=sin²δ；δ=0或π退化直线"
+        },
+        {
+          "page": 60,
+          "title": "极化的分量表达式",
+          "anchor": "microwave-polarization",
+          "note": "用归一化x、y消去时间推椭圆方程并列退化条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "x²+y²−2xy cosδ=sin²δ；δ=0或π退化直线"
+        },
+        {
+          "page": 61,
+          "title": "相对相位与极化轨迹图",
+          "anchor": "microwave-polarization",
+          "note": "补H/V方向和分量基准；原页0/π线向与本文基准不同，保留约定差异",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "convention_limited",
+          "formula_check": "本文基准Ex=ax cosωt、Ey=ay cos(ωt+δ)下零相同向、π反向；原页可有其他轴/相位参考"
+        },
+        {
+          "page": 62,
+          "title": "HH、VV、HV、VH通道",
+          "anchor": "microwave-polarization",
+          "note": "补收发顺序、建筑与植被解释及彩色图映射阅读",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图像颜色由映射决定，不等同自然颜色；通道顺序按课件约定"
+        },
+        {
+          "page": 63,
+          "title": "输电线及塔多极化影像",
+          "anchor": "microwave-polarization",
+          "note": "补收发顺序、建筑与植被解释及彩色图映射阅读",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图像颜色由映射决定，不等同自然颜色；通道顺序按课件约定"
+        },
+        {
+          "page": 64,
+          "title": "不同极化海湾影像",
+          "anchor": "microwave-polarization",
+          "note": "补收发顺序、建筑与植被解释及彩色图映射阅读",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图像颜色由映射决定，不等同自然颜色；通道顺序按课件约定"
+        },
+        {
+          "page": 65,
+          "title": "极化彩色合成示意",
+          "anchor": "microwave-polarization",
+          "note": "补收发顺序、建筑与植被解释及彩色图映射阅读",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图像颜色由映射决定，不等同自然颜色；通道顺序按课件约定"
+        },
+        {
+          "page": 66,
+          "title": "大气吸收、散射与衰减",
+          "anchor": "microwave-atmosphere-window",
+          "note": "补功率衰减ODE及dB、气体吸收谱；限定全透明/X最高频概括",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "dP/dℓ=−κP；LdB=10κℓ/ln10；窗口非零衰减"
+        },
+        {
+          "page": 67,
+          "title": "气体吸收谱与传播窗口",
+          "anchor": "microwave-atmosphere-window",
+          "note": "补功率衰减ODE及dB、气体吸收谱；限定全透明/X最高频概括",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "dP/dℓ=−κP；LdB=10κℓ/ln10；窗口非零衰减"
+        },
+        {
+          "page": 68,
+          "title": "星载SAR窗口与吸收峰",
+          "anchor": "microwave-atmosphere-window",
+          "note": "补功率衰减ODE及dB、气体吸收谱；限定全透明/X最高频概括",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "dP/dℓ=−κP；LdB=10κℓ/ln10；窗口非零衰减"
+        },
+        {
+          "page": 69,
+          "title": "瑞利与米氏散射",
+          "anchor": "microwave-atmosphere-scattering",
+          "note": "补尺寸参量、Rayleigh尺度，解释Mie区域不是固定幂次",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "x=2πa/λ；小粒子固定材料下σsca∝a⁶/λ⁴"
+        },
+        {
+          "page": 70,
+          "title": "粒径、频率与散射机制",
+          "anchor": "microwave-atmosphere-scattering",
+          "note": "补尺寸参量、Rayleigh尺度，解释Mie区域不是固定幂次",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "x=2πa/λ；小粒子固定材料下σsca∝a⁶/λ⁴"
+        },
+        {
+          "page": 71,
+          "title": "非降水云层经验衰减式",
+          "anchor": "microwave-cloud-attenuation",
+          "note": "原式配图，保留M=1 g/m³；T用K、λ数值用cm仅作曲线一致性条件解读",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "source_units_unresolved",
+          "formula_check": "Kc=4.35M·10^[0.0122(291−T)−1]/λ² dB/km；M=1,T=293,λ=3得0.0456926922；原页缺T/λ单位与适用域，未通过工程认证"
+        },
+        {
+          "page": 72,
+          "title": "降雨衰减曲线与雨强",
+          "anchor": "microwave-rain-and-brightness",
+          "note": "原雨衰图配阅读；y轴nep/km，不能直接作为dB/km读取",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "attenuation_convention_unresolved",
+          "formula_check": "若为幅值指数则1 Np=8.686 dB，若定义为功率指数需按其约定转换；原页未说明衰减定义"
+        },
+        {
+          "page": 73,
+          "title": "吸收/散射转换的示例频率",
+          "anchor": "microwave-atmosphere-scattering",
+          "note": "保留原课程示例，明确粒径、温度、雨强与材料依赖",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "2.81 cm↔10.69 GHz、6.30 cm↔4.805 GHz为近似对应，不作普遍界线"
+        },
+        {
+          "page": 74,
+          "title": "云层亮温、噪声与辐射传输",
+          "anchor": "microwave-rain-and-brightness",
+          "note": "补等温、纯吸收简化辐射传输ODE及解，并区别被动辐射和主动SAR",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "dTb/dτ=Tc−Tb，Tb=Tb0 exp(−τ)+Tc[1−exp(−τ)]；散射/非等温另需模型"
+        },
+        {
+          "page": 75,
+          "title": "地物交互与表面反射",
+          "anchor": "microwave-scattering",
+          "note": "补反射、吸收、透射与能量分配边界；不将越粗糙越亮绝对化",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "材料、角度、波段、极化共同决定返回量"
+        },
+        {
+          "page": 76,
+          "title": "反射、吸收、透射",
+          "anchor": "microwave-scattering",
+          "note": "补反射、吸收、透射与能量分配边界；不将越粗糙越亮绝对化",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "材料、角度、波段、极化共同决定返回量"
+        },
+        {
+          "page": 77,
+          "title": "相对粗糙度及散射示意",
+          "anchor": "microwave-roughness",
+          "note": "补高度差导致相位差与相对光滑条件",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "Δφ=4πh cosθ/λ；λ/8cosθ为常用Rayleigh相位尺度非统一自然界阈值"
+        },
+        {
+          "page": 78,
+          "title": "方向散射截面的定义",
+          "anchor": "microwave-scattering-cross-section",
+          "note": "原页配图，从单位立体角功率推σ",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "corrected",
+          "formula_check": "σ(Ω)=4π(dPs/dΩ)/Sinc；固定入射方向、频率、收发极化、目标状态；非总散射截面"
+        },
+        {
+          "page": 79,
+          "title": "后向散射截面与接收量",
+          "anchor": "microwave-scattering-cross-section",
+          "note": "区分目标处入射功率密度与雷达处散射功率密度；接收功率需乘有效面积",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "corrected",
+          "formula_check": "σ=4πR² Sback(R)/Sinc；S单位W/m²，σ单位m²；不直接以接收总功率代入"
+        },
+        {
+          "page": 80,
+          "title": "点目标、各向异性与多重散射",
+          "anchor": "microwave-scattering-mechanisms",
+          "note": "补点、方向性、多次、表面/二次/体散射的形状与回波联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 81,
+          "title": "体散射及介质不均匀性",
+          "anchor": "microwave-scattering-mechanisms",
+          "note": "补点、方向性、多次、表面/二次/体散射的形状与回波联系",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "概念与原图对照；无独立公式验算"
+        },
+        {
+          "page": 82,
+          "title": "低损耗介质与幅值趋肤深度",
+          "anchor": "microwave-dielectric",
+          "note": "保留ETFE低损耗例，固定复介电常数符号并区分幅值与功率深度",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "A=A0 exp(−αℓ)，P=P0 exp(−2αℓ)；dA=1/α，dP=1/(2α)"
+        },
+        {
+          "page": 83,
+          "title": "穿透因素与波长示意",
+          "anchor": "microwave-penetration-cases",
+          "note": "补波长相对目标结构尺度及条件，原例不作通用探测深度",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "长波趋势需固定介电参数及几何；散射与接口损耗另计"
+        },
+        {
+          "page": 84,
+          "title": "不同波长植被穿透图",
+          "anchor": "microwave-penetration-cases",
+          "note": "补波长相对目标结构尺度及条件，原例不作通用探测深度",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "长波趋势需固定介电参数及几何；散射与接口损耗另计"
+        },
+        {
+          "page": 85,
+          "title": "不同波长地下结构穿透图",
+          "anchor": "microwave-penetration-cases",
+          "note": "补波长相对目标结构尺度及条件，原例不作通用探测深度",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "长波趋势需固定介电参数及几何；散射与接口损耗另计"
+        },
+        {
+          "page": 86,
+          "title": "材料与穿透应用图例",
+          "anchor": "microwave-penetration-cases",
+          "note": "补积雪、冰、植被与季节改变材料损耗和返回机制",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图中有效散射位置不是材料幅值1/e深度"
+        },
+        {
+          "page": 87,
+          "title": "季节/积雪等穿透图例",
+          "anchor": "microwave-penetration-cases",
+          "note": "补积雪、冰、植被与季节改变材料损耗和返回机制",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "图中有效散射位置不是材料幅值1/e深度"
+        },
+        {
+          "page": 88,
+          "title": "功率穿透深度公式及含水量曲线",
+          "anchor": "microwave-penetration-depth",
+          "note": "复介电常数→精确衰减→弱损耗功率深度推导；保留图但不硬编码不明深度/百分比",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "source_axis_percentages_unresolved",
+          "formula_check": "α=(2π/λ)sqrt[(sqrt(ε′²+ε″²)−ε′)/2]；dP≈λsqrt(ε′)/(2πε″)；原轴gr/cm³与0–60可疑、~15/~10/~40%含义未明，未认证"
+        },
+        {
+          "page": 89,
+          "title": "入射角、折射与路径",
+          "anchor": "microwave-penetration-cases",
+          "note": "补折射路径ℓ=z/cosθt及双程返回功率",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "covered",
+          "formula_check": "回程功率比例exp(−4αℓ)；1/e路径1/(4α)不代表固定探测深度"
+        },
+        {
+          "page": 90,
+          "title": "极化穿透排序的概括",
+          "anchor": "microwave-polarimetric-height",
+          "note": "结合三页原图解释HH/HV等通道条件和有效相位中心，不接受无条件VV>HH>HV排序",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "universal_ranking_rejected",
+          "formula_check": "通道返回为材料、结构、方向、散射贡献的相干和；有效高度不等于介质1/e损耗深度"
+        },
+        {
+          "page": 91,
+          "title": "植被HH、HV有效散射高度",
+          "anchor": "microwave-polarimetric-height",
+          "note": "结合三页原图解释HH/HV等通道条件和有效相位中心，不接受无条件VV>HH>HV排序",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "universal_ranking_rejected",
+          "formula_check": "通道返回为材料、结构、方向、散射贡献的相干和；有效高度不等于介质1/e损耗深度"
+        },
+        {
+          "page": 92,
+          "title": "多极化有效散射位置示意",
+          "anchor": "microwave-polarimetric-height",
+          "note": "结合三页原图解释HH/HV等通道条件和有效相位中心，不接受无条件VV>HH>HV排序",
+          "review_method": "联系表逐页核对，关键公式页另放大检查",
+          "review_status": "universal_ranking_rejected",
+          "formula_check": "通道返回为材料、结构、方向、散射贡献的相干和；有效高度不等于介质1/e损耗深度"
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "title": "第二讲 · 合成孔径雷达成像原理",
+      "chapter": "insar-imaging",
+      "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+      "source_sha256": "f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56",
+      "lesson_sha256": "f8fff6f7f19c2873f7192c588fe01c5d55de212f8c4aad848aaa92f2037e4674",
+      "pages": [
+        {
+          "page": 1,
+          "title": "封面与四部分课程安排",
+          "anchor": "insar-imaging",
+          "note": "保留标题、来源与章节主线",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 2,
+          "title": "封面与四部分课程安排",
+          "anchor": "insar-imaging",
+          "note": "保留标题、来源与章节主线",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 3,
+          "title": "主动/被动与成像/非成像分类",
+          "anchor": "i2-sensor-family",
+          "note": "新增五类传感器与直接观测量对照",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 4,
+          "title": "散射计组成、角度/极化响应、分贝及SeaWinds风场",
+          "anchor": "i2-scatterometer",
+          "note": "新增仪器链、反演链、dB正反转换与用途边界",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 5,
+          "title": "散射计组成、角度/极化响应、分贝及SeaWinds风场",
+          "anchor": "i2-scatterometer",
+          "note": "新增仪器链、反演链、dB正反转换与用途边界",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 6,
+          "title": "散射计组成、角度/极化响应、分贝及SeaWinds风场",
+          "anchor": "i2-scatterometer",
+          "note": "新增仪器链、反演链、dB正反转换与用途边界",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 7,
+          "title": "散射计组成、角度/极化响应、分贝及SeaWinds风场",
+          "anchor": "i2-scatterometer",
+          "note": "新增仪器链、反演链、dB正反转换与用途边界",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 8,
+          "title": "高度计与探地雷达",
+          "anchor": "i2-altimeter-gpr",
+          "note": "补往返因子、参考面和地下波速条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "可见原页s=ct指发射—返回延迟，单程必须除2；已修正。"
+        },
+        {
+          "page": 9,
+          "title": "高度计与探地雷达",
+          "anchor": "i2-altimeter-gpr",
+          "note": "补往返因子、参考面和地下波速条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 10,
+          "title": "被动/主动成像与ENVISAT多载荷",
+          "anchor": "i2-sensor-family",
+          "note": "补能量来源图与MWR/ASAR载荷区分",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 11,
+          "title": "被动/主动成像与ENVISAT多载荷",
+          "anchor": "i2-sensor-family",
+          "note": "补能量来源图与MWR/ASAR载荷区分",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 12,
+          "title": "被动/主动成像与ENVISAT多载荷",
+          "anchor": "i2-sensor-family",
+          "note": "补能量来源图与MWR/ASAR载荷区分",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 13,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 14,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 15,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 16,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 17,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 18,
+          "title": "亮温概念、足迹表、辐射路径、光谱/SST例、接收功率",
+          "anchor": "i2-radiometer",
+          "note": "补定义、谱密度积分到功率、TA条件及历史足迹参数",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 19,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 20,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 21,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 22,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 23,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 24,
+          "title": "侧视足迹、回波时序、单程测距、影像案例",
+          "anchor": "i2-side-looking",
+          "note": "保留侧视图并把空间方向与快慢时间贯通；案例地形解译接第三章",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 25,
+          "title": "四种角度、天线宽长、波束角、幅宽、ERS算例",
+          "anchor": "i2-antenna-swath",
+          "note": "补角起点、全角、平地端点推导和算例，更正可见原页角宽符号/换算",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "look/depression与incident/local incident分开定义；平地近似互等不是球面严格等。"
+        },
+        {
+          "page": 26,
+          "title": "四种角度、天线宽长、波束角、幅宽、ERS算例",
+          "anchor": "i2-antenna-swath",
+          "note": "补角起点、全角、平地端点推导和算例，更正可见原页角宽符号/换算",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "局部角越小越亮只作一般趋势，散射条件详第三章。"
+        },
+        {
+          "page": 27,
+          "title": "四种角度、天线宽长、波束角、幅宽、ERS算例",
+          "anchor": "i2-antenna-swath",
+          "note": "补角起点、全角、平地端点推导和算例，更正可见原页角宽符号/换算",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "R对应ρ，θ对应η；角宽取全宽，平地小角。"
+        },
+        {
+          "page": 28,
+          "title": "四种角度、天线宽长、波束角、幅宽、ERS算例",
+          "anchor": "i2-antenna-swath",
+          "note": "补角起点、全角、平地端点推导和算例，更正可见原页角宽符号/换算",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "原页可见参数，抽取含隐藏答案不用于错误认定。"
+        },
+        {
+          "page": 29,
+          "title": "四种角度、天线宽长、波束角、幅宽、ERS算例",
+          "anchor": "i2-antenna-swath",
+          "note": "补角起点、全角、平地端点推导和算例，更正可见原页角宽符号/换算",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "52.4km可见代入正确；第二条βv应βh；18′35″换算有误。"
+        },
+        {
+          "page": 30,
+          "title": "RAR/SAR几何、孔径与空间分辨率定义",
+          "anchor": "i2-real-aperture",
+          "note": "保留原有几何与两类瓶颈，补PRF工程连接",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 31,
+          "title": "RAR/SAR几何、孔径与空间分辨率定义",
+          "anchor": "i2-real-aperture",
+          "note": "保留原有几何与两类瓶颈，补PRF工程连接",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 32,
+          "title": "RAR/SAR几何、孔径与空间分辨率定义",
+          "anchor": "i2-real-aperture",
+          "note": "保留原有几何与两类瓶颈，补PRF工程连接",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 33,
+          "title": "RAR/SAR几何、孔径与空间分辨率定义",
+          "anchor": "i2-real-aperture",
+          "note": "保留原有几何与两类瓶颈，补PRF工程连接",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 34,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 35,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "从水平起算俯角余弦，与竖直起算θ正弦互余。"
+        },
+        {
+          "page": 36,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "δx=δR/sinθ，不是乘sinθ。"
+        },
+        {
+          "page": 37,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 38,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 39,
+          "title": "未压缩脉冲斜距/地距分辨率与45度算例",
+          "anchor": "i2-pulse-limit",
+          "note": "保留双程推导、21.2m算例及底点线性投影失效条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 40,
+          "title": "RAR方位分辨率与850km长天线算例",
+          "anchor": "i2-rar-azimuth",
+          "note": "新增课件850km结果，与原853km算例区分",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 41,
+          "title": "RAR方位分辨率与850km长天线算例",
+          "anchor": "i2-rar-azimuth",
+          "note": "新增课件850km结果，与原853km算例区分",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 42,
+          "title": "RAR方位分辨率与850km长天线算例",
+          "anchor": "i2-rar-azimuth",
+          "note": "新增课件850km结果，与原853km算例区分",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "850km得到4811m与2405.5m长天线；旧853km算例保留。"
+        },
+        {
+          "page": 43,
+          "title": "RAR方位分辨率与850km长天线算例",
+          "anchor": "i2-rar-azimuth",
+          "note": "新增课件850km结果，与原853km算例区分",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 44,
+          "title": "处理链、脉冲压缩、chirp与带宽分辨率",
+          "anchor": "i2-range-compression",
+          "note": "保留匹配滤波独立推导；新增显式聚焦步骤表，明确压缩时间非发射时宽",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 45,
+          "title": "处理链、脉冲压缩、chirp与带宽分辨率",
+          "anchor": "i2-range-compression",
+          "note": "保留匹配滤波独立推导；新增显式聚焦步骤表，明确压缩时间非发射时宽",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 46,
+          "title": "处理链、脉冲压缩、chirp与带宽分辨率",
+          "anchor": "i2-range-compression",
+          "note": "保留匹配滤波独立推导；新增显式聚焦步骤表，明确压缩时间非发射时宽",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 47,
+          "title": "处理链、脉冲压缩、chirp与带宽分辨率",
+          "anchor": "i2-range-compression",
+          "note": "保留匹配滤波独立推导；新增显式聚焦步骤表，明确压缩时间非发射时宽",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 48,
+          "title": "处理链、脉冲压缩、chirp与带宽分辨率",
+          "anchor": "i2-range-compression",
+          "note": "保留匹配滤波独立推导；新增显式聚焦步骤表，明确压缩时间非发射时宽",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "τ为压缩后等效时宽，非发射T；主瓣常数随判据。"
+        },
+        {
+          "page": 49,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 50,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "Wiley用于SAR构想，不是首次发现多普勒现象。"
+        },
+        {
+          "page": 51,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 52,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 53,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 54,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "Θa为半波束角；全多普勒带宽4Vrel/λ对应2v/La。"
+        },
+        {
+          "page": 55,
+          "title": "合成孔径、相干/多普勒、半波束角与La/2",
+          "anchor": "i2-synthetic-aperture",
+          "note": "补p54全/半角两种带宽推导与原页邻图，声明理想条带条件",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 56,
+          "title": "RAR/SAR两方向分辨率数值对照",
+          "anchor": "i2-example-bandwidth",
+          "note": "保留24.7m与5m关系；天线/带宽分别从原页引用，产品不混口径",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "理论5m方位与产品名义分辨率分开；80–100km幅宽不草率判错。"
+        },
+        {
+          "page": 57,
+          "title": "像元间距/分辨率及GRD多视表",
+          "anchor": "i2-pixel-spacing",
+          "note": "补SM/IW/EW课件GRD数值和系统分辨率口径差别",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 58,
+          "title": "像元间距/分辨率及GRD多视表",
+          "anchor": "i2-pixel-spacing",
+          "note": "补SM/IW/EW课件GRD数值和系统分辨率口径差别",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 59,
+          "title": "像元间距/分辨率及GRD多视表",
+          "anchor": "i2-pixel-spacing",
+          "note": "补SM/IW/EW课件GRD数值和系统分辨率口径差别",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 60,
+          "title": "像元间距/分辨率及GRD多视表",
+          "anchor": "i2-pixel-spacing",
+          "note": "补SM/IW/EW课件GRD数值和系统分辨率口径差别",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "历史Level1 GRD多视分辨率与p94系统模式响应不同。"
+        },
+        {
+          "page": 61,
+          "title": "H2S、Wiley、Willow Run、光学到数字、行星探测、发展图",
+          "anchor": "i2-history",
+          "note": "新增历史与原理能力连接，说明ft对数轴与年份意义",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 62,
+          "title": "H2S、Wiley、Willow Run、光学到数字、行星探测、发展图",
+          "anchor": "i2-history",
+          "note": "新增历史与原理能力连接，说明ft对数轴与年份意义",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "原时间轴年代位置与文字部分不一致；不据图像箭头定位制造确定年份。"
+        },
+        {
+          "page": 63,
+          "title": "H2S、Wiley、Willow Run、光学到数字、行星探测、发展图",
+          "anchor": "i2-history",
+          "note": "新增历史与原理能力连接，说明ft对数轴与年份意义",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 64,
+          "title": "H2S、Wiley、Willow Run、光学到数字、行星探测、发展图",
+          "anchor": "i2-history",
+          "note": "新增历史与原理能力连接，说明ft对数轴与年份意义",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 65,
+          "title": "H2S、Wiley、Willow Run、光学到数字、行星探测、发展图",
+          "anchor": "i2-history",
+          "note": "新增历史与原理能力连接，说明ft对数轴与年份意义",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "纵轴英尺ft且对数；不按线性米单位读取。"
+        },
+        {
+          "page": 66,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 67,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 68,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 69,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 70,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 71,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 72,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "IW不是相隔6–12秒得到两时刻，重复轨道需不同获取日期。"
+        },
+        {
+          "page": 73,
+          "title": "条带/扫描/聚束/滑聚/TOPS/马赛克/波/IW",
+          "anchor": "i2-modes",
+          "note": "保留全模式表，纠正IW秒级双观测说法；任务表连接模式指标",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 74,
+          "title": "平台历史、Seasat/ERS/JERS/RADARSAT1",
+          "anchor": "i2-platform-history",
+          "note": "补分组工程表：波段、极化、角度、幅宽、两方向尺度和基线条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "历史平台示意的年份/极化部分存在错值，不抄为确定规格。"
+        },
+        {
+          "page": 75,
+          "title": "平台历史、Seasat/ERS/JERS/RADARSAT1",
+          "anchor": "i2-platform-history",
+          "note": "补分组工程表：波段、极化、角度、幅宽、两方向尺度和基线条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 76,
+          "title": "平台历史、Seasat/ERS/JERS/RADARSAT1",
+          "anchor": "i2-platform-history",
+          "note": "补分组工程表：波段、极化、角度、幅宽、两方向尺度和基线条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 77,
+          "title": "平台历史、Seasat/ERS/JERS/RADARSAT1",
+          "anchor": "i2-platform-history",
+          "note": "补分组工程表：波段、极化、角度、幅宽、两方向尺度和基线条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 78,
+          "title": "平台历史、Seasat/ERS/JERS/RADARSAT1",
+          "anchor": "i2-platform-history",
+          "note": "补分组工程表：波段、极化、角度、幅宽、两方向尺度和基线条件",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 79,
+          "title": "SRTM双天线、干涉条纹与DEM成果",
+          "anchor": "i2-srtm",
+          "note": "补单航过设计与DEM格网/高度精度区分，纠正年份与幅宽表头",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "正确SRTM任务2000年2月；带宽(km)实际幅宽；DEM30/90m格网不等于高程精度。"
+        },
+        {
+          "page": 80,
+          "title": "SRTM双天线、干涉条纹与DEM成果",
+          "anchor": "i2-srtm",
+          "note": "补单航过设计与DEM格网/高度精度区分，纠正年份与幅宽表头",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "图片保留原文2002错误，邻图注记更正2000。"
+        },
+        {
+          "page": 81,
+          "title": "SRTM双天线、干涉条纹与DEM成果",
+          "anchor": "i2-srtm",
+          "note": "补单航过设计与DEM格网/高度精度区分，纠正年份与幅宽表头",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 82,
+          "title": "SRTM双天线、干涉条纹与DEM成果",
+          "anchor": "i2-srtm",
+          "note": "补单航过设计与DEM格网/高度精度区分，纠正年份与幅宽表头",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 83,
+          "title": "ENVISAT及模式图",
+          "anchor": "i2-platform-history",
+          "note": "补参数与模式组，纠正年份冲突及p85 RADARSAT图标识",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "正文2002年与表2000年冲突，采用2002。"
+        },
+        {
+          "page": 84,
+          "title": "ENVISAT及模式图",
+          "anchor": "i2-platform-history",
+          "note": "补参数与模式组，纠正年份冲突及p85 RADARSAT图标识",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 85,
+          "title": "ENVISAT及模式图",
+          "anchor": "i2-platform-history",
+          "note": "补参数与模式组，纠正年份冲突及p85 RADARSAT图标识",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "图内标RADARSAT，不能按标题当ENVISAT定量图。"
+        },
+        {
+          "page": 86,
+          "title": "ALOS/PALSAR、ALOS2/4与具体模式表",
+          "anchor": "i2-platform-modern",
+          "note": "补全模式参数和ALOS2像元/分辨率细表，列ALOS原页冲突",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "优于2m与表多视10/20m、4.6/46天、天线两尺寸冲突，不拼成规格。"
+        },
+        {
+          "page": 87,
+          "title": "ALOS/PALSAR、ALOS2/4与具体模式表",
+          "anchor": "i2-platform-modern",
+          "note": "补全模式参数和ALOS2像元/分辨率细表，列ALOS原页冲突",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "三类模式与嵌入详细条带表分开，像元间距不是分辨率。"
+        },
+        {
+          "page": 88,
+          "title": "ALOS/PALSAR、ALOS2/4与具体模式表",
+          "anchor": "i2-platform-modern",
+          "note": "补全模式参数和ALOS2像元/分辨率细表，列ALOS原页冲突",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "重复页合并解释，数值口径与87同。"
+        },
+        {
+          "page": 89,
+          "title": "ALOS/PALSAR、ALOS2/4与具体模式表",
+          "anchor": "i2-platform-modern",
+          "note": "补全模式参数和ALOS2像元/分辨率细表，列ALOS原页冲突",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 90,
+          "title": "COSMO/RADARSAT2/TerraSAR/TanDEM/Sentinel",
+          "anchor": "i2-platform-modern",
+          "note": "逐任务模式参数与干涉设计；纠正年份，不把旧星座表当实时状态",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 91,
+          "title": "COSMO/RADARSAT2/TerraSAR/TanDEM/Sentinel",
+          "anchor": "i2-platform-modern",
+          "note": "逐任务模式参数与干涉设计；纠正年份，不把旧星座表当实时状态",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "原页2006年发射错误，采用2007；各极化组合依模式。"
+        },
+        {
+          "page": 92,
+          "title": "COSMO/RADARSAT2/TerraSAR/TanDEM/Sentinel",
+          "anchor": "i2-platform-modern",
+          "note": "逐任务模式参数与干涉设计；纠正年份，不把旧星座表当实时状态",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "TanDEM-X为2010年发射，原2009不用；12mDEM网格不等于高度精度。"
+        },
+        {
+          "page": 93,
+          "title": "COSMO/RADARSAT2/TerraSAR/TanDEM/Sentinel",
+          "anchor": "i2-platform-modern",
+          "note": "逐任务模式参数与干涉设计；纠正年份，不把旧星座表当实时状态",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 94,
+          "title": "COSMO/RADARSAT2/TerraSAR/TanDEM/Sentinel",
+          "anchor": "i2-platform-modern",
+          "note": "逐任务模式参数与干涉设计；纠正年份，不把旧星座表当实时状态",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "p94EW标SC但作为超宽幅理解；12/6天是原A/B设计，不断言实时状态。"
+        },
+        {
+          "page": 95,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 96,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 97,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "源表m2列场景边长格式；正文使用约5×5km等场景尺寸，不当面积单位。"
+        },
+        {
+          "page": 98,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "6小时应急访问不是固定干涉回归。"
+        },
+        {
+          "page": 99,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 100,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "多基线编队与不同日期重轨分开；毫米能力不是无条件误差保证。"
+        },
+        {
+          "page": 101,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 102,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "单页1280px核对",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "重访2–3天与干涉回归11天分开，5–8cm是定轨，不是形变误差。"
+        },
+        {
+          "page": 103,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "标题两星但正文首发星，不泛化所有参数。"
+        },
+        {
+          "page": 104,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "最高0.5m与最大240km不同模式，不能拼成单规格。"
+        },
+        {
+          "page": 105,
+          "title": "GF3/C-SAR/商业小星/编队/Ku/Ka/L国内任务",
+          "anchor": "i2-platform-china",
+          "note": "覆盖11个主题任务；各自技术差别、尺度/幅宽及任务能力条件化",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "无新增独立核心公式；主题关系按正文定义组织。"
+        },
+        {
+          "page": 106,
+          "title": "ASF任务档案与检索入口",
+          "anchor": "i2-asf-acquisition",
+          "note": "新增研究区→产品→轨道/模式/极化→实际获取→辅助数据→归档步骤",
+          "review_method": "1280px原页组成的联系表视觉检查",
+          "review_status": "正文已修订，等待根代理统一构建/网页/官方任务来源复核",
+          "formula_check": "当前档案/权限以实际搜索为准，未实际下载或声称可用像对。"
+        }
+      ]
+    },
+    {
+      "id": "L3",
+      "title": "第三讲 · SAR 图像特征及解译",
+      "chapter": "insar-interpretation",
+      "source": "第三讲-SAR图像特征及解译-202610.pdf",
+      "source_sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74",
+      "lesson_sha256": "446ef9c9da20c63138d7f2ffe819955b1ba792a1e98275a8cdad1fcc01263cb4",
+      "pages": [
+        {
+          "page": 1,
+          "title": "InSAR原理与应用",
+          "anchor": "insar-interpretation",
+          "note": "课名与教师范围原已列明；保留章节入口",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 2,
+          "title": "课程内容",
+          "anchor": "insar-interpretation-supplement",
+          "note": "原已说明目录与正文差异；新增显式课堂/教材层次，防止统计补充遮蔽课堂",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 3,
+          "title": "SAR 系统工作参数",
+          "anchor": "insar-interpretation-observation",
+          "note": "原参数表未独立解释照射带/高度/姿态；补足覆盖、波束和几何作用",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 4,
+          "title": "SAR 系统雷达波长的选择 —— 应用考虑",
+          "anchor": "insar-interpretation-band-selection",
+          "note": "原只概括长波穿透；补X/C/L/P任务线索与尺度条件表",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 5,
+          "title": "SAR 系统雷达波长对比",
+          "anchor": "insar-interpretation-band-selection",
+          "note": "原没有C/L/P农田实例；加入原图及按同地块、通道/尺度控制读图",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 6,
+          "title": "使用 L波段 SAR 图像制作地质图",
+          "anchor": "insar-interpretation-band-selection",
+          "note": "原缺L波段地质成图实例；补构造条带、照射方向与岩性判断边界",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 7,
+          "title": "SAR 系统雷达波长的选择 —— 系统考虑",
+          "anchor": "insar-interpretation-band-selection",
+          "note": "原缺长短波系统代价；补孔径、器件、供能约束和非单变量定律，保留NISAR课堂例子",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 8,
+          "title": "极化 (Polarization)",
+          "anchor": "insar-interpretation-observation",
+          "note": "原已有HH/VV/HV/VH及发射/接收顺序；保留并与实例相接",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 9,
+          "title": "极化 (Polarization)",
+          "anchor": "insar-interpretation-observation",
+          "note": "把H/V明确为规定坐标下电场方向而非地物水平/竖直面",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 10,
+          "title": "极化选择",
+          "anchor": "insar-interpretation-polarization-examples",
+          "note": "将HH/VV线性结构、HV植被、VV海面课堂线索展开并注明非固定分类标签",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 11,
+          "title": "极化选择",
+          "anchor": "insar-interpretation-polarization-examples",
+          "note": "补跨波段RGB原图和红C-HH/绿L-HV/蓝L-HH精确映射",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 12,
+          "title": "极化选择",
+          "anchor": "insar-interpretation-polarization-examples",
+          "note": "补同为C波段的极化实例，区分强度合成与全极化复分析及精度验证",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 13,
+          "title": "斜距显示的距离压缩",
+          "anchor": "insar-interpretation-scale-conventions",
+          "note": "补原脉冲τ式、θ/俯角互余与30/60度分辨率算例，区别脉冲压缩带宽式",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "Rg=τc/(2sinθ), Rr=τc/2；θ为从竖直起的视角，图内俯角从水平起",
+            "checked": "ρG=cτ/(2sinθ)=cτ/(2cosη), η=90°−θ；脉冲压缩时用有效带宽分辨率",
+            "visual": true
+          }
+        },
+        {
+          "page": 14,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-slant-ground-source",
+          "note": "补同一农田斜距与地距重采样读图，明确非新增分辨能力",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 15,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-scale-conventions",
+          "note": "补方位尺度近似的模式前提、距离向局部比例尺、像元与分辨率区别",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "rG=rR/sinθ；近到远由粗变细，方位尺度恒定为课堂近似",
+            "checked": "固定采样/模式下解释；不同模式与重采样仍区分像元间距和分辨率",
+            "visual": true
+          }
+        },
+        {
+          "page": 16,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-scale-conventions",
+          "note": "原缺图上距离/比例尺原式；定义a和Δy并推到ΔG sinθ/a",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "y1−y2=f(R1−R2)=(R1−R2)/a；Δy=fΔGsinθ",
+            "checked": "Δy≈ΔGsinθ/a；图上与地面长度单位一致，像素坐标另定义间距",
+            "visual": true
+          }
+        },
+        {
+          "page": 17,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-slant-ground-source",
+          "note": "视觉确认原件有根号；保留SR/H/GR到本站R/H/G的符号映射，限制严格抛物线说法",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "GR=√(SR²−H′²)；图中有根号",
+            "checked": "G=√(R²−H²)；dR/dG=sinθ；不采用任意距离严格抛物线说法",
+            "visual": true
+          }
+        },
+        {
+          "page": 18,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-slant-ground-source",
+          "note": "补等宽目标与实际农田重采样对照的读图顺序",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 19,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-range",
+          "note": "原已有近距压缩强、远距压缩弱及导数；保留",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 20,
+          "title": "SAR 图像的比例尺",
+          "anchor": "insar-interpretation-range",
+          "note": "保留四条距离压缩规律，并强调地距显示不消除山区不可逆几何缺失",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 21,
+          "title": "SAR 侧视成像示意图",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "补同剖面多山坡上收缩、叠掩、阴影共存，避免只按近远距离硬分类",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 22,
+          "title": "SAR 图像几何特征",
+          "anchor": "insar-interpretation-relief-displacement",
+          "note": "原未讲高程像点位移；补SAR向近距、光学向像底点外及方位误差边界",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 23,
+          "title": "雷达影像与航摄影像 像点位移方向相反",
+          "anchor": "insar-interpretation-relief-displacement",
+          "note": "加入原光学/SAR位移图，推高目标ΔR约−hcosθ及平地误定位ΔG约−hcotθ",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 24,
+          "title": "雷达影像与航摄影像 像点位移方向相反",
+          "anchor": "insar-interpretation-relief-displacement",
+          "note": "以高处/底部对应点解释中心投影与距离排序相反，而非屏幕固定左右",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 25,
+          "title": "雷达影像与航摄影像 像点位移方向相反",
+          "anchor": "insar-interpretation-relief-displacement",
+          "note": "补光学像底点向外高程位移与影像坐标定义",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 26,
+          "title": "SAR 图像几何畸变",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "补连续地形剖面内三种畸变邻接出现",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 27,
+          "title": "雷达图像透视收缩 (foreshortening)",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "保留前坡投影推导与亮度受散射共同影响的条件",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 28,
+          "title": "雷达图像透视收缩 (foreshortening)",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "原件透视收缩实例和自绘几何已存在，保留并加课堂数值关系",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 29,
+          "title": "透视收缩的极端情况",
+          "anchor": "insar-interpretation-front-back-table",
+          "note": "补零局部角退化极限与增入射角减收缩但增阴影取舍",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 30,
+          "title": "前后坡透视收缩情况",
+          "anchor": "insar-interpretation-front-back-table",
+          "note": "补相同实际坡长、相同坡度前后坡的sin(θ−α)/sin(θ+α)对照",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 31,
+          "title": "雷达图像透视收缩 (foreshortening)",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "原未写完整百分式；补Fp=(1−sinθℓ)×100%并限正常投影范围",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "Fp=(1−sinθ)×100%，这里θ为局部角",
+            "checked": "Fp=(1−LR/L)×100%≈(1−sinθℓ)×100%；负角转叠掩判断",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 32,
+          "title": "雷达图像叠掩 (Layover)",
+          "anchor": "insar-interpretation-layover",
+          "note": "保留α>θ、先收到坡顶回波与近距风险条件",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 33,
+          "title": "雷达图像叠掩 (Layover)",
+          "anchor": "insar-interpretation-layover",
+          "note": "保留坡度+俯角>90与局部带符号入射角关系，避免角名混用",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "坡度与俯角之和>90°；带符号局部入射角负",
+            "checked": "前坡α>θ⇔α+(90°−θ)>90°；θ从竖直起",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 34,
+          "title": "雷达图像叠掩 (Layover)",
+          "anchor": "insar-interpretation-shadow",
+          "note": "原已有说明：负局部角是投影反转约定；正局部角不全部意味着前坡收缩",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 35,
+          "title": "透视收缩和叠掩",
+          "anchor": "insar-interpretation-layover",
+          "note": "保留原火山/三维地形图，补逐点几何验证读法",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 36,
+          "title": "透视收缩和叠掩",
+          "anchor": "insar-interpretation-layover",
+          "note": "新增老师红框标注原图，先按绿色观测箭头对应前坡再辨收缩/叠掩",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 37,
+          "title": "Ascending",
+          "anchor": "insar-interpretation-image-orientation",
+          "note": "原只简述升降轨；补航向/侧视/距离与方位采样/地图北向的分层解释",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 38,
+          "title": "雷达阴影 (Shadowing)",
+          "anchor": "insar-interpretation-shadow",
+          "note": "保留阴影缺有效直接回波、弱噪声非零及远距趋势条件",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 39,
+          "title": "雷达阴影 (Shadowing)",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "补背坡等俯角的掠射边界及小尺度粗糙度影响",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 40,
+          "title": "雷达阴影 (Shadowing)",
+          "anchor": "insar-interpretation-dem-exercise",
+          "note": "补真倾向/距离剖面倾向及三维法向、视线遮挡流程",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 41,
+          "title": "雷达阴影 (Shadowing)",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "加入Sarawak原图、亮面暗带与山脊组织检验，不虚定未给的绝对东/西方向",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 42,
+          "title": "前、后坡对比",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "加入前/后坡两种临界角图，明确原两侧α与本站前α/后β映射",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "前坡α=θ；后坡α=90°−θ",
+            "checked": "本站前坡α、后坡β，阈值相同；等号为退化/掠射边界",
+            "visual": true
+          }
+        },
+        {
+          "page": 43,
+          "title": "透视收缩的数学描述",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "新增实际坡长/局部角原图，补完整Fp百分单位与有效范围",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "Lr=Lsinω, ω=θ−α, Fp=(1−sinω)%",
+            "checked": "L_R≈Lsinθℓ；按p31×100%和p44数表解释p43省写百分号",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 44,
+          "title": "雷达图像收缩比随入射角的变化关系",
+          "anchor": "insar-interpretation-foreshortening",
+          "note": "视觉核表并补θℓ30/10/90度的50/82.6/0百分数和退化限制",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "ω=30°→Fp50.0，10°→82.6，0°→100，90°→0",
+            "checked": "数字符合(1−sinω)×100；端点视为几何极限",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 45,
+          "title": "不同雷达侧视角 —— 雷达影像中坡度长度 （坡度为 15˚ ）",
+          "anchor": "insar-interpretation-front-back-table",
+          "note": "新增完整7行前后坡表，按未先舍入正弦复算，不把原表有限小数当新物理规律",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "坡度15°；θ15/25/35/45/55/65/75度前后坡投影长度及比值",
+            "checked": "前sin(θ−15°)、后sin(θ+15°)，本章全精度复算后显示；后局部90°为掠射边界",
+            "visual": true,
+            "signed_angle": "omega=theta-alpha; dR/ds=sin(theta(s)-alpha); true local theta_l=acos(n dot u), never negative",
+            "full_derivation": "position T(s), root R(s), derivative, direction cosine substitution, integral, short-slope approximation, display baseline"
+          }
+        },
+        {
+          "page": 46,
+          "title": "雷达阴影可用于地形起伏的计算",
+          "anchor": "insar-interpretation-shadow-height",
+          "note": "旧正文回避原测高式；补顶部T/远端F定义及严格相似Ss=hSr/H、h=Ss cosθs",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "original": "Ss=hSr/H；Sr为阴影最远端斜距；h=Ss cosθ",
+            "checked": "S,T,F共线；Ss=RF−RT、Sr=RF、cosθs=H/RF，平地二维下相似为严格式；若换坡脚角需近似",
+            "visual": true
+          }
+        },
+        {
+          "page": 47,
+          "title": "山区 SAR 图像几何畸变实例",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "新增山区实景，分开亮度候选解释与DEM几何验证",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 48,
+          "title": "山区 SAR 图像几何畸变实例",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "新增城市/湘江实景，引用原图地点日期模式，说明暗面不能全等水体",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 49,
+          "title": "雅砻江区域 Sentinel -1数据几何畸变分布图",
+          "anchor": "insar-interpretation-geometry-cases",
+          "note": "保留升降轨风险图并注明红是距离压缩非全部叠掩、蓝是阴影，不误读作地形运动",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 50,
+          "title": "作业",
+          "anchor": "insar-interpretation-dem-exercise",
+          "note": "补6步作业算法、signed q阈值、4个坡面和遮挡反例答案；不虚报缺失MAT数据面积",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 51,
+          "title": "SAR 图像与光学图像比较",
+          "anchor": "insar-interpretation-optical-comparison",
+          "note": "原缺课堂SAR/光学成像比较；按投影、形变、起伏、阴影、观测方向组织表",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 52,
+          "title": "SAR 图像与光学图像比较",
+          "anchor": "insar-interpretation-optical-comparison",
+          "note": "补城市建筑朝向、二次反射及不同表面贡献，避免光学轮廓一一复制",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 53,
+          "title": "SAR 图像与光学图像比较",
+          "anchor": "insar-interpretation-optical-comparison",
+          "note": "新增TerraSAR-X/光学同区原图，先按地标配对再读亮线",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 54,
+          "title": "SAR 图像与光学图像比较",
+          "anchor": "insar-interpretation-optical-comparison",
+          "note": "补放大建筑案例：不同可见表面和混合回波不能唯一还原建筑结构",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 55,
+          "title": "SAR 图像与摄影测量图像比较",
+          "anchor": "insar-interpretation-optical-comparison",
+          "note": "补电磁波共性、光学角度交会/InSAR距离约束及三维额外条件，区别视差与相位",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        },
+        {
+          "page": 56,
+          "title": "SAR 图像的左右倒置",
+          "anchor": "insar-interpretation-image-orientation",
+          "note": "新增原AB/CD到DC/BA左侧视升轨示意，解释固定记录约定而非所有产品通则",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "orientation": "row=time along flight; column=increasing slant range; all four flight/look matrices derived; transpose distinguished from axis reversal; Chengdu northern/eastern coordinates checked"
+          }
+        },
+        {
+          "page": 57,
+          "title": "左侧视 SAR 成像系统",
+          "anchor": "insar-interpretation-image-orientation",
+          "note": "新增原AB/CD不变的左侧视降轨示意，联合航向、侧视和轴约定判断",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "orientation": "row=time along flight; column=increasing slant range; all four flight/look matrices derived; transpose distinguished from axis reversal; Chengdu northern/eastern coordinates checked"
+          }
+        },
+        {
+          "page": 58,
+          "title": "上下倒置示例",
+          "anchor": "insar-interpretation-image-orientation",
+          "note": "新增成都HH升轨原图/地图实例与地标核向，不把单幅强度等同LOS位移",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true,
+            "orientation": "row=time along flight; column=increasing slant range; all four flight/look matrices derived; transpose distinguished from axis reversal; Chengdu northern/eastern coordinates checked"
+          }
+        },
+        {
+          "page": 59,
+          "title": "小结",
+          "anchor": "insar-interpretation-classroom-check",
+          "note": "将课件总结/讨论改成5个有步骤答案的自检，回到公式和读图证据链",
+          "review_method": "原页视觉核对",
+          "review_status": "text-complete",
+          "formula_check": {
+            "checked": "原页图文已逐页视觉对照；无新增独立数值公式需复算",
+            "visual": true
+          }
+        }
+      ]
+    }
+  ]
+}

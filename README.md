@@ -33,6 +33,8 @@ InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwa
 
 正文或原创配图修订后先运行 `python scripts/package-insar.py` 更新离线讲义，再构建。该脚本验证原图校验值、更新原创图校验值，并把网页专用图片组件转换成可离线阅读的Markdown图片和相对链接。数学核验运行 `python scripts/verify_insar.py`（NumPy），浏览器专项运行 `node scripts/check-insar-ui.cjs`；既有UI脚本自动从课程清单取得新课程页与数量，避免写死两门课程。老师原件或教材不是讲义下载包的一部分。
 
+InSAR课堂逐页对照的维护源是 `public/insar/ppt-coverage.json`。`scripts/generate-insar-coverage.mjs` 校验三份PPT的92/106/59页、页号唯一性与正文锚点，生成 `insar-sources.md` 中对应标记段；正常构建已自动运行。三章调整后同步该清单，不能只保留笼统的页段来源。`verify_insar.py` 还使用复传播常数、波束端点、射线交点与带符号坡面导数核对新增课堂关系，模型验证不等同真实卫星性能或经验气象公式精度。
+
 大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；六份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
 
 遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文仍按当前已整理的前三讲与实践标明范围。

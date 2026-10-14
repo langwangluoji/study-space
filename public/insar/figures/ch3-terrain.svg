@@ -8,18 +8,18 @@
 <line x1="62" y1="151" x2="159" y2="327" stroke="#315f96" stroke-width="2"/>
 <path d="M52 327H159L264 260L308 327" fill="none" stroke="#68815e" stroke-width="4"/>
 <line x1="159" y1="327" x2="288" y2="327" stroke="#9cae99" stroke-dasharray="5 4"/><text x="193" y="310" font-size="21">α</text><text x="78" y="220" font-size="21">θ</text>
-<text x="176" y="269" font-size="21">坡长 L</text><text x="45" y="377" font-size="21">0 &lt; α &lt; θ</text><text x="45" y="415" font-size="21">0 &lt; θℓ = θ − α &lt; θ</text><text x="45" y="449" font-size="18">斜距投影缩短，次序未反转</text>
+<text x="176" y="269" font-size="21">坡长 L</text><text x="45" y="377" font-size="21">0 &lt; α &lt; θ</text><text x="45" y="415" font-size="21">0 &lt; ω = θ − α &lt; θ</text><text x="45" y="449" font-size="18">斜距投影缩短，次序未反转</text>
 <text x="367" y="113" font-size="23" font-weight="bold">② 前坡：叠掩</text><circle cx="384" cy="151" r="9" fill="#315f96"/>
 <line x1="384" y1="151" x2="538" y2="236" stroke="#c4772f" stroke-width="3"/><line x1="384" y1="151" x2="491" y2="327" stroke="#315f96" stroke-width="2"/>
 <path d="M367 327H491L538 236L631 327" fill="none" stroke="#68815e" stroke-width="4"/><text x="552" y="237" font-size="20">坡顶</text><text x="452" y="355" font-size="19">坡脚</text>
-<text x="367" y="377" font-size="21">α &gt; θ　→　θℓ &lt; 0</text><text x="367" y="415" font-size="21">R顶 &lt; R脚</text><text x="367" y="449" font-size="18">先收到坡顶，回波来源混合</text>
+<text x="367" y="377" font-size="21">α &gt; θ　→　ω &lt; 0</text><text x="367" y="415" font-size="21">R顶 &lt; R脚</text><text x="367" y="449" font-size="18">先收到坡顶，回波来源混合</text>
 <text x="689" y="113" font-size="23" font-weight="bold">③ 背坡：自阴影</text><circle cx="706" cy="151" r="9" fill="#315f96"/>
 <polygon points="808,229 850,327 947,327" fill="#d3dce7"/><line x1="706" y1="151" x2="947" y2="327" stroke="#315f96" stroke-width="2"/><path d="M690 327H763L808 229L850 327H954" fill="none" stroke="#68815e" stroke-width="4"/>
 <line x1="808" y1="229" x2="882" y2="229" stroke="#9cae99" stroke-dasharray="5 4"/><text x="846" y="265" font-size="21">β</text><text x="869" y="314" font-size="20">阴影</text>
 <text x="689" y="377" font-size="21">β &gt; 90° − θ</text><text x="689" y="415" font-size="21">θℓ = θ + β &gt; 90°</text><text x="689" y="449" font-size="18">缺少有效直接地面回波</text>
 <text x="35" y="512" font-size="24">前坡：ΔR ≈ L sin(θ − α)　　α = θ 时局部投影为零</text>
 <text x="35" y="553" font-size="22">平地直立目标：地面阴影 SG = h tanθ</text>
-<text x="35" y="598" font-size="20">θℓ &lt; 0 是带符号的投影约定；普通物理入射角不会取负值。</text>
+<text x="35" y="598" font-size="20">ω &lt; 0 表示距离次序反转；真实局部入射角 θℓ = arccos(n·u) ≥ 0。</text>
 <text x="35" y="635" font-size="20">局部角度之外，前方山脊也能投射阴影。三维判定需要坡向与视线遮挡检查。</text>
 <text x="35" y="683" font-size="18" fill="#566e82">示意剖面，角度不按比例。入射角 θ 从竖直量起；俯角为 90° − θ。</text>
 </g></svg>

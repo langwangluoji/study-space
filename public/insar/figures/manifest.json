@@ -186,7 +186,7 @@
     "source_id": "ORIGINAL",
     "source": "Study Space teaching diagram",
     "operation": "original SVG; schematic, not to scale",
-    "sha256": "71965f555385584a995ace5ee3aeeb6d44cc11676604e45591d40eb2baa8b894"
+    "sha256": "a20b17d2481241aeb379c2ee2047cb5f62a3c3344de67cb893fd469a7081872f"
   },
   {
     "file": "ch1-radar-energy.svg",
@@ -194,5 +194,444 @@
     "source": "Study Space teaching diagram",
     "operation": "original SVG; schematic, not to scale",
     "sha256": "823f7fbd57d3c424f9a829d2f8e50117762c2c7e20ce244a73d69f3c6dd5f6a0"
+  },
+  {
+    "file": "l1-revision-p45.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 45,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "1fa735d7e278b4c467cc79bdcbfeee981e82352515b5466ea622ebe7a93e5224"
+  },
+  {
+    "file": "l1-revision-p53.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 53,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "6d4ec9998731a5d2334215fc910e359ae50c0d46a005207a5624ce8d859f1175"
+  },
+  {
+    "file": "l1-revision-p55.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 55,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "bd841a973791f6f530e2311d4bf3726241625a9a5a58e6ef007293324f979246"
+  },
+  {
+    "file": "l1-revision-p65.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 65,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "b06b90c87f655e437a9ce28e11100361897bc1de8783d7c406e0daf6f77dd1ee"
+  },
+  {
+    "file": "l1-revision-p67.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 67,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "088378e4267e5c2f69d37ead7c3a89a3093434caf3859e25aa7484d5523c215e"
+  },
+  {
+    "file": "l1-revision-p71.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 71,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "148de70af1059e6b17d2069a44bdce5d052ac83b0636a6c1b4aba5824d8a98c7"
+  },
+  {
+    "file": "l1-revision-p72.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 72,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "00df9c69917633175b57c669d998a7da6807f533ebe9e90e8e7b065d1f2d6bd5"
+  },
+  {
+    "file": "l1-revision-p74.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 74,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "f2adcea54c49df54a9f7a3791c21d7c17e4ae57a75885c596216c4122d2b0c7f"
+  },
+  {
+    "file": "l1-revision-p78.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 78,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "aa0c0363d5b6219f5f4f74a13db305bc94b77ca495dfd047e8846fcb34156373"
+  },
+  {
+    "file": "l1-revision-p88.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 88,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "f249e29e9864382706e7384384743770eb0f05e6faa1e46628c7d9af84f3ddc8"
+  },
+  {
+    "file": "l1-revision-p91.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 91,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "158acf2c9434435e163fda9153381b9c3d95a1a46d0b26670f58ec270d5bdc81"
+  },
+  {
+    "file": "l1-revision-p92.png",
+    "source_id": "L1",
+    "source": "第一讲-微波遥感基础-202609(1).pdf",
+    "file_page": 92,
+    "operation": "full-page render; no content edited",
+    "width": 1728,
+    "height": 972,
+    "sha256": "e2f04031aa347b82a587863a7766c3dae32f50a03ea389b5a6bd62827b1a87f1"
+  },
+  {
+    "file": "l2-revision-p06.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 6,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "3d001f5e9985a1fcb38b02579f450d6dcc2b1cc81ef6683fe67a1787f32ae992"
+  },
+  {
+    "file": "l2-revision-p08.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 8,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "ded3848b0f73aa787c3318539cc1704ed1c1a899619c36f32d28c34ce3bd671b"
+  },
+  {
+    "file": "l2-revision-p11.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 11,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "926fbd97c378164bfbb9132fb751372ab0730626152268d385b1611297eaa97d"
+  },
+  {
+    "file": "l2-revision-p17.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 17,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "14efce5e65130eb8b15fefe58cf587edaa2fe98014461c1aeadf742a979afd1a"
+  },
+  {
+    "file": "l2-revision-p18.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 18,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "e5a9fab8741b1e1c3289a3db25987a20b816446f10d4ff6b63e2083c97d38d49"
+  },
+  {
+    "file": "l2-revision-p25.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 25,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "15c569272f685cebbd322523a25d8bb09487f21ad98843efd83c1d92e0cf15ab"
+  },
+  {
+    "file": "l2-revision-p27.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 27,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "69de4685b468fee02dce6b13ea5c0e71d44a4279298c9adbb79c463d06e1c0c8"
+  },
+  {
+    "file": "l2-revision-p54.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 54,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "cec9a24df485b1e2af67e8bfd2b1b94c3edac8e11fda52dcf031d3cd5013294e"
+  },
+  {
+    "file": "l2-revision-p65.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 65,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "e0885f368fb9b16c466c60643aafcff7b5f3da2fb200e5000494b327d7a616ca"
+  },
+  {
+    "file": "l2-revision-p80.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 80,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "b8f1f47d13c19a6d87353a8560751539810337d476cad5665f0b2cda464a266c"
+  },
+  {
+    "file": "l2-revision-p100.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 100,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "f61c45f6ae50bd24d5047f399f0a521100243b22a18fcb3c6f1e8d2a0d17b2c6"
+  },
+  {
+    "file": "l2-revision-p106.png",
+    "source_id": "L2",
+    "source": "第二讲-合成孔径雷达成像原理-202609.pdf",
+    "file_page": 106,
+    "operation": "full-page render; no content edited",
+    "width": 1280,
+    "height": 720,
+    "sha256": "d6179f06d65c056d57f1a7d68e3a03c9cc2c98edbfb323ce07a4e290e66935b0"
+  },
+  {
+    "file": "ch2-prf-window.svg",
+    "source_id": "ORIGINAL",
+    "source": "Study Space teaching diagram",
+    "operation": "original SVG; schematic, not to scale",
+    "width": 1000,
+    "height": 430,
+    "sha256": "1123f74fa92418ba390d6ec90b35da1eac5624ee7b41a6eb0916c266e5a4b190"
+  },
+  {
+    "file": "l3-revision-p05.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 5,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "764650f5984d31e0cf7a1e4e3d43e9da154143bfadeb4d25f702f2f3373bdb17"
+  },
+  {
+    "file": "l3-revision-p11.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 11,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "e1b0b19c4fddfbcb3b1d19d7addeab98c65a8aca71c38e4fe3dcf8aa68112c0d"
+  },
+  {
+    "file": "l3-revision-p12.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 12,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "f3cc02dd38ae1d5d3d1ffaaf62dc470160a8d3322f2842e8784dcd5b5a1c0eda"
+  },
+  {
+    "file": "l3-revision-p13.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 13,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "e93178df68c5df279479a16574c3b7f6cf365e11f830a93567468beff2d64ac2"
+  },
+  {
+    "file": "l3-revision-p16.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 16,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "f9efcac92c726b9b86c5c121231e645364828bcced7721d983fd5b001984140c"
+  },
+  {
+    "file": "l3-revision-p17.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 17,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "f6d10667cb3f09c4d647609d85b1d3c9a431dbabf4dc96ad99065aa9dfa63411"
+  },
+  {
+    "file": "l3-revision-p23.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 23,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "c695f40baa03021a26640755cc6ccea5d23bebe5318895201783660b80d65bab"
+  },
+  {
+    "file": "l3-revision-p36.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 36,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "a49721a055c2f37bb94eaa30e36c50b90ef2d4eb7e69c3d83f6044afd1ad6a7f"
+  },
+  {
+    "file": "l3-revision-p41.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 41,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "803a646ca5289ebc2b88bd906256c06ebe1123ef346e1433bf24965abfd847b3"
+  },
+  {
+    "file": "l3-revision-p42.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 42,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "406c7fbd260df8373d4a4c3229c5b5db7ae5810bcf5c9bf33a00577418cbcd82"
+  },
+  {
+    "file": "l3-revision-p43.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 43,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "09a3b2e3536166acca560c48a63992181304c52db508f09666daf3ebf21ed7a3"
+  },
+  {
+    "file": "l3-revision-p46.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 46,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "d61e185fe13c7911ff28ee570f7941af1e015b345a47a9e42f8f5a66cd2fce30"
+  },
+  {
+    "file": "l3-revision-p47.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 47,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "d31b90547844866dde1ec0d5faaaef8a8a468f207c966b5228b3ce32dc70a934"
+  },
+  {
+    "file": "l3-revision-p48.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 48,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "a3dbe8172bb34befddd5364e451512cf59ad803b833995b01590de437dc28461"
+  },
+  {
+    "file": "l3-revision-p50.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 50,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "ac1f2aca3faf1b90f92e74050e6c810b6e20459e198a580203e9dfb4df2b03af"
+  },
+  {
+    "file": "l3-revision-p53.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 53,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "386b1ea034158c83ffcf89a1956fb5f6820a5233e70dec21e52864a6641b4f99"
+  },
+  {
+    "file": "l3-revision-p56.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 56,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "5093bafcd9efb066c02f4e0abc5ab9647cd4bf22880cdd992accb0cd6bc1a7f2"
+  },
+  {
+    "file": "l3-revision-p57.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 57,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "bcf55a3cfea3c4635e2f389de4f4ca9e3848abac9cffe3bfe769472f85798132"
+  },
+  {
+    "file": "l3-revision-p58.png",
+    "source_id": "L3",
+    "source": "第三讲-SAR图像特征及解译-202610.pdf",
+    "file_page": 58,
+    "operation": "full-page render; no content edited",
+    "width": 1600,
+    "height": 900,
+    "sha256": "79279b2b9ed9d7f71aaea9345b0470a4874c2245efd03c78dad1748213d72a4e"
   }
 ]

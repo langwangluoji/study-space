@@ -3,24 +3,28 @@
     "filename": "时间序列InSAR技术与应用_(廖明生，王腾)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
     "bytes": 59199294,
     "sha256": "19604d611222df983c7d8e53186c347be07025c39d358df80ac0ea048ecfdfea",
-    "public_full_text": false
+    "public_full_text": true,
+    "archive_id": "insar-book"
   },
   {
     "filename": "第一讲-微波遥感基础-202609(1).pdf",
     "bytes": 9208019,
     "sha256": "adcd21337cf80f98ad8bebd4f78eaea46b7b2fe617500ef3545ca606ca93f60f",
-    "public_full_text": false
+    "public_full_text": true,
+    "archive_id": "insar-l1"
   },
   {
     "filename": "第三讲-SAR图像特征及解译-202610.pdf",
     "bytes": 5424256,
     "sha256": "1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74",
-    "public_full_text": false
+    "public_full_text": true,
+    "archive_id": "insar-l3"
   },
   {
     "filename": "第二讲-合成孔径雷达成像原理-202609.pdf",
     "bytes": 10657029,
     "sha256": "f9370ae2ec6c6611578dfbc5dd5a587f2e609b0ec4ae1d16943424777039cd56",
-    "public_full_text": false
+    "public_full_text": true,
+    "archive_id": "insar-l2"
   }
 ]

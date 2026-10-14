@@ -479,10 +479,151 @@ def check_current_text_examples(documents: dict[str, str]) -> None:
     claim("chapter3_linear_mean_then_dB", ch3,
           r"平均是 \$0\.055\$，约 \$(-?[\d.]+)\\,\\mathrm\{dB\}",
           10 * np.log10(0.055), 0.005, "dB")
+    penetration = chapter_section(ch1, "microwave-penetration-example")
+    claim("chapter1_weak_loss_power_depth", penetration,
+          r"d_\{P,\\rm weak\}\\approx([\d.]+)", 0.24 * np.sqrt(9) / (2 * np.pi * 0.3), 0.00005, "m")
+    claim("chapter1_weak_loss_amplitude_depth", penetration,
+          r"d_\{A,\\rm weak\}\\approx([\d.]+)", 0.24 * np.sqrt(9) / (np.pi * 0.3), 0.00005, "m")
+    claim("chapter1_exact_complex_attenuation", penetration,
+          r"完整复介电式得到 \$\\alpha\\approx([\d.]+)",
+          -(2 * np.pi / 0.24 * np.sqrt(9 - 0.3j)).imag, 0.00005, "1/m")
+    swath = chapter_section(ch2, "i2-antenna-swath")
+    theta, slant, beam = np.deg2rad(23), 853000.0, 0.0566
+    claim("chapter2_ERS_narrow_beam_swath", swath, r"近似幅宽 \$([\d.]+)",
+          slant * beam / np.cos(theta) / 1000, 0.005, "km")
+    claim("chapter2_ERS_exact_beam_swath", swath, r"精确端点投影约 \$([\d.]+)",
+          slant * np.cos(theta) * (np.tan(theta + beam / 2) - np.tan(theta - beam / 2)) / 1000, 0.005, "km")
+    prf = chapter_section(ch2, "i2-prf-window")
+    delay = 2 * 100000 * np.sin(theta) / 3e8
+    claim("chapter2_complete_PRF_budget", prf, r"\\approx([\d.]+)\\ \\mathrm\{Hz\}",
+          1 / (delay + 2 * 20e-6), 0.5, "Hz")
+    shadow = chapter_section(ch3, "insar-interpretation-shadow-height")
+    claim("chapter3_shadow_height_from_slant", shadow, r"h=50\\cos35\^\\circ\\approx([\d.]+)",
+          50 * np.cos(np.deg2rad(35)), 0.05, "m")
+    claim("chapter3_shadow_wrong_ground_measure", shadow, r"会得到约 \$([\d.]+)",
+          50 / np.tan(np.deg2rad(35)), 0.05, "m")
     record("current_markdown_numerical_examples", all(row["passed"] for row in rows),
            "Displayed values read from current Markdown, checked against calculations with stated rounding precision. "
            "Missing/changed claims fail rather than silently checking an obsolete duplicate.",
            {"examples": rows}, {"rule": "half of the final displayed decimal place, per case"})
+
+
+def check_ppt_revision() -> None:
+    """Check new lecture models using ray geometry and complex propagation."""
+    # Compare weak-loss depths with the exact passive complex square root.
+    wavelength = 0.0566
+    permittivity = 4.0 - 0.04j
+    wave_number = 2 * np.pi / wavelength * np.sqrt(permittivity)
+    attenuation = -wave_number.imag
+    amplitude_depth = 1 / attenuation
+    power_depth = 1 / (2 * attenuation)
+    weak_power_depth = wavelength * np.sqrt(permittivity.real) / (2 * np.pi * -permittivity.imag)
+    errors = [abs(np.exp(-attenuation * amplitude_depth) - np.exp(-1)),
+              abs(np.exp(-2 * attenuation * power_depth) - np.exp(-1))]
+    approximation_error = abs(weak_power_depth / power_depth - 1)
+    record("ppt_complex_permittivity_penetration", max(errors) < 1e-14 and approximation_error < 2e-5,
+           "e^(i omega t - i k z), epsilon=epsilon'-i epsilon'', passive homogeneous nonmagnetic medium; "
+           "exact complex propagation independently checks amplitude versus power 1/e depth.",
+           {"epsilon_real": permittivity.real, "epsilon_loss": -permittivity.imag,
+            "wavelength_m": wavelength, "amplitude_depth_m": amplitude_depth,
+            "power_depth_m": power_depth, "weak_loss_power_depth_m": weak_power_depth,
+            "approximation_relative_error": approximation_error},
+           {"weak_loss_relative_error": 2e-5})
+    # Finite ground endpoints of a beam, rather than reusing the swath formula.
+    theta = np.deg2rad(23)
+    slant = 853000.0
+    height = slant * np.cos(theta)
+    beam = 0.0566 / 1.0
+    exact_swath = height * (np.tan(theta + beam / 2) - np.tan(theta - beam / 2))
+    local_swath = slant * beam / np.cos(theta)
+    relative_error = abs(local_swath / exact_swath - 1)
+    record("ppt_swath_from_beam_endpoints", relative_error < 5e-4,
+           "Planar ground, symmetric small elevation beam; nominal mission swath is a separate system specification.",
+           {"exact_beam_footprint_m": exact_swath, "narrow_beam_footprint_m": local_swath,
+            "relative_error": relative_error, "azimuth_beam_arcminutes": np.rad2deg(0.0566 / 10) * 60},
+           {"small_angle_relative_error": 5e-4})
+    # Ground intersection of the same ray passing through a ridge top.
+    height = 1000.0
+    theta = np.deg2rad(35)
+    terrain_rows = []
+    for ridge_height in (5.0, 100.0, 350.0):
+        x_top = (height - ridge_height) * np.tan(theta)
+        x_far = x_top * height / (height - ridge_height)
+        range_top = np.hypot(x_top, height - ridge_height)
+        range_far = np.hypot(x_far, height)
+        blank_slant = range_far - range_top
+        estimated_height = blank_slant * height / range_far
+        terrain_rows.append({"height_m": ridge_height, "slant_shadow_m": blank_slant,
+                             "ground_shadow_m": x_far - x_top,
+                             "height_from_slant_m": estimated_height,
+                             "height_error_m": abs(estimated_height - ridge_height)})
+    record("ppt_shadow_height_ray_intersection", max(r["height_error_m"] for r in terrain_rows) < 1e-10,
+           "Straight rays, planar receiving ground; Sr is range to shadow far endpoint, Ss=Sr-Rtop; "
+           "ground shadow length is a different quantity. No height inversion claimed for general terrain.",
+           {"rows": terrain_rows, "far_endpoint_angle_deg": 35.0})
+    # Check lecture percentage table and signed local slopes against derivatives.
+    table = [(90, 0.0), (80, 1.5), (70, 6.0), (60, 13.4), (50, 23.4),
+             (40, 35.7), (30, 50.0), (20, 65.8), (10, 82.6), (0, 100.0)]
+    table_error = max(abs((1 - np.sin(np.deg2rad(a))) * 100 - p) for a, p in table)
+    theta = np.deg2rad(35)
+    signed_rows = []
+    for slope_angle in (-15, 0, 15, 40):
+        alpha = np.deg2rad(slope_angle)
+        # Sensor is (-R sin(theta), R cos(theta)); move along the terrain arc.
+        distance = lambda length: np.hypot(length * np.cos(alpha) + 10000 * np.sin(theta),
+                                            length * np.sin(alpha) - 10000 * np.cos(theta))
+        derivative = central_difference(distance, 0, 0.1)
+        signed_rows.append({"slope_deg": slope_angle, "ray_derivative": derivative,
+                            "analytic_projection": np.sin(theta - alpha),
+                            "error": abs(derivative - np.sin(theta - alpha))})
+    record("ppt_foreshortening_percentage_and_signed_slope", table_error < 0.05 and
+           max(r["error"] for r in signed_rows) < 1e-9 and signed_rows[-1]["ray_derivative"] < 0,
+           "Fp is 100*(1-Lr/L) for an ordered illuminated local slope; negative projection flags reversed range order, "
+           "rather than a physical percentage greater than 100.",
+           {"lecture_table_max_rounding_error": table_error, "signed_slopes": signed_rows})
+    # SAR range mapping versus nadir perspective mapping of the same elevated point.
+    height, x, elevated = 700000.0, 490000.0, 100.0
+    roof_range = np.hypot(x, height - elevated)
+    flat_sar_x = np.sqrt(roof_range**2 - height**2)
+    optical_x = x * height / (height - elevated)
+    record("ppt_sar_optical_height_displacement_sign", flat_sar_x < x < optical_x,
+           "Same vertical point on flat reference ground; SAR uses constant range intersection; optical is an ideal nadir pinhole projection.",
+           {"sar_displacement_m": flat_sar_x - x, "optical_displacement_m": optical_x - x})
+    # Derive row/column order from acquisition coordinates, not image names.
+    points = {"A": (-1, 1), "B": (1, 1), "C": (-1, -1), "D": (1, -1)}
+    expected_orders = {(1, "left"): ["DC", "BA"], (-1, "left"): ["AB", "CD"],
+                       (1, "right"): ["CD", "AB"], (-1, "right"): ["BA", "DC"]}
+    orientation_rows = []
+    for (north_velocity, side), expected in expected_orders.items():
+        look_east = north_velocity * (1 if side == "right" else -1)
+        samples = sorted(((north_velocity * y, look_east * x, label)
+                          for label, (x, y) in points.items()))
+        matrix = ["".join(p[2] for p in samples[:2]), "".join(p[2] for p in samples[2:])]
+        orientation_rows.append({"track": "ascending" if north_velocity == 1 else "descending",
+                                 "look_side": side, "recorded_rows": matrix, "expected": expected,
+                                 "passed": matrix == expected})
+    record("ppt_abcd_acquisition_coordinate_order", all(r["passed"] for r in orientation_rows),
+           "North-up ground AB/CD, rows increase in slow time and columns increase in slant range; "
+           "planar cardinal-direction schematic, before geocoding. Arbitrary product matrix conventions must be read from metadata.",
+           {"cases": orientation_rows})
+    # Sweep the near-echo position across a PRI: a passing length budget can
+    # still intersect transmission. Include the web review's one-width trap.
+    period, transmit_width, span, guard1, guard2 = 400e-6, 50e-6, 300e-6, 10e-6, 10e-6
+    starts = np.linspace(0, period, 10001)
+    feasible = (starts > transmit_width + guard1) & (starts + span + transmit_width + guard2 < period)
+    old_budget_passes = period > span + transmit_width + guard1 + guard2
+    corrected_budget_passes = period > span + 2 * transmit_width + guard1 + guard2
+    nominal_span = 2 * 100000 * np.sin(np.deg2rad(23)) / 3e8
+    record("ppt_prf_full_transmit_and_echo_timing", old_budget_passes and not corrected_budget_passes and
+           not np.any(feasible),
+           "Single-channel monostatic transmit/receive exclusion, uncompressed echo duration, guard intervals only for switching; "
+           "enumerated pulse-phase placement rejects the one-transmit-width counterexample. Length budget remains necessary, not sufficient.",
+           {"counterexample_PRI_us": period * 1e6, "transmit_width_us": transmit_width * 1e6,
+            "one_width_budget_us": (span + transmit_width + guard1 + guard2) * 1e6,
+            "full_budget_us": (span + 2 * transmit_width + guard1 + guard2) * 1e6,
+            "feasible_start_count": int(np.count_nonzero(feasible)),
+            "lecture_example_swath_delay_us": nominal_span * 1e6,
+            "zero_guard_max_PRF_Hz": 1 / (nominal_span + 2 * 20e-6)})
 
 
 def main() -> int:
@@ -506,7 +647,8 @@ def main() -> int:
              ("interference_and_coherence", lambda: check_interference_and_coherence(rng)),
              ("speckle", lambda: check_speckle(rng, args.samples)),
              ("dB_and_basic_physics", check_db_and_basic_physics),
-             ("current_examples", lambda: check_current_text_examples(documents))]
+             ("current_examples", lambda: check_current_text_examples(documents)),
+             ("ppt_revision", check_ppt_revision)]
     for name, task in tasks:
         try:
             task()
@@ -531,7 +673,7 @@ def main() -> int:
                   "Relative paths and Path-based report output are portable; only NumPy is a third-party requirement."
               ]}
     args.report.parent.mkdir(parents=True, exist_ok=True)
-    args.report.write_text(json.dumps(plain(report), ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    args.report.write_text(json.dumps(plain(report), ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8", newline="\n")
     for check in CHECKS:
         print(f"{check['status']}: {check['id']}")
     print(f"{report['status']}: {len(CHECKS)} checks; report: {args.report}")
