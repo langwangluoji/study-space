@@ -1,4 +1,5 @@
 node_modules/
+reports/traffic-history-seed-repo/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 docs/lecture-*.md

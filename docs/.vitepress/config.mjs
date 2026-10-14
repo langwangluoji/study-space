@@ -37,6 +37,7 @@ const sidebar={'/':spaceSidebar,'/geodesy-':geodesySidebar,'/course-geodesy':geo
 resourceSidebar[0].items.push({text:'资料扩展与阅读建议',link:'/extensions'},{text:'下载与使用帮助',link:'/site-guide#downloads'});
 spaceSidebar[0].items.push({text:'资料扩展',link:'/extensions'},{text:'使用说明',link:'/site-guide'});
 spaceSidebar[1].items.unshift({text:'制作者主页',link:'/about'});
+spaceSidebar[1].items.push({text:'内容更新记录',link:'/updates'});
 for(const prefix of ['/course-ml','/lecture-','/cifar10-practice'])sidebar[prefix]=mlSidebar;
 for(const prefix of ['/resources','/extensions','/textbooks','/book-','/slides-','/material-','/read-sources','/read-notebook','/read-downloads-','/geodesy-source','/insar-sources','/remote-sensing-sources','/remote-sensing-glossary'])sidebar[prefix]=resourceSidebar;
 for(const c of space.courses.filter(c=>!['ml','geodesy'].includes(c.id))){
@@ -74,6 +75,6 @@ export default defineConfig({
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),
     search:{provider:'local',options:{_render:renderSearch,detailedView:false,locales:{root:{translations:{button:{buttonText:'搜索笔记',buttonAriaLabel:'搜索课程笔记'},modal:{displayDetails:'显示上下文',resetButtonTitle:'清除搜索',backButtonTitle:'返回',noResultsText:'没有找到相关笔记',footer:{selectText:'选择',navigateText:'切换',closeText:'关闭'}}}}}}},
-    footer:{message:'从资料建立理解，让知识持续生长。<br><a href="/study-space/about.html">制作者与网站介绍</a> · <a href="/study-space/site-guide.html">使用说明</a> · <a href="/study-space/contribute.html">共同完善</a>',copyright:'Study Space · 学习空间'}
+    footer:{message:'从资料建立理解，让知识持续生长。<br><a href="/study-space/about.html">制作者与网站介绍</a> · <a href="/study-space/updates.html">内容更新</a> · <a href="/study-space/site-guide.html">使用说明</a> · <a href="/study-space/contribute.html">共同完善</a>',copyright:'Study Space · 学习空间'}
   }
 });

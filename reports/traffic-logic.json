@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "China midnight boundary",
+    "Leap-year and week alignment",
+    "Only page counters, never host totals",
+    "Unknown historical data never becomes zero or a complete total",
+    "Finalization and delayed archival recovery",
+    "Read-only collector and preserved records on failure/regression",
+    "Content update identities, order and links"
+  ]
+}

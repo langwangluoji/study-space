@@ -1,0 +1,53 @@
+name: Archive daily site traffic
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Build, verify and publish notes']
+    types: [completed]
+permissions:
+  contents: write
+concurrency:
+  group: study-space-traffic-history
+  cancel-in-progress: false
+jobs:
+  archive:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: source
+          sparse-checkout: |
+            traffic.config.json
+            scripts/traffic-core.mjs
+            scripts/snapshot-traffic.mjs
+            scripts/activate-traffic.mjs
+          sparse-checkout-cone-mode: false
+      - uses: actions/checkout@v6
+        with:
+          ref: traffic-history
+          path: traffic-history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Read and archive daily counters
+        env:
+          TRAFFIC_ACTIVATION_AT: ${{ github.event.workflow_run.updated_at }}
+          TRAFFIC_ACTIVATION_SHA: ${{ github.event.workflow_run.head_sha }}
+          TRAFFIC_ACTIVATION_RUN: ${{ github.event.workflow_run.html_url }}
+        shell: bash
+        run: |
+          history_dir="$GITHUB_WORKSPACE/traffic-history"
+          if [ -n "$TRAFFIC_ACTIVATION_AT" ]; then
+            node source/scripts/activate-traffic.mjs "$history_dir/history.json"
+          fi
+          result=0
+          node source/scripts/snapshot-traffic.mjs "$history_dir/history.json" || result=$?
+          git -C "$history_dir" add history.json
+          if ! git -C "$history_dir" diff --cached --quiet; then
+            git -C "$history_dir" -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Archive daily traffic aggregates'
+            git -C "$history_dir" push origin HEAD:traffic-history
+          fi
+          exit "$result"

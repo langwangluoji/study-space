@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "startDate": "2026-10-14",
+  "timeZone": "Asia/Shanghai",
+  "origin": "https://langwangluoji.github.io",
+  "base": "/study-space/",
+  "counterPrefix": "/study-space/visits/",
+  "endpoint": "https://busuanzi.9420.ltd/api",
+  "historyUrl": "https://raw.githubusercontent.com/langwangluoji/study-space/traffic-history/history.json",
+  "providerName": "不蒜子 · soxft 公共服务",
+  "providerDocs": "https://github.com/soxft/busuanzi/wiki/API"
+}

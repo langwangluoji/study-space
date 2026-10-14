@@ -18,14 +18,18 @@ import LearningExtensions from './LearningExtensions.vue';
 import CreatorIdentity from './CreatorIdentity.vue';
 import SiteScope from './SiteScope.vue';
 import Contributors from './Contributors.vue';
+import SiteUpdates from './SiteUpdates.vue';
+import SiteTraffic from './SiteTraffic.vue';
+import {recordTrafficVisit} from './traffic.js';
 import {readingTitle} from './reading-targets.js';
 import './style.css';
 import './space.css';
 import './rs.css';
+import './activity.css';
 export default {
   extends:DefaultTheme,
   Layout(){return h(DefaultTheme.Layout,null,{'doc-before':()=>h(PageContext)})},
-  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('MaterialReader',MaterialReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading);app.component('LearningExtensions',LearningExtensions);app.component('CreatorIdentity',CreatorIdentity);app.component('SiteScope',SiteScope);app.component('Contributors',Contributors)},
+  enhanceApp({app}){app.component('LearningMark',LearningMark);app.component('ConceptViz',ConceptViz);app.component('PdfReader',PdfReader);app.component('MaterialReader',MaterialReader);app.component('GeodesyLab',GeodesyLab);app.component('SourceFigure',SourceFigure);app.component('RsLanguage',RsLanguage);app.component('RsFigure',RsFigure);app.component('ResourceLibrary',ResourceLibrary);app.component('CourseLibrary',CourseLibrary);app.component('ContinueReading',ContinueReading);app.component('LearningExtensions',LearningExtensions);app.component('CreatorIdentity',CreatorIdentity);app.component('SiteScope',SiteScope);app.component('Contributors',Contributors);app.component('SiteUpdates',SiteUpdates);app.component('SiteTraffic',SiteTraffic)},
   setup(){
     const route=useRoute(),router=useRouter();
     const reveal=async()=>{
@@ -40,9 +44,9 @@ export default {
       // Headers in folded extras remain addressable by native local search.
       requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
     };
-    let stop,previous,removeRsHooks;
+    let stop,stopTraffic,previous,removeRsHooks;
     const after=async href=>{await previous?.(href);await reveal()};
-    onMounted(()=>{removeRsHooks=installRsSearchHooks();previous=router.onAfterRouteChanged;router.onAfterRouteChanged=after;reveal();window.addEventListener('hashchange',reveal);stop=watch(()=>route.path,reveal)});
-    onUnmounted(()=>{removeRsHooks?.();window.removeEventListener('hashchange',reveal);stop?.();if(router.onAfterRouteChanged===after)router.onAfterRouteChanged=previous});
+    onMounted(()=>{removeRsHooks=installRsSearchHooks();previous=router.onAfterRouteChanged;router.onAfterRouteChanged=after;reveal();window.addEventListener('hashchange',reveal);stop=watch(()=>route.path,reveal);recordTrafficVisit(route.path);stopTraffic=watch(()=>route.path,recordTrafficVisit)});
+    onUnmounted(()=>{removeRsHooks?.();window.removeEventListener('hashchange',reveal);stop?.();stopTraffic?.();if(router.onAfterRouteChanged===after)router.onAfterRouteChanged=previous});
   }
 };

@@ -21,11 +21,14 @@ async function run(){
  try{
  browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:{})});
  const observe=p=>{
+  const trafficConfig=JSON.parse(fs.readFileSync('traffic.config.json','utf8'));
+  p.context().route(trafficConfig.endpoint,route=>route.fulfill({status:200,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:JSON.stringify({success:true,data:{page_pv:0,page_uv:0}})}));
+  p.context().route(trafficConfig.historyUrl,route=>route.fulfill({status:200,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:JSON.stringify({version:1,startDate:trafficConfig.startDate,timeZone:trafficConfig.timeZone,endpoint:trafficConfig.endpoint,updatedAt:null,days:[],errors:[]})}));
   p.on('pageerror',e=>{errors.push(e.message);console.error('Runtime error at '+p.url(),e.stack)});
   p.on('response',r=>{if(r.status()>=400)errors.push(`HTTP ${r.status()} ${r.url()}`)});
   p.context().route('https://raw.githubusercontent.com/langwangluoji/study-space/**',async route=>{
    const m=route.request().url().match(/\/materials\/storage\/([a-f\d]{64})\/(\d{5}\.bin)$/);
-   if(!m)return route.continue();
+   if(!m)return route.fallback();
    const file=path.resolve('materials/storage',m[1],m[2]);
    if(!fs.existsSync(file))return route.fulfill({status:404,body:'Missing archive part'});
    await route.fulfill({status:200,contentType:'application/octet-stream',headers:{'Access-Control-Allow-Origin':'*'},body:fs.readFileSync(file)});
