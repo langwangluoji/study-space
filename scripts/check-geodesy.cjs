@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
 (async()=>{
  const chapters=JSON.parse(fs.readFileSync('geodesy.config.json','utf8'));
- assert.equal(chapters.length,2);assert.deepEqual(chapters.map(c=>c.topics.length),[4,6]);
+ assert.equal(chapters.length,4);assert.deepEqual(chapters.map(c=>c.topics.length),[4,6,2,4]);
  const slugs=['course-geodesy',...chapters.flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-rotation','geodesy-orbit','geodesy-projection','geodesy-control','geodesy-height','geodesy-sources','geodesy-plan'];
  const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:process.platform==='win32'?{channel:'msedge'}:{})});
  const page=await browser.newPage({viewport:{width:1440,height:1000}});
@@ -18,10 +18,10 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
    await page.locator('.vp-doc img[loading=lazy]').evaluateAll(imgs=>imgs.forEach(i=>i.loading='eager'));
    await page.waitForFunction(()=>[...document.querySelectorAll('.vp-doc img')].every(i=>i.complete&&i.naturalWidth>0));
   }
-  checks.push(slugs.length+' pages, two main chapters, 4+6 topic routes, formula rendering and source images');
+  checks.push(slugs.length+' pages, four main chapters, 4+6+2+4 topic routes, formula rendering and source images');
   const coverage=JSON.parse(fs.readFileSync('public/geodesy/coverage.json','utf8'));
-  assert.equal(coverage.entries.length,89);
-  assert.equal(new Set(coverage.entries.map(e=>e.source+':'+e.file_page)).size,89);
+  assert.equal(coverage.entries.length,128);
+  assert.equal(new Set(coverage.entries.map(e=>e.source+':'+e.file_page)).size,128);
   assert.equal(coverage.entries.filter(e=>e.status==='excluded').length,2);
   await page.goto(base+'geodesy-normal-curvature.html',{waitUntil:'networkidle'});
   const proof=page.locator('#normal-section-coordinate-proof');
@@ -44,7 +44,7 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
   await page.keyboard.press('Control+k');await page.locator('input[type=search]').fill('从局部截面方程核对Euler公式');
   await page.locator('.VPLocalSearchBox a[href*="normal-section-coordinate-proof"]').first().click();
   await page.waitForFunction(()=>document.getElementById('normal-section-coordinate-proof')?.closest('details')?.open);
-  checks.push('89 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof');
+  checks.push('128 source-page decisions, original SVG captions/modals, moved metric anchors and searchable folded coordinate proof');
 
   const reading=[{slug:'course-geodesy',title:'大地测量课程总览'},...chapters.flatMap(c=>[{slug:c.slug,title:c.title},...c.topics])];
   for(const [i,item] of reading.entries()){
@@ -59,7 +59,7 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
   }
   await page.goto(base+'course-geodesy.html',{waitUntil:'networkidle'});
   await page.locator('.VPDocFooter .pager-link.next').click();await page.waitForURL('**/geodesy-intro.html');
-  checks.push('all 13 main reading pages: correct pager titles, destinations, boundaries and next click');
+  checks.push('all 21 main reading pages: correct pager titles, destinations, boundaries and next click');
 
   await page.goto(base+'geodesy-local-directions.html',{waitUntil:'networkidle'});
   const inputs=page.locator('.geodesy-lab input');
@@ -83,12 +83,18 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
   await page.keyboard.press('Control+k');await page.locator('input[type=search]').fill('Meusnier');
   await page.locator('.VPLocalSearchBox a[href*="geodesy-normal-curvature"]').first().waitFor();await page.keyboard.press('Escape');
   checks.push('theorem cross-page search');
+  for(const [query,target] of [['克莱劳','geodesy-geodesic-equations'],['高斯平均引数','geodesy-gauss-derivation'],['垂线偏差改正','geodesy-observation-reduction']]){
+   await page.keyboard.press('Control+k');await page.locator('input[type=search]').fill(query);
+   await page.locator('.VPLocalSearchBox a[href*="'+target+'"]').first().waitFor();await page.keyboard.press('Escape');
+  }
+  checks.push('new Clairaut, Gauss and vertical-deflection concepts searchable');
+
 
   for(const theme of ['light','dark']){
    await page.addInitScript(t=>localStorage.setItem('vitepress-theme-appearance',t),theme);
    for(const width of [320,390]){
     await page.setViewportSize({width,height:844});
-    for(const slug of ['course-geodesy','geodesy-intro-observations',...chapters[1].topics.map(t=>t.slug)]){
+    for(const slug of ['course-geodesy','geodesy-intro-observations',...chapters.slice(1).flatMap(c=>c.topics.map(t=>t.slug))]){
      await page.goto(base+slug+'.html',{waitUntil:'networkidle'});
      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),width+'px overflow on '+slug);
     }

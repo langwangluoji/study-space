@@ -1,4 +1,7 @@
 node_modules/
+.local-python/
+reports/new-lectures-web-review.txt
+reports/new-lectures-web-review.png
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 docs/lecture-*.md

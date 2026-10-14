@@ -1,0 +1,2027 @@
+{
+  "status": "PASS",
+  "basis": "symbolic identities plus independent ODE and GeographicLib; error table is a sampled domain, not a universal bound",
+  "ellipsoid": "WGS84",
+  "symbolic_checks": [
+    "three complete Gauss cubic coefficients",
+    "Clairaut and parallel radius derivative",
+    "unit arc-length speed",
+    "three inverse auxiliary-u truncations",
+    "chord to arc series",
+    "lune integral",
+    "Frenet torsion sign",
+    "tilted horizontal direction sign, correction is negative of observed-minus-normal difference"
+  ],
+  "reduction_checks": {
+    "tilt_example_observed_minus_normal_arcsec": 1.6339745962155614,
+    "tilt_actual_added_correction_arcsec": -1.6339745962155614,
+    "tilt_3D_first_order_error_arcsec": 5.829220877991523e-05,
+    "height_exact_projection_arcsec": 0.02716585381497755,
+    "height_lecture_approx_arcsec": 0.027046722556645992,
+    "section_exact_direction_difference_arcsec": -0.0001420710113555086,
+    "section_lecture_approx_arcsec": -0.0001419049574394743,
+    "spherical_area_exact_m2": 248039675.5583666,
+    "spherical_area_second_order_relative_error": 4.270943800553957e-12
+  },
+  "ode": {
+    "position_error_m": 9.23201049011402e-09,
+    "Clairaut_range_m": 5.122274160385132e-09,
+    "endpoint_forward_azimuth_error_arcsec": 1.8319994965229857e-10
+  },
+  "lecture_example": {
+    "ellipsoid": "WGS84 explicitly selected, not specified by the source exercise",
+    "B2_deg": 40.05741616375947,
+    "L2_deg": 116.05708680741117,
+    "A21_deg": 255.87355427897768,
+    "iterations": 5,
+    "iteration_change_arcsec": 4.579998741307464e-11,
+    "inverse_S_m": 24909.81399998068,
+    "inverse_A12_deg": 75.69160055565968,
+    "position_error_vs_GeographicLib_m": 5.816665920651419e-08,
+    "slope_example": {
+      "RA12_m": 6378385.243119509,
+      "RA21_m": 6378512.813340141,
+      "chord_m": 28659.73730284274,
+      "local_circle_arc_m": 28659.761411675372,
+      "first_order_engineering_arc_m": 28659.74995790795,
+      "difference_m": -0.011453767423518002
+    }
+  },
+  "cases": 192,
+  "error_summary": [
+    {
+      "distance_m": 1000,
+      "latitude_limit_deg": 60,
+      "max_direct_position_error_m": 3.1638902212669554e-09,
+      "max_inverse_distance_error_m": 2.721549208217766e-09
+    },
+    {
+      "distance_m": 1000,
+      "latitude_limit_deg": 80,
+      "max_direct_position_error_m": 3.1638902212669554e-09,
+      "max_inverse_distance_error_m": 2.721549208217766e-09
+    },
+    {
+      "distance_m": 25000,
+      "latitude_limit_deg": 60,
+      "max_direct_position_error_m": 3.304956494013992e-07,
+      "max_inverse_distance_error_m": 5.068068276159465e-08
+    },
+    {
+      "distance_m": 25000,
+      "latitude_limit_deg": 80,
+      "max_direct_position_error_m": 2.9048226587406116e-05,
+      "max_inverse_distance_error_m": 2.3570246412418783e-06
+    },
+    {
+      "distance_m": 100000,
+      "latitude_limit_deg": 60,
+      "max_direct_position_error_m": 0.0003554075969582142,
+      "max_inverse_distance_error_m": 5.180174775887281e-05
+    },
+    {
+      "distance_m": 100000,
+      "latitude_limit_deg": 80,
+      "max_direct_position_error_m": 0.033860587431790067,
+      "max_inverse_distance_error_m": 0.002406845349469222
+    },
+    {
+      "distance_m": 200000,
+      "latitude_limit_deg": 60,
+      "max_direct_position_error_m": 0.012192209095781567,
+      "max_inverse_distance_error_m": 0.001684854069026187
+    },
+    {
+      "distance_m": 200000,
+      "latitude_limit_deg": 80,
+      "max_direct_position_error_m": 1.3445056363233743,
+      "max_inverse_distance_error_m": 0.0889509900007397
+    }
+  ],
+  "case_results": [
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.7693932431148631e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.1779093256336637e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 7.083095854217126e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6189005691558123e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1496637774840473e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.1811789590865374e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 3.5758263830977876e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.6641431506723166e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.9407980465681495e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 6.447180567192845e-10,
+      "inverse_start_azimuth_error_arcsec": 5.60866645860512e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.164557101027558e-07,
+      "direct_forward_azimuth_error_arcsec": 7.969197809874988e-09,
+      "inverse_distance_error_m": 4.837420419789851e-08,
+      "inverse_start_azimuth_error_arcsec": 1.4005636150918224e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.00030930395360924363,
+      "direct_forward_azimuth_error_arcsec": 7.515686334510722e-06,
+      "inverse_distance_error_m": 4.9985203077085316e-05,
+      "inverse_start_azimuth_error_arcsec": 3.1170280633665864e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.009236612138752985,
+      "direct_forward_azimuth_error_arcsec": 0.00021691451118673556,
+      "inverse_distance_error_m": 0.0015691773151047528,
+      "inverse_start_azimuth_error_arcsec": 0.0004205208284308792,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.4166191708434252e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.511093720793724e-10,
+      "inverse_start_azimuth_error_arcsec": 2.3806833457316197e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.1882977292619386e-07,
+      "direct_forward_azimuth_error_arcsec": 2.674719264923559e-08,
+      "inverse_distance_error_m": 4.459798219613731e-08,
+      "inverse_start_azimuth_error_arcsec": 5.037998615438211e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003279622101001079,
+      "direct_forward_azimuth_error_arcsec": 2.726079370808581e-05,
+      "inverse_distance_error_m": 4.6862682211212814e-05,
+      "inverse_start_azimuth_error_arcsec": 9.077374305321741e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.010559698361677724,
+      "direct_forward_azimuth_error_arcsec": 0.0008657932524594314,
+      "inverse_distance_error_m": 0.001499665668234229,
+      "inverse_start_azimuth_error_arcsec": 0.00028950776603638335,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.477012468316867e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 9.570157999405637e-10,
+      "inverse_start_azimuth_error_arcsec": 6.540238202587058e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.304956494013992e-07,
+      "direct_forward_azimuth_error_arcsec": 8.335597709179584e-09,
+      "inverse_distance_error_m": 5.068068276159465e-08,
+      "inverse_start_azimuth_error_arcsec": 1.3868236188679e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003554075969582142,
+      "direct_forward_azimuth_error_arcsec": 9.307107042185724e-06,
+      "inverse_distance_error_m": 5.180174775887281e-05,
+      "inverse_start_azimuth_error_arcsec": 4.2819507432181395e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.012192209095781567,
+      "direct_forward_azimuth_error_arcsec": 0.0003325044278198785,
+      "inverse_distance_error_m": 0.001684854069026187,
+      "inverse_start_azimuth_error_arcsec": 0.000796184599589544,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.1228576756060106e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 9.662244337960146e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.4152384504040069e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 6.766640581190586e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.2134461581829872e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.2469536159187555e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.014118137225492e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.125089617446065e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.477012468316867e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.7066350816749036e-11,
+      "inverse_start_azimuth_error_arcsec": 2.7250992510779414e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.304956494013992e-07,
+      "direct_forward_azimuth_error_arcsec": 8.427197684005733e-09,
+      "inverse_distance_error_m": 5.068068276159465e-08,
+      "inverse_start_azimuth_error_arcsec": 1.3868236188679e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003554075969582142,
+      "direct_forward_azimuth_error_arcsec": 9.307290242135377e-06,
+      "inverse_distance_error_m": 5.180174775887281e-05,
+      "inverse_start_azimuth_error_arcsec": 4.2819507432181395e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.012192209095781567,
+      "direct_forward_azimuth_error_arcsec": 0.0003325042446199289,
+      "inverse_distance_error_m": 0.0016848530794959515,
+      "inverse_start_azimuth_error_arcsec": 0.0007961837751897707,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.4166191708434252e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.511093720793724e-10,
+      "inverse_start_azimuth_error_arcsec": 2.3815993454798813e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.1882977292619386e-07,
+      "direct_forward_azimuth_error_arcsec": 2.674719264923559e-08,
+      "inverse_distance_error_m": 4.601679393090308e-08,
+      "inverse_start_azimuth_error_arcsec": 4.9463986406120615e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003279622101001079,
+      "direct_forward_azimuth_error_arcsec": 2.7260885308060636e-05,
+      "inverse_distance_error_m": 4.6862682211212814e-05,
+      "inverse_start_azimuth_error_arcsec": 9.077374305321741e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.010559698361677724,
+      "direct_forward_azimuth_error_arcsec": 0.0008657934356593811,
+      "inverse_distance_error_m": 0.0014996685204096138,
+      "inverse_start_azimuth_error_arcsec": 0.0002895075828364337,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.475631747877448e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6486865206388757e-09,
+      "inverse_start_azimuth_error_arcsec": 3.5375910277858854e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.164557101027558e-07,
+      "direct_forward_azimuth_error_arcsec": 8.060797784701138e-09,
+      "inverse_distance_error_m": 4.837420419789851e-08,
+      "inverse_start_azimuth_error_arcsec": 1.399647615343561e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.00030930395360924363,
+      "direct_forward_azimuth_error_arcsec": 7.515594734535896e-06,
+      "inverse_distance_error_m": 4.9985203077085316e-05,
+      "inverse_start_azimuth_error_arcsec": 3.117018903369103e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -60,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.009236612138752985,
+      "direct_forward_azimuth_error_arcsec": 0.00021691460278671037,
+      "inverse_distance_error_m": 0.0015691762964706868,
+      "inverse_start_azimuth_error_arcsec": 0.00042051972923118125,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.7705482352757826e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.9103830456733704e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.4020042449921806e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.3659882824867964e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.603464159226684e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.485482349991798e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.7651265873235164e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.2429276214097627e-09,
+      "inverse_start_azimuth_error_arcsec": 2.245115382988919e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.8568766328713225e-08,
+      "direct_forward_azimuth_error_arcsec": 8.243997734353435e-10,
+      "inverse_distance_error_m": 1.3682438293471932e-08,
+      "inverse_start_azimuth_error_arcsec": 4.213598842002867e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.8212147953406445e-05,
+      "direct_forward_azimuth_error_arcsec": 8.042477789735907e-07,
+      "inverse_distance_error_m": 1.15365837700665e-05,
+      "inverse_start_azimuth_error_arcsec": 2.783998034891155e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0005686153791547245,
+      "direct_forward_azimuth_error_arcsec": 2.496694713848938e-05,
+      "inverse_distance_error_m": 0.000362363934982568,
+      "inverse_start_azimuth_error_arcsec": 5.063600808402119e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.069288649822944e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.6648194761946797e-10,
+      "inverse_start_azimuth_error_arcsec": 1.0790477034520386e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 8.226936094350597e-09,
+      "direct_forward_azimuth_error_arcsec": 1.28239964756609e-09,
+      "inverse_distance_error_m": 7.3196133598685265e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1067994210014333e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1568701024318032e-05,
+      "direct_forward_azimuth_error_arcsec": 1.3926860172567736e-06,
+      "inverse_distance_error_m": 8.053742931224406e-06,
+      "inverse_start_azimuth_error_arcsec": 6.730766150225449e-07,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00037296305841259884,
+      "direct_forward_azimuth_error_arcsec": 4.451593896596168e-05,
+      "inverse_distance_error_m": 0.0002578207349870354,
+      "inverse_start_azimuth_error_arcsec": 2.151243728787081e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.055481445428756e-10,
+      "direct_forward_azimuth_error_arcsec": 9.159997482614928e-11,
+      "inverse_distance_error_m": 3.7778136174893007e-10,
+      "inverse_start_azimuth_error_arcsec": 1.2439276581391072e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.7520535706663573e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.104490365833044e-08,
+      "inverse_start_azimuth_error_arcsec": 6.41199823783045e-10,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.9147745434117426e-05,
+      "direct_forward_azimuth_error_arcsec": 8.551773649769297e-07,
+      "inverse_distance_error_m": 1.1975673260167241e-05,
+      "inverse_start_azimuth_error_arcsec": 1.9652774598950327e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0006286997198999132,
+      "direct_forward_azimuth_error_arcsec": 2.8238073839505995e-05,
+      "inverse_distance_error_m": 0.0003905259072780609,
+      "inverse_start_azimuth_error_arcsec": 2.4567204848348063e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6086687537608668e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.546585164964199e-11,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.3350324000781838e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.2993405107408762e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.153267833470313e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.0577142499387264e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.055481445428756e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.7778136174893007e-10,
+      "inverse_start_azimuth_error_arcsec": 1.2439276581391072e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.7520535706663573e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.104490365833044e-08,
+      "inverse_start_azimuth_error_arcsec": 6.41199823783045e-10,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.9147745434117426e-05,
+      "direct_forward_azimuth_error_arcsec": 8.551773649769297e-07,
+      "inverse_distance_error_m": 1.1975673260167241e-05,
+      "inverse_start_azimuth_error_arcsec": 1.9652774598950327e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0006286997198999132,
+      "direct_forward_azimuth_error_arcsec": 2.8238073839505995e-05,
+      "inverse_distance_error_m": 0.0003905241610482335,
+      "inverse_start_azimuth_error_arcsec": 2.456894524786976e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.069288649822944e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.721549208217766e-09,
+      "inverse_start_azimuth_error_arcsec": 1.0808797029485616e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 8.226936094350597e-09,
+      "direct_forward_azimuth_error_arcsec": 1.4655995972183885e-09,
+      "inverse_distance_error_m": 7.3196133598685265e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1983993958275827e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1568701024318032e-05,
+      "direct_forward_azimuth_error_arcsec": 1.3926860172567736e-06,
+      "inverse_distance_error_m": 8.056202204898e-06,
+      "inverse_start_azimuth_error_arcsec": 6.730766150225449e-07,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00037296300257669794,
+      "direct_forward_azimuth_error_arcsec": 4.451612216591133e-05,
+      "inverse_distance_error_m": 0.0002578207349870354,
+      "inverse_start_azimuth_error_arcsec": 2.151243728787081e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 3.541547927108563e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 5.070432962384075e-10,
+      "inverse_start_azimuth_error_arcsec": 1.3355276329652566e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.8568766328713225e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.1947122402489185e-08,
+      "inverse_start_azimuth_error_arcsec": 1.0075997230876422e-08,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.8212147953406445e-05,
+      "direct_forward_azimuth_error_arcsec": 8.038813790742861e-07,
+      "inverse_distance_error_m": 1.1538315447978675e-05,
+      "inverse_start_azimuth_error_arcsec": 2.7804256358729352e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": -30,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0005686153791547245,
+      "direct_forward_azimuth_error_arcsec": 2.4966855538514552e-05,
+      "inverse_distance_error_m": 0.000362363934982568,
+      "inverse_start_azimuth_error_arcsec": 5.063591648404637e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 0.0,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.5913857403415135e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.4374458007514477e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 2.661749627047538e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.5314511731266975e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 8.514929269877533e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 8.098024409264326e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.3287506084889174e-10,
+      "inverse_start_azimuth_error_arcsec": 6.860838114478581e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 5.2352373137711284e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.6561687011271715e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1983993958275827e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 5.783531590867513e-06,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-09,
+      "inverse_distance_error_m": 4.408197128213942e-06,
+      "inverse_start_azimuth_error_arcsec": 4.239613234853494e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00018502361568227576,
+      "direct_forward_azimuth_error_arcsec": 4.693582710091889e-07,
+      "inverse_distance_error_m": 0.00014113006182014942,
+      "inverse_start_azimuth_error_arcsec": 6.76972361951901e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 3.1638902212669554e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.403339749434963e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.534526336854835e-12,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.41970007866621e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 3.1638961753771127e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.367880031466484e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 1.227621069483868e-11,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.735760062932968e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.3287506084889174e-10,
+      "inverse_start_azimuth_error_arcsec": 6.860838114478581e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 5.237433990146231e-09,
+      "direct_forward_azimuth_error_arcsec": 9.159997482614928e-11,
+      "inverse_distance_error_m": 3.6561687011271715e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1983993958275827e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 5.783531590867513e-06,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-09,
+      "inverse_distance_error_m": 4.408197128213942e-06,
+      "inverse_start_azimuth_error_arcsec": 4.239613234853494e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0001850236645686444,
+      "direct_forward_azimuth_error_arcsec": 4.6926667103436276e-07,
+      "inverse_distance_error_m": 0.00014113006182014942,
+      "inverse_start_azimuth_error_arcsec": 6.76972361951901e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 0.0,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.5913857403415135e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.4374458007514477e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 2.661749627047538e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.5314511731266975e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 8.514929269877533e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 8.098024409264326e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.3287506084889174e-10,
+      "inverse_start_azimuth_error_arcsec": 6.860838114478581e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 5.2352373137711284e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 5.657057045027614e-09,
+      "inverse_start_azimuth_error_arcsec": 5.495998489568957e-09,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 5.783531590867513e-06,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-09,
+      "inverse_distance_error_m": 4.408197128213942e-06,
+      "inverse_start_azimuth_error_arcsec": 4.239613234853494e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00018502361568227576,
+      "direct_forward_azimuth_error_arcsec": 4.693582710091889e-07,
+      "inverse_distance_error_m": 0.00014113006182014942,
+      "inverse_start_azimuth_error_arcsec": 6.76972361951901e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 3.1638902212669554e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.592173586890567e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 4.603579010564506e-12,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.41970007866621e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 3.1639438078549957e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.469743438065052e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 3.682863208451605e-11,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 8.731149137020111e-11,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 1
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.3287506084889174e-10,
+      "inverse_start_azimuth_error_arcsec": 6.869998111961197e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 5.2440271938210635e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 5.657057045027614e-09,
+      "inverse_start_azimuth_error_arcsec": 5.495998489568957e-09,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 5.783531590867513e-06,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-09,
+      "inverse_distance_error_m": 4.408197128213942e-06,
+      "inverse_start_azimuth_error_arcsec": 4.239613234853494e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 0,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00018502372975048596,
+      "direct_forward_azimuth_error_arcsec": 4.693582710091889e-07,
+      "inverse_distance_error_m": 0.00014113006182014942,
+      "inverse_start_azimuth_error_arcsec": 6.769714459521528e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6086687537608668e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.546585164964199e-11,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.3350324000781838e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.2993405107408762e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.153267833470313e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.0577142499387264e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.055481445428756e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.7778136174893007e-10,
+      "inverse_start_azimuth_error_arcsec": 1.2439276581391072e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.7520535706663573e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.104490365833044e-08,
+      "inverse_start_azimuth_error_arcsec": 5.495998489568957e-10,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.9147745434117426e-05,
+      "direct_forward_azimuth_error_arcsec": 8.552689649517558e-07,
+      "inverse_distance_error_m": 1.1975673260167241e-05,
+      "inverse_start_azimuth_error_arcsec": 1.9652774598950327e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0006286997198999132,
+      "direct_forward_azimuth_error_arcsec": 2.8238073839505995e-05,
+      "inverse_distance_error_m": 0.0003905259072780609,
+      "inverse_start_azimuth_error_arcsec": 2.4567204848348063e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.069288649822944e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.6648194761946797e-10,
+      "inverse_start_azimuth_error_arcsec": 1.0799637032003e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 8.226936094350597e-09,
+      "direct_forward_azimuth_error_arcsec": 1.3739996223922392e-09,
+      "inverse_distance_error_m": 7.3196133598685265e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1067994210014333e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1568701024318032e-05,
+      "direct_forward_azimuth_error_arcsec": 1.3926860172567736e-06,
+      "inverse_distance_error_m": 8.053742931224406e-06,
+      "inverse_start_azimuth_error_arcsec": 6.731682149973711e-07,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00037296305841259884,
+      "direct_forward_azimuth_error_arcsec": 4.451593896596168e-05,
+      "inverse_distance_error_m": 0.0002578207349870354,
+      "inverse_start_azimuth_error_arcsec": 2.151243728787081e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.7651265873235164e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.2429276214097627e-09,
+      "inverse_start_azimuth_error_arcsec": 2.2441993832406573e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.8568766328713225e-08,
+      "direct_forward_azimuth_error_arcsec": 8.243997734353435e-10,
+      "inverse_distance_error_m": 1.3682438293471932e-08,
+      "inverse_start_azimuth_error_arcsec": 4.121998867176717e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.8212147953406445e-05,
+      "direct_forward_azimuth_error_arcsec": 8.042477789735907e-07,
+      "inverse_distance_error_m": 1.15365837700665e-05,
+      "inverse_start_azimuth_error_arcsec": 2.783998034891155e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0005686153791547245,
+      "direct_forward_azimuth_error_arcsec": 2.4967038738464205e-05,
+      "inverse_distance_error_m": 0.000362363934982568,
+      "inverse_start_azimuth_error_arcsec": 5.063600808402119e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.7705482352757826e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.9103830456733704e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.4020042449921806e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.3659882824867964e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.603464159226684e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.485482349991798e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 3.541547927108563e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 5.070432962384075e-10,
+      "inverse_start_azimuth_error_arcsec": 1.3364436327135182e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.8568766328713225e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.1947122402489185e-08,
+      "inverse_start_azimuth_error_arcsec": 1.0167597205702571e-08,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.8212147953406445e-05,
+      "direct_forward_azimuth_error_arcsec": 8.042477789735907e-07,
+      "inverse_distance_error_m": 1.1538315447978675e-05,
+      "inverse_start_azimuth_error_arcsec": 2.7804256358729352e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0005686153791547245,
+      "direct_forward_azimuth_error_arcsec": 2.4967221938413858e-05,
+      "inverse_distance_error_m": 0.000362363934982568,
+      "inverse_start_azimuth_error_arcsec": 5.063600808402119e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.069288649822944e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.721549208217766e-09,
+      "inverse_start_azimuth_error_arcsec": 1.0808797029485616e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 8.226936094350597e-09,
+      "direct_forward_azimuth_error_arcsec": 1.4655995972183885e-09,
+      "inverse_distance_error_m": 7.3196133598685265e-09,
+      "inverse_start_azimuth_error_arcsec": 2.1983993958275827e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1568701024318032e-05,
+      "direct_forward_azimuth_error_arcsec": 1.3926860172567736e-06,
+      "inverse_distance_error_m": 8.056202204898e-06,
+      "inverse_start_azimuth_error_arcsec": 6.730766150225449e-07,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.00037296300257669794,
+      "direct_forward_azimuth_error_arcsec": 4.451612216591133e-05,
+      "inverse_distance_error_m": 0.0002578207349870354,
+      "inverse_start_azimuth_error_arcsec": 2.151243728787081e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 7.055481445428756e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.7778136174893007e-10,
+      "inverse_start_azimuth_error_arcsec": 1.2439276581391072e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.7520535706663573e-08,
+      "direct_forward_azimuth_error_arcsec": 7.327997986091943e-10,
+      "inverse_distance_error_m": 1.104490365833044e-08,
+      "inverse_start_azimuth_error_arcsec": 5.495998489568957e-10,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.9147745434117426e-05,
+      "direct_forward_azimuth_error_arcsec": 8.551773649769297e-07,
+      "inverse_distance_error_m": 1.1975673260167241e-05,
+      "inverse_start_azimuth_error_arcsec": 1.9651858599202067e-06,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 30,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.0006286997198999132,
+      "direct_forward_azimuth_error_arcsec": 2.8238073839505995e-05,
+      "inverse_distance_error_m": 0.0003905241610482335,
+      "inverse_start_azimuth_error_arcsec": 2.456894524786976e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.1228576756060106e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 9.662244337960146e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.4152384504040069e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 6.766640581190586e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.2134461581829872e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.2469536159187555e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 4.014118137225492e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.125089617446065e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.477012468316867e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 9.570157999405637e-10,
+      "inverse_start_azimuth_error_arcsec": 6.540238202587058e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.304956494013992e-07,
+      "direct_forward_azimuth_error_arcsec": 8.427197684005733e-09,
+      "inverse_distance_error_m": 5.068068276159465e-08,
+      "inverse_start_azimuth_error_arcsec": 1.3868236188679e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003554075969582142,
+      "direct_forward_azimuth_error_arcsec": 9.307107042185724e-06,
+      "inverse_distance_error_m": 5.180174775887281e-05,
+      "inverse_start_azimuth_error_arcsec": 4.2819507432181395e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.012192209095781567,
+      "direct_forward_azimuth_error_arcsec": 0.00033250451941985333,
+      "inverse_distance_error_m": 0.001684854069026187,
+      "inverse_start_azimuth_error_arcsec": 0.0007961846911895189,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.4166191708434252e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.511093720793724e-10,
+      "inverse_start_azimuth_error_arcsec": 2.3806833457316197e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.1882977292619386e-07,
+      "direct_forward_azimuth_error_arcsec": 2.674719264923559e-08,
+      "inverse_distance_error_m": 4.459798219613731e-08,
+      "inverse_start_azimuth_error_arcsec": 5.037998615438211e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003279622101001079,
+      "direct_forward_azimuth_error_arcsec": 2.726079370808581e-05,
+      "inverse_distance_error_m": 4.6862682211212814e-05,
+      "inverse_start_azimuth_error_arcsec": 9.077374305321741e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.010559698361677724,
+      "direct_forward_azimuth_error_arcsec": 0.0008657932524594314,
+      "inverse_distance_error_m": 0.001499665668234229,
+      "inverse_start_azimuth_error_arcsec": 0.00028950785763635814,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.9407980465681495e-09,
+      "direct_forward_azimuth_error_arcsec": 9.159997482614928e-11,
+      "inverse_distance_error_m": 6.447180567192845e-10,
+      "inverse_start_azimuth_error_arcsec": 5.60866645860512e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.164557101027558e-07,
+      "direct_forward_azimuth_error_arcsec": 7.969197809874988e-09,
+      "inverse_distance_error_m": 4.837420419789851e-08,
+      "inverse_start_azimuth_error_arcsec": 1.399647615343561e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.00030930395360924363,
+      "direct_forward_azimuth_error_arcsec": 7.515686334510722e-06,
+      "inverse_distance_error_m": 4.9985203077085316e-05,
+      "inverse_start_azimuth_error_arcsec": 3.117018903369103e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.009236612138752985,
+      "direct_forward_azimuth_error_arcsec": 0.00021691451118673556,
+      "inverse_distance_error_m": 0.0015691773151047528,
+      "inverse_start_azimuth_error_arcsec": 0.00042052073683090436,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.7693932431148631e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.1779093256336637e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 7.083095854217126e-10,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6189005691558123e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 1.1496637774840473e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.1811789590865374e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 3.5758263830977876e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.6641431506723166e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.475631747877448e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.6486865206388757e-09,
+      "inverse_start_azimuth_error_arcsec": 3.536675028037624e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.164557101027558e-07,
+      "direct_forward_azimuth_error_arcsec": 8.060797784701138e-09,
+      "inverse_distance_error_m": 4.837420419789851e-08,
+      "inverse_start_azimuth_error_arcsec": 1.399647615343561e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.00030930395360924363,
+      "direct_forward_azimuth_error_arcsec": 7.515594734535896e-06,
+      "inverse_distance_error_m": 4.9985203077085316e-05,
+      "inverse_start_azimuth_error_arcsec": 3.117018903369103e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.009236612138752985,
+      "direct_forward_azimuth_error_arcsec": 0.00021691460278671037,
+      "inverse_distance_error_m": 0.0015691762964706868,
+      "inverse_start_azimuth_error_arcsec": 0.0004205196376312064,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.4166191708434252e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.511093720793724e-10,
+      "inverse_start_azimuth_error_arcsec": 2.3815993454798813e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.1882977292619386e-07,
+      "direct_forward_azimuth_error_arcsec": 2.674719264923559e-08,
+      "inverse_distance_error_m": 4.601679393090308e-08,
+      "inverse_start_azimuth_error_arcsec": 4.9463986406120615e-09,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003279622101001079,
+      "direct_forward_azimuth_error_arcsec": 2.7260885308060636e-05,
+      "inverse_distance_error_m": 4.6862682211212814e-05,
+      "inverse_start_azimuth_error_arcsec": 9.077374305321741e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.010559698361677724,
+      "direct_forward_azimuth_error_arcsec": 0.0008657934356593811,
+      "inverse_distance_error_m": 0.0014996685204096138,
+      "inverse_start_azimuth_error_arcsec": 0.0002895075828364337,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 2.477012468316867e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.7066350816749036e-11,
+      "inverse_start_azimuth_error_arcsec": 2.72418325132968e-07,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 3.304956494013992e-07,
+      "direct_forward_azimuth_error_arcsec": 8.427197684005733e-09,
+      "inverse_distance_error_m": 5.068068276159465e-08,
+      "inverse_start_azimuth_error_arcsec": 1.3868236188679e-07,
+      "iterations": 5
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.0003554075969582142,
+      "direct_forward_azimuth_error_arcsec": 9.306923842236071e-06,
+      "inverse_distance_error_m": 5.180174775887281e-05,
+      "inverse_start_azimuth_error_arcsec": 4.2819507432181395e-05,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 60,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.012192209095781567,
+      "direct_forward_azimuth_error_arcsec": 0.00033250461101982817,
+      "inverse_distance_error_m": 0.0016848530794959515,
+      "inverse_start_azimuth_error_arcsec": 0.0007961836835897958,
+      "iterations": 8
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 0,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.593351387088999e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 9.071072781807743e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 0,
+      "distance_m": 25000,
+      "direct_position_error_m": 1.2391965943781428e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.153239281848073e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 0,
+      "distance_m": 100000,
+      "direct_position_error_m": 2.3206527821549136e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.4099426809698343e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 0,
+      "distance_m": 200000,
+      "direct_position_error_m": 7.429922645785824e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 7.79592664912343e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 45,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.446292223292403e-10,
+      "inverse_start_azimuth_error_arcsec": 3.6273590031155115e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 45,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.8021911252411363e-05,
+      "direct_forward_azimuth_error_arcsec": 1.1840212746028057e-06,
+      "inverse_distance_error_m": 1.7569254850968719e-06,
+      "inverse_start_azimuth_error_arcsec": 1.482930312455496e-05,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 45,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.033860587431790067,
+      "direct_forward_azimuth_error_arcsec": 0.001725945595269119,
+      "inverse_distance_error_m": 0.0021777921210741624,
+      "inverse_start_azimuth_error_arcsec": 0.005148569861050604,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 45,
+      "distance_m": 200000,
+      "direct_position_error_m": 1.3445056363233743,
+      "direct_forward_azimuth_error_arcsec": 0.08730091165043405,
+      "inverse_distance_error_m": 0.0889509900007397,
+      "inverse_start_azimuth_error_arcsec": 0.12319208909908523,
+      "iterations": 12
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 90,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.765556589816697e-10,
+      "inverse_start_azimuth_error_arcsec": 1.777039511627296e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 90,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.9048226587406116e-05,
+      "direct_forward_azimuth_error_arcsec": 5.519448083124451e-06,
+      "inverse_distance_error_m": 2.356529876124114e-06,
+      "inverse_start_azimuth_error_arcsec": 1.819908299845934e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 90,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.030085114496810304,
+      "direct_forward_azimuth_error_arcsec": 0.005509670518611559,
+      "inverse_distance_error_m": 0.002406845349469222,
+      "inverse_start_azimuth_error_arcsec": 0.0018398961471527983,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 90,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.9914997993695458,
+      "direct_forward_azimuth_error_arcsec": 0.1626025433513555,
+      "inverse_distance_error_m": 0.0762857650697697,
+      "inverse_start_azimuth_error_arcsec": 0.05655863089154364,
+      "iterations": 13
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 135,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 3.5174707591068e-10,
+      "inverse_start_azimuth_error_arcsec": 9.407317414645531e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 135,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.507574118657443e-05,
+      "direct_forward_azimuth_error_arcsec": 9.323045437805474e-07,
+      "inverse_distance_error_m": 1.5424629964400083e-06,
+      "inverse_start_azimuth_error_arcsec": 1.2114554670632373e-05,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 135,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.021738528578567836,
+      "direct_forward_azimuth_error_arcsec": 0.0006640684902981918,
+      "inverse_distance_error_m": 0.0012936912244185805,
+      "inverse_start_azimuth_error_arcsec": 0.002283721474779047,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 135,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.5582371699060509,
+      "direct_forward_azimuth_error_arcsec": 0.01299246824856085,
+      "inverse_distance_error_m": 0.03151947507285513,
+      "inverse_start_azimuth_error_arcsec": 0.024301426605390242,
+      "iterations": 11
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 180,
+      "distance_m": 1000,
+      "direct_position_error_m": 1.5926610268692897e-09,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 7.574953997391276e-10,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 2
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 180,
+      "distance_m": 25000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.5425030142068863e-09,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 180,
+      "distance_m": 100000,
+      "direct_position_error_m": 2.2851648150607588e-07,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 2.39786459133029e-07,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 180,
+      "distance_m": 200000,
+      "direct_position_error_m": 7.260348256888252e-06,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 7.6087890192866325e-06,
+      "inverse_start_azimuth_error_arcsec": 0.0,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 225,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 7.006519808783196e-10,
+      "inverse_start_azimuth_error_arcsec": 2.2075593933101978e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 225,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.507574118657443e-05,
+      "direct_forward_azimuth_error_arcsec": 9.321213438308951e-07,
+      "inverse_distance_error_m": 1.542812242405489e-06,
+      "inverse_start_azimuth_error_arcsec": 1.2111531871463111e-05,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 225,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.021738528578567836,
+      "direct_forward_azimuth_error_arcsec": 0.0006640683070982421,
+      "inverse_distance_error_m": 0.0012936912244185805,
+      "inverse_start_azimuth_error_arcsec": 0.002283721474779047,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 225,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.5582371699060509,
+      "direct_forward_azimuth_error_arcsec": 0.01299246824856085,
+      "inverse_distance_error_m": 0.031519474723609164,
+      "inverse_start_azimuth_error_arcsec": 0.024301427063390117,
+      "iterations": 11
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 270,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 1.765556589816697e-10,
+      "inverse_start_azimuth_error_arcsec": 1.777039511627296e-08,
+      "iterations": 3
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 270,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.9048226587406116e-05,
+      "direct_forward_azimuth_error_arcsec": 5.519448083124451e-06,
+      "inverse_distance_error_m": 2.3570246412418783e-06,
+      "inverse_start_azimuth_error_arcsec": 1.819908299845934e-06,
+      "iterations": 7
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 270,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.030085114496810304,
+      "direct_forward_azimuth_error_arcsec": 0.005509670335411609,
+      "inverse_distance_error_m": 0.002406845349469222,
+      "inverse_start_azimuth_error_arcsec": 0.0018398961471527983,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 270,
+      "distance_m": 200000,
+      "direct_position_error_m": 0.9914997993695458,
+      "direct_forward_azimuth_error_arcsec": 0.1626025433513555,
+      "inverse_distance_error_m": 0.07628576457500458,
+      "inverse_start_azimuth_error_arcsec": 0.056558630708343695,
+      "iterations": 13
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 315,
+      "distance_m": 1000,
+      "direct_position_error_m": 0.0,
+      "direct_forward_azimuth_error_arcsec": 0.0,
+      "inverse_distance_error_m": 4.446292223292403e-10,
+      "inverse_start_azimuth_error_arcsec": 3.6273590031155115e-08,
+      "iterations": 4
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 315,
+      "distance_m": 25000,
+      "direct_position_error_m": 2.8021911252411363e-05,
+      "direct_forward_azimuth_error_arcsec": 1.1838380746531533e-06,
+      "inverse_distance_error_m": 1.756576239131391e-06,
+      "inverse_start_azimuth_error_arcsec": 1.4832051123799744e-05,
+      "iterations": 6
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 315,
+      "distance_m": 100000,
+      "direct_position_error_m": 0.033860587431790067,
+      "direct_forward_azimuth_error_arcsec": 0.0017259457784690687,
+      "inverse_distance_error_m": 0.002177792470320128,
+      "inverse_start_azimuth_error_arcsec": 0.0051485693114507545,
+      "iterations": 9
+    },
+    {
+      "latitude_deg": 80,
+      "azimuth_deg": 315,
+      "distance_m": 200000,
+      "direct_position_error_m": 1.3445056363233743,
+      "direct_forward_azimuth_error_arcsec": 0.08730091174203403,
+      "inverse_distance_error_m": 0.0889509900007397,
+      "inverse_start_azimuth_error_arcsec": 0.12319208909908523,
+      "iterations": 12
+    }
+  ],
+  "software": {
+    "sympy": "1.14.0",
+    "numpy": "2.3.5"
+  }
+}

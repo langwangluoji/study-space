@@ -40,8 +40,8 @@
       "title": "大地测量",
       "category": "测绘与地球空间科学",
       "url": "course-geodesy.html",
-      "description": "从地球参考模型走向椭球坐标、局部方向、曲率、弧长与面积。",
-      "status": "绪论与椭球主线已整理",
+      "description": "从地球参考模型、椭球几何走向大地线、观测归算与大地主题正反算。",
+      "status": "绪论、椭球、大地线与坐标计算已整理",
       "chapters": [
         {
           "id": "geodesy-intro",
@@ -94,6 +94,44 @@
             {
               "slug": "geodesy-metric",
               "title": "曲面度量 弧长与面积"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-geodesics",
+          "title": "第三章 大地线（测地线）",
+          "url": "geodesy-geodesics.html",
+          "topics": [
+            {
+              "slug": "geodesy-geodesic-geometry",
+              "title": "法截弧与大地线"
+            },
+            {
+              "slug": "geodesy-geodesic-equations",
+              "title": "克莱劳定理与微分方程"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-computation",
+          "title": "第四章 椭球面上大地坐标的计算",
+          "url": "geodesy-computation.html",
+          "topics": [
+            {
+              "slug": "geodesy-observation-reduction",
+              "title": "地面方向与边长归算"
+            },
+            {
+              "slug": "geodesy-spherical-triangles",
+              "title": "球面角超与三角形解算"
+            },
+            {
+              "slug": "geodesy-gauss-derivation",
+              "title": "高斯平均引数的推导"
+            },
+            {
+              "slug": "geodesy-gauss-solution",
+              "title": "大地主题正算与反算"
             }
           ]
         }

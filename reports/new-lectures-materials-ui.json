@@ -1,0 +1,250 @@
+{
+  "status": "pass",
+  "startedAt": "2026-10-14T06:00:40.056Z",
+  "root": "docs\\.vitepress\\dist",
+  "storage": "materials\\storage",
+  "catalogPath": "public\\materials\\catalog.json",
+  "networkMode": "raw GitHub parts mapped to immutable local files",
+  "cases": [
+    {
+      "name": "geo-s7 new geodesy PDF first middle last and original download",
+      "status": "pass",
+      "id": "geo-s7",
+      "first": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1139,
+        "samples": 9282,
+        "textSpans": 3,
+        "displayedPage": "1",
+        "status": "第 1 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "middle": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1628,
+        "samples": 9282,
+        "textSpans": 510,
+        "displayedPage": "6",
+        "status": "第 6 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "last": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1079,
+        "samples": 9282,
+        "textSpans": 30,
+        "displayedPage": "11",
+        "status": "第 11 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "originalSHA256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f",
+      "filename": "2大地线 （测地线 ）.pdf",
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:52623/study-space/geodesy/materials/S7-geodesics.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:52623/study-space/geodesy/materials/S7-geodesics.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:52623/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "geo-s8 new geodesy PDF first middle last and original download",
+      "status": "pass",
+      "id": "geo-s8",
+      "first": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1137,
+        "samples": 9282,
+        "textSpans": 3,
+        "displayedPage": "1",
+        "status": "第 1 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "middle": {
+        "width": 362,
+        "height": 190,
+        "nonwhite": 1375,
+        "samples": 8645,
+        "textSpans": 502,
+        "displayedPage": "14",
+        "status": "第 14 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "last": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1419,
+        "samples": 9282,
+        "textSpans": 134,
+        "displayedPage": "28",
+        "status": "第 28 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "originalSHA256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99",
+      "filename": "3椭球面上大地坐标的计算(1).pdf",
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:52623/study-space/geodesy/materials/S8-coordinate-computation-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:52623/study-space/geodesy/materials/S8-coordinate-computation-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:52623/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ML PPT first/last page and desktop zoom",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "ML PPT phone fit/zoom and dark theme",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "InSAR scanned textbook original page",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "leedl chunked on-demand first/middle/last",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "rs-campbell-introduction chunked on-demand first/middle/last",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "RS legacy links follow configured access and anonymous public copy",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Word 20-page PDF reading copy",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Built parent page deep links and synchronizes LeeDL iframe",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Chunk fetch 503 shows error and recovers on retry",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Later chunk 503 rebuilds loaded PDF and retains selected page",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Geodesy Word preview and original download with raw GitHub unavailable",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    },
+    {
+      "name": "Real service-worker DOCX and Chinese PPTX downloads SHA-256",
+      "status": "not-run",
+      "reason": "Selected-case debug run"
+    }
+  ],
+  "downloads": [],
+  "errors": [],
+  "serverDownloadRequests": [],
+  "selectedCasePattern": "geo-s[78] new",
+  "optionalLocalInventoryChecked": false,
+  "catalogRecords": 45,
+  "partURLs": 161,
+  "finishedAt": "2026-10-14T06:00:42.542Z"
+}

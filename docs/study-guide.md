@@ -61,3 +61,7 @@ next: false
 [第一章](insar-microwave.html)把波长、极化、介质与散射联系到复数回波。[第二章](insar-imaging.html)再沿着延迟与相位历程分别理解距离聚焦和方位聚焦，公式同时对照图中的几何对象。[第三章](insar-interpretation.html)先辨认投影和无回波区域，再解释强度与相干斑。
 
 始终固定单程斜距、入射角方向和干涉差分次序；把“能成像”“能解译”和“能可靠测量”分别说明。复习时用[主线与公式索引](insar-review.html)回到卡住的推导，出处见[来源与页码](insar-sources.html)。
+
+### 大地测量的后续计算路线
+
+从[大地线](geodesy-geodesics.html)理解曲面上最直的路径，用[微分方程](geodesy-geodesic-equations.html)联系位置和方向；先读[观测归算](geodesy-observation-reduction.html)，再读[角超与三角形](geodesy-spherical-triangles.html)，最后跟随[高斯推导](geodesy-gauss-derivation.html)和[正反算演示](geodesy-gauss-solution.html#gauss-example)。先辨认参考面、角度分支和长度类型，再代入公式。
