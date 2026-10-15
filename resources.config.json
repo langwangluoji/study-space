@@ -671,5 +671,77 @@
     "preview": "/optimization-nw-10.html",
     "file": "/optimization/optimization_examples.py",
     "description": "最小二乘、线性高斯估计、二次控制与KKT的解析小例，可供相关章节复算，需要NumPy。"
+  },
+  {
+    "id": "photo-chinese",
+    "course": "photogrammetry",
+    "type": "教材",
+    "title": "摄影测量学",
+    "author": "王佩军、徐亚明",
+    "description": "中文教材，十章及操作/平差附录。用于几何、解析定向、空三与数字流程核对。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-chinese.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 260
+  },
+  {
+    "id": "photo-english",
+    "course": "photogrammetry",
+    "type": "教材",
+    "title": "Introduction to Modern Photogrammetry",
+    "author": "Edward M. Mikhail、James S. Bethel、J. Chris McGlone · Wiley 2001",
+    "description": "英文教材，十一章及A–G附录。配合12个阅读训练，逐条核实文件页。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-english.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 491
+  },
+  {
+    "id": "photo-exam",
+    "course": "photogrammetry",
+    "type": "辅助资料",
+    "title": "摄影测量两张纸整理 (1)(2)",
+    "author": "复习资料（原件未标明完整署名）",
+    "description": "实际四页。题型索引与公式条件经教材回查，原笔记不作为所有结论的最终依据。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-exam.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 4
+  },
+  {
+    "id": "photo-analytical",
+    "course": "photogrammetry",
+    "type": "参考教材",
+    "title": "解析摄影测量学",
+    "author": "李德仁 · 1992",
+    "description": "进阶参考书，尚未逐章核读；用于后续更深入的解析方法阅读。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-analytical.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 459
+  },
+  {
+    "id": "photo-slides1",
+    "course": "photogrammetry",
+    "type": "课件",
+    "title": "chapter1-2026",
+    "author": "课程课件（原件署名以文件为准）",
+    "description": "绪论课件，作为课堂范围补充。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-slides1.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 119
+  },
+  {
+    "id": "photo-slides3",
+    "course": "photogrammetry",
+    "type": "课件",
+    "title": "chapter3-2026（第2、3次课课件）",
+    "author": "课程课件（原件署名以文件为准）",
+    "description": "传感系统相关课件，作为课堂范围补充。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "preview": "/photogrammetry-material-slides3.html",
+    "format": "PDF",
+    "localOnly": true,
+    "pages": 146
   }
 ]

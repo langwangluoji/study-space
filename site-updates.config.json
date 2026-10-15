@@ -1,8 +1,122 @@
 [
-  {"id":"home-activity","date":"2026-10-14","category":"网站功能","title":"首页新增内容更新与访问足迹","summary":"公开每次内容修订，并从启用后开始记录页面访问与每日去重访客。","links":[{"label":"访问足迹","url":"/#site-traffic"},{"label":"统计口径","url":"/site-guide.html#traffic"}]},
-  {"id":"geodesy-new-lectures","date":"2026-10-14","category":"课程内容","title":"新增大地线与大地坐标计算两章","summary":"接入新课堂资料，补充大地线几何、微分方程、球面三角与高斯投影计算，并提供对应原资料。","sourceCommit":"7cca6fd","links":[{"label":"学习大地线","url":"/geodesy-geodesics.html"},{"label":"阅读坐标计算","url":"/geodesy-computation.html"}]},
-  {"id":"insar-illustrated","date":"2026-10-14","category":"课程内容","title":"InSAR 前三讲补充推导、插图与课件对照","summary":"按课堂 PPT 完善连续阅读主线，补充图示解释、推导步骤与来源定位，优化窄屏显示。","sourceCommit":"355264a","links":[{"label":"阅读 InSAR","url":"/course-insar.html"},{"label":"查看来源","url":"/insar-sources.html"}]},
-  {"id":"geodesy-word-preview","date":"2026-10-14","category":"资料阅读","title":"大地测量 Word 资料支持连续预览","summary":"修复原资料阅读器的兼容问题，让向量微积分与坐标旋转资料可以连续阅读。","sourceCommit":"a3f2e94","links":[{"label":"大地测量资料","url":"/resources.html?course=geodesy"}]},
-  {"id":"creator-guides","date":"2026-10-14","category":"网站功能","title":"上线制作者主页、贡献者致谢与资料扩展","summary":"增加网站介绍和两位遥感资料贡献者致谢，完善四门课程的扩展阅读、学习路线与使用说明。","sourceCommit":"c8bf481","links":[{"label":"认识制作者与贡献者","url":"/about.html"},{"label":"按问题扩展阅读","url":"/extensions.html"}]},
-  {"id":"original-readers","date":"2026-10-14","category":"资料阅读","title":"接入原资料预览、下载与分类导航","summary":"集中展示教材、课件、笔记与代码，保留来源、版本和原件与公开副本的说明。","sourceCommit":"f5c6cf3","links":[{"label":"进入资料中心","url":"/resources.html"},{"label":"下载与使用帮助","url":"/site-guide.html#downloads"}]}
+  {
+    "id": "photogrammetry-bilingual-20261015",
+    "date": "2026-10-15",
+    "category": "课程内容",
+    "title": "摄影测量：按英文教材顺序融合双语讲义",
+    "summary": "按英文教材顺序组织8讲56节，把概念、原图与推导融入正文；对照王书前六章28节和课堂PPT 265页，并提供英文阅读与交互实验。",
+    "links": [
+      {
+        "label": "进入摄影测量",
+        "url": "/course-photogrammetry.html"
+      },
+      {
+        "label": "英文阅读训练",
+        "url": "/photogrammetry-english.html"
+      }
+    ]
+  },
+  {
+    "id": "home-activity",
+    "date": "2026-10-14",
+    "category": "网站功能",
+    "title": "首页新增内容更新与访问足迹",
+    "summary": "公开每次内容修订，并从启用后开始记录页面访问与每日去重访客。",
+    "links": [
+      {
+        "label": "访问足迹",
+        "url": "/#site-traffic"
+      },
+      {
+        "label": "统计口径",
+        "url": "/site-guide.html#traffic"
+      }
+    ]
+  },
+  {
+    "id": "geodesy-new-lectures",
+    "date": "2026-10-14",
+    "category": "课程内容",
+    "title": "新增大地线与大地坐标计算两章",
+    "summary": "接入新课堂资料，补充大地线几何、微分方程、球面三角与高斯投影计算，并提供对应原资料。",
+    "sourceCommit": "7cca6fd",
+    "links": [
+      {
+        "label": "学习大地线",
+        "url": "/geodesy-geodesics.html"
+      },
+      {
+        "label": "阅读坐标计算",
+        "url": "/geodesy-computation.html"
+      }
+    ]
+  },
+  {
+    "id": "insar-illustrated",
+    "date": "2026-10-14",
+    "category": "课程内容",
+    "title": "InSAR 前三讲补充推导、插图与课件对照",
+    "summary": "按课堂 PPT 完善连续阅读主线，补充图示解释、推导步骤与来源定位，优化窄屏显示。",
+    "sourceCommit": "355264a",
+    "links": [
+      {
+        "label": "阅读 InSAR",
+        "url": "/course-insar.html"
+      },
+      {
+        "label": "查看来源",
+        "url": "/insar-sources.html"
+      }
+    ]
+  },
+  {
+    "id": "geodesy-word-preview",
+    "date": "2026-10-14",
+    "category": "资料阅读",
+    "title": "大地测量 Word 资料支持连续预览",
+    "summary": "修复原资料阅读器的兼容问题，让向量微积分与坐标旋转资料可以连续阅读。",
+    "sourceCommit": "a3f2e94",
+    "links": [
+      {
+        "label": "大地测量资料",
+        "url": "/resources.html?course=geodesy"
+      }
+    ]
+  },
+  {
+    "id": "creator-guides",
+    "date": "2026-10-14",
+    "category": "网站功能",
+    "title": "上线制作者主页、贡献者致谢与资料扩展",
+    "summary": "增加网站介绍和两位遥感资料贡献者致谢，完善四门课程的扩展阅读、学习路线与使用说明。",
+    "sourceCommit": "c8bf481",
+    "links": [
+      {
+        "label": "认识制作者与贡献者",
+        "url": "/about.html"
+      },
+      {
+        "label": "按问题扩展阅读",
+        "url": "/extensions.html"
+      }
+    ]
+  },
+  {
+    "id": "original-readers",
+    "date": "2026-10-14",
+    "category": "资料阅读",
+    "title": "接入原资料预览、下载与分类导航",
+    "summary": "集中展示教材、课件、笔记与代码，保留来源、版本和原件与公开副本的说明。",
+    "sourceCommit": "f5c6cf3",
+    "links": [
+      {
+        "label": "进入资料中心",
+        "url": "/resources.html"
+      },
+      {
+        "label": "下载与使用帮助",
+        "url": "/site-guide.html#downloads"
+      }
+    ]
+  }
 ]

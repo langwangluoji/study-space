@@ -1,0 +1,56 @@
+[
+  {
+    "id": "photo-chinese",
+    "filename": "摄影测量学_(王佩军，徐亚明_编著)_(z-library.sk,_1lib.sk,_z-lib.sk).pdf",
+    "pages": 260,
+    "bytes": 58210549,
+    "sha256": "e426fef487610aae66a63a347baed1bc48bcfd4079a8a24eda5d45c8b44cdc3b",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-chinese.html"
+  },
+  {
+    "id": "photo-english",
+    "filename": "英文教材—Introduction to Modern Photogrammetry  美国Wiley出版社  2001年版 (1).pdf",
+    "pages": 491,
+    "bytes": 109451803,
+    "sha256": "2dbe92674f3f84703f34c8673c80f1c37055dee12e1829266e7d7d454b125297",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-english.html"
+  },
+  {
+    "id": "photo-exam",
+    "filename": "摄影测量两张纸整理 (1)(2).pdf",
+    "pages": 4,
+    "bytes": 1093245,
+    "sha256": "2340d237d97dbd685add0428c11cce7a27b3cf99dd8a819477855099289dc27f",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-exam.html"
+  },
+  {
+    "id": "photo-analytical",
+    "filename": "参考书—《解析摄影测量学》李德仁1992.pdf",
+    "pages": 459,
+    "bytes": 11754785,
+    "sha256": "65d4b6f3f4c33ee3a9c57364939d1c0990cf5fea5d2b522aecdd8eb409e4e36d",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-analytical.html"
+  },
+  {
+    "id": "photo-slides1",
+    "filename": "chapter1-2026.pdf",
+    "pages": 119,
+    "bytes": 8331693,
+    "sha256": "6f9bc2d46f4c0f942c24997dc12b4d8e111b2325a24d983b98528779e669a499",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-slides1.html"
+  },
+  {
+    "id": "photo-slides3",
+    "filename": "chapter3-2026（第2、3次课课件）.pdf",
+    "pages": 146,
+    "bytes": 5238158,
+    "sha256": "ca75dace819309b76645fb1e15bd2119448447aa4658ec568b9a230021603659",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-slides3.html"
+  }
+]

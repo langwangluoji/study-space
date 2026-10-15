@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" role="img" aria-labelledby="title desc">
+<title id="title">同一物理向量在物方、辅助与相机坐标中的表达</title><desc id="desc">左图用OP等于OC加CP说明先减摄影中心；右图显示相机基向量以辅助坐标表达构成R的三列，逆变换由点积得到转置。</desc>
+<defs><marker id="dg" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6" fill="none" stroke="#25575b"/></marker><marker id="do" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6" fill="none" stroke="#cf7b22"/></marker><marker id="dt" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6" fill="none" stroke="#087e8b"/></marker></defs>
+<rect width="1000" height="450" rx="20" fill="#f4f8f7"/><path d="M490 50V395" stroke="#c8dad5" stroke-width="2"/>
+<g font-family="Arial,sans-serif" fill="#173e42" font-size="18"><text x="25" y="35">1. Change the origin: CP = OP - OC</text><text x="525" y="35">2. Change the basis: qA = R qC</text></g>
+<g fill="none" stroke-width="2" marker-end="url(#dg)" stroke="#25575b"><path d="M80 350H420"/><path d="M80 350L30 285"/><path d="M80 350V190"/><path d="M210 120H350"/><path d="M210 120L160 55"/><path d="M210 120V48"/></g>
+<g fill="none" stroke-width="3"><path d="M80 350L210 120" stroke="#cf7b22" marker-end="url(#do)"/><path d="M80 350L410 300" stroke="#cf7b22" marker-end="url(#do)"/><path d="M210 120L410 300" stroke="#087e8b" marker-end="url(#dt)"/></g>
+<g fill="#173e42"><circle cx="80" cy="350" r="5"/><circle cx="210" cy="120" r="5"/><circle cx="410" cy="300" r="6"/></g>
+<g font-family="Arial,sans-serif" fill="#173e42" font-size="17"><text x="51" y="377">O</text><text x="423" y="355">+X</text><text x="12" y="276">+Y</text><text x="50" y="182">+Z up</text><text x="188" y="111">C</text><text x="419" y="299">P</text><text x="112" y="220">OC</text><text x="243" y="347">OP</text><text x="303" y="207">CP</text><text x="354" y="125">+U</text><text x="134" y="49">+V</text><text x="221" y="65">+W</text><text x="35" y="413">Auxiliary axes parallel to ground axes here.</text></g>
+<g fill="none" stroke-width="2" stroke="#25575b" marker-end="url(#dg)"><path d="M680 240H935"/><path d="M680 240L595 337"/><path d="M680 240V70"/></g>
+<g fill="none" stroke-width="3" stroke="#087e8b" marker-end="url(#dt)"><path d="M680 240L875 178"/><path d="M680 240L688 365"/><path d="M680 240L742 90"/></g>
+<circle cx="680" cy="240" r="5" fill="#173e42"/>
+<g font-family="Arial,sans-serif" fill="#173e42" font-size="17"><text x="655" y="261">C</text><text x="935" y="268">a1 / U</text><text x="533" y="358">a2 / V</text><text x="619" y="65">a3 / W</text><text x="879" y="175" fill="#087e8b">c1</text><text x="699" y="379" fill="#087e8b">c2</text><text x="749" y="89" fill="#087e8b">c3</text><text x="760" y="313">Rij = ai dot cj</text><text x="535" y="413">Columns of R: camera unit axes in auxiliary components.</text></g>
+</svg>
+

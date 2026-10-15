@@ -277,6 +277,78 @@
           "title": "NW 附录B · 正则化过程"
         }
       ]
+    },
+    {
+      "id": "photogrammetry",
+      "title": "摄影测量",
+      "subtitle": "PHOTOGRAMMETRY · FROM IMAGES TO GEOMETRY",
+      "field": "测绘与地球空间科学",
+      "summary": "按英文教材章节学习，融合两书的概念、图示、推导与算例，并逐页对应课堂PPT。",
+      "entry": "/course-photogrammetry.html",
+      "start": "/photogrammetry-en-01.html",
+      "source": "/photogrammetry-sources.html",
+      "scope": "英文教材顺序 · 双教材融合 · 265页PPT",
+      "tags": [
+        "中心投影",
+        "定向与空三",
+        "双语原著阅读"
+      ],
+      "prerequisites": "高中几何、基础向量；矩阵与最小二乘在正文就地解释",
+      "status": "前五讲深入理论，6–8讲保留已有拓展；原书来源可追溯",
+      "chapters": [
+        {
+          "slug": "photogrammetry-en-01",
+          "title": "1 · 入门概念 / Introductory Concepts"
+        },
+        {
+          "slug": "photogrammetry-en-02",
+          "title": "2 · 初等摄影测量 / Elementary Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-03",
+          "title": "3 · 摄影测量传感系统 / Photogrammetric Sensing Systems"
+        },
+        {
+          "slug": "photogrammetry-en-04",
+          "title": "4 · 摄影测量数学概念 / Mathematical Concepts in Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-05",
+          "title": "5 · 后方交会、前方交会与三角测量 / Resection, Intersection, and Triangulation"
+        },
+        {
+          "slug": "photogrammetry-en-06",
+          "title": "6 · 数字摄影测量 / Digital Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-07",
+          "title": "7 · 摄影测量仪器 / Photogrammetric Instruments"
+        },
+        {
+          "slug": "photogrammetry-en-08",
+          "title": "8 · 摄影测量产品 / Photogrammetric Products"
+        },
+        {
+          "slug": "photogrammetry-conventions",
+          "title": "两书符号、目录与来源对照"
+        },
+        {
+          "slug": "photogrammetry-english",
+          "title": "英文原著阅读训练"
+        },
+        {
+          "slug": "photogrammetry-review",
+          "title": "期末复习与勘误"
+        },
+        {
+          "slug": "photogrammetry-coverage",
+          "title": "教材与265页PPT覆盖"
+        },
+        {
+          "slug": "photogrammetry-quality",
+          "title": "校验、自评与范围"
+        }
+      ]
     }
   ]
 }

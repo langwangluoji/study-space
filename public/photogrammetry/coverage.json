@@ -1,0 +1,3548 @@
+{
+  "scope": "英文教材顺序；融合王书前六章28节与两课件265物理页；不是逐字转录",
+  "englishCoreSections": [
+    {
+      "chapter": 1,
+      "section": "1.1",
+      "en": "Definitions",
+      "zh": "定义与几何任务",
+      "printedPage": 1,
+      "pdfPage": 13,
+      "target": "/photogrammetry-en-01.html#e1-1"
+    },
+    {
+      "chapter": 1,
+      "section": "1.2",
+      "en": "Photogrammetric Systems",
+      "zh": "摄影测量系统",
+      "printedPage": 2,
+      "pdfPage": 14,
+      "target": "/photogrammetry-en-01.html#e1-2"
+    },
+    {
+      "chapter": 1,
+      "section": "1.3",
+      "en": "Photogrammetric Applications and Products",
+      "zh": "应用与产品",
+      "printedPage": 6,
+      "pdfPage": 18,
+      "target": "/photogrammetry-en-01.html#e1-3"
+    },
+    {
+      "chapter": 1,
+      "section": "1.4",
+      "en": "Sources of Photogrammetric Information",
+      "zh": "资料与信息来源",
+      "printedPage": 9,
+      "pdfPage": 21,
+      "target": "/photogrammetry-en-01.html#e1-4"
+    },
+    {
+      "chapter": 1,
+      "section": "1.5",
+      "en": "History",
+      "zh": "历史与技术演变",
+      "printedPage": 11,
+      "pdfPage": 23,
+      "target": "/photogrammetry-en-01.html#e1-5"
+    },
+    {
+      "chapter": 2,
+      "section": "2.1",
+      "en": "Perspective Projection",
+      "zh": "中心投影",
+      "printedPage": 13,
+      "pdfPage": 25,
+      "target": "/photogrammetry-en-02.html#e2-1"
+    },
+    {
+      "chapter": 2,
+      "section": "2.2",
+      "en": "Scale and Coverage",
+      "zh": "比例尺与覆盖",
+      "printedPage": 16,
+      "pdfPage": 28,
+      "target": "/photogrammetry-en-02.html#e2-2"
+    },
+    {
+      "chapter": 2,
+      "section": "2.3",
+      "en": "Vanishing Points",
+      "zh": "灭点与特殊点线面",
+      "printedPage": 19,
+      "pdfPage": 31,
+      "target": "/photogrammetry-en-02.html#e2-3"
+    },
+    {
+      "chapter": 2,
+      "section": "2.4",
+      "en": "Image Coordinate System",
+      "zh": "像坐标系统",
+      "printedPage": 20,
+      "pdfPage": 32,
+      "target": "/photogrammetry-en-02.html#e2-4"
+    },
+    {
+      "chapter": 2,
+      "section": "2.5",
+      "en": "Relief Displacement",
+      "zh": "起伏位移与倾斜影响",
+      "printedPage": 22,
+      "pdfPage": 34,
+      "target": "/photogrammetry-en-02.html#e2-5"
+    },
+    {
+      "chapter": 2,
+      "section": "2.6",
+      "en": "Parallax and Stereo",
+      "zh": "视差与立体视觉",
+      "printedPage": 23,
+      "pdfPage": 35,
+      "target": "/photogrammetry-en-02.html#e2-6"
+    },
+    {
+      "chapter": 2,
+      "section": "2.7",
+      "en": "Image Overlap",
+      "zh": "影像重叠与航带",
+      "printedPage": 29,
+      "pdfPage": 41,
+      "target": "/photogrammetry-en-02.html#e2-7"
+    },
+    {
+      "chapter": 2,
+      "section": "2.8",
+      "en": "Epipolar Planes and Lines",
+      "zh": "核面与核线",
+      "printedPage": 31,
+      "pdfPage": 43,
+      "target": "/photogrammetry-en-02.html#e2-8"
+    },
+    {
+      "chapter": 3,
+      "section": "3.1",
+      "en": "The Physics of Remote Sensing—Electromagnetic Energy",
+      "zh": "电磁能与辐射量",
+      "printedPage": 33,
+      "pdfPage": 45,
+      "target": "/photogrammetry-en-03.html#e3-1"
+    },
+    {
+      "chapter": 3,
+      "section": "3.2",
+      "en": "Optics",
+      "zh": "光学系统",
+      "printedPage": 35,
+      "pdfPage": 47,
+      "target": "/photogrammetry-en-03.html#e3-2"
+    },
+    {
+      "chapter": 3,
+      "section": "3.3",
+      "en": "Sensing",
+      "zh": "感光材料与电子探测",
+      "printedPage": 47,
+      "pdfPage": 59,
+      "target": "/photogrammetry-en-03.html#e3-3"
+    },
+    {
+      "chapter": 3,
+      "section": "3.4",
+      "en": "Image Quality",
+      "zh": "影像质量",
+      "printedPage": 54,
+      "pdfPage": 66,
+      "target": "/photogrammetry-en-03.html#e3-4"
+    },
+    {
+      "chapter": 3,
+      "section": "3.5",
+      "en": "Imaging Geometries",
+      "zh": "成像几何",
+      "printedPage": 57,
+      "pdfPage": 69,
+      "target": "/photogrammetry-en-03.html#e3-5"
+    },
+    {
+      "chapter": 3,
+      "section": "3.6",
+      "en": "Image Motion Compensation",
+      "zh": "像移补偿",
+      "printedPage": 62,
+      "pdfPage": 74,
+      "target": "/photogrammetry-en-03.html#e3-6"
+    },
+    {
+      "chapter": 3,
+      "section": "3.7",
+      "en": "Construction of a Frame Mapping Camera",
+      "zh": "框幅航摄相机的构造",
+      "printedPage": 63,
+      "pdfPage": 75,
+      "target": "/photogrammetry-en-03.html#e3-7"
+    },
+    {
+      "chapter": 3,
+      "section": "3.8",
+      "en": "Camera Calibration",
+      "zh": "相机检校",
+      "printedPage": 67,
+      "pdfPage": 79,
+      "target": "/photogrammetry-en-03.html#e3-8"
+    },
+    {
+      "chapter": 3,
+      "section": "3.9",
+      "en": "Active Sensors",
+      "zh": "主动传感器",
+      "printedPage": 71,
+      "pdfPage": 83,
+      "target": "/photogrammetry-en-03.html#e3-9"
+    },
+    {
+      "chapter": 3,
+      "section": "3.10",
+      "en": "Platforms for Photogrammetric Sensing Systems",
+      "zh": "摄影测量平台",
+      "printedPage": 72,
+      "pdfPage": 84,
+      "target": "/photogrammetry-en-03.html#e3-10"
+    },
+    {
+      "chapter": 4,
+      "section": "4.1",
+      "en": "Fundamentals of Perspective Geometry",
+      "zh": "透视几何基础",
+      "printedPage": 80,
+      "pdfPage": 92,
+      "target": "/photogrammetry-en-04.html#e4-1"
+    },
+    {
+      "chapter": 4,
+      "section": "4.2",
+      "en": "Coordinate Reference Frames",
+      "zh": "坐标参考系",
+      "printedPage": 87,
+      "pdfPage": 99,
+      "target": "/photogrammetry-en-04.html#e4-2"
+    },
+    {
+      "chapter": 4,
+      "section": "4.3",
+      "en": "Sensor Model (Interior Orientation)",
+      "zh": "传感器模型与内方位",
+      "printedPage": 88,
+      "pdfPage": 100,
+      "target": "/photogrammetry-en-04.html#e4-3"
+    },
+    {
+      "chapter": 4,
+      "section": "4.4",
+      "en": "Platform Model (Exterior Orientation)",
+      "zh": "平台模型与外方位",
+      "printedPage": 90,
+      "pdfPage": 102,
+      "target": "/photogrammetry-en-04.html#e4-4"
+    },
+    {
+      "chapter": 4,
+      "section": "4.5",
+      "en": "Photogrammetric Conditions",
+      "zh": "摄影测量条件方程",
+      "printedPage": 92,
+      "pdfPage": 104,
+      "target": "/photogrammetry-en-04.html#e4-5"
+    },
+    {
+      "chapter": 4,
+      "section": "4.6",
+      "en": "Satellite Imagery and Orbits",
+      "zh": "卫星影像与轨道",
+      "printedPage": 104,
+      "pdfPage": 116,
+      "target": "/photogrammetry-en-04.html#e4-6"
+    },
+    {
+      "chapter": 5,
+      "section": "5.1",
+      "en": "Introduction",
+      "zh": "观测、已知与未知",
+      "printedPage": 107,
+      "pdfPage": 119,
+      "target": "/photogrammetry-en-05.html#e5-1"
+    },
+    {
+      "chapter": 5,
+      "section": "5.2",
+      "en": "Image Coordinate Refinement",
+      "zh": "像坐标精化",
+      "printedPage": 108,
+      "pdfPage": 120,
+      "target": "/photogrammetry-en-05.html#e5-2"
+    },
+    {
+      "chapter": 5,
+      "section": "5.3",
+      "en": "Resection",
+      "zh": "空间后方交会",
+      "printedPage": 112,
+      "pdfPage": 124,
+      "target": "/photogrammetry-en-05.html#e5-3"
+    },
+    {
+      "chapter": 5,
+      "section": "5.4",
+      "en": "Single-Ray Backprojection",
+      "zh": "单射线反投影",
+      "printedPage": 113,
+      "pdfPage": 125,
+      "target": "/photogrammetry-en-05.html#e5-4"
+    },
+    {
+      "chapter": 5,
+      "section": "5.5",
+      "en": "Intersection",
+      "zh": "空间前方交会",
+      "printedPage": 115,
+      "pdfPage": 127,
+      "target": "/photogrammetry-en-05.html#e5-5"
+    },
+    {
+      "chapter": 5,
+      "section": "5.6",
+      "en": "Relative Orientation",
+      "zh": "相对定向",
+      "printedPage": 115,
+      "pdfPage": 127,
+      "target": "/photogrammetry-en-05.html#e5-6"
+    },
+    {
+      "chapter": 5,
+      "section": "5.7",
+      "en": "Absolute Orientation",
+      "zh": "绝对定向",
+      "printedPage": 118,
+      "pdfPage": 130,
+      "target": "/photogrammetry-en-05.html#e5-7"
+    },
+    {
+      "chapter": 5,
+      "section": "5.8",
+      "en": "Block Triangulation",
+      "zh": "区域网三角测量",
+      "printedPage": 119,
+      "pdfPage": 131,
+      "target": "/photogrammetry-en-05.html#e5-8"
+    },
+    {
+      "chapter": 5,
+      "section": "5.9",
+      "en": "Block Adjustment with Added Parameters (Self-Calibration)",
+      "zh": "附加参数与自检校",
+      "printedPage": 124,
+      "pdfPage": 136,
+      "target": "/photogrammetry-en-05.html#e5-9"
+    },
+    {
+      "chapter": 5,
+      "section": "5.10",
+      "en": "Utilization of Navigational Data",
+      "zh": "导航观测的利用",
+      "printedPage": 125,
+      "pdfPage": 137,
+      "target": "/photogrammetry-en-05.html#e5-10"
+    },
+    {
+      "chapter": 5,
+      "section": "5.11",
+      "en": "Numerical Aspects of Bundle Adjustment",
+      "zh": "光束平差的数值问题",
+      "printedPage": 130,
+      "pdfPage": 142,
+      "target": "/photogrammetry-en-05.html#e5-11"
+    },
+    {
+      "chapter": 5,
+      "section": "5.12",
+      "en": "Evaluation of the Block Adjustment",
+      "zh": "区域网平差的评价",
+      "printedPage": 142,
+      "pdfPage": 154,
+      "target": "/photogrammetry-en-05.html#e5-12"
+    }
+  ],
+  "sections": [
+    {
+      "section": "1-1",
+      "title": "定义、任务和发展",
+      "printed": [
+        1,
+        2
+      ],
+      "pdf": [
+        10,
+        11
+      ],
+      "target": "/photogrammetry-en-01.html#w1-section-1-1",
+      "coverage": "定义、非接触优势与限制、三种分类轴、任务、发展概览；表1-1转到1-2详细解释。",
+      "boundary": "不逐句复制旧技术状态与传感器名单，现代边界明确说明。",
+      "sourceTarget": "/photogrammetry-wang-01.html#section-1-1",
+      "englishSection": "1.1"
+    },
+    {
+      "section": "1-2",
+      "title": "发展阶段与数字摄影测量",
+      "printed": [
+        3,
+        6
+      ],
+      "pdf": [
+        12,
+        15
+      ],
+      "target": "/photogrammetry-en-01.html#e1-5",
+      "coverage": "模拟/解析/数字、数学投影、影像数字化、三类产品、4D、数字研究方向、航空卫星激光SAR/POS与处理发展。",
+      "boundary": "历史仪器型号和软件省略部分细目；概念保留，现状不冒充最新。原创相似三角形例子标条件。",
+      "sourceTarget": "/photogrammetry-wang-01.html#section-1-2",
+      "englishSection": "1.5"
+    },
+    {
+      "section": "1-3",
+      "title": "影像信息学",
+      "printed": [
+        6,
+        7
+      ],
+      "pdf": [
+        15,
+        16
+      ],
+      "target": "/photogrammetry-en-01.html#e1-2",
+      "coverage": "摄影测量/遥感/GIS、获取处理应用、图1-1四类节点读法、数据与可视化区别、应用反馈。",
+      "boundary": "原图以文字读图和原创流程示意解释，不照抄全部节点。",
+      "sourceTarget": "/photogrammetry-wang-01.html#section-1-3",
+      "englishSection": "1.2"
+    },
+    {
+      "section": "2-1",
+      "title": "航空影像获取",
+      "printed": [
+        8,
+        21
+      ],
+      "pdf": [
+        17,
+        30
+      ],
+      "target": "/photogrammetry-en-03.html#e3-5",
+      "coverage": "航空摄影机/框幅胶片/框标/复合镜头光学量/像场像幅/焦距分类/CCD面线阵/DMC/ADS40/UCD-UCX/0-3级/UAV；原图2-1/2-4/2-8/2-9/2-14/2-17/2-18/表2-2有读法或解释。",
+      "boundary": "设备历史电气结构和全部参数不逐项照抄；原理、几何与数据链完整解释。相机具体旧规格不作为当代通用结论。表2-2的24mm相机0.20m GSD对应150m有疑似排印错误，按H=fGSD/q重算750m并说明。航摄质量细项属于第三章，不冒称第二章。",
+      "sourceTarget": "/photogrammetry-wang-02.html#section-2-1",
+      "englishSection": "3.5"
+    },
+    {
+      "section": "2-2",
+      "title": "遥感影像",
+      "printed": [
+        22,
+        29
+      ],
+      "pdf": [
+        31,
+        38
+      ],
+      "target": "/photogrammetry-en-03.html#e3-10",
+      "coverage": "遥感定义/主动被动等分类/系统能量与数据路径/发展特点/四种分辨率与定位精度/Landsat/SPOT/IKONOS/QuickBird/GeoEye/WorldView/CBERS全部例子，表2-3/2-4读参数条件。",
+      "boundary": "历史发射年月、公司沿革、全部规格与计划不逐条背诵，保留型号技术角色与核心差异；旧时态不作现时断言。",
+      "sourceTarget": "/photogrammetry-wang-02.html#section-2-2",
+      "englishSection": "3.10"
+    },
+    {
+      "section": "3-1",
+      "title": "航空摄影",
+      "printed": [
+        30,
+        33
+      ],
+      "pdf": [
+        39,
+        42
+      ],
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "coverage": [
+        "摄影比例尺与相对/绝对航高",
+        "空中摄影过程、摄站和摄影基线",
+        "色调、重叠、倾角、航线弯曲、像片旋角",
+        "式3-1覆盖与基线；曝光间隔算例"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-1",
+      "englishSection": "2.2"
+    },
+    {
+      "section": "3-2",
+      "title": "中心投影",
+      "printed": [
+        34,
+        35
+      ],
+      "pdf": [
+        43,
+        44
+      ],
+      "target": "/photogrammetry-en-02.html#w3-s3-2",
+      "coverage": [
+        "中心/正射投影",
+        "阴位与阳位等效表示、坐标约定",
+        "点、直线、线段、平行线组",
+        "迹点、二重点与灭点及退化情况"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-2",
+      "englishSection": "2.1"
+    },
+    {
+      "section": "3-3",
+      "title": "特殊点线面",
+      "printed": [
+        36,
+        37
+      ],
+      "pdf": [
+        45,
+        46
+      ],
+      "target": "/photogrammetry-en-02.html#w3-s3-3",
+      "coverage": [
+        "像主点o、像底点n、等角点c、主合点i",
+        "地面主点O、地底点N、等角点C",
+        "主垂面W、主纵线、基本方向线",
+        "合面合线、等比线、主横线、透视轴、循点",
+        "式3-2长度、零倾角极限与主合点片外示例"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-3",
+      "englishSection": "2.3"
+    },
+    {
+      "section": "3-4",
+      "title": "常用坐标系",
+      "printed": [
+        37,
+        39
+      ],
+      "pdf": [
+        46,
+        48
+      ],
+      "target": "/photogrammetry-en-04.html#w3-s3-4",
+      "coverage": [
+        "像平面与框标坐标、主点偏移",
+        "像空间与z=-f、三类像空间辅助系统",
+        "地面测量与地面摄影测量坐标、手性/基准/单位",
+        "像素至物方的坐标链"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-4",
+      "englishSection": "4.2"
+    },
+    {
+      "section": "3-5",
+      "title": "内外方位",
+      "printed": [
+        40,
+        42
+      ],
+      "pdf": [
+        49,
+        51
+      ],
+      "target": "/photogrammetry-en-04.html#w3-s3-5",
+      "coverage": [
+        "f,x0,y0与检校/内定向区别",
+        "外方位三线元素与三角元素",
+        "v/u/w为主轴的三套角参数、转序与正负",
+        "相机原地转动、平移、调焦区别"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-5",
+      "englishSection": "4.3"
+    },
+    {
+      "section": "3-6",
+      "title": "空间变换与共线方程",
+      "printed": [
+        43,
+        48
+      ],
+      "pdf": [
+        52,
+        57
+      ],
+      "target": "/photogrammetry-en-04.html#w3-s3-6",
+      "coverage": [
+        "式3-4 camera到辅助R；逆为R^T",
+        "方向余弦、三旋转乘积与零角检查",
+        "地面点减摄影中心的坐标差",
+        "比例关系、消去比例因子、式3-15共线逐步推导",
+        "式3-16已知高程反投影与单位/有效性",
+        "三种转角系统同一物理矩阵"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-6",
+      "englishSection": "4.4"
+    },
+    {
+      "section": "3-7",
+      "title": "像点位移",
+      "printed": [
+        49,
+        53
+      ],
+      "pdf": [
+        58,
+        62
+      ],
+      "target": "/photogrammetry-en-02.html#w3-s3-7",
+      "coverage": [
+        "倾斜位移比较模型、等角点和等比线、式3-17近似",
+        "水平像片高差位移式3-18/3-19、top/base半径辨析",
+        "镜头畸变、大气折光、地球曲率、底片变形",
+        "航摄像片与地形图：几何、语义与表达区别"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-03.html#s3-7",
+      "englishSection": "2.5"
+    },
+    {
+      "section": "4-1",
+      "title": "人眼立体视觉与立体量测",
+      "printed": [
+        54,
+        59
+      ],
+      "pdf": [
+        63,
+        68
+      ],
+      "target": "/photogrammetry-en-02.html#w4-s4-1",
+      "coverage": [
+        "天然视觉、交会角、眼基线、生理视差",
+        "式4-1/4-2/4-3小角深度分辨规律与50m算例",
+        "人工视觉四条件、正/反立体、视觉夸张",
+        "立体镜、双目光路、互补色、同步闪闭、偏振五种方法",
+        "双测标与浮游测标切准、误差与精度区别"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-04.html#s4-1",
+      "englishSection": "2.6"
+    },
+    {
+      "section": "4-2",
+      "title": "立体像对与立体测图",
+      "printed": [
+        60,
+        62
+      ],
+      "pdf": [
+        69,
+        71
+      ],
+      "target": "/photogrammetry-en-02.html#w4-s4-2",
+      "coverage": [
+        "基线、同名像点/射线、核面/线/点",
+        "左右主核面与基核面",
+        "三线共面向量条件与核线搜索限制",
+        "几何反转、b/B模型尺度、内/相对/绝对定向恢复顺序",
+        "上下视差Q与深度左右差区别",
+        "本站补充：声明轴和像面后的理想视差高程严密关系"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-04.html#s4-2",
+      "englishSection": "2.6"
+    },
+    {
+      "section": "4-3",
+      "title": "相对与绝对定向元素",
+      "printed": [
+        63,
+        65
+      ],
+      "pdf": [
+        72,
+        74
+      ],
+      "target": "/photogrammetry-en-05.html#w4-s4-3",
+      "coverage": [
+        "相对定向5自由度与整体7自由度",
+        "连续像对坐标选择和bv,bw,phi2,omega2,kappa2",
+        "单独像对基线U轴和phi1,kappa1,phi2,omega2,kappa2",
+        "式4-4三维相似变换与7参数",
+        "控制维度/布设/检核和显式数值算例"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-04.html#s4-3",
+      "englishSection": "5.6"
+    },
+    {
+      "section": "4-4",
+      "title": "立体测图概述",
+      "printed": [
+        65,
+        70
+      ],
+      "pdf": [
+        74,
+        79
+      ],
+      "target": "/photogrammetry-en-07.html#w4-s4-4",
+      "coverage": [
+        "模拟法：装置、内定向、五点/六点相对定向、绝对定向与等高线",
+        "解析法：硬件、软件、编码/伺服、共线实时正投影",
+        "影像数字化法：像元、扫描内定向、匹配、数字产品",
+        "A10/B8S/C100/BC2历史背景；现代补充与原书区分"
+      ],
+      "boundary": "概念与推导展开；原图和历史参数按来源回读",
+      "sourceTarget": "/photogrammetry-wang-04.html#s4-4",
+      "englishSection": "7.1"
+    },
+    {
+      "section": "5-1",
+      "title": "解析概述",
+      "printed": [
+        71,
+        72
+      ],
+      "pdf": [
+        80,
+        81
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s51",
+      "coverage": [
+        "解析解算与像坐标量测",
+        "上下视差与左右视差",
+        "观测/已知/未知区分",
+        "旋转方向和像面约定"
+      ],
+      "boundary": "仪器按历史背景概述，不复刻操作手册",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s51",
+      "englishSection": "5.1"
+    },
+    {
+      "section": "5-2",
+      "title": "空间后方交会",
+      "printed": [
+        72,
+        78
+      ],
+      "pdf": [
+        81,
+        87
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s52",
+      "coverage": [
+        "共线观测",
+        "六外方位未知",
+        "初值",
+        "泰勒展开",
+        "Jacobian商式求导",
+        "教材Rphi Romega Rkappa乘积及三个单轴导数完整构造六列Jacobian，预测/两种残差符号区别",
+        "权和正规方程",
+        "参数更新与停止",
+        "精度及残差",
+        "六参数完整合成数值例"
+      ],
+      "boundary": "书中特定转角Jacobian按完整乘积求导与商法则构造；长展开表指回PDF84–86。数值合成例另用明确标示的旋转向量。独立教材欧拉角验证见research/verify-lecture-math.py",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s52",
+      "englishSection": "5.3"
+    },
+    {
+      "section": "5-3",
+      "title": "前方交会",
+      "printed": [
+        78,
+        81
+      ],
+      "pdf": [
+        87,
+        90
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s53",
+      "coverage": [
+        "公共辅助坐标",
+        "投影系数N1/N2",
+        "XZ求解及Y平均",
+        "完整手算与重投影",
+        "偏斜射线",
+        "多片重投影估计与交会几何"
+      ],
+      "boundary": "书中XZ解法明确为相应条件下的课程方法，不声称任意协方差下最优",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s53",
+      "englishSection": "5.5"
+    },
+    {
+      "section": "5-4",
+      "title": "解析相对定向",
+      "printed": [
+        81,
+        89
+      ],
+      "pdf": [
+        90,
+        98
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s54-parameter-after",
+      "coverage": [
+        "共面标量三重积",
+        "五个相对自由度",
+        "连续像对参数",
+        "单独像对参数",
+        "局部线性化及上下视差",
+        "迭代",
+        "模型坐标"
+      ],
+      "boundary": "两种特定系数表指回原页，未逐项抄录；没有声称五对点保证唯一稳定",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s54",
+      "englishSection": "5.6"
+    },
+    {
+      "section": "5-5",
+      "title": "解析绝对定向",
+      "printed": [
+        89,
+        93
+      ],
+      "pdf": [
+        98,
+        102
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s55",
+      "coverage": [
+        "七参数相似变换",
+        "平高/高程控制区别",
+        "线性化",
+        "重心化推导",
+        "尺度平移算例",
+        "完整路线与部分分量观测"
+      ],
+      "boundary": "原书传统最少控制条件注明，不将其简化为任意两个平面点加高程点",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s55",
+      "englishSection": "5.7"
+    },
+    {
+      "section": "5-6",
+      "title": "双像光束法严密解",
+      "printed": [
+        93,
+        96
+      ],
+      "pdf": [
+        102,
+        105
+      ],
+      "target": "/photogrammetry-en-05.html#w5-s56",
+      "coverage": [
+        "相机与点两类未知",
+        "稀疏误差方程",
+        "控制点处理",
+        "分块正规方程",
+        "改化与回代",
+        "初值及迭代",
+        "三种双像解法比较"
+      ],
+      "boundary": "现代传感模型限制标为补充；没有把严密称为绝对无误差",
+      "sourceTarget": "/photogrammetry-wang-ch5.html#s56",
+      "englishSection": "5.8"
+    },
+    {
+      "section": "6-1",
+      "title": "空中三角测量概述",
+      "printed": [
+        97,
+        100
+      ],
+      "pdf": [
+        106,
+        109
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s61",
+      "coverage": [
+        "解析空三任务",
+        "三类方法单元",
+        "像点量测",
+        "胶片变形",
+        "镜头畸变",
+        "大气折光",
+        "地球曲率",
+        "改正顺序与重复改正风险"
+      ],
+      "boundary": "经验系数按原页和单位核用，讲义未整表复制；现代地理参考中重复曲率项提示标为补充",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s61",
+      "englishSection": "5.8"
+    },
+    {
+      "section": "6-2",
+      "title": "航带网法",
+      "printed": [
+        101,
+        105
+      ],
+      "pdf": [
+        110,
+        114
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s62",
+      "coverage": [
+        "单模型相对定向",
+        "三度重叠公共点",
+        "比例统一",
+        "累积平移与放大单位",
+        "航带绝对定向",
+        "非线性多项式改正",
+        "区域网公共点约束"
+      ],
+      "boundary": "完整系数形式指回PDF112–113，重点讲模型含义和可检验条件",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s62",
+      "englishSection": "5.8"
+    },
+    {
+      "section": "6-3",
+      "title": "独立模型法区域网",
+      "printed": [
+        106,
+        108
+      ],
+      "pdf": [
+        115,
+        117
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s63",
+      "coverage": [
+        "模型刚性安放",
+        "每模型七参数",
+        "公共点地面坐标",
+        "控制与连接",
+        "误差方程",
+        "两类未知分块",
+        "模型坐标权与相关性"
+      ],
+      "boundary": "传播完整模型协方差明确为统计展开",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s63",
+      "englishSection": "5.8"
+    },
+    {
+      "section": "6-4",
+      "title": "光束法区域网",
+      "printed": [
+        109,
+        113
+      ],
+      "pdf": [
+        118,
+        122
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s64",
+      "coverage": [
+        "共线误差方程",
+        "正规方程",
+        "Schur逐步推导",
+        "完整标量块数值例",
+        "初值",
+        "交替两类未知与同轮消元区别",
+        "三法比较",
+        "理论/实际精度",
+        "观测计数",
+        "七维秩亏证明",
+        "自检校及联合观测"
+      ],
+      "boundary": "Schur名称、稀疏解释、自由度证明和现代检校设计为教学展开；原书附加参数经验系数不逐项复刻",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s64",
+      "englishSection": "5.8"
+    },
+    {
+      "section": "6-5",
+      "title": "GPS辅助空三",
+      "printed": [
+        114,
+        121
+      ],
+      "pdf": [
+        123,
+        130
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s65",
+      "coverage": [
+        "卫星定位与差分",
+        "曝光事件同步",
+        "天线与投影中心",
+        "杆臂变换",
+        "漂移a+b(t-t0)",
+        "GPS观测联合平差",
+        "少量控制/构架航线",
+        "试验证据适用范围"
+      ],
+      "boundary": "不把旧试验精度当现代设备通用指标；0.01秒时间误差例为原创",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s65",
+      "englishSection": "5.10"
+    },
+    {
+      "section": "6-6",
+      "title": "机载POS对地定位",
+      "printed": [
+        122,
+        127
+      ],
+      "pdf": [
+        131,
+        136
+      ],
+      "target": "/photogrammetry-en-05.html#w6-s66",
+      "coverage": [
+        "GPS/IMU/POS组成",
+        "安装角",
+        "偏心杆臂",
+        "矩阵方向链",
+        "直接传感器定向",
+        "集成传感器定向",
+        "误差与独立验证",
+        "试验表的阅读条件"
+      ],
+      "boundary": "矩阵下标链为按方向组织的教学表达，设备角序仍需对应原书与设备定义",
+      "sourceTarget": "/photogrammetry-wang-ch6.html#s66",
+      "englishSection": "5.10"
+    }
+  ],
+  "ppts": [
+    {
+      "source": "ppt-intro",
+      "page": 1,
+      "topic": "课程名称Photogrammetry与专业解释",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 2,
+      "topic": "课程内容教材组织资源四项说明",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 3,
+      "topic": "摄影技术模拟解析数字GIS外业及后续选修定位",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 4,
+      "topic": "Mikhail Bethel McGlone英文教材与潘励段延松教材",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 5,
+      "topic": "按英文教材编排且中文编排不同",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 6,
+      "topic": "ISPRS ASPRS与中国专业委员会",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-organizations",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#organizations",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 7,
+      "topic": "王之卓李德仁张祖勋王佩军陈映鹰孙家柄Hartley参考书",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-references",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#references",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 8,
+      "topic": "测绘遥感视觉期刊arXiv及历史网站",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-references",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#references",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 9,
+      "topic": "ASTER QuickBird IKONOS OrbView Landsat SRTM MODIS数据服务",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-data-sources",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#data-sources",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 10,
+      "topic": "GPS RS GIS与多源AI大模型集成课程侧重",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 11,
+      "topic": "具体课程内容过渡",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 12,
+      "topic": "Introductory Concepts章标题",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 13,
+      "topic": "Definitions Systems Applications Sources History目录和授课顺序",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-course-scope",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#course-scope",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 14,
+      "topic": "传统定义metric几何与attribute属性信息",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 15,
+      "topic": "现代各类影像硬拷贝数字资料与遥感",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 16,
+      "topic": "1988 ISPRS非接触可靠信息定义及记录量测分析表达",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 17,
+      "topic": "传统现代中文定义与资源环境应用",
+      "kind": "重复",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 18,
+      "topic": "photogrammetry1867用词航图GIS源资料的历史说法",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 19,
+      "topic": "严格恢复影像物体几何及模拟解析方式",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 20,
+      "topic": "广义点Generalized Point张祖勋张剑清2005文献",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 21,
+      "topic": "同名对应与几何关系两个基本内容",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 22,
+      "topic": "双影像x1y1x2y2到物点XYZ示意",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 23,
+      "topic": "对应性与像空间到物空间解析关系",
+      "kind": "重复",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 24,
+      "topic": "非接触动态获取细节丰富特点",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-definitions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#definitions",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 25,
+      "topic": "2001同济校园航片与南楼红箭头",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-stereopair-examples-before",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#stereopair-examples",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 26,
+      "topic": "矿区立体像对共同道路台阶和水面",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-stereopair-examples-before",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#stereopair-examples",
+      "englishSection": "1.1"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 27,
+      "topic": "摄影过程几何反转基线缩小与模型交会",
+      "kind": "图例",
+      "target": "/photogrammetry-en-02.html#intro-inverse-case",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#stereopair-examples",
+      "englishSection": "2.6"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 28,
+      "topic": "遥感多视向推扫立体示意",
+      "kind": "图例",
+      "target": "/photogrammetry-en-03.html#intro-line-stereo-case",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#stereopair-examples",
+      "englishSection": "3.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 29,
+      "topic": "图像处理模式识别AI IU CV交叉",
+      "kind": "正文",
+      "target": "/photogrammetry-en-06.html#intro-cv-links",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#cv-links",
+      "englishSection": "6.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 30,
+      "topic": "CV自动工具稳健效率与arXiv研究动态",
+      "kind": "正文",
+      "target": "/photogrammetry-en-06.html#intro-cv-links",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#cv-links",
+      "englishSection": "6.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 31,
+      "topic": "达芬奇图像几何绘画前史",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 32,
+      "topic": "投影几何作为被动成像数学基础",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 33,
+      "topic": "Niépce与Daguerre可用照片",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 34,
+      "topic": "1826早期照片阁楼屋翼树天空谷仓读图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 35,
+      "topic": "1858 Nadar Tournachon气球摄影",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 36,
+      "topic": "1862 Intrepid气球与便携充氢系统",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 37,
+      "topic": "Meydenbauer Kersten 1867与1893首次用词冲突",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-prehistory",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-prehistory",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 38,
+      "topic": "Laussedat相机程序与摄影测量之父的课件记述",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-archives",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-archives",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 39,
+      "topic": "Meydenbauer建筑档案及1909 Wright航空摄影",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-archives",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-archives",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 40,
+      "topic": "1903 Wright动力飞行12秒120英尺",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 41,
+      "topic": "一战摄影操作与战壕垂直影像",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 42,
+      "topic": "1903鸽子轻型相机平台可控性例图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 43,
+      "topic": "1906旧金山震后Lawrence17风筝2000ft摄影",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 44,
+      "topic": "1910 ISP Dolezal及早期模拟仪器广角镜头",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 45,
+      "topic": "1911 stereoautograph及1923 Wild A1",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 46,
+      "topic": "1923 Stereoplanigraph 1933 Multiplex 1934美国学会",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 47,
+      "topic": "1931杭州水利Hansa Luftbild M18D飞机航片",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-archives",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-archives",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 48,
+      "topic": "二战Peenemünde V2设施航片",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 49,
+      "topic": "Kodak K24二战相机与RMK TOP15照片",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-platforms",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-platforms",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 50,
+      "topic": "上海1948至2016六时相航摄比较",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-archives",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-archives",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 51,
+      "topic": "高等级模拟仪器三角测量与误差理论并进",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 52,
+      "topic": "Wild A7 Balplex PG2和Zeiss Wild Kern",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 53,
+      "topic": "Adams径向线 USGS lazy daisy Schmid Brown多站解析",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 54,
+      "topic": "Helava1961解析测图仪概念",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 55,
+      "topic": "光电子计算机推动数字工作站",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 56,
+      "topic": "A10 C130 VirtuoZo三阶段仪器照片",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 57,
+      "topic": "Analog Analytical Digital三阶段总结",
+      "kind": "重复",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 58,
+      "topic": "Pixel Factory与INPHO线阵框幅处理",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-software-history",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#software-history",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 59,
+      "topic": "DroneDeploy Pix4D ReCap MapsMadeEasy PhotoScan Metashape ContextCapture",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-software-history",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#software-history",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 60,
+      "topic": "乳剂记录到数字记录实时分析CV",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 61,
+      "topic": "新平台影像应用和1980 ISP更名ISPRS",
+      "kind": "历史",
+      "target": "/photogrammetry-en-01.html#intro-history-instruments",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#history-instruments",
+      "englishSection": "1.5"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 62,
+      "topic": "多视角多模态多时相多尺度获取",
+      "kind": "正文",
+      "target": "/photogrammetry-en-06.html#intro-cv-links",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#cv-links",
+      "englishSection": "6.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 63,
+      "topic": "多源匹配联合平差变化点云融合导航工业检测",
+      "kind": "正文",
+      "target": "/photogrammetry-en-06.html#intro-cv-links",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#cv-links",
+      "englishSection": "6.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 64,
+      "topic": "深度学习大模型检索分割识别矢量提取立体匹配",
+      "kind": "正文",
+      "target": "/photogrammetry-en-06.html#intro-cv-links",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#cv-links",
+      "englishSection": "6.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 65,
+      "topic": "系统两总功能获取准备和处理产品",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 66,
+      "topic": "项目规格计划预处理和地面支持数据",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 67,
+      "topic": "航摄飞机设计航高方向与获取",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 68,
+      "topic": "检校量测相机与框幅单瞬间曝光",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 69,
+      "topic": "RMK TOP15与RC Wild胶片航摄仪图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 70,
+      "topic": "航片边缘fiducial mark及数字隐含坐标",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 71,
+      "topic": "光学机械框标与固定主距",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 72,
+      "topic": "焦距像场角分类RMK航甲17RC AFA41",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 73,
+      "topic": "光学量测摄影机结构",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 74,
+      "topic": "单面阵多面阵DMC UltraCamD SWDC4倾斜ADS线阵",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 75,
+      "topic": "SWDC4控制部分设备照片",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 76,
+      "topic": "SWDC4底部多镜头照片",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 77,
+      "topic": "WILD P32近景量测相机",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 78,
+      "topic": "非量测相机nonmetric示例",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 79,
+      "topic": "星载linear array pushbroom线阵推扫",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-camera-examples",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#camera-examples",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 80,
+      "topic": "按规定产品选择处理系统",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 81,
+      "topic": "数据处理与成果导出两子功能",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 82,
+      "topic": "真实世界到存储分析产品决策行动信息循环图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 83,
+      "topic": "框幅航空摄影与摄影测量处理目录",
+      "kind": "导航",
+      "target": "/photogrammetry-en-01.html#intro-system-functions",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#system-functions",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 84,
+      "topic": "perspective center optical axis及连续曝光stereo pair",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-flight-rays",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#flight-rays",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 85,
+      "topic": "GPS惯性导航激光CCD飞机多观测示意",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-flight-rays",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#flight-rays",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 86,
+      "topic": "光束锥体往返航线与地面覆盖图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-flight-rays",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#flight-rays",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 87,
+      "topic": "sidelap旁向重叠图示25百分比",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-overlap",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#overlap",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 88,
+      "topic": "forward overlap航向与三度重叠图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-overlap",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#overlap",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 89,
+      "topic": "重叠对立体中央选片镶嵌及空三连接用途",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-overlap",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#overlap",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 90,
+      "topic": "侧风机头与航迹不同导致crab和有效宽度降低",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-crab",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#crab",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 91,
+      "topic": "旋偏角主点连线与框标连线夹角传统6度",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-crab",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#crab",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 92,
+      "topic": "航线弯曲delta除L公式和传统3百分比文字倒置辨析",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-flight-quality",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#flight-quality",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 93,
+      "topic": "比例尺基线重叠弯曲旋片角航高差与UAV贴近摄影",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-flight-quality",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#flight-quality",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 94,
+      "topic": "单像与双像多像处理系统",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-processing",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#processing",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 95,
+      "topic": "立体测图仪与数字工作站",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-processing",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#processing",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 96,
+      "topic": "模拟单像纠正仪结构例图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-processing",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#processing",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 97,
+      "topic": "所有系统实现物方像方投影关系",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-processing",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#processing",
+      "englishSection": "1.2"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 98,
+      "topic": "公路设计施工维护变形淤积车辆运动",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-applications",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#applications",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 99,
+      "topic": "煤堆木浆矿产作物库存与坡度流域雪深水文",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-applications",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#applications",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 100,
+      "topic": "考古遗迹与地质解译",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-applications",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#applications",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 101,
+      "topic": "意大利波河三角洲SPINA遗迹纹理例图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-applications",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#applications",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 102,
+      "topic": "城市土地利用及云室粒子轨迹量测",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-applications",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#applications",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 103,
+      "topic": "全色彩色镶嵌纠正正射正射镶嵌影像产品",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-image-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#image-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 104,
+      "topic": "水库纠正影像左上坐标39508000 3535000与5m像元",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-image-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#image-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 105,
+      "topic": "同济大学本部正射影像图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-image-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#image-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 106,
+      "topic": "多块影像到镶嵌成果接缝示意",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-image-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#image-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 107,
+      "topic": "加密控制目标定位DEM点产品",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-vector-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#vector-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 108,
+      "topic": "平面等高线地形专题剖面三维模型矢量产品",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-vector-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#vector-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 109,
+      "topic": "地形图等高线与河谷例图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-vector-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#vector-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 110,
+      "topic": "DLG道路建筑轮廓例图",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-vector-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#vector-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 111,
+      "topic": "正射影像叠加DLG等高线组合产品",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-vector-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#vector-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 112,
+      "topic": "带纹理建筑三维模型",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-surface-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#surface-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 113,
+      "topic": "小摆件多视影像摄影站与重建界面",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-surface-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#surface-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 114,
+      "topic": "DEM地形明暗色带显示",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-surface-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#surface-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 115,
+      "topic": "无标题规则地表点网格三维显示",
+      "kind": "图例",
+      "target": "/photogrammetry-en-01.html#intro-surface-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#surface-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 116,
+      "topic": "4D的DLG DRG DTM DEM DSM DOM TrueOrtho辨析",
+      "kind": "正文",
+      "target": "/photogrammetry-en-01.html#intro-surface-products",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#surface-products",
+      "englishSection": "1.3"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 117,
+      "topic": "美国USGS NGS USFS BLM Army Corps NIMA NASA信息源",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-data-sources",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#data-sources",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 118,
+      "topic": "加拿大Geomatics Canada与CCRS信息机构",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-data-sources",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#data-sources",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-intro",
+      "page": 119,
+      "topic": "中国原测绘机构四维东方道迩世景信息源历史名单",
+      "kind": "参考",
+      "target": "/photogrammetry-en-01.html#intro-data-sources",
+      "sourceTarget": "/photogrammetry-ppt-intro.html#data-sources",
+      "englishSection": "1.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 1,
+      "topic": "标题、学习目标与章节提纲",
+      "kind": "outline",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 2,
+      "topic": "标题、学习目标与章节提纲",
+      "kind": "outline",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 3,
+      "topic": "标题、学习目标与章节提纲",
+      "kind": "outline",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 4,
+      "topic": "标题、学习目标与章节提纲",
+      "kind": "outline",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 5,
+      "topic": "电磁波与能量",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 6,
+      "topic": "辐射能、通量、照度、出射度、强度与辐亮度",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 7,
+      "topic": "辐射能、通量、照度、出射度、强度与辐亮度",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 8,
+      "topic": "辐射能、通量、照度、出射度、强度与辐亮度",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 9,
+      "topic": "朗伯表面与余弦定律",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 10,
+      "topic": "电磁谱、材料响应与大气窗口",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 11,
+      "topic": "电磁谱、材料响应与大气窗口",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 12,
+      "topic": "电磁谱、材料响应与大气窗口",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 13,
+      "topic": "采集探测处理链与三种光学模型",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 14,
+      "topic": "采集探测处理链与三种光学模型",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-radiometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#radiometry",
+      "englishSection": "3.1"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 15,
+      "topic": "光学提纲与平行光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 16,
+      "topic": "光学提纲与平行光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 17,
+      "topic": "斯涅尔折射定律",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 18,
+      "topic": "薄透镜、厚透镜、主平面与节点",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 19,
+      "topic": "薄透镜、厚透镜、主平面与节点",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 20,
+      "topic": "薄透镜、厚透镜、主平面与节点",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 21,
+      "topic": "薄透镜、厚透镜、主平面与节点",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 22,
+      "topic": "薄透镜、厚透镜、主平面与节点",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-thin-lens",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#thin-lens",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 23,
+      "topic": "光阑、入瞳、光圈数与挡位",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 24,
+      "topic": "光阑、入瞳、光圈数与挡位",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 25,
+      "topic": "光阑、入瞳、光圈数与挡位",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 26,
+      "topic": "视场、像幅、多相机阵列",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 27,
+      "topic": "视场、像幅、多相机阵列",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 28,
+      "topic": "视场、像幅、多相机阵列",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-aperture-fov",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aperture-fov",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 29,
+      "topic": "余弦四次方、边缘照度与防渐晕滤镜",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-cos-fourth",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#cos-fourth",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 30,
+      "topic": "余弦四次方、边缘照度与防渐晕滤镜",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-cos-fourth",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#cos-fourth",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 31,
+      "topic": "余弦四次方、边缘照度与防渐晕滤镜",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-cos-fourth",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#cos-fourth",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 32,
+      "topic": "余弦四次方、边缘照度与防渐晕滤镜",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-cos-fourth",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#cos-fourth",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 33,
+      "topic": "六类像差与镜头性能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 34,
+      "topic": "六类像差与镜头性能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 35,
+      "topic": "六类像差与镜头性能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 36,
+      "topic": "六类像差与镜头性能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 37,
+      "topic": "径向畸变、查表与多项式",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 38,
+      "topic": "径向畸变、查表与多项式",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 39,
+      "topic": "径向畸变、查表与多项式",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 40,
+      "topic": "畸变矢量场",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 41,
+      "topic": "偏心畸变及径切向分解",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 42,
+      "topic": "偏心畸变及径切向分解",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 43,
+      "topic": "偏心畸变及径切向分解",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-aberrations",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#aberrations",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 44,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 45,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 46,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 47,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 48,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 49,
+      "topic": "景深、焦深、弥散圆、近远界与超焦距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#optics-depth-of-field",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#depth-of-field",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 50,
+      "topic": "镜头设计、线对分辨率与性能取舍",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 51,
+      "topic": "折射与反射光学及二次曲面",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 52,
+      "topic": "折射与反射光学及二次曲面",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 53,
+      "topic": "折射与反射光学及二次曲面",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 54,
+      "topic": "棱镜光栅滤片与分光系统",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 55,
+      "topic": "棱镜光栅滤片与分光系统",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#optics-reflectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-optics.html#reflectors",
+      "englishSection": "3.2"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 56,
+      "topic": "感光材料提纲",
+      "kind": "outline",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 57,
+      "topic": "胶片结构、卤化银潜影与颗粒",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 58,
+      "topic": "胶片结构、卤化银潜影与颗粒",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 59,
+      "topic": "胶片结构、卤化银潜影与颗粒",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 60,
+      "topic": "胶片速度历史标度ASA/DIN/AFS",
+      "kind": "history",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 61,
+      "topic": "正色全色近红外胶片及光谱响应图",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 62,
+      "topic": "正色全色近红外胶片及光谱响应图",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 63,
+      "topic": "正色全色近红外胶片及光谱响应图",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-film",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#film",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 64,
+      "topic": "RGB加色、CMY减色与分层感光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 65,
+      "topic": "RGB加色、CMY减色与分层感光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 66,
+      "topic": "RGB加色、CMY减色与分层感光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 67,
+      "topic": "RGB加色、CMY减色与分层感光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 68,
+      "topic": "RGB加色、CMY减色与分层感光",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 69,
+      "topic": "近红外假彩色映射",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 70,
+      "topic": "近红外假彩色映射",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 71,
+      "topic": "天然草坪与人工草坪的假彩色对比",
+      "kind": "example",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 72,
+      "topic": "负片反转片与显停定洗干流程",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 73,
+      "topic": "负片反转片与显停定洗干流程",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 74,
+      "topic": "负片反转片与显停定洗干流程",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-color",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#color",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 75,
+      "topic": "透射比、不透明度、密度与曝光量",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 76,
+      "topic": "透射比、不透明度、密度与曝光量",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 77,
+      "topic": "透射比、不透明度、密度与曝光量",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 78,
+      "topic": "透射比、不透明度、密度与曝光量",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 79,
+      "topic": "H-D曲线、伽马、趾肩与晒降",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 80,
+      "topic": "H-D曲线、伽马、趾肩与晒降",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 81,
+      "topic": "H-D曲线、伽马、趾肩与晒降",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 82,
+      "topic": "H-D曲线、伽马、趾肩与晒降",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sensitometry",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sensitometry",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 83,
+      "topic": "摄像管与几何稳定性",
+      "kind": "history",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 84,
+      "topic": "摄像管与几何稳定性",
+      "kind": "history",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 85,
+      "topic": "摄像管与几何稳定性",
+      "kind": "history",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 86,
+      "topic": "CCD电荷生成、转移、像元与响应材料",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 87,
+      "topic": "CCD电荷生成、转移、像元与响应材料",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 88,
+      "topic": "CCD电荷生成、转移、像元与响应材料",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 89,
+      "topic": "CCD电荷生成、转移、像元与响应材料",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 90,
+      "topic": "量子效率、电荷转移效率与噪声",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 91,
+      "topic": "量子效率、电荷转移效率与噪声",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-detectors",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#detectors",
+      "englishSection": "3.3"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 92,
+      "topic": "模数转换、位深与数字采样",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 93,
+      "topic": "模数转换、位深与数字采样",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 94,
+      "topic": "模数转换、位深与数字采样",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 95,
+      "topic": "100平方公里数据量与GSD减半算例",
+      "kind": "example",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 96,
+      "topic": "GSD、MTF概念及USAF分辨率板",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 97,
+      "topic": "GSD、MTF概念及USAF分辨率板",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 98,
+      "topic": "航摄质量、漏区与四类软件功能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 99,
+      "topic": "航摄质量、漏区与四类软件功能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 100,
+      "topic": "航摄质量、漏区与四类软件功能",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-sampling",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#sampling",
+      "englishSection": "3.4"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 101,
+      "topic": "点扫描、线阵推扫、全景与框幅几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-scanners-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#scanners",
+      "englishSection": "3.5"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 102,
+      "topic": "点扫描、线阵推扫、全景与框幅几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-scanners-before",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#scanners",
+      "englishSection": "3.5"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 103,
+      "topic": "点扫描、线阵推扫、全景与框幅几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-scanners-before",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#scanners",
+      "englishSection": "3.5"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 104,
+      "topic": "像移与FMC、152mm航摄模糊算例",
+      "kind": "example",
+      "target": "/photogrammetry-en-03.html#sensor-scanners-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#scanners",
+      "englishSection": "3.6"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 105,
+      "topic": "像移与FMC、152mm航摄模糊算例",
+      "kind": "example",
+      "target": "/photogrammetry-en-03.html#sensor-scanners-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#scanners",
+      "englishSection": "3.6"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 106,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 107,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 108,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 109,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 110,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 111,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 112,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 113,
+      "topic": "框幅摄影机组成、镜锥、历史规格与滤片",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 114,
+      "topic": "框标、格网与数据注记",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 115,
+      "topic": "框标、格网与数据注记",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 116,
+      "topic": "框标、格网与数据注记",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 117,
+      "topic": "安阳项目、分区、航带5、片号11标识",
+      "kind": "example",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 118,
+      "topic": "摄影注记与资料追溯",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 119,
+      "topic": "镜间及焦平面快门与时间几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 120,
+      "topic": "镜间及焦平面快门与时间几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 121,
+      "topic": "镜间及焦平面快门与时间几何",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 122,
+      "topic": "片盒真空压平与数字像面区别",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 123,
+      "topic": "机身振动、曝光间隔、导航与重叠",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 124,
+      "topic": "机身振动、曝光间隔、导航与重叠",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 125,
+      "topic": "机身振动、曝光间隔、导航与重叠",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 126,
+      "topic": "航摄系统图与导航IMU DGPS组成",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 127,
+      "topic": "航摄系统图与导航IMU DGPS组成",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-camera-system",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#camera-system",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 128,
+      "topic": "IMU、摄影座、隔振与漂移角",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 129,
+      "topic": "IMU、摄影座、隔振与漂移角",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 130,
+      "topic": "IMU、摄影座、隔振与漂移角",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.7"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 131,
+      "topic": "几何辐射光谱检校及主要方法",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.8"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 132,
+      "topic": "几何辐射光谱检校及主要方法",
+      "kind": "concept",
+      "target": "/photogrammetry-en-03.html#sensor-timing-calibration-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#timing-calibration",
+      "englishSection": "3.8"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 133,
+      "topic": "主动被动、侧视雷达、激光雷达与往返测距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.9"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 134,
+      "topic": "主动被动、侧视雷达、激光雷达与往返测距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-before",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.9"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 135,
+      "topic": "主动被动、侧视雷达、激光雷达与往返测距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-before",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.9"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 136,
+      "topic": "主动被动、侧视雷达、激光雷达与往返测距",
+      "kind": "formula",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-before",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.9"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 137,
+      "topic": "地面升降、风筝飞艇气球与平台选择",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 138,
+      "topic": "地面升降、风筝飞艇气球与平台选择",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 139,
+      "topic": "地面升降、风筝飞艇气球与平台选择",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 140,
+      "topic": "固定翼及多种无人机平台示例",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 141,
+      "topic": "固定翼及多种无人机平台示例",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 142,
+      "topic": "固定翼及多种无人机平台示例",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 143,
+      "topic": "飞机平台与舱内安装照片",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 144,
+      "topic": "飞机平台与舱内安装照片",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 145,
+      "topic": "跨轨与沿轨立体及时差",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-sensors",
+      "page": 146,
+      "topic": "SpaceLab与Landsat空间影像比较",
+      "kind": "figure",
+      "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
+      "review": "全文提取核读；图示页结合原页视觉核验",
+      "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
+      "englishSection": "3.10"
+    }
+  ]
+}

@@ -8,3 +8,7 @@
 @media(max-width:760px){.library-hub{padding:40px 24px 56px}.hub-intro{margin-bottom:36px}.hub-intro h1{font-size:36px}.hub-intro .hub-lead{font-size:21px}.hub-columns{grid-template-columns:1fr;gap:36px}.hub-course{padding:24px}.hub-course h3{font-size:23px}.hub-section-heading h2{font-size:21px}}
 @media(max-width:360px){.library-hub{padding-left:20px;padding-right:20px}.hub-course{padding:20px}.hub-course h3{font-size:21px}.hub-intro h1{font-size:32px}}
 .hub-course + .hub-course{margin-top:24px}
+
+/* Keep MathJax's clipped screen-reader text from widening scroll containers. */
+.vp-doc mjx-assistive-mml{width:1px!important;height:1px!important;clip-path:inset(50%);overflow:hidden!important}
+.vp-doc [id]{scroll-margin-top:128px}

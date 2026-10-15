@@ -68,3 +68,8 @@ next: false
 ## 最优化：按两本教材章节阅读
 
 [双教材目录](course-optimization.html)分别保留原书11章与19章顺序。直接从[Boyd第1章](optimization-bv-01.html)或[Nocedal–Wright第1章](optimization-nw-01.html)进入。数学基础随正文解释，英文辅助与原著页码在当前位置查阅；学习、控制和导航的联系融入相关概念。
+
+
+## 摄影测量：从射线开始 {#photogrammetry}
+
+先沿[八单元理解路线](/course-photogrammetry.html#photo-path)理解几何，再用[英文阅读训练](/photogrammetry-english)练习找对象、条件和结论。

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" role="img" aria-labelledby="title desc">
+<title id="title">两射线最近点与浅交会</title><desc id="desc">左侧两个射线上的最近点Q1和Q2及其中点P；右侧两条接近平行的视线使很小角度变化造成大深度差。</desc>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#486782"/></marker></defs>
+<rect width="1040" height="430" rx="18" fill="#f6f9fc"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#17324d"><text x="28" y="38" font-size="22" font-weight="700">A · 允许射线不严格相交</text><text x="552" y="38" font-size="22" font-weight="700">B · 小交会角放大深度不确定性</text></g>
+<path d="M510 62V394" stroke="#cbd5e1"/>
+<g stroke-width="3" fill="none"><path d="M80 110L356 358" stroke="#2176a8" marker-end="url(#arr)"/><path d="M424 110L216 352" stroke="#8b5b9f" marker-end="url(#arr)"/><path d="M80 110H424" stroke="#64748b" stroke-dasharray="6 5"/><path d="M272 282L292 264" stroke="#df7b35" stroke-width="5"/></g>
+<g fill="#17324d" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19"><circle cx="80" cy="110" r="6"/><circle cx="424" cy="110" r="6"/><text x="56" y="91">C₁</text><text x="416" y="91">C₂</text><text x="245" y="100">B</text><text x="201" y="273">Q₁</text><text x="302" y="265">Q₂</text><text x="299" y="306">P = (Q₁ + Q₂)/2</text><text x="114" y="177" fill="#2176a8">u</text><text x="369" y="178" fill="#8b5b9f">v</text></g>
+<circle cx="282" cy="273" r="6" fill="#df7b35"/>
+<text x="28" y="400" font-family="Microsoft YaHei,Arial,sans-serif" font-size="17" fill="#486782">连线垂直于两方向；示意投影需结合三维理解</text>
+<g stroke-width="3" fill="none"><path d="M586 108L1014 374" stroke="#2176a8"/><path d="M662 108L966 344" stroke="#8b5b9f"/><path d="M662 108L1014 374" stroke="#df7b35" stroke-dasharray="7 5"/><path d="M966 344L1014 374" stroke="#df7b35" stroke-width="5"/></g>
+<g fill="#17324d" font-family="Microsoft YaHei,Arial,sans-serif" font-size="18"><circle cx="586" cy="108" r="6"/><circle cx="662" cy="108" r="6"/><text x="565" y="87">C₁</text><text x="647" y="87">C₂</text><text x="725" y="145">小角度误差</text><text x="713" y="393">较大的交点位置变化</text></g>
+</svg>

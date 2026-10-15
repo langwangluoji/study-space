@@ -1,0 +1,803 @@
+{
+  "source": {
+    "file": "英文教材—Introduction to Modern Photogrammetry  美国Wiley出版社  2001年版 (1).pdf",
+    "title": "Introduction to Modern Photogrammetry",
+    "authors": [
+      "Edward M. Mikhail",
+      "James S. Bethel",
+      "J. Chris McGlone"
+    ],
+    "publisher": "John Wiley & Sons, Inc.",
+    "year": 2001,
+    "isbn": "0-471-30924-9",
+    "editionNote": "扉页和版权页核实为 2001 年版本，未见明确版次字样，不额外声称版次。",
+    "pdfPages": 491,
+    "titlePdfPage": 5,
+    "copyrightPdfPage": 6,
+    "contentsPdfPages": [
+      9,
+      10,
+      11
+    ],
+    "pageWarning": "PDF 页指查看器从 1 开始的页序。正文印刷 p.1–349 对应 PDF 页+12。扫描在 p.349 后直接到 p.351，印刷 p.350 未出现；附录 A–G 中已核实的页对应 +11。逐条保留页码，不能使用全书统一偏移。OCR 在公式、字母和页码上有识别错误，数学表达需对照页面图像。",
+    "scopeWarning": "该书反映 2001 年的设备与生产条件。几何与平差原理仍适合学习；设备现状、软件网址、CD-ROM、数据源和行业应用描述不可当成今日最新资料。"
+  },
+  "contents": [
+    {
+      "chapter": "1",
+      "en": "Introductory Concepts",
+      "zh": "入门概念",
+      "printedPage": 1,
+      "pdfPage": 13,
+      "role": "建立摄影测量、遥感、影像处理的关系"
+    },
+    {
+      "chapter": "2",
+      "en": "Elementary Photogrammetry",
+      "zh": "初等摄影测量",
+      "printedPage": 13,
+      "pdfPage": 25,
+      "role": "中心投影、比例尺、高差位移、视差、重叠与核线"
+    },
+    {
+      "chapter": "3",
+      "en": "Photogrammetric Sensing Systems",
+      "zh": "摄影测量传感系统",
+      "printedPage": 33,
+      "pdfPage": 45,
+      "role": "光学、传感器、像质、航摄相机与检校"
+    },
+    {
+      "chapter": "4",
+      "en": "Mathematical Concepts in Photogrammetry",
+      "zh": "摄影测量数学概念",
+      "printedPage": 80,
+      "pdfPage": 92,
+      "role": "坐标系、内外方位、共线与共面条件"
+    },
+    {
+      "chapter": "5",
+      "en": "Resection, Intersection, and Triangulation",
+      "zh": "后方交会、前方交会与三角测量",
+      "printedPage": 107,
+      "pdfPage": 119,
+      "role": "相对/绝对定向、区域网与光束法平差"
+    },
+    {
+      "chapter": "6",
+      "en": "Digital Photogrammetry",
+      "zh": "数字摄影测量",
+      "printedPage": 152,
+      "pdfPage": 164,
+      "role": "数字影像、处理、重采样、测量与计算机视觉"
+    },
+    {
+      "chapter": "7",
+      "en": "Photogrammetric Instruments",
+      "zh": "摄影测量仪器",
+      "printedPage": 203,
+      "pdfPage": 215,
+      "role": "仪器历史和数字系统，适合作为补充"
+    },
+    {
+      "chapter": "8",
+      "en": "Photogrammetric Products",
+      "zh": "摄影测量产品",
+      "printedPage": 225,
+      "pdfPage": 237,
+      "role": "DEM、正射影像、三维模型、精度和项目规划"
+    },
+    {
+      "chapter": "9",
+      "en": "Close-Range Photogrammetry",
+      "zh": "近景摄影测量",
+      "printedPage": 247,
+      "pdfPage": 259,
+      "role": "非量测相机、检校、网形设计与近景应用"
+    },
+    {
+      "chapter": "10",
+      "en": "Analysis of Multispectral and Hyperspectral Image Data",
+      "zh": "多光谱与高光谱影像分析",
+      "printedPage": 276,
+      "pdfPage": 288,
+      "role": "连接遥感与机器学习，主线之后拓展"
+    },
+    {
+      "chapter": "11",
+      "en": "Active Sensing Systems",
+      "zh": "主动传感系统",
+      "printedPage": 301,
+      "pdfPage": 313,
+      "role": "Radar、SAR、IFSAR 和 LIDAR，连接 InSAR 课程"
+    },
+    {
+      "chapter": "A",
+      "en": "Mathematics for Photogrammetry",
+      "zh": "摄影测量数学基础",
+      "printedPage": 351,
+      "pdfPage": 362,
+      "role": "坐标、向量、矩阵、变换、线性化与投影"
+    },
+    {
+      "chapter": "B",
+      "en": "Least Squares Adjustment",
+      "zh": "最小二乘平差",
+      "printedPage": 387,
+      "pdfPage": 398,
+      "role": "观测、残差、权与精度评价"
+    },
+    {
+      "chapter": "C",
+      "en": "Linearization of Photogrammetric Condition Equations",
+      "zh": "条件方程线性化",
+      "printedPage": 423,
+      "pdfPage": 434,
+      "role": "推导进阶"
+    },
+    {
+      "chapter": "D",
+      "en": "Mathematical Description of Linear Features",
+      "zh": "线状特征的数学描述",
+      "printedPage": 433,
+      "pdfPage": 444,
+      "role": "点之外的线、圆及约束"
+    },
+    {
+      "chapter": "E",
+      "en": "Further Consideration of the Rotation Matrix",
+      "zh": "旋转矩阵深入讨论",
+      "printedPage": 446,
+      "pdfPage": 457,
+      "role": "旋转估计与四元数"
+    },
+    {
+      "chapter": "F",
+      "en": "Orbital Photogrammetry",
+      "zh": "轨道摄影测量",
+      "printedPage": 455,
+      "pdfPage": 466,
+      "role": "卫星轨道与坐标"
+    },
+    {
+      "chapter": "G",
+      "en": "Software for Photogrammetric Applications",
+      "zh": "摄影测量应用软件",
+      "printedPage": 464,
+      "pdfPage": 475,
+      "role": "历史配套程序与网址，不假设 CD 可用"
+    }
+  ],
+  "readingMethod": {
+    "audience": "懂基本高中几何，希望借中文支架自学摄影测量并逐步读英文教材的学生。",
+    "loadBearingIdea": "照片给出射线方向；恢复相机几何后，多张照片的射线共同确定空间位置。",
+    "sequence": [
+      "先看现实问题和动态图，不先背整页公式。",
+      "识别 3–5 个负载概念的英文术语，听/读自主编写短句。",
+      "在英文原页先找标题、图、变量，再读 1 个相关段落。",
+      "把英文段落改说成中文，再逐渐用短英文复述。",
+      "完成一个改变参数的预测题和一个判断误解的题。"
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "name": "中文搭桥 / See the idea",
+        "lessons": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "task": "中文解释为主；英文保留关键词，每次原著只读标题、图注与约 1 段。",
+        "languageTip": "先找主语和动词：A point / forms / an image. 介词短语再补上空间关系。"
+      },
+      {
+        "level": 2,
+        "name": "双语对照 / Follow the geometry",
+        "lessons": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "task": "先读自编英文句，再尝试原著几何段；把符号与图中对象对应。",
+        "languageTip": "which 指向前面的对象；with respect to 指明相对哪个坐标系，不是礼貌用语。"
+      },
+      {
+        "level": 3,
+        "name": "原著优先 / Read and explain",
+        "lessons": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "task": "先读原著主题段，用两句话总结目的、输入和输出；中文解释按需展开。",
+        "languageTip": "distinguish knowns, unknowns and observations：已知量、未知量和观测量的角色会随问题变化。"
+      }
+    ],
+    "uiRecommendations": [
+      "每课卡片固定：真实问题 → 可调几何图 → 一句话核心 → bilingual terms → 条件明确的公式 → 预测题 → 原著阅读定位。",
+      "中文支架可折叠；English-first 开关只调整显示顺序，不隐藏页码、条件和关键误区。",
+      "点击术语先显示它在这一课的含义，提供中文、英文、自编例句和常见误解。",
+      "每个原著入口同时写印刷页与 PDF 页，并可直接打开 local PDF 的 #page= 页。",
+      "学习路径按概念依赖排列，期末索引按名词/公式另设入口。",
+      "练习先做预测再显示解释；错误答案需说明错在哪里，不仅给正确选项。"
+    ],
+    "reuseNote": "以下英文例句均为自主编写的教学句子，不是原著引文。页面原图可用于个人本地阅读；公开网站建议使用自绘示意图、原创摘要和页码引用，不打包上传完整教材。"
+  },
+  "lessons": [
+    {
+      "id": 1,
+      "title": "从照片测什么？ / What can images measure?",
+      "level": 1,
+      "section": "1.1 Definitions",
+      "printedPages": [
+        1
+      ],
+      "pdfPages": [
+        13
+      ],
+      "keywords": [
+        [
+          "photogrammetry",
+          "摄影测量：由影像恢复对象的几何信息"
+        ],
+        [
+          "image space",
+          "像空间：影像所在的几何空间"
+        ],
+        [
+          "object space",
+          "物空间：被拍对象所在的三维空间"
+        ],
+        [
+          "metric information",
+          "可测量的几何信息"
+        ]
+      ],
+      "english": "Photogrammetry recovers geometric information about objects from images.",
+      "chinese": "摄影测量用影像恢复对象的几何信息。例如求屋顶点的三维坐标，而不只是认出屋顶。",
+      "readingTask": "找出该页对 photogrammetry 的定义，再在最后一段找到 image 与 object 的 geometric relationship。",
+      "misconception": "metric 在这里强调测量与几何信息，不是把摄影测量限定为只用米制单位。Photo interpretation 偏重影像判读，二者相关但任务不同。",
+      "check": "判断：把影像中的建筑分类为住宅，就已经得到它的高度了吗？",
+      "answer": "没有。分类结果本身没有恢复拍摄时的三维几何。",
+      "visual": "双栏：像空间中的 2D 点 ↔ 物空间中的 3D 点；突出从像到物需要恢复几何关系。",
+      "sentenceHint": "主语 Photogrammetry → 动词 recovers → 宾语 geometric information；about objects 表明信息关于什么，from images 表明信息来自哪里。",
+      "choices": [
+        "是，分类自动给出高度",
+        "否，分类本身没有恢复三维几何",
+        "仅黑白照片才可以"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 2,
+      "title": "一张照片是一束射线 / A photograph is a bundle of rays",
+      "level": 1,
+      "section": "2.1 Perspective Projection",
+      "printedPages": [
+        13
+      ],
+      "pdfPages": [
+        25
+      ],
+      "keywords": [
+        [
+          "perspective projection",
+          "中心投影 / 透视投影"
+        ],
+        [
+          "perspective center",
+          "投影中心"
+        ],
+        [
+          "image plane",
+          "像平面"
+        ],
+        [
+          "collinearity",
+          "共线性"
+        ]
+      ],
+      "english": "The object point, the perspective center, and its image point lie on one line in the ideal frame-camera model.",
+      "chinese": "在理想框幅相机模型里，一个地面点、投影中心和它的像点在同一直线上。照片记录方向，单个像点通常不能独自决定这个点离相机多远。",
+      "readingTask": "读 pinhole camera 附近段落，找 collinearity 的三个点分别是谁。",
+      "misconception": "中心投影不是正射投影；近大远小。Pinhole 模型描述几何，真实镜头有畸变，不能把所有相机误差都当成不存在。",
+      "check": "同一条射线上放两个物点，它们能在理想模型中落到同一像点吗？",
+      "answer": "能，因此单像的二维位置通常不足以直接确定完整三维位置。",
+      "visual": "拖动物点沿射线远近移动，像点不动；侧向移动，像点改变。",
+      "sentenceHint": "先圈出三个主语对象，再读 lie on one line。in the ideal frame-camera model 是适用条件，不能漏读。",
+      "choices": [
+        "能，沿同一射线可能投影到同一像点",
+        "不能，距离不同像点必不同",
+        "只要像素更小就不会"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 3,
+      "title": "飞得高，为什么看得广？ / Scale and coverage",
+      "level": 1,
+      "section": "2.2 Scale and Coverage",
+      "printedPages": [
+        16
+      ],
+      "pdfPages": [
+        28
+      ],
+      "keywords": [
+        [
+          "scale",
+          "比例尺：像上距离与对应物距之比"
+        ],
+        [
+          "coverage",
+          "覆盖范围"
+        ],
+        [
+          "flying height",
+          "航高：必须指明相对哪个面"
+        ],
+        [
+          "principal distance",
+          "主距"
+        ]
+      ],
+      "english": "For a vertical image over flat ground, increasing the camera height reduces the image scale and increases coverage.",
+      "chinese": "垂直摄影、平坦地面且主距固定时，飞得更高，地面对象在照片中更小，覆盖范围更广。比例尺是无量纲比值。",
+      "formula": "m = f / (H - h)",
+      "conditions": "f、H、h 用一致长度单位；H 与 h 相对同一基准面；垂直摄影和局部水平地面；m 是像距/物距。",
+      "readingTask": "看 Figure 2-6，区分 H、h 与真正物距 H-h，解释为什么不是总写 f/H。",
+      "misconception": "1:5000 的比例尺大于 1:10000；分母更大通常意味着比例尺更小。飞得高不意味着坐标一定更准确。",
+      "check": "f=0.1 m，H-h=1000 m，照片比例尺是多少？",
+      "answer": "m=0.0001，即 1:10000。",
+      "visual": "航高与主距滑块同步显示覆盖、比例尺，并明确单位。",
+      "sentenceHint": "For… 给出条件；increasing… 是动作主语；reduces 与 increases 并列，分别对应 scale 和 coverage。",
+      "choices": [
+        "1:1000",
+        "1:100000",
+        "1:10000"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 4,
+      "title": "高楼为什么往外倒？ / Relief displacement",
+      "level": 1,
+      "section": "2.5 Relief Displacement",
+      "printedPages": [
+        22,
+        23
+      ],
+      "pdfPages": [
+        34,
+        35
+      ],
+      "keywords": [
+        [
+          "relief displacement",
+          "由高差造成的像点位移"
+        ],
+        [
+          "nadir point",
+          "像底点"
+        ],
+        [
+          "radial distance",
+          "径向距离"
+        ],
+        [
+          "principal point",
+          "像主点"
+        ]
+      ],
+      "english": "In a truly vertical photograph, a tall object away from the nadir point has an outward relief displacement.",
+      "chinese": "严格垂直的照片中，离像底点越远的高物体，顶部相对底部越向外偏。主点与像底点在严格垂直摄影时重合，倾斜时不能直接混用。",
+      "formula": "h = H × Δr / r_top",
+      "conditions": "垂直摄影；H 为相机相对对象底部的高度；r_top 是顶部像点相对主点的径向距离；Δr=r_top-r_base；两种像距单位一致。",
+      "readingTask": "看 Figure 2-12，不背符号，先在图上指出顶、底、相机和径向方向。",
+      "misconception": "Relief 在这里不是救援或缓解，是地形/对象高差；位移不是随机测量噪声。",
+      "check": "位于垂直照片中心的高物体会出现这种径向位移吗？",
+      "answer": "理想几何下不会，因为径向距离为零；这不表示物体没有高度。",
+      "visual": "楼高与离中心距离滑块；展示顶部和底部像点间距。",
+      "sentenceHint": "In a truly vertical photograph 限定严格垂直摄影；away from… 修饰 object；outward 指从中心向外。",
+      "choices": [
+        "会，所有高物体位移相同",
+        "不会，理想中心位置径向距离为零",
+        "只有楼高超过航高才会"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 5,
+      "title": "两张照片为何能量高度？ / Parallax and stereo",
+      "level": 2,
+      "section": "2.6 Parallax and Stereo; 2.7 Image Overlap",
+      "printedPages": [
+        23,
+        29
+      ],
+      "pdfPages": [
+        35,
+        41
+      ],
+      "keywords": [
+        [
+          "parallax",
+          "视差：观察位置改变造成的表观位置变化"
+        ],
+        [
+          "stereo",
+          "立体"
+        ],
+        [
+          "baseline",
+          "基线：两个摄影中心间的距离"
+        ],
+        [
+          "overlap",
+          "重叠度"
+        ]
+      ],
+      "english": "Two viewpoints produce parallax; with known camera geometry, this difference helps determine depth.",
+      "chinese": "从不同位置看同一点，它在影像里的位置不同。已知相机几何后，位置差为求深度提供信息。基线太小，深度信号弱；太大，遮挡与匹配也可能更困难。",
+      "readingTask": "读 Parallax 开头的乘车类比，再区分 forward overlap 和 side overlap。",
+      "misconception": "视差不是像点测错；前方重叠沿同一航线，旁向重叠位于相邻航线。书中 60%/30% 是传统航测示例，不是所有无人机任务的固定标准。",
+      "check": "两张完全不含共同对象的照片，是否能对那些对象直接建立同名点？",
+      "answer": "不能，需要共有可见内容才有对应观测。",
+      "visual": "保持物点，移动两个相机；同时显示视差、基高比与共同可见范围。",
+      "sentenceHint": "第一分句说明视差的来源；with known camera geometry 是求深度的前提；helps 不表示能独自解决全部问题。",
+      "choices": [
+        "能，因为任意两照片都能匹配",
+        "不能，直接同名观测需要共同可见内容",
+        "只需增加焦距就能"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 6,
+      "title": "从二维搜索变成一维搜索 / Epipolar geometry",
+      "level": 2,
+      "section": "2.8 Epipolar Planes and Lines",
+      "printedPages": [
+        31
+      ],
+      "pdfPages": [
+        43
+      ],
+      "keywords": [
+        [
+          "epipolar plane",
+          "核面：两个摄影中心和物点所在的平面"
+        ],
+        [
+          "epipolar line",
+          "核线：核面与像平面的交线"
+        ],
+        [
+          "conjugate points",
+          "同名点 / 对应像点"
+        ],
+        [
+          "image matching",
+          "影像匹配"
+        ]
+      ],
+      "english": "A corresponding point must lie on the corresponding epipolar line when the camera geometry is known.",
+      "chinese": "已知两相机的几何关系时，左像一点在右像的对应点应落在对应核线上，搜索从一整幅二维区域缩到一条线附近。它不告诉你线上哪一个位置就是答案。",
+      "readingTask": "对照 Figure 2-20 依次指出基线、物点、核面和两条核线。",
+      "misconception": "核线不天然都是水平线；经过核线重采样/校正后常可把对应核线对齐为行。几何约束不能独自解决重复纹理与遮挡。",
+      "check": "核线约束会直接给出唯一对应像点吗？",
+      "answer": "不会，还需要纹理、相似性和其他约束。",
+      "visual": "点选左像点，右像高亮整条候选核线，再拖动候选点观察射线相交。",
+      "sentenceHint": "A corresponding point 是主语，must lie 是核心动作；when… 是几何已知的条件。对应点的位置仍需匹配确定。",
+      "choices": [
+        "会，核线上的点唯一",
+        "不会，还需要纹理和其他约束",
+        "会，只要两张照片大小相同"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 7,
+      "title": "相机自身与相机姿态 / Interior and exterior orientation",
+      "level": 2,
+      "section": "4.3 Sensor Model; 4.4 Platform Model; 3.8 Camera Calibration",
+      "printedPages": [
+        67,
+        88,
+        90
+      ],
+      "pdfPages": [
+        79,
+        100,
+        102
+      ],
+      "keywords": [
+        [
+          "interior orientation",
+          "内方位：从像点重建相机中的射线束"
+        ],
+        [
+          "exterior orientation",
+          "外方位：射线束在物空间中的位置与姿态"
+        ],
+        [
+          "camera calibration",
+          "相机检校"
+        ],
+        [
+          "lens distortion",
+          "镜头畸变"
+        ]
+      ],
+      "english": "Interior orientation describes the camera geometry; exterior orientation places the camera in object space.",
+      "chinese": "先用内方位知道像点对应相机中的哪条射线，再用外方位把这条射线放进物空间。框幅相机外方位通常有三个位置量和三个姿态量。",
+      "readingTask": "读 p.88 内方位首段，列出主距、主点和畸变；读 p.90 外方位首段，对比它解决什么问题。",
+      "misconception": "Orientation 不仅是相机朝向。外方位包括位置；内方位不是只指图片显示方向。主距与焦距并非所有对焦条件下都严格相等。",
+      "check": "相机原地转动，首先改变的是内方位还是外方位？",
+      "answer": "外方位姿态；理想情况下相机自身主距和主点等内方位不因原地转动而改变。",
+      "visual": "并排两个控件：内参改变射线展开角，外参改变相机位置和朝向。",
+      "sentenceHint": "两个并列句使用同一结构：主体 → describes/places → 对象。object space 是外方位安放相机的参照空间。",
+      "choices": [
+        "外方位姿态",
+        "内方位主距",
+        "数字图像的像素数"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": 8,
+      "title": "公式的核心就是三点共线 / Collinearity equations",
+      "level": 2,
+      "section": "4.5.1 The Collinearity Equations",
+      "printedPages": [
+        92,
+        93
+      ],
+      "pdfPages": [
+        104,
+        105
+      ],
+      "keywords": [
+        [
+          "collinearity equations",
+          "共线方程"
+        ],
+        [
+          "rotation matrix",
+          "旋转矩阵"
+        ],
+        [
+          "knowns",
+          "已知量"
+        ],
+        [
+          "unknowns",
+          "未知量"
+        ]
+      ],
+      "english": "The collinearity equations link object coordinates, image coordinates, and camera parameters.",
+      "chinese": "共线方程把物点坐标、像点坐标和相机参数连起来。它不是只做某一种题：把相机参数设为未知就是后方交会，把物点设为未知就可做前方交会。",
+      "readingTask": "先看 Figure 4-8 再读 p.93 从向量式到两条标量式；注意消去的是沿射线的比例因子。",
+      "misconception": "旋转矩阵的使用方向与符号约定要先声明；不同教材的矩阵转置与角度约定可能不同。公式中的分母反映深度，不能逐项随意消掉。",
+      "check": "同一个共线模型为什么可以既求相机又求物点？",
+      "answer": "物理关系相同；观测、已知和未知角色不同。",
+      "visual": "每个公式项与图中变量联动高亮；切换求像点、求相机、求物点的已知/未知颜色。",
+      "sentenceHint": "link 是连接：物坐标、像坐标、相机参数都是连接对象。不要把 coordinates 误读为未知量，它的角色取决于题目。",
+      "choices": [
+        "每次都需要完全不同的物理模型",
+        "因为已知、观测与未知量的角色可以变化",
+        "共线方程不含相机参数"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 9,
+      "title": "先找相机，再找物点 / Resection and intersection",
+      "level": 3,
+      "section": "5.3 Resection; 5.5 Intersection",
+      "printedPages": [
+        112,
+        115
+      ],
+      "pdfPages": [
+        124,
+        127
+      ],
+      "keywords": [
+        [
+          "resection",
+          "空间后方交会：由控制点求相机外方位"
+        ],
+        [
+          "intersection",
+          "空间前方交会：由多条成像射线求物点"
+        ],
+        [
+          "control point",
+          "控制点"
+        ],
+        [
+          "redundancy",
+          "多余观测 / 冗余"
+        ]
+      ],
+      "english": "Resection estimates the camera pose from known object points. Intersection estimates an object point from oriented images.",
+      "chinese": "后方交会用已知地面点和像点去找相机的位置姿态。前方交会在相机定向后，由两张或多张影像求未知地面点的三维位置。",
+      "readingTask": "先读各节第一段，用输入→输出各写一条箭头；p.115 再数两像点提供的四个像坐标方程与三个物点未知数。",
+      "misconception": "Resection 不能按普通英语直接理解成外科切除；intersection 是射线交会。实际含噪射线通常不严格相交，要按观测误差模型估计。仅数方程够数不能保证几何稳定或唯一解。",
+      "check": "已知多台相机的外方位，想求新地面点，应使用哪一类问题？",
+      "answer": "Intersection / 前方交会。",
+      "visual": "切换未知量：一边固定控制点移动相机；另一边固定相机让射线求物点。",
+      "sentenceHint": "两个句子的主语分别是 Resection 和 Intersection。from 后面是输入，estimates 后面是要估计的输出。",
+      "choices": [
+        "Resection / 后方交会",
+        "Camera calibration / 检校",
+        "Intersection / 前方交会"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": 10,
+      "title": "模型立起来，再放到地图上 / Relative and absolute orientation",
+      "level": 3,
+      "section": "5.6 Relative Orientation; 5.7 Absolute Orientation",
+      "printedPages": [
+        115,
+        118,
+        119
+      ],
+      "pdfPages": [
+        127,
+        130,
+        131
+      ],
+      "keywords": [
+        [
+          "relative orientation",
+          "相对定向"
+        ],
+        [
+          "absolute orientation",
+          "绝对定向"
+        ],
+        [
+          "stereomodel",
+          "立体模型"
+        ],
+        [
+          "similarity transformation",
+          "相似变换"
+        ]
+      ],
+      "english": "Relative orientation builds a stereomodel. Absolute orientation gives that model its scale, position, and orientation in the target coordinate system.",
+      "chinese": "相对定向让两张照片的同名射线恢复几何关系，建立立体模型；模型仍有任意尺度、位置和姿态。绝对定向用统一尺度、三个旋转和三个平移，将它接入目标坐标系。",
+      "formula": "Y = μ M X + T",
+      "conditions": "三维相似变换，保持形状、角度与长度比例；μ 为统一尺度，M 为旋转，T 为平移。已知内方位的双像相对定向有五个独立自由度。",
+      "readingTask": "p.115 读五个自由度的解释；p.118 读七个参数；p.119 为 Y、X、μ、M、T 分别写中文。",
+      "misconception": "Absolute 不是绝对无误差。相对模型看起来立体，不表示已经获得国家坐标或真实尺度。模型尺度任意不是像内方位完全可以未知。",
+      "check": "立体模型整体放大两倍但形状不变，属于哪一个参数变化？",
+      "answer": "绝对定向中的统一尺度 μ。",
+      "visual": "模型七参数滑块：尺度、三平移、三旋转；标明不允许独立拉伸 X/Y/Z。",
+      "sentenceHint": "先读 builds a stereomodel；第二句 gives…its… 列出模型获得的尺度、位置和姿态，in… 指目标坐标系。",
+      "choices": [
+        "三个平移量之一",
+        "统一尺度 μ",
+        "只能独立拉伸 Z 轴"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 11,
+      "title": "多张影像一起求最一致的几何 / Bundle adjustment",
+      "level": 3,
+      "section": "5.8 Block Triangulation; 5.11 Numerical Aspects of Bundle Adjustment; Appendix B",
+      "printedPages": [
+        119,
+        130,
+        387,
+        390
+      ],
+      "pdfPages": [
+        131,
+        142,
+        398,
+        401
+      ],
+      "keywords": [
+        [
+          "bundle adjustment",
+          "光束法平差"
+        ],
+        [
+          "residual",
+          "残差"
+        ],
+        [
+          "least squares",
+          "最小二乘"
+        ],
+        [
+          "weight matrix",
+          "权矩阵"
+        ]
+      ],
+      "english": "Bundle adjustment estimates camera parameters and object points together by minimizing weighted image residuals.",
+      "chinese": "光束法把许多相机和许多物点一起调整，让预测像点尽量符合实测像点。加权最小二乘衡量的是残差平方的加权和，较可靠的观测通常给较大的权。",
+      "formula": "min Σ vᵢᵀ Wᵢ vᵢ",
+      "conditions": "需有明确几何与观测误差模型、足够稳定的连接与基准约束；残差符号约定可以不同，平方目标不受整体反号影响。",
+      "readingTask": "p.130 找 image ray 与 linearized collinearity equations；附录 B p.387 看为什么观测互不完全一致，p.390 看 least squares criterion 与 weight matrix。",
+      "misconception": "Bundle 这里是成像射线束，不是文件打包。残差小不必然表示物方绝对精度高；缺控制、弱网形或错误匹配仍会有问题。最小二乘不自动防御粗差。",
+      "check": "所有影像一起平差但没有外部尺度信息，是否一定得到真实米制尺度？",
+      "answer": "不一定。仅靠影像内部几何仍可能保留尺度和坐标基准自由度，需相应约束。",
+      "visual": "拖动一个错误匹配点，观察残差与相机/点联动；提供剔除粗差与调整权的比较。",
+      "sentenceHint": "estimates 的两个对象是 camera parameters 和 object points；together 表示联合；by minimizing… 解释怎样估计。",
+      "choices": [
+        "是，多张照片总能确定米制尺度",
+        "不一定，还需要尺度与基准约束",
+        "只要残差为零就必然真实"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": 12,
+      "title": "从像素走到 DEM 和正射影像 / Pixels to useful products",
+      "level": 3,
+      "section": "6.1 Digital Imagery; 6.5 Digital Image Measurement; 8.2 Digital Products; 8.5 Product Accuracy",
+      "printedPages": [
+        153,
+        168,
+        169,
+        228,
+        235,
+        242
+      ],
+      "pdfPages": [
+        165,
+        180,
+        181,
+        240,
+        247,
+        254
+      ],
+      "keywords": [
+        [
+          "ground sample distance (GSD)",
+          "地面采样距离"
+        ],
+        [
+          "resolution",
+          "分辨率：实际辨别细节的能力"
+        ],
+        [
+          "digital elevation model (DEM)",
+          "数字高程模型"
+        ],
+        [
+          "orthoimage",
+          "正射影像"
+        ],
+        [
+          "accuracy",
+          "准确度：与真实/参考值的接近程度"
+        ]
+      ],
+      "english": "GSD describes sampling distance, not guaranteed accuracy. An orthoimage uses camera geometry and elevation data to remove perspective effects.",
+      "chinese": "GSD 描述一个像素对应的地面采样间隔，它不保证实际分辨率或定位精度。DEM 提供高程；正射纠正结合相机几何和高程把透视影像重投影到地图坐标。",
+      "readingTask": "p.153 找作者怎样区分 GSD 与 resolution；p.235 用 Figure 8-9 解释透视与正射几何；p.242 为什么必须保存 accuracy metadata。",
+      "misconception": "数字图像不是自动精确地图。插值成更细的像素不能自动产生新细节。普通用地形 DEM 的正射影像可能仍有建筑倾倒；DEM、DSM、DTM 的使用需声明地面/表面定义。",
+      "check": "将 10 cm GSD 影像重采样成 1 cm 像元，能宣称地物定位精度变为 1 cm 吗？",
+      "answer": "不能。采样间隔变化不等于新增观测信息或保证坐标精度。",
+      "visual": "同一场景切换 perspective / ortho；叠加不同 DEM 误差，显示正射位置如何变化。",
+      "sentenceHint": "not guaranteed accuracy 限制 GSD 的含义；uses…to remove… 表示用什么数据、实现什么目的，不能省略 elevation data。",
+      "choices": [
+        "能，像元越小精度就同等提高",
+        "只有换成 PNG 格式才能",
+        "不能，重采样没有自动新增观测信息"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}
