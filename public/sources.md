@@ -1,6 +1,6 @@
 # 资料来源与使用边界
 
-更新日期：2026-10-11
+更新日期：2026-10-15
 
 ## 本地课程材料（内容基线）
 
@@ -57,3 +57,10 @@
 布局参考 [LinhoNotes](https://notes.linho.cc/) 与其 [项目说明](https://github.com/Linho1219/LinhoNotes) 的文档结构：分组课程侧栏、受控正文宽度、右侧大纲、移动端目录与本地搜索。本站保留“课程知识库”品牌、蓝色系和深浅主题，用 VitePress 1.6.4 的主题扩展实现。
 
 Notebook、Python 和本来源文稿是对应阅读页的唯一来源，构建过程不执行 Notebook。教材 PDF、教师课件与历史结果保持原文件；已有 quick run 仅作历史记录，本次未重新训练 CIFAR-10。
+
+
+## 第四讲：基函数、手工特征与 HOG + MLP
+
+- 内容基线：张绍明《4-多层感知机与手工图像特征-含平时作业1》，36 页。[原 PPTX 与 PDF 预览](material-slide-4.html)。
+- [第四讲讲义](lecture-4.html)按课件页码组织，原课件的 MLP 输入限制、LBP 不变性条件及 Haar 拼写已作澄清。公式推导、交互和参考代码是学习补充。
+- [参考脚本](read-downloads-cifar10_hog_mlp.html)使用 OpenCV HOG 与 PyTorch MLP。57.4% 只引用课件 p34，未声明完成该结果复现。

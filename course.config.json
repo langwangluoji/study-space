@@ -253,6 +253,78 @@
     ]
   },
   {
+    "slug": "lecture-4",
+    "title": "第四讲 · 多层感知机与手工图像特征",
+    "intro": "本讲根据 36 页课堂课件整理，承接基函数与多层感知机，比较五类手工特征，再落实 HOG + MLP 的 CIFAR-10 分类与平时作业 1。原课件、PDF 预览和配套代码统一进入资料库。",
+    "sections": [
+      {
+        "id": "d0",
+        "title": "本课主线与资料入口",
+        "source": "_fragments/d0.md"
+      },
+      {
+        "id": "d1",
+        "title": "基函数与图像特征表示",
+        "source": "_fragments/d1.md"
+      },
+      {
+        "id": "d2",
+        "title": "五类手工图像特征",
+        "source": "_fragments/d2.md"
+      },
+      {
+        "id": "d3",
+        "title": "HOG 维数与参数配置",
+        "source": "_fragments/d3.md"
+      },
+      {
+        "id": "d4",
+        "title": "HOG 与 MLP 的分类流程",
+        "source": "_fragments/d4.md"
+      },
+      {
+        "id": "d5",
+        "title": "平时作业 1 的实施指导",
+        "source": "_fragments/d5.md"
+      },
+      {
+        "id": "d6",
+        "title": "课件页码与来源索引",
+        "source": "_fragments/d6.md"
+      }
+    ],
+    "parts": [
+      {
+        "id": "basis-and-representation",
+        "title": "基函数与图像表示",
+        "sections": [
+          "d0",
+          "d1"
+        ],
+        "intro": "先理解输入怎样变为特征，再区分固定基函数与可学习表示。"
+      },
+      {
+        "id": "handcrafted-features",
+        "title": "手工特征与 HOG 参数",
+        "sections": [
+          "d2",
+          "d3"
+        ],
+        "intro": "比较纹理、明暗与轮廓表示，算清 HOG 维数与 OpenCV 参数。"
+      },
+      {
+        "id": "hog-classification",
+        "title": "分类流程、作业与来源",
+        "sections": [
+          "d4",
+          "d5",
+          "d6"
+        ],
+        "intro": "明确模型、损失与评估边界，沿来源页码完成作业实现。"
+      }
+    ]
+  },
+  {
     "slug": "cifar10-practice",
     "title": "实践 · CIFAR-10 MLP",
     "sections": [

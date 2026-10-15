@@ -46,7 +46,7 @@ for(const [chapterIndex,chapter] of course.entries()){
   fs.writeFileSync(path.join(docs,chapter.slug+'.md'),text);
 }
 const staticRoot=path.join(root,'public');
-const readers=[['read-sources','资料来源与使用边界','sources.md'],['read-downloads-cifar10_mlp_tutorial','实践脚本阅读版','downloads/cifar10_mlp_tutorial.py'],['read-downloads-rewrite_reference_checks','数学核验脚本阅读版','downloads/rewrite_reference_checks.py']];
+const readers=[['read-downloads-cifar10_hog_mlp','第四讲 · HOG + MLP 参考代码阅读版','downloads/cifar10_hog_mlp.py'],['read-sources','资料来源与使用边界','sources.md'],['read-downloads-cifar10_mlp_tutorial','实践脚本阅读版','downloads/cifar10_mlp_tutorial.py'],['read-downloads-rewrite_reference_checks','数学核验脚本阅读版','downloads/rewrite_reference_checks.py']];
 for(const [slug,title,file] of readers){
   const src=fs.readFileSync(path.join(staticRoot,file),'utf8');
   fs.writeFileSync(path.join(docs,slug+'.md'),`# ${title}\n\n<a href="/study-space/${file}" download>下载源文件</a> · 阅读版在构建时由源文件生成。\n\n`+(file.endsWith('.md')?src:'```python\n'+src+'\n```\n'));

@@ -22,7 +22,7 @@ next: false
 
 | 课程 | 原资料范围 | 来源与学习范围 |
 | --- | --- | --- |
-| 机器学习与遥感图像分析 | 15 讲教师 PPTX、PRML、MML、LeeDL 教材 | [前三讲与实践的来源](read-sources.html)；完整原资料范围超出当前讲义 |
+| 机器学习与遥感图像分析 | 15 讲教师 PPTX、PRML、MML、LeeDL 教材及实践代码 | [前四讲与实践的来源](read-sources.html)；完整原资料范围超出当前讲义 |
 | 大地测量 | 6 份讲义、教材与辅助材料 | [来源与页码索引](geodesy-sources.html)对应已整理知识，[原件清单](geodesy/materials/manifest.json)保留既有校验 |
 | InSAR 原理与应用 | 3 份教师课件、1 本参考书 | [来源与修订](insar-sources.html)说明前三章实际使用与核读范围 |
 | 遥感基础 | 15 份原资料均可在线预览和下载：第2–9章课件、汇总、三本教材及补充资料；高分调研提供匿名公开副本，出版社链接保留作补充 | [前四章双语讲义](course-remote-sensing.html)已整理；[来源与原资料索引](remote-sensing-sources.html)保留教材对照、配图及勘误 |

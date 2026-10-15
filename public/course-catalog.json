@@ -7,7 +7,7 @@
       "category": "计算机与数据科学",
       "url": "course-ml.html",
       "description": "沿着预测、分类与网络的计算链，连接教材推导和可运行实验。",
-      "status": "前三讲与实践已整理",
+      "status": "前四讲与实践已整理",
       "chapters": [
         {
           "id": "lecture-1",
@@ -26,6 +26,12 @@
           "title": "第三讲 · 神经网络与反向传播",
           "url": "lecture-3.html",
           "points": 5
+        },
+        {
+          "id": "lecture-4",
+          "title": "第四讲 · 多层感知机与手工图像特征",
+          "url": "lecture-4.html",
+          "points": 7
         },
         {
           "id": "cifar10-practice",
@@ -324,6 +330,68 @@
         {
           "slug": "optimization-nw-19",
           "title": "第19章 · Interior-Point Methods for Nonlinear Programming · 非线性内点法"
+        }
+      ]
+    },
+    {
+      "id": "photogrammetry",
+      "title": "摄影测量",
+      "category": "测绘与地球空间科学",
+      "url": "course-photogrammetry.html",
+      "description": "按英文教材章节学习，融合两书的概念、图示、推导与算例，并逐页对应课堂PPT。",
+      "status": "前五讲深入理论，6–8讲保留已有拓展；原书来源可追溯",
+      "chapters": [
+        {
+          "slug": "photogrammetry-en-01",
+          "title": "1 · 入门概念 / Introductory Concepts"
+        },
+        {
+          "slug": "photogrammetry-en-02",
+          "title": "2 · 初等摄影测量 / Elementary Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-03",
+          "title": "3 · 摄影测量传感系统 / Photogrammetric Sensing Systems"
+        },
+        {
+          "slug": "photogrammetry-en-04",
+          "title": "4 · 摄影测量数学概念 / Mathematical Concepts in Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-05",
+          "title": "5 · 后方交会、前方交会与三角测量 / Resection, Intersection, and Triangulation"
+        },
+        {
+          "slug": "photogrammetry-en-06",
+          "title": "6 · 数字摄影测量 / Digital Photogrammetry"
+        },
+        {
+          "slug": "photogrammetry-en-07",
+          "title": "7 · 摄影测量仪器 / Photogrammetric Instruments"
+        },
+        {
+          "slug": "photogrammetry-en-08",
+          "title": "8 · 摄影测量产品 / Photogrammetric Products"
+        },
+        {
+          "slug": "photogrammetry-conventions",
+          "title": "两书符号、目录与来源对照"
+        },
+        {
+          "slug": "photogrammetry-english",
+          "title": "英文原著阅读训练"
+        },
+        {
+          "slug": "photogrammetry-review",
+          "title": "期末复习与勘误"
+        },
+        {
+          "slug": "photogrammetry-coverage",
+          "title": "教材与265页PPT覆盖"
+        },
+        {
+          "slug": "photogrammetry-quality",
+          "title": "校验、自评与范围"
         }
       ]
     }

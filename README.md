@@ -1,6 +1,6 @@
 # 课程知识库 · Markdown 维护指南
 
-内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。三讲与实践各保留一张连续阅读的长页。生成页面不手工修改。
+内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。四讲与实践各保留一张连续阅读的长页。生成页面不手工修改。
 
 ## 环境与命令
 
@@ -37,7 +37,7 @@ InSAR课堂逐页对照的维护源是 `public/insar/ppt-coverage.json`。`scrip
 
 大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；六份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
 
-遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文仍按当前已整理的前三讲与实践标明范围。
+遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文按当前已整理的前四讲与实践标明范围。
 
 | 内容 | 唯一维护源 |
 | --- | --- |
@@ -131,3 +131,6 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 `creator.config.json` 维护制作者的公开姓名、GitHub 昵称、主页与头像。`contributors.config.json` 维护资料贡献者的公开身份、链接和具体支持范围，贡献者与原资料作者分别署名；公开头像副本位于 `public/creator/`。网站介绍在 `docs/about.md`，课程范围和资源条目数由统一清单渲染。
 
 `learning-paths.config.json` 维护资料扩展的学习问题、按需阅读建议、资源 ID 和返回正文链接。推荐资料引用资源清单中的已有 ID，生成器检查归属与目标页面；不是整本必读清单。`docs/textbooks.md` 说明教材用途与获取范围，`docs/site-guide.md` 解释使用与下载。反馈与资料推荐模板位于 `.github/ISSUE_TEMPLATE/`，入口只打开表单，不自动提交。
+
+
+第四讲维护在 `docs/_fragments/d0.md` 至 `d6.md`，纳入 `course.config.json`。`ImageFeatureLab.vue` 提供 HOG 维数与 LBP 编码演示；本讲无复习自测。原课件复用资料库 `slide-4`，参考脚本源为 `public/downloads/cifar10_hog_mlp.py`，阅读页由构建生成。

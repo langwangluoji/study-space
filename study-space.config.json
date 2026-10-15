@@ -9,14 +9,14 @@
       "entry": "/course-ml.html",
       "start": "/lecture-1.html#a1",
       "source": "/read-sources.html",
-      "scope": "3 讲理论 · 16 步实践",
+      "scope": "4 讲理论 · 16 步实践",
       "tags": [
         "回归与分类",
         "神经网络",
         "CIFAR-10"
       ],
       "prerequisites": "基础线性代数、求导、条件概率",
-      "status": "前三讲与实践已整理"
+      "status": "前四讲与实践已整理"
     },
     {
       "id": "geodesy",

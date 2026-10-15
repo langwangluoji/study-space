@@ -4,6 +4,7 @@ reports/traffic-history-seed-repo/
 reports/new-lectures-web-review.txt
 reports/new-lectures-web-review.png
 docs/.vitepress/cache/
+docs/.vitepress/.temp/
 docs/.vitepress/dist/
 docs/lecture-*.md
 docs/cifar10-practice.md

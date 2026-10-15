@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "hogConfigurations": [
+    {
+      "cell": 2,
+      "block": 1,
+      "dimension": 2304
+    },
+    {
+      "cell": 2,
+      "block": 2,
+      "dimension": 8100
+    },
+    {
+      "cell": 2,
+      "block": 3,
+      "dimension": 15876
+    },
+    {
+      "cell": 2,
+      "block": 4,
+      "dimension": 24336
+    },
+    {
+      "cell": 4,
+      "block": 1,
+      "dimension": 576
+    },
+    {
+      "cell": 4,
+      "block": 2,
+      "dimension": 1764
+    },
+    {
+      "cell": 4,
+      "block": 3,
+      "dimension": 2916
+    },
+    {
+      "cell": 4,
+      "block": 4,
+      "dimension": 3600
+    },
+    {
+      "cell": 8,
+      "block": 1,
+      "dimension": 144
+    },
+    {
+      "cell": 8,
+      "block": 2,
+      "dimension": 324
+    },
+    {
+      "cell": 8,
+      "block": 3,
+      "dimension": 324
+    },
+    {
+      "cell": 8,
+      "block": 4,
+      "dimension": 144
+    },
+    {
+      "cell": 16,
+      "block": 1,
+      "dimension": 36
+    },
+    {
+      "cell": 16,
+      "block": 2,
+      "dimension": 36
+    }
+  ],
+  "trainingFlow": "2 epochs on synthetic uint8 RGB images; no CIFAR-10 download or accuracy reproduction",
+  "checks": [
+    "Real OpenCV descriptors match all 14 lecture dimensions",
+    "PyTorch forward/backward and Adam execute",
+    "Best validation checkpoint, scaler and confusion outputs exist",
+    "Original lecture SHA256 and 36-page PDF archive match",
+    "No quiz or self-test in lecture fragments"
+  ],
+  "versions": {
+    "python": "3.11.13",
+    "torch": "2.8.0+cu129",
+    "torchvision": "0.23.0+cu129",
+    "opencv": "4.14.0",
+    "numpy": "2.3.5"
+  }
+}

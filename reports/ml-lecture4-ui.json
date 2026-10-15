@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "browser": "Codex in-app browser",
+  "checks": [
+    "Lecture 4 uses the Study Space theme, sidebar, outline and course breadcrumb",
+    "All 14 valid HOG combinations match the PPT table; 2 oversized blocks are rejected",
+    "LBP p0 toggle changes 166 to 167",
+    "No quiz grading controls or self-test section in lecture 4",
+    "390px viewport has no whole-page horizontal overflow",
+    "No observed MathJax error nodes",
+    "Library query for lecture 4 shows the original 36-slide PPT and the Python reference code",
+    "Reference code reader contains the full script and the expected download link"
+  ],
+  "sourceReview": "https://chatgpt.com/c/6ad0c9d9-9644-83e8-9d73-fd202adc1c7c",
+  "limits": "PPT content was reviewed in the previous browser collaboration round. The code was smoke-tested with synthetic images; CIFAR-10 accuracy was not reproduced."
+}

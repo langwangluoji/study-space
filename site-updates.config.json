@@ -1,5 +1,22 @@
 [
   {
+    "id": "ml-lecture4-20261015",
+    "date": "2026-10-15",
+    "category": "课程内容",
+    "title": "机器学习新增第四讲：手工图像特征与 MLP",
+    "summary": "接入基函数、五类手工图像特征、HOG 维数交互及 CIFAR-10 作业指导；原 PPT、PDF 预览与参考代码集中到资料库。",
+    "links": [
+      {
+        "label": "阅读第四讲",
+        "url": "/lecture-4.html"
+      },
+      {
+        "label": "第四讲资料",
+        "url": "/resources.html?course=ml&q=第四讲"
+      }
+    ]
+  },
+  {
     "id": "photogrammetry-bilingual-20261015",
     "date": "2026-10-15",
     "category": "课程内容",

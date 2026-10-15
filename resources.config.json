@@ -313,7 +313,18 @@
     "archiveId": "slide-4",
     "reader": "archive",
     "preview": "/material-slide-4.html",
-    "description": "36幻灯片，提供原PPTX及36页PDF预览。原课程课件；原资料的章节与作业安排按原件阅读。原资料范围可能超出已整理讲义。"
+    "description": "36 幻灯片，保留原 PPTX 与 36 页 PDF 预览。配合第四讲基函数、GLCM、Gabor、LBP、Haar、HOG 与 MLP 讲义及平时作业 1 阅读。"
+  },
+  {
+    "id": "cifar10-hog-mlp",
+    "title": "第四讲 · CIFAR-10 HOG + MLP 参考代码",
+    "course": "ml",
+    "type": "代码",
+    "author": "Study Space · 据第四讲课件整理",
+    "description": "OpenCV 提取 HOG，PyTorch 训练 MLP；包含固定训练/验证划分、训练集标准化与混淆矩阵。学习补充，非课件 57.4% 的完整复现。",
+    "preview": "/read-downloads-cifar10_hog_mlp.html",
+    "file": "/downloads/cifar10_hog_mlp.py",
+    "format": "PY"
   },
   {
     "id": "slide-5",
