@@ -1,6 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
 const {chromium}=require('playwright');
 const config=JSON.parse(fs.readFileSync('traffic.config.json','utf8'));
+const courseUpdateIds=JSON.parse(fs.readFileSync('site-updates.config.json','utf8')).filter(entry=>entry.category==='课程内容').map(entry=>'update-'+entry.id);
 const root=path.resolve('docs/.vitepress/dist'),origin=config.origin,base=origin+config.base;
 const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2'};
 const fixture={version:1,startDate:config.startDate,timeZone:config.timeZone,endpoint:config.endpoint,activation:null,updatedAt:'2026-10-20T03:00:00Z',days:Array.from({length:7},(_,i)=>({date:'2026-10-'+(14+i),pv:i===6?3:2,uv:1,complete:i<6,observedAt:'2026-10-20T03:00:00Z'})),errors:[]};
@@ -52,7 +53,7 @@ async function run(){
  phase='gap';await page.getByRole('button',{name:'重新读取',exact:true}).click();await page.waitForFunction(()=>document.querySelector('[data-stat=total]')?.textContent==='—');assert.equal(await page.locator('[data-date="2026-10-16"]').getAttribute('data-level'),'unknown');assert.equal(await page.locator('.chart-line').count(),2);checks.push('Missing historical day stays unknown and breaks the trend; total is withheld');
  for(const state of ['counter-error','counter-malformed','counter-reset','history-error']){phase=state;await page.getByRole('button',{name:'重新读取',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.traffic-status button')?.disabled===false);assert.equal(await page.locator('[data-stat=total]').innerText(),'—');assert((await page.locator('.traffic-status').innerText()).includes('不可用'));}checks.push('429, malformed response, counter regression and history failure preserve data and expose state');
  phase='counter-reset';await page.reload({waitUntil:'networkidle'});await page.waitForFunction(()=>document.querySelector('.traffic-status')?.textContent.includes('计数回退'));assert.equal(await page.locator('[data-stat=total]').innerText(),'—');assert.equal(await page.locator('[data-stat=today]').innerText(),'—');assert((await page.locator('.traffic-day-detail').innerText()).includes('3 次页面访问'));checks.push('Fresh-page counter reset is compared with the saved day; lower values never replace the historical graph');
- phase='complete';await page.goto(base+'updates.html',{waitUntil:'networkidle'});await page.getByRole('button',{name:'课程内容',exact:true}).click();assert.equal(await page.locator('.updates-list>li').count(),2);checks.push('Content-update category filter includes the actual InSAR and geodesy releases');
+ phase='complete';await page.goto(base+'updates.html',{waitUntil:'networkidle'});await page.getByRole('button',{name:'课程内容',exact:true}).click();assert.deepEqual(await page.locator('.updates-list>li').evaluateAll(nodes=>nodes.map(node=>node.id)),courseUpdateIds);checks.push('Content-update category filter matches every configured course release in order');
  // Simulate a human browser entirely on intercepted fixture routes.
  await page.addInitScript(()=>Object.defineProperty(navigator,'webdriver',{get:()=>false}));
  await page.goto(base,{waitUntil:'networkidle'});await page.waitForFunction(()=>localStorage.getItem('study-space-counter-identity')==='test-anonymous-identity');assert.equal(posts,1);const firstUV=liveUV;
@@ -63,3 +64,4 @@ async function run(){
  }finally{await browser.close()}
 }
 run().catch(e=>{console.error(e);process.exitCode=1});
+
