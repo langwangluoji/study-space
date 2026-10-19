@@ -13,6 +13,30 @@ title: NW 第3章 Line Search Methods
 
 ## 3.1 Step length：不要求一维最优，但要求合理
 
+<!-- continuous-optimization-v1 -->
+### 先把一次试步做完，再读收敛定理 {#positioning-linesearch}
+
+沿上一章的自由目标，从 $z_0=(0,0)$、$g_0=(-2,-4)$ 出发，固定方向 $p_0=(2,4)$。只改变步长 $\alpha$：
+
+$$
+\phi(\alpha)=q(z_0+\alpha p_0)=4-20\alpha+34\alpha^2,\quad \phi'(\alpha)=-20+68\alpha.
+$$
+
+完整步 $\alpha=1$ 给代价18，不能接受。若Armijo常数 $c_1=.1$，充分下降要求
+
+$$
+4-20\alpha+34\alpha^2\le4-2\alpha\iff0<\alpha\le9/17.
+$$
+
+从1开始回溯减半：1失败，.5通过，新代价2.5。它不是沿线的最优点；精确线搜索令 $\phi'=0$，得到 $\alpha=5/17\approx.29412$。算法没必要每次都精确求这个一维最小值，但必须让被接受的一步有可解释的进展。
+
+再加 $c_2=.9$：弱Wolfe曲率要求 $-20+68\alpha\ge-18$，即 $\alpha\ge1/34$。它排除太短的步，却允许正斜率；strong Wolfe的 $|\phi'|\le18$ 进一步给 $\alpha\le19/34$。真正接受区间必须再与Armijo区间相交，不能只看曲率一条。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=line" title="同一方向上的试探、拒绝与回溯" />
+
+现在再把这次计算抽象成下面的一般Wolfe规则。3.2解释为什么长期进展还需要方向与负梯度之间的角度条件；3.3谈局部速度；3.4–3.5处理方向修正与具体搜索实现。一个算例通过接受规则，不是对所有目标收敛的证明。
+
+
 **Exact line search 精确线搜索**寻找射线上的最优步长。它可能需要很多次函数求值；一维求得极精确，也不意味着整体迭代最有效。**Inexact line search 非精确线搜索**只要求步长满足能支撑进展和理论的条件。这种“不必过度精确”的原则会在第7章再次出现。
 
 ### The Wolfe conditions：下降够多，也别停太早

@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 80,
+  "parts": 67,
+  "source": "Original PhotoMath comparison, camera/geometry origin equality, visible-field clipping, stereo precision and known numeric examples"
+}

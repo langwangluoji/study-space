@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": {
+    "lectures": 35,
+    "supportPages": [
+      "course-optimization.md",
+      "optimization-reading.md",
+      "optimization-sources.md"
+    ],
+    "revision": "review-optimization.md",
+    "mechanism": "one 53-solid XY servo bench, 48 solids with wall removed",
+    "interactiveModes": 16
+  },
+  "verification": {
+    "modelNumerics": 59,
+    "existingOptimizationCheck": 624,
+    "originalChapterPreservation": "35 H2 sequences and all original passages retained in order",
+    "geometry": "10 actual poses, true shapes; actual browser assembly order with fixed-reference transforms audited, every failure category zero",
+    "lineEnds": "light KKT, dark line, light energy: 0/166 floating ends",
+    "browser": "all 16 mode endpoint controls finite; pointer, keyboard, reset/step, 390px light/dark no overflow; browser console clean",
+    "reducedMotion": "frame=0, exact display point after interactions",
+    "offscreen": "visible=false and frame=0",
+    "animationDOM": "MutationObserver: zero stage childList replacements during animation; only part transforms and needle d updated",
+    "screenshots": "desktop, 390px phone, both themes and 4x mechanism closeups visually opened"
+  },
+  "truthBoundaries": [
+    "Single example and sampled geometry poses do not prove general theorems or the entire continuum of poses.",
+    "Main SVG is a controller-driven calibration bench; active servos implement stated forces/positions; easing is not a natural optimization method.",
+    "Metrics are explicitly target values; lower card readout shows current eased stage coordinates.",
+    "Generic clamped point plot removed. Only actual line function and design-direction plots remain.",
+    "One shared mechanism supports 16 mathematical teaching modes; it is not 16 separately built physical instruments.",
+    "Old textbook source hashes are disclosed as historical; root may regenerate them when integration is final."
+  ],
+  "evidence": [
+    "geometry-audit.json",
+    "runtime-order-final.txt",
+    "source-preservation.json",
+    "all-modes-ui.txt",
+    "animation-ui.txt",
+    "final-ui-light.txt",
+    "final-ui-dark.txt",
+    "optimization-check.txt"
+  ]
+}

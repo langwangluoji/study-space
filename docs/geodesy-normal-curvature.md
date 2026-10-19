@@ -5,6 +5,10 @@ next: {"text": "曲面度量 弧长与面积", "link": "/geodesy-metric"}
 
 # 法曲率与方向曲率
 
+<!-- earth-reading-task -->
+不改变P，只把出发方向从北转向东。我们要得到任意方位A的局部半径，而不是再定义一批互不相干的圆。先用投影找N，再由两个主方向得到RA；第二种坐标证明留作独立核对。
+<!-- /earth-reading-task -->
+
 同一曲面上的点可以沿很多方向离开。曲线本身如何弯曲，和曲面沿这个切向如何弯曲，既相关又不同。Meusnier 定理先把这两种曲率联系起来，Euler 公式再说明任意方向的法曲率如何由两个主方向决定。
 
 对应椭球讲义文件页 41–50，包括插入的 Meusnier 与 Euler 证明。为让凸椭球的曲率半径取正值，本专题选择**内法线** $\boldsymbol\nu=-\mathbf e_U$。若改用外法线，有符号法曲率反号，但几何曲率半径的正值不变。
@@ -61,6 +65,14 @@ $$
 包含曲面法线和该切向的平面称为法截面，其交线为法截线。在凸椭球上按内法线约定，法截线主法线与 $\boldsymbol\nu$ 相同，故法截线曲率就是 $k_n>0$。其他具有同一切向的曲线满足 $\kappa=k_n/\cos\theta$。这是 Meusnier 定理在这里的表达；主法线不存在或投影为零时，应使用前面的点积定义，不能无条件除以 $\cos\theta$。
 
 ## 从平行圈推导卯酉曲率半径
+
+<!-- anatomy-G3 -->
+把圆规压在同一个点上，先沿北向，再转到东向。接触得上的圆为什么需要换半径？
+
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=curvature" title="曲率规为什么必须转一个方向？" />
+
+仪器给出两个主方向的半径，但平行圈圆心不在法线上。下面用曲率的法向投影解释N从哪里来。
+<!-- /anatomy-G3 -->
 
 <SourceFigure src="/geodesy/figures/normal-sections.png" alt="子午法截面与卯酉法截面" source="1椭球面数学性质   课程讲义.pdf" page="41" printed="32" note="图中P是接触点，PT是子午切线，Pn是椭球法线；图内小写n标记法线延伸，不表示本文的单位向量。" />
 

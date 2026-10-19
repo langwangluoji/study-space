@@ -1,0 +1,38 @@
+[
+  {
+    "source": "scripts\\anatomy\\earth-observation\\catalog.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\earth-observation\\catalog.mjs",
+    "sha256": "be070767fcbdb8d054236385d84e19a1d1e78c0850ef139c993574c491813aac",
+    "match": true
+  },
+  {
+    "source": "scripts\\anatomy\\earth-observation\\english.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\earth-observation\\english.mjs",
+    "sha256": "4e15969fbace8a16900c22ff7e94833008426f31ba92bc460e4ca69ee035fb62",
+    "match": true
+  },
+  {
+    "source": "scripts\\anatomy\\earth-observation\\model.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\earth-observation\\model.mjs",
+    "sha256": "278d3d76f7c2582f252b6414cc09b5720f51171b4653668fe4380f6af732962d",
+    "match": true
+  },
+  {
+    "source": "scripts\\anatomy\\earth-observation\\runtime.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\earth-observation\\runtime.mjs",
+    "sha256": "118a05518c84bb764d6f7013645c9218379219f55108159d32517a0567d98b96",
+    "match": true
+  },
+  {
+    "source": "scripts\\anatomy\\earth-observation\\scene.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\earth-observation\\scene.mjs",
+    "sha256": "1b9445887372da047431f835ff8238166140be2cea2548524c6ec529613db3d2",
+    "match": true
+  },
+  {
+    "source": "scripts\\anatomy\\kit\\audit.mjs",
+    "public": "public\\anatomy\\earth-observation\\runtime\\kit\\audit.mjs",
+    "sha256": "c913414dd5359bf080d508b3b19d61d6c2d2ca8bc7f5729146d2b8b080832266",
+    "match": true
+  }
+]

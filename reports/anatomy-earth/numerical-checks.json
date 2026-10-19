@@ -1,0 +1,313 @@
+[
+  {
+    "name": "reduced latitude WGS84 45",
+    "actual": 44.90378784942022,
+    "expected": 44.9037878494,
+    "tolerance": 1e-10,
+    "pass": true
+  },
+  {
+    "name": "surface geocentric latitude",
+    "actual": 44.80757678401803,
+    "expected": 44.807576784,
+    "tolerance": 1e-10,
+    "pass": true
+  },
+  {
+    "name": "height-space latitude uses XYZ",
+    "actual": 44.81055201682762,
+    "expected": 44.81055201682762,
+    "tolerance": 1e-12,
+    "pass": true
+  },
+  {
+    "name": "north normal radius",
+    "actual": 6367381.815619547,
+    "expected": 6367381.815619548,
+    "tolerance": 1e-8,
+    "pass": true
+  },
+  {
+    "name": "east normal radius",
+    "actual": 6388838.290121147,
+    "expected": 6388838.290121148,
+    "tolerance": 1e-8,
+    "pass": true
+  },
+  {
+    "name": "height meridian scale",
+    "actual": 1.7453292519785464,
+    "expected": 1.7453292519943295,
+    "tolerance": 1e-10,
+    "pass": true
+  },
+  {
+    "name": "passive 90 y",
+    "actual": -1,
+    "expected": -1,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "active 90 y",
+    "actual": 1,
+    "expected": 1,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "reference-plane chord",
+    "actual": 999.9843041233069,
+    "expected": 999.9843041236026,
+    "tolerance": 1e-7,
+    "pass": true
+  },
+  {
+    "name": "chord arc micrometres",
+    "actual": 1.0264861884934362,
+    "expected": 1.02648,
+    "tolerance": 0.003,
+    "pass": true
+  },
+  {
+    "name": "sphere east equator",
+    "actual": 90,
+    "expected": 90,
+    "tolerance": 1e-12,
+    "pass": true
+  },
+  {
+    "name": "midpoint exact versus O(S2)",
+    "actual": 2.1776085379343613e-9,
+    "expected": 2.177608509725879e-9,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "Planck 10um 300K",
+    "actual": 9.924033330070701,
+    "expected": 9.9240333300707,
+    "tolerance": 1e-9,
+    "pass": true
+  },
+  {
+    "name": "emission brightness temperature",
+    "actual": 293.6005656874939,
+    "expected": 293.6005657,
+    "tolerance": 1e-7,
+    "pass": true
+  },
+  {
+    "name": "circular orbit 700km",
+    "actual": 98.62363058735733,
+    "expected": 98.6236306,
+    "tolerance": 1e-7,
+    "pass": true
+  },
+  {
+    "name": "IFOV radians",
+    "actual": 0.01,
+    "expected": 0.01,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "phase 1mm",
+    "actual": 0.22642109215061573,
+    "expected": 0.2264210921506157,
+    "tolerance": 1e-14,
+    "pass": true
+  },
+  {
+    "name": "phase wrap half wavelength",
+    "actual": -2.4492935982947064e-16,
+    "expected": 0,
+    "tolerance": 1e-14,
+    "pass": true
+  },
+  {
+    "name": "power depth half amplitude depth",
+    "actual": 0.03955204618318895,
+    "expected": 0.03955204618318895,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "surface return",
+    "actual": 1,
+    "expected": 1,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "chirp BT",
+    "actual": 200,
+    "expected": 200,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "matched filter zero lag",
+    "actual": 1,
+    "expected": 1,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "finite correlation support",
+    "actual": 0,
+    "expected": 0,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "20 MHz range resolution",
+    "actual": 7.49481145,
+    "expected": 7.49481145,
+    "tolerance": 1e-10,
+    "pass": true
+  },
+  {
+    "name": "Doppler at closest approach",
+    "actual": 0,
+    "expected": 0,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "symmetric aperture range",
+    "actual": 1000.7996802557444,
+    "expected": 1000.7996802557444,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "terrain jacobian",
+    "actual": 0.25881904510252074,
+    "expected": 0.25881904510252074,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "layover signed omega",
+    "actual": -10,
+    "expected": -10,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "physical incidence nonnegative",
+    "actual": 10,
+    "expected": 10,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "finite 32-scatterer variance 16 looks",
+    "actual": 0.060546875,
+    "expected": 0.060546875,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "fully-developed speckle limit",
+    "actual": 0.0625,
+    "expected": 0.0625,
+    "tolerance": 1e-15,
+    "pass": true
+  },
+  {
+    "name": "N=1 coherence bias",
+    "actual": 1.0000000000000002,
+    "expected": 1,
+    "tolerance": 1e-14,
+    "pass": true
+  },
+  {
+    "name": "identical coherence",
+    "actual": 1,
+    "expected": 1,
+    "tolerance": 1e-14,
+    "pass": true
+  },
+  {
+    "name": "frame all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "latitude all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "curvature all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "metric all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "geodesic all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "reduction all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "midpoint all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "energy all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "radiometry all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "thermal all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "reflectance all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "orbit all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "scanner all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "phase all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "penetration all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "chirp all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "aperture all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "terrain all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "speckle all control extremes finite",
+    "pass": true
+  },
+  {
+    "name": "coherence all control extremes finite",
+    "pass": true
+  }
+]

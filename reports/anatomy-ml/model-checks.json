@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "count": 114,
+  "painterStates": 120,
+  "checks": [
+    "calibration residuals, independent central differences and one update",
+    "Fisher normalized projection and within scatter",
+    "ReLU zero kink",
+    "HOG dimensions and legal positions"
+  ]
+}

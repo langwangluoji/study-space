@@ -107,7 +107,7 @@
     "Missing historical day stays unknown and breaks the trend; total is withheld",
     "429, malformed response, counter regression and history failure preserve data and expose state",
     "Fresh-page counter reset is compared with the saved day; lower values never replace the historical graph",
-    "Content-update category filter includes the actual InSAR and geodesy releases",
+    "Content-update category filter matches every configured course release in order",
     "First load, SPA path and refresh count once; hash/query/read retry do not; anonymous identity persists"
   ],
   "runtimeErrors": []

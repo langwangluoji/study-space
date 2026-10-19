@@ -3,12 +3,12 @@
   "checks": [
     {
       "quantity": "Lambertian angular integral",
-      "value": 3.141592653589793,
+      "value": 3.1415926535897825,
       "expected": 3.141592653589793
     },
     {
       "quantity": "Planck integral vs Stefan-Boltzmann constant",
-      "computed": 5.6703744191856106e-08,
+      "computed": 5.670374419185498e-08,
       "reference": 5.670374419e-08
     },
     {

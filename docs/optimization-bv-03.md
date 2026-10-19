@@ -10,6 +10,36 @@ pageClass: optimization-lecture
 
 ## 3.1 Basic properties and examples · 定义、判据与例子
 
+<!-- continuous-optimization-v1 -->
+### 给同一位置装上代价，而不是换一个问题 {#positioning-energy}
+
+沿用 $z=(x,y)$ 和 $x+y\le2$。两轴的自由平衡位置是 $(2,1)$，理想刚度分别为1和4。校准台由伺服执行器模拟下面的弹性势能，忽略摩擦、间隙与非线性材料效应：
+
+$$
+q(z)=\frac12[(x-2)^2+4(y-1)^2].
+$$
+
+从平衡位置只把 $x$ 移动1，代价增加 $1/2$；只把 $y$ 移动1，代价增加2。于是“同样远”不等于“同样贵”。逐个求导得到
+
+$$
+\nabla q=(x-2,4(y-1))^T,\qquad H=\nabla^2q=\begin{bmatrix}1&0\\0&4\end{bmatrix}.
+$$
+
+任意非零位移 $v$ 都有 $v^THv=v_x^2+4v_y^2>0$。所以 $q$ 严格凸：在凸可行集上若存在最优点，它至多一个。这个例子还可独立保证存在，因为当 $\|z\|\to\infty$ 时 $q(z)\to\infty$，而可行半空间闭且非空。不要把这两步合并成“严格凸就一定有解”。
+
+再直接算一次弦与函数值的差。任意 $a,b$ 及 $0\le t\le1$ 满足
+
+$$
+ (1-t)q(a)+tq(b)-q((1-t)a+tb)=\tfrac12t(1-t)(a-b)^TH(a-b)\ge0.
+$$
+
+它同时说明定义、Hessian判据与图形弦之间的关系。这里选二次函数是为了精确展开；一般函数仍需本节写出的开凸域、可微性等条件。反向例 $x^4$ 提醒：严格凸不要求Hessian每处正定。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=energy" title="刚度、梯度与曲率来自同一个能量模型" />
+
+先用3.1和3.2读懂这一个目标。共轭、准凸、对数凸凹与锥凸分别回答新的问题，保留在本章后续小节便于回查，不必在找到定位解之前同时记住全部函数家族。
+
+
 凸函数首先需要凸定义域，随后满足
 
 $$

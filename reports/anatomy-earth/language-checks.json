@@ -1,0 +1,154 @@
+[
+  {
+    "mode": "energy",
+    "lang": "en",
+    "title": "An energy budget for the same field",
+    "labels": [
+      "Incident power / W",
+      "Reflectance ρ",
+      "Transmitted share of the remaining energy"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "radiometry",
+    "lang": "en",
+    "title": "Rotate the receiving aperture",
+    "labels": [
+      "Angle θ between normal and viewing direction / °",
+      "Radiance L / W m⁻² sr⁻¹"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "thermal",
+    "lang": "en",
+    "title": "A thermal source and brightness temperature",
+    "labels": [
+      "Temperature T / K",
+      "Wavelength λ / μm",
+      "Emissivity ε"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "reflectance",
+    "lang": "en",
+    "title": "Illumination and viewing directions",
+    "labels": [
+      "Solar zenith angle / °",
+      "Viewing zenith angle / °",
+      "Lambertian reflectance ρ"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "orbit",
+    "lang": "en",
+    "title": "An orbit and an observation opportunity",
+    "labels": [
+      "Orbital height / km",
+      "Orbital phase / °"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "scanner",
+    "lang": "en",
+    "title": "Along-track sampling and instantaneous field of view",
+    "labels": [
+      "Height H / km",
+      "Detector width d / mm",
+      "Focal length f / mm",
+      "Sampling interval Δt / s"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "terrain",
+    "lang": "en",
+    "title": "The same slope in slant-range coordinates",
+    "labels": [
+      "Incidence angle θ / °",
+      "Foreslope α / °",
+      "Backslope β / °"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "energy",
+    "lang": "both",
+    "title": "同一田块的能量账本 / An energy budget for the same field",
+    "labels": [
+      "入射功率 / W / Incident power / W",
+      "反射率 ρ / Reflectance ρ",
+      "透射份额：剩余能量的比例 / Transmitted share of the remaining energy"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "radiometry",
+    "lang": "both",
+    "title": "转动接收孔径 / Rotate the receiving aperture",
+    "labels": [
+      "面法线与视线夹角 θ / ° / Angle θ between normal and viewing direction / °",
+      "辐亮度 L / W m⁻² sr⁻¹ / Radiance L / W m⁻² sr⁻¹"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "thermal",
+    "lang": "both",
+    "title": "热源、谱带与亮温 / A thermal source and brightness temperature",
+    "labels": [
+      "温度 T / K / Temperature T / K",
+      "波长 λ / μm / Wavelength λ / μm",
+      "发射率 ε / Emissivity ε"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "reflectance",
+    "lang": "both",
+    "title": "光源方向与观测方向 / Illumination and viewing directions",
+    "labels": [
+      "入射天顶角 / ° / Solar zenith angle / °",
+      "观测天顶角 / ° / Viewing zenith angle / °",
+      "Lambert 反射率 ρ / Lambertian reflectance ρ"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "orbit",
+    "lang": "both",
+    "title": "轨道一圈与观测机会 / An orbit and an observation opportunity",
+    "labels": [
+      "轨道高度 / km / Orbital height / km",
+      "轨道相位 / ° / Orbital phase / °"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "scanner",
+    "lang": "both",
+    "title": "沿轨采样与瞬时视场 / Along-track sampling and instantaneous field of view",
+    "labels": [
+      "高度 H / km / Height H / km",
+      "探元宽 d / mm / Detector width d / mm",
+      "焦距 f / mm / Focal length f / mm",
+      "采样间隔 Δt / s / Sampling interval Δt / s"
+    ],
+    "pass": true
+  },
+  {
+    "mode": "terrain",
+    "lang": "both",
+    "title": "同一坡面进入斜距坐标 / The same slope in slant-range coordinates",
+    "labels": [
+      "入射角 θ / ° / Incidence angle θ / °",
+      "迎坡坡角 α / ° / Foreslope α / °",
+      "背坡坡角 β / ° / Backslope β / °"
+    ],
+    "pass": true
+  }
+]

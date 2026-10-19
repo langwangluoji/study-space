@@ -52,5 +52,23 @@
     "sha256": "ca75dace819309b76645fb1e15bd2119448447aa4658ec568b9a230021603659",
     "publicFullPdf": false,
     "reader": "/photogrammetry-material-slides3.html"
+  },
+  {
+    "id": "photo-slides2",
+    "filename": "chapter2-2026.pdf",
+    "pages": 104,
+    "bytes": 3397329,
+    "sha256": "ec70ce67ca0f417847e6c6eeb12fb4e47bb3db1a8e01adeddba727d4a39ce9b9",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-slides2.html"
+  },
+  {
+    "id": "photo-pan",
+    "filename": "摄影测量学(第三版) (潘励).pdf",
+    "pages": 390,
+    "bytes": 43739283,
+    "sha256": "82057363c6fd983513f9eaf8743da5e645dc79745661113e9452d88ae6f1e35d",
+    "publicFullPdf": false,
+    "reader": "/photogrammetry-material-pan.html"
   }
 ]

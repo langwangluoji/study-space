@@ -1,11 +1,177 @@
 {
   "status": "pass",
-  "startedAt": "2026-10-14T00:44:49.648Z",
+  "startedAt": "2026-10-19T16:28:48.306Z",
   "root": "docs\\.vitepress\\dist",
   "storage": "materials\\storage",
   "catalogPath": "public\\materials\\catalog.json",
   "networkMode": "raw GitHub parts mapped to immutable local files",
   "cases": [
+    {
+      "name": "geo-s7 new geodesy PDF first middle last and original download",
+      "status": "pass",
+      "id": "geo-s7",
+      "first": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1139,
+        "samples": 9282,
+        "textSpans": 3,
+        "displayedPage": "1",
+        "status": "第 1 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "middle": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1628,
+        "samples": 9282,
+        "textSpans": 510,
+        "displayedPage": "6",
+        "status": "第 6 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "last": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1079,
+        "samples": 9282,
+        "textSpans": 30,
+        "displayedPage": "11",
+        "status": "第 11 / 11 页",
+        "total": 11,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "originalSHA256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f",
+      "filename": "2大地线 （测地线 ）.pdf",
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/geodesy/materials/S7-geodesics.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "geo-s8 new geodesy PDF first middle last and original download",
+      "status": "pass",
+      "id": "geo-s8",
+      "first": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1137,
+        "samples": 9282,
+        "textSpans": 3,
+        "displayedPage": "1",
+        "status": "第 1 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "middle": {
+        "width": 362,
+        "height": 190,
+        "nonwhite": 1375,
+        "samples": 8645,
+        "textSpans": 502,
+        "displayedPage": "14",
+        "status": "第 14 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "last": {
+        "width": 362,
+        "height": 203,
+        "nonwhite": 1419,
+        "samples": 9282,
+        "textSpans": 134,
+        "displayedPage": "28",
+        "status": "第 28 / 28 页",
+        "total": 28,
+        "documentWidth": 390,
+        "viewport": 390,
+        "paperWidth": 390,
+        "canvasCSSWidth": 362,
+        "paperScrollWidth": 390
+      },
+      "originalSHA256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99",
+      "filename": "3椭球面上大地坐标的计算(1).pdf",
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/geodesy/materials/S8-coordinate-computation-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:54247/study-space/geodesy/materials/S8-coordinate-computation-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
     {
       "name": "ML PPT first/last page and desktop zoom",
       "status": "pass",
@@ -91,7 +257,13 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62000/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:54247/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:54247/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -99,8 +271,8 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -162,7 +334,19 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62000/study-space/slides/lecture-1.pdf",
+            "url": "http://127.0.0.1:54247/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:54247/study-space/slides/lecture-1.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "http://127.0.0.1:54247/study-space/slides/lecture-1.pdf",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": false
@@ -170,8 +354,8 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -240,8 +424,8 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -346,8 +530,8 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -471,8 +655,78 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RS legacy links follow configured access and anonymous public copy",
+      "status": "pass",
+      "first": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 692,
+        "samples": 8930,
+        "textSpans": 158,
+        "displayedPage": "1",
+        "status": "第 1 / 6 页",
+        "total": 6,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "last": {
+        "width": 1224,
+        "height": 1584,
+        "nonwhite": 442,
+        "samples": 8930,
+        "textSpans": 130,
+        "displayedPage": "6",
+        "status": "第 6 / 6 页",
+        "total": 6,
+        "documentWidth": 1280,
+        "viewport": 1280,
+        "paperWidth": 1280,
+        "canvasCSSWidth": 1224,
+        "paperScrollWidth": 1280
+      },
+      "publicCopyBytes": 251599,
+      "publicCopySha256": "743ddce248dca9fcb0625c5dde462a7b17de18fccb01f72584a7e66da31d0a18",
+      "legacyDownloadStatuses": [
+        {
+          "id": "rs-gaofen",
+          "status": 200
+        }
+      ],
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/remote-sensing/materials/rs-gaofen.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -539,8 +793,8 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -552,10 +806,10 @@
       "status": "pass",
       "stage": "waiting-parent-hashchange-page200",
       "embedDiagnostics": {
-        "parentURL": "http://127.0.0.1:62000/study-space/book-leedl.html#page=200",
+        "parentURL": "http://127.0.0.1:54247/study-space/book-leedl.html#page=200",
         "parentHash": "#page=200",
         "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
-        "frameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
+        "frameURL": "http://127.0.0.1:54247/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
         "frameHash": "#page=200",
         "pageInput": "200",
         "status": "第 200 / 326 页",
@@ -585,7 +839,7 @@
         "documentWidth": 1280,
         "viewport": 1280
       },
-      "firstFrameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=163",
+      "firstFrameURL": "http://127.0.0.1:54247/study-space/material-viewer/index.html?id=leedl&theme=light#page=163",
       "afterParentHashChange": {
         "width": 594,
         "height": 840,
@@ -602,10 +856,10 @@
         "paperScrollWidth": 622
       },
       "synchronized": {
-        "parentURL": "http://127.0.0.1:62000/study-space/book-leedl.html#page=200",
+        "parentURL": "http://127.0.0.1:54247/study-space/book-leedl.html#page=200",
         "iframeSrc": "/study-space/material-viewer/index.html?id=leedl&theme=light#page=200"
       },
-      "frameURL": "http://127.0.0.1:62000/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
+      "frameURL": "http://127.0.0.1:54247/study-space/material-viewer/index.html?id=leedl&theme=light#page=200",
       "parentLoadObserved": true,
       "readyCondition": "parent DOMContentLoaded then iframe page163 render; parent hashchange then iframe page200 render",
       "network": {
@@ -639,8 +893,8 @@
         "failedRequests": [],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -700,17 +954,24 @@
         "consoleErrors": [
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/1865e17fc5653819cd9ce470a22f937a3b8005514f34e1659127c35c4c7ddf74/00000.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -748,31 +1009,31 @@
       },
       "statusTimeline": [
         {
-          "time": 36,
+          "time": 25.099999994039536,
           "stage": "initial",
           "status": "正在加载原资料…",
           "error": false
         },
         {
-          "time": 684.3999999985099,
+          "time": 415.29999999701977,
           "stage": "initial",
           "status": "正在载入第 163 页…",
           "error": false
         },
         {
-          "time": 1465.7999999970198,
+          "time": 882.5,
           "stage": "initial",
           "status": "第 163 / 326 页",
           "error": false
         },
         {
-          "time": 1540.8999999985099,
+          "time": 931.6999999955297,
           "stage": "initial",
           "status": "正在载入第 164 页…",
           "error": false
         },
         {
-          "time": 1739.5,
+          "time": 1075.3999999985099,
           "stage": "initial",
           "status": "第 164 / 326 页",
           "error": false
@@ -878,17 +1139,69 @@
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
           "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
         ],
-        "failedRequests": [],
+        "failedRequests": [
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00006.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          },
+          {
+            "url": "https://raw.githubusercontent.com/langwangluoji/study-space/cae2a208f535de60bea835dd4b7a806227642501/materials/storage/5b8d6d0ce9f41bee32940ecd36411884f8ff48a51cec61fad63adbcefce86286/00008.bin",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           },
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
+            "hasHashchangeListener": true,
+            "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Geodesy Word preview and original download with raw GitHub unavailable",
+      "status": "pass",
+      "id": "geo-s4",
+      "pages": 5,
+      "continuous": true,
+      "missingNativeEncoders": true,
+      "rawRequests": 0,
+      "originalSHA256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994",
+      "filename": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+      "diagnostics": {
+        "network": {
+          "requests": 0,
+          "requestedBytes": 0,
+          "uniqueBytes": 0,
+          "uniqueParts": 0,
+          "partUrls": []
+        },
+        "pageErrors": [],
+        "httpErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/geodesy/materials/S4-coordinate-rotation-preview.pdf",
+            "error": "net::ERR_ABORTED",
+            "serviceWorker": false,
+            "expectedDownloadNavigation": false
+          }
+        ],
+        "readerModules": [
+          {
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -970,7 +1283,7 @@
         "consoleErrors": [],
         "failedRequests": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+            "url": "http://127.0.0.1:54247/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
             "error": "net::ERR_ABORTED",
             "serviceWorker": false,
             "expectedDownloadNavigation": true
@@ -978,8 +1291,8 @@
         ],
         "readerModules": [
           {
-            "url": "http://127.0.0.1:62000/study-space/material-viewer/viewer.js",
-            "sha256": "7a6e82c6a9cf996e8424b8065b215df742d586de63c96ceb15bd0e8982482509",
+            "url": "http://127.0.0.1:54247/study-space/material-viewer/viewer.js",
+            "sha256": "4d92127c5d66b53bf61135b3c1d91ec96b1b03192e3f70356eca274a6d2cd0fc",
             "hasHashchangeListener": true,
             "retryHandler": "()=>{if(retryAction==='download')return downloadOriginal()"
           }
@@ -1047,12 +1360,12 @@
   "serverDownloadRequests": [],
   "selectedCasePattern": null,
   "optionalLocalInventoryChecked": false,
-  "catalogRecords": 43,
-  "partURLs": 163,
+  "catalogRecords": 45,
+  "partURLs": 161,
   "downloadDiagnostics": [
     {
       "id": "rs-english-summary",
-      "url": "http://127.0.0.1:62000/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
+      "url": "http://127.0.0.1:54247/study-space/material-download/rs-english-summary/2451561_Chatper1_summary.docx",
       "filename": "2451561_Chatper1_summary.docx",
       "worker": {
         "controller": true,
@@ -1062,7 +1375,7 @@
     },
     {
       "id": "slide-11",
-      "url": "http://127.0.0.1:62000/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
+      "url": "http://127.0.0.1:54247/study-space/material-download/slide-11/11-%E5%9B%BE%E5%83%8F%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B-3-Transformer%E7%B1%BB.pptx",
       "filename": "11-图像目标检测-3-Transformer类.pptx",
       "worker": {
         "controller": true,
@@ -1071,5 +1384,5 @@
       }
     }
   ],
-  "finishedAt": "2026-10-14T00:45:08.043Z"
+  "finishedAt": "2026-10-19T16:29:08.534Z"
 }

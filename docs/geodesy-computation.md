@@ -6,6 +6,12 @@ next: {"text":"地面方向与边长归算","link":"/geodesy-observation-reducti
 
 # 第四章 椭球面上大地坐标的计算
 
+<!-- earth-reading-task -->
+回到开头的山坡测量：先把仪器方向和空间斜距归算为椭球上的方向、弧长，再作大地主题正算，最后拿独立算法回验终点。
+
+**连续计算主路**：[观测归算](geodesy-observation-reduction.html) → [平均引数为什么出现](geodesy-gauss-derivation.html) → [正反算与回验](geodesy-gauss-solution.html)。[球面三角形](geodesy-spherical-triangles.html)服务于传统控制网角超与解算，是相关支路，并非Gauss正算所必需的一步。
+<!-- /earth-reading-task -->
+
 观测发生在地面仪器与目标之间，坐标计算却以参考椭球面为载体。两者之间需要先统一水平面、目标高度与路径，再解三角形或大地主题。
 
 | 专题 | 计算主线 |

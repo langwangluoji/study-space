@@ -1,10 +1,12 @@
 ---
 title: 第七单元 · 区域网与光束法
-prev: {text: 第六单元 · 交会与定向, link: /photogrammetry-orientation}
-next: {text: 第八单元 · 匹配、DEM 与正射, link: /photogrammetry-products}
+prev: false
+next: false
 ---
 
 # 第七单元 · 区域网与光束法
+
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-05.md#e5-8)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
 
 ## 为什么把影像一起调整
 

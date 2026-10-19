@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import './generate-practice-bundle.mjs';
 import path from 'node:path';
 import { generateCatalog } from './catalog.mjs';
 const root=process.cwd(), docs=path.join(root,'docs');
@@ -57,7 +58,7 @@ const cells=notebook.cells.map((c,i)=>{
   const source=(Array.isArray(c.source)?c.source.join(''):c.source).replaceAll('../cifar10-practice.html','cifar10-practice.html').replaceAll('](cifar10_mlp_tutorial.py)','](downloads/cifar10_mlp_tutorial.py)');
   return c.cell_type==='markdown'?normalizeMarkdown(source):`<details><summary>代码单元 ${i+1}</summary>\n\n### 代码单元 ${i+1} {#cell-${i+1}}\n\n\`\`\`python\n${source}\n\`\`\`\n\n</details>`;
 });
-fs.writeFileSync(path.join(docs,'read-notebook.md'),`# 逐步 Notebook 阅读版\n\n<a href="/study-space/${notebookFile}" download>下载 Notebook</a>。保留运行单元顺序；历史输出请查阅资料中心。\n\n`+cells.join('\n\n'));
+fs.writeFileSync(path.join(docs,'read-notebook.md'),`# 逐步 Notebook 阅读版\n\n<a href="/study-space/${notebookFile}" download>下载 Notebook 文件</a> · <a href="/study-space/downloads/CIFAR10_MLP_完整练习包.zip" download>下载完整可运行练习包（推荐）</a>。首次使用请解压完整练习包，它包含 Notebook 所需的 practice 模块与定位文件。只下载 Notebook 不能独立运行。保留运行单元顺序；历史输出请查阅资料中心。\n\n`+cells.join('\n\n'));
 fs.writeFileSync(path.join(docs,'read-README.md'),fs.readFileSync('README.md','utf8'));
 generateCatalog();
 console.log(`生成 ${course.length} 个整讲页面、${ids.size} 个知识点与 5 个来源阅读页。`);

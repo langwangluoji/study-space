@@ -6,11 +6,48 @@ next: {"text":"大地主题正算与反算","link":"/geodesy-gauss-solution"}
 
 # 高斯平均引数的推导
 
+<!-- earth-reading-task -->
+现在已有P处归算后的起始方向和弧长。计算想使用“中点”，但走完一半里程的位置不等于端点坐标的平均。本页先看这个差别，再用Taylor展开把它定量写出；三次项的系数正是为了修补这个差别。
+<!-- /earth-reading-task -->
+
 ## 正算与反算是同一条曲线的两种提问
 
 **大地主题正算**已知起点 $(B_1,L_1)$、起点前进方位角 $A_{12}$ 和大地线长度 $S$，求终点 $(B_2,L_2)$ 与反方位角 $A_{21}$。**反算**已知两个端点，求 $S,A_{12},A_{21}$。两者都采用指定参考椭球；若输入仍是地面观测，应先完成上一专题的归算。
 
 S8 文件页17把距离约分为短距离 $S\le120\,\mathrm{km}$、中距离 $120<S\le400\,\mathrm{km}$、长距离 $S>400\,\mathrm{km}$（端点归属在此采用不重叠约定），这是课程的传统方法分类。讲义实际推导的高斯平均引数公式给出约200km以内的教学适用范围，不能把分类中“中距离400km”直接当作该截断公式的精度保证。长距离贝塞尔公式仅被提及；完整解法可参考 [GeographicLib 大地线文档](https://geographiclib.sourceforge.io/html/python/geodesics.html)。
+
+<!-- midpoint-first -->
+## 为什么弧长中点展开更简洁
+
+<!-- anatomy-G7 -->
+把笔停在里程的一半，再把端点的纬度数字平均。两种“中点”真的会重合吗？
+
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=midpoint" title="曲线走到一半，不等于坐标平均" />
+
+不重合的量正是平均引数改正的来源。下面先看二阶偏移怎样进入三次项，再区分“迭代停止”和“路径近似足够准确”。
+<!-- /anatomy-G7 -->
+
+令弧长中点位于 $s=0$，两端位于 $\pm S/2$，其坐标记为 $q_M$。分别展开两端：
+
+$$
+q_2=q_M+\frac S2q'_M+\frac{S^2}{8}q''_M+\frac{S^3}{48}q'''_M+\cdots,
+$$
+$$
+q_1=q_M-\frac S2q'_M+\frac{S^2}{8}q''_M-\frac{S^3}{48}q'''_M+\cdots.
+$$
+
+相减时偶次项抵消，相加时奇次项抵消：
+
+$$
+\Delta q=S q'_M+\frac{S^3}{24}q'''_M+O(S^5),\qquad
+q_m=\frac{q_1+q_2}2=q_M+\frac{S^2}{8}q''_M+O(S^4).
+$$
+
+因此**弧长中点的坐标 $q_M$ 通常不等于端点坐标的算术平均 $q_m$**。高斯“平均引数”使用后者，必须处理二者差异。$O(S^k)$ 的系数包含相应的曲率半径倒数；在固定、光滑、远离极点的坐标域里理解该阶次，不意味着以米代入后能直接读出误差。
+
+<SourceFigure src="geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。" />
+
+<details><summary>求导工具：从起点展开，逐次求沿程导数</summary>
 
 ## 从起点展开：每一阶导数怎样获得
 
@@ -34,27 +71,7 @@ $$
 
 例如 $B''=\mathcal D f_B=(\partial_Bf_B)B'+(\partial_Af_B)A'$，再求一次得 $B'''=\mathcal D^2f_B$。这就是课件复合函数求导的系统表达；$L,A$ 的高阶导数同样获得，不必另引入猜测公式。
 
-## 为什么弧长中点展开更简洁
-
-令弧长中点位于 $s=0$，两端位于 $\pm S/2$，其坐标记为 $q_M$。分别展开两端：
-
-$$
-q_2=q_M+\frac S2q'_M+\frac{S^2}{8}q''_M+\frac{S^3}{48}q'''_M+\cdots,
-$$
-$$
-q_1=q_M-\frac S2q'_M+\frac{S^2}{8}q''_M-\frac{S^3}{48}q'''_M+\cdots.
-$$
-
-相减时偶次项抵消，相加时奇次项抵消：
-
-$$
-\Delta q=S q'_M+\frac{S^3}{24}q'''_M+O(S^5),\qquad
-q_m=\frac{q_1+q_2}2=q_M+\frac{S^2}{8}q''_M+O(S^4).
-$$
-
-因此**弧长中点的坐标 $q_M$ 通常不等于端点坐标的算术平均 $q_m$**。高斯“平均引数”使用后者，必须处理二者差异。$O(S^k)$ 的系数包含相应的曲率半径倒数；在固定、光滑、远离极点的坐标域里理解该阶次，不意味着以米代入后能直接读出误差。
-
-<SourceFigure src="geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。" />
+</details>
 
 ## 把中点引数换成端点均值
 

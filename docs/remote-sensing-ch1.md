@@ -11,6 +11,20 @@ next:
 
 # 第一章 遥感概述 · Introduction to Remote Sensing
 
+<!-- earth-reading-task -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+先固定田块，不改变材料。关掉外部照明后，哪些通道还应接收到信号？用这个预测分清反射、热发射与主动探测，再为同一次观测补齐平台、传感器、波段和时间。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Keep the field and its material fixed. If external illumination is removed, which channels should still receive a signal? Use that prediction to separate reflection, thermal emission and active probing, then describe the platform, sensor, band and time of the same observation.
+
+</div>
+<!-- /earth-reading-task -->
+
 <RsLanguage />
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
@@ -157,6 +171,34 @@ Sources: DOCX paragraphs 25–36; *第3章.pdf*, file pages 3–8; sensor compon
 </div>
 
 ## 1.3 不同分类维度与三种能量路径 · Classification dimensions and three energy paths {#rs1-energy-paths}
+
+<!-- anatomy-R1 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+先做一个可检验的判断：关掉太阳照明后，哪一路读数还应存在？观察光从哪个真实部件出发。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Turn off the external lamp first. Predict which measurement survives, then follow where its energy originates.
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=energy" title="这次测量的能量从哪里来？" title-en="An energy budget for the same field" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+分类现在来自能量路径，而不是卫星名字。下一章追踪进入接收镜头的量，到底是功率、辐照度还是辐亮度。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+A source classification follows the actual energy path. It does not follow a satellite name or guarantee weather independence.
+
+</div>
+<!-- /anatomy-R1 -->
 
 <RsFigure id="energy-balance" />
 

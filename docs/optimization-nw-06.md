@@ -13,6 +13,18 @@ title: NW 第6章 Quasi-Newton Methods
 
 ## 6.1 The BFGS method
 
+<!-- continuous-optimization-v1 -->
+### 一次测力变化，只补上一方向的信息 {#calibration-secant}
+
+在 $q$ 中固定 $y=1$，把 $x$ 从0移到.5。维持静态所需的外力即 $q_x=x-2$，从−2变成−1.5，因此位移 $s=.5$、梯度差 $y=.5$；一维割线刚度是 $B_{new}=y/s=1$。这里 $y$ 是梯度差的符号，不再是台面的第二坐标，请随上下文区分。
+
+若完整位移为 $s=(.5,0)$，则 $y=(.5,0)$。矩阵 $B=\operatorname{diag}(1,1)$ 与 $\operatorname{diag}(1,4)$ 都满足 $Bs=y$；一次沿x的观测并未识别第二方向刚度。于是割线方程只指定矩阵的一个作用，最小改变准则才负责选择余下自由度。
+
+先用这个事实读DFP/BFGS；然后再比较SR1为何允许不定。$s^Ty>0$ 与Wolfe线搜索有明确联系，不是只要有两个梯度就能安全套更新。含随机mini-batch时梯度差还混入采样变化，需要重新审查曲率解释。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=secant" title="割线刚度：量到哪一方向，知道哪一方向" />
+
+
 ### 从局部模型得到割线方程
 
 当前二次模型 $m_k(p)=f_k+g_k^Tp+p^TB_kp/2$ 给方向 $B_kp_k=-g_k$。若 $B_k\succ0$，方向下降，配合线搜索生成下一点。移动与梯度变化为

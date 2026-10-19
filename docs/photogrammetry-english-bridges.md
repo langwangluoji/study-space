@@ -1,5 +1,7 @@
 # 英文教材补充 · 六个连接主讲义的观点
 
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-01.md#e1-1)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
+
 这六个补充依据 **Introduction to Modern Photogrammetry**（Edward M. Mikhail、James S. Bethel、J. Chris McGlone，Wiley，2001）已核原页编写。它们补充概念边界、模型条件和质量判断，现已融入英文顺序主讲义的对应小节，本页保留为观点回读入口；不代表英文全书已逐章完整重写。中文为原创归纳，短英文句均为本站原创说明。下列“印刷页”指书上页码，“PDF页”指查看器从1开始的物理页序。设备现状和软件环境仍须放回2001年出版背景。
 
 ## 1 · 现代范围：摄影测量不只处理航空胶片 {#modern-scope}

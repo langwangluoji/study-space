@@ -11,6 +11,20 @@ next:
 
 # 第四章 遥感传感器及其成像原理
 
+<!-- earth-reading-task -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+同一块田已经进入视野，但探测器怎样把它排成行、列和波段？先跟着一个样本经过收集、积分、采样和定标，再比较显示格网与实际分辨能力。遇到热红外时回用第二章的辐射计；进入雷达时先保住测距次序与复数信息。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The field is in view, but how does a detector organise it into rows, columns and bands? Follow one sample through collection, integration, sampling and calibration, then compare the displayed grid with resolving ability. Reuse Chapter 2’s radiometer for thermal sensing; for radar, retain delay ordering and complex information.
+
+</div>
+<!-- /earth-reading-task -->
+
 Remote Sensing Sensors and Imaging Principles
 
 <RsLanguage />
@@ -100,6 +114,34 @@ Textbook comparison: [Frame photography, projection and digital cameras · secti
 </div>
 
 ## 4.3 摆扫与推扫怎样形成二维影像 / How whiskbroom and pushbroom form images {#rs4-scanning}
+
+<!-- anatomy-R6 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+仍然观测刚才那块田。现在一次只能接收一个小角范围，怎样把整片地面排成行列？先观察哪一个零件在横向移动。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Follow one row while the same ground pattern passes beneath two sensor heads. Which part supplies cross-track sampling?
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=scanner" title="一行像元是怎样排出来的？" title-en="Along-track sampling and instantaneous field of view" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+二维图像来自两个方向的采样合作。下一节保持探元角度不变，把高度和行频分别改变，看看足迹与间距为何不必相等。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The second spatial dimension comes from platform motion. Now distinguish footprint, integration time and adjacent-sample spacing.
+
+</div>
+<!-- /anatomy-R6 -->
 
 <!-- textbook-figures-rs4-scanning:start -->
 
@@ -648,6 +690,34 @@ Textbook comparison: [Radar angles, RAR/SAR and speckle · sections and PDF/prin
 <RsFigure id="radar-geometry" />
 
 ## 4.10 透视收缩、叠掩与阴影 / Foreshortening, layover and shadow {#rs4-terrain}
+
+<!-- anatomy-R7 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+先用脚到顶的次序标记同一坡面，再读接收时间尺。什么条件下，顶点的刻度会跑到脚点前面？
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Mark foot, middle and summit of the same slope. Predict their echo arrival order before rotating the terrain.
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/insar.html?mode=terrain" title="同一座小山，为什么在雷达图上会折叠？" title-en="The same slope in slant-range coordinates" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+这是测量顺序改变，不是显示缩放。下一节进入InSAR前先记住哪些位置的回波已经混合、哪些根本没有收到。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Ordering can reverse or illumination can disappear. Neither event is a display stretch; both constrain later interpretation.
+
+</div>
+<!-- /anatomy-R7 -->
 
 <RsFigure id="radar-terrain" />
 

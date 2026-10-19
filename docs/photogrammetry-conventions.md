@@ -41,4 +41,4 @@ $$x_L=fX/D,\qquad x_R=f(X-B)/D,\qquad p=x_L-x_R=fB/D.$$
 |5 Resection, Intersection, and Triangulation|王书第五章、第六章与部分定向几何|坐标精化、交会、相对/绝对、区域网、导航、数值与评价|
 |6–8 数字、仪器与产品|已有数字专题、王书4-4仪器及产品概念|保留已有拓展，按英文后续位置阅读|
 
-英文第9–11章与附录保留在[原著地图](./photogrammetry-sources.md)中继续阅读；本轮不将目录入口冒充完整新讲义。每个旧王书节和265页PPT都可通过[覆盖表](./photogrammetry-coverage.md)查到新的实际段落。
+英文第9–11章与附录保留在[原著地图](./photogrammetry-sources.md)中继续阅读；本轮不将目录入口冒充完整新讲义。旧王书各节及三份课件369页的主题/融合深度都可通过[覆盖表](./photogrammetry-coverage.md)查到新的实际段落。

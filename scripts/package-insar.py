@@ -14,7 +14,7 @@ for record in manifest:
     if record.get('source_id')=='ORIGINAL':record['sha256']=actual
     elif record['sha256']!=actual:raise ValueError('Source figure changed: '+str(p))
 (figures/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-names=['course-insar','insar-microwave','insar-imaging','insar-interpretation','insar-review','insar-sources']
+names=['course-insar','insar-microwave','insar-imaging','insar-interpretation','insar-review','review-insar','insar-sources']
 def offline(md):
     md=re.sub(r'^---\n.*?\n---\n','',md,flags=re.S)
     def figure(match):
@@ -25,6 +25,11 @@ def offline(md):
         if props.get('note'):caption+='。'+props['note']
         return '!['+props.get('alt','')+'](../配图/'+src+')\n\n'+caption+'。'
     md=re.sub(r'<SourceFigure\b[^>]*\s/?>',figure,md)
+    def anatomy(match):
+        props=dict(re.findall(r'(\w+)="([^"]*)"',match.group(0)))
+        url='https://langwangluoji.github.io/study-space'+props['src']
+        return '**交互解释：'+props.get('title','教学图示')+'。** [联网打开动画]('+url+')。正文与静态配图仍可离线阅读。'
+    md=re.sub(r'<AnatomyFigure\b[^>]*\s/?>',anatomy,md)
     for name in names:md=md.replace(']('+name+'.html',']('+name+'.md')
     md=md.replace('](resources.html#insar)','](https://langwangluoji.github.io/study-space/resources.html#insar)')
     md=md.replace('](insar/figures/','](../配图/')
@@ -39,9 +44,10 @@ with ZipFile(output,'w',ZIP_DEFLATED) as z:
     for p in sorted(figures.iterdir()):z.write(p,'配图/'+p.name)
     z.write(root/'public/insar/source-manifest.json','来源原件校验.json')
     z.write(root/'public/insar/ppt-coverage.json','课堂页码对照.json')
-    z.writestr('README.md','# InSAR 前三章离线讲义\n\n[从课程总览开始](讲义/course-insar.md)。使用支持 LaTeX 数学公式的 Markdown 编辑器阅读；配图已转换为相对路径。线上地址：https://langwangluoji.github.io/study-space/course-insar.html\n\n范围：课堂微波遥感基础、SAR成像原理、SAR图像特征及解译。完整教师PDF与教材不包含在包内。原图署名与页码见讲义/insar-sources.md，均为有限教学引用；整理文字与自绘图供个人学习。\n')
+    z.writestr('README.md','# InSAR 前三章离线讲义\n\n[从课程总览开始](讲义/course-insar.md)。使用支持 LaTeX 数学公式的 Markdown 编辑器阅读；配图已转换为相对路径。线上地址：https://langwangluoji.github.io/study-space/course-insar.html\n\n范围：课堂微波遥感基础、SAR成像原理、SAR图像特征及解译。完整教师PDF与教材不包含在包内；交互动画通过标明的联网链接打开，期末关键总结见讲义/review-insar.md。原图署名与页码见讲义/insar-sources.md，均为有限教学引用；整理文字与自绘图供个人学习。\n')
 with ZipFile(output) as z:
     assert z.testzip() is None
     assert not any(n.lower().endswith('.pdf') for n in z.namelist())
-    assert not any(b'<SourceFigure' in z.read(n) for n in z.namelist() if n.endswith('.md'))
+    assert not any(b'<SourceFigure' in z.read(n) or b'<AnatomyFigure' in z.read(n) for n in z.namelist() if n.endswith('.md'))
+    assert '讲义/review-insar.md' in z.namelist()
 print('InSAR notes package:',output.stat().st_size,'bytes;',len(manifest),'figures')

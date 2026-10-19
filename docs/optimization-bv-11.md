@@ -26,6 +26,24 @@ KKT 包括原始可行性、非负乘子 $\lambda_i\ge0$、驻点 $\nabla f_0+\s
 
 ## 11.2 Logarithmic barrier function and central path · 对数障碍
 
+<!-- continuous-optimization-v1 -->
+### 把互补读数和驻点读数分开 {#calibration-barrier}
+
+用一维例看清两层条件：$\min\frac12(x-2)^2$，$x\le1$。障碍子问题为 $\frac12(x-2)^2-\mu\log(1-x)$，定义域严格为 $x<1$。设余量 $s=1-x$，精确中心满足
+
+$$
+x-2+\mu/(1-x)=0\iff s^2+s-\mu=0,
+$$
+
+故 $s=(-1+\sqrt{1+4\mu})/2>0$。令 $\lambda=\mu/s$，中心有 $\lambda s=\mu$ 和驻点残差 $r=x-2+\lambda=0$。
+
+但给任意内部点 $x=0$、$\mu=.1$，也可算出 $\lambda=.1$，互补量仍为.1，驻点残差却是−1.9。实际原始—对偶间隙为 $\mu+r^2/2=1.905$，并非.1。这个反例说明：小互补量不能掩盖尚未中心化的状态。一般多约束精确中心才有 $m\mu=m/t$；近似求解还需检查相应残差与对偶可行性。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=barrier" title="虚拟障碍的精确中心与互补量" />
+
+交互中的软墙由主动控制器按公式模拟，不声称普通弹簧天然有log势能。11.3的内外循环、11.4找严格起点、11.5复杂度、11.7原始—对偶残差分别对应新的计算职责；不要把它们压缩成“减小μ直到停”。
+
+
 定义 slack $s_i(x)=-f_i(x)>0$，障碍为
 
 $$

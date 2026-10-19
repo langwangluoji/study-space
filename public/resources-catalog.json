@@ -103,10 +103,11 @@
     "course": "ml",
     "type": "代码",
     "author": "本站整理",
-    "description": "按 P0–P15 顺序阅读与运行；在线阅读不会执行代码。",
+    "description": "按 P0–P15 顺序阅读与运行。首次使用请下载完整练习包并解压；单独的 Notebook 需要包内 practice 模块。在线阅读不会执行代码。",
     "preview": "/read-notebook.html",
     "file": "/downloads/CIFAR10_MLP_逐步练习.ipynb",
     "format": "IPYNB",
+    "bundle": "/downloads/CIFAR10_MLP_完整练习包.zip",
     "bytes": 107762
   },
   {
@@ -359,7 +360,7 @@
     "preview": "/course-insar.html",
     "file": "/insar/downloads/insar-first-three-chapters.zip",
     "format": "ZIP",
-    "bytes": 28939766
+    "bytes": 28945565
   },
   {
     "id": "slide-4",
@@ -386,7 +387,7 @@
     "preview": "/read-downloads-cifar10_hog_mlp.html",
     "file": "/downloads/cifar10_hog_mlp.py",
     "format": "PY",
-    "bytes": 6193
+    "bytes": 6329
   },
   {
     "id": "slide-5",
@@ -893,5 +894,29 @@
     "format": "PDF",
     "localOnly": true,
     "pages": 146
+  },
+  {
+    "id": "photo-pan",
+    "course": "photogrammetry",
+    "type": "教材",
+    "title": "《摄影测量学》第三版",
+    "author": "潘励等 · 武汉大学出版社 2023",
+    "preview": "/photogrammetry-material-pan.html",
+    "pages": 390,
+    "description": "课堂教材。已核对版权、目录及部分相关主题原页；具体融合范围见摄影测量来源索引。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "format": "PDF",
+    "localOnly": true
+  },
+  {
+    "id": "photo-slides2",
+    "course": "photogrammetry",
+    "type": "课件",
+    "title": "chapter2-2026",
+    "author": "课程课件（原件署名以文件为准）",
+    "preview": "/photogrammetry-material-slides2.html",
+    "pages": 104,
+    "description": "新接入的第二章课件；逐页主题对应与具体融合范围分别标注。 完整PDF在本机选择后阅读，本站不上传原书。",
+    "format": "PDF",
+    "localOnly": true
   }
 ]

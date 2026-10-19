@@ -54,6 +54,18 @@ KKT 对一般非凸问题主要产生候选点。若目标和不等式函数凸�
 
 ## 12.5 二阶条件：曲率要在正确方向上检查
 
+<!-- continuous-optimization-v1 -->
+### 同一挡板：切向、临界方向和活动零乘子 {#constraint-directions}
+
+恢复 $x+y\le2$。在 $z^*=(1.2,.8)$，$\lambda=.8>0$，临界方向必须满足 $d_x+d_y=0$。把 $d=(t,-t)$ 代入Lagrangian Hessian $H=\operatorname{diag}(1,4)$，得 $d^THd=5t^2>0$（t非零），所以这里有严格局部最小的二阶充分性；本例还有凸性，可进一步得到全局证书。
+
+若将截距移到3，最优点 $(2,1)$ 恰好在边界，但 $\lambda=0$。此时临界方向允许 $d_x+d_y\le0$，不应把全部活动约束都当等式而删去向内部的方向。再看退化约束 $x^2\le0$：真实可行集只有零点，线性化却允许全部方向，这正是资格条件不能凭图省略的原因。
+
+先由这三个状态分别辨认正乘子、零乘子与梯度退化，再读后面的LICQ/MFCQ定义；它们支持的必要性和乘子性质不同。力表仍读 $\lambda\sqrt2$，乘子不因更换章节就变成单位法向力。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=kkt" title="活动不等于正反力，临界方向也随之改变" />
+
+
 约束问题用的是 Lagrangian 的 Hessian，而不只是目标 Hessian。约束曲面的弯曲会改变沿可行路径的二阶变化，所以需要 $\nabla_{xx}^2L$。等式情形下，令 $Z$ 的列张成约束 Jacobian 的零空间，则 reduced Hessian 为 $Z^T\nabla_{xx}^2LZ$。
 
 不等式还涉及 critical cone（临界锥）：一阶可行且目标的一阶变化为零的方向，是需要进一步用二阶曲率区分的方向。对已满足 KKT 的 $(x^*,\lambda^*,\nu^*)$，在本站 $g_i\le0$ 约定下，临界方向 d 满足：等式 $J_hd=0$；活动且 $\lambda_i^*>0$ 的不等式满足 $\nabla g_i^Td=0$；活动且 $\lambda_i^*=0$ 的不等式只要求 $\nabla g_i^Td\le0$。由驻点方程和这些条件可得 $\nabla f^Td=0$。非活动约束在足够小邻域不限制一阶方向。

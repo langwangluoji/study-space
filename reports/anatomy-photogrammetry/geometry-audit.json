@@ -1,0 +1,811 @@
+[
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 200,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 600,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 700,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1500,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 400,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": -300,
+      "Y": 0,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 400,
+      "Y": 250,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": -12,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": -6,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 6,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 12,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "resection",
+      "_camera": [
+        10,
+        -8,
+        1020,
+        0.003,
+        -0.002,
+        0.004
+      ]
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 1,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "orientation"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 300,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 8,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "orientation"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 1000,
+      "h": 0,
+      "B": 200,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": -12,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5,
+      "mode": "pose"
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "state": {
+      "f": 150,
+      "H": 700,
+      "h": 400,
+      "B": 200,
+      "X": 200,
+      "Y": 100,
+      "pitch": 10,
+      "width": 230,
+      "noise": 0,
+      "angle": 0,
+      "iteration": 0,
+      "scale": 5,
+      "wrong": 0,
+      "u": 0.25,
+      "v": 0.5
+    },
+    "failures": 0,
+    "parts": 67,
+    "report": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  }
+]

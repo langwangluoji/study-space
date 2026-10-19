@@ -13,3 +13,6 @@
 ## 阅读位置 {#g7-gnss}
 
 几何位置的法线高度推导见[椭球上的局部方向](geodesy-local-directions.html)。
+
+
+先回到[四章计算主线](course-geodesy.html)，复习时查[关键条件与题型](review-geodesy.html)。本入口只定位拓展来源，不另设必读任务。

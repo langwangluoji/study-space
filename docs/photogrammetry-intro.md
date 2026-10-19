@@ -1,10 +1,12 @@
 ---
 title: 第一单元 · 照片为什么能测量
-prev: {text: 课程总览, link: /course-photogrammetry}
-next: {text: 第二单元 · 航高、比例尺与覆盖, link: /photogrammetry-flight}
+prev: false
+next: false
 ---
 
 # 第一单元 · 照片为什么能测量
+
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-01.md#e1-1)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
 
 ## 从“认出房子”到“量出房子”
 

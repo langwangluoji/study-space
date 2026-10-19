@@ -1,0 +1,248 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "mode": "calibration",
+      "width": 900,
+      "theme": "light",
+      "readout": "w₀=0.00，w₁=1.00；r=[-1.00, -1.00, 0.00, -2.00]；L=0.7500；∇L=[-1.000, -0.750]",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 691
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "calibration",
+      "width": 900,
+      "theme": "dark",
+      "readout": "w₀=0.00，w₁=1.00；r=[-1.00, -1.00, 0.00, -2.00]；L=0.7500；∇L=[-1.000, -0.750]",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 691
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "calibration",
+      "width": 390,
+      "theme": "light",
+      "readout": "w₀=0.00，w₁=1.00；r=[-1.00, -1.00, 0.00, -2.00]；L=0.7500；∇L=[-1.000, -0.750]",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 553
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "calibration",
+      "width": 390,
+      "theme": "dark",
+      "readout": "w₀=0.00，w₁=1.00；r=[-1.00, -1.00, 0.00, -2.00]；L=0.7500；∇L=[-1.000, -0.750]",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 553
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "fisher",
+      "width": 900,
+      "theme": "light",
+      "readout": "θ=0.00；投影均值=[-1.67, 1.33]；类内散度=1.333；J=6.750",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 711
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "fisher",
+      "width": 900,
+      "theme": "dark",
+      "readout": "θ=0.00；投影均值=[-1.67, 1.33]；类内散度=1.333；J=6.750",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 711
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "fisher",
+      "width": 390,
+      "theme": "light",
+      "readout": "θ=0.00；投影均值=[-1.67, 1.33]；类内散度=1.333；J=6.750",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 528
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "fisher",
+      "width": 390,
+      "theme": "dark",
+      "readout": "θ=0.00；投影均值=[-1.67, 1.33]；类内散度=1.333；J=6.750",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 528
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "relu",
+      "width": 900,
+      "theme": "light",
+      "readout": "a=-1.00；ReLU(a)=0.00；导数=0",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 691
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "relu",
+      "width": 900,
+      "theme": "dark",
+      "readout": "a=-1.00；ReLU(a)=0.00；导数=0",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 691
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "relu",
+      "width": 390,
+      "theme": "light",
+      "readout": "a=-1.00；ReLU(a)=0.00；导数=0",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 508
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "relu",
+      "width": 390,
+      "theme": "dark",
+      "readout": "a=-1.00；ReLU(a)=0.00；导数=0",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 508
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "hog",
+      "width": 900,
+      "theme": "light",
+      "readout": "当前 Block=1/4；Block 数=4；每 Block=81 维；总维数=324",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 711
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "hog",
+      "width": 900,
+      "theme": "dark",
+      "readout": "当前 Block=1/4；Block 数=4；每 Block=81 维；总维数=324",
+      "size": {
+        "w": 900,
+        "v": 900,
+        "h": 711
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "hog",
+      "width": 390,
+      "theme": "light",
+      "readout": "当前 Block=1/4；Block 数=4；每 Block=81 维；总维数=324",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 528
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    },
+    {
+      "mode": "hog",
+      "width": 390,
+      "theme": "dark",
+      "readout": "当前 Block=1/4；Block 数=4；每 Block=81 维；总维数=324",
+      "size": {
+        "w": 390,
+        "v": 390,
+        "h": 528
+      },
+      "consoleErrors": [],
+      "lineEnds": 0,
+      "keyboard": true,
+      "reducedMotion": true
+    }
+  ],
+  "animatedModel": true,
+  "pausedFramesStopped": true,
+  "offscreenFramesStopped": true
+}

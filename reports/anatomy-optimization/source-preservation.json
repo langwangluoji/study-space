@@ -1,0 +1,215 @@
+{
+  "status": "PASS",
+  "pages": [
+    {
+      "page": "docs/optimization-bv-a.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 403
+    },
+    {
+      "page": "docs/optimization-bv-b.md",
+      "originalH2": 4,
+      "originalPassagesPreserved": true,
+      "addedChars": 461
+    },
+    {
+      "page": "docs/optimization-bv-c.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 417
+    },
+    {
+      "page": "docs/optimization-nw-a.md",
+      "originalH2": 2,
+      "originalPassagesPreserved": true,
+      "addedChars": 438
+    },
+    {
+      "page": "docs/optimization-nw-b.md",
+      "originalH2": 3,
+      "originalPassagesPreserved": true,
+      "addedChars": 412
+    },
+    {
+      "page": "docs/optimization-nw-05.md",
+      "originalH2": 2,
+      "originalPassagesPreserved": true,
+      "addedChars": 526
+    },
+    {
+      "page": "docs/optimization-nw-06.md",
+      "originalH2": 4,
+      "originalPassagesPreserved": true,
+      "addedChars": 465
+    },
+    {
+      "page": "docs/optimization-nw-07.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 365
+    },
+    {
+      "page": "docs/optimization-nw-08.md",
+      "originalH2": 2,
+      "originalPassagesPreserved": true,
+      "addedChars": 512
+    },
+    {
+      "page": "docs/optimization-nw-09.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 331
+    },
+    {
+      "page": "docs/optimization-nw-10.md",
+      "originalH2": 4,
+      "originalPassagesPreserved": true,
+      "addedChars": 466
+    },
+    {
+      "page": "docs/optimization-nw-11.md",
+      "originalH2": 3,
+      "originalPassagesPreserved": true,
+      "addedChars": 436
+    },
+    {
+      "page": "docs/optimization-nw-12.md",
+      "originalH2": 7,
+      "originalPassagesPreserved": true,
+      "addedChars": 615
+    },
+    {
+      "page": "docs/optimization-nw-13.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 432
+    },
+    {
+      "page": "docs/optimization-nw-14.md",
+      "originalH2": 4,
+      "originalPassagesPreserved": true,
+      "addedChars": 436
+    },
+    {
+      "page": "docs/optimization-nw-15.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 459
+    },
+    {
+      "page": "docs/optimization-nw-16.md",
+      "originalH2": 8,
+      "originalPassagesPreserved": true,
+      "addedChars": 435
+    },
+    {
+      "page": "docs/optimization-nw-17.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 501
+    },
+    {
+      "page": "docs/optimization-nw-18.md",
+      "originalH2": 8,
+      "originalPassagesPreserved": true,
+      "addedChars": 480
+    },
+    {
+      "page": "docs/optimization-nw-19.md",
+      "originalH2": 8,
+      "originalPassagesPreserved": true,
+      "addedChars": 572
+    },
+    {
+      "page": "docs/optimization-bv-01.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 534
+    },
+    {
+      "page": "docs/optimization-bv-06.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 811
+    },
+    {
+      "page": "docs/optimization-bv-07.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 532
+    },
+    {
+      "page": "docs/optimization-bv-08.md",
+      "originalH2": 9,
+      "originalPassagesPreserved": true,
+      "addedChars": 473
+    },
+    {
+      "page": "docs/optimization-bv-09.md",
+      "originalH2": 8,
+      "originalPassagesPreserved": true,
+      "addedChars": 419
+    },
+    {
+      "page": "docs/optimization-bv-10.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 552
+    },
+    {
+      "page": "docs/optimization-bv-11.md",
+      "originalH2": 9,
+      "originalPassagesPreserved": true,
+      "addedChars": 685
+    },
+    {
+      "page": "docs/optimization-nw-01.md",
+      "originalH2": 8,
+      "originalPassagesPreserved": true,
+      "addedChars": 433
+    },
+    {
+      "page": "docs/optimization-bv-02.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 726
+    },
+    {
+      "page": "docs/optimization-bv-03.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 909
+    },
+    {
+      "page": "docs/optimization-bv-04.md",
+      "originalH2": 7,
+      "originalPassagesPreserved": true,
+      "addedChars": 627
+    },
+    {
+      "page": "docs/optimization-bv-05.md",
+      "originalH2": 9,
+      "originalPassagesPreserved": true,
+      "addedChars": 1162
+    },
+    {
+      "page": "docs/optimization-nw-02.md",
+      "originalH2": 2,
+      "originalPassagesPreserved": true,
+      "addedChars": 620
+    },
+    {
+      "page": "docs/optimization-nw-03.md",
+      "originalH2": 5,
+      "originalPassagesPreserved": true,
+      "addedChars": 731
+    },
+    {
+      "page": "docs/optimization-nw-04.md",
+      "originalH2": 6,
+      "originalPassagesPreserved": true,
+      "addedChars": 798
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "file": "docs\\optimization-bv-a.md",
+    "inserted_at": "## A.1 Norms · 长度、距离与对偶长度",
+    "added_characters": 364,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-bv-b.md",
+    "inserted_at": "## B.2 The S-procedure · 用矩阵证明二次蕴含",
+    "added_characters": 420,
+    "existing_h2_preserved": 4
+  },
+  {
+    "file": "docs\\optimization-bv-c.md",
+    "inserted_at": "## C.4 Block elimination and Schur complements",
+    "added_characters": 378,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-nw-a.md",
+    "inserted_at": "## A.2 分析、几何与拓扑：结论中的小词很重要",
+    "added_characters": 399,
+    "existing_h2_preserved": 2
+  },
+  {
+    "file": "docs\\optimization-nw-b.md",
+    "inserted_at": "## Algorithm B.1 的过程与理由",
+    "added_characters": 373,
+    "existing_h2_preserved": 3
+  },
+  {
+    "file": "docs\\optimization-nw-05.md",
+    "inserted_at": "## 5.1 The linear conjugate gradient method",
+    "added_characters": 607,
+    "existing_h2_preserved": 2
+  },
+  {
+    "file": "docs\\optimization-nw-06.md",
+    "inserted_at": "## 6.1 The BFGS method",
+    "added_characters": 555,
+    "existing_h2_preserved": 4
+  },
+  {
+    "file": "docs\\optimization-nw-07.md",
+    "inserted_at": "## 7.2 Limited-memory quasi-Newton methods",
+    "added_characters": 465,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-nw-08.md",
+    "inserted_at": "## 8.1 Finite-difference derivative approximations",
+    "added_characters": 596,
+    "existing_h2_preserved": 2
+  },
+  {
+    "file": "docs\\optimization-nw-09.md",
+    "inserted_at": "## 9.2 Model-based methods",
+    "added_characters": 418,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-nw-10.md",
+    "inserted_at": "## 10.3 非线性最小二乘：从局部线性模型到曲率修正",
+    "added_characters": 427,
+    "existing_h2_preserved": 4
+  },
+  {
+    "file": "docs\\optimization-nw-11.md",
+    "inserted_at": "## 11.2 实用方法：怎样让远处初点也能前进",
+    "added_characters": 397,
+    "existing_h2_preserved": 3
+  },
+  {
+    "file": "docs\\optimization-nw-12.md",
+    "inserted_at": "## 12.5 二阶条件：曲率要在正确方向上检查",
+    "added_characters": 576,
+    "existing_h2_preserved": 7
+  },
+  {
+    "file": "docs\\optimization-nw-13.md",
+    "inserted_at": "## 13.3 单纯形一步：进入、移动、离开",
+    "added_characters": 393,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-nw-14.md",
+    "inserted_at": "## 14.1 原始—对偶方法与中心路径",
+    "added_characters": 397,
+    "existing_h2_preserved": 4
+  },
+  {
+    "file": "docs\\optimization-nw-15.md",
+    "inserted_at": "## 15.5 Maratos 效应：好方向也可能被价值函数阻挡",
+    "added_characters": 420,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-nw-16.md",
+    "inserted_at": "## 16.5 凸QP活动集法",
+    "added_characters": 396,
+    "existing_h2_preserved": 8
+  },
+  {
+    "file": "docs\\optimization-nw-17.md",
+    "inserted_at": "## 17.3 等式增广拉格朗日",
+    "added_characters": 460,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-nw-18.md",
+    "inserted_at": "## 18.1 局部SQP：Newton作用于KKT",
+    "added_characters": 441,
+    "existing_h2_preserved": 8
+  },
+  {
+    "file": "docs\\optimization-nw-19.md",
+    "inserted_at": "## 19.3 算法发展：不定曲率与步接受",
+    "added_characters": 533,
+    "existing_h2_preserved": 8
+  },
+  {
+    "file": "docs\\optimization-bv-01.md",
+    "inserted_at": "## 1.1 Mathematical optimization · 数学最优化",
+    "added_characters": 495,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-bv-06.md",
+    "inserted_at": "## 6.1 Norm approximation · 用范数定义近似",
+    "added_characters": 768,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-bv-07.md",
+    "inserted_at": "## 7.1 Parametric distribution estimation · 参数化分布估计",
+    "added_characters": 624,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-bv-08.md",
+    "inserted_at": "## 8.1 Projection on a set · 投影",
+    "added_characters": 576,
+    "existing_h2_preserved": 9
+  },
+  {
+    "file": "docs\\optimization-bv-09.md",
+    "inserted_at": "## 9.3 Gradient descent method · 梯度下降",
+    "added_characters": 509,
+    "existing_h2_preserved": 8
+  },
+  {
+    "file": "docs\\optimization-bv-10.md",
+    "inserted_at": "## 10.2 Newton’s method with equality constraints · 可行起点",
+    "added_characters": 511,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-bv-11.md",
+    "inserted_at": "## 11.2 Logarithmic barrier function and central path · 对数障碍",
+    "added_characters": 644,
+    "existing_h2_preserved": 9
+  },
+  {
+    "file": "docs\\optimization-nw-01.md",
+    "inserted_at": "## Mathematical formulation：目标、变量与约束",
+    "added_characters": 476,
+    "existing_h2_preserved": 8
+  },
+  {
+    "file": "docs\\optimization-bv-02.md",
+    "inserted_at": "## 2.1 Affine and convex sets · 仿射集与凸集",
+    "added_characters": 683,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-bv-03.md",
+    "inserted_at": "## 3.1 Basic properties and examples · 定义、判据与例子",
+    "added_characters": 864,
+    "existing_h2_preserved": 6
+  },
+  {
+    "file": "docs\\optimization-bv-04.md",
+    "inserted_at": "## 4.4 Quadratic optimization problems · QP、QCQP与SOCP",
+    "added_characters": 697,
+    "existing_h2_preserved": 7
+  },
+  {
+    "file": "docs\\optimization-bv-05.md",
+    "inserted_at": "## 5.5 Optimality conditions · 从界到最优证书",
+    "added_characters": 1117,
+    "existing_h2_preserved": 9
+  },
+  {
+    "file": "docs\\optimization-nw-02.md",
+    "inserted_at": "## 2.1 What is a solution?：先区分点的性质",
+    "added_characters": 685,
+    "existing_h2_preserved": 2
+  },
+  {
+    "file": "docs\\optimization-nw-03.md",
+    "inserted_at": "## 3.1 Step length：不要求一维最优，但要求合理",
+    "added_characters": 811,
+    "existing_h2_preserved": 5
+  },
+  {
+    "file": "docs\\optimization-nw-04.md",
+    "inserted_at": "## Outline：模型、半径与实际反馈",
+    "added_characters": 876,
+    "existing_h2_preserved": 6
+  }
+]

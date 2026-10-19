@@ -1,10 +1,12 @@
 ---
 title: 第六单元 · 交会与定向
-prev: {text: 第五单元 · 双像、视差与核线, link: /photogrammetry-stereo}
-next: {text: 第七单元 · 区域网与光束法, link: /photogrammetry-bundle}
+prev: false
+next: false
 ---
 
 # 第六单元 · 交会与定向
+
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-05.md#e5-6)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
 
 ## 先把已知与未知写出来
 

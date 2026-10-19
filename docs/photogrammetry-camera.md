@@ -1,10 +1,12 @@
 ---
 title: 第三单元 · 像素、相机与坐标
-prev: {text: 第二单元 · 航高、比例尺与覆盖, link: /photogrammetry-flight}
-next: {text: 第四单元 · 共线方程, link: /photogrammetry-collinearity}
+prev: false
+next: false
 ---
 
 # 第三单元 · 像素、相机与坐标
+
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-02.md#e2-4)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
 
 ## 像素索引还不是量测坐标
 

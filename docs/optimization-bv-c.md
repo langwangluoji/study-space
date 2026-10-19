@@ -34,6 +34,16 @@ pageClass: optimization-lecture
 
 ## C.4 Block elimination and Schur complements
 
+<!-- continuous-optimization-v1 -->
+### 先消一个真实小系统，再看Schur符号 {#schur-worked}
+
+用 $\begin{bmatrix}2&1\\1&3\end{bmatrix}(x_1,x_2)^T=(1,2)^T$。第一行给 $x_1=(1-x_2)/2$；代入第二行得到 $(3-1/2)x_2=2-1/2$，所以 $x_2=3/5,x_1=1/5$。
+
+这里Schur补就是 $S=3-1\cdot2^{-1}\cdot1=5/2$，新右端为3/2。一般块式同时修改矩阵与右端，少改任何一边都会解另一个问题。符号中的逆表示应用一个已分解块的求解过程，不要求显式构造整个逆。
+
+在稀疏大系统里，消去一个与许多变量相连的块会让这些邻居彼此连接，即填充；单纯把矩阵画成金属盒子看不出这个代数后果。用块矩阵与依赖图读本节，再回BV10/NW16判断哪条分解路线适合实际结构。
+
+
 把系统写为
 
 $$

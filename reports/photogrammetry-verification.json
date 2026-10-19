@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "checks": 144,
+  "pages": [
+    {
+      "slug": "course-photogrammetry",
+      "sourceBytes": 7662,
+      "formulas": 11
+    },
+    {
+      "slug": "photogrammetry-en-01",
+      "sourceBytes": 45759,
+      "formulas": 36
+    },
+    {
+      "slug": "photogrammetry-en-02",
+      "sourceBytes": 55165,
+      "formulas": 354
+    },
+    {
+      "slug": "photogrammetry-en-03",
+      "sourceBytes": 76788,
+      "formulas": 329
+    },
+    {
+      "slug": "photogrammetry-en-04",
+      "sourceBytes": 47188,
+      "formulas": 483
+    },
+    {
+      "slug": "photogrammetry-en-05",
+      "sourceBytes": 141693,
+      "formulas": 742
+    },
+    {
+      "slug": "photogrammetry-en-06",
+      "sourceBytes": 19378,
+      "formulas": 129
+    },
+    {
+      "slug": "photogrammetry-en-07",
+      "sourceBytes": 13269,
+      "formulas": 36
+    },
+    {
+      "slug": "photogrammetry-en-08",
+      "sourceBytes": 17580,
+      "formulas": 69
+    },
+    {
+      "slug": "photogrammetry-conventions",
+      "sourceBytes": 4650,
+      "formulas": 38
+    },
+    {
+      "slug": "photogrammetry-english",
+      "sourceBytes": 12043,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-review",
+      "sourceBytes": 17261,
+      "formulas": 77
+    },
+    {
+      "slug": "photogrammetry-coverage",
+      "sourceBytes": 55909,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-quality",
+      "sourceBytes": 9036,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-sources",
+      "sourceBytes": 11821,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-chinese",
+      "sourceBytes": 676,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-english",
+      "sourceBytes": 784,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-exam",
+      "sourceBytes": 709,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-analytical",
+      "sourceBytes": 640,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-slides1",
+      "sourceBytes": 563,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-slides3",
+      "sourceBytes": 679,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-slides2",
+      "sourceBytes": 532,
+      "formulas": 0
+    },
+    {
+      "slug": "photogrammetry-material-pan",
+      "sourceBytes": 599,
+      "formulas": 0
+    }
+  ],
+  "numerics": "independent stereo projection, finite-difference uncertainty, top/base projection, coordinate inverse, unit conversion, exact/linear disparity comparison",
+  "sourcePolicy": "8 local PDF readers; no full textbook upload"
+}

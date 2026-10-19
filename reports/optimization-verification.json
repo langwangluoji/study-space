@@ -4,198 +4,198 @@
   "pages": [
     {
       "slug": "course-optimization",
-      "bytes": 5010,
+      "bytes": 6495,
       "math": 0
     },
     {
       "slug": "optimization-prerequisites",
-      "bytes": 234,
+      "bytes": 244,
       "math": 0
     },
     {
       "slug": "optimization-reading",
-      "bytes": 5526,
-      "math": 4
+      "bytes": 6349,
+      "math": 5
     },
     {
       "slug": "optimization-sources",
-      "bytes": 8743,
-      "math": 14
+      "bytes": 9948,
+      "math": 19
     },
     {
       "slug": "optimization-bv-01",
-      "bytes": 7996,
-      "math": 32
+      "bytes": 9220,
+      "math": 38
     },
     {
       "slug": "optimization-bv-02",
-      "bytes": 7712,
-      "math": 50
+      "bytes": 9284,
+      "math": 62
     },
     {
       "slug": "optimization-bv-03",
-      "bytes": 9984,
-      "math": 76
+      "bytes": 11808,
+      "math": 93
     },
     {
       "slug": "optimization-bv-04",
-      "bytes": 9475,
-      "math": 71
-    },
-    {
-      "slug": "optimization-bv-05",
-      "bytes": 10985,
-      "math": 73
-    },
-    {
-      "slug": "optimization-bv-06",
-      "bytes": 11149,
-      "math": 79
-    },
-    {
-      "slug": "optimization-bv-07",
-      "bytes": 12115,
+      "bytes": 10823,
       "math": 84
     },
     {
+      "slug": "optimization-bv-05",
+      "bytes": 13028,
+      "math": 101
+    },
+    {
+      "slug": "optimization-bv-06",
+      "bytes": 12623,
+      "math": 95
+    },
+    {
+      "slug": "optimization-bv-07",
+      "bytes": 13377,
+      "math": 93
+    },
+    {
       "slug": "optimization-bv-08",
-      "bytes": 14361,
-      "math": 91
+      "bytes": 15520,
+      "math": 103
     },
     {
       "slug": "optimization-bv-09",
-      "bytes": 12336,
-      "math": 78
+      "bytes": 13330,
+      "math": 86
     },
     {
       "slug": "optimization-bv-10",
-      "bytes": 11082,
-      "math": 78
+      "bytes": 12233,
+      "math": 88
     },
     {
       "slug": "optimization-bv-11",
-      "bytes": 14582,
-      "math": 90
+      "bytes": 15953,
+      "math": 105
     },
     {
       "slug": "optimization-nw-01",
-      "bytes": 7768,
-      "math": 9
+      "bytes": 8842,
+      "math": 14
     },
     {
       "slug": "optimization-nw-02",
-      "bytes": 8095,
-      "math": 36
+      "bytes": 9533,
+      "math": 53
     },
     {
       "slug": "optimization-nw-03",
-      "bytes": 9069,
-      "math": 30
+      "bytes": 10543,
+      "math": 45
     },
     {
       "slug": "optimization-nw-04",
-      "bytes": 9303,
-      "math": 35
+      "bytes": 10948,
+      "math": 52
     },
     {
       "slug": "optimization-nw-05",
-      "bytes": 8301,
-      "math": 41
+      "bytes": 9355,
+      "math": 54
     },
     {
       "slug": "optimization-nw-06",
-      "bytes": 8568,
-      "math": 32
+      "bytes": 9668,
+      "math": 46
     },
     {
       "slug": "optimization-nw-07",
-      "bytes": 10240,
-      "math": 34
-    },
-    {
-      "slug": "optimization-nw-08",
-      "bytes": 9279,
-      "math": 26
-    },
-    {
-      "slug": "optimization-nw-09",
-      "bytes": 10281,
-      "math": 24
-    },
-    {
-      "slug": "optimization-nw-10",
-      "bytes": 7662,
-      "math": 46
-    },
-    {
-      "slug": "optimization-nw-11",
-      "bytes": 5747,
-      "math": 35
-    },
-    {
-      "slug": "optimization-nw-12",
-      "bytes": 7202,
-      "math": 36
-    },
-    {
-      "slug": "optimization-nw-13",
-      "bytes": 6885,
-      "math": 40
-    },
-    {
-      "slug": "optimization-nw-14",
-      "bytes": 5779,
-      "math": 28
-    },
-    {
-      "slug": "optimization-nw-15",
-      "bytes": 6270,
-      "math": 25
-    },
-    {
-      "slug": "optimization-nw-16",
-      "bytes": 8186,
-      "math": 46
-    },
-    {
-      "slug": "optimization-nw-17",
-      "bytes": 7492,
-      "math": 42
-    },
-    {
-      "slug": "optimization-nw-18",
-      "bytes": 8396,
-      "math": 27
-    },
-    {
-      "slug": "optimization-nw-19",
-      "bytes": 8750,
-      "math": 39
-    },
-    {
-      "slug": "optimization-bv-a",
-      "bytes": 5852,
-      "math": 46
-    },
-    {
-      "slug": "optimization-bv-b",
-      "bytes": 5511,
-      "math": 42
-    },
-    {
-      "slug": "optimization-bv-c",
-      "bytes": 5915,
+      "bytes": 11286,
       "math": 43
     },
     {
+      "slug": "optimization-nw-08",
+      "bytes": 10316,
+      "math": 41
+    },
+    {
+      "slug": "optimization-nw-09",
+      "bytes": 11272,
+      "math": 30
+    },
+    {
+      "slug": "optimization-nw-10",
+      "bytes": 8644,
+      "math": 58
+    },
+    {
+      "slug": "optimization-nw-11",
+      "bytes": 6667,
+      "math": 45
+    },
+    {
+      "slug": "optimization-nw-12",
+      "bytes": 8434,
+      "math": 48
+    },
+    {
+      "slug": "optimization-nw-13",
+      "bytes": 7811,
+      "math": 48
+    },
+    {
+      "slug": "optimization-nw-14",
+      "bytes": 6697,
+      "math": 40
+    },
+    {
+      "slug": "optimization-nw-15",
+      "bytes": 7251,
+      "math": 33
+    },
+    {
+      "slug": "optimization-nw-16",
+      "bytes": 9215,
+      "math": 55
+    },
+    {
+      "slug": "optimization-nw-17",
+      "bytes": 8468,
+      "math": 50
+    },
+    {
+      "slug": "optimization-nw-18",
+      "bytes": 9424,
+      "math": 35
+    },
+    {
+      "slug": "optimization-nw-19",
+      "bytes": 9914,
+      "math": 47
+    },
+    {
+      "slug": "optimization-bv-a",
+      "bytes": 6754,
+      "math": 53
+    },
+    {
+      "slug": "optimization-bv-b",
+      "bytes": 6384,
+      "math": 50
+    },
+    {
+      "slug": "optimization-bv-c",
+      "bytes": 6798,
+      "math": 48
+    },
+    {
       "slug": "optimization-nw-a",
-      "bytes": 4562,
-      "math": 15
+      "bytes": 5548,
+      "math": 23
     },
     {
       "slug": "optimization-nw-b",
-      "bytes": 3188,
-      "math": 13
+      "bytes": 4135,
+      "math": 15
     }
   ],
   "numerics": "analytic stationary conditions, Armijo inequality, exact scalar LQR and linear Gaussian posterior; synthetic data only"

@@ -56,6 +56,22 @@ $$
 
 ## 10.2 Newton’s method with equality constraints · 可行起点
 
+<!-- continuous-optimization-v1 -->
+### 导轨留下哪个方向，曲率就在哪个方向检查 {#calibration-nullspace}
+
+把挡板改为必须贴住的导轨 $x+y=2$。取可行点 $z_0=(1,1)$，自由方向可用 $Z=(1,-1)^T$ 表示，任意可行步都是 $p=Z\delta$。此时 $g=(-1,0)$、$H=\operatorname{diag}(1,4)$，约化方程为
+
+$$
+Z^THZ\delta=-Z^Tg\iff5\delta=1.
+$$
+
+所以 $p=(.2,-.2)$，一步到 $(1.2,.8)$。原目标梯度在那里不是零；它只在导轨切向投影为零。把法向运动交给约束反力，把切向运动交给优化，就能理解KKT块矩阵的两行各自负责什么。
+
+若从不满足导轨的点出发，第二行改为 $Ap=-(Az-b)$。全步会准确消除这个仿射等式残差；步长小于1时只缩减残差。非线性导轨的切线近似没有这种精确全步性质，后面NW18会重新处理。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=equality" title="约化自由度与等式约束的同一台面" />
+
+
 从 $x\in\operatorname{dom}f$、$Ax=b$ 出发，将局部二次模型限制在可行方向 $A\Delta x=0$ 内。记 $H=\nabla^2f(x)$、$g=\nabla f(x)$，求解
 
 $$

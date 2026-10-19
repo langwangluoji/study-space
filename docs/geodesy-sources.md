@@ -135,3 +135,7 @@ S3 原课件印刷页 1–44 之间插入了若干补充证明页，不能一律
 公开的独立算法依据：[Karney (2013), Algorithms for geodesics](https://doi.org/10.1007/s00190-012-0578-z)；实现与参数约定见[GeographicLib Python文档](https://geographiclib.sourceforge.io/html/python/geodesics.html)。这些参考支持独立计算方法，课程主要内容仍按原讲义逐页核对。
 
 - 网页双端审阅指出三差正号差值不能直接作为相加改正。客户端按原页2/4的定义和局部北东投影核对，区分正号方向差 $d_u$ 与实际加入观测的 $\delta_u=-d_u$；天文方位角另含拉普拉斯子午线项。
+
+
+<!-- earth-index-boundary -->
+这页用于回查术语、来源或维护决定。连续学习请回到[课程主线](course-geodesy.html)；考前先看[关键总结](review-geodesy.html)，不要把完成来源检索当成已经理解推导。

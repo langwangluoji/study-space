@@ -1,0 +1,100 @@
+{
+  "oldHook": {
+    "anatomyRequests": 17,
+    "iframeRequests": 11,
+    "pendingAnatomy": [
+      "http://127.0.0.1:4188/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "http://127.0.0.1:4188/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "http://127.0.0.1:4188/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "http://127.0.0.1:4188/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "http://127.0.0.1:4188/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh"
+    ],
+    "failedRequests": 11,
+    "storageEvents": 11,
+    "storageValues": [
+      "light",
+      "dark",
+      "light",
+      "dark",
+      "light",
+      "dark",
+      "light",
+      "dark",
+      "light",
+      "dark",
+      "light",
+      "dark"
+    ]
+  },
+  "newHook": [
+    {
+      "width": 390,
+      "theme": "light",
+      "ms": 5109,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=light&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "ms": 5220,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "ms": 5133,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "ms": 5000,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=light&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "ms": 4998,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=dark&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    },
+    {
+      "width": 320,
+      "theme": "light",
+      "ms": 5020,
+      "ssrPlaceholder": true,
+      "iframeSrc": "/study-space/anatomy/earth-observation/geodesy.html?mode=latitude&theme=light&lang=zh",
+      "anatomyRequests": 10,
+      "pendingAnatomy": [],
+      "storageEvents": 0,
+      "dialogs": "Escape and close button passed"
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "status": "PASS"
+}

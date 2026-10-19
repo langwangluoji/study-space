@@ -49,7 +49,7 @@ export function generateCatalog(){
       if(!archive||archive.course!==r.course)throw Error('档案与资料课程不一致: '+r.id);
       result.bytes=archive.original.bytes;result.pages=archive.preview.pages;result.originalFilename=archive.original.filename;
     }
-    for(const key of ['file','alternate'])if(r[key]){
+    for(const key of ['file','alternate','bundle'])if(r[key]){
       const file=localPath(r[key],'public');
       if(!fs.existsSync(file))throw Error('资料下载不存在: '+r[key]);
       if(key==='file')result.bytes=fs.statSync(file).size;

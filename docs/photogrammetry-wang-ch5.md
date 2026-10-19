@@ -5,6 +5,8 @@ description: 按王佩军、徐亚明原章5-1至5-6重新讲解后方交会、�
 
 # 第五章 · 摄影测量解析基础
 
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-05.md#e5-1)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
+
 <!-- source-archive-note -->
 ::: info 按王书原章阅读的保留稿
 课堂顺序主讲义已重组到[英文顺序讲义](./photogrammetry-en-05.md)，两本教材的内容已经融入对应小节。本页保留原书章号，供来源核对；顺着课程学习请使用[新总览](./course-photogrammetry.md)。
@@ -94,7 +96,7 @@ $$R_{,\varphi}=D_\varphi R_\omega R_\kappa,\qquad R_{,\omega}=R_\varphi D_\omega
 
 尤其要区分预测Jacobian与残差Jacobian：本页$J=\partial g/\partial\theta$是**预测值的导数**。若程序把残差写成$r=z-g(\theta)$，则$\partial r/\partial\theta=-J$，更新式为$r\approx l-J\delta$。若沿原章误差方程写$v=g(\theta)-z$，则$\partial v/\partial\theta=+J$，更新式为$v\approx J\delta-l$。两种平方目标相同，但不能把一种残差的常数项与另一种残差的导数混用。
 
-以上构造已通过独立符号求导与非零转角数值差分核验：取$\varphi=0.08$、$\omega=-0.05$、$\kappa=0.12$ rad，三个差分步长的相对差均小于$4\times10^{-9}$。验证脚本位于课程文件夹`research/verify-lecture-math.py`。它核查的正是教材欧拉角方向与导数，不依赖后面旋转向量算例的实现。
+以上构造已通过独立符号求导与非零转角数值差分核验：取$\varphi=0.08$、$\omega=-0.05$、$\kappa=0.12$ rad，三个差分步长的相对差均小于$4\times10^{-9}$。验证脚本位于课程文件夹[公开复算程序](/photogrammetry/code/verify-lecture-math.py)。它核查的正是教材欧拉角方向与导数，不依赖后面旋转向量算例的实现。
 
 在竖直、$R=I$的特例，令$D=Z_s-Z>0$，$x=f(X-X_s)/D$，则$\partial x/\partial X_s=-f/D$，$\partial x/\partial Y_s=0$，$\partial x/\partial Z_s=-x/D$；$y$有相应的对称形式。这些符号可以用直觉检查：相机向右移动，同一地面点相对相机向左，预测$x$应减小；相机升高，像点靠近中心，正$x$也减小。这样的局部检查能尽早发现单位、转置或行列顺序错误。
 
@@ -142,7 +144,7 @@ $$\delta_0=(-10.311894, 8.295052, -20.424843, -0.003176581, 0.001929048, -0.0040
 |3|0.000021355|6|接近(0,0,1000)|
 |4|约$4.52\times10^{-12}$|6|数值精度内为(0,0,1000)|
 
-这里RMS定义为十二个标量像坐标差的均方根，不是按自由度估计的单位权标准差。完整代码与每轮未舍入输出保存在课程文件夹`research/wang56-examples.py`、`research/wang56-examples-output.json`。脚本含断言，重新执行会从控制点、观测、初值开始求解，而非直接打印答案。要做第二次实验，可以给一个像坐标加0.02 mm，观察残差如何分配；若把该点误配到很远的位置，小改正假设也可能失效。
+这里RMS定义为十二个标量像坐标差的均方根，不是按自由度估计的单位权标准差。完整代码与每轮未舍入输出保存在课程文件夹[完整例题程序](/photogrammetry/code/wang56-examples.py)、[例题数值输出](/photogrammetry/code/wang56-examples-output.json)。脚本含断言，重新执行会从控制点、观测、初值开始求解，而非直接打印答案。要做第二次实验，可以给一个像坐标加0.02 mm，观察残差如何分配；若把该点误配到很远的位置，小改正假设也可能失效。
 
 这套数据有十二个标量观测和六个待定参数，当前雅可比秩为六，说明本次局部求解具备所需秩。它不构成“六点永远稳定”的证明。把控制点集中到影像很小的区域，即使数量不变，位置与姿态仍可能强相关；把地形起伏和斜视几何改变后，参数的可观测性也会变化。复算的目的正是把数量条件、局部秩与实际精度分开。
 

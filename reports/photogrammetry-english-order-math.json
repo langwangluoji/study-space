@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "checks": 23,
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "results": [
+    {
+      "name": "1D projectivity derivative",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "directed cross ratio invariant",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "1D examples",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "homography normalized coordinates",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "homography inverse closure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "point-line incidence H inverse transpose",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ray plane example m/mm",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "projection backprojection closure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "parallel plane ray diagnostic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ARDC1959 source K in microradians",
+      "status": "PASS",
+      "detail": "29.70880824841919"
+    },
+    {
+      "name": "refraction angle with declared conversion",
+      "status": "PASS",
+      "detail": "18.25854248457212"
+    },
+    {
+      "name": "refraction radial difference micrometre scale",
+      "status": "PASS",
+      "detail": "0.003823607233528037"
+    },
+    {
+      "name": "curvature formula unit invariance",
+      "status": "PASS",
+      "detail": "0.010190523106997558"
+    },
+    {
+      "name": "nonuniform weight residual covariance propagation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "residual covariance symmetry and PSD",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "wrong W first term detected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "weighted residual normal orthogonality",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "standardized residual one variance scale",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "correlated 2D observation block valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "satellite frame chain closure",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "mixed frame subtraction rejected",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "correlated gross error residual propagation",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "downlooking positive parallax depth",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

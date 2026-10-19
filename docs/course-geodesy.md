@@ -6,6 +6,14 @@ next: {"text": "第一章 大地测量绪论", "link": "/geodesy-intro"}
 
 # 大地测量
 
+<!-- earth-reading-task -->
+一次山坡测量贯穿这门课：在测站P架设仪器，已知参考坐标和高程，观测目标Q的方向与斜距，最后求Q的可比较坐标。
+
+四章依次交付四件事：**参考是什么 → 同一测站怎样表达 → 在曲面上沿哪条路 → 怎样把观测推进成坐标**。先沿这条路读；球面三角、额外证明与完整原资料用于解决相应问题，不必一次读完所有来源。
+
+[期末关键总结与题型](review-geodesy.html)保留公式条件和最容易混用的量，第一次学习仍以本页的详细推导为主。
+<!-- /earth-reading-task -->
+
 <div class="course-quicklinks"><a href="/study-space/review-guide.html#geodesy">期末复习路线 →</a><a href="/study-space/resources.html#geodesy">原资料与来源索引 ↗</a></div>
 
 重新学习时，可先沿[阅读路线](study-guide.html)建立本章与前后知识的联系，再进入具体专题。必要推导在正文展开；附加证明用于追踪尚未理解的步骤。

@@ -1,0 +1,11 @@
+# Shared photogrammetry comparator
+
+`node scripts/anatomy/build-photogrammetry.mjs` builds one portable HTML instrument with ten `?mode=` views. No local PDFs or research directory are required. Models use ground metres, image millimetres, pitch micrometres, ground Z up, and camera-to-world R. Public HTML is committed for ordinary static builds.
+
+`node scripts/anatomy/build-photogrammetry.mjs --audit` audits actual recorded shapes, physical supports and the exact fixed drawing order used in the page across baseline, slide limits, target limits, pose extremes/intermediates and the initial resection camera. No shape or collision exclusions are used.
+
+`node scripts/anatomy/photogrammetry/verify-model.mjs` compares to existing PhotoMath and independent known values. For browser checks serve `public` at `127.0.0.1:4186`, then run `node scripts/anatomy/photogrammetry/verify-browser.mjs`. Playwright uses its installed Chromium or system Edge; CHROME_PATH can select another installed Chromium executable. The browser script reuses the Anatomy kit's actual line-end checker, saves desktop and 390px action screenshots in both themes, checks keyboard/reduced motion, and verifies offscreen animation stops. Read the saved screenshots; a green JSON alone is not visual inspection.
+
+The desk-top rig is a geometrical teaching instrument, not a scale replica of an aircraft. The comparator's baseline stop is B=200m in the mapped scenario, avoiding physically overlapping camera carriages. Default 230mm square format and 10μm teaching sampling yield 23000² cells; the alternative 36mm format intentionally clips the common case's left image point. The rear hinge in pose mode changes both orientation and C; model and drawing use the same shifted C. Resection solves all six parameters; its small angle corrections are reported numerically, while the bench shows the recovered centre.
+
+All views are keyboard accessible. Motion is explicitly started, eased, suspended offscreen and disabled for reduced motion. Changing B keeps the physical P fixed and recalculates p. Shared live B/H/h/format state is propagated between same-origin open figure frames, while reset returns to the declared case (the orthophoto view explicitly uses P=(100,50,20)m).

@@ -1,0 +1,87 @@
+[
+  {
+    "mode": "frame",
+    "changes": {
+      "angle": 90
+    },
+    "parts": 63,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "latitude",
+    "changes": {
+      "B": -80
+    },
+    "parts": 67,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "latitude",
+    "changes": {
+      "B": 45,
+      "f": 0.2
+    },
+    "parts": 67,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "curvature",
+    "changes": {
+      "B": -80,
+      "A": 90
+    },
+    "parts": 70,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "metric",
+    "changes": {
+      "B": -80,
+      "h": 3000
+    },
+    "parts": 72,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "terrain",
+    "changes": {
+      "alpha": 70,
+      "beta": 75
+    },
+    "parts": 66,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "phase",
+    "changes": {
+      "dr": 30
+    },
+    "parts": 78,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "energy",
+    "changes": {
+      "incident": 10
+    },
+    "parts": 79,
+    "keysIdentical": true,
+    "svgIdentical": true
+  },
+  {
+    "mode": "aperture",
+    "changes": {
+      "x": 50
+    },
+    "parts": 77,
+    "keysIdentical": true,
+    "svgIdentical": true
+  }
+]

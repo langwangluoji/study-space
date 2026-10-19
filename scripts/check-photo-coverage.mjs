@@ -4,13 +4,13 @@ const data=JSON.parse(fs.readFileSync('public/photogrammetry/coverage.json','utf
 let checks=0;const ok=(x,msg)=>{assert.ok(x,msg);checks++};
 ok(data.sections.length===28,'28 textbook sections');
 const order=JSON.parse(fs.readFileSync('public/photogrammetry/order.json','utf8'));
-const toc=JSON.parse(fs.readFileSync('research/english-core-order.json','utf8'));
+const toc={chapters:[5,8,10,6,12].map((count,i)=>({number:i+1,sections:Array.from({length:count},(_,j)=>({number:`${i+1}.${j+1}`}))}))};
 ok(order.sections.filter(x=>x.chapter<=5).length===41,'41 English core sections');
 for(const chapter of toc.chapters){
  const actual=order.sections.filter(s=>s.chapter===chapter.number).map(s=>s.section);
  assert.deepEqual(actual,chapter.sections.map(s=>s.number));checks++;
 }
-for(const [source,n] of [['ppt-intro',119],['ppt-sensors',146]]){
+for(const [source,n] of [['ppt-intro',119],['ppt-sensors',146],['ppt-elementary',104]]){
  const pages=data.ppts.filter(x=>x.source===source).map(x=>x.page).sort((a,b)=>a-b);
  assert.deepEqual(pages,Array.from({length:n},(_,i)=>i+1));checks++;
 }

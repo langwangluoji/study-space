@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 2468,
+  "englishCoreSections": 41,
+  "textbookSections": 28,
+  "pptPages": 369,
+  "figures": 35,
+  "renderedFormulas": 2216,
+  "scope": "English TOC order, migrated real prose anchors, substantial sections, full physical page sequence, source assets and math rendering"
+}

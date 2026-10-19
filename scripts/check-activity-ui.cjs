@@ -3,7 +3,7 @@ const {chromium}=require('playwright');
 const config=JSON.parse(fs.readFileSync('traffic.config.json','utf8'));
 const courseUpdateIds=JSON.parse(fs.readFileSync('site-updates.config.json','utf8')).filter(entry=>entry.category==='课程内容').map(entry=>'update-'+entry.id);
 const root=path.resolve('docs/.vitepress/dist'),origin=config.origin,base=origin+config.base;
-const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2'};
+const mime={'.html':'text/html','.js':'text/javascript','.mjs':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.woff2':'font/woff2'};
 const fixture={version:1,startDate:config.startDate,timeZone:config.timeZone,endpoint:config.endpoint,activation:null,updatedAt:'2026-10-20T03:00:00Z',days:Array.from({length:7},(_,i)=>({date:'2026-10-'+(14+i),pv:i===6?3:2,uv:1,complete:i<6,observedAt:'2026-10-20T03:00:00Z'})),errors:[]};
 const errors=[],cases=[],checks=[];let phase='complete',posts=0,livePV=5,liveUV=2;
 async function run(){

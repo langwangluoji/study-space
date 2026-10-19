@@ -1,5 +1,26 @@
 [
   {
+    "id": "continuous-lessons-anatomy-20261020",
+    "date": "2026-10-20",
+    "category": "课程内容",
+    "title": "六科讲义补连续算例与交互图，期末总结独立整理",
+    "summary": "把模型、计算、条件和结论串成阅读主线；在相应段落加入可操作的教学装置，期末页集中公式与易错点。摄影测量新增资料定位，机器学习提供完整Notebook练习包。",
+    "links": [
+      {
+        "label": "期末关键总结",
+        "url": "/review-guide.html"
+      },
+      {
+        "label": "课程目录",
+        "url": "/courses.html"
+      },
+      {
+        "label": "核验范围",
+        "url": "/verification.html"
+      }
+    ]
+  },
+  {
     "id": "ml-lecture4-20261015",
     "date": "2026-10-15",
     "category": "课程内容",
@@ -55,7 +76,7 @@
     "date": "2026-10-14",
     "category": "课程内容",
     "title": "新增大地线与大地坐标计算两章",
-    "summary": "接入新课堂资料，补充大地线几何、微分方程、球面三角与高斯投影计算，并提供对应原资料。",
+    "summary": "接入新课堂资料，补充大地线几何、微分方程、球面三角与高斯平均引数法的大地主题正反算，并提供对应原资料。",
     "sourceCommit": "7cca6fd",
     "links": [
       {

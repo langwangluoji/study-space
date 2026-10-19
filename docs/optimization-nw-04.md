@@ -13,6 +13,32 @@ title: NW 第4章 Trust-Region Methods
 
 ## Outline：模型、半径与实际反馈
 
+<!-- continuous-optimization-v1 -->
+### 同一初点，这次先给一个可信行程 {#positioning-trust}
+
+继续用 $z_0=(0,0)$、$g=(-2,-4)$、$B=H=\operatorname{diag}(1,4)$。模型为
+
+$$
+m(p)=4+g^Tp+\tfrac12p^TBp,\quad\|p\|_2\le\Delta.
+$$
+
+取 $\Delta=.7$。沿负梯度的Cauchy步写为 $p=-tg$；射线上的最佳 $t$ 是 $\|g\|^2/(g^TBg)=20/68=5/17$，但它的长度大于.7，因此取 $t=.7/\sqrt{20}$，得到约 $p=(.31305,.62610)$。这是球内的便宜下降基准，不是承诺完整信赖域子问题已经精确求好。
+
+完整Newton步为 $(2,1)$，长度 $\sqrt5$，当前范围容不下。随着 $\Delta$ 增大，dogleg可以从梯度路径转向Newton步；范围改变的不只是一个固定方向上的步长。
+
+**本例中 $\rho$ 必须恒为1。** 因为 $q$ 恰好是二次型且 $B=H$，模型预测与真实变化完全相同。若想观察模型失配，明确改用
+
+$$
+f=q+.05(x-2)^4,\quad g=(x-2+.2(x-2)^3,4(y-1)),\quad H=\operatorname{diag}(1+.6(x-2)^2,4).
+$$
+
+只改曲面高度、不重算导数会得到错误实验。下面的交互允许切换这两种模型，实际/预测下降都从相应函数计算。半径是算法本轮的限制，不是原问题又加了一块物理挡板。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=trust" title="Cauchy步、可信范围与真实下降比" />
+
+先建立这个能完整验算的基准，再读4.1的dogleg与二维子空间方法，4.3的hard case单独说明负曲率下Cauchy点可能遗漏什么。内层二次子问题的全局解，与外层非线性原问题的局部迭代，是两个层次。
+
+
 二次模型是
 
 $$

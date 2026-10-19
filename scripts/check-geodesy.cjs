@@ -8,6 +8,10 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
  const slugs=['course-geodesy',...chapters.flatMap(c=>[c.slug,...c.topics.map(t=>t.slug)]),'geodesy-rotation','geodesy-orbit','geodesy-projection','geodesy-control','geodesy-height','geodesy-sources','geodesy-plan'];
  const browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHANNEL?{channel:process.env.PLAYWRIGHT_CHANNEL}:process.platform==='win32'?{channel:'msedge'}:{})});
  const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ const traffic=JSON.parse(fs.readFileSync('traffic.config.json','utf8'));
+ await page.context().route(traffic.endpoint,r=>r.fulfill({status:200,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:JSON.stringify({success:true,data:{page_pv:0,page_uv:0}})}));
+ await page.context().route(traffic.historyUrl,r=>r.fulfill({status:200,contentType:'application/json',body:JSON.stringify({version:1,startDate:traffic.startDate,timeZone:traffic.timeZone,endpoint:traffic.endpoint,updatedAt:null,days:[],errors:[]})}));
+ await page.addInitScript(()=>{if(window.top!==window)return;const t=new URLSearchParams(location.search).get('__ui_theme');if(t)localStorage.setItem('vitepress-theme-appearance',t)});
  const failures=[],checks=[];
  page.on('pageerror',e=>failures.push(e.message));page.on('response',r=>{if(r.status()>=400)failures.push(r.status()+' '+r.url())});
  try{
@@ -91,14 +95,14 @@ const base=process.argv[2]||'http://127.0.0.1:4175/study-space/';
 
 
   for(const theme of ['light','dark']){
-   await page.addInitScript(t=>localStorage.setItem('vitepress-theme-appearance',t),theme);
+   const themeQuery='?__ui_theme='+theme;
    for(const width of [320,390]){
     await page.setViewportSize({width,height:844});
     for(const slug of ['course-geodesy','geodesy-intro-observations',...chapters.slice(1).flatMap(c=>c.topics.map(t=>t.slug))]){
-     await page.goto(base+slug+'.html',{waitUntil:'networkidle'});
+     await page.goto(base+slug+'.html'+themeQuery,{waitUntil:'networkidle'});
      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),width+'px overflow on '+slug);
     }
-    await page.goto(base+'geodesy-ellipsoid-coordinates.html',{waitUntil:'networkidle'});await page.locator('.figure-open').first().click();
+    await page.goto(base+'geodesy-ellipsoid-coordinates.html'+themeQuery,{waitUntil:'networkidle'});await page.locator('.figure-open').first().click();
     assert(await page.evaluate(()=>document.querySelector('dialog[open]').getBoundingClientRect().width<=innerWidth));
     await page.keyboard.press('Escape');
    }

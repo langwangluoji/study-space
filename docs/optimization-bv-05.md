@@ -55,6 +55,38 @@ $$
 
 ## 5.5 Optimality conditions · 从界到最优证书
 
+<!-- continuous-optimization-v1 -->
+### 用同一挡板给候选解一张证书 {#positioning-kkt}
+
+上一章得到候选 $z^*=(6/5,4/5)$，本章要验证整个可行半空间内都没有更低代价。保持约束 $g(z)=x+y-2\le0$，采用加号Lagrangian：
+
+$$
+L(z,\lambda)=q(z)+\lambda(x+y-2),\quad\lambda\ge0.
+$$
+
+驻点方程给 $x=2-\lambda,y=1-\lambda/4$。代入活动边界得 $3-5\lambda/4=2$，所以 $\lambda^*=4/5$。四项逐个核验：$x+y-2=0$；$\lambda^*\ge0$；$\lambda^*g(z^*)=0$；$\nabla q(z^*)+\lambda^*(1,1)^T=0$。凸性使这组KKT充分，而非只产生局部候选。
+
+还可真正算出下界。将驻点代回对 $z\in\mathbb R^2$ 的下确界，得到
+
+$$
+d(\lambda)=\lambda-\frac58\lambda^2,\quad\lambda\ge0.
+$$
+
+注意这里只含一个挡板；若另加盒约束，对偶就需要相应改变。$d(4/5)=2/5=q(z^*)$，上界与下界相遇，得到零对偶间隙。任意可行点 $z$ 仍有 $d(\lambda)\le q(z)$，这才是证书的全局意义。
+
+**乘子与测力表分开读。** $\nabla g=(1,1)$ 不是单位向量。挡板对台子的反力为 $R=-\lambda\nabla g=(-.8,-.8)$，真实法向力模为 $\|R\|=.8\sqrt2\approx1.13137$；测力表不能直接标“.8牛顿”。约束余量 $s=2-x-y$ 对应实际法向间隙 $s/\sqrt2$。
+
+把截距改成 $c$，对 $c<3$ 有
+
+$$
+\lambda^*(c)=\tfrac45(3-c),\quad p(c)=\tfrac25(3-c)^2,\quad p'(2)=-\tfrac45.
+$$
+
+当 $c\ge3$，自由解可行，$p=\lambda=0$。在 $c=3$ 约束活动但乘子仍为零，直接说明“活动”不能推出“正乘子”。挡板法向位置是 $d=c/\sqrt2$，因此 $-dp/dd=\lambda\sqrt2$ 与真实测力大小一致。下面的一般KKT、敏感性与强对偶结论，都要保留各自条件，不能由这个机械例子替代证明。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=kkt" title="KKT、反力归一化与上下界相遇" />
+
+
 任意原始可行 $x$ 与对偶可行乘子给出 $g(\lambda,\nu)\leq p^*\leq f_0(x)$；有限候选值的差因此界定目标次优程度。这一证书要求两侧可行，而非仅看目标在迭代中变化很小。
 
 可微问题的KKT条件包括原始可行、$\lambda\geq0$、互补松弛 $\lambda_if_i(x)=0$，以及

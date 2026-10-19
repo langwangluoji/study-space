@@ -13,6 +13,22 @@ title: NW 第8章 Calculating Derivatives
 
 ## 8.1 Finite-difference derivative approximations
 
+<!-- continuous-optimization-v1 -->
+### 真做一次微扰，看误差从哪里来 {#derivative-probe}
+
+先取 $f(x)=x^2,x=1$。精确实数算术中，前向差分为 $2+h$，中心差分为2。若两次中心差分读数分别含 $+\epsilon$ 与 $-\epsilon$ 的误差，则估计变成
+
+$$
+\frac{(1+h)^2+\epsilon-[(1-h)^2-\epsilon]}{2h}=2+\epsilon/h.
+$$
+
+取 $\epsilon=10^{-4}$，$h=.1$ 时误差.001，$h=.001$ 时反而为.1。对一般光滑函数，截断项又随 $h^2$ 缩小，形成 $C_1h^2+C_2\epsilon/h$ 的权衡。这个构造是可核对的误差示例，不是对所有随机噪声的置信结论。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=derivative" title="微扰仪：更小间隔不总是更准确" />
+
+到8.2请换一条明确计算路径：若 $u=x^2,v=e^u$，前向沿种子1传播 $\dot u=2x,\dot v=v\dot u$；反向从 $\bar v=1$ 得 $\bar u=v,\bar x=2x\bar u$。两种AD都由链式法则得到 $2xe^{x^2}$，没有使用h，也不会修正代码中错误的模型。
+
+
 ### Approximating the gradient：小扰动与 Taylor 余项
 
 第 i 个梯度分量可用前向差分

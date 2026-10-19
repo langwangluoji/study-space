@@ -1,10 +1,10 @@
 # 课程知识库 · Markdown 维护指南
 
-内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。四讲与实践各保留一张连续阅读的长页。生成页面不手工修改。
+内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。机器学习四讲与实践各保留一张连续阅读的长页。全站包含机器学习、大地测量、遥感原理、InSAR、最优化、摄影测量六门课程。生成页面不手工修改。
 
 ## 环境与命令
 
-需要 Node.js 20 或更新的 LTS、npm。首次克隆后运行：
+需要 Node.js 20 或更新的 LTS、npm。完整站点含大规模数学内容与双语搜索索引，构建命令给 Node 配置 6 GB 堆上限；请预留相应可用内存。首次克隆后运行：
 
 ```sh
 npm ci
@@ -35,7 +35,7 @@ InSAR 原理与应用按课堂三讲组织，正文维护在 `docs/insar-microwa
 
 InSAR课堂逐页对照的维护源是 `public/insar/ppt-coverage.json`。`scripts/generate-insar-coverage.mjs` 校验三份PPT的92/106/59页、页号唯一性与正文锚点，生成 `insar-sources.md` 中对应标记段；正常构建已自动运行。三章调整后同步该清单，不能只保留笼统的页段来源。`verify_insar.py` 还使用复传播常数、波束端点、射线交点与带符号坡面导数核对新增课堂关系，模型验证不等同真实卫星性能或经验气象公式精度。
 
-大地测量以两个主章、十个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；六份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
+大地测量以四个主章、十六个专题组织，使用独立 geodesy.config.json；入口为 docs/course-geodesy.md。完整证明放正文，11 张课件配图保留来源页码并支持放大。运行 pip install -r requirements-geodesy.txt，再运行 python scripts/verify_geodesy.py。现有 UI 验证已覆盖专题、交互、配图与手机主题；八份原资料可预览，DOCX与PPTX另外提供PDF导出。来源与工作流署名见 docs/geodesy-sources.md。
 
 遥感基础已接入前四章完整双语讲义，入口为 `docs/course-remote-sensing.md`，范围、教材对照与署名维护在 `docs/remote-sensing-sources.md`。第2–9章PDF、汇总、三本参考教材、笔记、英文总结与调研，共15份原资料均可全文在线预览和下载；第5–9章原件可读，尚未整理为正式讲义。机器学习原资料含15讲PPTX及PRML、MML、LeeDL教材，知识正文按当前已整理的前四讲与实践标明范围。
 
@@ -59,7 +59,7 @@ InSAR课堂逐页对照的维护源是 `public/insar/ppt-coverage.json`。`scrip
 
 首页、课程目录使用 `study-space.config.json`；站点公开目录 `public/course-catalog.json` 在构建时同步生成，覆盖机器学习、大地测量、InSAR与遥感基础。课程记录包含稳定 `id`、标题、范围、入口 `entry`、起点 `start` 与来源 `source`。这些链接必须指向已提供的页面；原资料课程明确标注可读范围，不把未完成讲义写成已完成。
 
-资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。43份原资料以 `archiveId` 对应 `public/materials/catalog.json` 中的稳定ID；其中原件与PDF预览分别记录文件名、大小、SHA-256与页数。PPTX、DOCX的PDF预览是导出副本，不能替代原件下载。可复用的站内原文件保留 `file`，可选 PDF 使用 `alternate`；作者项目使用 `source`，版本发布页使用 `release`。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径。不要手工修改生成的 `public/resources-catalog.json`。
+资源中心使用 `resources.config.json`，每条包含唯一 `id`、所属 `course`、`type`、`title`、`author`、`description`、`preview`、`format`。45份原资料以 `archiveId` 对应 `public/materials/catalog.json` 中的稳定ID；其中原件与PDF预览分别记录文件名、大小、SHA-256与页数。PPTX、DOCX的PDF预览是导出副本，不能替代原件下载。可复用的站内原文件保留 `file`，可选 PDF 使用 `alternate`；作者项目使用 `source`，版本发布页使用 `release`。站内路径从 `/` 开始，构建自动加入 GitHub Pages 基础路径。不要手工修改生成的 `public/resources-catalog.json`。
 
 新原资料阅读页使用 `reader: "archive"`、`archiveId` 与唯一 `preview` 地址，由生成器接入资料阅读组件；原件与预览的存储地址由档案清单维护。PRML、MML和前三讲旧阅读页保留原URL与阅读器，并附档案ID以兼容已有链接。大地原件的 `materialId` 继续连接既有公开校验清单；网站讲义整理范围与原件完整范围分别记录。
 
@@ -75,7 +75,7 @@ InSAR课堂逐页对照的维护源是 `public/insar/ppt-coverage.json`。`scrip
 
 在 `course.config.json` 新增讲次或知识点记录，包含 `slug`、`title`、`sections`；每个 section 指定唯一 `id`、`title`、`source`。按配置顺序生成长页，左侧导航同步生成，搜索自动检索渲染后的正文。
 
-没有阅读分组时，片段首行写 `## 标题 {#p1}`；三讲均使用 `### 标题 {#a1}`，片段内的小标题使用四级标题。首行标题与配置保持一致；二、三级标题进入右侧大纲。旧的 `a1–a15`、`b1–b6`、`c1–c5`、`p0–p15` 锚点不得删除或改名。片段不单独生成网页。
+没有阅读分组时，片段首行写 `## 标题 {#p1}`；四讲均使用 `### 标题 {#a1}`，片段内的小标题使用四级标题。首行标题与配置保持一致；二、三级标题进入右侧大纲。旧的 `a1–a15`、`b1–b6`、`c1–c5`、`p0–p15` 锚点不得删除或改名。片段不单独生成网页。
 
 可在讲次配置中添加 `intro` 与 `parts`：每个 part 包含唯一 `id`、`title`、过渡文字 `intro` 和按原顺序排列的 `sections` 编号。分组必须恰好覆盖所有知识点，生成器会拒绝遗漏、重复或乱序。分组标题成为二级标题，侧栏按分组折叠；学习标记集中在讲末的附加框中，继续使用原存储键。知识点编号用于维护与定位，不必成为正文里的显眼编号。
 
@@ -134,3 +134,11 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 
 
 第四讲维护在 `docs/_fragments/d0.md` 至 `d6.md`，纳入 `course.config.json`。`ImageFeatureLab.vue` 提供 HOG 维数与 LBP 编码演示；本讲无复习自测。原课件复用资料库 `slide-4`，参考脚本源为 `public/downloads/cifar10_hog_mlp.py`，阅读页由构建生成。
+
+## 讲义、动画与复习页
+
+详细讲义沿同一任务展开计算；`docs/review-*.md` 为六科精炼关键页，`review-guide.md` 为入口。不要把关键算例折叠后仅留下公式目录。
+
+`npm run anatomy` 用 `scripts/anatomy/build-*.mjs` 生成 `public/anatomy/` 下的独立交互图；正常构建先运行此步骤。模型、绘图和读数应保持同一数值来源。图通过 `AnatomyFigure` 嵌入，支持手机、深浅主题、键盘与减少动态效果。Anatomy kit 的 MIT 许可保留于 `scripts/anatomy/LICENSE`。不要手工修改生成后的 HTML。
+
+机器学习首次运行推荐下载 `CIFAR10_MLP_完整练习包.zip`，解压后保留目录结构；单独的 ipynb 依赖包内 `practice` 模块。ZIP 由 `generate-practice-bundle.mjs` 构建，不依赖本地研究目录。

@@ -1,0 +1,52 @@
+{
+  "baseline": "fdc2c91c6888e46f318758b5f768b16641771e8b",
+  "scope": {
+    "baselineMarkdownReviewed": 212,
+    "courses": 6,
+    "resources": 63,
+    "publicArchives": 45,
+    "newLocalMaterialRecords": 2,
+    "standaloneInstrumentPages": 9,
+    "uniqueInteractiveModes": 50,
+    "embeddedLocations": 54
+  },
+  "content": {
+    "optimization": "35 detailed chapter/appendix revisions, one sustained positioning problem",
+    "machineLearning": "calibration/XOR/backprop/HOG main-path changes and practice task groups; retained rigorous existing explanations",
+    "earthObservation": "41 course/support pages, 21 embeds sharing 20 modes",
+    "photogrammetry": "54 baseline pages reviewed, eight-chapter route and targeted legacy corrections; explicit source-scope mapping",
+    "examSummaryPages": 6
+  },
+  "evidence": {
+    "models": {
+      "ml": 114,
+      "optimization": 59,
+      "earth": 53,
+      "photogrammetry": 80
+    },
+    "geometrySampledStates": {
+      "ml": 12,
+      "optimization": 10,
+      "earth": 60,
+      "photogrammetry": 18
+    },
+    "siteLinks": {
+      "pages": 217,
+      "internalLinksAndResources": 18579,
+      "legacyAnchors": 42
+    },
+    "standaloneNotebook": "7-member ZIP CRC and isolated first code cell PASS; all code cells parse",
+    "materials": "45 reconstructed SHA256 identities, 63 source versions, 161 chunks, 6611 preview pages"
+  },
+  "limits": [
+    "Original archive identity is separate from full textbook-content audit.",
+    "No full CIFAR-10 retraining or new accuracy claim.",
+    "Representative geometry states do not enumerate all continuous states.",
+    "Two new photogrammetry documents remain local-only readers; no full textbook upload."
+  ],
+  "independentReviews": [
+    "Optimization/ML specialist reviewed ML teaching and actual ordering; Fisher origin corrected.",
+    "Photogrammetry specialist reviewed shared iframe/ZIP/build integration; no remaining high/medium blockers."
+  ],
+  "browserCollab": "Initial provided-material review completed and saved; later expanded review was submitted but could not be retrieved after browser connection timeouts, so it is not claimed as completed evidence."
+}

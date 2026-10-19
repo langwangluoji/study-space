@@ -40,14 +40,14 @@ assert.equal(PhotoMath.scale(150,100,100,5),null);assert.equal(PhotoMath.stereo(
 const space=JSON.parse(fs.readFileSync('study-space.config.json','utf8'));
 const course=space.courses.find(c=>c.id==='photogrammetry');assert.ok(course);checks++;
 const sources=JSON.parse(fs.readFileSync('public/photogrammetry/sources.json','utf8'));
-assert.equal(sources.length,6);assert.ok(sources.every(s=>s.publicFullPdf===false&&s.sha256.length===64));checks+=2;
+assert.equal(sources.length,8);assert.ok(sources.every(s=>s.publicFullPdf===false&&s.sha256.length===64));checks+=2;
 const reading=JSON.parse(fs.readFileSync('public/photogrammetry/reading.json','utf8'));
 const lessons=Array.isArray(reading)?reading:reading.lessons;
 assert.equal(lessons.length,12);checks++;
 for(const lesson of lessons){assert.ok(lesson.pdfPages.every(p=>p>=1&&p<=491));checks++}
 const resources=JSON.parse(fs.readFileSync('resources.config.json','utf8')).filter(r=>r.course==='photogrammetry');
-assert.equal(resources.length,6);assert.ok(resources.every(r=>r.localOnly&&!r.file&&!r.external));checks+=2;
+assert.equal(resources.length,8);assert.ok(resources.every(r=>r.localOnly&&!r.file&&!r.external));checks+=2;
 const pages=['course-photogrammetry',...course.chapters.map(c=>c.slug),'photogrammetry-sources',...sources.map(s=>s.reader.slice(1).replace('.html',''))];
 const content=pages.map(slug=>{const md=fs.readFileSync(`docs/${slug}.md`,'utf8');assert.equal((md.match(/\$\$/g)||[]).length%2,0,slug+' formula delimiters');const html=fs.readFileSync(`docs/.vitepress/dist/${slug}.html`,'utf8');assert.ok(!/data-mjx-error|<merror/.test(html));checks+=2;return {slug,sourceBytes:Buffer.byteLength(md),formulas:(html.match(/<mjx-container/g)||[]).length}});
-const result={status:'PASS',checks,pages:content,numerics:'independent stereo projection, finite-difference uncertainty, top/base projection, coordinate inverse, unit conversion, exact/linear disparity comparison',sourcePolicy:'6 local PDF readers; no full textbook upload'};
+const result={status:'PASS',checks,pages:content,numerics:'independent stereo projection, finite-difference uncertainty, top/base projection, coordinate inverse, unit conversion, exact/linear disparity comparison',sourcePolicy:'8 local PDF readers; no full textbook upload'};
 fs.mkdirSync('reports',{recursive:true});fs.writeFileSync('reports/photogrammetry-verification.json',JSON.stringify(result,null,2)+'\n');console.log(`${checks} checks passed across ${content.length} photogrammetry pages.`);

@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "slug": "lecture-1",
+      "url": "/study-space/anatomy/ml/calibration.html?theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 630,
+        "v": 348,
+        "text": 275
+      },
+      "height": 630,
+      "stableResize": true
+    },
+    {
+      "slug": "lecture-2",
+      "url": "/study-space/anatomy/ml/fisher.html?theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 585,
+        "v": 348,
+        "text": 257
+      },
+      "height": 585,
+      "stableResize": true
+    },
+    {
+      "slug": "lecture-3",
+      "url": "/study-space/anatomy/ml/relu.html?theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 484,
+        "v": 348,
+        "text": 126
+      },
+      "height": 484,
+      "stableResize": true
+    },
+    {
+      "slug": "lecture-4",
+      "url": "/study-space/anatomy/ml/hog.html?theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 569,
+        "v": 348,
+        "text": 200
+      },
+      "height": 569,
+      "stableResize": true
+    },
+    {
+      "slug": "optimization-bv-05",
+      "url": "/study-space/anatomy/optimization/positioning.html?mode=kkt&theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 994,
+        "v": 348,
+        "text": 601
+      },
+      "height": 994,
+      "stableResize": true
+    },
+    {
+      "slug": "photogrammetry-en-04",
+      "url": "/study-space/anatomy/photogrammetry/camera-rig.html?mode=pose&theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 766,
+        "v": 348,
+        "text": 284
+      },
+      "height": 766,
+      "stableResize": true
+    },
+    {
+      "slug": "geodesy-intro-frames",
+      "url": "/study-space/anatomy/earth-observation/geodesy.html?mode=frame&theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 533,
+        "v": 348,
+        "text": 241
+      },
+      "height": 533,
+      "stableResize": true
+    },
+    {
+      "slug": "remote-sensing-ch2",
+      "url": "/study-space/anatomy/earth-observation/remote-sensing.html?mode=radiometry&theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 551,
+        "v": 348,
+        "text": 326
+      },
+      "height": 551,
+      "stableResize": true
+    },
+    {
+      "slug": "insar-microwave",
+      "url": "/study-space/anatomy/earth-observation/insar.html?mode=phase&theme=light&lang=zh",
+      "inner": {
+        "w": 348,
+        "h": 551,
+        "v": 348,
+        "text": 292
+      },
+      "height": 551,
+      "stableResize": true
+    }
+  ],
+  "languageAndTheme": true,
+  "errors": []
+}

@@ -1,5 +1,7 @@
 # 08 从影像到 DEM 与正射影像 · From images to products
 
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-08.md#e8-2)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
+
 <LearningMark section="photo-products" />
 
 两张照片恢复了一个点的三维坐标，距离一张可用的地图还差什么？我们还需要在大片影像中寻找同名点，把离散的三维点组织成地表，再把原照片的颜色放到统一的地图网格上。这一单元把前面学过的几何串成生产过程。

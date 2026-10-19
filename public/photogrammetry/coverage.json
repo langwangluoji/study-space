@@ -2487,7 +2487,7 @@
     {
       "source": "ppt-sensors",
       "page": 41,
-      "topic": "偏心畸变及径切向分解",
+      "topic": "径向畸变奇次多项式",
       "kind": "formula",
       "target": "/photogrammetry-en-03.html#optics-aberrations",
       "review": "全文提取核读",
@@ -3537,12 +3537,948 @@
     {
       "source": "ppt-sensors",
       "page": 146,
-      "topic": "SpaceLab与Landsat空间影像比较",
+      "topic": "SpaceLab与Landsat平台外观图",
       "kind": "figure",
       "target": "/photogrammetry-en-03.html#sensor-active-platforms-after",
       "review": "全文提取核读；图示页结合原页视觉核验",
       "sourceTarget": "/photogrammetry-ppt-sensors.html#active-platforms",
       "englishSection": "3.10"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 1,
+      "topic": "标题/课堂教材对照/提纲",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "来源/提纲，不计新知识",
+      "textExcerpt": "1 Chapter 2"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 2,
+      "topic": "标题/课堂教材对照/提纲",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "来源/提纲，不计新知识",
+      "textExcerpt": "• 中文教材中第二章包括了一部分内容，第三章也包含 了一部分内容，但编排不太一样。 • 英文教材的2.6和2.8在中文教材（潘）第三章有介绍 2"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 3,
+      "topic": "标题/课堂教材对照/提纲",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "来源/提纲，不计新知识",
+      "textExcerpt": "3 Contents: • PERSPECTIVE PROJECTION • SCALE AND COVERAGE • VANISHING POINTS • IMAGE COORDINATE SYSTEM • RELIEF DISPLACEMENT （投影差计算） • PARALLAX AND STEREO • IMA"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 4,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "4 2.1 PERSPECTIVE PROJECTION • 1.The concept of pinhole camera imaging the collinearity of the three points: the object point, the pinhole aperture, and the ima"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 5,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "5 the three-dimensional points in the object space are transformed via a perspective projection into the two-dimensional image plane, with the pinhole acting as"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 6,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "6 • 2. The difference between the vertical frame photograph and map(航摄像片与地形图的区别) transformed 3-D object into a 2-D space, the vertical frame photograph is in a "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 7,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "7 vertical photographs, terrain relief causes an image point to be displaced from its planimetrically correct position Orthographic projection (a) compared wit"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 8,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "8 Example: •on a map or orthographic projection of given scale, you do not see this. •It is relief displacement (投影差). •The difference between the Orthographic "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 9,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "9 relief displacement 城市地区（特别是上海这种高层建筑很多的城市）真正射影像"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 10,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "10 the other principal source of discrepancy between the map and the photograph is displacement due to tilt, The optical axis is tilt Map"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 11,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "11 影像上道路越来越窄"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 12,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "12 map products produced by photogrammetry can be: in the form of vector maps with features depicted using point and line symbols, in the form of images with "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 13,
+      "topic": "中心投影/像片与地图",
+      "englishSection": "2.1",
+      "target": "/photogrammetry-en-02.html#e2-1",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "13 No matter which form products is produced, we need remove the two displacements（需要去掉各种变形）. 此外——地形图与航摄像片对地物、地貌的表示方法、表 述内容不同 标准地形图，不是手绘艺术类地图，示意地图 （http://mp.we"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 14,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "14 2.2 SCALE AND COVERAGE • the concept of map scale. – In the map, the scale is unchanged. • the scale of the photograph – The ratio of image distance ab to ob"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 15,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "15 From the geometry of this figure, the scale can be expressed as the ratio of the focal length to the flying height(航高) above the terrain. • Vertical photogra"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 16,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "16 There is a simple relationship between scale and coverage. If the scale is reduced by a factor of n, then the area covered is increased by a factor of n2, Fo"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 17,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "17 •Vertical photographs(正直摄影) over relief terrain • Different area have different scale, it depend on the flying height on this area . h H f m − = 1 In AB area"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 18,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "18 • EXAMPLE 2-1 • A vertical photograph is taken a, an altitude of 800 m above sea level The terrain is flat and has an elevation of 237 m. The camera focal le"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 19,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "19 • Nominally vertical photographs (i.e., within a few degrees of vertical) (竖直摄影) They have a nominal scale, often obtained by the simple methods of Eq2-2  "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 20,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "同济大学测绘学院叶勤 • 摄影采用竖直摄影，要求摄影机轴近似（即摄影方向） 垂直于地面 如图：倾角    3 摄影机轴 铅垂线"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 21,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "21 • For tilted or oblique photos, scale varies with direction. For example: in the background of an oblique photograph the scale in the direction of view is sm"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 22,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "22 • EXAMPLE 2-2 • An oblique photograph is taken which includes the image of a road intersection, as shown in Fig. E2-2. The road widths on the ground are both"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 23,
+      "topic": "尺度、覆盖与方向比例尺",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "23 Scale at a point in an arbitrary direction the scale at a point for any direction can be expressed as o i ds ds s cale= (2-3) Magnitude of the differential d"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 24,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "24 2.3 VANISHING POINTS (灭点\\合点) In a perspective image, lines that are parallel in the object space appear in the image to converge toward a single point. These"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 25,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "25 特殊情形下退化为一点"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 26,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "26 For example L1\\\\L2\\\\L3\\\\L4 perspective center li is image of Li, li converge toward a single point i. vanishing points"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 27,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "思考： • 空间点、 • 直线、 • 线段、 • 平行线组 ——各自的中心投影怎样？ 27"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 28,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "28 image nadir points (像底点) • If we hung a plumb line from the perspective center, it would intersect the image plane at the image nadir point, and the object p"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 29,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "补充： 航摄像片上的特殊点、线以及透视对应的点、线和 面（中文教材2.3.2节） 此处以正片位置为例来讨论 定义：E——基准面——（水平地面） P——投影面——像片平面 S——投影中心"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 30,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "通过作图过程引入特殊点线面 （注意：——P处于正片位置） •过S做直线垂直于E面 ——垂距为H——航高 垂足为N——地底点 与P面交点为n——像底点 n、N——透视对应点 •过S做直线垂直于P面 ——垂距为f——主距 垂足为o——像主点 与E面交点为O O、o ——透视对应点 oSO为摄影机轴，oSO与nSN的夹角为а"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 31,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "主垂面（W）内，oSO与nSN的夹角为а，其剖面图如左 所示，作а的角平分线与P面交于c——等角点 与E面交于C c、C——透视对应点 过S（投影中心）作VV（基本方向线）的平行线交vv（主 纵线）于i——主合点， （地面上平行于VV的一组线在P面上投影的交线） 过S作vv（主纵线）的平行线交VV于J——主遁点 S——"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 32,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "32"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 33,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "在透视作图中，当E、P面及S点确定后，上述特殊点线 也就确定。但在像片上只有像主点是易于确定的 这些点线之间的相互关系，可以利用三角函数从图中直 角三角形中求得：  = = =  =  =  = =  =  =  =  =  =  =  = sin sin sin f Jv Si ci Htg N"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 34,
+      "topic": "灭点与特殊点线面",
+      "englishSection": "2.3",
+      "target": "/photogrammetry-en-02.html#e2-3",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "•过S做直线垂直于E面— —垂距为H——航高(flying height) 垂足为N——地底点 (ground nadir point) 与P面交点为n——像底点 (nadir point) n、N——透视对应点 •过S做直线垂直于P面——垂距为f——主距(principal distance) 垂足为o——像主点(p"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 35,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "35 2.4 IMAGE COORDINATE SYSTEM • PPA (abbreviate principal point or the principal point of autocollimation) : – The optical axis of a camera passes through the "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 36,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "36 • FC(fiducial center) – The intersection of lines joining opposite fiducial marks (or similar specification) defines a point known as the ~ The image coordin"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 37,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "37 The difference between PD and the focal length f • For aerial cameras and other fixed-focus cameras, the principal distance is equal to the focal length f. •"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 38,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "38 The image coordinate system • It is defined as having its origin at FC, with the x-axis direction explicitly defined as either through a side fiducial mark,"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 39,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "39 框标连线交点 x轴"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 40,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "40 The small offsets from FC to PPA are determined during camera calibration and are referred to as (x0, y0). This small offset (x0, y0) and PD are defined as i"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 41,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "Mathematical Concepts in Photogrammetry 41 Screen display coordinate systems of pixel and line are usually left-handed to follow computer graphics practices, bu"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 42,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "42 • If we want to extend the coordinates of a point from a 2-D image coordinate (x,y) to a 3-D sensor coordinate, it becomes (x - x0, y - y0, -f), with implici"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 43,
+      "topic": "像坐标、主点与框标",
+      "englishSection": "2.4",
+      "target": "/photogrammetry-en-02.html#e2-4",
+      "status": "已融合：FC→PPA数值换算",
+      "textExcerpt": "43 • EXAMPLE 2-3 – A nominal coordinate system is defined on a photograph with respect to the fiducial marks, with origin at FC, as shown in Fig. E2-3. By camer"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 44,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "44 2.5 RELIEF DISPLACEMENT • A vertical object will appear in an aerial photograph to be lying along a line radial to the image nadir point (or principal point "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 45,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "45 How to calculate it? We may write two expressions for distance D in Fig. 2-12. in terms of radial image distances rB and rT, f Hr D H f D r ACB B AC B B =  "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 46,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "46 set the two expressions for D equal to each other f h H r f Hr D T B ) ( − = = h r r H hr r r H Hr hr Hr T T B T B T T =  = − = − − ) ( 0 H h r r T  =  fl"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 47,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "47 EXAMPLE 2-4 • The flying height above the base of the building shown in Fig. is 500 m for a vertical photograph. If the image measurements of the building as"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 48,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "48 • How to obtain distance from the nadir point? • If it is a Nominally vertical photographs, how to calculate it?"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 49,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "补2 因地形起伏引起的像点位移（中文教材（潘）2.5.2节） • 参照物——地面 水平时的构像 像点位移为： na-na0             − − =      2 sin sin Hf 2 h r 1 2 sin sin f 2 r 1 H hr n n n h 可推导出："
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 50,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "简化成剖面图进行分析 根据相似三角形原理： h H h R h − =  f r h H R = − 因为 h H f m h h    = =  综上有： H rh h =  H为航高，h为地面点与基准面的 高差，r为像点到像底点的像距。 同理可得地面上投影差 的计算公式： h H Rh h − =  "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 51,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "51 投影差与哪些因素有关？ H rh h =  与r有关，越靠近像片边缘投影差越大 与h有关，h越大，投影差越大 地底点的成像位置不受该点处的高差大小影响 （思考：为什么纠正生成正射影像要尽量使用竖直摄影像片 上的中心部分的内容）"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 52,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "因像片倾斜引起的像点位移 因地形起伏引起的像点位移 补充：航摄像片的像点位移（中文教材(潘)2.5） 因几何因素造成， 不破坏三点共线， 不属于系统误差 一、像点位移"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 53,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "补1、因像片倾斜引起的像点位移（中文教材(潘)2.5.1） （displacement due to tilt） • 参照物——水平像片 同名地物在倾斜像片与水平像片上构像位 置的差异"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 54,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "像点位移为： δa=rc-rc0 假设从同一摄站S摄取 两张像片； P——倾斜像片 P0——水平像片 像点坐标以公共的等角 点c为极点； 两者的相交——极轴 任一对相应像点的极角 和向径，分别以φ、φ0 和 表示 0 c c r r、"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 55,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "55 • 对于等角点，可以推出： 则有： 2 2 sin , cos y x r r y r x + = = =   以及： x y tg 1 − =  对于极角： c c x y tg =  0 0 0 c c x y tg =  0 0 c c c c x y x y = 则： 0  = 等角点的含义"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 56,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "叠合作图的图形为： 0 c c a r r − =  像点位移： 等比线的概念 （2.5.1中文教材φ =0°,或180°）"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 57,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "57 δa与倾角、像距ca及方向角φ有关 近似表达式：   − =  sin sin f r 2 c a 分析：①当φ=0°，180°时、（位于等比线上），δa为0； ②当φ角在0°—180°时，δa为负值，朝向等角点位移； ③当φ角在180°—360°时，δa为正值，背离等角点位移； ④当φ=90°或270°时"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 58,
+      "topic": "起伏/倾斜位移",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "58 对像片倾角造成的位移进行改正——像片纠正 表现：水平地面——正方形 像片构像——任意四边形 像片倾斜引起的方向偏差： 1、不产生倾斜位移的点之间的连线不存在ɛɑ ，如等比线上任意两点的连线。 2、以等角点为顶点的辐射线或过等角点的直 线上的任意两点的连线，无像片倾斜引起的方 向偏差。 3、当两点位于某一条像水平线"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 59,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "59 2.6 PARALLAX AND STEREO • 2.6.1 Parallax(视差\\左右视差) – Parallax is the apparent shift in the position of an object due to a shift in the position of the observe"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 60,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "60 – We can quantify the notion of parallax by imagining the scene through a car window with a coordinate system fixed to the window frame with the positive x-a"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 61,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "61 • If the views presented in Fig.2-13 were photographs taken at times T1 and time T2, with the previously described coordinate system fixed on the camera fram"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 62,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "62 In Fig.2-14, point A is imaged onto the two frame photographs at al and ar, with the x coordinate origins at the principal points, O1 and O2. The parallax at"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 63,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "63 If we assume the ideal geometry of Fig.2-15, we can use the parallax to obtain information about the height of point A. Observing the similarity between tria"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 64,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "64 • which confirms that parallax and proximity(距离接近 的程度) are inversely related. – Large parallax implies close proximity (high elevation) – while small paralla"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 65,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "65 • Since we are making numerous assumptions in this derivation, including vertical photographs, equal exposure station heights, etc., such computations would "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 66,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "66 • The product p1 p2 in Eq.2-8 can be approximated by choosing a nominal flying height (H-h) above the region of interest and rearranging Eq.2-6, ) ( 1 2 p p "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 67,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "67 • f/(H-h) is equal to the nominal photo scale, and [f/(H-h)]B is the base distance at photo scale, b. • Distance b can be determined on the photo by stereo t"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 68,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "68 PPA_left PPA_right the base distance at photo scale, b"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 69,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "69 conjugate principal point of PPA_right the base distance at photo scale, b"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 70,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "70 b p h H h  − =  ) ( (2-9) • The value of H - h in Eq.2-9 can be estimated from independent sources as stated earlier. •Thus Eq. 2-9 can be used to obtain e"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 71,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "71 EXAMPLE 2-5 The flying height above the base of the building shown in Fig. E2-5 is 500 m. The transferred principal point permits the measurement of the base"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 72,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "72 • Using Eq.2-9, the height of the building is 5 . 23 85 ) 70 74 ( 500 ) ( = − = − − =  mm mm mm m b P P h H h A B"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 73,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "73 2.6.2 Stereo • 2.6.2.1 Stereo Vision • 2.6.2.3 Techniques for Effecting Image Separation • 2.6.2.2 Vertical Exaggeration •Stereo vision is the capability of "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 74,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "74 Figure2-16 Parallax or retinal disparity in the visual system. In Fig. 2-16 a nearby object generates a parallactic angle and an image displacement d1, whil"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 75,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "75 •The visual system translates this parallax or parallactic angle into an impression of depth. There are numerous other depth cues which contribute to our abi"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 76,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "76 In stereo photogrammetry we present the observer with a pair of images through a viewing system that guarantees that each eye sees only the image meant for "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 77,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "77"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 78,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "78 • Figure 2-17 also suggests the principle of the floating mark(浮动 测标). If we superimpose a small measuring mark in both the left and right image planes and a"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 79,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "79 This effectively puts a measuring mark into the stereo view that the operator can translate in all three dimensions in order to point to features of interest"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 80,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "80 2.6.2.3 Techniques for Effecting Image Separation •How to get man-made stereo viewing • there are stereo pair of photographs (get one objects photograph from"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 81,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "81 • One of the functions of the optical system in a stereo viewing instrument or system is to present the left image to the left eye and the right image to the"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 82,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "82 Table 2-1 Stereo Image Separation Techniques Technique Description Anaglyph Red and blue spectacle lenses used to view corresponding images either from proje"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 83,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "83 Separate optical trains—— Binocular viewing system with a separate viewing microscope for each eye two eyes"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 84,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "84 Anaglyph—— Red and blue spectacle lenses used to view corresponding images either from projection or from printed hardcopy"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 85,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "已融合：高度夸大与量测高程的条件区分",
+      "textExcerpt": "85 2.6.2.2 Vertical Exaggeration (高度夸大) • assume that the object is at the datum plane, we obtain H B f p = •that the parallax is proportional to the quantity B"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 86,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "已融合：高度夸大与量测高程的条件区分",
+      "textExcerpt": "86 •The pair of simulated photographs in Fig.2-18b were taken at twice the height above the ground with a lens of twice the focal length as the pair in Fig. 2-1"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 87,
+      "topic": "视差、立体与观看条件",
+      "englishSection": "2.6",
+      "target": "/photogrammetry-en-02.html#e2-6",
+      "status": "已融合：高度夸大与量测高程的条件区分",
+      "textExcerpt": "87 Conventional mapping photography has a base- height ratio of about 0.6. The human visual system has an eye base of around 70 mm and a perceived distance to t"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 88,
+      "topic": "影像重叠与边界计数",
+      "englishSection": "2.7",
+      "target": "/photogrammetry-en-02.html#e2-7",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "88 2.7 IMAGE OVERLAP （中文教材2.2.2中的2有部分涉及） • Aerial photography for conventional topographic mapping is often specified as having 60% forward overlap and 30% side"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 89,
+      "topic": "影像重叠与边界计数",
+      "englishSection": "2.7",
+      "target": "/photogrammetry-en-02.html#e2-7",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "89 • In Fig. 2-19, w is the image format size, W is this dimension scaled to the ground, B is the base distance, H is the flying height above the terrain, and f"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 90,
+      "topic": "影像重叠与边界计数",
+      "englishSection": "2.7",
+      "target": "/photogrammetry-en-02.html#e2-7",
+      "status": "已融合：片数口径、取整与足迹边界",
+      "textExcerpt": "补充： • 已知航摄区域的范围L（长度）、W（宽度）， • 应用摄影基线B，确定一条航线多少像片：L/B+1 • 应用航带间间隔确定一个摄区多少条航带：W/D-1 90 规范中规定： 航线方向的两端都要各自多飞一条摄影基线 根据这一规定： 每条航线的像片数：N1=摄影分区长度/摄影基线长度+3 摄影分区的航带数：N2="
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 91,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "91 2.8 EPIPOLAR PLANES AND LINES • A pair of overlapping photographs are depicted in Fig. 2-20 with object point A and corresponding image points a1 and a2. • I"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 92,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "92 • The two lines where this plane intersects the two photographs are referred to as epipolar lines, and moreover they are conjugate or corresponding epipolar "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 93,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "93 epipolar plane epipolar lines conjugate epipolar lines"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 94,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "94 • The epipolar lines can be determined after the photographs have been relatively oriented. If a ground point is imaged onto a given epipolar line in one pho"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 95,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "95 • There are two significant applications of these concepts in photogrammetry. – First, digital imges which have been sampled or resampled along epipolar line"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 96,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "96"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 97,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "97 – The second application is also in digital photogrammetry. In attempting to automate the stereo perception process, image matching techniques are used to lo"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 98,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "98 补充：同名核线的确定与核线相关 • 一、核线（极线）的定义与性质： 中文教材(潘)3.3.5，相关是针对二维的影象窗口，相关计算的 工作量很大；为减少工作量，变二维相关为一维相关 •S1S2的连线B——摄影基线"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 99,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "99 •摄影基线延长线与左右像片的交点K1、K2——核点 •通过S1S2与任一地面点A所做的平面WA ——点A的核面 •通过像主点的核面——主核面（有两个：左、右主核面） •地面任一点A在左右像片上的构像——同名像点 •射线A S1与AS2为同名射线 •核面与像片面的交线——核线 •同一核面在左右像片上的核线（如K1a"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 100,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "100 NL 42 65 79 88 99 143 154 174 187 198 207 NR 51 71 83 92 101 141 151 167 178 187 198 核线灰度曲线 由图表可看出在同名核线上自动搜索同名点的可能性"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 101,
+      "topic": "核面核线与搜索",
+      "englishSection": "2.8",
+      "target": "/photogrammetry-en-02.html#e2-8",
+      "status": "全文文本已核；主题对应，不代表逐页重制",
+      "textExcerpt": "101 一维影象相关： • 仅在影象的一个方向（如x——视差方向）建立搜索区，则此时的 相关为一维相关 • 根据核线的性质，同名点必然位于同名核线上 由于影象数字化过程中，像元素按矩阵形式排列，扫描行不 是核线方向，因此进行核线相关必须先找到核线"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 102,
+      "topic": "英文2章习题原题",
+      "englishSection": "2.2",
+      "target": "/photogrammetry-en-02.html#e2-2",
+      "status": "原题定位，未逐题重制",
+      "textExcerpt": "102 PROBLEMS • 2.1 A camera on an orbiting space platform has an altitude above the ground of 400 km. The lens has a focal length of 2 m. After return to earth,"
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 103,
+      "topic": "英文2章习题原题",
+      "englishSection": "2.5",
+      "target": "/photogrammetry-en-02.html#e2-5",
+      "status": "原题定位，未逐题重制",
+      "textExcerpt": "103 • 2.3 You wish to determine the approximate height of a building visible in a photograph. The flying height above the base of the building is 500 m. In the "
+    },
+    {
+      "source": "ppt-elementary",
+      "page": 104,
+      "topic": "英文2章习题原题",
+      "englishSection": "2.7",
+      "target": "/photogrammetry-en-02.html#e2-7",
+      "status": "原题定位，未逐题重制",
+      "textExcerpt": "104 • 2.5 Aerial photography with 60% forward overlap and 30% side overlap is needed for a mapping project. The focal length is 152.4 mm. The desired image scal"
     }
   ]
 }

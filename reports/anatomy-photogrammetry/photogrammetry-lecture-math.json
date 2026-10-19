@@ -1,0 +1,143 @@
+{
+  "checks": 27,
+  "status": "PASS",
+  "sympy": "1.14.0",
+  "numpy": "2.3.5",
+  "results": [
+    {
+      "name": "thin-lens blur identity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "near boundary",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "far boundary",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "hyperfocal k=1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "hyperfocal near=half",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "DoF worked example",
+      "status": "PASS",
+      "detail": "{'near_mm': 6109.481915933528, 'far_mm': 27533.039647577094}"
+    },
+    {
+      "name": "Lambert hemisphere integral",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "cos-fourth 45 degrees",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "rotation orthogonality",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "proper rotation determinant",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "nonzero-angle Jacobian finite difference 0.0001",
+      "status": "PASS",
+      "detail": "3.877381597217456e-09"
+    },
+    {
+      "name": "nonzero-angle Jacobian finite difference 1e-05",
+      "status": "PASS",
+      "detail": "4.484200388062344e-10"
+    },
+    {
+      "name": "nonzero-angle Jacobian finite difference 1e-06",
+      "status": "PASS",
+      "detail": "2.9302854363355508e-09"
+    },
+    {
+      "name": "rotation round trip",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "90-degree kappa rotates x to y",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "coplanarity determinant",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "similarity gauge leaves projection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "forward intersection and reproject",
+      "status": "PASS",
+      "detail": "1.0516032489249483e-12"
+    },
+    {
+      "name": "parallel ray degeneracy",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "absolute orientation known similarity",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "collinear control diagnostic",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "full weighted damped system equals Schur",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "lever arm endpoint and frame",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "10 ms at 20 m/s",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "image motion example",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "GSD pixel count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "CTE cumulative",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

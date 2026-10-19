@@ -5,6 +5,8 @@ description: 按Introduction to Modern Photogrammetry第4章顺序融合两本�
 
 # 4 · Mathematical Concepts in Photogrammetry
 
+> **本讲推进的任务。** 同一P与两摄站不变，本讲只改变描述方法。把地面差向量P−C转到相机轴，得到q，再投到z=−f；用零姿态检查(30,15)mm后才引入旋转。4.1的单应与交比解释平面对应，4.6的卫星模型解释时变传感器，它们各有适用范围，不替代共同案例的三维共线模型。
+
 摄影测量数学概念
 
 本讲的**知识顺序按英文原著第4章**（p.80–106 / PDF92–118），中文解释融合王佩军、徐亚明教材及已核课件，配图与推导继承此前核验结果。书页引用是来源定位；下列中文和标注的英文短句是教学重写。原著目录顺序不等于所有原著细节均已完整重写。
@@ -260,6 +262,9 @@ $$a=\begin{bmatrix}p_x&0&-p_xu_0\\0&-p_y&p_yv_0\\0&0&-f\end{bmatrix}
 含畸变影像须先按所用检校模型从量测坐标求理想方向；也可在预测模型中保留畸变，再与原始量测比较。不要既把观测去畸变，又在理想像方向上重复扣除同一改正。**The sensor model defines a ray; it does not supply its ground depth.** 传感器模型给出射线方向，地面深度还需空间约束。
 
 ## 4.4 Platform Model (Exterior Orientation) · 平台模型与外方位 {#e4-4}
+
+<AnatomyFigure src="/anatomy/photogrammetry/camera-rig.html?mode=pose" title="从地面到相机坐标" />
+
 
 <LearningMark section="photo-en-4-4" label="4.4" />
 

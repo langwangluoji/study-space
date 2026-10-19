@@ -1666,3 +1666,7 @@ Original lecture and selected English textbook figures cover workflow, radiation
 Coverage, formula calculations, figures, bilingual equivalence, browser behaviour and publication are checked separately. Formula validation does not establish every retrieval assumption, and a successful build does not prove scientific correctness. The [coverage manifest](/remote-sensing/coverage.json) distinguishes main explanations, historical reference and scope boundaries.
 
 </div>
+
+
+<!-- earth-index-boundary -->
+这页用于回查术语、来源或维护决定。连续学习请回到[课程主线](course-remote-sensing.html)；考前先看[关键总结](review-remote-sensing.html)，不要把完成来源检索当成已经理解推导。

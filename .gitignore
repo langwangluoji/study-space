@@ -19,3 +19,11 @@ docs/material-*.md
 reports/textbook-pages/
 reports/textbook-dual-end-review.md
 reports/textbook-web-review.txt
+
+# Local visual QA captures; CI publishes screenshots as build artifacts.
+/reports/anatomy-*/**/*.png
+/reports/anatomy-*.log
+/reports/anatomy-optimization-*.txt
+/reports/math-current-console.txt
+/reports/anatomy-*/**/*.jpg
+/reports/anatomy-*/**/*.txt

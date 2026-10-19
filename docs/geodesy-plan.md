@@ -26,3 +26,7 @@
 ## 2026-10-14新增讲义维护
 
 S7/S8两原件使用统一资料库、站内PDF预览与SHA-256校验。逐页覆盖清单总计128页，新讲义39页包括插入证明、原习题与历史图的处理说明。高斯公式的完整三次反解与课件辅助量截断分别保留；算例采用明确标注的WGS84。运行 `python scripts/verify_geodesic_computation.py` 会重建数值表，核验符号系数、数值积分与192组GeographicLib比较。新增材料预览检查纳入 `scripts/check-materials-ui.cjs`。
+
+
+<!-- earth-index-boundary -->
+这页用于回查术语、来源或维护决定。连续学习请回到[课程主线](course-geodesy.html)；考前先看[关键总结](review-geodesy.html)，不要把完成来源检索当成已经理解推导。

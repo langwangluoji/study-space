@@ -1,10 +1,12 @@
 ---
 title: 第二单元 · 航高、比例尺与覆盖
-prev: {text: 第一单元 · 照片为什么能测量, link: /photogrammetry-intro}
-next: {text: 第三单元 · 像素、相机与坐标, link: /photogrammetry-camera}
+prev: false
+next: false
 ---
 
 # 第二单元 · 航高、比例尺与覆盖
+
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-02.md#e2-2)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
 
 ## 一组相似三角形连起影像和地面
 

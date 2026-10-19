@@ -1,0 +1,422 @@
+[
+  {
+    "mode": "frame",
+    "pose": "default",
+    "parts": 63,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "frame",
+    "pose": "low",
+    "parts": 63,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "frame",
+    "pose": "high",
+    "parts": 63,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "latitude",
+    "pose": "default",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "latitude",
+    "pose": "low",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "latitude",
+    "pose": "high",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "curvature",
+    "pose": "default",
+    "parts": 70,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "curvature",
+    "pose": "low",
+    "parts": 70,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "curvature",
+    "pose": "high",
+    "parts": 70,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "metric",
+    "pose": "default",
+    "parts": 72,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "metric",
+    "pose": "low",
+    "parts": 72,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "metric",
+    "pose": "high",
+    "parts": 72,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "geodesic",
+    "pose": "default",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "geodesic",
+    "pose": "low",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "geodesic",
+    "pose": "high",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reduction",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reduction",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reduction",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "midpoint",
+    "pose": "default",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "midpoint",
+    "pose": "low",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "midpoint",
+    "pose": "high",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "energy",
+    "pose": "default",
+    "parts": 79,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "energy",
+    "pose": "low",
+    "parts": 79,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "energy",
+    "pose": "high",
+    "parts": 79,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "radiometry",
+    "pose": "default",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "radiometry",
+    "pose": "low",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "radiometry",
+    "pose": "high",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "thermal",
+    "pose": "default",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "thermal",
+    "pose": "low",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "thermal",
+    "pose": "high",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reflectance",
+    "pose": "default",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reflectance",
+    "pose": "low",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "reflectance",
+    "pose": "high",
+    "parts": 76,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "orbit",
+    "pose": "default",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "orbit",
+    "pose": "low",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "orbit",
+    "pose": "high",
+    "parts": 67,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "scanner",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "scanner",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "scanner",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "phase",
+    "pose": "default",
+    "parts": 78,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "phase",
+    "pose": "low",
+    "parts": 78,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "phase",
+    "pose": "high",
+    "parts": 78,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "penetration",
+    "pose": "default",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "penetration",
+    "pose": "low",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "penetration",
+    "pose": "high",
+    "parts": 80,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "chirp",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "chirp",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "chirp",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "aperture",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "aperture",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "aperture",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "terrain",
+    "pose": "default",
+    "parts": 66,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "terrain",
+    "pose": "low",
+    "parts": 66,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "terrain",
+    "pose": "high",
+    "parts": 66,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "speckle",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "speckle",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "speckle",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "coherence",
+    "pose": "default",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "coherence",
+    "pose": "low",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  },
+  {
+    "mode": "coherence",
+    "pose": "high",
+    "parts": 77,
+    "errors": 0,
+    "ordering": "runtime 0.25px raycast, geometry cache only; same keys audited"
+  }
+]

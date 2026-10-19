@@ -1,0 +1,218 @@
+[
+  {
+    "page": "docs/geodesy-ellipsoid-coordinates.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=latitude"
+  },
+  {
+    "page": "docs/geodesy-gauss-derivation.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=midpoint"
+  },
+  {
+    "page": "docs/geodesy-geodesic-geometry.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=geodesic"
+  },
+  {
+    "page": "docs/geodesy-intro-frames.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=frame"
+  },
+  {
+    "page": "docs/geodesy-metric.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=metric"
+  },
+  {
+    "page": "docs/geodesy-normal-curvature.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=curvature"
+  },
+  {
+    "page": "docs/geodesy-observation-reduction.md",
+    "src": "/anatomy/earth-observation/geodesy.html?mode=reduction"
+  },
+  {
+    "page": "docs/insar-imaging.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=chirp"
+  },
+  {
+    "page": "docs/insar-imaging.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=aperture"
+  },
+  {
+    "page": "docs/insar-interpretation.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=terrain"
+  },
+  {
+    "page": "docs/insar-interpretation.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=speckle"
+  },
+  {
+    "page": "docs/insar-interpretation.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=coherence"
+  },
+  {
+    "page": "docs/insar-microwave.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=phase"
+  },
+  {
+    "page": "docs/insar-microwave.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=penetration"
+  },
+  {
+    "page": "docs/optimization-bv-02.md",
+    "src": "/anatomy/optimization/positioning.html?mode=convex"
+  },
+  {
+    "page": "docs/optimization-bv-03.md",
+    "src": "/anatomy/optimization/positioning.html?mode=energy"
+  },
+  {
+    "page": "docs/optimization-bv-04.md",
+    "src": "/anatomy/optimization/positioning.html?mode=kkt"
+  },
+  {
+    "page": "docs/optimization-bv-05.md",
+    "src": "/anatomy/optimization/positioning.html?mode=kkt"
+  },
+  {
+    "page": "docs/optimization-bv-06.md",
+    "src": "/anatomy/optimization/positioning.html?mode=fitting"
+  },
+  {
+    "page": "docs/optimization-bv-07.md",
+    "src": "/anatomy/optimization/positioning.html?mode=fusion"
+  },
+  {
+    "page": "docs/optimization-bv-08.md",
+    "src": "/anatomy/optimization/positioning.html?mode=projection"
+  },
+  {
+    "page": "docs/optimization-bv-09.md",
+    "src": "/anatomy/optimization/positioning.html?mode=line"
+  },
+  {
+    "page": "docs/optimization-bv-10.md",
+    "src": "/anatomy/optimization/positioning.html?mode=equality"
+  },
+  {
+    "page": "docs/optimization-bv-11.md",
+    "src": "/anatomy/optimization/positioning.html?mode=barrier"
+  },
+  {
+    "page": "docs/optimization-nw-02.md",
+    "src": "/anatomy/optimization/positioning.html?mode=energy"
+  },
+  {
+    "page": "docs/optimization-nw-03.md",
+    "src": "/anatomy/optimization/positioning.html?mode=line"
+  },
+  {
+    "page": "docs/optimization-nw-04.md",
+    "src": "/anatomy/optimization/positioning.html?mode=trust"
+  },
+  {
+    "page": "docs/optimization-nw-05.md",
+    "src": "/anatomy/optimization/positioning.html?mode=cg"
+  },
+  {
+    "page": "docs/optimization-nw-06.md",
+    "src": "/anatomy/optimization/positioning.html?mode=secant"
+  },
+  {
+    "page": "docs/optimization-nw-08.md",
+    "src": "/anatomy/optimization/positioning.html?mode=derivative"
+  },
+  {
+    "page": "docs/optimization-nw-12.md",
+    "src": "/anatomy/optimization/positioning.html?mode=kkt"
+  },
+  {
+    "page": "docs/optimization-nw-17.md",
+    "src": "/anatomy/optimization/positioning.html?mode=penalty"
+  },
+  {
+    "page": "docs/optimization-nw-19.md",
+    "src": "/anatomy/optimization/positioning.html?mode=barrier"
+  },
+  {
+    "page": "docs/photogrammetry-en-02.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=scale"
+  },
+  {
+    "page": "docs/photogrammetry-en-02.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=pixel"
+  },
+  {
+    "page": "docs/photogrammetry-en-02.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=stereo"
+  },
+  {
+    "page": "docs/photogrammetry-en-02.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=epipolar"
+  },
+  {
+    "page": "docs/photogrammetry-en-04.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=pose"
+  },
+  {
+    "page": "docs/photogrammetry-en-05.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=resection"
+  },
+  {
+    "page": "docs/photogrammetry-en-05.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=adjustment"
+  },
+  {
+    "page": "docs/photogrammetry-en-05.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=orientation"
+  },
+  {
+    "page": "docs/photogrammetry-en-05.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=quality"
+  },
+  {
+    "page": "docs/photogrammetry-en-06.md",
+    "src": "/anatomy/photogrammetry/camera-rig.html?mode=ortho"
+  },
+  {
+    "page": "docs/remote-sensing-ch1.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=energy"
+  },
+  {
+    "page": "docs/remote-sensing-ch2.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=radiometry"
+  },
+  {
+    "page": "docs/remote-sensing-ch2.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=thermal"
+  },
+  {
+    "page": "docs/remote-sensing-ch2.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=reflectance"
+  },
+  {
+    "page": "docs/remote-sensing-ch3.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=orbit"
+  },
+  {
+    "page": "docs/remote-sensing-ch4.md",
+    "src": "/anatomy/earth-observation/remote-sensing.html?mode=scanner"
+  },
+  {
+    "page": "docs/remote-sensing-ch4.md",
+    "src": "/anatomy/earth-observation/insar.html?mode=terrain"
+  },
+  {
+    "page": "docs/_fragments/a3.md",
+    "src": "/anatomy/ml/calibration.html"
+  },
+  {
+    "page": "docs/_fragments/b3.md",
+    "src": "/anatomy/ml/fisher.html"
+  },
+  {
+    "page": "docs/_fragments/c2.md",
+    "src": "/anatomy/ml/relu.html"
+  },
+  {
+    "page": "docs/_fragments/d3.md",
+    "src": "/anatomy/ml/hog.html"
+  }
+]

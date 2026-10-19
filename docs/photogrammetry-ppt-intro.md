@@ -1,5 +1,7 @@
 # 绪论课件补充：历史、系统、航摄质量与产品读图
 
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-01.md#e1-1)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
+
 <LearningMark section="photo-ppt-intro" />
 
 本页覆盖 `chapter1-2026.pdf` 的 **119 个物理 PDF 页**。课件后半部的幻灯片页脚编号比物理页多2，下面一律用阅读器物理页，避免“PDF90”与页脚92混淆。全文文本已读取，42个以图为主或含关键公式的页面另做视觉核对；只有文字的历史记录按课件说明转述，不宣称每项年代已经独立史料核验。

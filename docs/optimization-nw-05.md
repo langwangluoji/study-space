@@ -13,6 +13,18 @@ title: NW 第5章 Conjugate Gradient Methods
 
 ## 5.1 The linear conjugate gradient method
 
+<!-- continuous-optimization-v1 -->
+### 让两步CG继续解决同一位置 {#positioning-cg}
+
+自由目标去掉常数后为 $\frac12z^TAz-b^Tz$，其中 $A=\operatorname{diag}(1,4),b=(2,4)$。从零开始，残差 $r_0=Az_0-b=(-2,-4)$，方向 $p_0=(2,4)$。
+
+第一步 $\alpha_0=(r_0^Tr_0)/(p_0^TAp_0)=20/68=5/17$，到 $z_1=(10/17,20/17)$；新残差 $r_1=(-24/17,12/17)$ 与 $r_0$ 正交。接着 $\beta_1=(r_1^Tr_1)/(r_0^Tr_0)=36/289$，得到 $p_1=(480/289,-60/289)$。直接核对 $p_0^TAp_1=0$，第二步 $\alpha_1=17/20$，恰好到 $(2,1)$。
+
+这比只记“最多n步”更能看出共轭的作用：第二方向沿A度量与第一方向正交，保持第一方向已经达到的最优条件。动画由程序执行这两步，不能把自然弹簧运动称为CG。精确算术、固定SPD二次型和精确线搜索是这次有限终止的前提；到5.2的非线性CG，这些性质不能原样保留。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=cg" title="同一二次型上的两步共轭梯度" />
+
+
 ### 从线性方程到二次最优化
 
 若 $A=A^T\succ0$，方程 $Ax=b$ 等价于严格凸二次问题

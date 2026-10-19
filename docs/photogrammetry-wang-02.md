@@ -1,5 +1,7 @@
 # 第二章 影像获取：传感器怎样记录世界
 
+> **来源保留页。** 原有解释与锚点保留供查证；连续学习从[主讲对应小节](./photogrammetry-en-03.md#e3-1)进入。请按[唯一课程路线](./course-photogrammetry.md#shared-case)推进；考前用[精炼速查](./review-photogrammetry.md)。
+
 <!-- source-archive-note -->
 ::: info 按王书原章阅读的保留稿
 课堂顺序主讲义已重组到[英文顺序讲义](./photogrammetry-en-03.md)，两本教材的内容已经融入对应小节。本页保留原书章号，供来源核对；顺着课程学习请使用[新总览](./course-photogrammetry.md)。

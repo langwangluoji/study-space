@@ -9,6 +9,24 @@ next:
 
 # 遥感原理与基础
 
+<!-- earth-reading-task -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+同一块田在两日影像中变暗，能否直接判断作物发生变化？这门课按一次观测的证据逐步排除其他原因：先找能量来源，再查辐射、平台时刻与角度，最后检查采样和产品。每章完成一个判断，具体推导与来源仍保留。
+
+[期末关键总结与题型](review-remote-sensing.html)用于回查；首次学习按四章连续阅读。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The same field looks darker on a second date. Does that establish a crop change? Follow one observation and eliminate competing explanations: identify the energy source, examine radiation and viewing conditions, then inspect sampling and the product. Each chapter resolves one part of the decision; derivations and source boundaries remain available.
+
+Use the [exam essentials and question routes](review-remote-sensing.html) for revision; follow the four detailed chapters on a first reading.
+
+</div>
+<!-- /earth-reading-task -->
+
 Remote Sensing Principles and Fundamentals
 
 <RsLanguage />

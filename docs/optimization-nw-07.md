@@ -67,6 +67,16 @@ Lanczos 在 Krylov 子空间中构造正交基，将对称 Hessian 投影为小�
 
 ## 7.2 Limited-memory quasi-Newton methods
 
+<!-- continuous-optimization-v1 -->
+### 大规模时先算存什么，再决定如何更新 {#memory-calculation}
+
+若参数数 $n=10^6$，完整对称Hessian即使只存上三角，也约有 $5\times10^{11}$ 个数；按8字节计约4TB。这里瓶颈不是一次公式能否写出来，而是数据能否放进内存。L-BFGS取 $m=10$ 时，仅保存10对长度n的s/y向量，主要数组约 $2mn\times8=160$MB，另有基础向量与运行空间。
+
+两遍递推不是把一个小矩阵冒充完整Hessian。它从最新到最旧用 $a_i=\rho_i s_i^Tq$ 消去信息，施加基础近似 $H^0$，再从最旧到最新用已保存的 $a_i$ 回补，最终只求所需的 $H_kg_k$。如果只需要这个乘积，就没有理由先形成 $H_k$ 的每个元素。
+
+与7.1的Newton-CG比较：前者保存近期梯度差，后者调用Hessian-vector乘积并用内层残差决定精度。遇到稀疏/部分可分目标，再用7.3–7.4的真实依赖图判断结构；不能把许多变量画成抽屉就声称算法已经稀疏。
+
+
 ### L-BFGS：存观察而不存整张矩阵
 
 完整 BFGS 通常生成稠密矩阵，即使真实 Hessian 稀疏。**Limited-memory BFGS，L-BFGS**只保留最近 m 对

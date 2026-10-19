@@ -35,7 +35,7 @@ Deisenroth、Faisal、Ong。用来补充线性代数、求导、概率、连续�
 
 ## 大地测量：回到参考模型与椭球几何 {#geo-books}
 
-《现代大地控制测量》用于绪论相关背景与核对；椭球数学性质以课程原讲义为主。前者有 294 文件页，网站使用范围与页码对应见[大地测量来源索引](geodesy-sources.html)，没有把全书等同于当前两章内容。
+《现代大地控制测量》用于绪论相关背景与核对；椭球数学性质以课程原讲义为主。前者有 294 文件页，网站使用范围与页码对应见[大地测量来源索引](geodesy-sources.html)，没有把全书等同于当前四章内容。
 
 [教材预览与下载](geodesy-source-s5.html) · [椭球原讲义](geodesy-source-s3.html) · [向量与旋转补充材料](extensions.html#geo-geometry) · [本课程全部资源](resources.html?course=geodesy)
 

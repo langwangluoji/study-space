@@ -14,6 +14,28 @@ description: 按原书顺序理解范数近似、最小范数解、正则化、�
 
 ## 6.1 Norm approximation · 用范数定义近似
 
+<!-- continuous-optimization-v1 -->
+### 三条观测互相冲突，先算清一次折中 {#calibration-residuals}
+
+把位置 $z=(x,y)$ 当作未知参数。三只线性测头分别报告 $x\approx1$、$y\approx2.1$、$-x+y\approx1.2$，于是
+
+$$
+A=\begin{bmatrix}1&0\\0&1\\-1&1\end{bmatrix},\quad b=(1,2.1,1.2)^T,\quad r=Az-b.
+$$
+
+若前三个数能精确一致，前两条会给 $-x+y=1.1$，与第三条1.2冲突。选择 $\frac12\|r\|^2$ 后，正规方程为
+
+$$
+\begin{bmatrix}2&-1\\-1&2\end{bmatrix}z=\begin{bmatrix}-.2\\3.3\end{bmatrix}.
+$$
+
+解为 $(29/30,32/15)$，残差 $(-1/30,1/30,-1/30)$，代价 $1/600$；$A^Tr=0$，但没有一条残差被要求独自为零。换成最大误差或绝对误差，就改变了怎样评价三只表的冲突，不能只说“换个求解方法”。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=fitting" title="同一测量表：残差与最小二乘折中" />
+
+到6.3继续用同一数据，若加 $\lambda\|z\|^2/2$，方程左侧变为 $A^TA+\lambda I$。当 $\lambda=1$，解变成 $(27/80,97/80)$：它更靠近零，但一般拟合变差。这是对解的偏好，不是凭空增加测量信息。6.2、6.4、6.5分别改变“要精确满足什么”“数据本身可信到何种范围”“函数怎样表示”，可沿这三个问题理解后续变化。
+
+
 设 $A\in\mathbb R^{m\times n}$、$b\in\mathbb R^m$ 是已知数据，$x\in\mathbb R^n$ 是待定参数。残差向量（residual）为 $r=Ax-b$，基本问题是
 
 $$

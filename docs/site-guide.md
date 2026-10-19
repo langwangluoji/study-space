@@ -39,7 +39,7 @@ next: false
 
 **DOCX、PPTX 或 ZIP**：Office 资料提供保持原排版的 PDF 预览；编辑、动画和嵌入影音仍需下载原件后使用兼容软件。ZIP 需要先解压。InSAR 离线包包含本站整理的 Markdown、配图和来源记录，完整课堂 PDF 与教材不在包内；课堂原件与教材可以从各自的资料卡获取。
 
-**Notebook 与 Python**：网页用于看代码，下载后仍需本地 Python/PyTorch 环境。先读[实践环境与预算](cifar10-practice.html#p0)，再运行相应单元。保存代码或阅读网页不会自动训练模型。
+**Notebook 与 Python**：网页用于看代码，下载后仍需本地 Python/PyTorch 环境。首次运行推荐下载[完整练习包](downloads/CIFAR10_MLP_完整练习包.zip)，解压后保留目录结构，Notebook 需要其中的 `practice` 模块。先读[实践环境与预算](cifar10-practice.html#p0)，再运行相应单元。保存代码或阅读网页不会自动训练模型。
 
 下载文件的内容可在兼容阅读器中离线查看；代码执行仍需要相应环境与依赖，包内外部链接需要联网。当前网站没有整站离线安装或跨设备学习记录同步。
 

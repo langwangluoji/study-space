@@ -2,3 +2,17 @@
 public/insar/figures/*.svg text eol=lf
 
 materials/storage/**/*.bin -text -diff
+
+# Portable generated Anatomy source and standalone pages.
+scripts/anatomy/**/*.mjs text eol=lf
+scripts/anatomy/**/*.js text eol=lf
+scripts/anatomy/**/*.css text eol=lf
+scripts/anatomy/**/*.html text eol=lf
+scripts/anatomy/**/*.md text eol=lf
+scripts/anatomy/LICENSE text eol=lf
+public/anatomy/**/*.mjs text eol=lf
+public/anatomy/**/*.js text eol=lf
+public/anatomy/**/*.css text eol=lf
+public/anatomy/**/*.html text eol=lf
+public/anatomy/**/*.md text eol=lf
+public/anatomy/LICENSE text eol=lf

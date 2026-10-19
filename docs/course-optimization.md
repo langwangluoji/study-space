@@ -10,6 +10,22 @@ next: { text: Boyd第1章 引言, link: /optimization-bv-01 }
 
 <div class="course-quicklinks"><a href="/study-space/optimization-bv-01.html">直接开始 Boyd 第1章 →</a><a href="/study-space/optimization-nw-01.html">直接开始 Numerical 第1章 →</a><a href="/study-space/optimization-sources.html">原书与页码 →</a></div>
 
+## 一次定位任务，读通七个问题 {#positioning-route}
+
+原书顺序保留在下方。第一次阅读也可沿同一张双轴校准台推进：变量、数据与候选位置始终衔接，每一步留下下一章真正要回答的问题。
+
+|要回答的问题|详细讲义|本步带走什么|
+|---|---|---|
+|哪些位置允许？|[BV2：可行集](/optimization-bv-02#positioning-feasible)|半空间与凸组合|
+|位置的代价怎样弯曲？|[BV3：能量与曲率](/optimization-bv-03#positioning-energy)|同一目标q及Hessian|
+|它是哪一种可解模型？|[BV4：写成QP](/optimization-bv-04#positioning-qp)|候选(1.2,.8)与代价.4|
+|候选真是全局最好吗？|[BV5：KKT与下界](/optimization-bv-05#positioning-kkt)|乘子、反力尺度与零间隙|
+|去掉挡板怎样移动？|[NW2：自由目标](/optimization-nw-02#positioning-unconstrained)|梯度与曲率各自作用|
+|沿方向走多远？|[NW3：一次完整线搜索](/optimization-nw-03#positioning-linesearch)|试步、拒绝、回溯与Wolfe|
+|范围内方向也可改变吗？|[NW4：信赖域](/optimization-nw-04#positioning-trust)|Cauchy步与真实/预测下降|
+
+[期末复习：公式、条件、易错点与题型路线](/review-optimization)用于考前回忆；各章正文保留完整推导、来源与进阶细节。动画中的机械缓动仅呈现模型，不替代算法迭代或一般证明。
+
 ## Convex Optimization · Boyd & Vandenberghe
 
 第1章建立问题语言；第2–5章是理论部分，从集合、函数、模型走向对偶；第6–8章在拟合、统计与几何中使用这些工具；第9–11章解释求解方法。附录数学在正文随用随讲，不作为前置评估。

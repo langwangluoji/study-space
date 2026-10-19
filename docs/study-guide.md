@@ -74,4 +74,4 @@ next: false
 
 ## 摄影测量：从射线开始 {#photogrammetry}
 
-先沿[八单元理解路线](/course-photogrammetry.html#photo-path)理解几何，再用[英文阅读训练](/photogrammetry-english)练习找对象、条件和结论。
+先沿[八章连续主线](/course-photogrammetry.html#photo-path)理解几何，再用[英文阅读训练](/photogrammetry-english)练习找对象、条件和结论。

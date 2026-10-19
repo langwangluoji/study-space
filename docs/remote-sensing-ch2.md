@@ -11,6 +11,20 @@ next:
 
 # 第二章 遥感电磁辐射基础 · Electromagnetic Radiation Fundamentals for Remote Sensing
 
+<!-- earth-reading-task -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+继续看同一田块的一个接收读数。先改变接收口的面积或角度，再保持实体温度改变发射率，最后固定材料改变方向与波段。每次只改变一个量，依次回答“更暗究竟可能来自哪里”；九节推导都服务于这次解释。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Continue with one receiver reading from the same field. First change the aperture or angle; next keep physical temperature fixed while changing emissivity; finally keep material fixed while changing direction and band. Vary one factor at a time to identify why a signal can become darker. The nine sections supply the definitions and models needed for that explanation.
+
+</div>
+<!-- /earth-reading-task -->
+
 <RsLanguage />
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
@@ -180,6 +194,34 @@ Sources: *第2章.pdf*, file pages 17–25 and 61–64; notes file page 1. The i
 </div>
 
 ## 2.3 辐射量、立体角与量纲 · Radiometric quantities, solid angle and units {#rs2-radiometry}
+
+<!-- anatomy-R2 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+给同一块样品换一个观察方向。先看功率表变不变，再看除去投影面积后的读数是否相同。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Rotate the receiving aperture while the sample stays fixed. Compare the received power with the radiance after accounting for projected area and solid angle.
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=radiometry" title="光强相同，旋转接收面会怎样？" title-en="Rotate the receiving aperture" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+两个表没有矛盾，它们除以的几何因子不同。先把每一项的单位写全，再把所有出射方向积分。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The instruments divide by different geometrical quantities. Keep their units, then integrate over outgoing directions.
+
+</div>
+<!-- /anatomy-R2 -->
 
 
 
@@ -366,6 +408,34 @@ Sources: *第2章.pdf*, file pages 26–31, with the figure from page 31; DOCX L
 </div>
 
 ## 2.5 实际物体、发射率与亮温 · Real surfaces, emissivity and brightness temperature {#rs2-emissivity-brightness-temperature}
+
+<!-- anatomy-R3 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+把接触温度计锁在300K，只换一片表面涂层。红外仪器此时读到的为什么不是同一个温度？
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Lock the contact thermometer at 300 K and change only emissivity. Predict what the radiometer reports.
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=thermal" title="温度固定，亮温为什么还能改变？" title-en="A thermal source and brightness temperature" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+接触计给实体温度，辐射计给等效黑体温度。用同一模型算一次293.6K，再解释真实路径还会加入哪些项。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The contact sensor gives physical temperature; the radiometer gives an equivalent blackbody temperature. Compare 293.6 K with the incorrect linear thermal-infrared estimate.
+
+</div>
+<!-- /anatomy-R3 -->
 
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
@@ -595,6 +665,34 @@ Sources: *第2章.pdf*, file pages 46–64; notes file page 3. The slides' Mie p
 </div>
 
 ## 2.8 反射几何、朗伯表面与BRDF · Reflection geometry, Lambertian surfaces and BRDF {#rs2-reflectance-brdf}
+
+<!-- anatomy-R4 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+把材料固定住，只转探测臂。如果同一材料在图上变亮，能否直接判断它的含水量变了？
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Keep the material fixed and move the viewing arm. Can a brighter signal alone establish a moisture change?
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=reflectance" title="一块样品变亮，是材料变了吗？" title-en="Illumination and viewing directions" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+方向响应先解释了这次变化。下一节再换材料与波段，看哪些变化来自响应模式，哪些来自测量条件。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Account for directional response first. Then change the material or spectral response while retaining the same measurement definitions.
+
+</div>
+<!-- /anatomy-R4 -->
 
 <!-- textbook-figures-rs2-reflectance-brdf:start -->
 

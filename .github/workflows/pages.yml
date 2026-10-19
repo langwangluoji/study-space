@@ -24,6 +24,7 @@ jobs:
           python-version: '3.11'
       - run: npm ci
       - run: npm run check
+      - run: npm run check:anatomy
       - run: node scripts/check-optimization.mjs
       - run: node scripts/check-traffic.mjs
       - run: node scripts/verify-materials.mjs
@@ -37,6 +38,8 @@ jobs:
       - run: npm run check:math
       - run: npx playwright install --with-deps chromium
       - run: node scripts/check-activity-ui.cjs
+      - run: node scripts/check-anatomy-ml-ui.mjs
+      - run: node scripts/check-anatomy-integration.mjs
       - run: node scripts/check-ui.cjs
       - run: node scripts/check-remote-resource-navigation.cjs
       - run: node scripts/check-insar-ui.cjs

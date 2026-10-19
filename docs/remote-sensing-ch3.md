@@ -11,6 +11,20 @@ next:
 
 # 第三章 遥感平台及运行特点
 
+<!-- earth-reading-task -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+第二章解释了相同目标为何会改变信号。现在先问：两日数据是否在相容时刻、角度和覆盖条件下取得？给田块放一面固定小旗，观察卫星绕完一圈后是否真的再次覆盖；然后再查轨道参数与任务型号。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Chapter 2 explained how the same target can produce different signals. Now ask whether the two acquisitions have comparable time, viewing angle and coverage. Place a fixed flag on the field and check whether one satellite revolution actually covers it again, before consulting orbital elements and mission tables.
+
+</div>
+<!-- /earth-reading-task -->
+
 Remote Sensing Platforms and Orbital Characteristics
 
 <RsLanguage />
@@ -266,6 +280,34 @@ Textbook comparison: [Kepler model, semi-major axis and period · sections and P
 </div>
 
 ## 3.5 一圈、重访与重复轨迹 / One orbit, revisit and a repeating ground track {#rs3-timing}
+
+<!-- anatomy-R5 -->
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+给田块插一面固定小旗。让卫星走完一圈，在再次查看图表以前先判断灯带会不会扫回小旗。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+Follow the flag after one revolution. Did the illuminated swath reach it again?
+
+</div>
+
+<AnatomyFigure src="/anatomy/earth-observation/remote-sensing.html?mode=orbit" title="转一圈之后，还看得到同一块田吗？" title-en="An orbit and an observation opportunity" />
+
+<div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
+
+绕行表已经加一，目标机会表可能仍为零。把这两个时钟分开后，再谈重复轨迹、侧摆和可用观测。
+
+</div>
+
+<div class="rs-lang" data-rs-lang="en" lang="en">
+
+The revolution counter and target-access counter measure different events. Repeat tracks and useful observations require further conditions.
+
+</div>
+<!-- /anatomy-R5 -->
 
 <!-- textbook-figures-rs3-timing:start -->
 

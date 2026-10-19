@@ -9,7 +9,7 @@ const resources=JSON.parse(fs.readFileSync(new URL('../../resources.config.json'
 const geodesySidebar=[{text:'大地测量',items:[{text:'课程总览',link:'/course-geodesy'}]},...geodesy.map(c=>({text:c.title,link:'/'+c.slug,collapsed:false,items:c.topics.map(t=>({text:t.title,link:'/'+t.slug}))})),{text:'辅助资料',collapsed:true,items:[{text:'坐标旋转说明',link:'/geodesy-rotation'},{text:'资料来源与图像索引',link:'/geodesy-sources'},{text:'课程维护方案',link:'/geodesy-plan'}]}];
 const chapterItems=c=>c.parts?.length?c.parts.map(p=>({text:p.title,link:'/'+c.slug+'.html#'+p.id,collapsed:true,items:p.sections.map(id=>{const s=c.sections.find(s=>s.id===id);return {text:s.title,link:'/'+c.slug+'.html#'+id}})})):c.sections.map(s=>({text:s.title,link:'/'+c.slug+'.html#'+s.id}));
 const mlTitle=space.courses.find(c=>c.id==='ml').title;
-const mlSidebar=[{text:mlTitle,items:[{text:'课程总览',link:'/course-ml'},{text:'复习路线',link:'/review-guide#ml'}]},...courses.map(c=>({text:c.title,collapsed:true,items:[{text:'连续阅读整讲',link:'/'+c.slug},...chapterItems(c)]})),{text:'课程资料',items:[{text:'教材与课件',link:'/resources#ml'},{text:'来源说明',link:'/read-sources'}]}];
+const mlSidebar=[{text:mlTitle,items:[{text:'课程总览',link:'/course-ml'},{text:'期末关键页',link:'/review-ml'}]},...courses.map(c=>({text:c.title,collapsed:true,items:[{text:'连续阅读整讲',link:'/'+c.slug},...chapterItems(c)]})),{text:'课程资料',items:[{text:'教材与课件',link:'/resources#ml'},{text:'来源说明',link:'/read-sources'}]}];
 // A course owns one resource group. Original files and curated readers share
 // the same catalog, so later material additions cannot create a second library.
 const resourceGroups={
@@ -52,6 +52,12 @@ optimizationSidebar[2].items.push(...[{"text":"NW 附录A · 基础材料","link
 sidebar['/course-optimization']=optimizationSidebar;sidebar['/optimization-']=optimizationSidebar;
 sidebar['/optimization-bv-']=[optimizationSidebar[0],optimizationSidebar[1],{text:'另一本教材',items:[{text:'Numerical Optimization 目录',link:'/course-optimization#numerical-optimization-·-nocedal-wright'}]},optimizationSidebar[3]];
 sidebar['/optimization-nw-']=[optimizationSidebar[0],{...optimizationSidebar[2],collapsed:false},{text:'另一本教材',items:[{text:'Convex Optimization 目录',link:'/course-optimization#convex-optimization-·-boyd-vandenberghe'}]},optimizationSidebar[3]];
+for(const c of space.courses){
+ const courseNav=sidebar['/course-'+c.id];
+ const items=courseNav?.[0]?.items;
+ if(items&&!items.some(i=>i.link==='/review-'+c.id))items.push({text:'期末关键页',link:'/review-'+c.id});
+ if(courseNav)sidebar['/review-'+c.id]=courseNav;
+}
 process.env.VITE_EXTRA_EXTENSIONS='py,ipynb,pptx';
 const segmenter=new Intl.Segmenter('zh-CN',{granularity:'word'});
 function renderSearch(src,env,md){

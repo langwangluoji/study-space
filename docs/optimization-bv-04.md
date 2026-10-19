@@ -50,6 +50,30 @@ $$
 
 ## 4.4 Quadratic optimization problems · QP、QCQP与SOCP
 
+<!-- continuous-optimization-v1 -->
+### 把定位任务逐项认成一份QP {#positioning-qp}
+
+本例的变量仍为 $z=(x,y)$，数据为平衡位置 $(2,1)$、刚度 $(1,4)$ 和挡板截距2。展开目标后
+
+$$
+q(z)=\tfrac12 z^TPz+r^Tz+4,\quad P=\operatorname{diag}(1,4),\quad r=(-2,-4)^T,
+$$
+
+约束是 $[1,1]z\le2$。$P\succ0$，约束仿射，所以它是严格凸QP。常数4不影响最优位置，但影响报告的目标值；后面比较对偶上下界时不能随手丢掉它。
+
+自由解 $(2,1)$ 不可行，最优点应在挡板上。先沿边界消去 $y=2-x$：
+
+$$
+q(x,2-x)=\tfrac12[(x-2)^2+4(1-x)^2],\quad \frac{dq}{dx}=5x-6.
+$$
+
+因此候选为 $x=6/5,y=4/5$，代价为 $2/5$。这次直接消元能求解，是因为边界是一条已知直线、目标严格凸。下一章还要回答：为什么这不是仅仅边界上的最佳点，而是整个半空间的最佳点？
+
+不要把所有模型类型都当同一配方。把目标改为 $|x-2|+|y-1|$ 可引入辅助变量得到LP；加入 $\|z\|_2\le t$ 则适合SOCP；出现未知矩阵的半正定约束才进入SDP。先说明原任务究竟改了哪一项，再选择模型族。它们的章节索引保留在4.3–4.7。
+
+<AnatomyFigure src="/anatomy/optimization/positioning.html?mode=kkt" title="同一份QP的可行解与约束边界" />
+
+
 凸QP有目标
 
 $$

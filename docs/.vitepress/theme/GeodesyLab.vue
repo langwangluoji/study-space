@@ -34,7 +34,7 @@ const format=(v,d=3)=>Math.abs(v)<0.0000001?(0).toFixed(d):v.toFixed(d);
           <div><dt>X / m</dt><dd>{{format(ellipsoid.X)}}</dd></div><div><dt>Y / m</dt><dd>{{format(ellipsoid.Y)}}</dd></div><div><dt>Z / m</dt><dd>{{format(ellipsoid.Z)}}</dd></div>
           <div><dt>子午曲率 M / m</dt><dd>{{format(ellipsoid.M)}}</dd></div><div><dt>卯酉曲率 N / m</dt><dd>{{format(ellipsoid.N)}}</dd></div><div><dt>空间点地心纬度 / 度</dt><dd>{{format(ellipsoid.phi,6)}}</dd></div>
         </dl>
-        <p>当前纬度下，纬度微增的每度长度系数为 {{format(ellipsoid.north)}} m，平行圈每度经差长度为 {{format(ellipsoid.east)}} m。前者是局部导数，不能当作整整一度的精确子午线弧长。</p>
+        <p>参考椭球面（h=0）在当前纬度的纬度微增长度系数为 {{format(ellipsoid.north)}} m，平行圈每度经差长度为 {{format(ellipsoid.east)}} m。前者是局部导数，不能当作整整一度的精确子午线弧长。它们不随输入高度改变；若计算输入点的等椭球高面，应分别使用 (M+h)π/180 与 (N+h)cosB·π/180。</p>
       </div>
       <p v-else role="alert">请输入有效数值：纬度 −90～90°，经度 −180～180°，高度 −1000～100000 m。</p>
     </template>

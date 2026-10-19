@@ -1,0 +1,421 @@
+[
+  {
+    "pose": 0,
+    "state": {
+      "point": [
+        1.2,
+        0.8
+      ],
+      "wall": true,
+      "c": 2,
+      "normalForce": 1.1313708498984762
+    },
+    "solids": 53,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 1,
+    "state": {
+      "point": [
+        0.3999999999999999,
+        0.6
+      ],
+      "lambda": 1.6,
+      "slack": 1.1102230246251565e-16,
+      "normalGap": 7.850462293418875e-17,
+      "reaction": [
+        -1.6,
+        -1.6
+      ],
+      "normalForce": 2.2627416997969525,
+      "value": 1.6000000000000003,
+      "dual": 1.5999999999999999,
+      "wall": true,
+      "c": 1
+    },
+    "solids": 53,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 2,
+    "state": {
+      "point": [
+        1.6,
+        0.9
+      ],
+      "lambda": 0.4,
+      "slack": -1.1102230246251565e-16,
+      "normalGap": -7.850462293418875e-17,
+      "reaction": [
+        -0.4,
+        -0.4
+      ],
+      "normalForce": 0.5656854249492381,
+      "value": 0.09999999999999995,
+      "dual": 0.09999999999999999,
+      "wall": true,
+      "c": 2.5
+    },
+    "solids": 53,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 3,
+    "state": {
+      "point": [
+        2,
+        1
+      ],
+      "lambda": 0,
+      "slack": 0,
+      "normalGap": 0,
+      "reaction": [
+        0,
+        0
+      ],
+      "normalForce": 0,
+      "value": 0,
+      "dual": 0,
+      "wall": true,
+      "c": 3
+    },
+    "solids": 53,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 4,
+    "state": {
+      "point": [
+        2,
+        1
+      ],
+      "lambda": 0,
+      "slack": 1,
+      "normalGap": 0.7071067811865475,
+      "reaction": [
+        0,
+        0
+      ],
+      "normalForce": 0,
+      "value": 0,
+      "dual": 0,
+      "wall": true,
+      "c": 4
+    },
+    "solids": 53,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 5,
+    "state": {
+      "point": [
+        0,
+        0
+      ],
+      "value": 4,
+      "slope": -20,
+      "armijo": true,
+      "wolfe": false,
+      "strong": false,
+      "exact": 0.29411764705882354,
+      "wall": false,
+      "c": 2
+    },
+    "solids": 48,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 6,
+    "state": {
+      "point": [
+        1,
+        2
+      ],
+      "value": 2.5,
+      "slope": 14,
+      "armijo": true,
+      "wolfe": true,
+      "strong": true,
+      "exact": 0.29411764705882354,
+      "wall": false,
+      "c": 2
+    },
+    "solids": 48,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 7,
+    "state": {
+      "point": [
+        2,
+        4
+      ],
+      "value": 18,
+      "slope": 48,
+      "armijo": false,
+      "wolfe": true,
+      "strong": false,
+      "exact": 0.29411764705882354,
+      "wall": false,
+      "c": 2
+    },
+    "solids": 48,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 8,
+    "state": {
+      "point": [
+        -0.3,
+        -0.2
+      ],
+      "wall": false,
+      "c": 2
+    },
+    "solids": 48,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  },
+  {
+    "pose": 9,
+    "state": {
+      "point": [
+        2.6,
+        2.2
+      ],
+      "wall": false,
+      "c": 2
+    },
+    "solids": 48,
+    "failures": 0,
+    "result": {
+      "clearance": [],
+      "apart": [],
+      "flight": [],
+      "crowding": [],
+      "cover": [],
+      "terminals": [],
+      "loose": [],
+      "folds": [],
+      "self": [],
+      "wobble": [],
+      "seats": [],
+      "supports": {
+        "loose": [],
+        "hanging": [],
+        "sunk": []
+      },
+      "depth": {
+        "problems": [],
+        "passing": [],
+        "missing": []
+      }
+    }
+  }
+]

@@ -7,6 +7,19 @@ next: {text: 1 · Introductory Concepts, link: /photogrammetry-en-01}
 
 # 摄影测量 · 跟着英文课本学懂两本教材
 
+## 同一个点，贯穿八讲 {#shared-case}
+
+这套讲义跟着英文教材的章节走，但每一讲都推进同一项测量：**用两张照片求点P的坐标，说明它有多准，并能交付地图产品。** 王佩军、徐亚明教材提供已有详细推导；课堂潘励第三版的已核章节与新第2章PPT按主题接入，版本和核读范围见[来源说明](./photogrammetry-sources.md#pan-classroom)。
+
+统一工作单：$C_1=(0,0,1000)$ m、$C_2=(300,0,1000)$ m，$R_1=R_2=I$，标定主距$f=150$ mm，物点$P=(200,100,0)$ m。地面Z向上，$q=R^T(P-C)$、$q_z<0$，等效像面$z=-f$。因此左像$(30,15)$ mm，右像$(-15,15)$ mm，横视差45 mm。默认230 mm方幅、10 μm教学像元保证这些点在片内；若改成36 mm全像幅，左像$x=30$ mm已被裁掉。
+
+1. **先能拍到：** [第2讲](./photogrammetry-en-02.md)确定尺度、共同覆盖、像坐标与视差。
+2. **再能量准：** [第3讲](./photogrammetry-en-03.md)排查模糊、像移、畸变和检校；[第4讲](./photogrammetry-en-04.md)把同一几何写成坐标与方程。
+3. **解出点位：** [第5讲](./photogrammetry-en-05.md#task-ledger)完成控制后交、前交、模型安放、区域网和验收。
+4. **交付并解释：** [第6–8讲](./photogrammetry-en-06.md)衔接匹配、仪器、DEM/DOM与独立检查。
+
+每完成一步，记录“哪些是观测、哪些已知、哪些待求、用了什么前提”。只记公式而不写这四项，很容易把后交当作前交、把精密度当作准确度。考前用[关键公式与题型速查](./review-photogrammetry.md)，推导仍回各讲。
+
 Photogrammetry · One course sequence, two textbook perspectives
 
 老师按 *Introduction to Modern Photogrammetry* 授课，这套讲义也按它的章节与核心小节次序阅读。中文解释、配图、公式推导和例题融合王佩军、徐亚明教材及英文原著；同一概念尽量连续讲清，书的章号只作为出处。
@@ -23,7 +36,7 @@ Photogrammetry · One course sequence, two textbook perspectives
 |[4 · Mathematical Concepts 数学概念](./photogrammetry-en-04.md)|不同坐标、内外方位与条件方程怎样连接？|融合王书坐标/共线/共面，补原著卫星时变几何|
 |[5 · Resection, Intersection, and Triangulation 交会与三角测量](./photogrammetry-en-05.md)|怎样从已知观测求相机、物点、模型和区域网？|融合王书解析基础与空三，补英文坐标精化、反投影与评价|
 
-第1、3章PPT共265个物理页；它们的内容已经按知识归属放入实际讲义段落，课件中的预览有时对应后续章节。手头没有独立第2章PPT，第二讲依据两本教材组织，不虚构课堂页码。查某一页用[逐页覆盖表](./photogrammetry-coverage.md)。
+第1、3章PPT共265个物理页，另已核入新第2章PPT的104个物理页。第2章页码逐页作主题定位；主点换算、立体高度夸大与航片边界计数新增了具体衔接，其余不宣称逐页重制。潘励第三版与王书是不同教材，章节不互换。查某一页用[逐页覆盖表](./photogrammetry-coverage.md)。
 
 概念、原图、条件和推导在正文中连续展开：先说明空间关系与符号，再得到公式，随后用例子和特殊情形检查。
 
@@ -53,11 +66,11 @@ Photogrammetry · One course sequence, two textbook perspectives
 - [7 · Photogrammetric Instruments 摄影测量仪器](./photogrammetry-en-07.md)：保留王书模拟、解析与数字测图的解释。
 - [8 · Photogrammetric Products 摄影测量产品](./photogrammetry-en-08.md)：DEM/DSM/DTM、DOM、GIS与产品精度。
 
-第9章近景、第10章多/高光谱、第11章主动传感及附录A–G保留在[英文原著完整章节地图](./photogrammetry-sources.md)中延伸阅读。本轮完整保留的范围是王书前六章知识、两份PPT与已核英文原页；没有用目录入口冒充其余章节的完整讲义。
+第9章近景、第10章多/高光谱、第11章主动传感及附录A–G保留在[英文原著完整章节地图](./photogrammetry-sources.md)中延伸阅读。本轮完整保留的范围是王书前六章知识、三份PPT的主题对照、已融合正文与已核英文原页；没有用目录入口冒充其余章节的完整讲义。
 
 ## 复习与核对 {#coverage}
 
-- [教材与PPT覆盖](./photogrammetry-coverage.md)：28个王书原节、265页PPT和新英文次序的交叉定位。
+- [教材与PPT覆盖](./photogrammetry-coverage.md)：28个王书原节、369页PPT的分层主题/融合定位与英文次序。
 - [期末复习与勘误](./photogrammetry-review.md)：压缩资料用来查重点，条件和推导回主讲义确认。
 - [校验、自评与范围](./photogrammetry-quality.md)：查看真实来源核读、数学验证、双端审阅及限制。
 - [本机教材与课件](./photogrammetry-sources.md)：选择本机PDF，按讲义页码回读。
