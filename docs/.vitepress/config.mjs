@@ -55,7 +55,7 @@ sidebar['/optimization-nw-']=[optimizationSidebar[0],{...optimizationSidebar[2],
 for(const c of space.courses){
  const courseNav=sidebar['/course-'+c.id];
  const items=courseNav?.[0]?.items;
- if(items&&!items.some(i=>i.link==='/review-'+c.id))items.push({text:'期末关键页',link:'/review-'+c.id});
+ if(items&&!items.some(i=>i.link==='/review-'+c.id))items.push({text:c.id==='optics'?'复习关键页':'期末关键页',link:'/review-'+c.id});
  if(courseNav)sidebar['/review-'+c.id]=courseNav;
 }
 process.env.VITE_EXTRA_EXTENSIONS='py,ipynb,pptx';
@@ -83,7 +83,7 @@ export default defineConfig({
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',
     docFooter:{prev:'上一页',next:'下一页'},lastUpdated:{text:'最近更新'},
-    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|course-optimization|optimization-|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source|remote-sensing-(sources|glossary))'},{text:'共建',link:'/contribute'},{text:'制作者',link:'/about'}],
+    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|course-optimization|optimization-|course-optics|optics-|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source|remote-sensing-(sources|glossary))'},{text:'共建',link:'/contribute'},{text:'制作者',link:'/about'}],
     // VitePress prioritizes slash depth and otherwise preserves insertion order.
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),

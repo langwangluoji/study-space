@@ -188,5 +188,21 @@
     ],
     "returnTo": "/photogrammetry-en-04.html#e4-2",
     "returnLabel": "回到像空间与辅助坐标系"
+  },
+  {
+    "id": "optics-electrodynamics-bridge",
+    "course": "optics",
+    "title": "从电动力学进入光学的波动、辐射与介质响应",
+    "purpose": "把已学的场方程、能流与极化模型接到课堂光学推导，遇到公式差异时先核对时间约定、单位和适用条件。",
+    "steps": [
+      "先读波动章的 Maxwell、横波和平均能流，说明复振幅与峰值的含义。",
+      "按电动力学关联章对照偶极辐射、Lorentz 与 Drude，区分热吸收、几何扩散和倏逝。",
+      "在公式速查中恢复谱密度、寿命线宽及腔阈值的条件，再用四章自测与原作业索引检查理解。"
+    ],
+    "resources": [
+      "optics-review-notes"
+    ],
+    "returnTo": "/optics-electrodynamics.html",
+    "returnLabel": "回到光学与电动力学的连续推导"
   }
 ]
