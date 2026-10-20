@@ -16,6 +16,7 @@ next: false
 | 摄影测量 | [坐标—成像—立体—平差](review-photogrammetry.html) | [连续讲义](course-photogrammetry.html) |
 | 大地测量 | [模型—曲面—方向—计算](review-geodesy.html) | [连续讲义](course-geodesy.html) |
 | 遥感原理 | [辐射—平台—成像—解译](review-remote-sensing.html) | [连续讲义](course-remote-sensing.html) |
+| 光学 | [波动—辐射—激光—传播](review-optics.html) | [连续推导与作业](course-optics.html) |
 | InSAR | [复数回波—相位差—形变解释](review-insar.html) | [连续讲义](course-insar.html) |
 
 ## 机器学习 {#ml}
@@ -43,3 +44,7 @@ next: false
 沿“复数回波—相位差—形变解释”回忆各步的对象、条件和单位。[进入关键总结 →](review-insar.html)
 
 [查原件与来源](resources.html) · [补概念与先修知识](study-guide.html)
+
+## 光学 {#optics}
+
+从[光学复习入口](course-optics.html)阅读连续推导，以[公式速查](optics-formulas.html)和[逐题作业索引](optics-exercises.html)检查模型、单位与条件。

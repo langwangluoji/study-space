@@ -779,5 +779,16 @@
     "description": "新接入的第二章课件；逐页主题对应与具体融合范围分别标注。 完整PDF在本机选择后阅读，本站不上传原书。",
     "format": "PDF",
     "localOnly": true
+  },
+  {
+    "id": "optics-review-notes",
+    "course": "optics",
+    "type": "讲义",
+    "title": "光学复习与电动力学关联",
+    "author": "Study Space 课程整理",
+    "description": "五份课件范围内的连续推导、公式速查、作业索引与来源对照；原课件保留在本地。",
+    "preview": "/course-optics.html",
+    "format": "ZIP",
+    "file": "/optics/光学期中复习_Obsidian.zip"
   }
 ]

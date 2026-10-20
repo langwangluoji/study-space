@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Planck integral pi^4/15",
+      "status": "PASS"
+    },
+    {
+      "name": "Stefan-Boltzmann constant",
+      "status": "PASS"
+    },
+    {
+      "name": "Wavelength Wien displacement",
+      "status": "PASS"
+    },
+    {
+      "name": "Dipole angular integral",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz line half maximum",
+      "status": "PASS"
+    },
+    {
+      "name": "Natural linewidth MHz",
+      "status": "PASS"
+    },
+    {
+      "name": "Cavity round-trip threshold",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz displacement residual",
+      "status": "PASS"
+    },
+    {
+      "name": "Passive Lorentz susceptibility imaginary sign",
+      "status": "PASS"
+    },
+    {
+      "name": "Lorentz zero restoring force equals Drude",
+      "status": "PASS"
+    },
+    {
+      "name": "FEL small-angle resonance against unexpanded slip",
+      "status": "PASS"
+    },
+    {
+      "name": "Intensity and amplitude attenuation relation",
+      "status": "PASS"
+    },
+    {
+      "name": "1064nm photon energy eV",
+      "status": "PASS"
+    }
+  ],
+  "pages": 10,
+  "sourcePdfPages": 205,
+  "workedSelfTests": 17,
+  "originalHomeworkItems": 37,
+  "scope": "Listed equations and examples; not a proof of every sentence or all source formulas."
+}

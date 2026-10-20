@@ -1,6 +1,6 @@
 # 课程知识库 · Markdown 维护指南
 
-内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。机器学习四讲与实践各保留一张连续阅读的长页。全站包含机器学习、大地测量、遥感原理、InSAR、最优化、摄影测量六门课程。生成页面不手工修改。
+内容源由 Markdown、Notebook 和 Python 维护，VitePress **1.6.4** 构建，GitHub Pages 基础路径为 `/study-space/`。机器学习四讲与实践各保留一张连续阅读的长页。全站包含机器学习、大地测量、遥感原理、InSAR、最优化、摄影测量七门课程。生成页面不手工修改。
 
 ## 环境与命令
 
@@ -142,3 +142,7 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 `npm run anatomy` 用 `scripts/anatomy/build-*.mjs` 生成 `public/anatomy/` 下的独立交互图；正常构建先运行此步骤。模型、绘图和读数应保持同一数值来源。图通过 `AnatomyFigure` 嵌入，支持手机、深浅主题、键盘与减少动态效果。Anatomy kit 的 MIT 许可保留于 `scripts/anatomy/LICENSE`。不要手工修改生成后的 HTML。
 
 机器学习首次运行推荐下载 `CIFAR10_MLP_完整练习包.zip`，解压后保留目录结构；单独的 ipynb 依赖包内 `practice` 模块。ZIP 由 `generate-practice-bundle.mjs` 构建，不依赖本地研究目录。
+
+## 光学复习资料
+
+光学正文为 `docs/optics-waves.md`、`optics-incoherent.md`、`optics-laser.md`、`optics-propagation.md`，入口为 `course-optics.md`，关联、速查、37题索引及205页来源表分别为其余 `optics-*.md`。修改后运行 `python scripts/package-optics.py` 更新可编辑的 Obsidian 下载包，再执行正常构建。课堂原件未新增上传，来源页保留文件名、页码和SHA256。

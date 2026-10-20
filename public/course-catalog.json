@@ -394,6 +394,44 @@
           "title": "校验、自评与范围"
         }
       ]
+    },
+    {
+      "id": "optics",
+      "title": "光学",
+      "category": "物理与电磁理论",
+      "url": "course-optics.html",
+      "description": "以五份课堂课件串起波动、热辐射、激光和介质传播，逐步推导并联系电动力学。",
+      "status": "全部现有课件已整理",
+      "chapters": [
+        {
+          "slug": "optics-waves",
+          "title": "波动与光的电磁理论"
+        },
+        {
+          "slug": "optics-incoherent",
+          "title": "非相干辐射与热辐射"
+        },
+        {
+          "slug": "optics-laser",
+          "title": "相干辐射与激光"
+        },
+        {
+          "slug": "optics-propagation",
+          "title": "光的传播与介质响应"
+        },
+        {
+          "slug": "optics-electrodynamics",
+          "title": "光学与电动力学关联"
+        },
+        {
+          "slug": "optics-formulas",
+          "title": "公式速查与易错辨析"
+        },
+        {
+          "slug": "optics-exercises",
+          "title": "课后题索引与复习自检"
+        }
+      ]
     }
   ]
 }

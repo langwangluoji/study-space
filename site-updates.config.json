@@ -1,5 +1,26 @@
 [
   {
+    "id": "optics-review-20261020",
+    "date": "2026-10-20",
+    "category": "课程内容",
+    "title": "新增光学复习讲义与电动力学关联",
+    "summary": "覆盖五份课堂课件205页，整理四个主章的公式推导、17道详解自测及37道原作业索引，附公式速查和课件页码对照。",
+    "links": [
+      {
+        "label": "光学复习入口",
+        "url": "/course-optics.html"
+      },
+      {
+        "label": "公式与易错点",
+        "url": "/optics-formulas.html"
+      },
+      {
+        "label": "课件覆盖",
+        "url": "/optics-sources.html"
+      }
+    ]
+  },
+  {
     "id": "continuous-lessons-anatomy-20261020",
     "date": "2026-10-20",
     "category": "课程内容",
