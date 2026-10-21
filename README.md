@@ -145,4 +145,4 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 
 ## 光学复习资料
 
-光学正文为 `docs/optics-waves.md`、`optics-incoherent.md`、`optics-laser.md`、`optics-propagation.md`，入口为 `course-optics.md`，关联、速查、37题索引及205页来源表分别为其余 `optics-*.md`。修改后运行 `python scripts/package-optics.py` 更新可编辑的 Obsidian 下载包，再执行正常构建。课堂原件未新增上传，来源页保留文件名、页码和SHA256。
+光学正文为 `docs/optics-waves.md`、`optics-incoherent.md`、`optics-laser.md`、`optics-propagation.md`，入口为 `course-optics.md`，关联、速查、37题索引及来源表分别为其余 `optics-*.md`。2026-10-21 已对照官方教材第2—6章优化，新增6道综合自检；传播章仍依据原课件。来源页保留205页课件对照及教材章、节、式号与SHA256，不使用Word缓存页数。修改后运行 `python scripts/package-optics.py` 更新可编辑的 Obsidian 下载包、`python scripts/verify_optics.py` 核验相关推导，再执行正常构建。课堂和教材原件未新增上传。

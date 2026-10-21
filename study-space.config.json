@@ -355,18 +355,18 @@
       "title": "光学",
       "subtitle": "WAVES · RADIATION · LIGHT PROPAGATION",
       "field": "物理与电磁理论",
-      "summary": "以五份课堂课件串起波动、热辐射、激光和介质传播，逐步推导并联系电动力学。",
+      "summary": "对照五份课堂课件与官方教材第2—6章，梳理波动、辐射、激光和介质传播，逐步推导并联系电动力学。",
       "entry": "/course-optics.html",
       "start": "/optics-waves.html",
       "source": "/optics-sources.html",
-      "scope": "5份课件 · 205页 · 4个主章",
+      "scope": "5份课件 · 205页 · 5章教材对照",
       "tags": [
         "公式推导",
         "电动力学关联",
         "37题作业索引"
       ],
       "prerequisites": "复数、微积分与向量；Maxwell方程在正文重建",
-      "status": "全部现有课件已整理",
+      "status": "已结合官方教材优化",
       "chapters": [
         {
           "slug": "optics-waves",

@@ -1,5 +1,26 @@
 [
   {
+    "id": "optics-textbook-20261021",
+    "date": "2026-10-21",
+    "category": "课程内容",
+    "title": "光学复习对照官方教材第2—6章优化",
+    "summary": "补充空间频率、辐射度学、光谱机制、二能级饱和、红宝石激光与FEL群聚；核对教材公式并联动更新速查、来源及6道综合自检。",
+    "links": [
+      {
+        "label": "光学复习入口",
+        "url": "/course-optics.html"
+      },
+      {
+        "label": "教材来源与订正",
+        "url": "/optics-sources.html"
+      },
+      {
+        "label": "综合自检",
+        "url": "/optics-exercises.html"
+      }
+    ]
+  },
+  {
     "id": "optics-review-20261020",
     "date": "2026-10-20",
     "category": "课程内容",

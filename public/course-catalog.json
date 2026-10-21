@@ -400,8 +400,8 @@
       "title": "光学",
       "category": "物理与电磁理论",
       "url": "course-optics.html",
-      "description": "以五份课堂课件串起波动、热辐射、激光和介质传播，逐步推导并联系电动力学。",
-      "status": "全部现有课件已整理",
+      "description": "对照五份课堂课件与官方教材第2—6章，梳理波动、辐射、激光和介质传播，逐步推导并联系电动力学。",
+      "status": "已结合官方教材优化",
       "chapters": [
         {
           "slug": "optics-waves",

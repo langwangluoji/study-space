@@ -52,11 +52,57 @@
     {
       "name": "1064nm photon energy eV",
       "status": "PASS"
+    },
+    {
+      "name": "Oblique sampling repeats the complex phase",
+      "status": "PASS"
+    },
+    {
+      "name": "Oblique sampling period micrometres",
+      "status": "PASS"
+    },
+    {
+      "name": "Radiance projected cone integral",
+      "status": "PASS"
+    },
+    {
+      "name": "Blackbody band power invariant under spectral variable",
+      "status": "PASS"
+    },
+    {
+      "name": "Cherenkov retarded arrival phase",
+      "status": "PASS"
+    },
+    {
+      "name": "Cherenkov worked angle degrees",
+      "status": "PASS"
+    },
+    {
+      "name": "40kV continuous X-ray cutoff nm",
+      "status": "PASS"
+    },
+    {
+      "name": "Two-level equal-rate pump saturates below inversion",
+      "status": "PASS"
+    },
+    {
+      "name": "Random finite bunch mean squared bunching",
+      "status": "PASS"
+    },
+    {
+      "name": "532nm 300K Boltzmann log ratio",
+      "status": "PASS"
+    },
+    {
+      "name": "Planar undulator peak K coefficient per T cm",
+      "status": "PASS"
     }
   ],
   "pages": 10,
   "sourcePdfPages": 205,
+  "sourceTextbookChapters": 5,
   "workedSelfTests": 17,
+  "newTextbookSelfChecks": 6,
   "originalHomeworkItems": 37,
   "scope": "Listed equations and examples; not a proof of every sentence or all source formulas."
 }

@@ -14,6 +14,8 @@ outline: [2, 3]
 | 一维行波 | $\psi=f(x-vt)+g(x+vt)$ | 恒定波速、线性无色散波动方程；两函数分别向右、向左 |
 | 波动方程 | $\partial_x^2\psi=v^{-2}\partial_t^2\psi$ | 二阶时间方程需要两类初始数据 |
 | 简谐参数 | $k=2\pi/\lambda$，$\omega=2\pi\nu$，$v_p=\omega/k=\lambda\nu$ | 波长和相速度属于同一介质 |
+| 空间频率向量 | $\mathbf f=\mathbf k/(2\pi)$，$\lvert\mathbf f\rvert=1/\lambda$ | 单位 $\mathrm{m^{-1}}$；普通空间频率不是角波数 |
+| 沿截线的周期 | $d=2\pi/\lvert\mathbf k\cdot\widehat{\mathbf l}\rvert=\lambda/\lvert\cos\vartheta\rvert$ | 固定时刻；垂直传播方向的截线无相位变化，不把 $d$ 当波长矢量分量 |
 | 三维平面波 | $\psi=\operatorname{Re}[Ae^{i(\mathbf k\cdot\mathbf r-\omega t+\phi_0)}]$ | 波前为与实波矢垂直的平面 |
 | 发散/会聚球面波 | $\widetilde\psi=Ae^{\pm ikr}/r$ | 负时间因子下正号发散；标量均匀介质模型，$r>0$ |
 | 柱面波远场 | $\widetilde\psi\propto e^{ikr}/\sqrt r$ | $kr\gg1$，严格柱面解为Hankel函数 |
@@ -34,6 +36,7 @@ outline: [2, 3]
 | 辐照度/出射度 | $E_e=d\Phi_{\rm in}/dA$，$M_e=d\Phi_{\rm out}/dA$ | $\mathrm{W\,m^{-2}}$；分别接收/发射 |
 | 辐射强度 | $I_e=d\Phi/d\Omega$ | $\mathrm{W\,sr^{-1}}$，不同于波动光学 $I$ |
 | 辐亮度 | $L_e=d^2\Phi/(dA\cos\theta\,d\Omega)$ | $\mathrm{W\,m^{-2}\,sr^{-1}}$ |
+| 吸收率 | $a_\lambda=d\Phi_{\lambda,\rm abs}/d\Phi_{\lambda,\rm in}$ | 相同谱段、方向/偏振约定；被动材料 $0\le a_\lambda\le1$ |
 | 真空黑体能量谱 | $u_\nu=\frac{8\pi h\nu^3}{c^3}[e^{h\nu/(k_BT)}-1]^{-1}$ | 每Hz，$\mathrm{J\,m^{-3}\,Hz^{-1}}$，含两偏振 |
 | 黑体谱辐亮度 | $B_\nu=cu_\nu/(4\pi)$ | $\mathrm{W\,m^{-2}\,sr^{-1}\,Hz^{-1}}$ |
 | 黑体谱出射度 | $M_\nu=\pi B_\nu=cu_\nu/4$ | 各向同性腔场对应的半球出射 |
@@ -63,6 +66,8 @@ $$
 
 光子 $E=h\nu=hc/\lambda_0$、$p=h/\lambda_0$（真空）；便于计算的 $hc\simeq1239.841984\,\mathrm{eV\,nm}$。经典轨道的电荷辐射不能独立解释原子稳定性和离散能级。
 
+切伦科夫锥角 $\cos\theta=1/(\beta n_r)$，需 $\beta n_r>1$；这是介质相速度阈值。连续X射线的短波截止 $\lambda_{\min}=hc/(eU)$ 是单电子动能全部转为单光子的上限，不等于所有光子具有该能量，也不同于由壳层能级差决定的特征谱线。
+
 ## 3. 激光与相干辐射
 
 | 关系 | 公式 | 条件与区别 |
@@ -81,7 +86,9 @@ $$
 | Gaussian光束发散 | $\theta\simeq\lambda_0/(\pi w_0)$ | 理想基模、真空、远场半角；$w_0$ 为 $1/e^2$ 强度腰半径 |
 | 平面波荡器FEL共振 | $\lambda_s=\lambda_u(1+K^2/2+\gamma_e^2\theta^2)/(2s\gamma_e^2)$ | 超相对论、小角、平面波荡器模型；$s$ 是谐波序号 |
 
-FEL中 $K=eB_u\lambda_u/(2\pi mc)$，$\gamma_e=(1-v^2/c^2)^{-1/2}$。谐波允许性与轴上/轴外观察及波荡器对称性有关；经典平面波荡器轴上主要为奇次谐波，不应扩展到任意结构与任意角度。
+均匀随机且相互独立的电子相位 $\psi_j$，定义群聚因子 $b=N^{-1}\sum_j e^{-i\psi_j}$。相同单电子振幅、指定观察模条件下 $I_N=N^2|b|^2I_1$；随机束满足 $\langle|b|^2\rangle=1/N$，故平均仍有 $NI_1$ 自发辐射，不能写成“均匀束完全不发光”。连续均匀束的相干平均与有限束流的散粒涨落须区别。
+
+FEL中 $K=eB_u\lambda_u/(2\pi mc)$，$\gamma_e=(1-v^2/c^2)^{-1/2}$。本式的 $K$ 采用平面波荡器峰值磁场，$K\simeq0.934\,B_u[\mathrm T]\lambda_u[\mathrm{cm}]$；若周期用米，系数为 $93.4$。不可混用螺旋或rms定义。谐波允许性与轴上/轴外观察及波荡器对称性有关；经典平面波荡器轴上主要为奇次谐波，不应扩展到任意结构与任意角度。
 
 ## 4. 介质响应、吸收和色散
 
