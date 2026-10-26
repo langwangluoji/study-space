@@ -400,9 +400,13 @@
       "title": "光学",
       "category": "物理与电磁理论",
       "url": "course-optics.html",
-      "description": "对照五份课堂课件与官方教材第2—6章，梳理波动、辐射、激光和介质传播，逐步推导并联系电动力学。",
-      "status": "已结合官方教材优化",
+      "description": "课程学习版解释概念、展开推导与例题；考试复习精简版集中查阅概念、公式和适用条件。",
+      "status": "课程学习版与考试复习精简版",
       "chapters": [
+        {
+          "slug": "optics-learning",
+          "title": "课程内容学习版"
+        },
         {
           "slug": "optics-waves",
           "title": "波动与光的电磁理论"
@@ -421,11 +425,11 @@
         },
         {
           "slug": "optics-electrodynamics",
-          "title": "光学与电动力学关联"
+          "title": "光学与电动力学联系"
         },
         {
           "slug": "optics-formulas",
-          "title": "公式速查与易错辨析"
+          "title": "公式总表与适用条件"
         },
         {
           "slug": "optics-exercises",

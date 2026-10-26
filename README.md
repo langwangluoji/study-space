@@ -143,6 +143,8 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 
 机器学习首次运行推荐下载 `CIFAR10_MLP_完整练习包.zip`，解压后保留目录结构；单独的 ipynb 依赖包内 `practice` 模块。ZIP 由 `generate-practice-bundle.mjs` 构建，不依赖本地研究目录。
 
-## 光学复习资料
+## 光学课程学习与考试复习
 
-光学正文为 `docs/optics-waves.md`、`optics-incoherent.md`、`optics-laser.md`、`optics-propagation.md`，入口为 `course-optics.md`，关联、速查、37题索引及来源表分别为其余 `optics-*.md`。2026-10-21 已对照官方教材第2—6章优化，新增6道综合自检；传播章仍依据原课件。来源页保留205页课件对照及教材章、节、式号与SHA256，不使用Word缓存页数。修改后运行 `python scripts/package-optics.py` 更新可编辑的 Obsidian 下载包、`python scripts/verify_optics.py` 核验相关推导，再执行正常构建。课堂和教材原件未新增上传。
+`docs/course-optics.md` 提供两个入口：`optics-learning.md` 为课程学习版导读，四个主章保留概念解释、完整推导和例题；`review-optics.md` 为独立的考试概念公式精简版。其余 `optics-*.md` 提供电动力学联系、公式总表、37题原作业索引与来源对照。
+
+修改后运行 `python scripts/package-optics.py` 更新包含11篇笔记的 Obsidian 包及单独的精简版 Markdown，再执行正常构建和 `python scripts/verify_optics.py`。核验包括24项数值复算、两版入口、离线链接及 `optics-legacy-anchors.json` 中255个旧光学锚点。来源页保留205页课件对照及官方教材第2至6章的节号、式号与SHA256；传播章依据原课件。

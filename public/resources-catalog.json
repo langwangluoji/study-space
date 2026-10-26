@@ -923,12 +923,24 @@
     "id": "optics-review-notes",
     "course": "optics",
     "type": "讲义",
-    "title": "光学复习与电动力学关联",
+    "title": "光学课程学习版与复习笔记包",
     "author": "Study Space 课程整理",
-    "description": "五份课件及官方教材第2—6章对照优化的连续推导、公式速查、原37题索引和教材综合自检；原始资料保留在本地。",
+    "description": "四个主题的概念解释、完整推导和例题，附考试概念公式精简版、37道原作业索引与来源对照。",
     "preview": "/course-optics.html",
     "format": "ZIP",
     "file": "/optics/光学期中复习_Obsidian.zip",
-    "bytes": 121775
+    "bytes": 120415
+  },
+  {
+    "id": "optics-exam-summary",
+    "course": "optics",
+    "type": "讲义",
+    "title": "光学考试复习：概念与公式精简版",
+    "author": "Study Space 课程整理",
+    "description": "按波动、辐射、激光和介质传播查阅概念、主要公式、适用条件与解题起点。",
+    "preview": "/review-optics.html",
+    "format": "Markdown",
+    "file": "/optics/光学考试复习_概念公式精简版.md",
+    "bytes": 12515
   }
 ]

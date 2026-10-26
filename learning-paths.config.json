@@ -193,16 +193,33 @@
     "id": "optics-electrodynamics-bridge",
     "course": "optics",
     "title": "从电动力学进入光学的波动、辐射与介质响应",
-    "purpose": "把已学的场方程、能流与极化模型接到课堂光学推导，遇到公式差异时先核对时间约定、单位和适用条件。",
+    "purpose": "从场方程、能流和极化模型理解波动、辐射与介质响应，统一时间约定和单位。",
     "steps": [
-      "先读波动章的 Maxwell、横波和平均能流，说明复振幅与峰值的含义。",
-      "按电动力学关联章对照偶极辐射、Lorentz 与 Drude，区分热吸收、几何扩散和倏逝。",
-      "在公式速查中恢复谱密度、寿命线宽及腔阈值的条件，再用四章自测与原作业索引检查理解。"
+      "在课程学习版中依次推导波动方程、横波关系与平均能流。",
+      "对照电动力学联系中的偶极辐射、Lorentz与Drude模型，解释能量传输与损耗。",
+      "用考试精简版检查概念与公式，再完成对应例题和作业。"
     ],
     "resources": [
       "optics-review-notes"
     ],
     "returnTo": "/optics-electrodynamics.html",
     "returnLabel": "回到光学与电动力学的连续推导"
+  },
+  {
+    "id": "optics-exam-concepts",
+    "course": "optics",
+    "title": "光学考试概念与公式复习",
+    "purpose": "按四个主题整理定义、主要公式和解题条件，并将不熟悉的推导定位到学习版。",
+    "steps": [
+      "阅读精简版的记号和四个主题，独立复述每个公式的对象与条件。",
+      "按解题起点重建相位、能流、热平衡、往返增益和介质响应的计算。",
+      "用原作业与综合自检检验掌握情况，回到学习版补齐推导。"
+    ],
+    "resources": [
+      "optics-exam-summary",
+      "optics-review-notes"
+    ],
+    "returnTo": "/review-optics.html",
+    "returnLabel": "回到光学考试复习精简版"
   }
 ]

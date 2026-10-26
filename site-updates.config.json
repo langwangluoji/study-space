@@ -1,5 +1,26 @@
 [
   {
+    "id": "optics-learning-exam-20261026",
+    "date": "2026-10-26",
+    "category": "课程内容",
+    "title": "光学课程学习版与考试复习精简版上线",
+    "summary": "按物理概念与推导重整学习讲义，提供独立的概念公式精简版；来源订正集中查阅，原例题与37题索引保留。",
+    "links": [
+      {
+        "label": "课程学习版",
+        "url": "/optics-learning.html"
+      },
+      {
+        "label": "考试复习精简版",
+        "url": "/review-optics.html"
+      },
+      {
+        "label": "光学入口",
+        "url": "/course-optics.html"
+      }
+    ]
+  },
+  {
     "id": "optics-textbook-20261021",
     "date": "2026-10-21",
     "category": "课程内容",

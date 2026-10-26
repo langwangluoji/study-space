@@ -98,11 +98,16 @@
       "status": "PASS"
     }
   ],
-  "pages": 10,
+  "pages": 11,
   "sourcePdfPages": 205,
   "sourceTextbookChapters": 5,
   "workedSelfTests": 17,
   "newTextbookSelfChecks": 6,
   "originalHomeworkItems": 37,
-  "scope": "Listed equations and examples; not a proof of every sentence or all source formulas."
+  "readingModes": [
+    "course-learning",
+    "exam-summary"
+  ],
+  "legacyOpticsAnchors": 255,
+  "scope": "Numerical checks, reading-mode entry points, offline links and preserved legacy anchors."
 }

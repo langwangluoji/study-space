@@ -91,16 +91,42 @@ me=9.1093837139e-31
 close('Planar undulator peak K coefficient per T cm',e*.01/(2*math.pi*me*c),.933728954725801,rtol=1e-7)
 
 pages=['course-optics','optics-waves','optics-incoherent','optics-laser','optics-propagation',
-       'optics-electrodynamics','optics-formulas','optics-exercises','optics-sources','review-optics']
+       'optics-electrodynamics','optics-formulas','optics-exercises','optics-sources','optics-learning','review-optics']
 for page in pages:
     text=(root/'docs'/(page+'.md')).read_text(encoding='utf-8')
     assert not re.search(r'[A-Z]:[/\\]|tmp/review_build|\[\[|\ufffd',text),page
+    assert not re.search(r'\]\(optics-sources\.html\)\.(?:pdf|docx)\)',text),page+' truncated source link'
     assert text.count('$$')%2==0,page
     assert re.search(r'^# ',text,re.M),page
 with zipfile.ZipFile(root/'public'/'optics'/'光学期中复习_Obsidian.zip') as z:
-    assert len(z.namelist())==11 and z.testzip() is None
+    assert len(z.namelist())==13 and z.testzip() is None
+    assert {'optics-learning.md','review-optics.md'}<=set(z.namelist())
+    # Every packaged chapter link must work when the vault is opened offline.
+    for filename in z.namelist():
+        if not filename.endswith('.md'):continue
+        for target in re.findall(r'\]\(([^)]+)\)',z.read(filename).decode('utf-8')):
+            if target.startswith(('http:','https:','#')):continue
+            assert target.split('#')[0] in z.namelist(),(filename,target)
+entry=(root/'docs/course-optics.md').read_text(encoding='utf-8')
+assert 'optics-learning.html' in entry and 'review-optics.html' in entry
+summary=(root/'docs/review-optics.md').read_text(encoding='utf-8')
+assert all(term in summary for term in ['波动','辐射','激光','介质','FWHM','Fermat'])
+standalone=(root/'public/optics/光学考试复习_概念公式精简版.md').read_text(encoding='utf-8')
+assert not re.search(r'\]\((?!https://|#)[^)]+\.html\)',standalone)
+# Stable URLs from the earlier course remain usable after headings are edited.
+from html.parser import HTMLParser
+class Ids(HTMLParser):
+    def __init__(self):super().__init__();self.ids=[]
+    def handle_starttag(self,tag,attrs):
+        self.ids.extend(v for k,v in attrs if k=='id')
+legacy=json.loads((root/'optics-legacy-anchors.json').read_text(encoding='utf-8'))
+for slug,anchors in legacy.items():
+    parser=Ids();parser.feed((root/'docs/.vitepress/dist'/(slug+'.html')).read_text(encoding='utf-8'))
+    for anchor in anchors:assert parser.ids.count(anchor)==1,(slug,anchor)
 report={'status':'PASS','checks':checks,'pages':len(pages),'sourcePdfPages':205,
         'sourceTextbookChapters':5,'workedSelfTests':17,'newTextbookSelfChecks':6,
-        'originalHomeworkItems':37,'scope':'Listed equations and examples; not a proof of every sentence or all source formulas.'}
+        'originalHomeworkItems':37,'readingModes':['course-learning','exam-summary'],
+        'legacyOpticsAnchors':sum(map(len,legacy.values())),
+        'scope':'Numerical checks, reading-mode entry points, offline links and preserved legacy anchors.'}
 (root/'reports'/'optics-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Optics:',len(checks),'independent numerical checks;',len(pages),'portable pages; ZIP valid.')
