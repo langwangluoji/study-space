@@ -1,5 +1,22 @@
 [
   {
+    "id": "optics-concept-qa-20261026",
+    "date": "2026-10-26",
+    "category": "课程内容",
+    "title": "光学复习补充29个概念简答",
+    "summary": "逐项解释激光器三要素，区分装置组成与起振条件；补充波动、相干性、热辐射和介质传播的概念问答。",
+    "links": [
+      {
+        "label": "概念简答",
+        "url": "/review-optics.html#optics-concept-questions"
+      },
+      {
+        "label": "激光三要素",
+        "url": "/review-optics.html#laser-three-elements"
+      }
+    ]
+  },
+  {
     "id": "optics-learning-exam-20261026",
     "date": "2026-10-26",
     "category": "课程内容",

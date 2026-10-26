@@ -929,7 +929,7 @@
     "preview": "/course-optics.html",
     "format": "ZIP",
     "file": "/optics/光学期中复习_Obsidian.zip",
-    "bytes": 120415
+    "bytes": 126941
   },
   {
     "id": "optics-exam-summary",
@@ -937,10 +937,10 @@
     "type": "讲义",
     "title": "光学考试复习：概念与公式精简版",
     "author": "Study Space 课程整理",
-    "description": "按波动、辐射、激光和介质传播查阅概念、主要公式、适用条件与解题起点。",
+    "description": "29个概念简答涵盖激光三要素、反转、相干性、黑体、吸收与色散，配主要公式、适用条件和解题起点。",
     "preview": "/review-optics.html",
     "format": "Markdown",
     "file": "/optics/光学考试复习_概念公式精简版.md",
-    "bytes": 12515
+    "bytes": 27909
   }
 ]

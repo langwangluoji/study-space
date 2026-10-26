@@ -24,7 +24,8 @@ with zipfile.ZipFile(out) as z:
 summary=(root/'docs'/'review-optics.md').read_text(encoding='utf-8')
 summary=re.sub(r'^---\n.*?\n---\n','',summary,flags=re.S)
 summary=re.sub(r'\n## 离线阅读\n.*','',summary,flags=re.S)
-summary=re.sub(r'<a id="[^"]+"></a>\n','',summary)
+legacy=json.loads((root/'optics-legacy-anchors.json').read_text(encoding='utf-8')).get('review-optics',[])
+for anchor in legacy:summary=summary.replace('<a id="'+anchor+'"></a>\n','')
 for target in pages:
     summary=summary.replace(']('+target+'.html)','](https://langwangluoji.github.io/study-space/'+target+'.html)')
 (out.parent/'光学考试复习_概念公式精简版.md').write_bytes((summary.rstrip()+'\n').encode('utf-8'))
