@@ -8,7 +8,7 @@
     "commit": "3c9f671760b1f3ffa95198d55a0b68a188d58144",
     "runUrl": "https://github.com/langwangluoji/study-space/actions/runs/38532698910"
   },
-  "updatedAt": "2026-10-31T23:26:45.338Z",
+  "updatedAt": "2026-11-01T06:19:17.556Z",
   "days": [
     {
       "date": "2026-10-14",
@@ -120,7 +120,7 @@
       "pv": 4,
       "uv": 4,
       "complete": true,
-      "observedAt": "2026-10-31T23:26:45.338Z"
+      "observedAt": "2026-11-01T06:19:17.556Z"
     },
     {
       "date": "2026-10-30",
@@ -134,7 +134,7 @@
       "pv": 0,
       "uv": 0,
       "complete": true,
-      "observedAt": "2026-10-31T23:26:45.338Z"
+      "observedAt": "2026-11-01T06:19:17.556Z"
     },
     {
       "date": "2026-11-01",
@@ -144,5 +144,14 @@
       "observedAt": "2026-10-31T23:26:45.338Z"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "date": "2026-10-30",
+      "message": "The operation was aborted due to timeout"
+    },
+    {
+      "date": "2026-11-01",
+      "message": "The operation was aborted due to timeout"
+    }
+  ]
 }
