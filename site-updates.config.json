@@ -1,5 +1,26 @@
 [
   {
+    "id": "optics-ppt-review-20261102",
+    "date": "2026-11-02",
+    "category": "课程内容",
+    "title": "光学学习版与PPT复习版同步校对，新增传播II",
+    "summary": "六份PPT共257页逐项对应；学习版补课件插图与传播II完整讲解，复习版整理定义、现象条件、公式直觉和记法。",
+    "links": [
+      {
+        "label": "正式学习版",
+        "url": "/optics-learning.html"
+      },
+      {
+        "label": "PPT考点复习",
+        "url": "/review-optics.html"
+      },
+      {
+        "label": "现象条件速查",
+        "url": "/review-optics.html#ppt-conditions"
+      }
+    ]
+  },
+  {
     "id": "optics-concept-qa-20261026",
     "date": "2026-10-26",
     "category": "课程内容",

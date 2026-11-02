@@ -145,6 +145,6 @@ PR 仅构建与验证，不部署。只有 `main` 的 push 执行 GitHub Pages �
 
 ## 光学课程学习与考试复习
 
-`docs/course-optics.md` 提供两个入口：`optics-learning.md` 为课程学习版导读，四个主章保留概念解释、完整推导和例题；`review-optics.md` 为独立的考试概念公式精简版。其余 `optics-*.md` 提供电动力学联系、公式总表、37题原作业索引与来源对照。
+`docs/course-optics.md` 提供两个入口：`optics-learning.md` 为课程学习版导读，五个学习主章逐节对照PPT，保留完整推导、例题和来源插图；`review-optics.md` 为仅按六份课堂PPT整理的考点复习版，覆盖257页，解释概念、现象条件、公式直觉和记法。其余 `optics-*.md` 提供电动力学联系、公式总表、37题原作业索引与来源对照。
 
-修改后运行 `python scripts/package-optics.py` 更新包含11篇笔记的 Obsidian 包及单独的精简版 Markdown，再执行正常构建和 `python scripts/verify_optics.py`。核验包括24项数值复算、两版入口、离线链接及 `optics-legacy-anchors.json` 中255个旧光学锚点。来源页保留205页课件对照及官方教材第2至6章的节号、式号与SHA256；传播章依据原课件。
+修改后运行 `python scripts/package-optics.py` 更新包含12篇笔记及来源插图的 Obsidian 包、独立PPT复习ZIP及复习版 Markdown，再执行正常构建和 `python scripts/verify_optics.py`。核验包括24项数值复算、两版入口、离线链接及 `optics-legacy-anchors.json` 中登记的旧光学锚点。来源页记录六份PPT的257页范围及官方教材第2至6章。`optics-ppt-review-sources.json` 固定考试版的PPT来源；完整学习讲义仍保留教材和电动力学扩展。

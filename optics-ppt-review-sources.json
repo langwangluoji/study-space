@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-02",
+  "sourceKind": "classroom-PPT-PDF",
+  "pages": 257,
+  "files": [
+    {
+      "filename": "光学202609-波动.pdf",
+      "pages": 18,
+      "sha256": "acb13777de6b189e4eefa932e0e9e8b71d4d1b7d3bd7a2d363a8f956146bb2e9"
+    },
+    {
+      "filename": "光学20260921_波动.pdf",
+      "pages": 44,
+      "sha256": "0bf4d4d04b829fc8b9b9a8fdd5d48a129283c001c1c358c7d578541e40744ded"
+    },
+    {
+      "filename": "光学20260928_非相干辐射.pdf",
+      "pages": 45,
+      "sha256": "053edc20e1006d37e6c288d6752d3b459f5c90f2f501a2ddf62f6cbc035c2d13"
+    },
+    {
+      "filename": "光学20261012_相干辐射(1).pdf",
+      "pages": 54,
+      "sha256": "6a8c989b74b7aa1473f5a11403d07c0cff74760c584de826b83cd1999e84797e"
+    },
+    {
+      "filename": "光学20261019_光的传播_I.pdf",
+      "pages": 44,
+      "sha256": "05b1f13ef75132b6b82baa341ab262f90249fb1f4c12eadc34d2019e4c7a352b"
+    },
+    {
+      "filename": "光学20261026光的传播II.pdf",
+      "pages": 52,
+      "sha256": "b62892163bb36ec011f3e27a6b15de3f1cf07169baadc941fa593abe01592d25"
+    }
+  ],
+  "scope": "ppt-only",
+  "review": "/review-optics.html",
+  "sections": [
+    "waves",
+    "incoherent-radiation",
+    "laser",
+    "propagation-I",
+    "propagation-II"
+  ]
+}

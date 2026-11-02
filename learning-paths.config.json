@@ -208,18 +208,18 @@
   {
     "id": "optics-exam-concepts",
     "course": "optics",
-    "title": "光学考试概念与公式复习",
-    "purpose": "按四个主题整理定义、主要公式和解题条件，并将不熟悉的推导定位到学习版。",
+    "title": "光学PPT考点复习",
+    "purpose": "按课堂PPT掌握概念、现象条件与公式含义，用比例、单位和图像记忆。",
     "steps": [
-      "阅读精简版的记号和四个主题，独立复述每个公式的对象与条件。",
-      "按解题起点重建相位、能流、热平衡、往返增益和介质响应的计算。",
-      "用原作业与综合自检检验掌握情况，回到学习版补齐推导。"
+      "按五个复习模块，先复述定义和现象发生条件，并核对标注的PPT页码。",
+      "写出核心公式，说明每个符号、比例关系及适用条件；用单位或极限检查记忆。",
+      "用概念自检检查干涉、激光、吸收色散、散射偏振和光拍，并回看相应课件图。"
     ],
     "resources": [
       "optics-exam-summary",
-      "optics-review-notes"
+      "optics-ppt-review-bundle"
     ],
     "returnTo": "/review-optics.html",
-    "returnLabel": "回到光学考试复习精简版"
+    "returnLabel": "回到光学PPT考点复习版"
   }
 ]

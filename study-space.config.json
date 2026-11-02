@@ -355,18 +355,18 @@
       "title": "光学",
       "subtitle": "WAVES · RADIATION · LIGHT PROPAGATION",
       "field": "物理与电磁理论",
-      "summary": "课程学习版解释概念、展开推导与例题；考试复习精简版集中查阅概念、公式和适用条件。",
+      "summary": "学习版逐节对照PPT，保留推导并配课件原图；PPT考点版集中复习定义、现象条件和公式记法。",
       "entry": "/course-optics.html",
       "start": "/optics-learning.html",
       "source": "/optics-sources.html",
-      "scope": "4个主题 · 学习与复习双入口",
+      "scope": "257页PPT · 学习与复习双入口",
       "tags": [
-        "完整推导",
-        "概念公式精简版",
-        "37题作业索引"
+        "PPT概念与条件",
+        "公式直觉与记忆",
+        "完整学习讲义"
       ],
       "prerequisites": "复数、微积分与向量；Maxwell方程在正文重建",
-      "status": "课程学习版与考试复习精简版",
+      "status": "课程学习版与PPT考点版",
       "chapters": [
         {
           "slug": "optics-learning",
@@ -387,6 +387,10 @@
         {
           "slug": "optics-propagation",
           "title": "光的传播与介质响应"
+        },
+        {
+          "slug": "optics-propagation-ii",
+          "title": "光的传播II：散射、偏振与波的合成"
         },
         {
           "slug": "optics-electrodynamics",

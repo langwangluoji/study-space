@@ -16,7 +16,7 @@ next: false
 | 摄影测量 | [坐标—成像—立体—平差](review-photogrammetry.html) | [连续讲义](course-photogrammetry.html) |
 | 大地测量 | [模型—曲面—方向—计算](review-geodesy.html) | [连续讲义](course-geodesy.html) |
 | 遥感原理 | [辐射—平台—成像—解译](review-remote-sensing.html) | [连续讲义](course-remote-sensing.html) |
-| 光学 | [概念与公式精简版](review-optics.html) | [课程内容学习版](optics-learning.html) |
+| 光学 | [PPT考点复习版](review-optics.html) | [课程内容学习版](optics-learning.html) |
 | InSAR | [复数回波—相位差—形变解释](review-insar.html) | [连续讲义](course-insar.html) |
 
 ## 机器学习 {#ml}
@@ -47,4 +47,4 @@ next: false
 
 ## 光学 {#optics}
 
-[考试复习精简版](review-optics.html)集中列出概念、公式与适用条件；[课程内容学习版](optics-learning.html)展开推导和例题。练习见[原作业与综合自检](optics-exercises.html)，较完整的参数与公式见[公式总表](optics-formulas.html)。
+[PPT考点复习版](review-optics.html)按六份课件整理概念、现象条件、公式含义和记法；[课程内容学习版](optics-learning.html)展开推导和例题。练习见[原作业与综合自检](optics-exercises.html)，学习版的参数与公式见[公式总表](optics-formulas.html)。

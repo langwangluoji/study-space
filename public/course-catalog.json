@@ -400,8 +400,8 @@
       "title": "光学",
       "category": "物理与电磁理论",
       "url": "course-optics.html",
-      "description": "课程学习版解释概念、展开推导与例题；考试复习精简版集中查阅概念、公式和适用条件。",
-      "status": "课程学习版与考试复习精简版",
+      "description": "学习版逐节对照PPT，保留推导并配课件原图；PPT考点版集中复习定义、现象条件和公式记法。",
+      "status": "课程学习版与PPT考点版",
       "chapters": [
         {
           "slug": "optics-learning",
@@ -422,6 +422,10 @@
         {
           "slug": "optics-propagation",
           "title": "光的传播与介质响应"
+        },
+        {
+          "slug": "optics-propagation-ii",
+          "title": "光的传播II：散射、偏振与波的合成"
         },
         {
           "slug": "optics-electrodynamics",

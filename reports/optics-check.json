@@ -98,8 +98,8 @@
       "status": "PASS"
     }
   ],
-  "pages": 11,
-  "sourcePdfPages": 205,
+  "pages": 12,
+  "sourcePdfPages": 257,
   "sourceTextbookChapters": 5,
   "workedSelfTests": 17,
   "newTextbookSelfChecks": 6,
@@ -108,6 +108,9 @@
     "course-learning",
     "exam-summary"
   ],
-  "legacyOpticsAnchors": 255,
-  "scope": "Numerical checks, reading-mode entry points, offline links and preserved legacy anchors."
+  "legacyOpticsAnchors": 384,
+  "pptReviewScope": "Six classroom PPT PDFs only, including propagation II; learning notes retain textbook extensions.",
+  "learningSourceFigures": 15,
+  "learningPptPageMap": 257,
+  "scope": "Numerical checks for learning notes, PPT review source scope, offline links and preserved legacy anchors."
 }

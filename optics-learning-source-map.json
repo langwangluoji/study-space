@@ -1,0 +1,1448 @@
+{
+  "sourcePages": 257,
+  "sourceFiles": 6,
+  "chapters": [
+    {
+      "chapter": "optics-waves",
+      "source": [
+        "光学202609-波动.pdf",
+        "光学20260921_波动.pdf"
+      ],
+      "pages": [
+        {
+          "source": "W1",
+          "pdf_page": 1,
+          "topic": "光学逻辑六问",
+          "kind": "框架/问题总览",
+          "learning_section": "章首课程框架"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 2,
+          "topic": "几何、波动、矢量、量子光学层次",
+          "kind": "框架/问题总览",
+          "learning_section": "章首课程框架"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 3,
+          "topic": "第一章总结",
+          "kind": "回顾标题页",
+          "learning_section": "章首课程框架（回顾标题）"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 4,
+          "topic": "第二章波动",
+          "kind": "标题页",
+          "learning_section": "§1（章标题）"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 5,
+          "topic": "振动、波动、波场",
+          "kind": "知识内容",
+          "learning_section": "§1.1"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 6,
+          "topic": "时空双周期与能量传播",
+          "kind": "知识内容",
+          "learning_section": "§1.1"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 7,
+          "topic": "纵波、横波、质点不随波前整体前进",
+          "kind": "知识内容",
+          "learning_section": "§1.1"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 8,
+          "topic": "波包形状不变与初始函数",
+          "kind": "知识内容",
+          "learning_section": "§1.2"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 9,
+          "topic": "随动坐标S与S′",
+          "kind": "知识内容",
+          "learning_section": "§1.2"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 10,
+          "topic": "x′=x−vt与1/(10x²+1)示例",
+          "kind": "知识内容",
+          "learning_section": "§1.2"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 11,
+          "topic": "正反传播、速度符号与F(t−x/v)",
+          "kind": "知识内容",
+          "learning_section": "§1.2"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 12,
+          "topic": "一维波动方程的链式推导起步",
+          "kind": "推导页",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 13,
+          "topic": "空间二阶偏导",
+          "kind": "推导页",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 14,
+          "topic": "时间二阶求导步骤",
+          "kind": "推导页",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 15,
+          "topic": "链式法则续推",
+          "kind": "推导页",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 16,
+          "topic": "时间二阶导数v²因子",
+          "kind": "推导页",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 17,
+          "topic": "一维波动方程结果",
+          "kind": "知识内容",
+          "learning_section": "§1.3"
+        },
+        {
+          "source": "W1",
+          "pdf_page": 18,
+          "topic": "一维波动小结",
+          "kind": "回顾页",
+          "learning_section": "§1.1—1.3（回顾）"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 1,
+          "topic": "第二章波动",
+          "kind": "标题页",
+          "learning_section": "§1—6（章标题）"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 2,
+          "topic": "复数、极坐标、欧拉式、共轭与模",
+          "kind": "知识内容",
+          "learning_section": "§3.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 3,
+          "topic": "指数特殊值、实虚部、复波取实部",
+          "kind": "知识内容",
+          "learning_section": "§3.1—3.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 4,
+          "topic": "旋转相量、模、角、投影",
+          "kind": "知识内容",
+          "learning_section": "§3.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 5,
+          "topic": "相位改变的波形与相量图",
+          "kind": "知识内容",
+          "learning_section": "§2.2、§3.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 6,
+          "topic": "相位再认识：旋转机构与正弦投影图",
+          "kind": "图示内容",
+          "learning_section": "§3.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 7,
+          "topic": "相位初相位、月相、四季图",
+          "kind": "图示内容",
+          "learning_section": "§3.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 8,
+          "topic": "复数、相量、相位与初相位回顾",
+          "kind": "回顾页",
+          "learning_section": "§3.1—3.3（回顾）"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 9,
+          "topic": "平面等相位面与法向",
+          "kind": "知识内容",
+          "learning_section": "§4.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 10,
+          "topic": "空间周期、kλ=2π与传播矢量",
+          "kind": "知识内容",
+          "learning_section": "§2.1、§4.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 11,
+          "topic": "平面波复函数与相速度",
+          "kind": "知识内容",
+          "learning_section": "§2.2、§4.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 12,
+          "topic": "沿z与yz斜向平面波",
+          "kind": "知识内容",
+          "learning_section": "§4.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 13,
+          "topic": "方向余弦、三维波动方程、Laplacian",
+          "kind": "知识内容",
+          "learning_section": "§4.1、§4.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 14,
+          "topic": "球坐标、球对称、球面波1/r",
+          "kind": "知识内容",
+          "learning_section": "§5.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 15,
+          "topic": "柱坐标、柱对称、柱面波1/√r",
+          "kind": "知识内容",
+          "learning_section": "§5.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 16,
+          "topic": "线性叠加原理",
+          "kind": "知识内容",
+          "learning_section": "§6.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 17,
+          "topic": "1.0和0.9不同相位图示",
+          "kind": "图示内容",
+          "learning_section": "§6.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 18,
+          "topic": "1.0和0.8在0、π/3、2π/3、π下叠加",
+          "kind": "知识内容",
+          "learning_section": "§6.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 19,
+          "topic": "第三章光的基本性质",
+          "kind": "标题页",
+          "learning_section": "§7—10（章标题）"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 20,
+          "topic": "光波规律、方程、性质、参数、能量五问",
+          "kind": "框架/问题总览",
+          "learning_section": "§7—10（问题总览）"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 21,
+          "topic": "Maxwell积分式",
+          "kind": "知识内容",
+          "learning_section": "§7.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 22,
+          "topic": "Maxwell微分式",
+          "kind": "知识内容",
+          "learning_section": "§7.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 23,
+          "topic": "无自由电荷无传导电流",
+          "kind": "知识内容",
+          "learning_section": "§7.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 24,
+          "topic": "真空本构与化简",
+          "kind": "知识内容",
+          "learning_section": "§7.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 25,
+          "topic": "电磁波动方程与光速",
+          "kind": "推导页",
+          "learning_section": "§7.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 26,
+          "topic": "场各分量满足三维标量波动方程",
+          "kind": "知识内容",
+          "learning_section": "§7.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 27,
+          "topic": "平面电磁波波函数与波矢",
+          "kind": "知识内容",
+          "learning_section": "§4.1、§8"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 28,
+          "topic": "横波性",
+          "kind": "知识内容",
+          "learning_section": "§8.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 29,
+          "topic": "电磁场正交、同相、右手关系及振幅",
+          "kind": "知识内容",
+          "learning_section": "§8.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 30,
+          "topic": "Lorentz力、电场主导、光矢量",
+          "kind": "知识内容",
+          "learning_section": "§8.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 31,
+          "topic": "线偏振、平面偏振、振动面",
+          "kind": "知识内容",
+          "learning_section": "§8.4"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 32,
+          "topic": "辐射场、坡印廷矢量与光线",
+          "kind": "知识内容",
+          "learning_section": "§9.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 33,
+          "topic": "平均能流、光强、辐射通量",
+          "kind": "知识内容",
+          "learning_section": "§9.2"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 34,
+          "topic": "两波场幅平方与干涉项",
+          "kind": "知识内容",
+          "learning_section": "§6.2、§9.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 35,
+          "topic": "干涉条件一：平行振动分量",
+          "kind": "知识内容",
+          "learning_section": "§9.3—9.4"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 36,
+          "topic": "干涉条件二：同频与时间平均",
+          "kind": "知识内容",
+          "learning_section": "§9.4"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 37,
+          "topic": "干涉条件三：相位差恒定",
+          "kind": "知识内容",
+          "learning_section": "§9.4"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 38,
+          "topic": "惠更斯及反射折射",
+          "kind": "知识内容",
+          "learning_section": "§10.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 39,
+          "topic": "牛顿微粒说与直线传播反射折射",
+          "kind": "知识内容",
+          "learning_section": "§10.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 40,
+          "topic": "杨1801双缝、菲涅耳；以太纵波历史观点",
+          "kind": "知识内容",
+          "learning_section": "§10.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 41,
+          "topic": "Maxwell电磁统一、赫兹电磁波与光电效应",
+          "kind": "知识内容",
+          "learning_section": "§10.1"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 42,
+          "topic": "Planck、Einstein、Compton及光子角动量",
+          "kind": "知识内容",
+          "learning_section": "§10.1、§10.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 43,
+          "topic": "波粒关系与E=hν=ℏω、p=E/c",
+          "kind": "知识内容",
+          "learning_section": "§10.3"
+        },
+        {
+          "source": "W2",
+          "pdf_page": 44,
+          "topic": "波粒认识两历史链与h的联系图",
+          "kind": "图示内容",
+          "learning_section": "§10.3（关系图回顾）"
+        }
+      ]
+    },
+    {
+      "chapter": "optics-incoherent",
+      "source": "光学20260928_非相干辐射.pdf",
+      "pages": [
+        {
+          "pdf_page": 1,
+          "topic": "章导言",
+          "learning_section": "第1节前的章导言"
+        },
+        {
+          "pdf_page": 2,
+          "topic": "章导言",
+          "learning_section": "第1节前的章导言"
+        },
+        {
+          "pdf_page": 3,
+          "topic": "光源分类",
+          "learning_section": "1.1"
+        },
+        {
+          "pdf_page": 4,
+          "topic": "光源分类",
+          "learning_section": "1.1"
+        },
+        {
+          "pdf_page": 5,
+          "topic": "光线、波谱和谱形",
+          "learning_section": "1.2"
+        },
+        {
+          "pdf_page": 6,
+          "topic": "光线、波谱和谱形",
+          "learning_section": "1.2"
+        },
+        {
+          "pdf_page": 7,
+          "topic": "光线、波谱和谱形",
+          "learning_section": "1.2"
+        },
+        {
+          "pdf_page": 8,
+          "topic": "光线、波谱和谱形",
+          "learning_section": "1.2"
+        },
+        {
+          "pdf_page": 9,
+          "topic": "第五章标题",
+          "learning_section": "第2节导言"
+        },
+        {
+          "pdf_page": 10,
+          "topic": "热辐射与温度",
+          "learning_section": "第2节导言"
+        },
+        {
+          "pdf_page": 11,
+          "topic": "热辐射与温度",
+          "learning_section": "第2节导言"
+        },
+        {
+          "pdf_page": 12,
+          "topic": "每波长谱量、总量与吸收率",
+          "learning_section": "2.1"
+        },
+        {
+          "pdf_page": 13,
+          "topic": "每波长谱量、总量与吸收率",
+          "learning_section": "2.1"
+        },
+        {
+          "pdf_page": 14,
+          "topic": "每波长谱量、总量与吸收率",
+          "learning_section": "2.1"
+        },
+        {
+          "pdf_page": 15,
+          "topic": "基尔霍夫定律",
+          "learning_section": "3"
+        },
+        {
+          "pdf_page": 16,
+          "topic": "基尔霍夫定律",
+          "learning_section": "3"
+        },
+        {
+          "pdf_page": 17,
+          "topic": "黑体、空腔及测量谱图",
+          "learning_section": "3、4.1"
+        },
+        {
+          "pdf_page": 18,
+          "topic": "黑体、空腔及测量谱图",
+          "learning_section": "3、4.1"
+        },
+        {
+          "pdf_page": 19,
+          "topic": "总出射度定律",
+          "learning_section": "4.1；积分补充见4.4"
+        },
+        {
+          "pdf_page": 20,
+          "topic": "位移定律",
+          "learning_section": "4.1；极值补充见4.5"
+        },
+        {
+          "pdf_page": 21,
+          "topic": "维恩、瑞利-金斯近似和紫外灾难",
+          "learning_section": "4.3"
+        },
+        {
+          "pdf_page": 22,
+          "topic": "维恩、瑞利-金斯近似和紫外灾难",
+          "learning_section": "4.3"
+        },
+        {
+          "pdf_page": 23,
+          "topic": "普朗克每Hz出射度和能量密度",
+          "learning_section": "2.1、4.1；推导补充见4.2"
+        },
+        {
+          "pdf_page": 24,
+          "topic": "谱近似与能量子",
+          "learning_section": "4.3、4.2导入"
+        },
+        {
+          "pdf_page": 25,
+          "topic": "谱近似与能量子",
+          "learning_section": "4.3、4.2导入"
+        },
+        {
+          "pdf_page": 26,
+          "topic": "热辐射总结图",
+          "learning_section": "2至4；概念汇总见8"
+        },
+        {
+          "pdf_page": 27,
+          "topic": "运动电荷场线、加速和推迟传播",
+          "learning_section": "5.1"
+        },
+        {
+          "pdf_page": 28,
+          "topic": "运动电荷场线、加速和推迟传播",
+          "learning_section": "5.1"
+        },
+        {
+          "pdf_page": 29,
+          "topic": "运动电荷场线、加速和推迟传播",
+          "learning_section": "5.1"
+        },
+        {
+          "pdf_page": 30,
+          "topic": "运动电荷场线、加速和推迟传播",
+          "learning_section": "5.1"
+        },
+        {
+          "pdf_page": 31,
+          "topic": "电偶极辐射远场及应用",
+          "learning_section": "5.2"
+        },
+        {
+          "pdf_page": 32,
+          "topic": "电偶极辐射远场及应用",
+          "learning_section": "5.2"
+        },
+        {
+          "pdf_page": 33,
+          "topic": "同步辐射、特点、光源和天体实例",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 34,
+          "topic": "同步辐射、特点、光源和天体实例",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 35,
+          "topic": "同步辐射、特点、光源和天体实例",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 36,
+          "topic": "同步辐射、特点、光源和天体实例",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 37,
+          "topic": "同步辐射、特点、光源和天体实例",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 38,
+          "topic": "有核模型及经典稳定性矛盾",
+          "learning_section": "6.1"
+        },
+        {
+          "pdf_page": 39,
+          "topic": "有核模型及经典稳定性矛盾",
+          "learning_section": "6.1"
+        },
+        {
+          "pdf_page": 40,
+          "topic": "有核模型及经典稳定性矛盾",
+          "learning_section": "6.1"
+        },
+        {
+          "pdf_page": 41,
+          "topic": "发射/吸收谱和能级图",
+          "learning_section": "6.1、6.3、6.4"
+        },
+        {
+          "pdf_page": 42,
+          "topic": "玻尔定态和能级跃迁",
+          "learning_section": "6.1"
+        },
+        {
+          "pdf_page": 43,
+          "topic": "玻尔定态和能级跃迁",
+          "learning_section": "6.1"
+        },
+        {
+          "pdf_page": 44,
+          "topic": "氢原子能级及谱系",
+          "learning_section": "6.2"
+        },
+        {
+          "pdf_page": 45,
+          "topic": "精细能级、原子分子与固体能带",
+          "learning_section": "6.3"
+        }
+      ]
+    },
+    {
+      "chapter": "optics-laser",
+      "source": "光学20261012_相干辐射(1).pdf",
+      "pages": [
+        {
+          "pdf_page": 1,
+          "topic": "第二部分标题",
+          "learning_section": "章导言"
+        },
+        {
+          "pdf_page": 2,
+          "topic": "非相干辐射回顾图",
+          "learning_section": "章导言及02章第2至6节"
+        },
+        {
+          "pdf_page": 3,
+          "topic": "第六章标题",
+          "learning_section": "章导言"
+        },
+        {
+          "pdf_page": 4,
+          "topic": "二能级、三过程和Einstein系数",
+          "learning_section": "1.1、1.2主结论"
+        },
+        {
+          "pdf_page": 5,
+          "topic": "二能级、三过程和Einstein系数",
+          "learning_section": "1.1、1.2主结论"
+        },
+        {
+          "pdf_page": 6,
+          "topic": "二能级、三过程和Einstein系数",
+          "learning_section": "1.1、1.2主结论"
+        },
+        {
+          "pdf_page": 7,
+          "topic": "二能级、三过程和Einstein系数",
+          "learning_section": "1.1、1.2主结论"
+        },
+        {
+          "pdf_page": 8,
+          "topic": "二能级、三过程和Einstein系数",
+          "learning_section": "1.1、1.2主结论"
+        },
+        {
+          "pdf_page": 9,
+          "topic": "热平衡布居",
+          "learning_section": "2.1"
+        },
+        {
+          "pdf_page": 10,
+          "topic": "寿命、亚稳态与线宽",
+          "learning_section": "2.2、2.3主结论、2.4"
+        },
+        {
+          "pdf_page": 11,
+          "topic": "寿命、亚稳态与线宽",
+          "learning_section": "2.2、2.3主结论、2.4"
+        },
+        {
+          "pdf_page": 12,
+          "topic": "吸收、放大与激光条件",
+          "learning_section": "3导言、4导言"
+        },
+        {
+          "pdf_page": 13,
+          "topic": "吸收、放大与激光条件",
+          "learning_section": "3导言、4导言"
+        },
+        {
+          "pdf_page": 14,
+          "topic": "反转及三/四能级",
+          "learning_section": "3.1的课件部分"
+        },
+        {
+          "pdf_page": 15,
+          "topic": "反馈腔与反复放大",
+          "learning_section": "4导言及激光三要素"
+        },
+        {
+          "pdf_page": 16,
+          "topic": "反馈腔与反复放大",
+          "learning_section": "4导言及激光三要素"
+        },
+        {
+          "pdf_page": 17,
+          "topic": "反馈腔与反复放大",
+          "learning_section": "4导言及激光三要素"
+        },
+        {
+          "pdf_page": 18,
+          "topic": "起振阈值",
+          "learning_section": "4.1"
+        },
+        {
+          "pdf_page": 19,
+          "topic": "纵模、自由光谱范围和可容模数",
+          "learning_section": "4.2主结论、4.3"
+        },
+        {
+          "pdf_page": 20,
+          "topic": "横模场形",
+          "learning_section": "4.4"
+        },
+        {
+          "pdf_page": 21,
+          "topic": "LASER名称与组成总结",
+          "learning_section": "4导言及激光三要素"
+        },
+        {
+          "pdf_page": 22,
+          "topic": "方向性",
+          "learning_section": "5.1主结论"
+        },
+        {
+          "pdf_page": 23,
+          "topic": "相干性",
+          "learning_section": "5.2"
+        },
+        {
+          "pdf_page": 24,
+          "topic": "高亮度比较",
+          "learning_section": "5.3"
+        },
+        {
+          "pdf_page": 25,
+          "topic": "短脉冲技术",
+          "learning_section": "5.4的课件部分"
+        },
+        {
+          "pdf_page": 26,
+          "topic": "非线性极化、倍频及历史图",
+          "learning_section": "5.5"
+        },
+        {
+          "pdf_page": 27,
+          "topic": "激光性质总结图",
+          "learning_section": "4.4、5.1至5.5"
+        },
+        {
+          "pdf_page": 28,
+          "topic": "束缚/自由电子激光和波荡运动",
+          "learning_section": "激光三要素、6导言、6.1"
+        },
+        {
+          "pdf_page": 29,
+          "topic": "束缚/自由电子激光和波荡运动",
+          "learning_section": "激光三要素、6导言、6.1"
+        },
+        {
+          "pdf_page": 30,
+          "topic": "束缚/自由电子激光和波荡运动",
+          "learning_section": "激光三要素、6导言、6.1"
+        },
+        {
+          "pdf_page": 31,
+          "topic": "轴上周期滑移",
+          "learning_section": "6.2轴上式"
+        },
+        {
+          "pdf_page": 32,
+          "topic": "轴上周期滑移",
+          "learning_section": "6.2轴上式"
+        },
+        {
+          "pdf_page": 33,
+          "topic": "做功符号与奇次放大",
+          "learning_section": "6.3的课件部分"
+        },
+        {
+          "pdf_page": 34,
+          "topic": "做功符号与奇次放大",
+          "learning_section": "6.3的课件部分"
+        },
+        {
+          "pdf_page": 35,
+          "topic": "做功符号与奇次放大",
+          "learning_section": "6.3的课件部分"
+        },
+        {
+          "pdf_page": 36,
+          "topic": "做功符号与奇次放大",
+          "learning_section": "6.3的课件部分"
+        },
+        {
+          "pdf_page": 37,
+          "topic": "基频共振波长与波荡参数",
+          "learning_section": "6.4主结论"
+        },
+        {
+          "pdf_page": 38,
+          "topic": "束流相位与微群聚定义",
+          "learning_section": "6.5"
+        },
+        {
+          "pdf_page": 39,
+          "topic": "束流相位与微群聚定义",
+          "learning_section": "6.5"
+        },
+        {
+          "pdf_page": 40,
+          "topic": "a/b区滑移与群聚图",
+          "learning_section": "6.5及原图"
+        },
+        {
+          "pdf_page": 41,
+          "topic": "a/b区滑移与群聚图",
+          "learning_section": "6.5及原图"
+        },
+        {
+          "pdf_page": 42,
+          "topic": "a/b区滑移与群聚图",
+          "learning_section": "6.5及原图"
+        },
+        {
+          "pdf_page": 43,
+          "topic": "电子束质量和相互作用长度",
+          "learning_section": "6.5"
+        },
+        {
+          "pdf_page": 44,
+          "topic": "振荡型FEL",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 45,
+          "topic": "SASE",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 46,
+          "topic": "自种子",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 47,
+          "topic": "外种子",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 48,
+          "topic": "HGHG与EEHG",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 49,
+          "topic": "HGHG与EEHG",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 50,
+          "topic": "级联",
+          "learning_section": "6.6表"
+        },
+        {
+          "pdf_page": 51,
+          "topic": "国内装置与FEL总结",
+          "learning_section": "6.6、6导言"
+        },
+        {
+          "pdf_page": 52,
+          "topic": "国内装置与FEL总结",
+          "learning_section": "6.6、6导言"
+        },
+        {
+          "pdf_page": 53,
+          "topic": "国内装置与FEL总结",
+          "learning_section": "6.6、6导言"
+        },
+        {
+          "pdf_page": 54,
+          "topic": "全章光源和辐射机制总结",
+          "learning_section": "章导言、激光三要素、第6节；联系02章"
+        }
+      ]
+    },
+    {
+      "chapter": "optics-propagation",
+      "source": "光学20261019_光的传播_I.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "learning_section": "章首主题说明",
+          "topic": "第三部分 光的传输；映射主标题"
+        },
+        {
+          "page": 2,
+          "learning_section": "章首主题说明",
+          "topic": "第七章 光在各向同性介质中的传播；映射主标题"
+        },
+        {
+          "page": 3,
+          "learning_section": "1、2.1",
+          "topic": "极化、本构关系、线性/各向同性/均匀的含义"
+        },
+        {
+          "page": 4,
+          "learning_section": "2.1",
+          "topic": "无源均匀介质波动方程，保留条件和结果、略去逐行旋度推导"
+        },
+        {
+          "page": 5,
+          "learning_section": "2.1、2.3",
+          "topic": "波速、折射率和电磁参数；照度与振幅及跨介质n因子"
+        },
+        {
+          "page": 6,
+          "learning_section": "2.2",
+          "topic": "简谐波、固定频率、介质波长与波数；负时间因子统一"
+        },
+        {
+          "page": 7,
+          "learning_section": "3.1",
+          "topic": "Lorentz模型、固定正电荷和束缚电子、受迫振动及同频次波"
+        },
+        {
+          "page": 8,
+          "learning_section": "3.2",
+          "topic": "p=-er、P=Np、相干次波叠加"
+        },
+        {
+          "page": 9,
+          "learning_section": "3.1",
+          "topic": "电子运动方程、固有频率和阻尼参数"
+        },
+        {
+          "page": 10,
+          "learning_section": "3.2",
+          "topic": "负时间因子下稳态响应分母；用极化率结果代替试探解细推"
+        },
+        {
+          "page": 11,
+          "learning_section": "3.2",
+          "topic": "极化率、P与E相位差和热耗散"
+        },
+        {
+          "page": 12,
+          "learning_section": "3.2",
+          "topic": "极化率实虚部；无阻尼非共振情形的实响应"
+        },
+        {
+          "page": 13,
+          "learning_section": "3.4、4.1",
+          "topic": "复折射率、平方展开所得两条实数关系"
+        },
+        {
+          "page": 14,
+          "learning_section": "3.4、4.1",
+          "topic": "相位/衰减物理意义和随频率变化；纠正空间因子符号"
+        },
+        {
+          "page": 15,
+          "learning_section": "3.5",
+          "topic": "低频n>1、高频n<1、共振吸收与忽略阻尼的单共振公式"
+        },
+        {
+          "page": 16,
+          "learning_section": "3.4",
+          "topic": "弱极化近似n和κ；稀薄气体条件"
+        },
+        {
+          "page": 17,
+          "learning_section": "3.5",
+          "topic": "多振子求和及经典参数的含义"
+        },
+        {
+          "page": 18,
+          "learning_section": "3.1",
+          "topic": "经典运动方程条件：电子速度、振幅、电场力主导"
+        },
+        {
+          "page": 19,
+          "learning_section": "4.1",
+          "topic": "吸收定义、能量转换、微分吸收律"
+        },
+        {
+          "page": 20,
+          "learning_section": "4.1",
+          "topic": "Bouguer–Lambert指数律、线性条件、材料数量级与厚度"
+        },
+        {
+          "page": 21,
+          "learning_section": "4.1",
+          "topic": "照度指数翻倍、α=4πκ/λ0"
+        },
+        {
+          "page": 22,
+          "learning_section": "4.2",
+          "topic": "Beer定律、浓度和邻近分子影响条件"
+        },
+        {
+          "page": 23,
+          "learning_section": "4.3",
+          "topic": "一般/选择吸收、限定波段、绿色玻璃"
+        },
+        {
+          "page": 24,
+          "learning_section": "4.3",
+          "topic": "体色/表面色、反射光含义修正、大气窗口和应用"
+        },
+        {
+          "page": 25,
+          "learning_section": "4.3",
+          "topic": "连续光源→样品→分光检测；吸收暗线与装置分工"
+        },
+        {
+          "page": 26,
+          "learning_section": "4.3",
+          "topic": "连续/发射/吸收光谱图、透过率谷、特征吸收波长识别"
+        },
+        {
+          "page": 27,
+          "learning_section": "5.1",
+          "topic": "色散定义和相速度差异"
+        },
+        {
+          "page": 28,
+          "learning_section": "5.1",
+          "topic": "色散函数、曲线、导数"
+        },
+        {
+          "page": 29,
+          "learning_section": "5.2",
+          "topic": "可见透明介质正常曲线、紫端展开、斜率绝对值"
+        },
+        {
+          "page": 30,
+          "learning_section": "5.2",
+          "topic": "Cauchy公式、两项近似和色散率"
+        },
+        {
+          "page": 31,
+          "learning_section": "5.2",
+          "topic": "远离共振弱阻尼条件、ω/ω0小的展开直觉、略去级数细推"
+        },
+        {
+          "page": 32,
+          "learning_section": "5.3、5.4",
+          "topic": "石英红外反常色散实验、薄片必要条件"
+        },
+        {
+          "page": 33,
+          "learning_section": "5.3、5.4",
+          "topic": "吸收带内及附近与Cauchy公式关系、两侧正常区"
+        },
+        {
+          "page": 34,
+          "learning_section": "5.4",
+          "topic": "Newton交叉棱镜：两垂直分光方向、弯曲色带和非均匀波长轴"
+        },
+        {
+          "page": 35,
+          "learning_section": "5.4",
+          "topic": "Wood钠蒸汽：加热/密度梯度、后续玻璃棱镜、吸收线附近弯折"
+        },
+        {
+          "page": 36,
+          "learning_section": "6.1",
+          "topic": "各向同性非均匀介质本构及n(r)"
+        },
+        {
+          "page": 37,
+          "learning_section": "6.1",
+          "topic": "非均匀性使波动方程多项；保留div D=0区别，略复杂传播方程"
+        },
+        {
+          "page": 38,
+          "learning_section": "6.2",
+          "topic": "光程的等效相位定义、nL=ct和积分光程"
+        },
+        {
+          "page": 39,
+          "learning_section": "6.3",
+          "topic": "Fermat平稳原理及三种含义"
+        },
+        {
+          "page": 40,
+          "learning_section": "6.3",
+          "topic": "平面反射、椭圆双焦点、透镜成像等光程图意"
+        },
+        {
+          "page": 41,
+          "learning_section": "6.3",
+          "topic": "真空和各向同性均匀介质直线传播"
+        },
+        {
+          "page": 42,
+          "learning_section": "6.5",
+          "topic": "冷海逆温、n随高度降低、向下弯和上蜃景；分层模型趋势"
+        },
+        {
+          "page": 43,
+          "learning_section": "6.5",
+          "topic": "热地面、n随高度增加、向上弯和下蜃景"
+        },
+        {
+          "page": 44,
+          "learning_section": "6.5",
+          "topic": "实验室透明槽弯曲光迹与标尺视位置变化；不编造配液条件"
+        }
+      ]
+    },
+    {
+      "chapter": "optics-propagation-ii",
+      "source": "光学20261026光的传播II.pdf",
+      "pages": [
+        {
+          "page": 1,
+          "learning_section": "章首主题说明",
+          "topic": "第三部分 光的传输；本节标题与开头的主题定位"
+        },
+        {
+          "page": 2,
+          "learning_section": "章首主题说明",
+          "topic": "第七章 光在各向同性介质中的传播；本节开头说明前11页复习"
+        },
+        {
+          "page": 3,
+          "learning_section": "1",
+          "topic": "各向同性非均匀介质定义、位置相关本构"
+        },
+        {
+          "page": 4,
+          "learning_section": "1",
+          "topic": "div D=0与div E区别、非均匀传播方程的额外项；不背长方程"
+        },
+        {
+          "page": 5,
+          "learning_section": "1",
+          "topic": "光程定义、相位等效、均匀/积分形式"
+        },
+        {
+          "page": 6,
+          "learning_section": "1",
+          "topic": "Fermat平稳原理及公式、三种含义"
+        },
+        {
+          "page": 7,
+          "learning_section": "1",
+          "topic": "平面镜、椭圆反射面双焦点与透镜图的平稳/等光程例子"
+        },
+        {
+          "page": 8,
+          "learning_section": "1",
+          "topic": "真空/均匀介质直线传播"
+        },
+        {
+          "page": 9,
+          "learning_section": "1",
+          "topic": "冷海逆温、折射率随高度降低、上蜃景与分层模型趋势"
+        },
+        {
+          "page": 10,
+          "learning_section": "1",
+          "topic": "热沙漠/路面温度和折射率梯度、下蜃景"
+        },
+        {
+          "page": 11,
+          "learning_section": "1",
+          "topic": "实验室透明槽光迹弯折和标尺视位置改变"
+        },
+        {
+          "page": 12,
+          "learning_section": "2",
+          "topic": "林间光柱、舞台激光等图片：侧面可见需要光散向观察者"
+        },
+        {
+          "page": 13,
+          "learning_section": "2",
+          "topic": "散射定义和介质均匀性破坏的条件"
+        },
+        {
+          "page": 14,
+          "learning_section": "2",
+          "topic": "Lorentz次波相干叠加：均匀介质非前向相消、不均匀时散射"
+        },
+        {
+          "page": 15,
+          "learning_section": "2",
+          "topic": "悬浮粒子/廷德尔散射、分子密度涨落散射"
+        },
+        {
+          "page": 16,
+          "learning_section": "3",
+          "topic": "Rayleigh波长四次方反比；蓝天、红日、信号灯的条件与直觉"
+        },
+        {
+          "page": 17,
+          "learning_section": "3",
+          "topic": "小球ka参考条件、Mie较大粒子和白云"
+        },
+        {
+          "page": 18,
+          "learning_section": "3",
+          "topic": "按课件夜光云标题说明冰晶散射太阳光"
+        },
+        {
+          "page": 19,
+          "learning_section": "4",
+          "topic": "吸收/散射共同使直射光指数衰减，α/β定义和条件"
+        },
+        {
+          "page": 20,
+          "learning_section": "4",
+          "topic": "表面法线、镜面方向、粗糙度增大导致角分布展宽"
+        },
+        {
+          "page": 21,
+          "learning_section": "4",
+          "topic": "偶极散射方向筛选与散射光偏振；自然光90°单次Rayleigh极限"
+        },
+        {
+          "page": 22,
+          "learning_section": "4",
+          "topic": "同频散射与Raman/Compton/Brillouin变频散射分类"
+        },
+        {
+          "page": 23,
+          "learning_section": "5",
+          "topic": "各向异性均匀介质、介电张量/主轴、单轴双轴；纠正不当正负判据"
+        },
+        {
+          "page": 24,
+          "learning_section": "5",
+          "topic": "各向异性张量进入本构；传播求解复杂，只保留矩阵含义"
+        },
+        {
+          "page": 25,
+          "learning_section": "5",
+          "topic": "三类介质的空间/方向依赖与本构形式比较表"
+        },
+        {
+          "page": 26,
+          "learning_section": "5",
+          "topic": "自然原子/自然材料、人工单元/超材料的结构响应"
+        },
+        {
+          "page": 27,
+          "learning_section": "5",
+          "topic": "ε/μ四象限材料图、负折射/衰逝、异常折射/隐身示例"
+        },
+        {
+          "page": 28,
+          "learning_section": "6—11主题入口",
+          "topic": "第八章多束光传播：6.6—6.11按实质内容覆盖"
+        },
+        {
+          "page": 29,
+          "learning_section": "6",
+          "topic": "代数合成的振幅/相位结果和条件，纠正三角展开"
+        },
+        {
+          "page": 30,
+          "learning_section": "6",
+          "topic": "统一负时间因子的复振幅和模平方求振幅"
+        },
+        {
+          "page": 31,
+          "learning_section": "6",
+          "topic": "相量平行四边形及多束首尾相加"
+        },
+        {
+          "page": 32,
+          "learning_section": "7",
+          "topic": "两等振幅反向光波的驻波条件和积式"
+        },
+        {
+          "page": 33,
+          "learning_section": "7",
+          "topic": "波节/波腹定义位置与间距"
+        },
+        {
+          "page": 34,
+          "learning_section": "7",
+          "topic": "绳驻波图片的节点/腹部读图，与光波照片区分"
+        },
+        {
+          "page": 35,
+          "learning_section": "8",
+          "topic": "同频同向正交电场、恒定相差、偏振轨迹方程；略消元细推"
+        },
+        {
+          "page": 36,
+          "learning_section": "8",
+          "topic": "椭圆主轴角、线/正椭圆/圆的条件；圆式右端平方修正"
+        },
+        {
+          "page": 37,
+          "learning_section": "8",
+          "topic": "迎着光看的左右旋、ε=-π/4例、相邻时间点判向"
+        },
+        {
+          "page": 38,
+          "learning_section": "9",
+          "topic": "随机波列、自然光方向和相位统计含义"
+        },
+        {
+          "page": 39,
+          "learning_section": "9",
+          "topic": "任意正交分解I/2、无固定相位、不固定轨迹与瞬时矢量区分"
+        },
+        {
+          "page": 40,
+          "learning_section": "9",
+          "topic": "部分线偏振模型、强度极值、P公式及0/1中间极限"
+        },
+        {
+          "page": 41,
+          "learning_section": "9",
+          "topic": "椭圆偏振的相位关系与随机混合的区别、自然光极限"
+        },
+        {
+          "page": 42,
+          "learning_section": "9",
+          "topic": "侧视短线/圆点、两正交分量与统计强弱图示"
+        },
+        {
+          "page": 43,
+          "learning_section": "6—9",
+          "topic": "多波合成与各偏振态回顾，对应前述四小节"
+        },
+        {
+          "page": 44,
+          "learning_section": "10",
+          "topic": "相近频率同振幅同向同振动方向合成的积式"
+        },
+        {
+          "page": 45,
+          "learning_section": "10",
+          "topic": "平均量、差的一半、快载波与慢包络"
+        },
+        {
+          "page": 46,
+          "learning_section": "10",
+          "topic": "强度0到4I0与差频；不混有符号场包络频率"
+        },
+        {
+          "page": 47,
+          "learning_section": "10",
+          "topic": "光拍图、1955年观测、微小频差测量与探测时间条件"
+        },
+        {
+          "page": 48,
+          "learning_section": "11",
+          "topic": "相位速度/等幅包络速度定义和比值"
+        },
+        {
+          "page": 49,
+          "learning_section": "11",
+          "topic": "无色散相群速相同、有色散内部波峰与包络移动不同"
+        },
+        {
+          "page": 50,
+          "learning_section": "11",
+          "topic": "t1/t2图：单色波相位标记与合波包络标记各自位移"
+        },
+        {
+          "page": 51,
+          "learning_section": "11",
+          "topic": "群速度Δω/Δk到导数、vp−λn导数、正常/反常快慢条件"
+        },
+        {
+          "page": 52,
+          "learning_section": "10—11",
+          "topic": "相近频率合成、光拍和相/群速的回顾"
+        }
+      ]
+    }
+  ]
+}

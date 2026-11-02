@@ -1,0 +1,215 @@
+{
+  "source": "PPT excerpts with PDF page captions",
+  "figures": [
+    {
+      "file": "wave-w2-p04-phasor.png",
+      "bytes": 13924,
+      "sha256": "3a461f0b3adc76ea1bcbe4a3a51884e9c9e83983eba2269406994a4b5f1c2bef",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 4,
+      "cropPixels": [
+        325,
+        140,
+        650,
+        410
+      ],
+      "learningPage": "optics-waves.html"
+    },
+    {
+      "file": "wave-w2-p14-spherical-coordinates.png",
+      "bytes": 247523,
+      "sha256": "38165a96fb3f6d3d940fd3d65425e18cdf0a30aab6a28532b9ce20e9b43edb1b",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        110,
+        240,
+        710,
+        840
+      ],
+      "learningPage": "optics-waves.html"
+    },
+    {
+      "file": "wave-w2-p35-orthogonal-fields.png",
+      "bytes": 33347,
+      "sha256": "848b6d10fd7d1a123317ed3b90056a8a51da60ebfffc96125608e573af65a3a9",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 35,
+      "cropPixels": [
+        400,
+        365,
+        875,
+        750
+      ],
+      "learningPage": "optics-waves.html"
+    },
+    {
+      "file": "radiation-blackbody-cavity-p17.png",
+      "bytes": 69500,
+      "sha256": "5c88dee05dbc907a2891b3e3c7ab91c0e4ebadb9e51254389897a10f5d33599b",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 17,
+      "cropPixels": [
+        275,
+        700,
+        840,
+        930
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "radiation-blackbody-spectra-p18.png",
+      "bytes": 91201,
+      "sha256": "f81b6b28b726c1d9cc00f0b7529d3947f2a3790934c7229f790d1bd07bd152f1",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 18,
+      "cropPixels": [
+        245,
+        495,
+        825,
+        930
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "radiation-hydrogen-levels-p44.png",
+      "bytes": 352768,
+      "sha256": "e3f6b02d515a2546101c0996ff1bbd888dc585a7ef77339f68668d78553b3b41",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        420,
+        170,
+        1255,
+        965
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "laser-three-four-levels-p14.png",
+      "bytes": 97174,
+      "sha256": "a5ad874a65970f97d99ca7a27128471cb6266165e606868408a1984e1d91f397",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        285,
+        485,
+        1605,
+        980
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "laser-feedback-p15.png",
+      "bytes": 171164,
+      "sha256": "2c693a84b08703d66ef1f43811dd2f6a12d3a0268730efb6fba303eb01910c9a",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 15,
+      "cropPixels": [
+        570,
+        300,
+        1215,
+        860
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "laser-fel-bunching-p42.png",
+      "bytes": 62849,
+      "sha256": "93caee0d775d8f880c5d3bf4d9e8d14f88767bdffb14e98bdb1005b6d4289399",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 42,
+      "cropPixels": [
+        420,
+        490,
+        1430,
+        965
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "propagation-i-newton-cross-prisms.png",
+      "bytes": 105635,
+      "sha256": "040b6748eb30b5d4a8369ba479e3dece10d839f53c110c685668d5b6bdea5209",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 34,
+      "cropPixels": [
+        220,
+        260,
+        1180,
+        650
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-i-cold-sea-upper-mirage.png",
+      "bytes": 19992,
+      "sha256": "362b3758b428dc3d814afe3e74349844725e7fdd6ea1f61dc52db28a77e5de30",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 42,
+      "cropPixels": [
+        450,
+        740,
+        940,
+        1075
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-i-hot-ground-lower-mirage.png",
+      "bytes": 20455,
+      "sha256": "592855774bab35b0f5cdc199c0e4efffbb4d447088c17f35c418072515dca499",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 43,
+      "cropPixels": [
+        405,
+        610,
+        940,
+        950
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-ii-scattering-polarization-geometry.png",
+      "bytes": 260471,
+      "sha256": "998cb6b58f6f9f786ada48ebb994727da4fd3c02b7d0b91abc8a1b6e0d77c224",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 21,
+      "cropPixels": [
+        446,
+        308,
+        1708,
+        1062
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    },
+    {
+      "file": "propagation-ii-polarization-ellipse.png",
+      "bytes": 37779,
+      "sha256": "9f69e66c312344c54a381d4a98dd4bcca0034f0c1ced5dd2e6a3c95e4846b060",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 36,
+      "cropPixels": [
+        330,
+        375,
+        940,
+        720
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    },
+    {
+      "file": "propagation-ii-group-phase-displacement.png",
+      "bytes": 152009,
+      "sha256": "0425382cb428ef15a37fb2bb907d54bd3feee698b66e204071f930e51ccefa1e",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 50,
+      "cropPixels": [
+        350,
+        245,
+        1540,
+        1030
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    }
+  ]
+}
