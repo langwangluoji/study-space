@@ -5,6 +5,7 @@ import { useSidebar } from 'vitepress/theme';
 import { courseForPath, courseNames, reviewFor, isResourcePath, isCourseOverview } from './course-experience.js';
 import { readingTitle } from './reading-targets.js';
 import { saveReadingPosition, readReadingState, READING_EVENT } from './reading-position.js';
+import FolioDirectoryTree from './FolioDirectoryTree.vue';
 
 const route = useRoute();
 const { sidebar } = useSidebar();
@@ -14,6 +15,12 @@ const focused = ref(false);
 const dialog = ref(null);
 const drawer = ref('');
 const outline = ref([]);
+const desktop = ref(false);
+const desktopOpen = ref(true);
+const desktopTab = ref('course');
+const desktopPanel = ref(null);
+const activeSection = ref('');
+const desktopVisible = computed(() => desktop.value && desktopOpen.value && !focused.value);
 const drawerTitle = computed(() => drawer.value === 'course' ? '课程目录' : '本页大纲');
 const chapterIndex = computed(() => (course.value?.chapters || []).findIndex(c => route.path.split('/').pop()?.replace('.html', '') === c.slug));
 const directory = computed(() => {
@@ -33,15 +40,28 @@ function applyPresentation() {
     root.classList.toggle('folio-course-overview', isCourseOverview(route.path));
     root.classList.toggle('folio-focus', focused.value);
     root.classList.toggle('folio-review', /\/review-[^/]+\.html$/.test(route.path));
+    root.classList.toggle('folio-directory-open', desktopVisible.value);
     root.style.setProperty('--folio-reading-size', fontSize.value + 'px');
   } else {
     root.removeAttribute('data-folio-reading');
-    root.classList.remove('folio-course-overview', 'folio-focus', 'folio-review');
+    root.classList.remove('folio-course-overview', 'folio-focus', 'folio-review', 'folio-directory-open');
     root.style.removeProperty('--folio-reading-size');
   }
 }
 function setFont() { try { localStorage.setItem('study-space-reading-font-v1', fontSize.value); } catch {} applyPresentation(); }
 function toggleFocus() { focused.value = !focused.value; applyPresentation(); }
+function rememberDirectory() { try { localStorage.setItem('study-space-desktop-directory-v1', desktopOpen.value ? 'open' : 'closed'); } catch {} applyPresentation(); }
+async function closeDesktop() {
+  desktopOpen.value = false; rememberDirectory();
+  await nextTick();
+  document.querySelector('.folio-directory-reopen')?.focus({ preventScroll: true });
+}
+async function showDesktop(kind = 'course', focus = false) {
+  desktopTab.value = kind; desktopOpen.value = true; focused.value = false;
+  refreshOutline(); rememberDirectory();
+  await nextTick();
+  if (focus) desktopPanel.value?.querySelector('.folio-directory-tabs button[aria-pressed="true"]')?.focus({ preventScroll: true });
+}
 function visibleFocusables() {
   return [...(dialog.value?.querySelectorAll('a[href],button,select,[tabindex="0"]') || [])].filter(el => !el.disabled && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden');
 }
@@ -54,6 +74,7 @@ function closeDrawer(restore = true) {
   if (restore && wasOpen && opener?.isConnected) opener.focus({ preventScroll: true });
 }
 async function openDrawer(kind, event) {
+  if (desktop.value && !focused.value) { await showDesktop(kind, true); return; }
   opener = event.currentTarget;
   drawer.value = kind;
   // Include targets inside folded supplements; following their IDs uses the site's existing reveal hook.
@@ -106,6 +127,7 @@ function savePosition(preferHash = false) {
     } catch {}
   }
   lastMeasuredRecord = { path: currentPath + (active ? '#' + encodeURIComponent(active.id) : ''), title: currentTitle, section: active ? cleanHeading(active) : '', updatedAt: Date.now() };
+  activeSection.value = active?.id || '';
   persistMeasuredPosition();
 }
 function queuePosition() { clearTimeout(scrollTimer); scrollTimer = setTimeout(savePosition, 160); }
@@ -117,7 +139,7 @@ function stopTracking() { observer?.disconnect(); clearTimeout(scrollTimer); cle
 async function startPage() {
   const token = ++routeToken;
   stopTracking(); closeDrawer(false); applyPresentation();
-  currentPath = ''; currentTitle = ''; headings = []; outline.value = []; lastMeasuredRecord = null; recordingCleared = false;
+  currentPath = ''; currentTitle = ''; headings = []; outline.value = []; activeSection.value = ''; lastMeasuredRecord = null; recordingCleared = false;
   if (!course.value) return;
   await nextTick();
   if (token !== routeToken) return;
@@ -135,7 +157,7 @@ async function startPage() {
     }
   }, 650);
 }
-function resize() { closeDrawer(false); }
+function resize() { closeDrawer(false); desktop.value = window.matchMedia('(min-width: 1100px)').matches; applyPresentation(); }
 function pagehide() { persistMeasuredPosition(); }
 // VitePress may reset scroll before route watchers run. Persist the last measurement,
 // rather than replacing it with coordinates from the next page's navigation.
@@ -143,6 +165,8 @@ const unwatch = watch(() => route.path, () => { if (mounted) { persistMeasuredPo
 onMounted(() => {
   mounted = true;
   try { const stored = localStorage.getItem('study-space-reading-font-v1'); if (['17','18','20'].includes(stored)) fontSize.value = stored; } catch {}
+  try { desktopOpen.value = localStorage.getItem('study-space-desktop-directory-v1') !== 'closed'; } catch {}
+  desktop.value = window.matchMedia('(min-width: 1100px)').matches;
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', resize);
   window.addEventListener('pagehide', pagehide);
@@ -153,7 +177,7 @@ onUnmounted(() => {
   persistMeasuredPosition(); mounted = false; routeToken++; unwatch(); stopTracking(); closeDrawer(false);
   window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', resize); window.removeEventListener('pagehide', pagehide); window.removeEventListener(READING_EVENT, onReadingChange);
   document.documentElement.removeAttribute('data-folio-reading');
-  document.documentElement.classList.remove('folio-course-overview', 'folio-focus', 'folio-review');
+  document.documentElement.classList.remove('folio-course-overview', 'folio-focus', 'folio-review', 'folio-directory-open');
   document.documentElement.style.removeProperty('--folio-reading-size');
 });
 </script>
@@ -164,11 +188,21 @@ onUnmounted(() => {
       <div class="folio-course-modes"><a :href="withBase(course.start)">系统学习</a><a :href="withBase(reviewFor(course))">复习</a><a :href="withBase(course.source)">课件与原件</a></div>
     </nav>
     <div class="folio-reader-controls" aria-label="阅读设置">
-      <div class="folio-directory-buttons"><button type="button" :aria-expanded="drawer === 'course'" aria-controls="folio-reading-dialog" @click="openDrawer('course', $event)">课程目录</button><button type="button" :aria-expanded="drawer === 'page'" aria-controls="folio-reading-dialog" @click="openDrawer('page', $event)">本页大纲</button></div>
+      <div class="folio-directory-buttons"><button type="button" :aria-expanded="desktop && !focused ? desktopVisible && desktopTab === 'course' : drawer === 'course'" :aria-controls="desktop && !focused ? 'folio-desktop-directory' : 'folio-reading-dialog'" @click="openDrawer('course', $event)">课程目录</button><button type="button" :aria-expanded="desktop && !focused ? desktopVisible && desktopTab === 'page' : drawer === 'page'" :aria-controls="desktop && !focused ? 'folio-desktop-directory' : 'folio-reading-dialog'" @click="openDrawer('page', $event)">本页大纲</button></div>
       <div class="folio-type-controls"><label for="folio-reading-size">字号</label><select id="folio-reading-size" v-model="fontSize" @change="setFont"><option value="17">17</option><option value="18">18</option><option value="20">20</option></select><button type="button" :aria-pressed="focused" @click="toggleFocus">{{ focused ? '退出专注' : '专注阅读' }}</button></div>
     </div>
     <p v-if="chapterIndex >= 0" class="folio-chapter-caption">{{ courseNames[course.id] }} / {{ String(chapterIndex + 1).padStart(2, '0') }}</p>
     <Teleport to="body">
+      <aside v-if="desktop" v-show="desktopVisible" id="folio-desktop-directory" ref="desktopPanel" class="folio-desktop-directory" :aria-label="courseNames[course.id] + '阅读目录'" @keydown.esc.prevent="closeDesktop">
+        <div class="folio-directory-heading"><a :href="withBase(course.entry)">{{ courseNames[course.id] }}</a><button type="button" aria-label="收起目录" @click="closeDesktop">收起 <span aria-hidden="true">‹</span></button></div>
+        <div class="folio-directory-tabs" aria-label="目录内容"><button type="button" :aria-pressed="desktopTab === 'course'" @click="desktopTab = 'course'">课程目录</button><button type="button" :aria-pressed="desktopTab === 'page'" @click="desktopTab = 'page'; refreshOutline()">本页大纲</button></div>
+        <div class="folio-directory-scroll">
+          <nav v-if="desktopTab === 'course'" aria-label="可展开的课程目录"><FolioDirectoryTree :items="sidebar" :current-path="route.path" :current-section="activeSection" /></nav>
+          <nav v-else aria-label="本页章节"><ul class="folio-directory-tree folio-desktop-outline"><li v-for="heading in outline" :key="heading.id" :class="{ 'is-subsection': heading.depth }"><a :href="'#' + encodeURIComponent(heading.id)" :aria-current="activeSection === heading.id ? 'location' : undefined">{{ heading.text }}</a></li></ul><p v-if="!outline.length">本页没有分节标题。</p></nav>
+        </div>
+        <a class="folio-directory-all" :href="withBase('/courses.html')">全部课程</a>
+      </aside>
+      <button v-if="desktop && !desktopOpen && !focused" class="folio-directory-reopen" type="button" aria-expanded="false" aria-controls="folio-desktop-directory" @click="showDesktop('course', true)"><span aria-hidden="true">☰</span> 展开目录</button>
       <dialog id="folio-reading-dialog" ref="dialog" class="folio-reading-dialog" aria-labelledby="folio-drawer-title" @keydown="keydown" @cancel.prevent="closeDrawer()" @close="unlock" @click="event => { if (event.target === dialog) closeDrawer(); }">
         <div class="folio-drawer-heading"><h2 id="folio-drawer-title">{{ drawerTitle }}</h2><button type="button" aria-label="关闭目录" @click="closeDrawer()">关闭 <span aria-hidden="true">×</span></button></div>
         <nav v-if="drawer === 'course'" aria-label="完整课程目录"><ul class="folio-drawer-links"><li v-for="(row, index) in directory" :key="index" :style="{ '--depth': row.depth }"><a v-if="row.href" :href="withBase(row.href)" :aria-current="withBase(row.href).split('#')[0] === route.path ? 'page' : undefined" @click="closeDrawer(false)">{{ row.text }}</a><strong v-else>{{ row.text }}</strong></li></ul><p v-if="!directory.length">本课程的章节可从<a :href="withBase(course.entry)" @click="closeDrawer(false)">课程总览</a>进入。</p></nav>

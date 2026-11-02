@@ -80,6 +80,34 @@ html.folio-focus[data-folio-reading] .vp-doc [id] { scroll-margin-top:28px; }
 .continue-reading-history span { font-size:12px; color:var(--vp-c-text-2); margin-right:20px; }
 .continue-reading-history small { display:block; margin-top:5px; }
 .folio-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.folio-desktop-directory,.folio-directory-reopen { display:none; }
+@media(min-width:1100px) {
+  html.folio-directory-open[data-folio-reading] .VPDoc > .container { max-width:980px!important; padding-left:300px; box-sizing:border-box; }
+  .folio-desktop-directory { position:fixed; z-index:25; top:92px; bottom:24px; left:max(24px,calc((100vw - 980px) / 2)); display:flex; flex-direction:column; width:252px; min-height:0; color:var(--folio-ink); background:var(--folio-paper); border-top:3px solid var(--folio-accent); border-bottom:1px solid var(--folio-rule); font-size:14px; }
+  .folio-directory-heading { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:10px 0; border-bottom:1px solid var(--folio-rule); }
+  .folio-directory-heading > a { font-weight:700; font-size:17px; color:var(--folio-ink); }
+  .folio-desktop-directory button,.folio-directory-reopen { min-height:44px; padding:8px 10px; cursor:pointer; font:inherit; color:var(--folio-ink); background:var(--folio-paper); }
+  .folio-directory-heading button { flex-shrink:0; border:1px solid var(--folio-rule); }
+  .folio-directory-heading button span { margin-left:4px; font-size:20px; }
+  .folio-directory-tabs { display:flex; gap:10px; padding-top:8px; border-bottom:1px solid var(--folio-rule); }
+  .folio-directory-tabs button { border-bottom:3px solid transparent; }
+  .folio-directory-tabs button[aria-pressed="true"] { color:var(--folio-accent); border-color:var(--folio-accent); font-weight:700; }
+  .folio-directory-scroll { flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:thin; padding:8px 6px 18px 0; }
+  .folio-directory-tree { list-style:none; padding:0; margin:0; }
+  .folio-directory-tree li { margin:0; }
+  .folio-directory-tree .folio-directory-tree { padding-left:14px; margin-left:6px; border-left:1px solid var(--folio-rule); }
+  .folio-directory-tree details { margin:0; }
+  .folio-directory-tree summary { display:list-item; list-style:disclosure-closed inside; min-height:44px; padding:11px 4px; line-height:1.6; font-weight:650; cursor:pointer; overflow-wrap:anywhere; }
+  .folio-directory-tree details[open] > summary { list-style-type:disclosure-open; }
+  .folio-directory-tree a { display:block; min-height:44px; padding:10px 8px; line-height:1.65; color:var(--folio-ink); text-decoration:none; overflow-wrap:anywhere; }
+  .folio-directory-tree a:hover { background:var(--folio-soft); color:var(--folio-accent); }
+  .folio-directory-tree a[aria-current] { background:var(--folio-soft); color:var(--folio-accent); box-shadow:inset 3px 0 var(--folio-accent); font-weight:700; }
+  .folio-directory-tree .folio-directory-intro { margin-left:14px; }
+  .folio-desktop-outline .is-subsection { padding-left:14px; }
+  .folio-directory-all { display:flex; align-items:center; min-height:44px; border-top:1px solid var(--folio-rule); color:var(--folio-accent); }
+  .folio-directory-reopen { display:block; position:fixed; top:100px; left:24px; z-index:25; border:1px solid var(--folio-rule); border-left:3px solid var(--folio-accent); font-size:14px; }
+  .folio-desktop-directory :is(button,a,summary):focus-visible,.folio-directory-reopen:focus-visible { outline:3px solid #d63800; outline-offset:2px; }
+}
 @media(min-width:960px) {
   :is(html[data-folio-reading], .folio-reading-layout) .VPNavBar.has-sidebar { background:var(--vp-nav-bg-color); }
   :is(html[data-folio-reading], .folio-reading-layout) .VPNavBar.has-sidebar > .wrapper { padding:0 32px; }

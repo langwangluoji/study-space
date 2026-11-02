@@ -14,7 +14,7 @@
 
 ## 验证证据
 
-- `ui-checks.json`：72 个页面/宽度/主题组合，七科模型交互、目录查找、字号、对话框键盘操作、阅读恢复及 SPA 资料布局恢复。
+- `ui-checks.json`：144 个页面/宽度/主题组合，七科模型交互、目录查找、电脑可展开侧栏、字号、对话框键盘操作、阅读恢复及 SPA 资料布局恢复。电脑目录增量见 `../desktop-directory/README.md`。
 - `classroom-review.md` 与 `classroom-independent-fixed-audit.json`：42 组课堂视觉检查；SVG 标签、触控尺寸、对比度及关键模型状态复核。
 - `folio-review.md` 与 `folio-fix-verification.json`：书册首页和目录的独立视觉复审。
 - `reading-resume-retest.json`：小节恢复、清除及资源页往返复测。

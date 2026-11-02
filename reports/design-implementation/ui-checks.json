@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "base": "http://127.0.0.1:53814/study-space/",
+  "base": "http://127.0.0.1:60607/study-space/",
   "cases": [
     {
       "slug": "",
@@ -231,6 +231,702 @@
       "width": 1440,
       "theme": "dark",
       "scroll": 1440,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1280,
+      "theme": "light",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1280,
+      "theme": "dark",
+      "scroll": 1280,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1100,
+      "theme": "light",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1100,
+      "theme": "dark",
+      "scroll": 1100,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1024,
+      "theme": "light",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "资料中心 | Study Space · 学习空间"
+    },
+    {
+      "slug": "",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "Study Space · 课程展卷 | Study Space · 学习空间"
+    },
+    {
+      "slug": "courses.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "课程目录 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optimization.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "最优化 · 按教材章节读懂两本书 | Study Space · 学习空间"
+    },
+    {
+      "slug": "course-optics.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光学：课程学习与考试复习 | Study Space · 学习空间"
+    },
+    {
+      "slug": "optimization-bv-05.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第5章 Duality · 对偶 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "lecture-1.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第一讲 · 回归与可靠预测 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "optics-propagation-ii.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光的传播II：散射、偏振与波的合成 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "photogrammetry-en-02.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "第2讲 · 初等摄影测量 | Study Space · 学习空间"
+    },
+    {
+      "slug": "classroom.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "问题课堂 | Study Space · 学习空间"
+    },
+    {
+      "slug": "review-optics.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "光学PPT复习：概念、现象条件与公式记忆 | Study Space · 学习空间",
+      "body": {
+        "size": 18,
+        "line": 34.2,
+        "width": 680
+      }
+    },
+    {
+      "slug": "review-optimization.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
+      "mathErrors": 0,
+      "title": "最优化期末复习 · 公式、条件与题型路线 | Study Space · 学习空间"
+    },
+    {
+      "slug": "resources.html",
+      "width": 1024,
+      "theme": "dark",
+      "scroll": 1024,
       "mathErrors": 0,
       "title": "资料中心 | Study Space · 学习空间"
     },
@@ -739,6 +1435,14 @@
           "after": "偏振态\n线偏振\n分量峰值 Ax / Ay\n1 / 1"
         }
       ]
+    },
+    {
+      "desktopDirectory": "default open, independent chapter disclosure, current page, nonoverlapping 680px text, collapse/reopen, saved preference, Escape and focus mode",
+      "geometry": {
+        "asideRight": 482,
+        "textLeft": 530,
+        "textWidth": 680
+      }
     },
     "font persistence, focus reading, two complete dialogs, keyboard return and resize unlock",
     "visible-section resume survives SPA route change; resource layout restored; clear state stays clear"
