@@ -1,0 +1,50 @@
+[
+  {
+    "lesson": "optics",
+    "value": 0,
+    "reading": "偏振态\n线偏振\n分量峰值 Ax / Ay\n1 / 1",
+    "svg": "相位差 0 度，线偏振；电场端点轨迹"
+  },
+  {
+    "lesson": "optics",
+    "value": 45,
+    "reading": "偏振态\n椭圆偏振\n分量峰值 Ax / Ay\n1 / 1",
+    "svg": "相位差 45 度，椭圆偏振；电场端点轨迹"
+  },
+  {
+    "lesson": "optics",
+    "value": 90,
+    "reading": "偏振态\n圆偏振\n分量峰值 Ax / Ay\n1 / 1",
+    "svg": "相位差 90 度，圆偏振；电场端点轨迹"
+  },
+  {
+    "lesson": "optics",
+    "value": 180,
+    "reading": "偏振态\n线偏振\n分量峰值 Ax / Ay\n1 / 1",
+    "svg": "相位差 180 度，线偏振；电场端点轨迹"
+  },
+  {
+    "lesson": "optimization",
+    "value": 1,
+    "reading": "最优位置\n(0.40, 0.60)\n乘子 λ\n1.60\n代价 q\n1.60",
+    "svg": "约束 x 加 y 不大于 1，最优位置 0.40，0.60"
+  },
+  {
+    "lesson": "optimization",
+    "value": 2,
+    "reading": "最优位置\n(1.20, 0.80)\n乘子 λ\n0.80\n代价 q\n0.40",
+    "svg": "约束 x 加 y 不大于 2，最优位置 1.20，0.80"
+  },
+  {
+    "lesson": "optimization",
+    "value": 3,
+    "reading": "最优位置\n(2.00, 1.00)\n乘子 λ\n0.00\n代价 q\n0.00",
+    "svg": "约束 x 加 y 不大于 3，最优位置 2.00，1.00"
+  },
+  {
+    "lesson": "optimization",
+    "value": 3.5,
+    "reading": "最优位置\n(2.00, 1.00)\n乘子 λ\n0.00\n代价 q\n0.00",
+    "svg": "约束 x 加 y 不大于 3.5，最优位置 2.00，1.00"
+  }
+]

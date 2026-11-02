@@ -84,6 +84,8 @@ $$
 
 当 $c\ge3$，自由解可行，$p=\lambda=0$。在 $c=3$ 约束活动但乘子仍为零，直接说明“活动”不能推出“正乘子”。挡板法向位置是 $d=c/\sqrt2$，因此 $-dp/dd=\lambda\sqrt2$ 与真实测力大小一致。下面的一般KKT、敏感性与强对偶结论，都要保留各自条件，不能由这个机械例子替代证明。
 
+<LessonClassroom lesson="optimization" />
+
 <AnatomyFigure src="/anatomy/optimization/positioning.html?mode=kkt" title="KKT、反力归一化与上下界相遇" />
 
 

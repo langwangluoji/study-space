@@ -735,6 +735,8 @@ $$
 
 这样可以正确保留南、北半球的象限信息，并且避免显式计算极点附近非常大的 $\tan B$。
 
+<LessonClassroom lesson="geodesy" />
+
 ### WGS84 数值例子：$B=45^\circ,\ h=0$
 
 取 WGS84 椭球参数

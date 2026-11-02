@@ -1,11 +1,16 @@
 ---
 layout: page
 title: 课程目录
+description: 按课程或主题查找讲义，查看学习范围、先修基础与来源。
 sidebar: false
 ---
 
-<main class="library-hub course-directory">
-  <header class="directory-intro"><p class="hub-eyebrow">COURSES / 课程目录</p><h1>从一门课，建立一条知识线。</h1><p>先查看课程范围与先修基础，再沿章节连续阅读。当前七门课程整理到下方标明的范围，后续资料将在原有脉络中逐步补充。</p></header>
-  <CourseLibrary />
-  <div class="directory-tools"><a href="/study-space/study-guide.html">不知道从哪里开始？查看自学路线 →</a><a href="/study-space/review-guide.html">准备期末？查看复习路线 →</a></div>
+<script setup>
+import { withBase } from 'vitepress';
+</script>
+
+<main class="folio-page folio-directory">
+  <header class="folio-directory-intro"><h1>从一门课，<br>展开知识线。</h1><p>先看学习范围与先修基础，再沿章节连续阅读。讲义、复习与原始资料，从同一处进入。</p></header>
+  <FolioCatalog />
+  <nav class="folio-directory-guides" aria-label="学习指南"><a :href="withBase('/study-guide.html')">自学路线</a><a :href="withBase('/review-guide.html')">复习路线</a><a :href="withBase('/classroom.html')">问题课堂</a><a :href="withBase('/resources.html')">资料库</a></nav>
 </main>

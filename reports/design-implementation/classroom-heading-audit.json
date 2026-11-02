@@ -1,0 +1,20 @@
+[
+  {
+    "route": "classroom.html",
+    "heading": "H2",
+    "stage": "H3",
+    "font": "26px"
+  },
+  {
+    "route": "optimization-bv-05.html",
+    "heading": "H3",
+    "stage": "H4",
+    "font": "26px"
+  },
+  {
+    "route": "lecture-1.html",
+    "heading": "H4",
+    "stage": "H5",
+    "font": "26px"
+  }
+]

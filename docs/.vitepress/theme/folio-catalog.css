@@ -1,0 +1,205 @@
+/* Course folios: blue cover, yellow reading strip, seven subject drawings. */
+.folio-page {
+  --folio-blue: #193be8;
+  --folio-yellow: #fff28f;
+  --folio-orange: #ff783e;
+  --folio-ink: #151515;
+  --folio-paper: #fff;
+  --folio-soft: #f0f0f0;
+  --folio-line: #bbb;
+  --folio-muted: #4c4c4c;
+  color: var(--folio-ink);
+  background: var(--folio-paper);
+  font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+.folio-page *, .folio-page *::before, .folio-page *::after { box-sizing: border-box; }
+.folio-page a { text-decoration: none; text-underline-offset: 5px; }
+.folio-page a:hover { text-decoration: underline; }
+.folio-page :is(a, button, input):focus-visible { outline: 3px solid #b52b00; outline-offset: 4px; }
+.folio-page :is(a, button, input) { touch-action: manipulation; }
+.folio-page button { cursor: pointer; font: inherit; }
+.folio-page h1, .folio-page h2, .folio-page h3, .folio-page p { margin: 0; }
+.folio-page h2 { border: 0; padding: 0; letter-spacing: -.04em; font-size: clamp(30px, 3.2vw, 44px); line-height: 1.3; }
+.folio-page svg.folio-artwork { display: block; width: 100%; height: auto; max-width: none; }
+.folio-artwork-point { fill: var(--folio-point, #fff28f); }
+.folio-artwork-node { fill: var(--folio-node, #fff); }
+.folio-cover { display: grid; grid-template-columns: 1fr 1.06fr; min-height: 590px; background: var(--folio-blue); color: #fff; overflow: hidden; }
+.folio-cover-copy { padding: 54px 0 58px max(40px, 5vw); align-self: center; position: relative; z-index: 1; }
+.folio-cover-field { font-size: 14px; border-top: 1px solid #a8b7ff; padding-top: 12px; width: fit-content; }
+.folio-cover h1 { font-size: clamp(72px, 8.5vw, 128px); line-height: 1.1; letter-spacing: -.065em; margin: 28px 0 24px; max-width: 7em; font-weight: 750; }
+.folio-cover h1.folio-long-title { font-size: clamp(46px, 5.4vw, 82px); line-height: 1.2; }
+.folio-cover-summary { max-width: 29em; font-size: 18px; line-height: 1.85; }
+.folio-cover-links { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 22px; margin-top: 28px; font-size: 15px; }
+.folio-cover-links a { color: #fff; min-height: 48px; display: inline-flex; align-items: center; border-bottom: 1px solid #acbaff; }
+.folio-cover-links a.folio-primary-link { background: var(--folio-yellow); color: #151515; padding: 12px 22px; gap: 30px; border: 1px solid var(--folio-yellow); font-weight: 700; }
+.folio-cover-art { --folio-point: #fff28f; --folio-node: #193be8; color: #ffa269; display: flex; align-items: center; justify-content: center; position: relative; padding: 32px 28px 52px 5px; min-width: 0; }
+.folio-cover-art .folio-artwork { max-width: 680px; }
+.folio-cover-art > span { position: absolute; right: 40px; bottom: 25px; color: #fff; font-size: 13px; }
+.folio-cover-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 18px max(40px, 5vw); background: var(--folio-yellow); color: #151515; font-size: 14px; }
+.folio-cover-bottom a { min-height: 44px; display: inline-flex; align-items: center; gap: 12px; margin-block: -8px; flex-shrink: 0; font-weight: 600; }
+.folio-home-body { padding: 28px max(40px, 5vw) 0; max-width: 1600px; margin: 0 auto; }
+.folio-page .continue-reading { border-radius: 0; background: var(--folio-soft); border: 0; color: var(--folio-ink); padding: 15px 20px; font-size: 15px; }
+.folio-page .continue-reading > span:first-child { color: var(--folio-muted); }
+.folio-page .continue-reading small { font-size: 12px; }
+.folio-page .continue-reading strong { font-size: 16px; }
+.folio-catalog { padding: 62px 0 0; }
+.folio-library-head { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin-bottom: 30px; }
+.folio-library-head p { font-size: 16px; color: var(--folio-muted); margin-top: 12px; }
+.folio-search { display: block; flex: 0 1 330px; min-width: 220px; font-size: 14px; }
+.folio-search input { font: inherit; display: block; margin-top: 8px; width: 100%; min-height: 48px; border-radius: 0; border: 0; border-bottom: 2px solid var(--folio-ink); background: var(--folio-soft); color: var(--folio-ink); padding: 11px 14px; }
+.folio-search input::placeholder { color: var(--folio-muted); opacity: 1; }
+.folio-search-status { font-size: 15px; padding-bottom: 18px; }
+.folio-course-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.folio-page .folio-tile { --folio-node: #fff; color: var(--folio-ink); background: var(--folio-paper); grid-column: span 2; border: 0; border-top: 1px solid var(--folio-ink); border-radius: 0; box-shadow: none; padding: 24px 26px 20px; display: flex; flex-direction: column; min-width: 0; margin: 0; position: relative; overflow: hidden; }
+.folio-page .hub-course.folio-tile p { color: inherit; }
+.folio-tile-heading { display: flex; gap: 10px; align-items: center; justify-content: space-between; min-height: 44px; font-size: 12px; line-height: 1.5; }
+.folio-select { border: 0; border-bottom: 1px solid currentColor; background: transparent; padding: 8px 0; min-height: 44px; color: inherit; flex-shrink: 0; font-size: 12px !important; }
+.folio-page .folio-tile h3 { margin: 10px 0 8px; padding: 0; border: 0; font-size: clamp(24px, 2.5vw, 32px); line-height: 1.4; letter-spacing: -.035em; font-weight: 700; position: relative; z-index: 1; }
+.folio-page .folio-tile > svg.folio-artwork, .folio-art-select { width: min(100%, 190px); max-width: 190px; margin: 2px 0 12px auto; min-height: 120px; }
+.folio-art-select { display: block; background: transparent; color: inherit; border: 0; padding: 0; align-self: end; }
+.folio-art-select:hover .folio-artwork { transform: rotate(-4deg); }
+.folio-art-select .folio-artwork { transition: transform .2s ease; }
+.folio-page .folio-tile-summary { font-size: 18px; line-height: 1.85; margin: 8px 0 22px; }
+.folio-page .folio-tile-scope { font-size: 14px; line-height: 1.75; margin-top: auto; padding-top: 10px; position: relative; z-index: 1; }
+.folio-page .folio-prerequisites { font-size: 14px; line-height: 1.8; margin-top: 14px; }
+.folio-page .folio-topics { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 0; margin: 14px 0; font-size: 12px; line-height: 1.7; }
+.folio-page .folio-topics li { margin: 0; }
+.folio-tile-links { display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: center; font-size: 14px; padding-top: 8px; border-top: 1px solid currentColor; }
+.folio-tile-links a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; color: inherit; }
+.folio-tile-links a:first-child { font-weight: 700; margin-right: auto; justify-content: flex-start; }
+.folio-page .folio-course-optimization { grid-column: span 4; background: #fff28f; color: #151515; --folio-node: #fff28f; }
+.folio-page .folio-course-geodesy { background: #193be8; color: #fff; --folio-node: #193be8; }
+.folio-page .folio-course-remote-sensing { background: var(--folio-soft); }
+.folio-page .folio-course-optics { grid-column: span 3; background: #ff783e; color: #151515; }
+.folio-page .folio-course-photogrammetry { grid-column: span 3; background: #e6edff; color: #151515; }
+.folio-catalog-compact .folio-tile[data-selected='true'] { box-shadow: inset 0 0 0 3px currentColor; }
+.folio-catalog-compact .folio-course-optimization { min-height: 340px; }
+.folio-catalog-compact .folio-course-optimization h3 { font-size: 42px; max-width: 8em; margin-top: 14px; }
+.folio-catalog-compact .folio-course-optimization .folio-art-select { position: absolute; top: 80px; right: 26px; width: 48%; max-width: 330px; margin: 0; }
+.folio-catalog-compact .folio-course-optimization .folio-tile-scope { max-width: 70%; padding-top: 125px; }
+.folio-empty { background: var(--folio-soft); padding: 32px; }
+.folio-empty h3 { font-size: 24px; margin-bottom: 10px; }
+.folio-empty button { margin-top: 20px; border: 1px solid currentColor; min-height: 44px; padding: 8px 18px; }
+.folio-paths { padding-top: 72px; }
+.folio-path-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 28px; margin-top: 28px; }
+.folio-path-grid > a { color: var(--folio-ink); padding: 20px 0; border-top: 2px solid var(--folio-ink); min-height: 150px; }
+.folio-path-grid strong { display: block; font-size: 22px; line-height: 1.4; margin-bottom: 13px; letter-spacing: -.03em; }
+.folio-path-grid span { display: block; font-size: 16px; line-height: 1.85; color: var(--folio-muted); }
+.folio-updates { padding-top: 64px; scroll-margin-top: 100px; }
+.folio-section-head { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin-bottom: 24px; }
+.folio-section-head > a { min-height: 44px; display: flex; align-items: center; font-size: 14px; }
+.folio-page .updates-list { padding: 0; }
+.folio-page .updates-list > li { border-color: var(--folio-line); }
+.folio-page .update-body h3 { font-size: 20px; }
+.folio-page .update-body p { font-size: 16px; }
+.folio-page .update-links a { min-height: 44px; display: inline-flex; align-items: center; color: var(--folio-ink); }
+.folio-quiet { border-top: 1px solid var(--folio-line); margin-top: 45px; padding-top: 12px; }
+.folio-quiet .hub-eyebrow { display: none; }
+.folio-quiet .hub-section-heading h2 { font-size: 25px; }
+.folio-quiet .traffic-section { margin-top: 22px; }
+.folio-footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 34px 0; border-top: 1px solid var(--folio-line); margin-top: 42px; font-size: 16px; font-weight: 650; }
+.folio-footer p span { color: var(--folio-muted); font-size: 13px; font-weight: 400; }
+.folio-footer nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; font-weight: 400; }
+.folio-footer nav a { display: flex; align-items: center; min-height: 44px; }
+.folio-directory { padding: 56px max(40px, 5vw) 64px; max-width: 1600px; margin: 0 auto; }
+.folio-directory-intro { max-width: 840px; }
+.folio-directory-intro h1 { font-size: clamp(46px, 6vw, 82px); line-height: 1.2; letter-spacing: -.06em; font-weight: 750; }
+.folio-directory-intro p { max-width: 38em; font-size: 18px; line-height: 1.9; margin-top: 24px; }
+.folio-directory-guides { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px 28px; font-size: 15px; }
+.folio-directory-guides a { display: flex; align-items: center; min-height: 44px; }
+.dark .folio-page { --folio-ink: #f3f3f6; --folio-paper: #171820; --folio-soft: #242632; --folio-muted: #c3c4ce; --folio-line: #555966; }
+.dark .folio-page :is(a, button, input):focus-visible { outline-color: #ffd766; }
+.dark .folio-page .folio-course-ml { --folio-node: #171820; }
+.dark .folio-page .folio-course-insar { --folio-node: #171820; }
+.dark .folio-page .folio-course-remote-sensing { --folio-node: #242632; }
+
+@media (min-width: 1600px) { .folio-cover-copy { padding-left: max(80px, calc((100vw - 1440px) / 2)); } }
+@media (max-width: 1100px) {
+  .folio-cover { min-height: 540px; grid-template-columns: 1.15fr 1fr; }
+  .folio-cover-copy { padding-left: 36px; }
+  .folio-cover h1 { font-size: 92px; }
+  .folio-cover h1.folio-long-title { font-size: 57px; }
+  .folio-cover-links { gap: 7px 18px; font-size: 14px; }
+  .folio-page .folio-tile { padding: 22px; }
+  .folio-tile-heading { flex-wrap: wrap; gap: 0 8px; }
+  .folio-path-grid { grid-template-columns: 1fr 1fr; gap: 12px 30px; }
+}
+@media (max-width: 760px) {
+  .folio-cover { display: flex; flex-direction: column; min-height: 0; }
+  .folio-cover-copy { padding: 35px 24px 0; align-self: stretch; }
+  .folio-cover-field { font-size: 13px; }
+  .folio-cover h1 { font-size: 82px; margin: 24px 0 20px; max-width: 4em; }
+  .folio-cover h1.folio-long-title { font-size: 47px; max-width: 7em; }
+  .folio-cover-summary { font-size: 18px; line-height: 1.85; max-width: 100%; }
+  .folio-cover-links { gap: 8px 20px; margin-top: 22px; }
+  .folio-cover-links a.folio-primary-link { padding-inline: 18px; }
+  .folio-cover-art { height: 285px; min-height: 285px; padding: 0 14px 34px; overflow: hidden; }
+  .folio-cover-art .folio-artwork { width: min(100%, 430px); height: 260px; flex-shrink: 0; }
+  .folio-cover-art > span { right: 24px; bottom: 12px; left: 24px; text-align: right; font-size: 12px; }
+  .folio-cover-bottom { display: block; padding: 16px 24px; font-size: 13px; }
+  .folio-cover-bottom a { margin: 4px 0 -7px; }
+  .folio-home-body { padding: 20px 20px 0; }
+  .folio-page .continue-reading { padding: 15px; gap: 9px; }
+  .folio-page .continue-reading strong { font-size: 15px; }
+  .folio-catalog { padding-top: 42px; }
+  .folio-library-head { display: block; margin-bottom: 24px; }
+  .folio-library-head h2 { font-size: 32px; }
+  .folio-library-head p { font-size: 15px; }
+  .folio-search { margin-top: 25px; min-width: 0; width: 100%; }
+  .folio-course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .folio-page .folio-tile { grid-column: span 2; padding: 20px 22px 14px; min-height: 275px; }
+  .folio-page .folio-tile h3 { font-size: 29px; max-width: 10em; margin-top: 5px; }
+  .folio-tile-heading { flex-wrap: nowrap; }
+  .folio-page .folio-tile > svg.folio-artwork, .folio-art-select { width: 160px; max-width: 160px; margin-top: 0; }
+  .folio-catalog-compact .folio-course-optimization { min-height: 335px; }
+  .folio-catalog-compact .folio-course-optimization h3 { font-size: 37px; }
+  .folio-catalog-compact .folio-course-optimization .folio-art-select { top: 94px; right: 10px; width: 57%; }
+  .folio-catalog-compact .folio-course-optimization .folio-tile-scope { padding-top: 135px; max-width: 100%; }
+  .folio-catalog-compact .folio-course-ml, .folio-catalog-compact .folio-course-insar { grid-column: span 1; padding: 17px 15px 12px; min-height: 345px; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-tile-heading { flex-direction: column; align-items: start; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) h3 { font-size: 23px; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-art-select { width: 100%; min-height: 95px; margin-top: auto; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-tile-links { gap: 0 12px; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-tile-links a:first-child { width: 100%; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-topics { display: none; }
+  .folio-page .folio-tile-scope { font-size: 13px; }
+  .folio-page .folio-tile-summary { font-size: 18px; }
+  .folio-paths { padding-top: 45px; }
+  .folio-paths h2 { font-size: 30px; }
+  .folio-path-grid { grid-template-columns: 1fr 1fr; gap: 0 22px; }
+  .folio-path-grid strong { font-size: 21px; }
+  .folio-path-grid span { font-size: 15px; }
+  .folio-updates { padding-top: 40px; }
+  .folio-section-head { gap: 14px; }
+  .folio-section-head h2 { font-size: 30px; }
+  .folio-section-head > a { font-size: 13px; }
+  .folio-footer { display: block; margin-top: 32px; padding-block: 24px; }
+  .folio-footer nav { margin-top: 14px; gap: 5px 22px; }
+  .folio-directory { padding: 35px 20px 42px; }
+  .folio-directory-intro h1 { font-size: 46px; }
+  .folio-directory-intro p { font-size: 18px; margin-top: 20px; }
+}
+@media (max-width: 350px) {
+  .folio-cover-copy { padding-inline: 20px; }
+  .folio-cover h1 { font-size: 72px; }
+  .folio-cover h1.folio-long-title { font-size: 41px; }
+  .folio-cover-links { gap: 6px 14px; }
+  .folio-cover-links a.folio-primary-link { padding-inline: 14px; gap: 18px; }
+  .folio-cover-art { height: 250px; min-height: 250px; }
+  .folio-cover-art .folio-artwork { height: 230px; }
+  .folio-home-body { padding-inline: 16px; }
+  .folio-library-head h2 { font-size: 29px; }
+  .folio-page .folio-tile { padding-inline: 19px; }
+  .folio-catalog-compact .folio-course-ml, .folio-catalog-compact .folio-course-insar { grid-column: span 2; min-height: 280px; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-tile-heading { flex-direction: row; align-items: center; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-art-select { width: 150px; }
+  .folio-catalog-compact :is(.folio-course-ml, .folio-course-insar) .folio-tile-links a:first-child { width: auto; }
+  .folio-path-grid { grid-template-columns: 1fr; }
+  .folio-path-grid > a { min-height: 120px; }
+  .folio-directory-intro h1 { font-size: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { .folio-page *, .folio-page *::before, .folio-page *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }

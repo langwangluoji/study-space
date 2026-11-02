@@ -58,7 +58,7 @@ async function run(){
  await page.addInitScript(()=>Object.defineProperty(navigator,'webdriver',{get:()=>false}));
  await page.goto(base,{waitUntil:'networkidle'});await page.waitForFunction(()=>localStorage.getItem('study-space-counter-identity')==='test-anonymous-identity');assert.equal(posts,1);const firstUV=liveUV;
  await page.evaluate(()=>{location.hash='site-updates';history.replaceState(null,'',location.pathname+'?course=ml#site-updates')});await page.getByRole('button',{name:'重新读取',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.traffic-status button')?.disabled===false);assert.equal(posts,1);
- const nextPost=page.waitForResponse(r=>r.url()===config.endpoint&&r.request().method()==='POST');await page.getByRole('link',{name:'全部更新',exact:true}).click();await nextPost;assert.equal(posts,2);assert.equal(liveUV,firstUV);
+ const nextPost=page.waitForResponse(r=>r.url()===config.endpoint&&r.request().method()==='POST');await page.getByRole('link',{name:'查看全部更新',exact:true}).click();await nextPost;assert.equal(posts,2);assert.equal(liveUV,firstUV);
  await page.reload({waitUntil:'networkidle'});assert.equal(posts,3);assert.equal(liveUV,firstUV);checks.push('First load, SPA path and refresh count once; hash/query/read retry do not; anonymous identity persists');
  assert.deepEqual(errors,[]);fs.writeFileSync('reports/home-activity-ui.json',JSON.stringify({status:'PASS',fixtureData:true,cases,checks,runtimeErrors:errors},null,2)+'\n');console.log('Activity UI PASS');
  }finally{await browser.close()}

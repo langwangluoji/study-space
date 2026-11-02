@@ -234,6 +234,8 @@ Textbook comparison: [Whiskbroom, pushbroom, dwell and integration · sections a
 
 <RsFigure id="ifov" />
 
+<LessonClassroom lesson="remote-sensing" />
+
 <div class="rs-lang" data-rs-lang="zh" lang="zh-CN">
 
 <strong>视场角（field of view, FOV）</strong>描述仪器的整体角范围，<strong>瞬时视场角（instantaneous field of view, IFOV）</strong>描述单探元某一时刻接收辐射的角范围。设探元尺寸为$d$、焦距为$f$，小角度时$\beta\approx d/f$，以弧度计。对平坦地面、天底对称观测，相对地面高度为$H$，该角范围投影成地面足迹宽度$g$：

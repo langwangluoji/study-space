@@ -109,6 +109,8 @@ $H$ 是相对这一地面的高度。若摄影中心高程为 $Z_S$、地面高�
 
 **原创英语：** *Scale compares an image length with the corresponding ground length.* 先读动词 compares，再看两个比较对象；corresponding 表示两段长度必须属于同一实际对象的对应线段。
 
+<LessonClassroom lesson="photogrammetry" />
+
 ### 航摄光束、重叠和航线示意 {#intro-flight-rays}
 
 PDF84定义perspective center投影中心、optical axis主光轴及沿航线连续曝光形成的stereo pair立体像对。连续照片需要具有共同覆盖才能给同一物体提供不同视角。PDF85把GPS、惯性导航、激光和CCD相机放在飞机获取示意中，表示多种观测可配合，不能因此把激光测距和相机中心投影当成同一种测量。

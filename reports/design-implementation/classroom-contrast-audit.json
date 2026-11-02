@@ -1,0 +1,72 @@
+[
+  {
+    "theme": "light",
+    "id": "optimization",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "ml",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "photogrammetry",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "geodesy",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "remote-sensing",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "insar",
+    "lowContrast": []
+  },
+  {
+    "theme": "light",
+    "id": "optics",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "optimization",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "ml",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "photogrammetry",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "geodesy",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "remote-sensing",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "insar",
+    "lowContrast": []
+  },
+  {
+    "theme": "dark",
+    "id": "optics",
+    "lowContrast": []
+  }
+]

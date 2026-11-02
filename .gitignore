@@ -27,3 +27,9 @@ reports/textbook-web-review.txt
 /reports/math-current-console.txt
 /reports/anatomy-*/**/*.jpg
 /reports/anatomy-*/**/*.txt
+
+# Design captures stay local; machine-readable checks are committed.
+/reports/design-implementation/**/*.png
+/reports/design-implementation/**/*.jpg
+/reports/design-implementation/*-audit.mjs
+/reports/design-implementation/*-retest.mjs

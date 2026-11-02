@@ -64,6 +64,9 @@ for(const c of space.courses){
  if(items&&!items.some(i=>i.link==='/review-'+c.id))items.push({text:c.id==='optics'?'复习关键页':'期末关键页',link:'/review-'+c.id});
  if(courseNav)sidebar['/review-'+c.id]=courseNav;
 }
+for(const resourcePrefix of ['/optimization-sources','/optics-sources','/photogrammetry-sources','/photogrammetry-material-'])sidebar[resourcePrefix]=resourceSidebar;
+function compactChapterLabels(items){for(const item of items||[]){if(/^第\d+章.*·/.test(item.text)&&/[A-Za-z]/.test(item.text)){const parts=item.text.split('·');item.text=parts[0].trim()+' '+parts.at(-1).trim()}compactChapterLabels(item.items)}}
+for(const groups of Object.values(sidebar))compactChapterLabels(groups);
 process.env.VITE_EXTRA_EXTENSIONS='py,ipynb,pptx';
 const segmenter=new Intl.Segmenter('zh-CN',{granularity:'word'});
 function renderSearch(src,env,md){
@@ -89,11 +92,11 @@ export default defineConfig({
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',
     docFooter:{prev:'上一页',next:'下一页'},lastUpdated:{text:'最近更新'},
-    nav:[{text:'首页',link:'/',activeMatch:'^/$'},{text:'课程',link:'/courses',activeMatch:'/(courses|course-ml|course-geodesy|course-remote-sensing|course-insar|course-optimization|optimization-|course-optics|optics-|insar-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary))'},{text:'学习路线',link:'/study-guide'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|extensions|textbooks|book-|slides-|material-|read-(?!README)|geodesy-source|remote-sensing-(sources|glossary))'},{text:'共建',link:'/contribute'},{text:'制作者',link:'/about'}],
+    nav:[{text:'课程',link:'/courses',activeMatch:'/(courses|course-|lecture-|cifar10-practice|geodesy-(?!source|plan)|remote-sensing-(?!sources|glossary)|optimization-|photogrammetry-|optics-|insar-)'},{text:'问题课堂',link:'/classroom'},{text:'期末复习',link:'/review-guide'},{text:'资料中心',link:'/resources',activeMatch:'/(resources|extensions|textbooks|book-|slides-|material-|read-|geodesy-source)'},{text:'制作者',link:'/about'}],
     // VitePress prioritizes slash depth and otherwise preserves insertion order.
     // Put specific filename prefixes before the fallback and broad course prefix.
     sidebar:Object.fromEntries(Object.entries(sidebar).sort((a,b)=>b[0].length-a[0].length)),
     search:{provider:'local',options:{_render:renderSearch,detailedView:false,locales:{root:{translations:{button:{buttonText:'搜索笔记',buttonAriaLabel:'搜索课程笔记'},modal:{displayDetails:'显示上下文',resetButtonTitle:'清除搜索',backButtonTitle:'返回',noResultsText:'没有找到相关笔记',footer:{selectText:'选择',navigateText:'切换',closeText:'关闭'}}}}}}},
-    footer:{message:'从资料建立理解，让知识持续生长。<br><a href="/study-space/about.html">制作者与网站介绍</a> · <a href="/study-space/updates.html">内容更新</a> · <a href="/study-space/site-guide.html">使用说明</a> · <a href="/study-space/contribute.html">共同完善</a>',copyright:'Study Space · 学习空间'}
+    footer:{message:'课程讲义、原始来源与可操作的数学。<br><a href="/study-space/about.html">制作者与网站介绍</a> · <a href="/study-space/updates.html">内容更新</a> · <a href="/study-space/site-guide.html">使用说明</a> · <a href="/study-space/contribute.html">共同完善</a>',copyright:'Study Space · 学习空间'}
   }
 });

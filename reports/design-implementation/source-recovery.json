@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "public/geodesy/materials/S1-introduction.pdf",
+      "bytes": 2909512,
+      "gitOid": "678fc774a95661856551de1138a98e41842cfc73",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S2-vector-calculus.pdf",
+      "bytes": 210461,
+      "gitOid": "6238b85a06321a8d83597c3f2d1a37eb0d36af9d",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S3-ellipsoid.pdf",
+      "bytes": 2296160,
+      "gitOid": "786b6f33771e93839bf952715306e670c30fbcf2",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S4-coordinate-rotation-preview.pdf",
+      "bytes": 520807,
+      "gitOid": "258ff629d63cda30e6fe0773f06c4a1af7d8abe9",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S4-coordinate-rotation.docx",
+      "bytes": 616066,
+      "gitOid": "efdcc8b817ab481341f2eed013e4b4931f269121",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S5-geodetic-control.pdf",
+      "bytes": 36686825,
+      "gitOid": "57199dc3486cdf3f92f1e8383c8be05db56f7d5c",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S6-orbital-mechanics.pptx",
+      "bytes": 7610549,
+      "gitOid": "9c0733331096703102eb9df4086ac25230109fa8",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S7-geodesics.pdf",
+      "bytes": 960185,
+      "gitOid": "73c97b6fe0a2b93485a60b9375c2a1163996d16c",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/S8-coordinate-computation-1.pdf",
+      "bytes": 1417195,
+      "gitOid": "fd49a4fd279956c75682d8c79d9d89b469c64ace",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/geodesy/materials/manifest.json",
+      "bytes": 1791,
+      "gitOid": "164960ef49591a30a9c873189afeb63978b91089",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/materials/catalog.json",
+      "bytes": 139313,
+      "gitOid": "7f3ccb0ec7dc6c1be2456d9f1055137ba4c47c73",
+      "source": "local verified object"
+    },
+    {
+      "path": "public/remote-sensing/materials/rs-gaofen.pdf",
+      "bytes": 251599,
+      "gitOid": "3824ac304b67c37014d1a76058fda567a457b3cb",
+      "source": "local verified object"
+    }
+  ]
+}
