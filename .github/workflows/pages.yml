@@ -47,8 +47,8 @@ jobs:
       - run: node scripts/check-anatomy-ml-ui.mjs
       - run: node scripts/check-anatomy-integration.mjs
       - run: node scripts/check-folio-ui.mjs
-      - run: node scripts/check-ui.cjs
       - run: node scripts/check-geodesy-ui.mjs
+      - run: node scripts/check-ui.cjs
       - run: node scripts/check-remote-resource-navigation.cjs
       - run: node scripts/check-insar-ui.cjs
       - run: node scripts/check-materials-ui.cjs

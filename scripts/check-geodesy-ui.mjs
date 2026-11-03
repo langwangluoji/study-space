@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
+import {expect} from 'playwright/test';
 
 const root = path.resolve('docs/.vitepress/dist'), prefix = '/study-space/';
 const mime = {'.html':'text/html; charset=utf-8','.js':'text/javascript','.mjs':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.json':'application/json','.png':'image/png','.woff2':'font/woff2'};
@@ -22,6 +23,12 @@ const browser = await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_
 const cases = [], errors = [];
 try {
   const page = await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+  // Delayed frames make reset/readout races reproducible on fast machines too.
+  await page.addInitScript(() => {
+    if (!location.pathname.includes('/geodesy/interactive/')) return;
+    const request = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = callback => request(time => setTimeout(() => callback(time),80));
+  });
   const traffic = JSON.parse(fs.readFileSync('traffic.config.json','utf8'));
   for (const url of [traffic.endpoint,traffic.historyUrl]) await page.route(url,r=>r.fulfill({status:200,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:JSON.stringify({success:true,data:{page_pv:0,page_uv:0},version:1,startDate:traffic.startDate,timeZone:traffic.timeZone,days:[],errors:[]})}));
   page.on('pageerror',e=>errors.push(e.message));
@@ -44,11 +51,12 @@ try {
     assert((await frame.locator('#status').innerText()).length>0,mode+' empty input');
     await frame.getByRole('button',{name:/重置|恢复/}).click();
     assert.equal(await input.inputValue(),initial);
+    await expect(frame.locator('dl')).toHaveText(initialReadout,{useInnerText:true});
     await input.focus();await page.keyboard.press('ArrowUp');
     assert.notEqual(await input.inputValue(),initial,mode+' keyboard update');
-    assert.notEqual(await frame.locator('dl').innerText(),initialReadout,mode+' live readout');
+    await expect(frame.locator('dl')).not.toHaveText(initialReadout,{useInnerText:true});
     await frame.getByRole('button',{name:/重置|恢复/}).click();
-    assert.equal(await frame.locator('dl').innerText(),initialReadout);
+    await expect(frame.locator('dl')).toHaveText(initialReadout,{useInnerText:true});
     assert.equal(await page.locator('mjx-merror,[data-mjx-error]').count(),0);
     await page.screenshot({path:`reports/screenshots/geodesy-${mode}-desktop.png`,fullPage:false});
     for (const width of [390,320]) {
