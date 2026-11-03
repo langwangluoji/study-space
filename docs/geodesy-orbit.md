@@ -1,25 +1,20 @@
 ---
-prev: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
+title: "轨道资料阅读入口"
+prev: false
 next: false
 ---
 
-# 轨道课件中的坐标变换参考
+<!-- Generated from knowledge/geodesy/lessons/geodesy-orbit.md; edit the Obsidian source. -->
 
-原辅助入口保留在此。当前课程只使用这份课件的坐标定义与变换内容，不建设时间系统、轨道动力学或软件操作章节。
+# 轨道资料阅读入口
 
-第 66–70 页说明右手系、方向余弦矩阵、变换传递与欧拉角；第 75–84 页说明天球和地球坐标轴的定义及传统变换链。这些内容分别用于[位置表达与坐标框架](geodesy-intro-frames.html)和[坐标旋转说明](geodesy-rotation.html)。
+轨道PPT的全部实际讲授内容已编入[地球、时间与空间坐标辅助篇](geodesy-orbit-supplement.html)。
 
 ## 坐标定义的参考位置 {#g8-frames}
-
-阅读这些页时，先写清矩阵从哪一系转到哪一系，并区分同一向量的分量变换与坐标原点平移。历史协议定义保留其原教学语境，精密计算需另行选择明确标准。
+先区分原点、参考平面和轴指向，再阅读方向余弦与天球地球转换。
 
 ## 主章中的阅读位置 {#g8-time}
+[时间系统](geodesy-orbit-time-systems.html)解释自转时间和原子时的用途；[第一章框架](geodesy-intro-frames.html)连接地球运动与参考框架。
 
-相关内容已融入绪论的坐标框架专题，本入口只提供来源说明。
-
-## 当前内容边界 {#g8-two-body}
-
-当前版本不包含二体运动推导。此锚点仅为此前草稿链接保留，不作为课程目录项目。
-
-
-先回到[四章计算主线](course-geodesy.html)，复习时查[关键条件与题型](review-geodesy.html)。本入口只定位拓展来源，不另设必读任务。
+## 实际内容范围 {#g8-two-body}
+本文件有84张幻灯片，实际讲至地球坐标系及转换链。二体运动和STK只出现在目录，未提供相应讲授页。这里保留旧锚点，供既有链接回到辅助篇。

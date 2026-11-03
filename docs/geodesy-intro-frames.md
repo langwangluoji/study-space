@@ -1,9 +1,15 @@
 ---
-prev: {"text": "研究对象与参考模型", "link": "/geodesy-intro-models"}
-next: {"text": "空间观测怎样约束位置", "link": "/geodesy-intro-observations"}
+title: "位置表达与坐标框架"
+prev: {"text":"研究对象与参考模型","link":"/geodesy-intro-models"}
+next: {"text":"空间观测怎样约束位置","link":"/geodesy-intro-observations"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-intro-frames.md; edit the Obsidian source. -->
+
 # 位置表达与坐标框架
+
+先固定一个物理向量，再更换描述它的坐标轴。需要矩阵乘法与点积；读完应能说明“坐标系定义”“框架实现”和“变换方向”的区别。
+
 
 <!-- earth-reading-task -->
 把靶点P固定在实验台上，只转动坐标架。P没有移动，分量却改变。这先说明“换一组数”不必表示“点发生位移”；随后才写同一向量的两个基展开。
@@ -18,7 +24,9 @@ next: {"text": "空间观测怎样约束位置", "link": "/geodesy-intro-observa
 <!-- anatomy-G1 -->
 把同一靶点先锁住。现在只转动标尺，预测东、北分量会不会改变。
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=frame" title="点没有动，为什么坐标变了？" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=frame" title="点没有动，为什么坐标变了？" poster="/geodesy/figures/anatomy-frame.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=frame)
 
 靶点和长度都未改变，改变的是读数的基。接下来用同一分解写出方向余弦矩阵。
 <!-- /anatomy-G1 -->
@@ -61,7 +69,7 @@ $$
 
 地球绕太阳公转，也绕自己的轴自转。太阳与月球对地球赤道隆起部分的引力矩，使平均自转轴在天球上缓慢改变方向，这种长期变化称为岁差；叠加在平均方向上的周期摆动称为章动。自转角描述地球绕轴转过多少，而极移描述自转轴相对固体地球的位置变化。前两者主要解释轴在天球上怎样改变，最后一个解释轴在地球表面怎样移动，不能把它们当成同一种“轴晃动”。
 
-<SourceFigure src="/geodesy/figures/frame-chain.svg" alt="岁差、章动、自转与极移对应的坐标轴转换链" source="本站绘制" page="示意图" original note="示意轴向关系；角度与摆动幅度均不按真实比例绘制。" />
+<SourceFigure src="/geodesy/figures/frame-chain.svg" alt="岁差、章动、自转与极移对应的坐标轴转换链" source="本站绘制" page="示意图" note="示意轴向关系；角度与摆动幅度均不按真实比例绘制。" original />
 
 图中的箭头表示同一个向量依次在不同基下重写分量；每条箭头都对应下式中的一个方向余弦矩阵。传统课件把二者之间的联系分为岁差、章动、地球自转和极移。用方向明确的矩阵，几何上可写成
 
@@ -99,3 +107,31 @@ CGCS2000与WGS84的几何参数非常接近，但椭球只定义曲面的大小�
 [第二章](geodesy-ellipsoid.html)会从椭球方程建立这条转换关系，并说明椭球高沿什么方向增加。在此之前，先把测站与卫星放进同一个坐标框架，观测的几何关系就能统一表达。
 
 <LearningMark section="gi-frames" />
+
+## 跟算与理解检查
+
+### 完整例题：坐标轴转了，点为什么没有动
+
+在旧坐标系 P 中，向量为 $\mathbf v_P=(1,0,0)^T$。让新坐标系 Q 绕公共 $z$ 轴按右手规则转90°，则新轴在 P 中的表达是 $\mathbf q_x=(0,1,0)^T$、$\mathbf q_y=(-1,0,0)^T$、$\mathbf q_z=(0,0,1)^T$。投影得到
+
+$$
+\mathbf v_Q=E_Q^T\mathbf v_P=(0,-1,0)^T.
+$$
+
+回验用 $E_Q\mathbf v_Q=(1,0,0)^T$，恢复原向量。前后长度均为1；改变的是分量。这一例题也能检查方向余弦矩阵的转置和正负号。
+
+**自测1：已知转换矩阵把 Q 分量变成 P 分量，逆向转换用什么？**
+
+<details><summary>展开解析</summary>
+
+在两组基正交归一的条件下，用矩阵的转置，即 $C_{Q\leftarrow P}=C_{P\leftarrow Q}^T$。
+
+</details>
+
+**自测2：两个数据集都写 XYZ，能直接相减吗？**
+
+<details><summary>展开解析</summary>
+
+先核对参考框架、历元、单位及轴定义；统一后相减才表达可比较的坐标差。
+
+</details>

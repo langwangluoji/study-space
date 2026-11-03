@@ -1,10 +1,15 @@
 ---
-title: 克莱劳定理与微分方程
+title: "克莱劳定理与微分方程"
 prev: {"text":"法截弧与大地线","link":"/geodesy-geodesic-geometry"}
 next: {"text":"第四章 椭球面上大地坐标的计算","link":"/geodesy-computation"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-geodesic-equations.md; edit the Obsidian source. -->
+
 # 克莱劳定理与微分方程
+
+从局部北东分量得到沿程导数，再把旋转对称性写为守恒量。需要曲面度量和方位角定义；用球面极限检查符号与量纲。
+
 
 <!-- earth-reading-task -->
 让上一页的笔尖沿测地路径前进。每走一小步，同时读出纬度、经度和前进方位角；本页的三个微分式各负责更新一个量，克莱劳量则检查整段运动有没有偏离同一条大地线。
@@ -63,7 +68,7 @@ L'=\frac{\sin A}{N\cos B},\qquad
 A'=\frac{\tan B\sin A}{N}.}
 $$
 
-<SourceFigure src="geodesy/figures/S7-geodesic-differentials.png" alt="大地线位移的北向与东向分解" source="S7 大地线讲义" page="9" printed="7" note="图中dA表示沿前进方向的切线方位角变化；公式中的角度均为弧度。" />
+<SourceFigure src="/geodesy/figures/S7-geodesic-differentials.png" alt="大地线位移的北向与东向分解" source="S7 大地线讲义" page="9" printed="7" note="图中dA表示沿前进方向的切线方位角变化；公式中的角度均为弧度。" />
 
 把这三个方程代回，既得到 $M^2B'^2+N^2\cos^2B\,L'^2=1$，又得到 $d(N\cos B\sin A)/ds=0$。单位速度与克莱劳守恒可作为数值积分的检查量。极点处 $\cos B=0$，经度与方位角坐标本身奇异，并不意味着曲线断裂；极区计算应换用稳定的坐标或完整大地线算法。
 
@@ -73,8 +78,36 @@ $$
 
 下一章先把真实地面观测变成椭球上的方向和长度，再用这组方程解算终点坐标。正算给出终点的前进切线方位角 $A_2^+$ 后，反方位角为 $A_{21}=(A_2^++\pi)\bmod2\pi$；一般不能直接写成起点角 $A_{12}+\pi$。
 
-[原文定位：S7 文件页5–10](geodesy-source-s7.html)。
+[原文定位：S7 文件页5–10](https://langwangluoji.github.io/study-space/geodesy-source-s7.html)。
 
 网页为串联原讲义补写了中间推导、符号约定与边界说明；完整原文和批注仍以所列文件页为准。
 
 <LearningMark section="ge-geodesic-equations" />
+
+## 跟算与理解检查
+
+### 完整例题：克莱劳常数怎样约束路径
+
+先取球面模型 $r=R\cos B$，起点 $B_1=30°$、$A_1=60°$。克莱劳常数为
+
+$$
+C=r\sin A=R\cos30°\sin60°=0.75R.
+$$
+
+路径到达纬度极值时，切线指向东西，$A=90°$或270°，所以 $|C|=R\cos B_{\max}$。求得 $|B_{\max}|=\arccos(0.75)=41.409622°$。将该纬度和 $|\sin A|=1$ 代回，恢复 $0.75R$。在椭球上按同样逻辑使用 $r=N(B)\cos B$，通过解方程求极值纬度。
+
+**自测1：方位角从北起算时，克莱劳常数是 $r\sin A$ 还是 $r\cos A$？**
+
+<details><summary>展开解析</summary>
+
+是 $r\sin A$。东西切向分量为 $\sin A$；若角度基准换为东向，表达也随定义改变。
+
+</details>
+
+**自测2：纯子午线的克莱劳常数是多少？**
+
+<details><summary>展开解析</summary>
+
+A为0或180°时常数为0，表示没有绕轴的切向分量。
+
+</details>

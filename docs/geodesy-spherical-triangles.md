@@ -1,10 +1,15 @@
 ---
-title: 球面角超与三角形解算
+title: "球面角超与三角形解算"
 prev: {"text":"地面方向与边长归算","link":"/geodesy-observation-reduction"}
 next: {"text":"高斯平均引数的推导","link":"/geodesy-gauss-derivation"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-spherical-triangles.md; edit the Obsidian source. -->
+
 # 球面角超与三角形解算
+
+先用球面月形理解面积与角度的关系，再推球面角超，最后讨论小三角形的平面近似。需要圆与球的面积、弧度及积分。
+
 
 <!-- earth-reading-task -->
 若测量任务是由P、Q等站组成小三角网，还需要处理曲面内角和超过180°的现象。这个支路先解释面积和角超的联系，再把小球面三角形近似为平面三角形；完成后可回到大地主题主路。
@@ -25,7 +30,7 @@ dF=R^2\sin\vartheta\,d\vartheta\,d\lambda,\qquad
 F_\theta=R^2\int_0^\theta\int_0^\pi\sin\vartheta\,d\vartheta\,d\lambda=2R^2\theta.
 $$
 
-<SourceFigure src="geodesy/figures/S8-spherical-lune.png" alt="半大圆围成的完整球面月形" source="S8 大地坐标计算讲义" page="13" printed="插入说明页" note="θ是弧度；积分中的余纬覆盖0到π，不能只取前半球的投影面积。" />
+<SourceFigure src="/geodesy/figures/S8-spherical-lune.png" alt="半大圆围成的完整球面月形" source="S8 大地坐标计算讲义" page="13" printed="插入说明页" note="θ是弧度；积分中的余纬覆盖0到π，不能只取前半球的投影面积。" />
 
 令三角形顶点为 $P,Q,T$，对跖点为 $P',Q',T'$。由三个大圆划分的球面区域成对对跖；记原三角形面积为 $F$，相邻三个区域 $P'QT,PQ'T,PQT'$ 的面积为 $F_P,F_Q,F_T$。对跖区域面积相等，所以
 
@@ -95,10 +100,40 @@ $F_0$ 是同边平面三角形面积。对另外两个角做同样展开，得�
 
 </details>
 
+
 ## 原讲义中的控制网背景
 
 S8 文件页10–11介绍沿经纬方向布设的一等天文大地锁网：约200km格网、平均约20km三角形边长，以及48000余个基本平面控制点和西安大地原点。这些是原课件的历史背景与图示数量级，说明为什么短线归算和小三角形解算有实际需求，不能当作2026年国家控制网的现状统计。
 
-原控制网图完整保留在[资料库](geodesy-source-s8.html)中。本文的角超证明对应文件页12–14，面积近似与勒让德定理对应15–16；插入的月形说明和分区证明均已纳入。
+原控制网图完整保留在[资料库](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)中。本文的角超证明对应文件页12–14，面积近似与勒让德定理对应15–16；插入的月形说明和分区证明均已纳入。
 
 <LearningMark section="ge-spherical-triangles" />
+
+## 跟算与理解检查
+
+### 完整例题：八分之一球面的角超
+
+球面上取北极、赤道0°经度点和赤道90°经度点，以三条短大圆弧相连。三个内角均为90°，因此
+
+$$
+\varepsilon=\frac\pi2+\frac\pi2+\frac\pi2-\pi=\frac\pi2,
+\qquad F=R^2\varepsilon=\frac{\pi R^2}{2}.
+$$
+
+整球面积 $4\pi R^2$ 的八分之一正好是这个数值，完成几何回验。这个大三角形适合检查角超定理；后文的小球面三角形平面近似另有尺度条件。
+
+**自测1：将角超 ε 以角秒直接代入 $F=R^2\varepsilon$，单位对吗？**
+
+<details><summary>展开解析</summary>
+
+先用 $\varepsilon_{rad}=\varepsilon_{arcsec}/\rho^{\prime\prime}$ 转成弧度，再与 $R^2$ 相乘。
+
+</details>
+
+**自测2：球面角超为正时，内角和怎样变化？**
+
+<details><summary>展开解析</summary>
+
+内角和为 $\pi+\varepsilon$；在本节的凸短弧三角形条件下超过180°。
+
+</details>

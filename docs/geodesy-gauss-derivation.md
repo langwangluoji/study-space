@@ -1,10 +1,15 @@
 ---
-title: 高斯平均引数的推导
+title: "高斯平均引数的推导"
 prev: {"text":"球面角超与三角形解算","link":"/geodesy-spherical-triangles"}
 next: {"text":"大地主题正算与反算","link":"/geodesy-gauss-solution"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-gauss-derivation.md; edit the Obsidian source. -->
+
 # 高斯平均引数的推导
+
+从同一段路径的两端对称展开，辨认“沿程走到一半”和“端点坐标平均”的差别。需要Taylor展开和链式法则，先追踪每个系数的来源。
+
 
 <!-- earth-reading-task -->
 现在已有P处归算后的起始方向和弧长。计算想使用“中点”，但走完一半里程的位置不等于端点坐标的平均。本页先看这个差别，再用Taylor展开把它定量写出；三次项的系数正是为了修补这个差别。
@@ -22,7 +27,9 @@ S8 文件页17把距离约分为短距离 $S\le120\,\mathrm{km}$、中距离 $12
 <!-- anatomy-G7 -->
 把笔停在里程的一半，再把端点的纬度数字平均。两种“中点”真的会重合吗？
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=midpoint" title="曲线走到一半，不等于坐标平均" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=midpoint" title="曲线走到一半，不等于坐标平均" poster="/geodesy/figures/anatomy-midpoint.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=midpoint)
 
 不重合的量正是平均引数改正的来源。下面先看二阶偏移怎样进入三次项，再区分“迭代停止”和“路径近似足够准确”。
 <!-- /anatomy-G7 -->
@@ -45,7 +52,7 @@ $$
 
 因此**弧长中点的坐标 $q_M$ 通常不等于端点坐标的算术平均 $q_m$**。高斯“平均引数”使用后者，必须处理二者差异。$O(S^k)$ 的系数包含相应的曲率半径倒数；在固定、光滑、远离极点的坐标域里理解该阶次，不意味着以米代入后能直接读出误差。
 
-<SourceFigure src="geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。" />
+<SourceFigure src="/geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。" />
 
 <details><summary>求导工具：从起点展开，逐次求沿程导数</summary>
 
@@ -72,6 +79,7 @@ $$
 例如 $B''=\mathcal D f_B=(\partial_Bf_B)B'+(\partial_Af_B)A'$，再求一次得 $B'''=\mathcal D^2f_B$。这就是课件复合函数求导的系统表达；$L,A$ 的高阶导数同样获得，不必另引入猜测公式。
 
 </details>
+
 
 ## 把中点引数换成端点均值
 
@@ -105,8 +113,38 @@ $$
 
 这些关系完全来自定义，可复算三组系数。这里用 $u$ 替代课件的 $\eta_m^2$，用 $\Delta A$ 替代课件表示方位角差的 $a$，避免与椭球长半轴、三角形边长及垂线偏差混用。下一页给出整理后的完整公式和正反算步骤。
 
-[原文定位：S8 文件页17–23](geodesy-source-s8.html)。
+[原文定位：S8 文件页17–23](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)。
 
 网页为串联原讲义补写了中间推导、符号约定与边界说明；完整原文和批注仍以所列文件页为准。
 
 <LearningMark section="ge-gauss-derivation" />
+
+## 跟算与理解检查
+
+### 完整例题：中点改正的系数从哪里来
+
+用一个可精确展开的标量例子隔离Taylor步骤：设 $q(s)=100\,\mathrm m+10^{-6}\,\mathrm{m^{-1}}s^2$，两端为 $s=\pm500$ m，总长参数区间 $S=1000$ m。参数中点 $q_M=q(0)=100$ m，两端均为100.25 m，因此 $q_m=100.25$ m。
+
+$$
+q_m-q_M=0.25\,\mathrm m
+=\frac{S^2}{8}q''_M
+=\frac{1000^2}{8}\times2\times10^{-6}\,\mathrm m.
+$$
+
+直接代入与对称展开一致。这个标量函数专门说明中点换引数，并未指定一条椭球测地线；将步骤用于测地线时，$q''$ 来自沿程微分方程。
+
+**自测1：两端相减后，Taylor展开的偶次项怎样处理？**
+
+<details><summary>展开解析</summary>
+
+对称端点的偶次项相同而抵消；奇次项相加。两端平均则保留偶次项。
+
+</details>
+
+**自测2：能否把经度359°与1°直接平均？**
+
+<details><summary>展开解析</summary>
+
+先在连续角度分支展开，例如359°与361°的均值为360°，归一化后为0°。
+
+</details>

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "slug": "geodesy-coordinate-forward",
+      "mode": "blh-xyz",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    },
+    {
+      "slug": "geodesy-coordinate-inverse",
+      "mode": "inverse",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    },
+    {
+      "slug": "geodesy-local-polar",
+      "mode": "local-polar",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    },
+    {
+      "slug": "geodesy-pivot-models",
+      "mode": "transform-pivot",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-celestial-sphere",
+      "mode": "celestial",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-time-systems",
+      "mode": "time",
+      "inputResetKeyboard": true,
+      "mobileWidths": [
+        390,
+        320
+      ]
+    }
+  ],
+  "errors": [],
+  "legacyCourseChecks": "scripts/check-ui.cjs"
+}

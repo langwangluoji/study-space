@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-03",
+  "page_numbering": "1-based file pages / slide order",
+  "sources": [
+    {
+      "id": "S1",
+      "original": "大地测量 绪论(1).pdf",
+      "relative_file": "课件/大地测量 绪论(1).pdf",
+      "sha256": "91eddd14c59bc934b49c41b504cc9ceeb2f4183646590eed3ebd1162b5b9f975",
+      "role": "主讲义"
+    },
+    {
+      "id": "S2",
+      "original": "向量微积分常用公式.pdf",
+      "relative_file": "向量微积分常用公式.pdf",
+      "sha256": "071daa04f518e179f6e798926a2a9fe482388b9e78d8403960a513f6462ad967",
+      "role": "辅助资料"
+    },
+    {
+      "id": "S3",
+      "original": "1椭球面数学性质   课程讲义.pdf",
+      "relative_file": "课件/1椭球面数学性质   课程讲义.pdf",
+      "sha256": "d69b2a58978481a7d605ac75ddab87b0864c8da143d9afbea17dd1419f7d10cf",
+      "role": "主讲义"
+    },
+    {
+      "id": "S4",
+      "original": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+      "relative_file": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+      "sha256": "dcebb356f470c8d039934ecb4000a9b3632abd122d1b4b3936209de2c3f99994",
+      "role": "辅助资料"
+    },
+    {
+      "id": "S5",
+      "original": "现代大地控制测量_12803034.pdf",
+      "relative_file": "课件/现代大地控制测量_12803034.pdf",
+      "sha256": "057acd0e706ca0afda9e656303c29ab1cdc1ff735c6dd16987f2f840a5bb5ac3",
+      "role": "辅助资料"
+    },
+    {
+      "id": "S6",
+      "original": "轨道力学基础（4学时）(1).pptx",
+      "relative_file": "轨道力学基础（4学时）(1).pptx",
+      "sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87",
+      "role": "辅助资料"
+    },
+    {
+      "id": "S7",
+      "original": "2大地线 （测地线 ）.pdf",
+      "relative_file": "课件/2大地线 （测地线 ）.pdf",
+      "sha256": "c5c1734772ba98bf78400ace167f264f9a984ad5404ff141f6dd99eed17f208f",
+      "role": "主讲义"
+    },
+    {
+      "id": "S8",
+      "original": "3椭球面上大地坐标的计算(1).pdf",
+      "relative_file": "课件/3椭球面上大地坐标的计算(1).pdf",
+      "sha256": "8b8ee001302943bdbbaa1ff7c1cef2afa9e76f8a8f8dc645683e5a2ea62ced99",
+      "role": "主讲义"
+    },
+    {
+      "id": "S9",
+      "original": "3椭球面上大地坐标的计算--补充高斯正反算伪代码流程.pdf",
+      "relative_file": "课件/3椭球面上大地坐标的计算--补充高斯正反算伪代码流程.pdf",
+      "sha256": "7e0408dace002a20d0a931afbfa356b6eac385c4c33e8907766b0ec9c7edd19f",
+      "role": "新增课程讲义"
+    },
+    {
+      "id": "S10",
+      "original": "4大地坐标与地心坐标之间转.pdf",
+      "relative_file": "课件/4大地坐标与地心坐标之间转.pdf",
+      "sha256": "627c809b6a03b71f3e3506487a0a4bbd2a61a676ec8e0f314865fb09f20a6a29",
+      "role": "新增课程讲义"
+    },
+    {
+      "id": "S11",
+      "original": "5三维直角坐标系之间转换.pdf",
+      "relative_file": "课件/5三维直角坐标系之间转换.pdf",
+      "sha256": "633c6a500b0dda84b842544eeb576b65a019b783d61cc518f321c7adf9acc559",
+      "role": "新增课程讲义"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">讲义春分点体系中的地球到天球旋转链</title>
+  <desc id="desc">从左到右依次为协议地球系、瞬时地球系、瞬时真天球系、瞬时平天球系和协议天球系。对应矩阵为W、S、N的转置和P的转置；乘积从右到左作用于列坐标。极移、自转、去章动和去岁差承担不同转换任务。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 1 8 5 0 9" fill="none" stroke="#42666f" stroke-width="1.8"/></marker>
+  </defs>
+  <rect width="1200" height="460" rx="22" fill="#f5f3ec"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#20373d">
+    <text x="36" y="49" font-size="27" font-weight="600">把地面测站的位置转到天球中</text>
+    <text x="36" y="81" font-size="17" fill="#557078">同一地心原点，实体向量不变；每一步更新坐标轴下的分量</text>
+    <g stroke="#b8c7c7" stroke-width="1.5">
+      <rect x="30" y="156" width="180" height="101" rx="12" fill="#e0eddf"/>
+      <rect x="260" y="156" width="180" height="101" rx="12" fill="#e0eddf"/>
+      <rect x="490" y="156" width="180" height="101" rx="12" fill="#f4e8cf"/>
+      <rect x="720" y="156" width="180" height="101" rx="12" fill="#e0eaf2"/>
+      <rect x="950" y="156" width="180" height="101" rx="12" fill="#e0eaf2"/>
+    </g>
+    <g text-anchor="middle" font-size="22">
+      <text x="120" y="196">协议地球系</text><text x="120" y="230" font-size="19">CTS</text>
+      <text x="350" y="196">瞬时地球系</text><text x="350" y="230" font-size="17">讲义自转轴</text>
+      <text x="580" y="196">瞬时真天球系</text><text x="580" y="230" font-size="17">真天极 / 真春分点</text>
+      <text x="810" y="196">瞬时平天球系</text><text x="810" y="230" font-size="17">平天极 / 平春分点</text>
+      <text x="1040" y="196">协议天球系</text><text x="1040" y="230" font-size="19">CIS</text>
+    </g>
+    <g stroke="#42666f" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M216 207H252"/><path d="M446 207H482"/><path d="M676 207H712"/><path d="M906 207H942"/>
+    </g>
+    <g text-anchor="middle" font-size="20">
+      <text x="235" y="128">W</text><text x="465" y="128">S</text><text x="695" y="128">Nᵀ</text><text x="925" y="128">Pᵀ</text>
+      <text x="235" y="290" font-size="18">极移</text><text x="465" y="290" font-size="18">自转</text><text x="695" y="290" font-size="18">去章动</text><text x="925" y="290" font-size="18">去岁差</text>
+    </g>
+    <rect x="36" y="321" width="1128" height="104" rx="12" fill="#fffdf8" stroke="#d5d9d2"/>
+    <text x="60" y="360" font-size="24">r_CIS = Pᵀ Nᵀ S W r_CTS</text>
+    <text x="60" y="395" font-size="17" fill="#557078">W先作用。S用真恒星时联系地球自转；N、P分别定义为平→真、协议→当时平天球。</text>
+  </g>
+</svg>

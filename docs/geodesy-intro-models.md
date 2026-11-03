@@ -1,9 +1,15 @@
 ---
-prev: {"text": "第一章 大地测量绪论", "link": "/geodesy-intro"}
-next: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
+title: "研究对象与参考模型"
+prev: {"text":"第一章 大地测量绪论","link":"/geodesy-intro"}
+next: {"text":"位置表达与坐标框架","link":"/geodesy-intro-frames"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-intro-models.md; edit the Obsidian source. -->
+
 # 研究对象与参考模型
+
+先辨认地面、参考椭球和物理参考面各自承担的任务。本节结束时，应能说明一组位置数值所依附的参考，并读懂高度差的含义。需要的数学只有向量和长度。
+
 
 <!-- earth-reading-task -->
 设P是山坡上架仪器的位置。地图给出经纬度，GNSS给出椭球高，水准成果给出正常高。先做判断：这几个数是否已经可以直接拼成同一位置？本页逐项补齐缺少的参考。
@@ -38,3 +44,31 @@ next: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
 这些模型并非互相替代，而是服务不同的问题。椭球让几何计算有统一载体，重力等位面让高度有物理意义，实际观测则把模型与真实地球联系起来。下一步需要说明位置怎样在选定模型中表达。
 
 <LearningMark section="gi-models" />
+
+## 跟算与理解检查
+
+### 完整例题：同一个点为什么有两种高度
+
+某点的椭球高为 $h=84.6\,\mathrm m$，当地大地水准面差距为 $N_g=24.5\,\mathrm m$。要求估计正高，先画出参考椭球、大地水准面和地面点的局部关系。取法线与铅垂线夹角影响可以忽略的一阶关系 $h\simeq H+N_g$，得
+
+$$
+H\simeq84.6-24.5=60.1\,\mathrm m.
+$$
+
+将 $H+N_g$ 加回得到84.6 m，符号和单位一致。这里的 $N_g$ 来自物理高程信息；它与椭球几何参数 $a,f$ 承担不同任务。正常高采用高程异常 $\zeta$，关系写为 $h\simeq H^\gamma+\zeta$。两种差距应随选定的高程系统使用。
+
+**自测1：能否仅凭椭球长、短半轴求出当地正高？**
+
+<details><summary>展开解析</summary>
+
+还需要当地重力场或大地水准面等物理高程信息。椭球参数确定光滑几何模型。
+
+</details>
+
+**自测2：在上述例题中，差距改为 −5 m，正高怎样变化？**
+
+<details><summary>展开解析</summary>
+
+$H\simeq84.6-(-5)=89.6$ m；负差距表示大地水准面位于参考椭球下方。
+
+</details>

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "notes": 48,
+  "topicsWithWorkedExamples": 31,
+  "selfchecks": 77,
+  "headingsPreserved": 298,
+  "localLinks": 206,
+  "sourcePages": 285,
+  "sourceCounts": {
+    "S1": 29,
+    "S3": 60,
+    "S7": 11,
+    "S8": 28,
+    "S9": 30,
+    "S10": 10,
+    "S11": 33,
+    "S6": 84
+  }
+}

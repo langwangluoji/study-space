@@ -1,18 +1,23 @@
+---
+title: "控制测量教材的拓展阅读入口"
+prev: false
+next: false
+---
+
+<!-- Generated from knowledge/geodesy/lessons/geodesy-control.md; edit the Obsidian source. -->
+
 # 控制测量教材的拓展阅读入口
 
 这个旧草稿入口保留，当前控制测量教材用于核对与补充阅读，暂不另设控制测量主章。
 
 ## 控制网背景 {#g6-network}
-
 教材第 4 章印刷页 126–146、第 5 章印刷页 147–256 涉及控制网与数据处理。课程主线先建立坐标、参考面和椭球几何。
 
 ## 数学工具 {#g6-adjustment}
-
 向量微积分公式表可辅助理解观测模型的微分；完整工程平差不属于此次展开范围。
 
 ## 阅读位置 {#g6-quality}
+相关教材章节地图见[来源索引](geodesy-sources.html)。相关自测与完整例题见各专题末尾。
 
-相关教材章节地图见[来源索引](geodesy-sources.html)。当前主课程不设置习题或练习区。
 
-
-先回到[四章计算主线](course-geodesy.html)，复习时查[关键条件与题型](review-geodesy.html)。本入口只定位拓展来源，不另设必读任务。
+先回到[六章课程路线](course-geodesy.html)，复习时查[关键条件与题型](review-geodesy.html)。本入口只定位拓展来源，不另设必读任务。

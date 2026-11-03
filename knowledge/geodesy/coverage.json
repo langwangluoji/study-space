@@ -1,0 +1,2294 @@
+{
+  "review_date": "2026-11-03",
+  "basis": "知识点逐页定位；封面、重复目录与原习题单独分类",
+  "entries": [
+    {
+      "source": "S1",
+      "file_page": 1,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "定义、分类和任务"
+    },
+    {
+      "source": "S1",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "定义、分类和任务"
+    },
+    {
+      "source": "S1",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "地球运动、坐标轴及转换"
+    },
+    {
+      "source": "S1",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-intro-observations",
+      "note": "八类观测技术；设备照片与应用彩图不逐图重刊，机制在正文解释"
+    },
+    {
+      "source": "S1",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-intro-models",
+      "note": "物理/几何参考面；历史引语和全球分布图属原资料说明素材"
+    },
+    {
+      "source": "S1",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "四系统对照；CGCS2000长半轴笔误已统一为6378137m"
+    },
+    {
+      "source": "S1",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 28,
+      "status": "covered",
+      "topic": "geodesy-intro-gravity",
+      "note": "正常场、平均椭球物理约束及海面"
+    },
+    {
+      "source": "S1",
+      "file_page": 29,
+      "status": "exercise-linked",
+      "topic": "geodesy-intro-models",
+      "note": "原习题按知识目标关联到专题例题与自测"
+    },
+    {
+      "source": "S3",
+      "file_page": 1,
+      "status": "source-only",
+      "topic": "geodesy-intro-frames",
+      "note": "封面或图示过渡页；坐标定义融入正文，原图未重复刊载"
+    },
+    {
+      "source": "S3",
+      "file_page": 4,
+      "status": "source-only",
+      "topic": "geodesy-intro-frames",
+      "note": "封面或图示过渡页；坐标定义融入正文，原图未重复刊载"
+    },
+    {
+      "source": "S3",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "几何对象及坐标定义；点线面在后续各专题具体解释"
+    },
+    {
+      "source": "S3",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-intro-frames",
+      "note": "几何对象及坐标定义；点线面在后续各专题具体解释"
+    },
+    {
+      "source": "S3",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "参数和经纬线；常用系统参数表在绪论框架页"
+    },
+    {
+      "source": "S3",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-math",
+      "note": "主法线与椭球法线；不扩展挠率或完整Frenet微分方程"
+    },
+    {
+      "source": "S3",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "归化和大地纬度参数化"
+    },
+    {
+      "source": "S3",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-local-directions",
+      "note": "局部方向、法线与度量"
+    },
+    {
+      "source": "S3",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 28,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 29,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 30,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 31,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 32,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "地心纬度、纬度关系及几何性质；不可展性明确引用内蕴定理"
+    },
+    {
+      "source": "S3",
+      "file_page": 33,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 34,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 35,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 36,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 37,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 38,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 39,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 40,
+      "status": "covered",
+      "topic": "geodesy-curvature",
+      "note": "一般曲率、密切圆及M"
+    },
+    {
+      "source": "S3",
+      "file_page": 41,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 42,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 43,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 44,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 45,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 46,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 47,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 48,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 49,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 50,
+      "status": "covered",
+      "topic": "geodesy-normal-curvature",
+      "note": "Meusnier、N、Euler、方向平均"
+    },
+    {
+      "source": "S3",
+      "file_page": 51,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 52,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 53,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 54,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 55,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 56,
+      "status": "covered",
+      "topic": "geodesy-metric",
+      "note": "第一形式前置；积分/反算和面积；高阶系数表用有限阶教学式与准确积分替代"
+    },
+    {
+      "source": "S3",
+      "file_page": 57,
+      "status": "exercise-linked",
+      "topic": "geodesy-ellipsoid-coordinates",
+      "note": "原习题按知识目标关联到专题例题与自测"
+    },
+    {
+      "source": "S3",
+      "file_page": 58,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    },
+    {
+      "source": "S3",
+      "file_page": 59,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    },
+    {
+      "source": "S3",
+      "file_page": 60,
+      "status": "supplemental-proof",
+      "topic": "geodesy-normal-curvature#normal-section-coordinate-proof",
+      "note": "完整坐标截线证明；原页纬度记号L改为B"
+    },
+    {
+      "source": "S7",
+      "file_page": 1,
+      "status": "structural",
+      "topic": "geodesy-geodesics",
+      "note": "封面与机构署名完整保留原PDF",
+      "anchor": "geodesy-source-s7.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "法截弧与相对法截弧定义",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "相对法截弧共面条件与同纬度证明",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "测地曲率、局部最短、曲率和Frenet挠率",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "梯度与曲线加速度，纠正同向文字",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "插入法线反向完整证明",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-geodesic-equations",
+      "note": "笛卡尔守恒量及坐标代入",
+      "anchor": "geodesy-geodesic-equations.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-geodesic-equations",
+      "note": "Clairaut公式与几何意义",
+      "anchor": "geodesy-geodesic-equations.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-geodesic-equations",
+      "note": "北东微分及方位角微分",
+      "anchor": "geodesy-geodesic-equations.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-geodesic-equations",
+      "note": "平行圈半径微分与三条方程",
+      "anchor": "geodesy-geodesic-equations.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S7",
+      "file_page": 11,
+      "status": "source-and-explanation",
+      "topic": "geodesy-geodesic-geometry",
+      "note": "原习题保留PDF；同纬度问题正文辨析，其余定义与证明见两专题",
+      "anchor": "geodesy-geodesic-geometry.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 1,
+      "status": "structural",
+      "topic": "geodesy-computation",
+      "note": "封面与署名",
+      "anchor": "geodesy-source-s8.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "垂线偏差与标高差改正；方向差和实际加入的改正反号，统一约定并用三维投影核验",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入垂线偏差图与分量；方向差和实际加入的改正反号，统一约定并用三维投影核验",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入两种方向归算说明；方向差和实际加入的改正反号，统一约定并用三维投影核验",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "法截弧到大地线改正",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入改正符号与象限说明",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "仪器/目标椭球高、两端方向半径与斜距归算",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "弦弧转换与10km数量级边界",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "平均高程面、工程球面模型和误差敏感性",
+      "anchor": "geodesy-observation-reduction.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 10,
+      "status": "source-and-explanation",
+      "topic": "geodesy-spherical-triangles",
+      "note": "历史约200km格网与平均20km边长，原图保留PDF；未注明统计年代，不补造2026现状或具体年份",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 11,
+      "status": "source-and-explanation",
+      "topic": "geodesy-spherical-triangles",
+      "note": "历史48000余点、西安原点，原图保留PDF；未注明统计年代，不补造2026现状或具体年份",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "球面角超与月形总面积",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "插入完整月形积分和图示",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "插入对跖分区完整证明",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "小三角形面积级数与角超近似",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "勒让德定理和边长保持",
+      "anchor": "geodesy-spherical-triangles.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "正反算定义、距离分类，贝塞尔仅提及",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "起点Taylor与一阶微分",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "复合函数高阶求导",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "弧长中点展开与1/24",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "端点均值与中点差1/8",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "引数转换和偏导系数",
+      "anchor": "geodesy-gauss-derivation.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "完整Gauss三次正算系数与适用范围",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "初值、迭代容限与反方位角",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "反算分量推导与一阶代入",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "课件u一阶截断、完整三次反解、atan2与模长",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "端点方位角恢复",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S8",
+      "file_page": 28,
+      "status": "source-and-example",
+      "topic": "geodesy-gauss-solution",
+      "note": "原习题完整保留；两组数据作为WGS84计算演示，不冒称原题椭球；原页未指定椭球，演示明确选择WGS84；放大核对小数角分记号并按原值转换，原题小数角秒另行处理",
+      "anchor": "geodesy-gauss-solution.html",
+      "text_formula_review": "checked against full-page rendering; displayed identities and approximations independently checked",
+      "image_review": "original full page visually inspected; decorative and historical pictures retained in source PDF",
+      "unresolved": []
+    },
+    {
+      "source": "S9",
+      "file_page": 1,
+      "status": "structural",
+      "topic": "geodesy-computation",
+      "note": "封面与署名"
+    },
+    {
+      "source": "S9",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "垂线偏差与标高差改正；方向差和实际加入的改正反号，统一约定并用三维投影核验"
+    },
+    {
+      "source": "S9",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入垂线偏差图与分量；方向差和实际加入的改正反号，统一约定并用三维投影核验"
+    },
+    {
+      "source": "S9",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入两种方向归算说明；方向差和实际加入的改正反号，统一约定并用三维投影核验"
+    },
+    {
+      "source": "S9",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "法截弧到大地线改正"
+    },
+    {
+      "source": "S9",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "插入改正符号与象限说明"
+    },
+    {
+      "source": "S9",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "仪器/目标椭球高、两端方向半径与斜距归算"
+    },
+    {
+      "source": "S9",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "弦弧转换与10km数量级边界"
+    },
+    {
+      "source": "S9",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-observation-reduction",
+      "note": "平均高程面、工程球面模型和误差敏感性"
+    },
+    {
+      "source": "S9",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "历史约200km格网与平均20km边长，原图保留PDF；未注明统计年代，不补造2026现状或具体年份"
+    },
+    {
+      "source": "S9",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "历史48000余点、西安原点，原图保留PDF；未注明统计年代，不补造2026现状或具体年份"
+    },
+    {
+      "source": "S9",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "球面角超与月形总面积"
+    },
+    {
+      "source": "S9",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "插入完整月形积分和图示"
+    },
+    {
+      "source": "S9",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "插入对跖分区完整证明"
+    },
+    {
+      "source": "S9",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "小三角形面积级数与角超近似"
+    },
+    {
+      "source": "S9",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-spherical-triangles",
+      "note": "勒让德定理和边长保持"
+    },
+    {
+      "source": "S9",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "正反算定义、距离分类，贝塞尔仅提及"
+    },
+    {
+      "source": "S9",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "起点Taylor与一阶微分"
+    },
+    {
+      "source": "S9",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "复合函数高阶求导"
+    },
+    {
+      "source": "S9",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "弧长中点展开与1/24"
+    },
+    {
+      "source": "S9",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "端点均值与中点差1/8"
+    },
+    {
+      "source": "S9",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-gauss-derivation",
+      "note": "引数转换和偏导系数"
+    },
+    {
+      "source": "S9",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "完整Gauss三次正算系数与适用范围"
+    },
+    {
+      "source": "S9",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "初值、迭代容限与反方位角"
+    },
+    {
+      "source": "S9",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "反算分量推导与一阶代入"
+    },
+    {
+      "source": "S9",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "课件u一阶截断、完整三次反解、atan2与模长"
+    },
+    {
+      "source": "S9",
+      "file_page": 27,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "端点方位角恢复"
+    },
+    {
+      "source": "S9",
+      "file_page": 28,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "新增高斯正反算伪代码、输入单位、连续角分支、象限、终止条件与20次上限"
+    },
+    {
+      "source": "S9",
+      "file_page": 29,
+      "status": "covered",
+      "topic": "geodesy-gauss-solution",
+      "note": "新增高斯正反算伪代码、输入单位、连续角分支、象限、终止条件与20次上限"
+    },
+    {
+      "source": "S9",
+      "file_page": 30,
+      "status": "exercise-linked",
+      "topic": "geodesy-gauss-solution",
+      "note": "原习题完整保留；两组数据作为WGS84计算演示，不冒称原题椭球；原页未指定椭球，演示明确选择WGS84；放大核对小数角分记号并按原值转换，原题小数角秒另行处理"
+    },
+    {
+      "source": "S10",
+      "file_page": 1,
+      "status": "context",
+      "topic": "geodesy-coordinate-conversion",
+      "topics": [
+        "geodesy-coordinate-conversion"
+      ],
+      "note": "封面与课程署名"
+    },
+    {
+      "source": "S10",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-coordinate-forward",
+      "topics": [
+        "geodesy-coordinate-forward"
+      ],
+      "note": "空间直角轴、大地纬度经度与椭球高定义"
+    },
+    {
+      "source": "S10",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-coordinate-forward",
+      "topics": [
+        "geodesy-coordinate-forward"
+      ],
+      "note": "椭球脚点加法线高的正算推导"
+    },
+    {
+      "source": "S10",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-coordinate-inverse",
+      "topics": [
+        "geodesy-coordinate-inverse"
+      ],
+      "note": "经度、纬度迭代与高度反算；增加atan2、极点及稳定高度式"
+    },
+    {
+      "source": "S10",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-coordinate-differentials",
+      "topics": [
+        "geodesy-coordinate-differentials"
+      ],
+      "note": "雅可比=正交方向基×对角长度标尺"
+    },
+    {
+      "source": "S10",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-coordinate-differentials",
+      "topics": [
+        "geodesy-coordinate-differentials"
+      ],
+      "note": "正交投影与逆坐标微分"
+    },
+    {
+      "source": "S10",
+      "file_page": 7,
+      "status": "covered-with-correction",
+      "topic": "geodesy-ellipsoid-parameter-change",
+      "topics": [
+        "geodesy-ellipsoid-parameter-change"
+      ],
+      "note": "a、e²全微分与偏导矩阵",
+      "correction": "参数偏导矩阵右下元素末因子应为sin B，原页印作cos B；由Z对e²直接求导及赤道边界检核确认"
+    },
+    {
+      "source": "S10",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-parameter-change",
+      "topics": [
+        "geodesy-ellipsoid-parameter-change"
+      ],
+      "note": "全微分求逆、固定空间坐标的条件"
+    },
+    {
+      "source": "S10",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-ellipsoid-parameter-change",
+      "topics": [
+        "geodesy-ellipsoid-parameter-change"
+      ],
+      "note": "固定XYZ时dB、dL、dH与椭球参数变化的公式"
+    },
+    {
+      "source": "S10",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-coordinate-forward",
+      "topics": [
+        "geodesy-coordinate-forward",
+        "geodesy-coordinate-inverse",
+        "geodesy-coordinate-differentials"
+      ],
+      "note": "克拉索夫斯基坐标例题、0.2/0.3角秒与5米增量、球近似微分"
+    },
+    {
+      "source": "S11",
+      "file_page": 1,
+      "status": "context",
+      "topic": "geodesy-frame-transformations",
+      "topics": [
+        "geodesy-frame-transformations"
+      ],
+      "note": "封面与课程署名"
+    },
+    {
+      "source": "S11",
+      "file_page": 2,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "三个被动基本旋转矩阵与正角"
+    },
+    {
+      "source": "S11",
+      "file_page": 3,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "交线轴Z-X-Z旋转的几何路线"
+    },
+    {
+      "source": "S11",
+      "file_page": 4,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "Z-X-Z精确连乘式与正交性"
+    },
+    {
+      "source": "S11",
+      "file_page": 5,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "Z-X-Z同名轴夹角与矩阵对角元素"
+    },
+    {
+      "source": "S11",
+      "file_page": 6,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "X-Y-Z逐步旋转几何路线"
+    },
+    {
+      "source": "S11",
+      "file_page": 7,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "Rz Ry Rx连乘与作用次序"
+    },
+    {
+      "source": "S11",
+      "file_page": 8,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "X-Y-Z同名轴夹角关系"
+    },
+    {
+      "source": "S11",
+      "file_page": 9,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "小角近似与一阶旋转模型"
+    },
+    {
+      "source": "S11",
+      "file_page": 10,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "九元素的六个正交约束"
+    },
+    {
+      "source": "S11",
+      "file_page": 11,
+      "status": "covered",
+      "topic": "geodesy-frame-rotation",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "note": "三自由度与直接求旋转矩阵"
+    },
+    {
+      "source": "S11",
+      "file_page": 12,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "NEU定义、反向z轴和旋转路线；明确左手顺序"
+    },
+    {
+      "source": "S11",
+      "file_page": 13,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "局部到全球方向矩阵与测站全球坐标"
+    },
+    {
+      "source": "S11",
+      "file_page": 14,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "站心到全球平移与方向变换"
+    },
+    {
+      "source": "S11",
+      "file_page": 15,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "全球坐标差到站心投影"
+    },
+    {
+      "source": "S11",
+      "file_page": 16,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "距离方位天顶距正算与方向点积形式"
+    },
+    {
+      "source": "S11",
+      "file_page": 17,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "极坐标反算、垂线与法线基准；补齐atan2"
+    },
+    {
+      "source": "S11",
+      "file_page": 18,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar",
+        "geodesy-pivot-models"
+      ],
+      "note": "全球/站心旋转伪向量与NEU负号"
+    },
+    {
+      "source": "S11",
+      "file_page": 19,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "空间基线方位与局部倾斜/垂线偏差关系"
+    },
+    {
+      "source": "S11",
+      "file_page": 20,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "插入的ENU单位基与北东投影完整推导"
+    },
+    {
+      "source": "S11",
+      "file_page": 21,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "note": "卫星方位角与高度角"
+    },
+    {
+      "source": "S11",
+      "file_page": 22,
+      "status": "covered",
+      "topic": "geodesy-seven-parameters",
+      "topics": [
+        "geodesy-seven-parameters"
+      ],
+      "note": "Bursa-Wolf精确式与七个参数"
+    },
+    {
+      "source": "S11",
+      "file_page": 23,
+      "status": "covered",
+      "topic": "geodesy-seven-parameters",
+      "topics": [
+        "geodesy-seven-parameters",
+        "geodesy-parameter-estimation"
+      ],
+      "note": "一阶展开与同名点参数系数"
+    },
+    {
+      "source": "S11",
+      "file_page": 24,
+      "status": "covered",
+      "topic": "geodesy-seven-parameters",
+      "topics": [
+        "geodesy-seven-parameters"
+      ],
+      "note": "基线变换与平移相消"
+    },
+    {
+      "source": "S11",
+      "file_page": 25,
+      "status": "covered",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "note": "参考点为旋转/尺度中心的模型"
+    },
+    {
+      "source": "S11",
+      "file_page": 26,
+      "status": "covered",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "note": "插入的Molodensky-Badekas二维向量图与辅助点含义"
+    },
+    {
+      "source": "S11",
+      "file_page": 27,
+      "status": "interpreted",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "note": "扫描的参考点关系图；正文改用显式源/目标基底的向量等式解释"
+    },
+    {
+      "source": "S11",
+      "file_page": 28,
+      "status": "interpreted",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "note": "原页批注指出三坐标系符号混乱；正文区分参考点坐标差与原点平移"
+    },
+    {
+      "source": "S11",
+      "file_page": 29,
+      "status": "covered",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models",
+        "geodesy-parameter-estimation"
+      ],
+      "note": "中心化参数线性方程与基线等价性"
+    },
+    {
+      "source": "S11",
+      "file_page": 30,
+      "status": "covered",
+      "topic": "geodesy-pivot-models",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "note": "范士Veis局部旋转参数与转换模型"
+    },
+    {
+      "source": "S11",
+      "file_page": 31,
+      "status": "covered",
+      "topic": "geodesy-parameter-estimation",
+      "topics": [
+        "geodesy-parameter-estimation"
+      ],
+      "note": "框架位移与椭球元素合并为BLH微分"
+    },
+    {
+      "source": "S11",
+      "file_page": 32,
+      "status": "covered",
+      "topic": "geodesy-parameter-estimation",
+      "topics": [
+        "geodesy-parameter-estimation"
+      ],
+      "note": "大地坐标微分矩阵与逐分量教学展开"
+    },
+    {
+      "source": "S11",
+      "file_page": 33,
+      "status": "covered",
+      "topic": "geodesy-local-polar",
+      "topics": [
+        "geodesy-local-polar",
+        "geodesy-seven-parameters",
+        "geodesy-pivot-models"
+      ],
+      "note": "站心定义、旋转平移、极坐标推导及三模型差异，在专题自检与正文中落实"
+    },
+    {
+      "source": "S6",
+      "file_page": 1,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "课程封面及来源身份"
+    },
+    {
+      "source": "S6",
+      "file_page": 2,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "五部分总目录；后两项属于目录预告"
+    },
+    {
+      "source": "S6",
+      "file_page": 3,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "地球与天球分节目录"
+    },
+    {
+      "source": "S6",
+      "file_page": 4,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "真实地球的形状"
+    },
+    {
+      "source": "S6",
+      "file_page": 5,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "物理表面、大地水准面与参考椭球"
+    },
+    {
+      "source": "S6",
+      "file_page": 6,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "地球引力场与重力异常图"
+    },
+    {
+      "source": "S6",
+      "file_page": 7,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "点质量万有引力和矢量方向"
+    },
+    {
+      "source": "S6",
+      "file_page": 8,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "负号势能、正号引力位与引力加速度梯度"
+    },
+    {
+      "source": "S6",
+      "file_page": 9,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "匀质球积分与球外质点等效"
+    },
+    {
+      "source": "S6",
+      "file_page": 10,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "真实地球质量积分及解析简化的条件"
+    },
+    {
+      "source": "S6",
+      "file_page": 11,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "指数函数幂级数逼近的类比"
+    },
+    {
+      "source": "S6",
+      "file_page": 12,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "拉普拉斯方程、球谐级数及带谐和田谐"
+    },
+    {
+      "source": "S6",
+      "file_page": 13,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "球谐基函数的三维形状示意"
+    },
+    {
+      "source": "S6",
+      "file_page": 14,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "球谐系数与SAO-III、WGS-84、EGM2008模型"
+    },
+    {
+      "source": "S6",
+      "file_page": 15,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "球体中心引力简化"
+    },
+    {
+      "source": "S6",
+      "file_page": 16,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "轴对称赤道对称模型与带谐系数Jn"
+    },
+    {
+      "source": "S6",
+      "file_page": 17,
+      "status": "teaching",
+      "topic": "geodesy-orbit-gravity",
+      "note": "三轴椭球二度截断与通约卫星提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 18,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "地球运动分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 19,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "地球自转与公转"
+    },
+    {
+      "source": "S6",
+      "file_page": 20,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "天球分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 21,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "站心和地心天球、任意半径与视位置"
+    },
+    {
+      "source": "S6",
+      "file_page": 22,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "天球角距时间观测及平行同向射线性质"
+    },
+    {
+      "source": "S6",
+      "file_page": 23,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "天顶、天底与地平面"
+    },
+    {
+      "source": "S6",
+      "file_page": 24,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "天极与天赤道"
+    },
+    {
+      "source": "S6",
+      "file_page": 25,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "赤经圈、赤纬圈和赤经赤纬"
+    },
+    {
+      "source": "S6",
+      "file_page": 26,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "子午圈、卯酉圈和四方点"
+    },
+    {
+      "source": "S6",
+      "file_page": 27,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "时角及其度量方向"
+    },
+    {
+      "source": "S6",
+      "file_page": 28,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "黄道黄极、二分点和黄赤交角"
+    },
+    {
+      "source": "S6",
+      "file_page": 29,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "天体周日视运动"
+    },
+    {
+      "source": "S6",
+      "file_page": 30,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "上中天与下中天"
+    },
+    {
+      "source": "S6",
+      "file_page": 31,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-sphere",
+      "note": "太阳周日及周年视运动、季节与昼长"
+    },
+    {
+      "source": "S6",
+      "file_page": 32,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "岁差章动极移分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 33,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "岁差章动概念、春分点西移"
+    },
+    {
+      "source": "S6",
+      "file_page": 34,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "日月引力矩的几何图"
+    },
+    {
+      "source": "S6",
+      "file_page": 35,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "地轴进动与陀螺类比"
+    },
+    {
+      "source": "S6",
+      "file_page": 36,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "平天极与真天极"
+    },
+    {
+      "source": "S6",
+      "file_page": 37,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "岁差周期25800年、50.37角秒每年等讲义近似"
+    },
+    {
+      "source": "S6",
+      "file_page": 38,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "章动18.6年主要周期及9.2角秒轨迹尺度"
+    },
+    {
+      "source": "S6",
+      "file_page": 39,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "相对地球的极移定义"
+    },
+    {
+      "source": "S6",
+      "file_page": 40,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "1968—1973及2001—2005极移观测轨迹图"
+    },
+    {
+      "source": "S6",
+      "file_page": 41,
+      "status": "teaching",
+      "topic": "geodesy-orbit-earth-motion",
+      "note": "年周期与钱德勒自由摆动量级"
+    },
+    {
+      "source": "S6",
+      "file_page": 42,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "时间系统总目录提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 43,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "时刻、时间间隔、起始历元与秒长"
+    },
+    {
+      "source": "S6",
+      "file_page": 44,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "自转、公转和原子跃迁计时基础"
+    },
+    {
+      "source": "S6",
+      "file_page": 45,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "世界时、原子时、力学时分节目录"
+    },
+    {
+      "source": "S6",
+      "file_page": 46,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "世界时与地球自转"
+    },
+    {
+      "source": "S6",
+      "file_page": 47,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "恒星日、恒星时及地方性"
+    },
+    {
+      "source": "S6",
+      "file_page": 48,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "恒星时等于春分点时角"
+    },
+    {
+      "source": "S6",
+      "file_page": 49,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "由已知赤经恒星确定恒星时"
+    },
+    {
+      "source": "S6",
+      "file_page": 50,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "真太阳日和真太阳时"
+    },
+    {
+      "source": "S6",
+      "file_page": 51,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "公转非匀速与黄赤投影引起太阳日变化"
+    },
+    {
+      "source": "S6",
+      "file_page": 52,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "假想平太阳的赤道匀速运动"
+    },
+    {
+      "source": "S6",
+      "file_page": 53,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "由天文观测恒星时换算平太阳时"
+    },
+    {
+      "source": "S6",
+      "file_page": 54,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "世界时原点、地方时与经度差"
+    },
+    {
+      "source": "S6",
+      "file_page": 55,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "UT0、UT1极移改正与UT2季节性改正"
+    },
+    {
+      "source": "S6",
+      "file_page": 56,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "原子时分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 57,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "原子秒、1958历史起算及旧TA与UT2关系"
+    },
+    {
+      "source": "S6",
+      "file_page": 58,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "国际原子时与多钟联合实现"
+    },
+    {
+      "source": "S6",
+      "file_page": 59,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "协调世界时、1972前后调整方式"
+    },
+    {
+      "source": "S6",
+      "file_page": 60,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "力学时分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 61,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "TT、TDT、TDB及TT与TAI、UT1关系"
+    },
+    {
+      "source": "S6",
+      "file_page": 62,
+      "status": "teaching",
+      "topic": "geodesy-orbit-time-systems",
+      "note": "时间系统总览及年、月参照周期"
+    },
+    {
+      "source": "S6",
+      "file_page": 63,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "坐标系统总目录提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 64,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "坐标表达、惯性性质和原点位置的分类"
+    },
+    {
+      "source": "S6",
+      "file_page": 65,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "坐标定义、天球系与地球系分节目录"
+    },
+    {
+      "source": "S6",
+      "file_page": 66,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "右手系、原点、基本平面与主轴"
+    },
+    {
+      "source": "S6",
+      "file_page": 67,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "方向余弦阵、正交性、列的投影意义与传递性"
+    },
+    {
+      "source": "S6",
+      "file_page": 68,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "基矢关系、分量变换及方向余弦阵上下标"
+    },
+    {
+      "source": "S6",
+      "file_page": 69,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "绕单轴被动旋转Mx、My、Mz"
+    },
+    {
+      "source": "S6",
+      "file_page": 70,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "逐次Z-Y-X欧拉角及MxMyMz乘积"
+    },
+    {
+      "source": "S6",
+      "file_page": 71,
+      "status": "teaching",
+      "topic": "geodesy-orbit-vector-derivative",
+      "note": "旋转基矢与向量的乘积求导展开"
+    },
+    {
+      "source": "S6",
+      "file_page": 72,
+      "status": "teaching",
+      "topic": "geodesy-orbit-vector-derivative",
+      "note": "绝对与相对导数的定义"
+    },
+    {
+      "source": "S6",
+      "file_page": 73,
+      "status": "teaching",
+      "topic": "geodesy-orbit-vector-derivative",
+      "note": "泊松公式与omega叉A运输定理；任意参考系适用"
+    },
+    {
+      "source": "S6",
+      "file_page": 74,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "天球坐标分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 75,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "天球赤道直角坐标和r、赤经、赤纬正反转换"
+    },
+    {
+      "source": "S6",
+      "file_page": 76,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "瞬时真天球坐标系"
+    },
+    {
+      "source": "S6",
+      "file_page": 77,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "瞬时平天球坐标系"
+    },
+    {
+      "source": "S6",
+      "file_page": 78,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "CIS和J2000.0平天极、平春分点的讲义定义"
+    },
+    {
+      "source": "S6",
+      "file_page": 79,
+      "status": "structural",
+      "topic": "geodesy-orbit-supplement",
+      "note": "地球坐标分节提示"
+    },
+    {
+      "source": "S6",
+      "file_page": 80,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "地球坐标；嵌入公式实际是椭球大地坐标BLH正反解"
+    },
+    {
+      "source": "S6",
+      "file_page": 81,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "协议地极CTP、旧CIO和BIH零子午线历史定义"
+    },
+    {
+      "source": "S6",
+      "file_page": 82,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "瞬时地球系的原点和轴"
+    },
+    {
+      "source": "S6",
+      "file_page": 83,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "协议地球坐标系CTS的原点和轴"
+    },
+    {
+      "source": "S6",
+      "file_page": 84,
+      "status": "teaching",
+      "topic": "geodesy-orbit-celestial-frames",
+      "note": "CTS到CIS：极移、真恒星时自转、章动和岁差转换链"
+    }
+  ]
+}

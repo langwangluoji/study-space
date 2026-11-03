@@ -1,9 +1,15 @@
 ---
-prev: {"text": "曲线曲率与子午曲率半径", "link": "/geodesy-curvature"}
-next: {"text": "曲面度量 弧长与面积", "link": "/geodesy-metric"}
+title: "法曲率与方向曲率"
+prev: {"text":"曲线曲率与子午曲率半径","link":"/geodesy-curvature"}
+next: {"text":"曲面度量 弧长与面积","link":"/geodesy-metric"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-normal-curvature.md; edit the Obsidian source. -->
+
 # 法曲率与方向曲率
+
+本节回答同一点沿不同方向走，为什么得到不同的局部弯曲半径。需要曲线曲率与第一基本形式；读图时区分平行圈、法截线和曲面的法线。
+
 
 <!-- earth-reading-task -->
 不改变P，只把出发方向从北转向东。我们要得到任意方位A的局部半径，而不是再定义一批互不相干的圆。先用投影找N，再由两个主方向得到RA；第二种坐标证明留作独立核对。
@@ -69,7 +75,9 @@ $$
 <!-- anatomy-G3 -->
 把圆规压在同一个点上，先沿北向，再转到东向。接触得上的圆为什么需要换半径？
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=curvature" title="曲率规为什么必须转一个方向？" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=curvature" title="曲率规为什么必须转一个方向？" poster="/geodesy/figures/anatomy-curvature.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=curvature)
 
 仪器给出两个主方向的半径，但平行圈圆心不在法线上。下面用曲率的法向投影解释N从哪里来。
 <!-- /anatomy-G3 -->
@@ -136,8 +144,7 @@ $$
 
 讲义还引入辅助量 $c=a^2/b$、$V=\sqrt{1+e'^2\cos^2B}$。由 $V^2=W^2/(1-e^2)$，可将同一组半径写为 $N=c/V$、$M=c/V^3$、$\sqrt{MN}=c/V^2$。这些是前述公式的代数重写，不是另外三种几何半径。
 
-<details>
-<summary>补充证明：由坐标变换和法截线方程独立得到方向曲率</summary>
+<details><summary>补充证明：由坐标变换和法截线方程独立得到方向曲率</summary>
 
 ### 从局部截面方程核对Euler公式 {#normal-section-coordinate-proof}
 
@@ -207,6 +214,7 @@ A=0得到M，A=π/2得到N；球面或极点极限下各向半径相同。于是
 
 </details>
 
+
 ## 对方向平均得到哪个量
 
 讲义把平均曲率半径定义为各方位曲率半径的平均：
@@ -240,3 +248,33 @@ $\mathcal H=(1/M+1/N)/2$ 含义不同。先对半径平均、先对曲率平均�
 法截线也不等于任意大地线。法截线由平面与曲面相交产生，大地线要求曲率向量的切平面分量为零；两种定义一般不会给出同一整条曲线。这里用法截线解释局部曲率，并不据此声称得到任意两点的最短路径。
 
 <LearningMark section="ge-normal-curvature" />
+
+## 跟算与理解检查
+
+### 完整例题：45°方位角的方向半径
+
+在WGS84的 $B=45°$ 处，$M=6367381.815620$ m、$N=6388838.290121$ m。方位角从北向东计，取 $A=45°$，则
+
+$$
+\frac1{R_A}=\frac{\cos^2 A}{M}+\frac{\sin^2 A}{N}
+=\frac12\left(\frac1M+\frac1N\right),
+\qquad R_A=6378092.007544\,\mathrm m.
+$$
+
+它位于 M、N 之间。再检查 $A=0°$ 得 $R_A=M$，$A=90°$ 得 $R_A=N$，确认方位角及主方向没有交换。
+
+**自测1：把方向半径写成 $M\cos^2A+N\sin^2A$ 是否符合 Euler 公式？**
+
+<details><summary>展开解析</summary>
+
+Euler 公式对曲率（半径的倒数）作加权，方向半径应由倒数求回。
+
+</details>
+
+**自测2：平行圈半径 $N\cos B$ 就是卯酉曲率半径 N 吗？**
+
+<details><summary>展开解析</summary>
+
+前者是平行圈在自身平面内的半径；N是卯酉法截线的曲率半径，通过 Meusnier 定理联系。
+
+</details>

@@ -1,0 +1,29 @@
+---
+title: "第四章 椭球面上大地坐标的计算"
+slug: geodesy-computation
+chapter: 4
+order: 0
+sources: ["S8","S9"]
+---
+
+
+# 第四章 椭球面上大地坐标的计算
+
+<!-- earth-reading-task -->
+回到开头的山坡测量：先把仪器方向和空间斜距归算为椭球上的方向、弧长，再作大地主题正算，最后拿独立算法回验终点。
+
+**连续计算主路**：[观测归算](geodesy-observation-reduction.md) → [平均引数为什么出现](geodesy-gauss-derivation.md) → [正反算与回验](geodesy-gauss-solution.md)。[球面三角形](geodesy-spherical-triangles.md)服务于传统控制网角超与解算，是相关支路，并非Gauss正算所必需的一步。
+<!-- /earth-reading-task -->
+
+观测发生在地面仪器与目标之间，坐标计算却以参考椭球面为载体。两者之间需要先统一水平面、目标高度与路径，再解三角形或大地主题。
+
+| 专题 | 计算主线 |
+| --- | --- |
+| [地面方向与边长归算](geodesy-observation-reduction.md) | 三差改正；斜距、高差、高度缩减与弦弧转换 |
+| [球面角超与三角形解算](geodesy-spherical-triangles.md) | 月形面积、角超、勒让德定理及局部球面近似 |
+| [高斯平均引数的推导](geodesy-gauss-derivation.md) | 从微分方程到级数；弧长中点和端点算术平均的区别 |
+| [大地主题正算与反算](geodesy-gauss-solution.md) | 完整三次公式、迭代、象限、反方位角和计算回验 |
+
+依据 S8 [原讲义](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)文件页2–27，原末页习题数据用于折叠的计算演示。讲义标题中的“(1)”表示这批资料的范围；它提到长距离贝塞尔方法，但没有给出推导，本站不把该部分标作已经讲完。
+
+所有公式默认角度为弧度，距离与曲率半径采用相同单位。角秒换算为 $\rho''=180\times3600/\pi\approx206264.806247$。近似公式的截断误差、输入数据误差和迭代残差分别检查，不能用“迭代已收敛”代替精度论证。

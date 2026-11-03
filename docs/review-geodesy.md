@@ -1,6 +1,10 @@
 ---
-title: 大地测量期末关键总结
+title: "大地测量期末关键总结"
+prev: false
+next: false
 ---
+
+<!-- Generated from knowledge/geodesy/lessons/review-geodesy.md; edit the Obsidian source. -->
 
 # 大地测量期末关键总结
 
@@ -20,7 +24,7 @@ title: 大地测量期末关键总结
 | 大地线方程 | $dB/ds=\cos A/M$；$dL/ds=\sin A/(N\cos B)$；$dA/ds=\sin A\tan B/N$ | 前进方位角沿程变化；近极区经度坐标有奇异性 |
 | 克莱劳关系 | $N\cos B\sin A=C$ | 旋转曲面大地线守恒量；不是所有地表曲线都成立 |
 | 球面角超 | $E=\alpha+\beta+\gamma-\pi$，$F=R^2E$ | 球面三角形，角超用弧度；球面不是椭球面的精确替代 |
-| 高程区别 | $h=H+\zeta$（正常高），$h=H^{\rm ortho}+N_g$（正高） | $\zeta$ 是高程异常；$N_g$ 为大地水准面差距，避免与卯酉半径 $N$ 混名 |
+| 高程区别 | $h\simeq H^\gamma+\zeta$（正常高），$h\simeq H+N_g$（正高） | $\zeta$ 是高程异常；$N_g$ 为大地水准面差距，避免与卯酉半径 $N$ 混名 |
 
 推导入口：[坐标与纬度](geodesy-ellipsoid-coordinates.html) · [局部基](geodesy-local-directions.html) · [曲率](geodesy-normal-curvature.html) · [度量](geodesy-metric.html) · [大地线方程](geodesy-geodesic-equations.html)。
 
@@ -30,8 +34,23 @@ title: 大地测量期末关键总结
 
 **斜距归算。** 在[球面短边模型](geodesy-observation-reduction.html#earth-reduction-example)中，先取 $q=\sqrt{D^2-(H_2-H_1)^2}$，再取 $d=q/\sqrt{(1+H_1/R)(1+H_2/R)}$，最后 $S=2R\arcsin[d/(2R)]$。$D=1000$ m、$H_1=H_2=100$ m、$R=6371000$ m 时，$q=1000$ m、$d\approx999.984304$ m、弦转弧约 $1.027\,\mu$m。高程归算与弦弧改正不能相互替代。
 
-**高斯正反算。** 先统一终点方位角约定 → 用两端关系初始化 → 求中点引数并迭代 → 用 atan2 处理象限 → 正算回代检查终点。[推导](geodesy-gauss-derivation.html)中的实际中点值 $q_m$ 与端点算术平均 $q_M$ 相差 $O(S^2)$，进入距离项后可造成更高阶改正。迭代残差很小只说明方程迭代收敛，不能证明截断模型的真实端点误差很小。高纬、长距离须用独立椭球解回验；不背“所有情况毫米级”的结论。
+**高斯正反算。** 先统一终点方位角约定 → 用两端关系初始化 → 求中点引数并迭代 → 用 atan2 处理象限 → 正算回代检查终点。[推导](geodesy-gauss-derivation.html)中的实际中点值 $q_M$ 与端点算术平均 $q_m$ 相差 $O(S^2)$，进入距离项后可造成更高阶改正。迭代残差很小只说明方程迭代收敛，不能证明截断模型的真实端点误差很小。高纬、长距离须用独立椭球解回验；不背“所有情况毫米级”的结论。
 
 ## 最后自查
 
 参考椭球不等于物理大地水准面；椭球法线不等于重力铅垂线；法截弧不自动就是大地线；局部最短不保证任意长段全局唯一最短。坐标变换须先区分旋转、平移、尺度与框架历元。回原文核对[参考与重力](geodesy-intro-gravity.html)、[法截弧](geodesy-geodesic-geometry.html)、[高斯正反算](geodesy-gauss-solution.html)，原件位置见[来源](geodesy-sources.html)。
+
+## 坐标转换与辅助篇复习
+
+| 输入与目标 | 首选步骤 | 结果检查 |
+|---|---|---|
+| BLH → XYZ | 指定椭球，求N，沿法线加高，投影到XYZ | 赤道零经度h=0给出(a,0,0) |
+| XYZ → BLH | atan2求经度，迭代纬度，稳定公式求高 | 回代XYZ；极轴经度另注明约定 |
+| 坐标小变化 | 用雅可比把角度微分和高度变化换成XYZ变化 | 与完整非线性正算作小步比较 |
+| 同一空间点换椭球 | 固定XYZ，求椭球参数偏导再解BLH微分 | 用两个椭球独立反解比较 |
+| 测站到目标 | 先作坐标差，再用ENU基投影，atan2求方位 | 旋转前后向量模相同 |
+| 跨框架转换 | 明确源、目标、历元及旋转约定，再应用平移、旋转和尺度 | 逆变换、同名点残差及几何分布检查 |
+| 参考点模型 | 把参考点减出，在参考点附近旋转缩放，再加回目标参考点 | 与等价Bursa–Wolf平移关系比较 |
+| 天球与时间 | 分清时角、赤经与经度，以及UT1、UTC、TAI、TT | TT−TAI=32.184 s；UTC换算需指定日期的闰秒差 |
+
+[第五章](geodesy-coordinate-conversion.html) · [第六章](geodesy-frame-transformations.html) · [辅助篇](geodesy-orbit-supplement.html)。

@@ -1,8 +1,10 @@
 ---
-title: 第一章 大地测量绪论
-prev: {"text": "大地测量课程总览", "link": "/course-geodesy"}
-next: {"text": "研究对象与参考模型", "link": "/geodesy-intro-models"}
+title: "第一章 大地测量绪论"
+prev: {"text":"大地测量课程总览","link":"/course-geodesy"}
+next: {"text":"研究对象与参考模型","link":"/geodesy-intro-models"}
 ---
+
+<!-- Generated from knowledge/geodesy/lessons/geodesy-intro.md; edit the Obsidian source. -->
 
 # 第一章 大地测量绪论
 
@@ -13,15 +15,12 @@ next: {"text": "研究对象与参考模型", "link": "/geodesy-intro-models"}
 从地面测量到卫星定位，仪器给出的总是距离、方向、时间或其他物理观测。要把它们变成可靠的位置，需要先决定位置相对于什么表达，再建立观测与未知量的关系。本章沿着这个问题组织原绪论讲义。
 
 ## 研究对象与参考模型 {#g1-model}
-
 真实地球、旋转椭球与大地水准面各有不同作用。光滑数学曲面支持坐标计算，重力等位面描述物理参考面。[阅读专题](geodesy-intro-models.html)
 
 ## 位置表达与坐标框架 {#g1-frame}
-
 换坐标轴与换坐标参数是两类变换。坐标系、参考框架、椭球和历元一起决定位置数值的含义。[阅读专题](geodesy-intro-frames.html)
 
 ## 空间观测怎样约束位置 {#g1-observation}
-
 从卫星位置减测站位置得到站星向量，再求长度和方向，就能把几种空间观测放进统一几何关系。[阅读专题](geodesy-intro-observations.html)
 
 ## 地球形状与重力场

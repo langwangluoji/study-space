@@ -1,9 +1,15 @@
 ---
-prev: {"text": "第二章 椭球面数学性质", "link": "/geodesy-ellipsoid"}
-next: {"text": "旋转椭球与三种纬度", "link": "/geodesy-ellipsoid-coordinates"}
+title: "曲线 曲面与坐标表达"
+prev: {"text":"第二章 椭球面数学性质","link":"/geodesy-ellipsoid"}
+next: {"text":"旋转椭球与三种纬度","link":"/geodesy-ellipsoid-coordinates"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-math.md; edit the Obsidian source. -->
+
 # 曲线 曲面与坐标表达
+
+本页补足后续推导马上要用的参数化、切向量、法向和度量。先在平面上算一遍，再将同样步骤用到椭球；需要偏导与向量点积。
+
 
 <!-- earth-reading-task -->
 下一页要在椭球上移动P。我们先用直线、圆和平面练三件操作：求导找移动方向，归一化得到单位方向，点积把参数变化换成长度。后面所有椭球公式都重复这三步，新增的是曲面的具体形状。
@@ -14,7 +20,6 @@ next: {"text": "旋转椭球与三种纬度", "link": "/geodesy-ellipsoid-coordi
 本专题的数学补充来自向量微积分公式表文件页 1–4、6–8，椭球讲义文件页 12、18–24、33–45。这里先讲一般工具，随后各专题再把它们应用到旋转椭球。
 
 ## 参数变化形成切向方向 {#g2-product}
-
 设空间曲线为 $\mathbf r(t)=(x(t),y(t),z(t))^T$，在 $t_0$ 附近作一阶展开：
 
 $$
@@ -29,7 +34,6 @@ $$
 将切向量归一化时必须先检查导数非零。导数为零可能是参数选取造成的奇点，也可能来自曲线本身，需要换参数或单独分析，不能直接除以零。
 
 ## 两条切向量确定曲面法线 {#g2-jacobian}
-
 正则曲面写作 $\mathbf x(u,v)$。固定 $v$ 改变 $u$，得到一条参数曲线，切向量为 $\mathbf x_u$；固定 $u$ 改变 $v$，另一条切向量为 $\mathbf x_v$。一阶位移是
 
 $$
@@ -55,7 +59,6 @@ $$
 而 $\mathbf r'(t)$ 是任意曲面切向量，所以只要 $\nabla F\ne0$，梯度就垂直于切平面，因而给出法向。参数化与隐式方程描述同一曲面时，两种方法所得法线应平行。
 
 ## 参数差怎样变成长度 {#first-fundamental-form}
-
 已经有 $d\mathbf x=\mathbf x_u\,du+\mathbf x_v\,dv$。参数变化可以相同，实际位移却取决于两根切向量的长度与夹角。对这个位移作点积，得到
 
 $$
@@ -75,7 +78,6 @@ $$
 沿曲面曲线 $u(t),v(t)$，速度平方是 $v_c^2=E\dot u^2+2F\dot u\dot v+G\dot v^2$。改用弧长s时，$ds/ds=1$，于是 $E(u')^2+2Fu'v'+G(v')^2=1$。后面投影曲率时需要的单位切向条件，正是这条长度关系，而不是默认参数导数本身长为1。
 
 ## 方向 投影与坐标基 {#g2-curvature}
-
 点积 $\mathbf a\cdot\mathbf b=\|\mathbf a\|\|\mathbf b\|\cos\theta$ 说明两个方向的夹角，单位向量 $\mathbf e$ 上的标量投影是 $\mathbf a\cdot\mathbf e$。叉积长度 $\|\mathbf a\times\mathbf b\|=\|\mathbf a\|\|\mathbf b\|\sin\theta$ 则对应两向量张成的平行四边形面积。
 
 这两种运算分别连接着方向与面积。如果两个切向量正交，归一化后可以构成两个局部轴，再取法线作为第三个轴。一般曲面的参数曲线不一定正交，不能只把两个导数归一化就声称得到了正交基。
@@ -89,3 +91,37 @@ $$
 有了这些工具，我们不必先背下椭球的切向和法向公式，而可以从椭球坐标表达逐一推出来。
 
 <LearningMark section="ge-general" />
+
+## 跟算与理解检查
+
+### 完整例题：参数差怎样变成真实长度
+
+设平面参数化 $\mathbf r(u,v)=(2u,3v,0)\,\mathrm m$，$u,v$ 无量纲。求导得 $\mathbf r_u=(2,0,0)$、$\mathbf r_v=(0,3,0)$，所以
+
+$$
+E=4\,\mathrm{m^2},\quad F=0,\quad G=9\,\mathrm{m^2}.
+$$
+
+当 $\Delta u=0.001,\Delta v=0.002$，位移为 $(0.002,0.006,0)$ m，长度
+
+$$
+\sqrt{4(0.001)^2+9(0.002)^2}=0.006324555\,\mathrm m.
+$$
+
+直接对位移求模得到同一结果。这里参数化是线性的，有限位移也精确成立；一般曲面上的度量公式先描述微分长度，再沿路径积分。
+
+**自测1：F=0 表示什么？**
+
+<details><summary>展开解析</summary>
+
+两条参数切向量正交，因为 $F=\mathbf r_u\cdot\mathbf r_v$。
+
+</details>
+
+**自测2：把参数 u 的单位改为角度却保留原导数，会有什么问题？**
+
+<details><summary>展开解析</summary>
+
+导数的倍率和单位随参数改变，长度系数也应相应换算；三角函数求导通常以弧度为参数。
+
+</details>

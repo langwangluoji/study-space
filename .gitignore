@@ -33,3 +33,13 @@ reports/textbook-web-review.txt
 /reports/design-implementation/**/*.jpg
 /reports/design-implementation/*-audit.mjs
 /reports/design-implementation/*-retest.mjs
+
+# Geodesy local reading state and browser QA artifacts
+/knowledge/geodesy/.obsidian/workspace*.json
+/knowledge/geodesy/学习笔记/
+/scratch/geodesy-visual-qa/
+
+/scratch/orbit-*
+/reports/geodesy-*-run.log
+/reports/geodesy-build.log
+/reports/geodesy-build-error.log

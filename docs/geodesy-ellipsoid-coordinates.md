@@ -1,9 +1,15 @@
 ---
-prev: {"text": "曲线 曲面与坐标表达", "link": "/geodesy-math"}
-next: {"text": "椭球上的局部方向", "link": "/geodesy-local-directions"}
+title: "旋转椭球与三种纬度"
+prev: {"text":"曲线 曲面与坐标表达","link":"/geodesy-math"}
+next: {"text":"椭球上的局部方向","link":"/geodesy-local-directions"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-ellipsoid-coordinates.md; edit the Obsidian source. -->
+
 # 旋转椭球与三种纬度
+
+目标是把同一点的三种纬度对应到三条明确的量角方向，并从坐标表达推得关系式。需要椭圆方程、三角函数和梯度；所有本节纬度关系先取椭球面 h=0。
+
 
 <!-- earth-reading-task -->
 把P先放在WGS84椭球面的大地纬度45°、经度0°处。先预测：地心向径、辅助圆和椭球法线量到的三个角会一样吗？下面先观察同一点，再逐一推导坐标；不要为了背关系式而把三个角对应到三个不同点。
@@ -35,11 +41,12 @@ $$
 椭球方程只含坐标平方，所以关于三个坐标面反射后形状不变，并绕 Z 轴旋转对称。方程还给出 $X^2+Y^2\le a^2$、$Z^2\le b^2$，因此曲面有界。梯度 $2(X/a^2,Y/a^2,Z/b^2)$ 只有在原点才可能为零，而原点不在椭球面上，故曲面处处光滑正则。极点的经纬参数退化不意味着曲面不正则。后续将得到高斯曲率 $K=(1/M)(1/N)>0$。依据高斯曲率在局部等距变换下不变的定理，它不能无伸缩地展到K=0的平面；这是对内蕴定理的引用，本章不展开该定理的完整证明。
 
 ## 三种角度怎样定义 {#latitude-relations}
-
 <!-- anatomy-G2 -->
 我们始终测同一个点P。先拖到45°，猜一猜从地心看、从法线看，哪个角更大。
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=latitude" title="同一个测站，三只纬度刻度" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=latitude" title="同一个测站，三只纬度刻度" poster="/geodesy/figures/anatomy-latitude.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=latitude)
 
 三只刻度没有在测三个点。下面分别写出同一点的p、Z，再用坐标相等推出角度关系；完整推导仍保留。
 <!-- /anatomy-G2 -->
@@ -930,3 +937,31 @@ $$
 因此三种纬度之间前面建立的关系仍应理解为参考椭球面上的关系。
 
 <LearningMark section="ge-latitudes" />
+
+## 跟算与理解检查
+
+### 完整例题：45°点的三种纬度
+
+选WGS84，$a=6378137$ m、$f=1/298.257223563$，先算 $e^2=f(2-f)=0.00669437999014$。给定椭球面点 $B=45°$，利用
+
+$$
+\tan u=\sqrt{1-e^2}\tan B,\qquad \tan\Phi=(1-e^2)\tan B
+$$
+
+得到 $u=44.9037878494°$、$\Phi=44.8075767840°$。代入 $p=N\cos B$、$Z=N(1-e^2)\sin B$，再用 $\operatorname{atan2}(Z,p)$，恢复同一地心纬度，形成独立几何回验。北半球此处满足 $B>u>\Phi$，角度次序对应法线、辅助圆和向径的差别。
+
+**自测1：球面极限 f=0 时，三个纬度是什么关系？**
+
+<details><summary>展开解析</summary>
+
+三者相同：法线与向径重合，辅助圆也与子午截线重合。
+
+</details>
+
+**自测2：空间点 h>0 时，可以直接对该点套用本节的椭球面纬度关系吗？**
+
+<details><summary>展开解析</summary>
+
+应先区分脚点和空间点。空间点地心纬度应由含 h 的 XYZ 计算；本节两个正切关系针对 h=0 的椭球面点。
+
+</details>

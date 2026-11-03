@@ -46,8 +46,8 @@
       "title": "大地测量",
       "category": "测绘与地球空间科学",
       "url": "course-geodesy.html",
-      "description": "从地球参考模型、椭球几何走向大地线、观测归算与大地主题正反算。",
-      "status": "绪论、椭球、大地线与坐标计算已整理",
+      "description": "从地球参考模型、椭球几何走向测地线、观测归算、坐标转换与天球时间基础。",
+      "status": "六章课程与轨道辅助篇，含例题、自测和完整推导",
       "chapters": [
         {
           "id": "geodesy-intro",
@@ -138,6 +138,87 @@
             {
               "slug": "geodesy-gauss-solution",
               "title": "大地主题正算与反算"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-coordinate-conversion",
+          "title": "第五章：大地坐标与空间直角坐标",
+          "url": "geodesy-coordinate-conversion.html",
+          "topics": [
+            {
+              "slug": "geodesy-coordinate-forward",
+              "title": "正算：由大地经纬高求空间坐标"
+            },
+            {
+              "slug": "geodesy-coordinate-inverse",
+              "title": "反算：由空间坐标找回经纬高"
+            },
+            {
+              "slug": "geodesy-coordinate-differentials",
+              "title": "坐标微分：方向基与长度标尺"
+            },
+            {
+              "slug": "geodesy-ellipsoid-parameter-change",
+              "title": "椭球参数改变时，同一点的经纬高怎样变化"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-frame-transformations",
+          "title": "第六章：空间坐标系转换",
+          "url": "geodesy-frame-transformations.html",
+          "topics": [
+            {
+              "slug": "geodesy-frame-rotation",
+              "title": "坐标旋转：方向余弦、顺序与小角近似"
+            },
+            {
+              "slug": "geodesy-local-polar",
+              "title": "站心坐标：从空间基线到方位角与高度角"
+            },
+            {
+              "slug": "geodesy-seven-parameters",
+              "title": "Bursa–Wolf：平移、旋转与尺度的七参数模型"
+            },
+            {
+              "slug": "geodesy-pivot-models",
+              "title": "参考点转换与范士模型：中心和旋转轴各管什么"
+            },
+            {
+              "slug": "geodesy-parameter-estimation",
+              "title": "从同名点估计七参数，再传播到大地坐标"
+            }
+          ]
+        },
+        {
+          "id": "geodesy-orbit-supplement",
+          "title": "轨道力学辅助专题：地球、时间与参考系",
+          "url": "geodesy-orbit-supplement.html",
+          "topics": [
+            {
+              "slug": "geodesy-orbit-gravity",
+              "title": "地球形状与引力场：从点质量到球谐展开"
+            },
+            {
+              "slug": "geodesy-orbit-celestial-sphere",
+              "title": "天球上的方向、赤经与时角"
+            },
+            {
+              "slug": "geodesy-orbit-earth-motion",
+              "title": "自转、公转、岁差、章动与极移"
+            },
+            {
+              "slug": "geodesy-orbit-time-systems",
+              "title": "时间系统：恒星时、太阳时、UT1、TAI、UTC与TT"
+            },
+            {
+              "slug": "geodesy-orbit-celestial-frames",
+              "title": "天球与地球参考系：坐标、旋转与转换链"
+            },
+            {
+              "slug": "geodesy-orbit-vector-derivative",
+              "title": "旋转坐标系中的矢量导数与速度转换"
             }
           ]
         }

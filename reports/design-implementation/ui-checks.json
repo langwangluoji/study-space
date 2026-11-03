@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "base": "http://127.0.0.1:60607/study-space/",
+  "base": "http://127.0.0.1:58098/study-space/",
   "cases": [
     {
       "slug": "",

@@ -1,8 +1,10 @@
 ---
-title: 第四章 椭球面上大地坐标的计算
+title: "第四章 椭球面上大地坐标的计算"
 prev: {"text":"克莱劳定理与微分方程","link":"/geodesy-geodesic-equations"}
 next: {"text":"地面方向与边长归算","link":"/geodesy-observation-reduction"}
 ---
+
+<!-- Generated from knowledge/geodesy/lessons/geodesy-computation.md; edit the Obsidian source. -->
 
 # 第四章 椭球面上大地坐标的计算
 
@@ -21,6 +23,6 @@ next: {"text":"地面方向与边长归算","link":"/geodesy-observation-reducti
 | [高斯平均引数的推导](geodesy-gauss-derivation.html) | 从微分方程到级数；弧长中点和端点算术平均的区别 |
 | [大地主题正算与反算](geodesy-gauss-solution.html) | 完整三次公式、迭代、象限、反方位角和计算回验 |
 
-依据 S8 [原讲义](geodesy-source-s8.html)文件页2–27，原末页习题数据用于折叠的计算演示。讲义标题中的“(1)”表示这批资料的范围；它提到长距离贝塞尔方法，但没有给出推导，本站不把该部分标作已经讲完。
+依据 S8 [原讲义](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)文件页2–27，原末页习题数据用于折叠的计算演示。讲义标题中的“(1)”表示这批资料的范围；它提到长距离贝塞尔方法，但没有给出推导，本站不把该部分标作已经讲完。
 
 所有公式默认角度为弧度，距离与曲率半径采用相同单位。角秒换算为 $\rho''=180\times3600/\pi\approx206264.806247$。近似公式的截断误差、输入数据误差和迭代残差分别检查，不能用“迭代已收敛”代替精度论证。

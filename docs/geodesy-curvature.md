@@ -1,9 +1,15 @@
 ---
-prev: {"text": "椭球上的局部方向", "link": "/geodesy-local-directions"}
-next: {"text": "法曲率与方向曲率", "link": "/geodesy-normal-curvature"}
+title: "曲线曲率与子午曲率半径"
+prev: {"text":"椭球上的局部方向","link":"/geodesy-local-directions"}
+next: {"text":"法曲率与方向曲率","link":"/geodesy-normal-curvature"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-curvature.md; edit the Obsidian source. -->
+
 # 曲线曲率与子午曲率半径
+
+从切线方向随弧长变化理解曲率，再推导子午圈曲率半径 M。需要曲线的一、二阶导数；先会解释曲率的单位，再读椭圆的代数展开。
+
 
 <!-- earth-reading-task -->
 沿子午线走，单位切向怎样转动？在P处放一把局部曲率规，找到和曲线贴合到二阶的圆。这个圆的半径将解释为何前页的纬度长度系数恰好叫作子午曲率半径M。
@@ -129,3 +135,32 @@ $$
 $M$ 是接触该点、具有同样切向和曲率的密切圆半径，不是该点到地心的距离。对于扁椭球，赤道附近的子午截线比极点附近弯得更强，所以其曲率半径更小。下一专题会比较同一点不同切向的弯曲，而不是只沿子午线考察。
 
 <LearningMark section="ge-curvature" />
+
+## 跟算与理解检查
+
+### 完整例题：赤道处的子午曲率
+
+WGS84的 $e^2=0.00669437999014$，取 $B=0$，代入
+
+$$
+M=\frac{a(1-e^2)}{(1-e^2\sin^2 B)^{3/2}}
+=a(1-e^2)=6335439.327293\,\mathrm m.
+$$
+
+对应曲率 $\kappa=1/M$，单位为 $\mathrm{m^{-1}}$。球面极限 $e=0$ 使 $M=a$，与半径 a 的圆曲率一致。这个结果是沿南北子午方向的局部密切圆半径，使用时应保留方向含义。
+
+**自测1：曲率半径越大，曲线在局部弯得越急还是越缓？**
+
+<details><summary>展开解析</summary>
+
+越缓，因为单位弧长内切向变化量由曲率 $\kappa=1/R$ 描述。
+
+</details>
+
+**自测2：M 是从地心到测站的距离吗？**
+
+<details><summary>展开解析</summary>
+
+M 是子午线的局部曲率半径，圆心是密切圆中心，一般不在地心。
+
+</details>

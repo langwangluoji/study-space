@@ -1,10 +1,15 @@
 ---
-title: 法截弧与大地线
+title: "法截弧与大地线"
 prev: {"text":"第三章 大地线（测地线）","link":"/geodesy-geodesics"}
 next: {"text":"克莱劳定理与微分方程","link":"/geodesy-geodesic-equations"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-geodesic-geometry.md; edit the Obsidian source. -->
+
 # 法截弧与大地线
+
+先分别作两端的法截面，再判断曲线自身的切向如何变化。需要切线、法线和曲率；“局部最短”与“任意两点间全局最短”按各自条件理解。
+
 
 <!-- earth-reading-task -->
 先选两个不在同一子午面的普通端点P、Q。从两端各作一次法截，再比较沿途都满足测地条件的路径。特殊纬度、球面与退化位置放在普通情况之后检查，这样才知道它们特殊在哪里。
@@ -15,14 +20,16 @@ next: {"text":"克莱劳定理与微分方程","link":"/geodesy-geodesic-equatio
 <!-- anatomy-G5 -->
 只在端点把导板摆到法线里，能够约束整条曲线吗？先让两块导板各画一条，再看中途的接触方向。
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=geodesic" title="两端都能法截，途中就一定最直吗？" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=geodesic" title="两端都能法截，途中就一定最直吗？" poster="/geodesy/figures/anatomy-geodesic.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=geodesic)
 
 端点条件只规定一处法截方向。大地线要求笔尖每一处的切向弯曲为零，下一节由这个连续条件推出守恒量。
 <!-- /anatomy-G5 -->
 
 过椭球上点 $P$ 的法线和另一点 $Q$ 作平面，这个平面与椭球的交线中连接两点的弧段，称为 $P$ 对 $Q$ 的法截弧。交换两点，改用 $Q$ 的法线作截面，就得到相对法截弧。两平面都包含弦 $PQ$，但一般不能同时包含两端法线，因此通常不是同一平面。
 
-<SourceFigure src="geodesy/figures/S7-relative-sections.png" alt="相对法截弧的两个截面" source="S7 大地线讲义" page="3" printed="插入说明页" note="蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。" />
+<SourceFigure src="/geodesy/figures/S7-relative-sections.png" alt="相对法截弧的两个截面" source="S7 大地线讲义" page="3" printed="插入说明页" note="蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。" />
 
 旋转椭球上，同子午面的两点，其法线与弦在同一个子午面内。同纬度的两点也有特殊性：令其共同归化纬度为 $u$，则
 
@@ -82,8 +89,37 @@ $$
 
 这与原讲义的符号一致；改用不同的副法线定义会改变挠率符号，不能脱离约定比较。球面 $M=N$ 时挠率为零；子午大地线与赤道大地线也为零。一般斜向椭球大地线的挠率非零，所以它通常不在固定平面内。
 
-[原文定位：S7 文件页2–6](geodesy-source-s7.html)。
+[原文定位：S7 文件页2–6](https://langwangluoji.github.io/study-space/geodesy-source-s7.html)。
 
 网页为串联原讲义补写了中间推导、符号约定与边界说明；完整原文和批注仍以所列文件页为准。
 
 <LearningMark section="ge-geodesic-geometry" />
+
+## 跟算与理解检查
+
+### 完整例题：用球面检查法截弧与测地线
+
+取半径 $R=6371000$ m 的球面，P、Q位于赤道，经差 $1°$。球面法线均通过球心，由P的法线与Q确定的截面是赤道面，从Q反作也是同一个面。两条相对法截弧与短大圆弧重合。
+
+$$
+S=R\frac\pi{180}=111194.926645\,\mathrm m,\qquad
+\kappa=1/R,\qquad\tau=0.
+$$
+
+长度可由圆弧公式回验；曲线在固定平面内，挠率为0。一般椭球的两端法线不必共面，这个球面结论提供核查极限，而非替代一般椭球的推导。
+
+**自测1：“测地线局部最短”是否意味着沿它绕一整圈仍是最短路径？**
+
+<details><summary>展开解析</summary>
+
+局部结论针对足够小的邻域。固定远处端点时，还要比较其他路径并考虑共轭点等条件。
+
+</details>
+
+**自测2：两条相对法截弧总不相同吗？**
+
+<details><summary>展开解析</summary>
+
+对一般位置可能不同；球面、同一子午面等特殊几何情形可能重合，应按两端法线决定截面。
+
+</details>

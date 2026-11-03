@@ -1,0 +1,1338 @@
+{
+  "source_id": "S6",
+  "source_file": "轨道力学基础（4学时）(1).pptx",
+  "source_title": "轨道力学基础（4学时）",
+  "source_sha256": "2489056eb662604ed1b118fb215cc3ffd4649c9ad8d788468ffab047db1d9c87",
+  "slide_count": 84,
+  "page_numbering": "1-based actual slide order",
+  "coverage_scope": "实际教学为地球与天球、时间系统、坐标系统；目录中的二体运动和STK无教学页。",
+  "canonical_root": "knowledge/geodesy/lessons/",
+  "classification_values": {
+    "structural": "封面、总目录或重复分节提示",
+    "teaching": "文字、公式、示意图、数据图或含新增知识的总结"
+  },
+  "modern_supplements": [
+    {
+      "lesson": "geodesy-orbit-gravity",
+      "topic": "EGM2008发布文件头max_degree=2190，fully_normalized，tide_free",
+      "url": "https://icgem.gfz.de/tom_longtime"
+    },
+    {
+      "lesson": "geodesy-orbit-time-systems",
+      "topic": "现代SI秒定义",
+      "url": "https://www.bipm.org/en/si-base-units/second"
+    },
+    {
+      "lesson": "geodesy-orbit-time-systems",
+      "topic": "TAI实现与时间计量",
+      "url": "https://www.bipm.org/en/time-metrology"
+    },
+    {
+      "lesson": "geodesy-orbit-celestial-frames",
+      "topic": "IAU/IERS参考系、J2000.0 TT与QRW转换",
+      "url": "https://iers-conventions.obspm.fr/content/chapter5/icc5.pdf"
+    }
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "课程封面及来源身份"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "第二讲 轨道力学基础 空天科学学院 张洪波 《航天动力学与控制》",
+        "embedded_media": [
+          "image2.jpg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 2,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "五部分总目录；后两项属于目录预告"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "主要内容 2.1 地球与天球 2.2 时间系统 2.3 坐标系统 2.4 二体运动基本规律 2.5 STK简介 2",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      },
+      "note": "目录含二体运动和STK；本文件没有相应教学内容，未创建对应课程。"
+    },
+    {
+      "slide": 3,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "地球与天球分节目录"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1 地球与天球 2.1.1 地球的形状及引力场描述 2.1.2 地球的运动 2.1.3 天球 2.1.4 岁差、章动与极移 3",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 4,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "真实地球的形状"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 (1)地球形状 4",
+        "embedded_media": [
+          "image4.jpeg",
+          "image5.jpeg",
+          "image3.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 5,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "物理表面、大地水准面与参考椭球"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 地球形状： 5 地球真实物理表面 大地水准面 参考椭球 大地水准面 参考椭球",
+        "embedded_media": [
+          "image7.png",
+          "image6.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 6,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "地球引力场与重力异常图"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 6 （2）地球引力场 引力场异常",
+        "embedded_media": [
+          "image8.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 7,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "点质量万有引力和矢量方向"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 7 万有引力定律：任何物体之间都有相互吸引力，这个力的大小与各个物体的质量成正比，而与它们之间距离的平方成反比。 (1687年，牛顿) G为万有引力常数 （一）点质量的引力位",
+        "embedded_media": [
+          "image10.wmf",
+          "image11.png",
+          "image9.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 8,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "负号势能、正号引力位与引力加速度梯度"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 8 引力势能：与位置有关的能量，等于物体由任意位置移动到零势能位置时万有引力做的功（定义无穷远处为势能零点）。 引力位：（标量场） 引力加速度：（矢量场） 对所有保守力都成立",
+        "embedded_media": [
+          "image13.wmf",
+          "image15.wmf",
+          "image12.wmf",
+          "image14.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 9,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "匀质球积分与球外质点等效"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 9 若把地球看作密度均匀的圆球： 匀质圆球对其外部空间的引力位等价于质量等于地球总质量的质点位于地心时产生的引力位。 dm （二）匀质圆球的引力位",
+        "embedded_media": [
+          "image17.png",
+          "image16.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 10,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "真实地球质量积分及解析简化的条件"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 10 引力位无法得到解析表达式！ 均质圆球假设 真实地球 （三）真实地球的引力位",
+        "embedded_media": [
+          "image19.wmf",
+          "image18.wmf",
+          "image20.jpeg",
+          "image21.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 11,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "指数函数幂级数逼近的类比"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 11 指数函数的幂函数级数逼近 ： 前1项 前3项 前5项",
+        "embedded_media": [
+          "image23.emf",
+          "image22.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 12,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "拉普拉斯方程、球谐级数及带谐和田谐"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 12 拉普拉斯方程的球谐级数解： 球谐系数 球谐系数分类 带谐项 田谐项",
+        "embedded_media": [
+          "image25.wmf",
+          "image24.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 13,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "球谐基函数的三维形状示意"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "13",
+        "embedded_media": [
+          "image27.png",
+          "image26.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 14,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "球谐系数与SAO-III、WGS-84、EGM2008模型"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 14 不同的测量数据得到不同的球谐系数，一组球谐系数称为一种引力场模型 SAO-Ⅲ WGS-84 EGM-2008 （2159×2159）",
+        "embedded_media": [
+          "image28.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 15,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "球体中心引力简化"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 15 （3）地球引力位简化 A：圆球体 地球引力场等价于质点引力场，又称为中心引力场或牛顿引力场、平方反比引力场。 描述参数：地球半径",
+        "embedded_media": [
+          "image30.png",
+          "image29.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 16,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "轴对称赤道对称模型与带谐系数Jn"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 16 （3）地球引力位简化 B：旋转椭球体，赤道为对称面 引力位函数与经度无关（不显含时间t），只有带谐项。 描述参数： 地球半径 地球扁率 引力常数",
+        "embedded_media": [
+          "image32.png",
+          "image31.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 17,
+      "lesson": "geodesy-orbit-gravity",
+      "classification": "teaching",
+      "topics": [
+        "三轴椭球二度截断与通约卫星提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.1 地球的形状及引力场描述 17 （3）地球引力位简化 C: 三轴椭球体，有三个过地心且互相垂直的对称面 通约卫星问题",
+        "embedded_media": [
+          "image34.png",
+          "image33.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 18,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "地球运动分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1 地球与天球 2.1.1 地球的形状及引力场描述 2.1.2 地球的运动 2.1.3 天球 2.1.4 岁差、章动与极移 18",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 19,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "地球自转与公转"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.2 地球的运动 19 公转运动 自转运动",
+        "embedded_media": [
+          "image36.gif",
+          "image35.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 20,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "天球分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1 地球与天球 2.1.1 地球的形状及引力场描述 2.1.2 地球的运动 2.1.3 天球 2.1.4 岁差、章动与极移 20",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 21,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "站心和地心天球、任意半径与视位置"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 21 （1）天球定义 中心：观测者的眼睛 （观测者天球）或地球中心（地心天球） 半径：任意长度 作用：描述天体视位置的假想球体 天球仪",
+        "embedded_media": [
+          "image37.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 22,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "天球角距时间观测及平行同向射线性质"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 22 天球的特性 测量目标：天体视位置 理论工具：球面几何学 测量内容：测定角距和时间 所有相互平行的直线向同一方向延伸时，将与天球交于同一点。",
+        "embedded_media": [
+          "image38.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 23,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "天顶、天底与地平面"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 23 天顶（zenith） 沿观测者头顶所指的方向作铅垂线向上延伸，与天球相交的一点。 天底 铅垂线在观测者脚底向地平以下无限延伸与天球相交的另一点 。 地平面，地平圈 过天球中心并与ZZ′相垂直的平面。 天顶Z 天底Z’ 地平面 （2）天球上基本的点和圈",
+        "embedded_media": [
+          "image39.png",
+          "image41.gif",
+          "image40.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 24,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "天极与天赤道"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 24 天极（celestial pole） 地球自转轴所在直线 与天球表面的交点。 天赤道（celestial equator） 地球赤道面与天球球 面相交而成的大圆。",
+        "embedded_media": [
+          "image43.gif",
+          "image42.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 25,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "赤经圈、赤纬圈和赤经赤纬"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 25 赤经圈 与天赤道垂直的大圆。 赤纬圈 与天赤道平行的小圆。 赤经、赤纬 P P’ 天赤道",
+        "embedded_media": [
+          "image40.png",
+          "image39.png",
+          "image43.gif"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 26,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "子午圈、卯酉圈和四方点"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 26 子午圈 (meridian) 过北天极的地平经圈（通过天顶和北天极的大圆）。 Z’ 卯酉圈 与子午圈垂直的地平经圈。 Z 北 P 南 西 东 四方点 子午圈与地平圈相交两点称为北点和南点。卯酉圈和地平圈相交两点称为西点和东点。",
+        "embedded_media": [
+          "image40.png",
+          "image41.gif",
+          "image39.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 27,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "时角及其度量方向"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "27 时角 t 观测点所在的子午圈与瞬时目标天体所在赤经圈的夹角。 由Q点开始，顺天球方向度量。 2.1.3 天球",
+        "embedded_media": [
+          "image44.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 28,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "黄道黄极、二分点和黄赤交角"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 28 黄道 黄极 春分点 秋分点 黄道与黄赤交角",
+        "embedded_media": [
+          "image47.wmf",
+          "image46.wmf",
+          "image43.gif",
+          "image48.emf",
+          "image45.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 29,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "天体周日视运动"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 29 （3）天体的视运动 天体的周日视运动 地球自转一圈，观测 者看到天体在天球表面上 的视位置，从北天极看自 东向西旋转一圈的运动。",
+        "embedded_media": [
+          "image49.gif"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 30,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "上中天与下中天"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 30 中天 (transit) 天体的周日视运动经过 测站子午圈的瞬间。 上中天 下中天",
+        "embedded_media": [
+          "image50.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 31,
+      "lesson": "geodesy-orbit-celestial-sphere",
+      "classification": "teaching",
+      "topics": [
+        "太阳周日及周年视运动、季节与昼长"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.3 天球 31 太阳的视运动是两个运动的叠加： 由地球自转引起的周日视运动 地球公转引起的周年视运动 太阳的周年视运动： 因地球公转引起的太阳在恒星背景上的相对运动。 太阳的周年视运动是四季更替和昼夜长短变化的原因。 太阳的视运动",
+        "embedded_media": [
+          "image51.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 32,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "岁差章动极移分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1 地球与天球 2.1.1 地球的形状及引力场描述 2.1.2 地球的运动 2.1.3 天球 2.1.4 岁差、章动与极移 32",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 33,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "岁差章动概念、春分点西移"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 33 （1）岁差与章动 由于太阳、月球及行星引力的影响，地球自转轴在空间的指向和地球公转轨道平面会发生改变，进而导致天极、天赤道、春分点以及黄道在天球上的位置随时间发生缓慢的变化，这种现象统称为岁差（precession） 、章动（ nutation ）。 特征：春分点沿黄道的西移现象（从北黄极看）。",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 34,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "日月引力矩的几何图"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 34 （2）岁差与章动成因 日月引力对地球运动的影响。",
+        "embedded_media": [
+          "image52.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 35,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "地轴进动与陀螺类比"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 35 岁差与章动成因 忽略行星引力影响，日月引力引起地球自转轴的进动。 陀螺进动",
+        "embedded_media": [
+          "image53.emf",
+          "image54.gif"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 36,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "平天极与真天极"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 36 天极轨迹（假设北黄极固定） 平天极与真天极： 平天极 (日月岁差) 真天极 (章动)",
+        "embedded_media": [
+          "image55.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 37,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "岁差周期25800年、50.37角秒每年等讲义近似"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 37 T = 25800 年 春分点每年西退50 ''.37 瞬时平天极 瞬时平赤道 瞬时平春分点 平天极轨迹（假设北黄极固定） 岁差特性",
+        "embedded_media": [
+          "image56.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 38,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "章动18.6年主要周期及9.2角秒轨迹尺度"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 38 周 期 = 18.6 年 长半径 = 9.2'' 瞬时天极/真天极 瞬时天赤道/真赤道 瞬时春分点/真春分点 真天极轨迹（假设北黄极固定） 章动特性",
+        "embedded_media": [
+          "image57.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 39,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "相对地球的极移定义"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.1.4 岁差、章动和极移 39 地球自转轴相对地球的位置是变化的，进而引起地极点在地球表面上的位置随时间发生改变，这种现象称为极移。",
+        "embedded_media": [
+          "image58.png",
+          "image59.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 40,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "1968—1973及2001—2005极移观测轨迹图"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "1968～1973年的地极变化 2001～2005年的地极变化 2.1.4 岁差、章动和极移",
+        "embedded_media": [
+          "image61.jpeg",
+          "image60.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 41,
+      "lesson": "geodesy-orbit-earth-motion",
+      "classification": "teaching",
+      "topics": [
+        "年周期与钱德勒自由摆动量级"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "41 极移成因：受迫极移 由日月引力、大气和海洋等外部因素引起 T = 1年， 振幅0.1 '' 自由极移 由地球非球形等内部因素引起 T= 432天， 振幅0.2'' 2.1.4 岁差、章动和极移",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 42,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "时间系统总目录提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "主要内容 2.1 地球与天球 2.2 时间系统 2.3 坐标系统 2.4 二体运动基本规律 2.5 STK简介 42",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      },
+      "note": "目录含二体运动和STK；本文件没有相应教学内容，未创建对应课程。"
+    },
+    {
+      "slide": 43,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "时刻、时间间隔、起始历元与秒长"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2 时间系统 43 时刻： 时间间隔： 时间的含义: 起始历元+秒长",
+        "embedded_media": [
+          "image63.png",
+          "image62.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 44,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "自转、公转和原子跃迁计时基础"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2 时间系统 44 时间的计量: 世界时： 历书时： 原子时： 地球自转 地球公转 电子能级跃迁",
+        "embedded_media": [
+          "image65.png",
+          "image64.jpeg",
+          "image66.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 45,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "世界时、原子时、力学时分节目录"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2 时间系统 2.2.1 世界时 2.2.2 原子时 2.2.3 力学时 45",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 46,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "世界时与地球自转"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.1 世界时 世界时是参考地球的自转运动而建立的时间系统。 46 （1）基本概念",
+        "embedded_media": [
+          "image67.jpeg"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 47,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "恒星日、恒星时及地方性"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.1 世界时 47 （2）恒星时 恒星日——春分点在天球上连续两次上中天的时间间隔。 恒星时，恒星分，恒星秒… 春分点 0时（地方性!）",
+        "embedded_media": [
+          "image68.png",
+          "image69.gif"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 48,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "恒星时等于春分点时角"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "48 2.2.1 世界时 48 （2）恒星时 恒星时计算 在数值上等于春分点的时角",
+        "embedded_media": [
+          "image71.emf",
+          "image70.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 49,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "由已知赤经恒星确定恒星时"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "49 2.2.1 世界时 49 49 恒星时计算 在数值上等于春分点的时角 通过恒星位置确定恒星时 （2）恒星时",
+        "embedded_media": [
+          "image70.wmf",
+          "image71.emf",
+          "image72.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 50,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "真太阳日和真太阳时"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "50 2.2.1 世界时 50 （3）真太阳时 真太阳日： 真太阳中心连续两次上中天的时间间隔 真太阳时、真太阳分、真太阳秒…… 缺点：长短不一",
+        "embedded_media": [
+          "image74.png",
+          "image73.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 51,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "公转非匀速与黄赤投影引起太阳日变化"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "51 2.2.1 世界时 51 （3）真太阳时 原因1：太阳周年视运动速度不 均匀。 原因2：黄道与天赤道有交角，投影不均匀。",
+        "embedded_media": [
+          "image36.gif"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 52,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "假想平太阳的赤道匀速运动"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "52 2.2.1 世界时 52 （4）平太阳时 1）周年视运动轨迹是天赤道而不是黄道； 2）天赤道上运行的速度均匀； 3) 运动周期等于一个回归年。",
+        "embedded_media": [
+          "image76.gif",
+          "image75.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 53,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "由天文观测恒星时换算平太阳时"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "53 2.2.1 世界时 53 （4）平太阳时 平太阳是假想的，无法直接观测。天文台用天文学方法测定的仍然是恒星时，然后通过理论换算为平太阳时。这一过程称为测时。",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 54,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "世界时原点、地方时与经度差"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.1 世界时 (5) 世界时(Universal Time) 54 世界时单位 同平太阳时 世界时原点 平太阳过格林尼治子午圈下中天 的时刻（平子夜）。 天文经度为λ处的地方时与世界时M的关系 m – M= λ",
+        "embedded_media": [
+          "image77.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 55,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "UT0、UT1极移改正与UT2季节性改正"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.1 世界时 (5) 世界时 55 UT0：原始测量时间； UT1：UT0 + ， 为极移修正项； UT2：UT1 + ， 为地球自转速度修正项。 对一般精度应用而言，UT1可视作统一的时间系统；对高精度应用而言，需寻求更均匀的时间尺度。",
+        "embedded_media": [
+          "image80.wmf",
+          "image79.wmf",
+          "image81.wmf",
+          "image78.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 56,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "原子时分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2 时间系统 2.2.1 世界时 2.2.2 原子时 2.2.3 力学时 56",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 57,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "原子秒、1958历史起算及旧TA与UT2关系"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.2 原子时 57 秒长 原子秒：海平面上铯原子CS133 基态的某两个超精细能级在零磁场中跃迁辐射的电磁波振荡9192631770周所持续的时间。 起始历元 1958年1月1日0时0秒（UT2） 的瞬间。 由于技术原因，TA = UT2 – 0.0039 s (1) 原子时（Temps Atomique）",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 58,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "国际原子时与多钟联合实现"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.2 原子时 58 国际原子时 国际上约100台原子钟通过相互对比和数据处理推算出来的统一的原子时，即Temps Atomique International，TAI。",
+        "embedded_media": [
+          "image83.png",
+          "image82.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 59,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "协调世界时、1972前后调整方式"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.2 原子时 59 提出缘由 (2) 协调世界时（Coordinate Universal Time） 时间单位 秒长：与原子秒一致。 时刻：尽量与世界时一致。 调整方法 1972年前：调整原子时的秒长。 1972年后：跳秒。",
+        "embedded_media": [
+          "image84.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 60,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "力学时分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2 时间系统 2.2.1 世界时 2.2.2 原子时 2.2.3 力学时 60",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 61,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "TT、TDT、TDB及TT与TAI、UT1关系"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.2.3 力学时 61 天体理论研究及天体历表编算中使用的时间系统。 太阳质心力学时（Barycentric Dynamical Time,TDB） 地球质心力学时（Terrestrial Dynamical Time, TDT） TT = TAI + 32s.184 TT建立在国际原子时的基础上，关系为： 起始历元： 1977年1月1日0h0m0s TT",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 62,
+      "lesson": "geodesy-orbit-time-systems",
+      "classification": "teaching",
+      "topics": [
+        "时间系统总览及年、月参照周期"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "时间系统小结 两大类时间系统：世界时（地球自转）、原子时（原子能级跃迁） 世界时：恒星时、真太阳时、平太阳时 原子时：国际原子时、协调世界时、力学时 年和月：回归年、恒星年、格里历年、儒略年；回归月、恒星月、朔望月 62",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 63,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "坐标系统总目录提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "主要内容 2.1 地球与天球 2.2 时间系统 2.3 坐标系统 2.4 二体运动基本规律 2.5 STK简介 63",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      },
+      "note": "目录含二体运动和STK；本文件没有相应教学内容，未创建对应课程。"
+    },
+    {
+      "slide": 64,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "坐标表达、惯性性质和原点位置的分类"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "坐标系统 坐标几何意义：直角坐标、球坐标、柱坐标 牛顿定律是否成立：惯性系、非惯性系 原点位置：日心、地心、测站、航天器 坐标系间的转换：几何意义、物理意义 64",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 65,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "坐标定义、天球系与地球系分节目录"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3 坐标系统 2.3.1 坐标系的定义及转换 2.3.2 天球坐标系 2.3.3 地球坐标系 65",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 66,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "右手系、原点、基本平面与主轴"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.1 坐标系的定义及其转换 66 基本平面 主轴 x O z y 直角坐标系一般定义为右手坐标系。坐标系的原点、基本平面与主轴（x轴）是确定坐标系的关键。 （1）坐标系的定义",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 67,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "方向余弦阵、正交性、列的投影意义与传递性"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.1 坐标系的定义及其转换 方向余弦法 方向余弦阵的每一列分别代表了旧坐标系的三个轴在新坐标系三个轴上的投影。 67 （2）坐标系间矢量坐标的转换 正交矩阵 方向余弦阵满足传递性原理",
+        "embedded_media": [
+          "image85.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 68,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "基矢关系、分量变换及方向余弦阵上下标"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.1 坐标系的定义及其转换 68 （2）坐标系间矢量坐标的转换 必须定义为将Q 系坐标分量转换到 P 系坐标分量的方向余弦矩阵 两个坐标系基向量之间的关系",
+        "embedded_media": [
+          "image88.wmf",
+          "image90.wmf",
+          "image87.wmf",
+          "image89.wmf",
+          "image86.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 69,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "绕单轴被动旋转Mx、My、Mz"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.1 坐标系的定义及其转换 欧拉角转换法 69 单独绕某个轴旋转",
+        "embedded_media": [
+          "image92.wmf",
+          "image94.png",
+          "image91.wmf",
+          "image93.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 70,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "逐次Z-Y-X欧拉角及MxMyMz乘积"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.1 坐标系的定义及其转换 欧拉角转换法 按照Z-Y-X的次序分别旋转α、β、γ角 70",
+        "embedded_media": [
+          "image97.wmf",
+          "image96.wmf",
+          "image95.wmf",
+          "image98.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 71,
+      "lesson": "geodesy-orbit-vector-derivative",
+      "classification": "teaching",
+      "topics": [
+        "旋转基矢与向量的乘积求导展开"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "假设矢量A在某坐标系Q中的矢量表达式为 坐标系Q相对另一坐标系P中以角速度ω转动，则矢量A的微分为： 2.3.1 坐标系的定义及其转换 71 矢量导数",
+        "embedded_media": [
+          "image100.wmf",
+          "image99.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 72,
+      "lesson": "geodesy-orbit-vector-derivative",
+      "classification": "teaching",
+      "topics": [
+        "绝对与相对导数的定义"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "倘定义 前述公式可记作： 2.3.1 坐标系的定义及其转换 72 P系中观察到的 A的变化率 Q系中观察到的A的变化率 矢量导数",
+        "embedded_media": [
+          "image102.wmf",
+          "image101.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 73,
+      "lesson": "geodesy-orbit-vector-derivative",
+      "classification": "teaching",
+      "topics": [
+        "泊松公式与omega叉A运输定理；任意参考系适用"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "根据泊松公式 ，则上述公式最终可写为： 2.3.1 坐标系的定义及其转换 73 注意：和惯性系还是非惯性系无关！ 称为运动矢量的绝对导数 称为运动矢量的相对导数 矢量导数",
+        "embedded_media": [
+          "image105.wmf",
+          "image104.wmf",
+          "image106.wmf",
+          "image103.wmf"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 74,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "天球坐标分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3 坐标系统 2.3.1 坐标系的定义及转换 2.3.2 天球坐标系 2.3.3 地球坐标系 74",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 75,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "天球赤道直角坐标和r、赤经、赤纬正反转换"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.2 天球坐标系 75 （1）天球赤道坐标系（常作为惯性坐标系） 直角坐标 球坐标",
+        "embedded_media": [
+          "image108.wmf",
+          "image107.wmf",
+          "image109.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 76,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "瞬时真天球坐标系"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.2 天球坐标系 （2）协议天球坐标系 瞬时真天球坐标系 Oe-XtYtZt 原点：地球质心 Z 轴：指向瞬时真天极Pt X 轴：指向瞬时真春分点 76",
+        "embedded_media": [
+          "image110.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 77,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "瞬时平天球坐标系"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.2 天球坐标系 瞬时平天球坐标系 Oe-XM(t)YM(t)ZM(t) 原点：地球质心 Z 轴：指向瞬时平天极P平 X 轴：指向瞬时平春分点 77",
+        "embedded_media": [
+          "image111.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 78,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "CIS和J2000.0平天极、平春分点的讲义定义"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.2 天球坐标系 协议天球坐标系(Oe-XCISYCISZCIS) 协议天球坐标系： Conventional Inertial System ，简称CIS J2000.0坐标系(Julian)： 以2000年1月1.5日（TDB）为历元 原点：地球质心 Z 轴：指向J2000.0平天极P平 X 轴：指向J2000.0平春分点 78",
+        "embedded_media": [
+          "image112.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 79,
+      "lesson": "geodesy-orbit-supplement",
+      "classification": "structural",
+      "topics": [
+        "地球坐标分节提示"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3 坐标系统 2.3.1 坐标系的定义及转换 2.3.2 天球坐标系 2.3.3 地球坐标系 79",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    },
+    {
+      "slide": 80,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "地球坐标；嵌入公式实际是椭球大地坐标BLH正反解"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.3 地球坐标系 80 直角坐标 球坐标 （1）地心赤道坐标系",
+        "embedded_media": [
+          "image114.wmf",
+          "image113.wmf",
+          "image115.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      },
+      "note": "已检查嵌入WMF/EMF公式的转换预览，正文按明示符号约定重写。"
+    },
+    {
+      "slide": 81,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "协议地极CTP、旧CIO和BIH零子午线历史定义"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.3 地球坐标系 瞬时地球自转轴 瞬时极/赤道 CTP（CIO）：1900-1905年地球自转轴瞬时位置的平均位置。 BIH零子午线： 通过CTP与格林尼治天文台的子午线。 协议地极： （2）协议地球坐标系 81 ECTP",
+        "embedded_media": [
+          "image116.png"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 82,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "瞬时地球系的原点和轴"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.3 地球坐标系 瞬时地球坐标系 原点：地球质心 Z 轴：瞬时地球自转轴 X 轴：过瞬时地极与ECTP 的格林尼治平起始 子午面与瞬时赤道 面的交线，指向E 82",
+        "embedded_media": [
+          "image117.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 83,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "协议地球坐标系CTS的原点和轴"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.3 地球坐标系 协议地球坐标系（CTS） 原点：地球质心 Z 轴：指向协议地极CTP X 轴：格林尼治平起始子 午面与协议赤道面 的交线",
+        "embedded_media": [
+          "image118.emf"
+        ],
+        "inspection": "text-and-embedded-media"
+      }
+    },
+    {
+      "slide": 84,
+      "lesson": "geodesy-orbit-celestial-frames",
+      "classification": "teaching",
+      "topics": [
+        "CTS到CIS：极移、真恒星时自转、章动和岁差转换链"
+      ],
+      "evidence": {
+        "slide_text_excerpt": "2.3.3 地球坐标系 84 协议地球坐标系与协议天球坐标系： 协议地球 瞬时地球 瞬时真天球 瞬时平天球 协议天球 极移 格林尼治 真恒星时 章动 岁差",
+        "embedded_media": [],
+        "inspection": "text-and-drawing-structure"
+      }
+    }
+  ]
+}

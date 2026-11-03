@@ -1,10 +1,15 @@
 ---
-title: 地面方向与边长归算
+title: "地面方向与边长归算"
 prev: {"text":"第四章 椭球面上大地坐标的计算","link":"/geodesy-computation"}
 next: {"text":"球面角超与三角形解算","link":"/geodesy-spherical-triangles"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-observation-reduction.md; edit the Obsidian source. -->
+
 # 地面方向与边长归算
+
+顺着仪器测得的斜距，逐步得到椭球面上可用于坐标推进的长度与方向。先确认高度、角度和目标点各自的参考，再选择归算公式。
+
 
 <!-- earth-reading-task -->
 从P对Q作一次观测，仪器给的是方向和空间斜距。先逐项指出：整平参考是否等于椭球水平面，棱镜是否在Q的脚点，测得的直线是否等于椭球弧长。本页按这三个差别逐步归算，不把三项公式当作没有来由的改正表。
@@ -15,7 +20,9 @@ next: {"text":"球面角超与三角形解算","link":"/geodesy-spherical-triang
 <!-- anatomy-G6 -->
 先不要代Gauss公式。仪器的水平面、棱镜的位置和最终脚点并不是同一个参考，先指出这三处差别。
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=reduction" title="仪器测得的斜距，为什么不能直接推进坐标？" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=reduction" title="仪器测得的斜距，为什么不能直接推进坐标？" poster="/geodesy/figures/anatomy-reduction.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=reduction)
 
 完成这三步后，方向和长度才与计算椭球相容。下面逐项推导加入观测的改正，特别检查正号差值与实际改正的反号。
 <!-- /anatomy-G6 -->
@@ -25,7 +32,6 @@ next: {"text":"球面角超与三角形解算","link":"/geodesy-spherical-triang
 本页 $A_{12}$ 自北向东顺时针计，$z_{12}$ 是天顶距，$H_i$ 是含仪器或目标高度的椭球高。$\xi_1,\eta_1$ 分别是垂线偏差的北向、东向角分量，正号表示向上重力垂线相对向上椭球法线向北、向东偏。后文 $u=e'^2\cos^2B$ 是无量纲椭球辅助量，与 $\eta_1$ 无关。
 
 ### 用一个短观测检验归算方向 {#earth-reduction-example}
-
 先用同半径球面局部模型判断量级：D=1000m，两端椭球高都为100m，R=6371000m，高差为0。
 
 1. 去高差：q=√(D²−ΔH²)=1000m。
@@ -63,7 +69,7 @@ $$
 
 这项讨论的是观测**水平方向的倾斜改正**。天文方位角还以天文子午线为零方向。常见分量定义为 $\xi=\Phi-B$、$\eta=(\Lambda-L)\cos B$，$\Phi,\Lambda$ 为天文纬度、经度。相应拉普拉斯项是 $-\eta\tan B$；原始倾斜视线还包含刚得到的 $d_u$，不能漏掉。只有视线倾斜及其他归算已处理时，才能直接使用简化的一级关系 $\alpha-A\simeq\eta\tan B$。度盘方向、水平夹角和绝对方位角应按各自的零方向处理。
 
-<SourceFigure src="geodesy/figures/S8-direction-reductions.png" alt="垂线偏差与目标标高影响方向的不同机制" source="S8 大地坐标计算讲义" page="4" printed="插入说明页" note="左图更换水平基准，右图把目标归到椭球足点。放大后可核对原件中的符号和正负约定。" />
+<SourceFigure src="/geodesy/figures/S8-direction-reductions.png" alt="垂线偏差与目标标高影响方向的不同机制" source="S8 大地坐标计算讲义" page="4" printed="插入说明页" note="左图更换水平基准，右图把目标归到椭球足点。放大后可核对原件中的符号和正负约定。" />
 
 ### 标高差改正：把目标移到椭球足点
 
@@ -98,7 +104,7 @@ $$
 A_G\simeq\alpha-\eta_1\tan B_1+\delta_u+\delta_h+\delta_g.
 $$
 
-水平夹角的改正应为右方向总改正减去左方向总改正。原图的 $A_G,A_N$ 见[原资料](geodesy-source-s8.html)页5–6；符号可对照 [UNB技术报告TR52](https://gge.ext.unb.ca/Pubs/TR52.pdf)印刷页45–46式(3-12)、(3-15)、(3-16)。
+水平夹角的改正应为右方向总改正减去左方向总改正。原图的 $A_G,A_N$ 见[原资料](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)页5–6；符号可对照 [UNB技术报告TR52](https://gge.ext.unb.ca/Pubs/TR52.pdf)印刷页45–46式(3-12)、(3-15)、(3-16)。
 
 ## 从斜距到椭球弧长
 
@@ -152,8 +158,42 @@ $$
 
 由 $q=\sqrt{D^2-\Delta H^2}$ 可得 $\partial q/\partial\Delta H=-\Delta H/q$；坡度越大，高差误差越容易传给水平长度。同时高度缩减误差约为 $q\,\delta H_m/R$。半径误差也可以通过 $qH_m\delta R/R^2$ 估计，不能无条件说任何半径选择都无影响。
 
-[原文定位：S8 文件页2–9](geodesy-source-s8.html)。
+[原文定位：S8 文件页2–9](https://langwangluoji.github.io/study-space/geodesy-source-s8.html)。
 
 网页为串联原讲义补写了中间推导、符号约定与边界说明；完整原文和批注仍以所列文件页为准。
 
 <LearningMark section="ge-observation-reduction" />
+
+## 跟算与理解检查
+
+### 完整例题：等高两点的斜距归算
+
+采用局部曲率圆模型，$R=6371000$ m，两端高于参考面的高度均为100 m，空间斜距 $D=1000$ m。高差为零，先将弦长缩到参考面：
+
+$$
+d=\frac{D}{1+100/R}=999.984304123\,\mathrm m.
+$$
+
+再把弦长换为弧长：
+
+$$
+S=2R\arcsin\frac d{2R}=999.984305150\,\mathrm m.
+$$
+
+高度归算使长度约缩短15.696 mm，弦弧转换增加约0.001026 mm。两项方向相反、量级不同。令高度为零可回到原半径圆；由弧长反算弦长可恢复 d。本例精确关系限于采用的曲率圆模型。
+
+**自测1：垂线偏差为零时，垂线偏差改正是什么？**
+
+<details><summary>展开解析</summary>
+
+该项为零；这项改正描述重力垂线与椭球法线所定义水平面的差异。
+
+</details>
+
+**自测2：斜距、弦长与弧长能只因数值相近就混用吗？**
+
+<details><summary>展开解析</summary>
+
+应先按计算目标判断允许误差；各长度对应的几何对象不同，正文例题分别保留其名称和结果。
+
+</details>

@@ -1,9 +1,15 @@
 ---
-prev: {"text": "法曲率与方向曲率", "link": "/geodesy-normal-curvature"}
+title: "曲面度量 弧长与面积"
+prev: {"text":"法曲率与方向曲率","link":"/geodesy-normal-curvature"}
 next: {"text":"第三章 大地线（测地线）","link":"/geodesy-geodesics"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-metric.md; edit the Obsidian source. -->
+
 # 曲面度量 弧长与面积
+
+把角度增量换成长度与面积，再理解为什么有限子午弧要积分。需要局部方向、M和N；一阶近似与积分结果分别标明。
+
 
 <!-- earth-reading-task -->
 这次不只移动一个无穷小量：让P沿经线走到另一纬度，累计路径长度。先积分精确的局部标尺，再看有限级数怎样近似同一个答案；已知弧长反求纬度只是把这一任务倒过来。面积在最后作为同一度量的另一种用途。
@@ -14,7 +20,6 @@ next: {"text":"第三章 大地线（测地线）","link":"/geodesy-geodesics"}
 本专题依据椭球讲义文件页 51–56。弧长级数给出可检查的有限阶展开，精确积分与数值反算作为核验依据；不把局部近似当成任意长距离的完整算法。
 
 ## 一般曲面的局部长度规则 {#first-fundamental-form}
-
 [一般工具专题](geodesy-math.html#first-fundamental-form)已从切向位移推导第一基本形式，这里回顾它的计算意义：
 
 $$
@@ -62,7 +67,9 @@ $$
 <!-- anatomy-G4 -->
 上一节只有一个点的长度系数。让轮子真的走一段，看看固定M与沿途更新M的里程计何时开始分开。
 
-<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=metric" title="一度纬差不能只乘一次M" />
+<AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=metric" title="一度纬差不能只乘一次M" poster="/geodesy/figures/anatomy-metric.svg" />
+
+[打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=metric)
 
 里程计加的是一串不同位置的微段。下一式把这次逐段累加写成积分，再讨论为了计算方便怎样截成有限级数。
 <!-- /anatomy-G4 -->
@@ -255,3 +262,32 @@ $$
 <LearningMark section="ge-metric" />
 
 下一步沿[大地线](geodesy-geodesics.html)确定连接两点的曲线路径，再把[地面观测归算](geodesy-observation-reduction.html)为椭球上的方向和长度，进入大地主题正反算。
+
+## 跟算与理解检查
+
+### 完整例题：一角秒对应多少米
+
+在WGS84的 $B=45°$ 处取 $dB=dL=1''=\pi/648000$ rad。利用局部度量，南北位移和东西位移分别为
+
+$$
+dn=M\,dB=30.869938\,\mathrm m,\qquad
+de=N\cos B\,dL=21.901899\,\mathrm m.
+$$
+
+若两个增量同时发生，一阶长度为 $\sqrt{dn^2+de^2}$。将每项分别除以角度增量，可恢复 M 和 $N\cos B$，完成单位回验。这是当前位置的微分标尺；跨越有限纬度区间时，M随纬度改变，应计算 $\int M(B)\,dB$。
+
+**自测1：相同经差的平行圈弧长，接近极点时怎样变化？**
+
+<details><summary>展开解析</summary>
+
+随 $N\cos B$ 减小，在极点经纬参数退化。
+
+</details>
+
+**自测2：用起点 M 乘一度，等于整段一度的精确子午弧吗？**
+
+<details><summary>展开解析</summary>
+
+这是起点一阶近似。精确参考为沿该纬度区间对 M 积分；正文数值表给出级数与积分的比较。
+
+</details>

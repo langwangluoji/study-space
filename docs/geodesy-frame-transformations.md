@@ -1,0 +1,40 @@
+---
+title: "第六章：空间坐标系转换"
+prev: {"text":"椭球参数改变时，同一点的经纬高怎样变化","link":"/geodesy-ellipsoid-parameter-change"}
+next: {"text":"坐标旋转：方向余弦、顺序与小角近似","link":"/geodesy-frame-rotation"}
+---
+
+<!-- Generated from knowledge/geodesy/lessons/geodesy-frame-transformations.md; edit the Obsidian source. -->
+
+# 第六章：空间坐标系转换
+
+第五章是在同一套轴上改变位置的表达；本章把同一点放到另一套原点、轴向和尺度下重新表达。测站的局部地平坐标、卫星的方位高度角、两套大地框架的七参数转换，都可以从“先明确向量、再明确它在哪个基底中表达”出发。
+
+原材料为《5三维直角坐标系之间转换.pdf》（S11，共33个 PDF 文件页）与《坐标分量旋转与坐标轴旋转的关系(1).docx》。课件中插入了补充页，因此本章引用 PDF 文件页码，原幻灯片页脚号码可能不同。
+
+| 专题 | 核心问题 | 原材料 |
+|---|---|---|
+| [旋转、投影与顺序](geodesy-frame-rotation.html) | 同一个正角，为什么会有两种符号？ | S11 第2–11页；旋转 DOCX |
+| [局部地平与站心极坐标](geodesy-local-polar.html) | XYZ 如何得到基线方位和卫星高度角？ | S11 第12–21页 |
+| [Bursa–Wolf 七参数](geodesy-seven-parameters.html) | 平移、旋转、尺度怎样组成统一模型？ | S11 第22–24页 |
+| [参考点模型与范士模型](geodesy-pivot-models.html) | 换旋转中心与换旋转轴表达，分别改变什么？ | S11 第25–30页 |
+| [参数估计与大地坐标微分](geodesy-parameter-estimation.html) | 如何用同名点求参数，再传播到 BLH？ | S11 第23、29、31–33页 |
+
+## 一个贯穿本章的几何检验
+
+在北纬约 $31.4712^\circ$、东经约 $121.5307^\circ$ 的测站，从起点指向目标的局部分量若为北400 m、东300 m、上500 m，则水平距离500 m、空间距离 $707.106781$ m、方位角 $36.869898^\circ$、高度角 $45^\circ$。这些数值在改变表达基底后应保持相同的长度与物理方向。
+
+## 自检
+
+1. 同一条空间基线换到另一套原点，基线向量会受到平移影响吗？
+2. 为什么课件的北、东、上顺序需要额外留意手性？
+
+<details><summary>展开答案</summary>
+
+1. 若两端使用同一平移，作差后平移相消；旋转和尺度仍作用于基线。
+2. 东叉北等于上，所以 ENU 为右手；北叉东等于下，NEU 为左手。普通向量仍可投影，旋转伪向量的分量转换还要顾及行列式符号。
+
+</details>
+
+
+前章：[大地坐标与空间直角坐标](geodesy-coordinate-conversion.html)。

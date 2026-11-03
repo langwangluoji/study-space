@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+  <title id="title">固定分量的向量随旋转基矢改变方向</title>
+  <desc id="desc">灰色P轴固定，蓝色Q轴相对P轴逆时针转动。红色向量A沿Q的x轴，在Q中分量固定；绿色瞬时变化方向为角速度叉乘A，垂直于A并沿转动方向。右侧说明相对导数为零，而P中导数为omega叉A。</desc>
+  <defs>
+    <marker id="p" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 1 8 5 0 9" fill="none" stroke="#7b8787" stroke-width="1.8"/></marker>
+    <marker id="q" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 1 8 5 0 9" fill="none" stroke="#357eaf" stroke-width="1.8"/></marker>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 1 8 5 0 9" fill="none" stroke="#b85a40" stroke-width="1.8"/></marker>
+    <marker id="d" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 1 8 5 0 9" fill="none" stroke="#38785f" stroke-width="1.8"/></marker>
+  </defs>
+  <rect width="1100" height="520" rx="22" fill="#f5f3ec"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#20373d">
+    <text x="34" y="48" font-size="27" font-weight="600">分量不变，方向也会随轴转动</text>
+    <text x="34" y="80" font-size="17" fill="#557078">以向量A固定在Q的x轴上为例；示意瞬间的方向，箭长不代表数值比例</text>
+    <g stroke="#7b8787" stroke-width="2" marker-end="url(#p)"><path d="M210 370H500"/><path d="M210 370V115"/></g>
+    <g stroke="#357eaf" stroke-width="2.5" marker-end="url(#q)"><path d="M210 370L383 270"/><path d="M210 370L110 197"/></g>
+    <path d="M210 370L444 235" stroke="#b85a40" stroke-width="4" marker-end="url(#a)"/>
+    <path d="M444 235L384 131" stroke="#38785f" stroke-width="3" marker-end="url(#d)"/>
+    <path d="M275 370A65 65 0 0 0 266.3 337.5" fill="none" stroke="#357eaf" stroke-width="2" marker-end="url(#q)"/>
+    <circle cx="210" cy="370" r="4" fill="#20373d"/>
+    <text x="191" y="396" font-size="18">O</text>
+    <text x="472" y="399" font-size="19" fill="#687878">x_P</text>
+    <text x="225" y="126" font-size="19" fill="#687878">y_P</text>
+    <text x="346" y="292" font-size="19" fill="#357eaf">e_x<tspan baseline-shift="super" font-size="13">Q</tspan></text>
+    <text x="72" y="190" font-size="19" fill="#357eaf">e_y<tspan baseline-shift="super" font-size="13">Q</tspan></text>
+    <text x="456" y="238" font-size="23" fill="#b85a40">A</text>
+    <text x="355" y="115" font-size="21" fill="#38785f">ω × A</text>
+    <text x="280" y="347" font-size="19" fill="#357eaf">θ</text>
+    <circle cx="90" cy="446" r="11" fill="none" stroke="#357eaf" stroke-width="2"/><circle cx="90" cy="446" r="3.5" fill="#357eaf"/>
+    <text x="110" y="452" font-size="17" fill="#557078">ω沿+z向纸面外，Q逆时针转</text>
+    <rect x="550" y="128" width="515" height="345" rx="15" fill="#fffdf8" stroke="#d5d9d2"/>
+    <text x="577" y="169" font-size="23" fill="#357eaf">跟随Q轴观察</text>
+    <text x="577" y="207" font-size="19">A = A₀ e_x<tspan baseline-shift="super" font-size="13">Q</tspan>，A₀为常数</text>
+    <text x="577" y="243" font-size="21">(dA/dt)_Q = 0</text>
+    <path d="M577 268H1037" stroke="#d5d9d2"/>
+    <text x="577" y="307" font-size="23" fill="#38785f">相对P轴观察</text>
+    <text x="577" y="345" font-size="19">基矢随Q转动：de_x<tspan baseline-shift="super" font-size="13">Q</tspan>/dt = ω × e_x<tspan baseline-shift="super" font-size="13">Q</tspan></text>
+    <text x="577" y="385" font-size="21">(dA/dt)_P = ω × A</text>
+    <text x="577" y="432" font-size="17" fill="#557078">变化率垂直于A，固定长度的方向正在转动。</text>
+  </g>
+</svg>

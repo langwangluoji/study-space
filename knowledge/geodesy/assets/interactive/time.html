@@ -1,0 +1,283 @@
+<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>UTC、TAI、TT 与 UT1 的秒差</title><style>:root{font-family:system-ui,"Microsoft YaHei",sans-serif;color:#24364a;background:#f8fafc;--panel:#fff;--border:#d5dfe9;--muted:#576b7e;--input:#fff;color-scheme:light}*{box-sizing:border-box}body{margin:0;padding:20px}main{max-width:1000px;margin:auto}header{display:flex;justify-content:space-between;gap:16px;align-items:start}h1{font-size:23px;line-height:1.4;margin:0 0 8px}p{line-height:1.7}.intro{color:var(--muted);margin:0 0 16px}.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:12px;border-top:1px solid var(--border);padding-top:16px}label{font-size:13px;font-weight:650;display:block}input{width:100%;display:block;font:15px ui-monospace,monospace;margin-top:7px;padding:9px;border:1px solid var(--border);border-radius:6px;background:var(--input);color:inherit}input[aria-invalid=true]{border-color:#c7472d}button{font:inherit;white-space:nowrap;padding:8px 13px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:inherit;cursor:pointer}button:hover{border-color:#1767b7}button:focus-visible,input:focus-visible{outline:3px solid #367cba;outline-offset:3px}.tools{display:flex;gap:8px}figure{margin:8px 0 20px;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--panel)}.picture{overflow-x:auto}svg{display:block;width:100%;min-width:540px;height:auto}figcaption{font-size:13px;line-height:1.7;padding:12px 16px;border-top:1px solid var(--border);color:var(--muted)}dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 24px;margin:18px 0}dl div{border-bottom:1px solid var(--border);padding-bottom:10px}dt{font-size:12px;color:var(--muted)}dd{margin:5px 0 0;font:16px ui-monospace,monospace;overflow-wrap:anywhere}#status{color:#b73f25;font-size:14px;min-height:22px;margin:10px 0}#formula{font-size:13px;color:var(--muted);overflow-wrap:anywhere}.hint{font-size:12px;color:var(--muted);margin:5px 0 12px}[data-theme=dark]{color:#d7e5f1;background:#13202d;--panel:#1b2b3b;--border:#3d5265;--muted:#adbed0;--input:#213345;color-scheme:dark}[data-theme=dark] svg{background:#182a3a}[data-theme=dark] svg .ink{stroke:#d6e2ee;fill:#d6e2ee}[data-theme=dark] svg .accent{stroke:#70b9ff;fill:#70b9ff}[data-theme=dark] svg .north{stroke:#6bd0b7;fill:#6bd0b7}[data-theme=dark] svg .east{stroke:#f1b373;fill:#f1b373}[data-theme=dark] svg .muted{stroke:#a6b9cc;fill:#a6b9cc}[data-theme=dark] svg .grid{stroke:#526a7e;fill:none}[data-theme=dark] svg .faint{stroke:#314b61;fill:none}[data-theme=dark] svg .body{stroke:#83a1b8;fill:none}[data-theme=dark] svg text{stroke:none!important}@media(max-width:560px){body{padding:12px}h1{font-size:20px}header{display:block}.tools{margin:12px 0}.controls{grid-template-columns:repeat(2,minmax(0,1fr))}dl{gap:12px}dd{font-size:14px}figcaption{padding:10px 12px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}</style></head><body><main><header><div><h1>UTC、TAI、TT 与 UT1 的秒差</h1><p class="intro">统一标号的参考历元，逐项计算时标差。</p></div><div class="tools"><button id="theme" type="button" aria-pressed="false" aria-label="切换深色或浅色外观">深色</button><button form="controls" type="reset">重置</button></div></header><figure><div id="picture" class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" role="img" aria-label="UTC、TAI、TT 和 UT1 时标差图"><title>UTC、TAI、TT 和 UT1 时标差图</title><desc>修改下方输入可同步更新几何图形与数值。各图图注说明坐标、方向及比例。</desc><style>.ink{stroke:#334155;fill:#334155}.accent{stroke:#1767b7;fill:#1767b7}.north{stroke:#187a67;fill:#187a67}.east{stroke:#ad5b12;fill:#ad5b12}.muted{stroke:#64748b;fill:#64748b}.grid{stroke:#bbc8d7;fill:none}.faint{stroke:#dde5ec;fill:none}.body{stroke:#72889c;fill:none}path,line,circle{stroke-width:1.3}path[class]{fill:none!important}text{stroke:none!important;font:15px system-ui,sans-serif}.fill{stroke:none}svg{background:#f8fafc}</style><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker><marker id="accentArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1767b7"/></marker></defs><text x="35" y="38" class="ink" font-size="17" font-weight="650">时标读数差：以同一瞬间的 UTC 读数为零点</text><text x="220" y="73" class="muted" >单位：秒；横轴按比例</text><path d="M220,90L220,314" class="faint" fill="none" /><text x="220" y="85" class="muted" text-anchor="middle">0</text><path d="M280.625,90L280.625,314" class="faint" fill="none" /><text x="280.625" y="85" class="muted" text-anchor="middle">10</text><path d="M341.25,90L341.25,314" class="faint" fill="none" /><text x="341.25" y="85" class="muted" text-anchor="middle">20</text><path d="M401.875,90L401.875,314" class="faint" fill="none" /><text x="401.875" y="85" class="muted" text-anchor="middle">30</text><path d="M462.5,90L462.5,314" class="faint" fill="none" /><text x="462.5" y="85" class="muted" text-anchor="middle">40</text><path d="M523.125,90L523.125,314" class="faint" fill="none" /><text x="523.125" y="85" class="muted" text-anchor="middle">50</text><path d="M583.75,90L583.75,314" class="faint" fill="none" /><text x="583.75" y="85" class="muted" text-anchor="middle">60</text><path d="M644.375,90L644.375,314" class="faint" fill="none" /><text x="644.375" y="85" class="muted" text-anchor="middle">70</text><path d="M705,90L705,314" class="faint" fill="none" /><text x="705" y="85" class="muted" text-anchor="middle">80</text><text x="45" y="121" class="ink" font-size="20" font-weight="650">UTC</text><path d="M208,116L723,116" class="grid" fill="none" /><path d="M220,104L220,128" class="ink" fill="none" stroke-width="4"/><circle cx="220" cy="116" r="4" class="ink fill"/><text x="141" y="121" class="ink" text-anchor="middle">0.000 s</text><text x="45" y="177" class="east" font-size="20" font-weight="650">TAI</text><path d="M208,172L723,172" class="grid" fill="none" /><path d="M444.3125,160L444.3125,184" class="east" fill="none" stroke-width="4"/><circle cx="444.3125" cy="172" r="4" class="east fill"/><text x="141" y="177" class="east" text-anchor="middle">37.000 s</text><text x="45" y="233" class="accent" font-size="20" font-weight="650">TT</text><path d="M208,228L723,228" class="grid" fill="none" /><path d="M639.428,216L639.428,240" class="accent" fill="none" stroke-width="4"/><circle cx="639.428" cy="228" r="4" class="accent fill"/><text x="141" y="233" class="accent" text-anchor="middle">69.184 s</text><text x="45" y="289" class="north" font-size="20" font-weight="650">UT1</text><path d="M208,284L723,284" class="grid" fill="none" /><path d="M218.7875,272L218.7875,296" class="north" fill="none" stroke-width="4"/><circle cx="218.7875" cy="284" r="4" class="north fill"/><text x="141" y="289" class="north" text-anchor="middle">-0.200 s</text><path d="M220,150L444.3125,150" class="east" fill="none" stroke-width="2"/><text x="332.15625" y="143" class="east" text-anchor="middle">ΔAT</text><path d="M444.3125,208L639.428,208" class="accent" fill="none" stroke-width="2"/><text x="541.8702499999999" y="201" class="accent" text-anchor="middle">+32.184 s</text><text x="45" y="347" class="ink" font-size="17" font-weight="650">DUT1 放大尺</text><path d="M247,390L687,390" class="ink" fill="none" /><path d="M247,390L247,401" class="grid" fill="none" /><text x="247" y="421" class="muted" text-anchor="middle">-1.0 s</text><path d="M269,390L269,396" class="grid" fill="none" /><path d="M291,390L291,396" class="grid" fill="none" /><path d="M313,390L313,396" class="grid" fill="none" /><path d="M335,390L335,396" class="grid" fill="none" /><path d="M357,390L357,401" class="grid" fill="none" /><text x="357" y="421" class="muted" text-anchor="middle">-0.5 s</text><path d="M379,390L379,396" class="grid" fill="none" /><path d="M401,390L401,396" class="grid" fill="none" /><path d="M423,390L423,396" class="grid" fill="none" /><path d="M445,390L445,396" class="grid" fill="none" /><path d="M467,390L467,401" class="grid" fill="none" /><text x="467" y="421" class="muted" text-anchor="middle">0.0 s</text><path d="M489,390L489,396" class="grid" fill="none" /><path d="M511,390L511,396" class="grid" fill="none" /><path d="M533,390L533,396" class="grid" fill="none" /><path d="M555,390L555,396" class="grid" fill="none" /><path d="M577,390L577,401" class="grid" fill="none" /><text x="577" y="421" class="muted" text-anchor="middle">0.5 s</text><path d="M599,390L599,396" class="grid" fill="none" /><path d="M621,390L621,396" class="grid" fill="none" /><path d="M643,390L643,396" class="grid" fill="none" /><path d="M665,390L665,396" class="grid" fill="none" /><path d="M687,390L687,401" class="grid" fill="none" /><text x="687" y="421" class="muted" text-anchor="middle">1.0 s</text><path d="M467,361L467,402" class="muted" fill="none" stroke-dasharray="4 3"/><circle cx="423" cy="390" r="7" class="north fill"/><text x="423" y="376" class="north" text-anchor="middle">UT1−UTC</text><text x="45" y="461" class="muted" >ΔAT 由日期对应的闰秒表给出；DUT1 由地球定向参数给出。</text></svg></div><figcaption>TAI=UTC+ΔAT，TT=TAI+32.184 s，UT1=UTC+DUT1。ΔAT=37 s 是可编辑的演示输入，须按所求日期查闰秒表；页面不把它当作当前日期的自动值。横轴以 UTC 为零点表示时标读数差，下方将 DUT1 单独放大。秒数计算适用于同一 ΔAT 区段，不用于解析跨闰秒的民用日期。</figcaption></figure><p class="hint">直接编辑数值或使用方向键微调；窄屏图形可横向滚动查看。</p><form id="controls" class="controls" novalidate><label for="utc">UTC 参考历元后的秒数<input id="utc" name="utc" type="number" min="0" max="86400" step="any" inputmode="decimal" value="100" data-step="1" required></label><label for="deltaAT">输入 ΔAT=TAI−UTC / s<input id="deltaAT" name="deltaAT" type="number" min="0" max="100" step="any" inputmode="decimal" value="37" data-step="1" required></label><label for="dut1">输入 DUT1=UT1−UTC / s<input id="dut1" name="dut1" type="number" min="-0.9" max="0.9" step="any" inputmode="decimal" value="-0.2" data-step="0.01" required></label></form><p id="status" role="status" aria-live="polite"></p><dl id="results" aria-live="polite"><div><dt>UTC / 统一参考历元秒数</dt><dd>100.000 s</dd></div><div><dt>TAI / 统一参考历元秒数</dt><dd>137.000 s</dd></div><div><dt>TT / 统一参考历元秒数</dt><dd>169.184 s</dd></div><div><dt>UT1 / 统一参考历元秒数</dt><dd>99.800 s</dd></div></dl><p id="formula">示例 ΔAT 与 DUT1 均为手动输入；TT−TAI 始终为 32.184 s。日期切换及闰秒表查询交由正式时间服务处理。</p></main><script>(()=>{// Pure geodesy teaching models. Angles are degrees; lengths are metres.
+const WGS84 = Object.freeze({a: 6378137, f: 1 / 298.257223563});
+const rad = degrees => degrees * Math.PI / 180;
+const deg = radians => radians * 180 / Math.PI;
+const wrap360 = degrees => ((degrees % 360) + 360) % 360;
+const wrap180 = degrees => wrap360(degrees + 180) - 180;
+
+function finite(values) {
+  if (!values.every(Number.isFinite)) throw new RangeError('输入必须是有限数值。');
+}
+function ellipsoid(a, f) {
+  finite([a, f]);
+  if (a <= 0 || f < 0 || f >= 1) throw new RangeError('椭球要求 a > 0，0 ≤ f < 1。');
+  return {e2: f * (2 - f), b: a * (1 - f)};
+}
+function latitude(B, L) {
+  finite([B, L]);
+  if (Math.abs(B) > 90) throw new RangeError('纬度 B 必须位于 −90°～90°。');
+}
+
+function blhToXyz({B, L, h, a = WGS84.a, f = WGS84.f}) {
+  latitude(B, L); finite([h]);
+  const {e2} = ellipsoid(a, f), b = rad(B), l = rad(L);
+  const sb = Math.sin(b), cb = Math.cos(b), N = a / Math.sqrt(1 - e2 * sb * sb);
+  return {X: (N + h) * cb * Math.cos(l), Y: (N + h) * cb * Math.sin(l), Z: (N * (1 - e2) + h) * sb};
+}
+
+// The geocentre has no unique latitude or longitude. On the polar axis L=0
+// is an explicit reporting convention. The inverse teaching domain is
+// hypot(X/a,Y/a,Z/b) >= 0.99, including the near surface and exterior.
+// Deep points are rejected before iteration because normal coordinates may
+// be nonunique there, even when one numerical branch happens to converge.
+function xyzToBlh({X, Y, Z, a = WGS84.a, f = WGS84.f}) {
+  finite([X, Y, Z]);
+  const {e2, b} = ellipsoid(a, f), p = Math.hypot(X, Y);
+  if (Math.hypot(p, Z) < 1e-9) throw new RangeError('地心的 B、L 无唯一解（geocentre）。');
+  if (Math.hypot(p / a, Z / b) < .99) throw new RangeError('反解教学域要求归一化半径 √[(X²+Y²)/a²+Z²/b²] ≥ 0.99；椭球深部可能有多个法线解，请选近地表或外部点。');
+  if (p < 1e-9) return {B: Z < 0 ? -90 : 90, L: 0, h: Math.abs(Z) - b, iterations: 0, longitudeDefined: false};
+  let B = Math.atan2(Z, p * (1 - e2)), iterations = 0;
+  for (; iterations < 100; iterations++) {
+    const N = a / Math.sqrt(1 - e2 * Math.sin(B) ** 2);
+    const next = Math.atan2(Z + e2 * N * Math.sin(B), p);
+    if (Math.abs(next - B) < 2e-15) {B = next; iterations++; break;}
+    B = next;
+  }
+  if (iterations >= 100) throw new RangeError('此点的反解未收敛；请选择近地表坐标。');
+  const N = a / Math.sqrt(1 - e2 * Math.sin(B) ** 2);
+  // Projection onto the ellipsoid normal avoids division by cos(B) at poles.
+  const h = p * Math.cos(B) + Z * Math.sin(B) - N * (1 - e2 * Math.sin(B) ** 2);
+  return {B: deg(B), L: deg(Math.atan2(Y, X)), h, iterations, longitudeDefined: true};
+}
+
+function polar(E, N, U) {
+  const horizontal = Math.hypot(E, N), range = Math.hypot(horizontal, U);
+  const azimuth = horizontal <= 1e-12 * Math.max(1, range) ? null : wrap360(deg(Math.atan2(E, N)));
+  const elevation = range === 0 ? null : deg(Math.atan2(U, horizontal));
+  return {E, N, U, range, azimuth, elevation, zenith: elevation === null ? null : 90 - elevation};
+}
+function enuFromDelta({B, L, dx, dy, dz}) {
+  latitude(B, L); finite([dx, dy, dz]);
+  const b = rad(B), l = rad(L), sb = Math.sin(b), cb = Math.cos(b), sl = Math.sin(l), cl = Math.cos(l);
+  return polar(-sl * dx + cl * dy, -sb * cl * dx - sb * sl * dy + cb * dz, cb * cl * dx + cb * sl * dy + sb * dz);
+}
+function rotationZ(angle) {
+  finite([angle]);
+  const c = Math.cos(rad(angle)), s = Math.sin(rad(angle));
+  return [[c, -s, 0], [s, c, 0], [0, 0, 1]];
+}
+function applyMatrix(matrix, vector) {
+  return matrix.map(row => row.reduce((sum, value, i) => sum + value * vector[i], 0));
+}
+// Active right-handed rotation: q = p0 + t + s Rz(angle)(p - p0).
+// Therefore standard translation T = p0 + t - s Rz(angle)p0.
+function pivotTransform({point, pivot = [0, 0, 0], translation = [0, 0, 0], angle = 0, scale = 1}) {
+  finite([...point, ...pivot, ...translation, angle, scale]);
+  const matrix = rotationZ(angle), shifted = point.map((v, i) => v - pivot[i]);
+  const rotated = applyMatrix(matrix, shifted), rotatedPivot = applyMatrix(matrix, pivot);
+  return {point: rotated.map((v, i) => pivot[i] + translation[i] + scale * v), standardTranslation: pivot.map((v, i) => v + translation[i] - scale * rotatedPivot[i]), matrix};
+}
+
+// Columns are derivatives per degree B, per degree L, and per metre h.
+function blhJacobian({B, L, h, a = WGS84.a, f = WGS84.f}) {
+  latitude(B, L); finite([h]);
+  const {e2} = ellipsoid(a, f), b = rad(B), l = rad(L), sb = Math.sin(b), cb = Math.cos(b), sl = Math.sin(l), cl = Math.cos(l);
+  const w2 = 1 - e2 * sb * sb, N = a / Math.sqrt(w2), M = a * (1 - e2) / w2 ** 1.5, k = Math.PI / 180;
+  return [[-(M + h) * sb * cl * k, -(N + h) * cb * sl * k, cb * cl], [-(M + h) * sb * sl * k, (N + h) * cb * cl * k, cb * sl], [(M + h) * cb * k, 0, sb]];
+}
+
+// Geometric equatorial-to-horizon teaching model: no refraction/precession.
+// siderealAngle is Greenwich apparent/mean angle, consistently paired with RA.
+function celestialCoordinates({rightAscension, declination, siderealAngle, longitude, latitude: B}) {
+  latitude(B, longitude); latitude(declination, rightAscension); finite([siderealAngle]);
+  const hourAngle = wrap180(siderealAngle + longitude - rightAscension), H = rad(hourAngle), d = rad(declination), b = rad(B);
+  const E = -Math.cos(d) * Math.sin(H), N = Math.cos(b) * Math.sin(d) - Math.sin(b) * Math.cos(d) * Math.cos(H), U = Math.sin(b) * Math.sin(d) + Math.cos(b) * Math.cos(d) * Math.cos(H);
+  return {hourAngle, localSiderealAngle: wrap360(siderealAngle + longitude), ...polar(E, N, U)};
+}
+
+// Seconds referenced to a common labelled epoch, within a UTC segment whose
+// deltaAT is supplied. This arithmetic does not parse leap-second civil dates.
+function timeScales({utcSeconds = 0, deltaAT, dut1 = 0}) {
+  if (!Number.isFinite(deltaAT)) throw new RangeError('请提供 deltaAT = TAI − UTC（秒）。');
+  finite([utcSeconds, dut1]);
+  return {UTC: utcSeconds, TAI: utcSeconds + deltaAT, TT: utcSeconds + deltaAT + 32.184, UT1: utcSeconds + dut1, deltaAT, dut1};
+}
+
+const M={WGS84,rad,deg,wrap360,wrap180,blhToXyz,xyzToBlh,enuFromDelta,rotationZ,applyMatrix,pivotTransform,blhJacobian,celestialCoordinates,timeScales};function specificationsTitle(mode) {
+  return {'blh-xyz': '大地坐标正算的赤道面与子午面图', inverse: '空间直角坐标反解的投影与法线图', 'local-polar': '东—北水平投影与视线竖直面图', 'transform-pivot': '绕枢轴主动旋转、缩放与平移图', celestial: '赤道面时角与站心天球方向图', time: 'UTC、TAI、TT 和 UT1 时标差图'}[mode];
+}
+const figure=function figure(mode, v, M) {
+  const width = 800, height = 490;
+  const F = (n, digits = 3) => n === null ? '无定义' : (Math.abs(n) < 5e-10 ? 0 : n).toLocaleString('en-US', {minimumFractionDigits: digits, maximumFractionDigits: digits});
+  const esc = value => String(value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+  const out = [];
+  const line = (a, b, color = 'ink', extra = '') => `<path d="M${a[0]},${a[1]}L${b[0]},${b[1]}" class="${color}" fill="none" ${extra}/>`;
+  const dot = (p, color = 'accent', radius = 5) => `<circle cx="${p[0]}" cy="${p[1]}" r="${radius}" class="${color} fill"/>`;
+  const text = (p, value, color = 'ink', extra = '') => `<text x="${p[0]}" y="${p[1]}" class="${color}" ${extra}>${esc(value)}</text>`;
+  const path = (points, color = 'grid', extra = '') => `<path d="${points.map((p, i) => `${i ? 'L' : 'M'}${p[0]},${p[1]}`).join('')}" class="${color}" fill="none" ${extra}/>`;
+  const arc = (c, r, start, end, color = 'accent') => path(Array.from({length: 61}, (_, i) => {const a = M.rad(start + (end - start) * i / 60); return [c[0] + r * Math.cos(a), c[1] - r * Math.sin(a)];}), color, 'stroke-width="3"');
+  const circle = (c, r, color = 'grid') => `<circle cx="${c[0]}" cy="${c[1]}" r="${r}" class="${color}" fill="none"/>`;
+  const metric = (label, value, unit = '') => [label, `${value}${unit ? ` ${unit}` : ''}`];
+  const heading = (x, label) => text([x, 38], label, 'ink', 'font-size="17" font-weight="650"');
+  const angleTickRing = (c, r) => Array.from({length: 36}, (_, i) => {
+    const a = M.rad(i * 10), inner = r - (i % 3 ? 4 : 9);
+    return line([c[0] + inner * Math.cos(a), c[1] - inner * Math.sin(a)], [c[0] + r * Math.cos(a), c[1] - r * Math.sin(a)], 'grid');
+  }).join('');
+  let rows = [], note = '';
+
+  if (mode === 'blh-xyz' || mode === 'inverse') {
+    const inverse = mode === 'inverse';
+    const p3 = inverse ? {X: v.X, Y: v.Y, Z: v.Z} : M.blhToXyz(v);
+    const geo = inverse ? M.xyzToBlh(p3) : {...v, longitudeDefined: Math.abs(v.B) !== 90};
+    const q3 = M.blhToXyz({...geo, h: 0}), p = Math.hypot(p3.X, p3.Y), q = Math.hypot(q3.X, q3.Y);
+    const a = M.WGS84.a, b = a * (1 - M.WGS84.f);
+    const size = Math.max(a, Math.hypot(p3.X, p3.Y), Math.abs(p3.Z)) * 1.12, k = 145 / size;
+    const C1 = [200, 250], C2 = [595, 250];
+    const xy = (x, y) => [C1[0] + x * k, C1[1] - y * k];
+    const pz = (p, z) => [C2[0] + p * k, C2[1] - z * k];
+    out.push(heading(42, '赤道面投影：先看经度 L'), heading(427, '子午面：纬度 B 与法线高 h'));
+    out.push(circle(C1, a * k), angleTickRing(C1, a * k));
+    for (const factor of [-1, -.5, 0, .5, 1]) {
+      const xx = factor * a, span = Math.sqrt(Math.max(0, a * a - xx * xx));
+      out.push(line(xy(xx, -span), xy(xx, span), 'faint'), line(xy(-span, xx), xy(span, xx), 'faint'));
+    }
+    out.push(line([30, C1[1]], [365, C1[1]], 'ink', 'marker-end="url(#arrow)"'), line([C1[0], 418], [C1[0], 75], 'ink', 'marker-end="url(#arrow)"'));
+    out.push(text([354, 273], '+X'), text([213, 82], '+Y'), text([181, 272], 'O'));
+    const xyPoint = xy(p3.X, p3.Y);
+    out.push(line(C1, xyPoint, 'accent', 'stroke-width="3"'), line(xyPoint, xy(p3.X, 0), 'muted', 'stroke-dasharray="5 4"'), line(xyPoint, xy(0, p3.Y), 'muted', 'stroke-dasharray="5 4"'), dot(xyPoint), text([xyPoint[0] + 9, xyPoint[1] - 10], 'Pxy', 'accent'));
+    if (geo.longitudeDefined) out.push(arc(C1, 51, 0, geo.L), text([C1[0] + 58 * Math.cos(M.rad(geo.L / 2)), C1[1] - 58 * Math.sin(M.rad(geo.L / 2)) - 5], 'L', 'accent'));
+    else out.push(text([42, 411], '极轴：经度无唯一值，省略 L 角弧', 'muted'));
+    out.push(text([42, 451], `p = √(X²+Y²) = ${F(p)} m`, 'muted'));
+    out.push(path(Array.from({length: 181}, (_, i) => {const t = 2 * Math.PI * i / 180; return pz(a * Math.cos(t), b * Math.sin(t));}), 'body', 'stroke-width="2"'));
+    out.push(line([430, C2[1]], [770, C2[1]], 'ink', 'marker-end="url(#arrow)"'), line([C2[0], 418], [C2[0], 75], 'ink', 'marker-end="url(#arrow)"'));
+    out.push(text([753, 273], '+p'), text([608, 82], '+Z'), text([578, 272], 'O'));
+    const P = pz(p, p3.Z), Q = pz(q, q3.Z), normal = [Math.cos(M.rad(geo.B)), Math.sin(M.rad(geo.B))];
+    const normalFoot = pz(q - q3.Z / Math.tan(M.rad(geo.B) || 1e-30), 0);
+    if (Math.abs(geo.B) > .001 && Math.abs(geo.B) < 89.999) out.push(line(normalFoot, pz(q + normal[0] * a * .26, q3.Z + normal[1] * a * .26), 'north', 'stroke-dasharray="6 4"'));
+    else out.push(line(pz(q - normal[0] * a * .25, q3.Z - normal[1] * a * .25), pz(q + normal[0] * a * .25, q3.Z + normal[1] * a * .25), 'north', 'stroke-dasharray="6 4"'));
+    out.push(line(C2, P, 'muted', 'stroke-dasharray="5 4"'), line(Q, P, 'accent', 'stroke-width="5"'), dot(Q, 'north', 4), dot(P, 'accent', 5));
+    const phi = M.deg(Math.atan2(p3.Z, p));
+    out.push(arc(C2, 48, 0, phi, 'muted'), arc(C2, 72, 0, geo.B, 'north'));
+    out.push(text([C2[0] + 54 * Math.cos(M.rad(phi / 2)), C2[1] - 54 * Math.sin(M.rad(phi / 2)) + 13], 'φ', 'muted'), text([C2[0] + 81 * Math.cos(M.rad(geo.B / 2)), C2[1] - 81 * Math.sin(M.rad(geo.B / 2)) - 3], 'B', 'north'));
+    out.push(text([P[0] + 9, P[1] - 9], 'P', 'accent'), text([Q[0] + 9, Q[1] + 20], 'Q', 'north'), text([430, 451], 'WGS84 真扁率 · 法线为绿色虚线', 'muted'));
+    rows = inverse ? [metric('大地纬度 B', F(geo.B, 8), '°'), metric('经度 L', geo.longitudeDefined ? F(geo.L, 8) : '无唯一值；约定 0', '°'), metric('椭球高 h', F(geo.h), 'm'), metric('迭代次数', geo.iterations)] : [metric('X', F(p3.X), 'm'), metric('Y', F(p3.Y), 'm'), metric('Z', F(p3.Z), 'm'), metric('地心纬度 φ', F(phi, 8), '°')];
+    note = inverse ? '反解使用固定点迭代与法线投影；归一化半径须≥0.99，深部可能多解，不能以某一分支收敛判定唯一性。' : 'N=a/√(1−e²sin²B)；X=(N+h)cosBcosL，Y=(N+h)cosBsinL，Z=[N(1−e²)+h]sinB。';
+  }
+
+  if (mode === 'local-polar') {
+    const r = M.enuFromDelta(v), horizontal = Math.hypot(r.E, r.N), bound = Math.max(1, r.range), k = 135 / bound;
+    const C1 = [205, 250], C2 = [535, 250], point = [C1[0] + r.E * k, C1[1] - r.N * k], side = [C2[0] + horizontal * k, C2[1] - r.U * k];
+    out.push(heading(35, '水平投影：从北向东量 A'), heading(427, '视线竖直面：量 e 与 z'));
+    if (Math.abs(v.B) === 90) out.push(text([38, 68], '极点：水平轴依输入经线约定，A 相对该轴', 'muted', 'font-size="13"'));
+    out.push(circle(C1, 135), circle(C1, 67.5), angleTickRing(C1, 135));
+    out.push(line([35, 250], [375, 250], 'east', 'marker-end="url(#arrow)"'), line([205, 418], [205, 80], 'north', 'marker-end="url(#arrow)"'));
+    out.push(text([360, 274], 'E', 'east'), text([216, 88], 'N', 'north'), text([216, 415], 'S', 'muted'), text([35, 274], 'W', 'muted'), text([181, 274], '站'));
+    out.push(line(C1, point, 'accent', 'stroke-width="4"'), dot(point), line(point, [point[0], 250], 'muted', 'stroke-dasharray="5 4"'), line(point, [205, point[1]], 'muted', 'stroke-dasharray="5 4"'));
+    if (r.azimuth !== null) out.push(arc(C1, 45, 90, 90 - r.azimuth, 'accent'), text([252, 208], 'A', 'accent'));
+    out.push(text([38, 450], `E=${F(r.E)} m；N=${F(r.N)} m`, 'muted'));
+    out.push(line([442, 250], [752, 250], 'ink', 'marker-end="url(#arrow)"'), line([535, 418], [535, 80], 'north', 'marker-end="url(#arrow)"'));
+    out.push(text([745, 274], 'ρ'), text([546, 86], 'U', 'north'), text([506, 274], '站'));
+    out.push(line(C2, side, 'accent', 'stroke-width="4"'), line(side, [side[0], 250], 'muted', 'stroke-dasharray="5 4"'), dot(side), text([side[0] + 7, side[1] - 7], '目标', 'accent'));
+    if (r.elevation !== null) out.push(arc(C2, 49, 0, r.elevation, 'accent'), arc(C2, 70, 90, r.elevation, 'north'), text([C2[0] + 57, C2[1] - 13], 'e', 'accent'), text([C2[0] + 32, C2[1] - 71], 'z', 'north'));
+    out.push(text([430, 450], `ρ=${F(horizontal)} m；U=${F(r.U)} m`, 'muted'));
+    rows = [metric('斜距 r', F(r.range), 'm'), metric('方位角 A', F(r.azimuth), '°'), metric('高度角 e', F(r.elevation), '°'), metric('天顶距 z', F(r.zenith), '°')];
+    note = 'E=−sinL·ΔX+cosL·ΔY；N=−sinBcosL·ΔX−sinBsinL·ΔY+cosB·ΔZ；U=cosBcosL·ΔX+cosBsinL·ΔY+sinB·ΔZ。';
+  }
+
+  if (mode === 'transform-pivot') {
+    const P = [v.px, v.py, 0], C = [v.cx, v.cy, 0], t = [v.tx, v.ty, 0];
+    const rotated = M.pivotTransform({point: P, pivot: C, angle: v.angle}), scaled = M.pivotTransform({point: P, pivot: C, angle: v.angle, scale: v.scale}), final = M.pivotTransform({point: P, pivot: C, angle: v.angle, scale: v.scale, translation: t});
+    const points = [P, C, rotated.point, scaled.point, final.point, [0, 0, 0]], bound = Math.max(5, ...points.flatMap(p => [Math.abs(p[0]), Math.abs(p[1])])) * 1.2, k = 176 / bound, O = [400, 250];
+    const at = p => [O[0] + p[0] * k, O[1] - p[1] * k];
+    out.push(heading(35, '坐标平面 XY：各阶段共用同一米制比例'));
+    for (let i = -Math.ceil(bound); i <= bound; i++) out.push(line(at([i, -bound]), at([i, bound]), 'faint'), line(at([-bound, i]), at([bound, i]), 'faint'));
+    out.push(line([145, 250], [668, 250], 'ink', 'marker-end="url(#arrow)"'), line([400, 441], [400, 64], 'ink', 'marker-end="url(#arrow)"'), text([657, 274], '+X'), text([412, 72], '+Y'), text([380, 272], 'O'));
+    const screenC = at(C), screenP = at(P), R = at(rotated.point), S = at(scaled.point), Q = at(final.point), radius = Math.hypot(P[0] - C[0], P[1] - C[1]) * k, start = M.deg(Math.atan2(P[1] - C[1], P[0] - C[0]));
+    out.push(circle(screenC, radius, 'grid'), arc(screenC, radius, start, start + v.angle, 'north'), line(screenC, screenP, 'muted', 'stroke-width="2"'), line(screenC, S, 'north', 'stroke-width="3"'), line(S, Q, 'accent', 'stroke-width="3" marker-end="url(#accentArrow)"'), line(O, screenC, 'muted', 'stroke-dasharray="5 4"'));
+    out.push(dot(screenP, 'muted'), dot(R, 'north', 3), dot(S, 'north', 5), dot(Q), dot(screenC, 'ink', 5));
+    out.push(text([screenP[0] + 9, screenP[1] - 11], 'P', 'muted'), text([screenC[0] + 9, screenC[1] + 20], 'C', 'ink'), text([S[0] - 5, S[1] - 13], 'sR(P−C)+C', 'north', 'text-anchor="end"'), text([Q[0] + 9, Q[1] + 20], 'P′', 'accent'));
+    out.push(text([35, 461], `刻度间隔 1 m · θ=${F(v.angle, 1)}° · s=${F(v.scale, 2)}`, 'muted'));
+    rows = [metric('结果 X′', F(final.point[0]), 'm'), metric('结果 Y′', F(final.point[1]), 'm'), metric('等价标准平移 TX', F(final.standardTranslation[0]), 'm'), metric('等价标准平移 TY', F(final.standardTranslation[1]), 'm')];
+    note = 'P′=C+t+sRz(θ)(P−C)=sRz(θ)P+T；Rz=[cosθ, −sinθ, 0; sinθ, cosθ, 0; 0, 0, 1]。';
+  }
+
+  if (mode === 'celestial') {
+    const r = M.celestialCoordinates({rightAscension: v.alpha, declination: v.delta, siderealAngle: v.theta, longitude: v.L, latitude: v.B}), C = [202, 250], radius = 136;
+    const on = (angle, rr = radius) => [C[0] + rr * Math.cos(M.rad(angle)), C[1] - rr * Math.sin(M.rad(angle))];
+    out.push(heading(35, '赤道面角度：从北天极看'), heading(421, '站心天球：ENU 单位方向'));
+    out.push(circle(C, radius), angleTickRing(C, radius), line([40, 250], [370, 250], 'grid'), line([202, 410], [202, 85], 'grid'));
+    out.push(line(C, on(0), 'muted'), text([337, 274], '春分点 γ', 'muted', 'text-anchor="end"'));
+    out.push(line(C, on(v.alpha), 'accent', 'stroke-width="3"'), line(C, on(r.localSiderealAngle), 'north', 'stroke-width="3"'), dot(on(v.alpha)), dot(on(r.localSiderealAngle), 'north'));
+    out.push(arc(C, 48, 0, v.alpha, 'accent'), arc(C, 71, 0, r.localSiderealAngle, 'north'), arc(C, 107, v.alpha, v.alpha + r.hourAngle, 'east'));
+    out.push(text([48, 438], `α=${F(v.alpha, 1)}° · θL=${F(r.localSiderealAngle, 1)}°`, 'muted'), text([48, 462], '蓝：赤经圈；绿：本地子午圈；橙弧：H', 'muted'));
+    const O = [601, 269], k = 129, view = ([e, n, u]) => [O[0] + k * (.83 * e - .52 * n), O[1] - k * (.25 * e + .4 * n + .88 * u)];
+    const horizon = Array.from({length: 121}, (_, i) => view([Math.cos(i * Math.PI / 60), Math.sin(i * Math.PI / 60), 0]));
+    out.push(path(horizon, 'body', 'stroke-width="2"'), path(Array.from({length: 121}, (_, i) => view([Math.cos(i * Math.PI / 60), 0, Math.sin(i * Math.PI / 60)])), 'faint'), path(Array.from({length: 121}, (_, i) => view([0, Math.cos(i * Math.PI / 60), Math.sin(i * Math.PI / 60)])), 'faint'));
+    for (const [dir, label, color] of [[[1.16, 0, 0], 'E', 'east'], [[0, 1.16, 0], 'N', 'north'], [[0, 0, 1.23], 'U / 天顶', 'ink']]) {
+      const end = view(dir); out.push(line(O, end, color, 'marker-end="url(#arrow)"'), text([end[0] + 6, end[1] - 5], label, color));
+    }
+    const sky = view([r.E, r.N, r.U]), foot = view([r.E, r.N, 0]);
+    out.push(line(O, sky, 'accent', 'stroke-width="4"'), line(sky, foot, 'muted', 'stroke-dasharray="5 4"'), dot(sky), text([sky[0] + 10, sky[1] - 8], '天体', 'accent'), dot(O, 'ink', 3));
+    out.push(text([425, 438], Math.abs(v.B) === 90 ? '极点：水平轴依输入经线约定，A 相对该轴' : r.U >= 0 ? '天体在几何地平面上方' : '天体在几何地平面下方', 'muted', Math.abs(v.B) === 90 ? 'font-size="13"' : ''), text([425, 462], `赤纬 δ=${F(v.delta, 1)}°；测站纬度 B=${F(v.B, 1)}°`, 'muted'));
+    rows = [metric('本地时角 H（西向正）', F(r.hourAngle), '°'), metric('方位角 A（北起顺时针）', F(r.azimuth), '°'), metric('高度角 e', F(r.elevation), '°'), metric('单位方向 (E,N,U)', `(${F(r.E)}, ${F(r.N)}, ${F(r.U)})`)];
+    note = 'H=wrap180(θG+λ−α)；E=−cosδsinH，N=cosBsinδ−sinBcosδcosH，U=sinBsinδ+cosBcosδcosH。';
+  }
+
+  if (mode === 'time') {
+    const r = M.timeScales({utcSeconds: v.utc, deltaAT: v.deltaAT, dut1: v.dut1}), start = 220, span = 485, max = Math.max(80, v.deltaAT + 42), x = offset => start + span * offset / max;
+    out.push(heading(35, '时标读数差：以同一瞬间的 UTC 读数为零点'));
+    out.push(text([220, 73], '单位：秒；横轴按比例', 'muted'));
+    for (let n = 0; n <= max; n += 10) {
+      out.push(line([x(n), 90], [x(n), 314], 'faint'), text([x(n), 85], n, 'muted', 'text-anchor="middle"'));
+    }
+    for (const [i, name, color] of [[0, 'UTC', 'ink'], [1, 'TAI', 'east'], [2, 'TT', 'accent'], [3, 'UT1', 'north']]) {
+      const y = 116 + i * 56, offset = r[name] - r.UTC;
+      out.push(text([45, y + 5], name, color, 'font-size="20" font-weight="650"'), line([start - 12, y], [723, y], 'grid'), line([x(offset), y - 12], [x(offset), y + 12], color, 'stroke-width="4"'), dot([x(offset), y], color, 4), text([141, y + 5], `${F(offset, 3)} s`, color, 'text-anchor="middle"'));
+    }
+    const y = 150;
+    out.push(line([x(0), y], [x(v.deltaAT), y], 'east', 'stroke-width="2"'), text([(x(0) + x(v.deltaAT)) / 2, y - 7], 'ΔAT', 'east', 'text-anchor="middle"'), line([x(v.deltaAT), 208], [x(v.deltaAT + 32.184), 208], 'accent', 'stroke-width="2"'), text([(x(v.deltaAT) + x(v.deltaAT + 32.184)) / 2, 201], '+32.184 s', 'accent', 'text-anchor="middle"'));
+    const cx = 467, k = 220, cy = 390;
+    out.push(text([45, 347], 'DUT1 放大尺', 'ink', 'font-size="17" font-weight="650"'), line([cx - k, cy], [cx + k, cy], 'ink'));
+    for (let i = -10; i <= 10; i++) {
+      const xx = cx + i * k / 10; out.push(line([xx, cy], [xx, cy + (i % 5 ? 6 : 11)], 'grid'));
+      if (i % 5 === 0) out.push(text([xx, cy + 31], `${F(i / 10, 1)} s`, 'muted', 'text-anchor="middle"'));
+    }
+    out.push(line([cx, cy - 29], [cx, cy + 12], 'muted', 'stroke-dasharray="4 3"'), dot([cx + v.dut1 * k, cy], 'north', 7), text([cx + v.dut1 * k, cy - 14], 'UT1−UTC', 'north', 'text-anchor="middle"'), text([45, 461], 'ΔAT 由日期对应的闰秒表给出；DUT1 由地球定向参数给出。', 'muted'));
+    rows = ['UTC', 'TAI', 'TT', 'UT1'].map(name => metric(`${name} / 统一参考历元秒数`, F(r[name]), 's'));
+    note = '示例 ΔAT 与 DUT1 均为手动输入；TT−TAI 始终为 32.184 s。日期切换及闰秒表查询交由正式时间服务处理。';
+  }
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(specificationsTitle(mode))}"><title>${esc(specificationsTitle(mode))}</title><desc>修改下方输入可同步更新几何图形与数值。各图图注说明坐标、方向及比例。</desc><style>.ink{stroke:#334155;fill:#334155}.accent{stroke:#1767b7;fill:#1767b7}.north{stroke:#187a67;fill:#187a67}.east{stroke:#ad5b12;fill:#ad5b12}.muted{stroke:#64748b;fill:#64748b}.grid{stroke:#bbc8d7;fill:none}.faint{stroke:#dde5ec;fill:none}.body{stroke:#72889c;fill:none}path,line,circle{stroke-width:1.3}path[class]{fill:none!important}text{stroke:none!important;font:15px system-ui,sans-serif}.fill{stroke:none}svg{background:#f8fafc}</style><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker><marker id="accentArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1767b7"/></marker></defs>${out.join('')}</svg>`;
+  return {svg, rows, note};
+};(function runtime(spec, mode, M, draw) {
+  const form = document.querySelector('form'), picture = document.querySelector('#picture'), result = document.querySelector('#results'), status = document.querySelector('#status'), note = document.querySelector('#formula');
+  const update = () => {
+    const values = {};
+    for (const [key] of spec.fields) {
+      const field = form.elements.namedItem(key);
+      if (field.value.trim() === '' || !field.validity.valid) {
+        field.setAttribute('aria-invalid', 'true');
+        status.textContent = '请输入有效范围内的数值；图形保留上一次有效输入。';
+        return;
+      }
+      field.removeAttribute('aria-invalid'); values[key] = Number(field.value);
+    }
+    try {
+      const frame = draw(mode, values, M);
+      picture.innerHTML = frame.svg; result.replaceChildren();
+      for (const [label, value] of frame.rows) {
+        const group = document.createElement('div'), dt = document.createElement('dt'), dd = document.createElement('dd');
+        dt.textContent = label; dd.textContent = value; group.append(dt, dd); result.append(group);
+      }
+      note.textContent = frame.note; status.textContent = '';
+    } catch (error) {status.textContent = error.message;}
+  };
+  form.addEventListener('input', update);
+  form.addEventListener('submit', event => event.preventDefault());
+  form.addEventListener('reset', () => requestAnimationFrame(update));
+  const theme = document.querySelector('#theme');
+  theme.addEventListener('click', () => {
+    const dark = document.documentElement.dataset.theme !== 'dark';
+    document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+    theme.setAttribute('aria-pressed', String(dark)); theme.textContent = dark ? '浅色' : '深色';
+  });
+})({"title":"UTC、TAI、TT 与 UT1 的秒差","subtitle":"统一标号的参考历元，逐项计算时标差。","fields":[["utc","UTC 参考历元后的秒数",100,0,86400,1],["deltaAT","输入 ΔAT=TAI−UTC / s",37,0,100,1],["dut1","输入 DUT1=UT1−UTC / s",-0.2,-0.9,0.9,0.01]],"caption":"TAI=UTC+ΔAT，TT=TAI+32.184 s，UT1=UTC+DUT1。ΔAT=37 s 是可编辑的演示输入，须按所求日期查闰秒表；页面不把它当作当前日期的自动值。横轴以 UTC 为零点表示时标读数差，下方将 DUT1 单独放大。秒数计算适用于同一 ΔAT 区段，不用于解析跨闰秒的民用日期。"},"time",M,figure);})();</script></body></html>

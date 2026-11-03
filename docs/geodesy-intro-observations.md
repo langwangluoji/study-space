@@ -1,9 +1,15 @@
 ---
-prev: {"text": "位置表达与坐标框架", "link": "/geodesy-intro-frames"}
-next: {"text": "地球形状与重力场", "link": "/geodesy-intro-gravity"}
+title: "空间观测怎样约束位置"
+prev: {"text":"位置表达与坐标框架","link":"/geodesy-intro-frames"}
+next: {"text":"地球形状与重力场","link":"/geodesy-intro-gravity"}
 ---
 
+<!-- Generated from knowledge/geodesy/lessons/geodesy-intro-observations.md; edit the Obsidian source. -->
+
 # 空间观测怎样约束位置
+
+从一条站星向量理解距离、距离变化率和多站定位。需要向量模、点积及一元求导；先把每个观测量对应到图中的长度或投影。
+
 
 <!-- earth-reading-task -->
 继续跟踪同一测站P：卫星位置已知，接收机给出一组距离观测，我们要反求P。先用一条站星向量解释距离，再增加观测数检查哪些未知量被约束；其他空间仪器作为对照，不要求同时掌握全部技术。
@@ -119,3 +125,39 @@ $$
 这些方法的共同点是建立“观测量—几何或物理模型—未知参数”的关系。距离与方向把点位放进框架，重力任务解释作用在运动中的物理场，SAR则跟踪地表的变化。接下来需要说明同一个点的几何高度如何与重力场定义的高程联系起来。
 
 <LearningMark section="gi-observations" />
+
+## 跟算与理解检查
+
+### 完整例题：距离变化率是速度的哪个部分
+
+在同一地心坐标系中，给定某瞬时的站星相对向量 $\boldsymbol\rho=(3,4,0)\times10^6\,\mathrm m$，相对速度 $\dot{\boldsymbol\rho}=(300,400,100)\,\mathrm{m/s}$。先算距离
+
+$$
+\rho=\sqrt{(3\times10^6)^2+(4\times10^6)^2}=5\times10^6\,\mathrm m.
+$$
+
+由 $\rho^2=\boldsymbol\rho\cdot\boldsymbol\rho$ 求导，得
+
+$$
+\dot\rho=\frac{\boldsymbol\rho\cdot\dot{\boldsymbol\rho}}\rho
+=\frac{3\times10^6\times300+4\times10^6\times400}{5\times10^6}
+=500\,\mathrm{m/s}.
+$$
+
+结果为正，表示这一瞬时距离增加。速度的 $z$ 分量与当前视线垂直，对一阶距离变化率的贡献为零。该例只指定瞬时几何，不据此推断完整卫星轨道。
+
+**自测1：把相对速度的 $z$ 分量从100改为200 m/s，当前距离变化率怎样变？**
+
+<details><summary>展开解析</summary>
+
+仍为500 m/s，因为当前视线的 $z$ 分量为0。后续时刻的视线方向可能改变。
+
+</details>
+
+**自测2：一个距离值为什么通常不能唯一确定三维位置？**
+
+<details><summary>展开解析</summary>
+
+满足该距离的点位于一个球面上；需要更多独立观测及相应未知参数约束。
+
+</details>

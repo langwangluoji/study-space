@@ -3,14 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "npm run anatomy && node scripts/generate.mjs && node scripts/generate-remote-reference.mjs && node scripts/generate-textbook-index.mjs && node scripts/generate-insar-coverage.mjs",
+    "generate": "npm run anatomy && node scripts/geodesy/build-visuals.mjs && node scripts/geodesy-publish.mjs && node scripts/generate.mjs && node scripts/generate-remote-reference.mjs && node scripts/generate-textbook-index.mjs && node scripts/generate-insar-coverage.mjs",
     "dev": "npm run generate && vitepress dev docs --host 127.0.0.1",
     "build": "npm run generate && node --max-old-space-size=6144 node_modules/vitepress/bin/vitepress.js build docs && node scripts/check.mjs",
     "preview": "vitepress preview docs --host 127.0.0.1",
     "check": "npm run build",
     "check:math": "python scripts/verify_math.py",
     "anatomy": "node scripts/anatomy/build.mjs",
-    "check:anatomy": "node scripts/check-anatomy-ml.mjs && node scripts/anatomy/optimization/model.test.mjs && node scripts/anatomy/photogrammetry/verify-model.mjs && node scripts/anatomy/verify-earth.mjs"
+    "check:anatomy": "node scripts/check-anatomy-ml.mjs && node scripts/anatomy/optimization/model.test.mjs && node scripts/anatomy/photogrammetry/verify-model.mjs && node scripts/anatomy/verify-earth.mjs",
+    "check:geodesy": "node --test scripts/geodesy-publish.test.mjs scripts/geodesy/model.test.mjs && node scripts/check-geodesy-content.mjs && python scripts/verify_geodesy.py && python scripts/verify_geodesic_computation.py && python scripts/verify_geodesy_coordinates.py && python scripts/verify_geodesy_orbit.py"
   },
   "devDependencies": {
     "markdown-it-mathjax3": "4.3.2",

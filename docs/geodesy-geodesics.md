@@ -1,8 +1,10 @@
 ---
-title: 第三章 大地线（测地线）
+title: "第三章 大地线（测地线）"
 prev: {"text":"曲面度量 弧长与面积","link":"/geodesy-metric"}
 next: {"text":"法截弧与大地线","link":"/geodesy-geodesic-geometry"}
 ---
+
+<!-- Generated from knowledge/geodesy/lessons/geodesy-geodesics.md; edit the Obsidian source. -->
 
 # 第三章 大地线（测地线）
 
@@ -17,6 +19,6 @@ next: {"text":"法截弧与大地线","link":"/geodesy-geodesic-geometry"}
 | [法截弧与大地线](geodesy-geodesic-geometry.html) | 为什么从两端作法截面可能得到不同的弧；“曲面上最直”意味着什么 |
 | [克莱劳定理与微分方程](geodesy-geodesic-equations.html) | 为什么平行圈半径与方位角有关；怎样连续计算位置和方向 |
 
-依据原讲义 S7 文件页 2–10，插入的法截弧说明和法线指向证明一起整理。封面与原习题完整保留在[原 PDF](geodesy-source-s7.html)，同纬度法截弧问题在第一专题作为概念辨析解释。
+依据原讲义 S7 文件页 2–10，插入的法截弧说明和法线指向证明一起整理。封面与原习题完整保留在[原 PDF](https://langwangluoji.github.io/study-space/geodesy-source-s7.html)，同纬度法截弧问题在第一专题作为概念辨析解释。
 
 统一约定：$s$ 是沿大地线前进的弧长，$B,L$ 是大地纬度、经度，$A$ 自北向东顺时针计，表示沿当前前进方向的切线方位角。外法线与 Frenet 主法线分别记作 $\nu_{\rm out}$ 与 $n$；不要用同一个“法线”名称掩盖其指向区别。

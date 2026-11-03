@@ -23,18 +23,18 @@
       "title": "大地测量",
       "subtitle": "GEODESY & GEODETIC CONTROL",
       "field": "测绘与地球空间科学",
-      "summary": "从地球参考模型、椭球几何走向大地线、观测归算与大地主题正反算。",
+      "summary": "从地球参考模型、椭球几何走向测地线、观测归算、坐标转换与天球时间基础。",
       "entry": "/course-geodesy.html",
       "start": "/geodesy-intro.html",
       "source": "/geodesy-sources.html",
-      "scope": "4 个主章 · 16 个专题",
+      "scope": "6 个主章 · 1 个辅助篇",
       "tags": [
         "参考模型",
         "椭球几何",
         "坐标交互"
       ],
       "prerequisites": "基础微积分、向量与矩阵",
-      "status": "绪论、椭球、大地线与坐标计算已整理"
+      "status": "六章课程与轨道辅助篇，含例题、自测和完整推导"
     },
     {
       "id": "insar",

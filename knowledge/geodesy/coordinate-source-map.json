@@ -1,0 +1,75 @@
+{
+  "description": "Chapters 5/6 source-to-topic map. Page numbers are 1-based PDF file pages, not slide footer numbers. DOCX image slide numbers are identified separately.",
+  "sources": [
+    {
+      "id": "S10",
+      "file": "4大地坐标与地心坐标之间转.pdf",
+      "page_count": 10,
+      "pages": [
+        {"page": 1, "status": "context", "topics": ["geodesy-coordinate-conversion"], "content": "封面与课程署名"},
+        {"page": 2, "status": "covered", "topics": ["geodesy-coordinate-forward"], "content": "空间直角轴、大地纬度经度与椭球高定义"},
+        {"page": 3, "status": "covered", "topics": ["geodesy-coordinate-forward"], "content": "椭球脚点加法线高的正算推导"},
+        {"page": 4, "status": "covered", "topics": ["geodesy-coordinate-inverse"], "content": "经度、纬度迭代与高度反算；增加atan2、极点及稳定高度式"},
+        {"page": 5, "status": "covered", "topics": ["geodesy-coordinate-differentials"], "content": "雅可比=正交方向基×对角长度标尺"},
+        {"page": 6, "status": "covered", "topics": ["geodesy-coordinate-differentials"], "content": "正交投影与逆坐标微分"},
+        {"page": 7, "status": "covered-with-correction", "topics": ["geodesy-ellipsoid-parameter-change"], "content": "a、e²全微分与偏导矩阵", "correction": "参数偏导矩阵右下元素末因子应为sin B，原页印作cos B；由Z对e²直接求导及赤道边界检核确认"},
+        {"page": 8, "status": "covered", "topics": ["geodesy-ellipsoid-parameter-change"], "content": "全微分求逆、固定空间坐标的条件"},
+        {"page": 9, "status": "covered", "topics": ["geodesy-ellipsoid-parameter-change"], "content": "固定XYZ时dB、dL、dH与椭球参数变化的公式"},
+        {"page": 10, "status": "covered", "topics": ["geodesy-coordinate-forward", "geodesy-coordinate-inverse", "geodesy-coordinate-differentials"], "content": "克拉索夫斯基坐标例题、0.2/0.3角秒与5米增量、球近似微分"}
+      ]
+    },
+    {
+      "id": "S11",
+      "file": "5三维直角坐标系之间转换.pdf",
+      "page_count": 33,
+      "pages": [
+        {"page": 1, "status": "context", "topics": ["geodesy-frame-transformations"], "content": "封面与课程署名"},
+        {"page": 2, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "三个被动基本旋转矩阵与正角"},
+        {"page": 3, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "交线轴Z-X-Z旋转的几何路线"},
+        {"page": 4, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "Z-X-Z精确连乘式与正交性"},
+        {"page": 5, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "Z-X-Z同名轴夹角与矩阵对角元素"},
+        {"page": 6, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "X-Y-Z逐步旋转几何路线"},
+        {"page": 7, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "Rz Ry Rx连乘与作用次序"},
+        {"page": 8, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "X-Y-Z同名轴夹角关系"},
+        {"page": 9, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "小角近似与一阶旋转模型"},
+        {"page": 10, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "九元素的六个正交约束"},
+        {"page": 11, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "三自由度与直接求旋转矩阵"},
+        {"page": 12, "status": "covered", "topics": ["geodesy-local-polar"], "content": "NEU定义、反向z轴和旋转路线；明确左手顺序"},
+        {"page": 13, "status": "covered", "topics": ["geodesy-local-polar"], "content": "局部到全球方向矩阵与测站全球坐标"},
+        {"page": 14, "status": "covered", "topics": ["geodesy-local-polar"], "content": "站心到全球平移与方向变换"},
+        {"page": 15, "status": "covered", "topics": ["geodesy-local-polar"], "content": "全球坐标差到站心投影"},
+        {"page": 16, "status": "covered", "topics": ["geodesy-local-polar"], "content": "距离方位天顶距正算与方向点积形式"},
+        {"page": 17, "status": "covered", "topics": ["geodesy-local-polar"], "content": "极坐标反算、垂线与法线基准；补齐atan2"},
+        {"page": 18, "status": "covered", "topics": ["geodesy-local-polar", "geodesy-pivot-models"], "content": "全球/站心旋转伪向量与NEU负号"},
+        {"page": 19, "status": "covered", "topics": ["geodesy-local-polar"], "content": "空间基线方位与局部倾斜/垂线偏差关系"},
+        {"page": 20, "status": "covered", "topics": ["geodesy-local-polar"], "content": "插入的ENU单位基与北东投影完整推导"},
+        {"page": 21, "status": "covered", "topics": ["geodesy-local-polar"], "content": "卫星方位角与高度角"},
+        {"page": 22, "status": "covered", "topics": ["geodesy-seven-parameters"], "content": "Bursa-Wolf精确式与七个参数"},
+        {"page": 23, "status": "covered", "topics": ["geodesy-seven-parameters", "geodesy-parameter-estimation"], "content": "一阶展开与同名点参数系数"},
+        {"page": 24, "status": "covered", "topics": ["geodesy-seven-parameters"], "content": "基线变换与平移相消"},
+        {"page": 25, "status": "covered", "topics": ["geodesy-pivot-models"], "content": "参考点为旋转/尺度中心的模型"},
+        {"page": 26, "status": "covered", "topics": ["geodesy-pivot-models"], "content": "插入的Molodensky-Badekas二维向量图与辅助点含义"},
+        {"page": 27, "status": "interpreted", "topics": ["geodesy-pivot-models"], "content": "扫描的参考点关系图；正文改用显式源/目标基底的向量等式解释"},
+        {"page": 28, "status": "interpreted", "topics": ["geodesy-pivot-models"], "content": "原页批注指出三坐标系符号混乱；正文区分参考点坐标差与原点平移"},
+        {"page": 29, "status": "covered", "topics": ["geodesy-pivot-models", "geodesy-parameter-estimation"], "content": "中心化参数线性方程与基线等价性"},
+        {"page": 30, "status": "covered", "topics": ["geodesy-pivot-models"], "content": "范士Veis局部旋转参数与转换模型"},
+        {"page": 31, "status": "covered", "topics": ["geodesy-parameter-estimation"], "content": "框架位移与椭球元素合并为BLH微分"},
+        {"page": 32, "status": "covered", "topics": ["geodesy-parameter-estimation"], "content": "大地坐标微分矩阵与逐分量教学展开"},
+        {"page": 33, "status": "covered", "topics": ["geodesy-local-polar", "geodesy-seven-parameters", "geodesy-pivot-models"], "content": "站心定义、旋转平移、极坐标推导及三模型差异，在专题自检与正文中落实"}
+      ]
+    },
+    {
+      "id": "S4",
+      "file": "坐标分量旋转与坐标轴旋转的关系(1).docx",
+      "page_basis": "DOCX paragraph text and embedded image slide numbers; these are not PDF file pages",
+      "sections": [
+        {"section": "正文基向量证明", "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "同一向量两组基底表达、方向余弦元素、列投影和分量/轴变换互为转置"},
+        {"section": "内嵌图页10–14", "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "轴旋转、基本矩阵、连乘及小角形式"},
+        {"section": "内嵌图页15–16、18", "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "分量旋转与轴旋转符号相反、连乘的转置关系"},
+        {"section": "内嵌图页17", "status": "covered", "topics": ["geodesy-local-polar"], "content": "地心基底到当地地平基底示例；课程正文用显式ENU基底给出一般表达"}
+      ]
+    }
+  ],
+  "verification_script": "scripts/verify_geodesy_coordinates.py",
+  "teaching_extensions": ["稳定高度反算与极点分支", "小角误差数量级示例", "伪向量正交变换推导", "加权最小二乘、SVD、单位缩放及参数协方差", "独立数值微分与坐标闭合检核"]
+}
