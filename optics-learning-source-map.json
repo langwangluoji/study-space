@@ -14,434 +14,620 @@
           "pdf_page": 1,
           "topic": "光学逻辑六问",
           "kind": "框架/问题总览",
-          "learning_section": "章首课程框架"
+          "learning_section": "章首课程框架",
+          "learningAnchor": "ppt-w1-1",
+          "learningUrl": "optics-waves.html#ppt-w1-1",
+          "learningHeading": "波动与光的电磁理论"
         },
         {
           "source": "W1",
           "pdf_page": 2,
           "topic": "几何、波动、矢量、量子光学层次",
           "kind": "框架/问题总览",
-          "learning_section": "章首课程框架"
+          "learning_section": "章首课程框架",
+          "learningAnchor": "ppt-w1-2",
+          "learningUrl": "optics-waves.html#ppt-w1-2",
+          "learningHeading": "波动与光的电磁理论"
         },
         {
           "source": "W1",
           "pdf_page": 3,
           "topic": "第一章总结",
           "kind": "回顾标题页",
-          "learning_section": "章首课程框架（回顾标题）"
+          "learning_section": "章首课程框架（回顾标题）",
+          "learningAnchor": "ppt-w1-3",
+          "learningUrl": "optics-waves.html#ppt-w1-3",
+          "learningHeading": "波动与光的电磁理论"
         },
         {
           "source": "W1",
           "pdf_page": 4,
           "topic": "第二章波动",
           "kind": "标题页",
-          "learning_section": "§1（章标题）"
+          "learning_section": "§1（章标题）",
+          "learningAnchor": "ppt-w1-4",
+          "learningUrl": "optics-waves.html#ppt-w1-4",
+          "learningHeading": "1. 振动、波动与任意波形传播"
         },
         {
           "source": "W1",
           "pdf_page": 5,
           "topic": "振动、波动、波场",
           "kind": "知识内容",
-          "learning_section": "§1.1"
+          "learning_section": "§1.1",
+          "learningAnchor": "ppt-w1-5",
+          "learningUrl": "optics-waves.html#ppt-w1-5",
+          "learningHeading": "1.1 三个概念与两个方向"
         },
         {
           "source": "W1",
           "pdf_page": 6,
           "topic": "时空双周期与能量传播",
           "kind": "知识内容",
-          "learning_section": "§1.1"
+          "learning_section": "§1.1",
+          "learningAnchor": "ppt-w1-6",
+          "learningUrl": "optics-waves.html#ppt-w1-6",
+          "learningHeading": "1.1 三个概念与两个方向"
         },
         {
           "source": "W1",
           "pdf_page": 7,
           "topic": "纵波、横波、质点不随波前整体前进",
           "kind": "知识内容",
-          "learning_section": "§1.1"
+          "learning_section": "§1.1",
+          "learningAnchor": "ppt-w1-7",
+          "learningUrl": "optics-waves.html#ppt-w1-7",
+          "learningHeading": "1.1 三个概念与两个方向"
         },
         {
           "source": "W1",
           "pdf_page": 8,
           "topic": "波包形状不变与初始函数",
           "kind": "知识内容",
-          "learning_section": "§1.2"
+          "learning_section": "§1.2",
+          "learningAnchor": "ppt-w1-8",
+          "learningUrl": "optics-waves.html#ppt-w1-8",
+          "learningHeading": "1.2 从波形平移写出波函数"
         },
         {
           "source": "W1",
           "pdf_page": 9,
           "topic": "随动坐标S与S′",
           "kind": "知识内容",
-          "learning_section": "§1.2"
+          "learning_section": "§1.2",
+          "learningAnchor": "ppt-w1-9",
+          "learningUrl": "optics-waves.html#ppt-w1-9",
+          "learningHeading": "1.2 从波形平移写出波函数"
         },
         {
           "source": "W1",
           "pdf_page": 10,
           "topic": "x′=x−vt与1/(10x²+1)示例",
           "kind": "知识内容",
-          "learning_section": "§1.2"
+          "learning_section": "§1.2",
+          "learningAnchor": "ppt-w1-10",
+          "learningUrl": "optics-waves.html#ppt-w1-10",
+          "learningHeading": "1.2 从波形平移写出波函数"
         },
         {
           "source": "W1",
           "pdf_page": 11,
           "topic": "正反传播、速度符号与F(t−x/v)",
           "kind": "知识内容",
-          "learning_section": "§1.2"
+          "learning_section": "§1.2",
+          "learningAnchor": "ppt-w1-11",
+          "learningUrl": "optics-waves.html#ppt-w1-11",
+          "learningHeading": "1.2 从波形平移写出波函数"
         },
         {
           "source": "W1",
           "pdf_page": 12,
           "topic": "一维波动方程的链式推导起步",
           "kind": "推导页",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-12",
+          "learningUrl": "optics-waves.html#ppt-w1-12",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 13,
           "topic": "空间二阶偏导",
           "kind": "推导页",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-13",
+          "learningUrl": "optics-waves.html#ppt-w1-13",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 14,
           "topic": "时间二阶求导步骤",
           "kind": "推导页",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-14",
+          "learningUrl": "optics-waves.html#ppt-w1-14",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 15,
           "topic": "链式法则续推",
           "kind": "推导页",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-15",
+          "learningUrl": "optics-waves.html#ppt-w1-15",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 16,
           "topic": "时间二阶导数v²因子",
           "kind": "推导页",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-16",
+          "learningUrl": "optics-waves.html#ppt-w1-16",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 17,
           "topic": "一维波动方程结果",
           "kind": "知识内容",
-          "learning_section": "§1.3"
+          "learning_section": "§1.3",
+          "learningAnchor": "ppt-w1-17",
+          "learningUrl": "optics-waves.html#ppt-w1-17",
+          "learningHeading": "1.3 逐步导出一维波动方程"
         },
         {
           "source": "W1",
           "pdf_page": 18,
           "topic": "一维波动小结",
           "kind": "回顾页",
-          "learning_section": "§1.1—1.3（回顾）"
+          "learning_section": "§1.1—1.3（回顾）",
+          "learningAnchor": "ppt-w1-18",
+          "learningUrl": "optics-waves.html#ppt-w1-18",
+          "learningHeading": "1.1 三个概念与两个方向"
         },
         {
           "source": "W2",
           "pdf_page": 1,
           "topic": "第二章波动",
           "kind": "标题页",
-          "learning_section": "§1—6（章标题）"
+          "learning_section": "§1—6（章标题）",
+          "learningAnchor": "ppt-w2-1",
+          "learningUrl": "optics-waves.html#ppt-w2-1",
+          "learningHeading": "1. 振动、波动与任意波形传播"
         },
         {
           "source": "W2",
           "pdf_page": 2,
           "topic": "复数、极坐标、欧拉式、共轭与模",
           "kind": "知识内容",
-          "learning_section": "§3.1"
+          "learning_section": "§3.1",
+          "learningAnchor": "ppt-w2-2",
+          "learningUrl": "optics-waves.html#ppt-w2-2",
+          "learningHeading": "3.1 复数的基本工具"
         },
         {
           "source": "W2",
           "pdf_page": 3,
           "topic": "指数特殊值、实虚部、复波取实部",
           "kind": "知识内容",
-          "learning_section": "§3.1—3.2"
+          "learning_section": "§3.1—3.2",
+          "learningAnchor": "ppt-w2-3",
+          "learningUrl": "optics-waves.html#ppt-w2-3",
+          "learningHeading": "3.1 复数的基本工具"
         },
         {
           "source": "W2",
           "pdf_page": 4,
           "topic": "旋转相量、模、角、投影",
           "kind": "知识内容",
-          "learning_section": "§3.3"
+          "learning_section": "§3.3",
+          "learningAnchor": "ppt-w2-4",
+          "learningUrl": "optics-waves.html#ppt-w2-4",
+          "learningHeading": "3.3 旋转相量和静止复振幅的区别"
         },
         {
           "source": "W2",
           "pdf_page": 5,
           "topic": "相位改变的波形与相量图",
           "kind": "知识内容",
-          "learning_section": "§2.2、§3.3"
+          "learning_section": "§2.2、§3.3",
+          "learningAnchor": "ppt-w2-5",
+          "learningUrl": "optics-waves.html#ppt-w2-5",
+          "learningHeading": "2.2 用相位的变化率定义相速度"
         },
         {
           "source": "W2",
           "pdf_page": 6,
           "topic": "相位再认识：旋转机构与正弦投影图",
           "kind": "图示内容",
-          "learning_section": "§3.3"
+          "learning_section": "§3.3",
+          "learningAnchor": "ppt-w2-6",
+          "learningUrl": "optics-waves.html#ppt-w2-6",
+          "learningHeading": "3.3 旋转相量和静止复振幅的区别"
         },
         {
           "source": "W2",
           "pdf_page": 7,
           "topic": "相位初相位、月相、四季图",
           "kind": "图示内容",
-          "learning_section": "§3.3"
+          "learning_section": "§3.3",
+          "learningAnchor": "ppt-w2-7",
+          "learningUrl": "optics-waves.html#ppt-w2-7",
+          "learningHeading": "3.3 旋转相量和静止复振幅的区别"
         },
         {
           "source": "W2",
           "pdf_page": 8,
           "topic": "复数、相量、相位与初相位回顾",
           "kind": "回顾页",
-          "learning_section": "§3.1—3.3（回顾）"
+          "learning_section": "§3.1—3.3（回顾）",
+          "learningAnchor": "ppt-w2-8",
+          "learningUrl": "optics-waves.html#ppt-w2-8",
+          "learningHeading": "3.1 复数的基本工具"
         },
         {
           "source": "W2",
           "pdf_page": 9,
           "topic": "平面等相位面与法向",
           "kind": "知识内容",
-          "learning_section": "§4.1"
+          "learning_section": "§4.1",
+          "learningAnchor": "ppt-w2-9",
+          "learningUrl": "optics-waves.html#ppt-w2-9",
+          "learningHeading": "4.1 从平面几何理解波前"
         },
         {
           "source": "W2",
           "pdf_page": 10,
           "topic": "空间周期、kλ=2π与传播矢量",
           "kind": "知识内容",
-          "learning_section": "§2.1、§4.1"
+          "learning_section": "§2.1、§4.1",
+          "learningAnchor": "ppt-w2-10",
+          "learningUrl": "optics-waves.html#ppt-w2-10",
+          "learningHeading": "2.1 由双重周期性统一各参数"
         },
         {
           "source": "W2",
           "pdf_page": 11,
           "topic": "平面波复函数与相速度",
           "kind": "知识内容",
-          "learning_section": "§2.2、§4.2"
+          "learning_section": "§2.2、§4.2",
+          "learningAnchor": "ppt-w2-11",
+          "learningUrl": "optics-waves.html#ppt-w2-11",
+          "learningHeading": "2.2 用相位的变化率定义相速度"
         },
         {
           "source": "W2",
           "pdf_page": 12,
           "topic": "沿z与yz斜向平面波",
           "kind": "知识内容",
-          "learning_section": "§4.1"
+          "learning_section": "§4.1",
+          "learningAnchor": "ppt-w2-12",
+          "learningUrl": "optics-waves.html#ppt-w2-12",
+          "learningHeading": "4.1 从平面几何理解波前"
         },
         {
           "source": "W2",
           "pdf_page": 13,
           "topic": "方向余弦、三维波动方程、Laplacian",
           "kind": "知识内容",
-          "learning_section": "§4.1、§4.3"
+          "learning_section": "§4.1、§4.3",
+          "learningAnchor": "ppt-w2-13",
+          "learningUrl": "optics-waves.html#ppt-w2-13",
+          "learningHeading": "4.1 从平面几何理解波前"
         },
         {
           "source": "W2",
           "pdf_page": 14,
           "topic": "球坐标、球对称、球面波1/r",
           "kind": "知识内容",
-          "learning_section": "§5.1"
+          "learning_section": "§5.1",
+          "learningAnchor": "ppt-w2-14",
+          "learningUrl": "optics-waves.html#ppt-w2-14",
+          "learningHeading": "5.1 球面对称波：把三维方程化成一维"
         },
         {
           "source": "W2",
           "pdf_page": 15,
           "topic": "柱坐标、柱对称、柱面波1/√r",
           "kind": "知识内容",
-          "learning_section": "§5.2"
+          "learning_section": "§5.2",
+          "learningAnchor": "ppt-w2-15",
+          "learningUrl": "optics-waves.html#ppt-w2-15",
+          "learningHeading": "5.2 柱面波：远场振幅为什么是 $1/\\sqrt{\\rho}$"
         },
         {
           "source": "W2",
           "pdf_page": 16,
           "topic": "线性叠加原理",
           "kind": "知识内容",
-          "learning_section": "§6.1"
+          "learning_section": "§6.1",
+          "learningAnchor": "ppt-w2-16",
+          "learningUrl": "optics-waves.html#ppt-w2-16",
+          "learningHeading": "6.1 叠加来自线性方程"
         },
         {
           "source": "W2",
           "pdf_page": 17,
           "topic": "1.0和0.9不同相位图示",
           "kind": "图示内容",
-          "learning_section": "§6.2"
+          "learning_section": "§6.2",
+          "learningAnchor": "ppt-w2-17",
+          "learningUrl": "optics-waves.html#ppt-w2-17",
+          "learningHeading": "6.2 同频同方向振动的相量推导"
         },
         {
           "source": "W2",
           "pdf_page": 18,
           "topic": "1.0和0.8在0、π/3、2π/3、π下叠加",
           "kind": "知识内容",
-          "learning_section": "§6.2"
+          "learning_section": "§6.2",
+          "learningAnchor": "ppt-w2-18",
+          "learningUrl": "optics-waves.html#ppt-w2-18",
+          "learningHeading": "6.2 同频同方向振动的相量推导"
         },
         {
           "source": "W2",
           "pdf_page": 19,
           "topic": "第三章光的基本性质",
           "kind": "标题页",
-          "learning_section": "§7—10（章标题）"
+          "learning_section": "§7—10（章标题）",
+          "learningAnchor": "ppt-w2-19",
+          "learningUrl": "optics-waves.html#ppt-w2-19",
+          "learningHeading": "7. 麦克斯韦方程如何推出光的波动方程"
         },
         {
           "source": "W2",
           "pdf_page": 20,
           "topic": "光波规律、方程、性质、参数、能量五问",
           "kind": "框架/问题总览",
-          "learning_section": "§7—10（问题总览）"
+          "learning_section": "§7—10（问题总览）",
+          "learningAnchor": "ppt-w2-20",
+          "learningUrl": "optics-waves.html#ppt-w2-20",
+          "learningHeading": "7. 麦克斯韦方程如何推出光的波动方程"
         },
         {
           "source": "W2",
           "pdf_page": 21,
           "topic": "Maxwell积分式",
           "kind": "知识内容",
-          "learning_section": "§7.1"
+          "learning_section": "§7.1",
+          "learningAnchor": "ppt-w2-21",
+          "learningUrl": "optics-waves.html#ppt-w2-21",
+          "learningHeading": "7.1 一般方程及符号"
         },
         {
           "source": "W2",
           "pdf_page": 22,
           "topic": "Maxwell微分式",
           "kind": "知识内容",
-          "learning_section": "§7.1"
+          "learning_section": "§7.1",
+          "learningAnchor": "ppt-w2-22",
+          "learningUrl": "optics-waves.html#ppt-w2-22",
+          "learningHeading": "7.1 一般方程及符号"
         },
         {
           "source": "W2",
           "pdf_page": 23,
           "topic": "无自由电荷无传导电流",
           "kind": "知识内容",
-          "learning_section": "§7.2"
+          "learning_section": "§7.2",
+          "learningAnchor": "ppt-w2-23",
+          "learningUrl": "optics-waves.html#ppt-w2-23",
+          "learningHeading": "7.2 无源理想介质中的场方程"
         },
         {
           "source": "W2",
           "pdf_page": 24,
           "topic": "真空本构与化简",
           "kind": "知识内容",
-          "learning_section": "§7.2"
+          "learning_section": "§7.2",
+          "learningAnchor": "ppt-w2-24",
+          "learningUrl": "optics-waves.html#ppt-w2-24",
+          "learningHeading": "7.2 无源理想介质中的场方程"
         },
         {
           "source": "W2",
           "pdf_page": 25,
           "topic": "电磁波动方程与光速",
           "kind": "推导页",
-          "learning_section": "§7.3"
+          "learning_section": "§7.3",
+          "learningAnchor": "ppt-w2-25",
+          "learningUrl": "optics-waves.html#ppt-w2-25",
+          "learningHeading": "7.3 电场方程的逐步推导"
         },
         {
           "source": "W2",
           "pdf_page": 26,
           "topic": "场各分量满足三维标量波动方程",
           "kind": "知识内容",
-          "learning_section": "§7.3"
+          "learning_section": "§7.3",
+          "learningAnchor": "ppt-w2-26",
+          "learningUrl": "optics-waves.html#ppt-w2-26",
+          "learningHeading": "7.3 电场方程的逐步推导"
         },
         {
           "source": "W2",
           "pdf_page": 27,
           "topic": "平面电磁波波函数与波矢",
           "kind": "知识内容",
-          "learning_section": "§4.1、§8"
+          "learning_section": "§4.1、§8",
+          "learningAnchor": "ppt-w2-27",
+          "learningUrl": "optics-waves.html#ppt-w2-27",
+          "learningHeading": "4.1 从平面几何理解波前"
         },
         {
           "source": "W2",
           "pdf_page": 28,
           "topic": "横波性",
           "kind": "知识内容",
-          "learning_section": "§8.1"
+          "learning_section": "§8.1",
+          "learningAnchor": "ppt-w2-28",
+          "learningUrl": "optics-waves.html#ppt-w2-28",
+          "learningHeading": "8.1 散度方程给出横波性"
         },
         {
           "source": "W2",
           "pdf_page": 29,
           "topic": "电磁场正交、同相、右手关系及振幅",
           "kind": "知识内容",
-          "learning_section": "§8.2"
+          "learning_section": "§8.2",
+          "learningAnchor": "ppt-w2-29",
+          "learningUrl": "optics-waves.html#ppt-w2-29",
+          "learningHeading": "8.2 旋度方程给出右手关系、阻抗与同步性"
         },
         {
           "source": "W2",
           "pdf_page": 30,
           "topic": "Lorentz力、电场主导、光矢量",
           "kind": "知识内容",
-          "learning_section": "§8.3"
+          "learning_section": "§8.3",
+          "learningAnchor": "ppt-w2-30",
+          "learningUrl": "optics-waves.html#ppt-w2-30",
+          "learningHeading": "8.3 为什么把电场叫光矢量"
         },
         {
           "source": "W2",
           "pdf_page": 31,
           "topic": "线偏振、平面偏振、振动面",
           "kind": "知识内容",
-          "learning_section": "§8.4"
+          "learning_section": "§8.4",
+          "learningAnchor": "ppt-w2-31",
+          "learningUrl": "optics-waves.html#ppt-w2-31",
+          "learningHeading": "8.4 横波允许偏振自由度"
         },
         {
           "source": "W2",
           "pdf_page": 32,
           "topic": "辐射场、坡印廷矢量与光线",
           "kind": "知识内容",
-          "learning_section": "§9.1"
+          "learning_section": "§9.1",
+          "learningAnchor": "ppt-w2-32",
+          "learningUrl": "optics-waves.html#ppt-w2-32",
+          "learningHeading": "9.1 坡印廷矢量为什么代表能量传播"
         },
         {
           "source": "W2",
           "pdf_page": 33,
           "topic": "平均能流、光强、辐射通量",
           "kind": "知识内容",
-          "learning_section": "§9.2"
+          "learning_section": "§9.2",
+          "learningAnchor": "ppt-w2-33",
+          "learningUrl": "optics-waves.html#ppt-w2-33",
+          "learningHeading": "9.2 从瞬时能流推导平均光强"
         },
         {
           "source": "W2",
           "pdf_page": 34,
           "topic": "两波场幅平方与干涉项",
           "kind": "知识内容",
-          "learning_section": "§6.2、§9.3"
+          "learning_section": "§6.2、§9.3",
+          "learningAnchor": "ppt-w2-34",
+          "learningUrl": "optics-waves.html#ppt-w2-34",
+          "learningHeading": "6.2 同频同方向振动的相量推导"
         },
         {
           "source": "W2",
           "pdf_page": 35,
           "topic": "干涉条件一：平行振动分量",
           "kind": "知识内容",
-          "learning_section": "§9.3—9.4"
+          "learning_section": "§9.3—9.4",
+          "learningAnchor": "ppt-w2-35",
+          "learningUrl": "optics-waves.html#ppt-w2-35",
+          "learningHeading": "9.3 两束光的干涉项从何而来"
         },
         {
           "source": "W2",
           "pdf_page": 36,
           "topic": "干涉条件二：同频与时间平均",
           "kind": "知识内容",
-          "learning_section": "§9.4"
+          "learning_section": "§9.4",
+          "learningAnchor": "ppt-w2-36",
+          "learningUrl": "optics-waves.html#ppt-w2-36",
+          "learningHeading": "9.4 稳定干涉需要的三个条件"
         },
         {
           "source": "W2",
           "pdf_page": 37,
           "topic": "干涉条件三：相位差恒定",
           "kind": "知识内容",
-          "learning_section": "§9.4"
+          "learning_section": "§9.4",
+          "learningAnchor": "ppt-w2-37",
+          "learningUrl": "optics-waves.html#ppt-w2-37",
+          "learningHeading": "9.4 稳定干涉需要的三个条件"
         },
         {
           "source": "W2",
           "pdf_page": 38,
           "topic": "惠更斯及反射折射",
           "kind": "知识内容",
-          "learning_section": "§10.1"
+          "learning_section": "§10.1",
+          "learningAnchor": "ppt-w2-38",
+          "learningUrl": "optics-waves.html#ppt-w2-38",
+          "learningHeading": "10.1 三次认识推进分别解决了什么问题"
         },
         {
           "source": "W2",
           "pdf_page": 39,
           "topic": "牛顿微粒说与直线传播反射折射",
           "kind": "知识内容",
-          "learning_section": "§10.1"
+          "learning_section": "§10.1",
+          "learningAnchor": "ppt-w2-39",
+          "learningUrl": "optics-waves.html#ppt-w2-39",
+          "learningHeading": "10.1 三次认识推进分别解决了什么问题"
         },
         {
           "source": "W2",
           "pdf_page": 40,
           "topic": "杨1801双缝、菲涅耳；以太纵波历史观点",
           "kind": "知识内容",
-          "learning_section": "§10.1"
+          "learning_section": "§10.1",
+          "learningAnchor": "ppt-w2-40",
+          "learningUrl": "optics-waves.html#ppt-w2-40",
+          "learningHeading": "10.1 三次认识推进分别解决了什么问题"
         },
         {
           "source": "W2",
           "pdf_page": 41,
           "topic": "Maxwell电磁统一、赫兹电磁波与光电效应",
           "kind": "知识内容",
-          "learning_section": "§10.1"
+          "learning_section": "§10.1",
+          "learningAnchor": "ppt-w2-41",
+          "learningUrl": "optics-waves.html#ppt-w2-41",
+          "learningHeading": "10.1 三次认识推进分别解决了什么问题"
         },
         {
           "source": "W2",
           "pdf_page": 42,
           "topic": "Planck、Einstein、Compton及光子角动量",
           "kind": "知识内容",
-          "learning_section": "§10.1、§10.3"
+          "learning_section": "§10.1、§10.3",
+          "learningAnchor": "ppt-w2-42",
+          "learningUrl": "optics-waves.html#ppt-w2-42",
+          "learningHeading": "10.1 三次认识推进分别解决了什么问题"
         },
         {
           "source": "W2",
           "pdf_page": 43,
           "topic": "波粒关系与E=hν=ℏω、p=E/c",
           "kind": "知识内容",
-          "learning_section": "§10.3"
+          "learning_section": "§10.3",
+          "learningAnchor": "ppt-w2-43",
+          "learningUrl": "optics-waves.html#ppt-w2-43",
+          "learningHeading": "10.3 波动量与光子量的统一联系"
         },
         {
           "source": "W2",
           "pdf_page": 44,
           "topic": "波粒认识两历史链与h的联系图",
           "kind": "图示内容",
-          "learning_section": "§10.3（关系图回顾）"
+          "learning_section": "§10.3（关系图回顾）",
+          "learningAnchor": "ppt-w2-44",
+          "learningUrl": "optics-waves.html#ppt-w2-44",
+          "learningHeading": "10.3 波动量与光子量的统一联系"
         }
       ]
     },
@@ -452,227 +638,362 @@
         {
           "pdf_page": 1,
           "topic": "章导言",
-          "learning_section": "第1节前的章导言"
+          "learning_section": "第1节前的章导言",
+          "learningAnchor": "ppt-ppt-1",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-1",
+          "learningHeading": "1. 光源、光线、光束与光谱"
         },
         {
           "pdf_page": 2,
           "topic": "章导言",
-          "learning_section": "第1节前的章导言"
+          "learning_section": "第1节前的章导言",
+          "learningAnchor": "ppt-ppt-2",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-2",
+          "learningHeading": "1. 光源、光线、光束与光谱"
         },
         {
           "pdf_page": 3,
           "topic": "光源分类",
-          "learning_section": "1.1"
+          "learning_section": "1.1",
+          "learningAnchor": "ppt-ppt-3",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-3",
+          "learningHeading": "1.1 光源的分类"
         },
         {
           "pdf_page": 4,
           "topic": "光源分类",
-          "learning_section": "1.1"
+          "learning_section": "1.1",
+          "learningAnchor": "ppt-ppt-4",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-4",
+          "learningHeading": "1.1 光源的分类"
         },
         {
           "pdf_page": 5,
           "topic": "光线、波谱和谱形",
-          "learning_section": "1.2"
+          "learning_section": "1.2",
+          "learningAnchor": "ppt-ppt-5",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-5",
+          "learningHeading": "1.2 光线、波谱与不同谱形"
         },
         {
           "pdf_page": 6,
           "topic": "光线、波谱和谱形",
-          "learning_section": "1.2"
+          "learning_section": "1.2",
+          "learningAnchor": "ppt-ppt-6",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-6",
+          "learningHeading": "1.2 光线、波谱与不同谱形"
         },
         {
           "pdf_page": 7,
           "topic": "光线、波谱和谱形",
-          "learning_section": "1.2"
+          "learning_section": "1.2",
+          "learningAnchor": "ppt-ppt-7",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-7",
+          "learningHeading": "1.2 光线、波谱与不同谱形"
         },
         {
           "pdf_page": 8,
           "topic": "光线、波谱和谱形",
-          "learning_section": "1.2"
+          "learning_section": "1.2",
+          "learningAnchor": "ppt-ppt-8",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-8",
+          "learningHeading": "1.2 光线、波谱与不同谱形"
         },
         {
           "pdf_page": 9,
           "topic": "第五章标题",
-          "learning_section": "第2节导言"
+          "learning_section": "第2节导言",
+          "learningAnchor": "ppt-ppt-9",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-9",
+          "learningHeading": "2. 辐射度学与光谱密度"
         },
         {
           "pdf_page": 10,
           "topic": "热辐射与温度",
-          "learning_section": "第2节导言"
+          "learning_section": "第2节导言",
+          "learningAnchor": "ppt-ppt-10",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-10",
+          "learningHeading": "2. 辐射度学与光谱密度"
         },
         {
           "pdf_page": 11,
           "topic": "热辐射与温度",
-          "learning_section": "第2节导言"
+          "learning_section": "第2节导言",
+          "learningAnchor": "ppt-ppt-11",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-11",
+          "learningHeading": "2. 辐射度学与光谱密度"
         },
         {
           "pdf_page": 12,
           "topic": "每波长谱量、总量与吸收率",
-          "learning_section": "2.1"
+          "learning_section": "2.1",
+          "learningAnchor": "ppt-ppt-12",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-12",
+          "learningHeading": "2.1 谱辐射量与单位"
         },
         {
           "pdf_page": 13,
           "topic": "每波长谱量、总量与吸收率",
-          "learning_section": "2.1"
+          "learning_section": "2.1",
+          "learningAnchor": "ppt-ppt-13",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-13",
+          "learningHeading": "2.1 谱辐射量与单位"
         },
         {
           "pdf_page": 14,
           "topic": "每波长谱量、总量与吸收率",
-          "learning_section": "2.1"
+          "learning_section": "2.1",
+          "learningAnchor": "ppt-ppt-14",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-14",
+          "learningHeading": "2.1 谱辐射量与单位"
         },
         {
           "pdf_page": 15,
           "topic": "基尔霍夫定律",
-          "learning_section": "3"
+          "learning_section": "3",
+          "learningAnchor": "ppt-ppt-15",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-15",
+          "learningHeading": "3. 基尔霍夫定律和黑体"
         },
         {
           "pdf_page": 16,
           "topic": "基尔霍夫定律",
-          "learning_section": "3"
+          "learning_section": "3",
+          "learningAnchor": "ppt-ppt-16",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-16",
+          "learningHeading": "3. 基尔霍夫定律和黑体"
         },
         {
           "pdf_page": 17,
           "topic": "黑体、空腔及测量谱图",
-          "learning_section": "3、4.1"
+          "learning_section": "3、4.1",
+          "learningAnchor": "ppt-ppt-17",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-17",
+          "learningHeading": "3. 基尔霍夫定律和黑体"
         },
         {
           "pdf_page": 18,
           "topic": "黑体、空腔及测量谱图",
-          "learning_section": "3、4.1"
+          "learning_section": "3、4.1",
+          "learningAnchor": "ppt-ppt-18",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-18",
+          "learningHeading": "3. 基尔霍夫定律和黑体"
         },
         {
           "pdf_page": 19,
           "topic": "总出射度定律",
-          "learning_section": "4.1；积分补充见4.4"
+          "learning_section": "4.1；积分补充见4.4",
+          "learningAnchor": "ppt-ppt-19",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-19",
+          "learningHeading": "4.1 黑体的总量、谱峰与光谱"
         },
         {
           "pdf_page": 20,
           "topic": "位移定律",
-          "learning_section": "4.1；极值补充见4.5"
+          "learning_section": "4.1；极值补充见4.5",
+          "learningAnchor": "ppt-ppt-20",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-20",
+          "learningHeading": "4.1 黑体的总量、谱峰与光谱"
         },
         {
           "pdf_page": 21,
           "topic": "维恩、瑞利-金斯近似和紫外灾难",
-          "learning_section": "4.3"
+          "learning_section": "4.3",
+          "learningAnchor": "ppt-ppt-21",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-21",
+          "learningHeading": "4.3 两个极限：维恩近似与瑞利-金斯近似"
         },
         {
           "pdf_page": 22,
           "topic": "维恩、瑞利-金斯近似和紫外灾难",
-          "learning_section": "4.3"
+          "learning_section": "4.3",
+          "learningAnchor": "ppt-ppt-22",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-22",
+          "learningHeading": "4.3 两个极限：维恩近似与瑞利-金斯近似"
         },
         {
           "pdf_page": 23,
           "topic": "普朗克每Hz出射度和能量密度",
-          "learning_section": "2.1、4.1；推导补充见4.2"
+          "learning_section": "2.1、4.1；推导补充见4.2",
+          "learningAnchor": "ppt-ppt-23",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-23",
+          "learningHeading": "2.1 谱辐射量与单位"
         },
         {
           "pdf_page": 24,
           "topic": "谱近似与能量子",
-          "learning_section": "4.3、4.2导入"
+          "learning_section": "4.3、4.2导入",
+          "learningAnchor": "ppt-ppt-24",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-24",
+          "learningHeading": "4.3 两个极限：维恩近似与瑞利-金斯近似"
         },
         {
           "pdf_page": 25,
           "topic": "谱近似与能量子",
-          "learning_section": "4.3、4.2导入"
+          "learning_section": "4.3、4.2导入",
+          "learningAnchor": "ppt-ppt-25",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-25",
+          "learningHeading": "4.3 两个极限：维恩近似与瑞利-金斯近似"
         },
         {
           "pdf_page": 26,
           "topic": "热辐射总结图",
-          "learning_section": "2至4；概念汇总见8"
+          "learning_section": "2至4；概念汇总见8",
+          "learningAnchor": "ppt-ppt-26",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-26",
+          "learningHeading": "2. 辐射度学与光谱密度"
         },
         {
           "pdf_page": 27,
           "topic": "运动电荷场线、加速和推迟传播",
-          "learning_section": "5.1"
+          "learning_section": "5.1",
+          "learningAnchor": "ppt-ppt-27",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-27",
+          "learningHeading": "5.1 加速过程与辐射场"
         },
         {
           "pdf_page": 28,
           "topic": "运动电荷场线、加速和推迟传播",
-          "learning_section": "5.1"
+          "learning_section": "5.1",
+          "learningAnchor": "ppt-ppt-28",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-28",
+          "learningHeading": "5.1 加速过程与辐射场"
         },
         {
           "pdf_page": 29,
           "topic": "运动电荷场线、加速和推迟传播",
-          "learning_section": "5.1"
+          "learning_section": "5.1",
+          "learningAnchor": "ppt-ppt-29",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-29",
+          "learningHeading": "5.1 加速过程与辐射场"
         },
         {
           "pdf_page": 30,
           "topic": "运动电荷场线、加速和推迟传播",
-          "learning_section": "5.1"
+          "learning_section": "5.1",
+          "learningAnchor": "ppt-ppt-30",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-30",
+          "learningHeading": "5.1 加速过程与辐射场"
         },
         {
           "pdf_page": 31,
           "topic": "电偶极辐射远场及应用",
-          "learning_section": "5.2"
+          "learning_section": "5.2",
+          "learningAnchor": "ppt-ppt-31",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-31",
+          "learningHeading": "5.2 从推迟矢势到电偶极远场"
         },
         {
           "pdf_page": 32,
           "topic": "电偶极辐射远场及应用",
-          "learning_section": "5.2"
+          "learning_section": "5.2",
+          "learningAnchor": "ppt-ppt-32",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-32",
+          "learningHeading": "5.2 从推迟矢势到电偶极远场"
         },
         {
           "pdf_page": 33,
           "topic": "同步辐射、特点、光源和天体实例",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-33",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-33",
+          "learningHeading": "5.5 同步辐射"
         },
         {
           "pdf_page": 34,
           "topic": "同步辐射、特点、光源和天体实例",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-34",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-34",
+          "learningHeading": "5.5 同步辐射"
         },
         {
           "pdf_page": 35,
           "topic": "同步辐射、特点、光源和天体实例",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-35",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-35",
+          "learningHeading": "5.5 同步辐射"
         },
         {
           "pdf_page": 36,
           "topic": "同步辐射、特点、光源和天体实例",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-36",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-36",
+          "learningHeading": "5.5 同步辐射"
         },
         {
           "pdf_page": 37,
           "topic": "同步辐射、特点、光源和天体实例",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-37",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-37",
+          "learningHeading": "5.5 同步辐射"
         },
         {
           "pdf_page": 38,
           "topic": "有核模型及经典稳定性矛盾",
-          "learning_section": "6.1"
+          "learning_section": "6.1",
+          "learningAnchor": "ppt-ppt-38",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-38",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 39,
           "topic": "有核模型及经典稳定性矛盾",
-          "learning_section": "6.1"
+          "learning_section": "6.1",
+          "learningAnchor": "ppt-ppt-39",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-39",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 40,
           "topic": "有核模型及经典稳定性矛盾",
-          "learning_section": "6.1"
+          "learning_section": "6.1",
+          "learningAnchor": "ppt-ppt-40",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-40",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 41,
           "topic": "发射/吸收谱和能级图",
-          "learning_section": "6.1、6.3、6.4"
+          "learning_section": "6.1、6.3、6.4",
+          "learningAnchor": "ppt-ppt-41",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-41",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 42,
           "topic": "玻尔定态和能级跃迁",
-          "learning_section": "6.1"
+          "learning_section": "6.1",
+          "learningAnchor": "ppt-ppt-42",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-42",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 43,
           "topic": "玻尔定态和能级跃迁",
-          "learning_section": "6.1"
+          "learning_section": "6.1",
+          "learningAnchor": "ppt-ppt-43",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-43",
+          "learningHeading": "6.1 有核模型为什么还需要量子定态"
         },
         {
           "pdf_page": 44,
           "topic": "氢原子能级及谱系",
-          "learning_section": "6.2"
+          "learning_section": "6.2",
+          "learningAnchor": "ppt-ppt-44",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-44",
+          "learningHeading": "6.2 氢原子谱系：把能级差变成波长"
         },
         {
           "pdf_page": 45,
           "topic": "精细能级、原子分子与固体能带",
-          "learning_section": "6.3"
+          "learning_section": "6.3",
+          "learningAnchor": "ppt-ppt-45",
+          "learningUrl": "optics-incoherent.html#ppt-ppt-45",
+          "learningHeading": "6.3 原子、分子、固体为什么有不同谱形"
         }
       ]
     },
@@ -683,272 +1004,434 @@
         {
           "pdf_page": 1,
           "topic": "第二部分标题",
-          "learning_section": "章导言"
+          "learning_section": "章导言",
+          "learningAnchor": "ppt-ppt-1",
+          "learningUrl": "optics-laser.html#ppt-ppt-1",
+          "learningHeading": "相干辐射与激光"
         },
         {
           "pdf_page": 2,
           "topic": "非相干辐射回顾图",
-          "learning_section": "章导言及02章第2至6节"
+          "learning_section": "章导言及02章第2至6节",
+          "learningAnchor": "ppt-ppt-2",
+          "learningUrl": "optics-laser.html#ppt-ppt-2",
+          "learningHeading": "相干辐射与激光"
         },
         {
           "pdf_page": 3,
           "topic": "第六章标题",
-          "learning_section": "章导言"
+          "learning_section": "章导言",
+          "learningAnchor": "ppt-ppt-3",
+          "learningUrl": "optics-laser.html#ppt-ppt-3",
+          "learningHeading": "相干辐射与激光"
         },
         {
           "pdf_page": 4,
           "topic": "二能级、三过程和Einstein系数",
-          "learning_section": "1.1、1.2主结论"
+          "learning_section": "1.1、1.2主结论",
+          "learningAnchor": "ppt-ppt-4",
+          "learningUrl": "optics-laser.html#ppt-ppt-4",
+          "learningHeading": "1.1 三种跃迁及其速率"
         },
         {
           "pdf_page": 5,
           "topic": "二能级、三过程和Einstein系数",
-          "learning_section": "1.1、1.2主结论"
+          "learning_section": "1.1、1.2主结论",
+          "learningAnchor": "ppt-ppt-5",
+          "learningUrl": "optics-laser.html#ppt-ppt-5",
+          "learningHeading": "1.1 三种跃迁及其速率"
         },
         {
           "pdf_page": 6,
           "topic": "二能级、三过程和Einstein系数",
-          "learning_section": "1.1、1.2主结论"
+          "learning_section": "1.1、1.2主结论",
+          "learningAnchor": "ppt-ppt-6",
+          "learningUrl": "optics-laser.html#ppt-ppt-6",
+          "learningHeading": "1.1 三种跃迁及其速率"
         },
         {
           "pdf_page": 7,
           "topic": "二能级、三过程和Einstein系数",
-          "learning_section": "1.1、1.2主结论"
+          "learning_section": "1.1、1.2主结论",
+          "learningAnchor": "ppt-ppt-7",
+          "learningUrl": "optics-laser.html#ppt-ppt-7",
+          "learningHeading": "1.1 三种跃迁及其速率"
         },
         {
           "pdf_page": 8,
           "topic": "二能级、三过程和Einstein系数",
-          "learning_section": "1.1、1.2主结论"
+          "learning_section": "1.1、1.2主结论",
+          "learningAnchor": "ppt-ppt-8",
+          "learningUrl": "optics-laser.html#ppt-ppt-8",
+          "learningHeading": "1.1 三种跃迁及其速率"
         },
         {
           "pdf_page": 9,
           "topic": "热平衡布居",
-          "learning_section": "2.1"
+          "learning_section": "2.1",
+          "learningAnchor": "ppt-ppt-9",
+          "learningUrl": "optics-laser.html#ppt-ppt-9",
+          "learningHeading": "2.1 热平衡下的能级布居"
         },
         {
           "pdf_page": 10,
           "topic": "寿命、亚稳态与线宽",
-          "learning_section": "2.2、2.3主结论、2.4"
+          "learning_section": "2.2、2.3主结论、2.4",
+          "learningAnchor": "ppt-ppt-10",
+          "learningUrl": "optics-laser.html#ppt-ppt-10",
+          "learningHeading": "2.2 布居寿命与衰减率"
         },
         {
           "pdf_page": 11,
           "topic": "寿命、亚稳态与线宽",
-          "learning_section": "2.2、2.3主结论、2.4"
+          "learning_section": "2.2、2.3主结论、2.4",
+          "learningAnchor": "ppt-ppt-11",
+          "learningUrl": "optics-laser.html#ppt-ppt-11",
+          "learningHeading": "2.2 布居寿命与衰减率"
         },
         {
           "pdf_page": 12,
           "topic": "吸收、放大与激光条件",
-          "learning_section": "3导言、4导言"
+          "learning_section": "3导言、4导言",
+          "learningAnchor": "ppt-ppt-12",
+          "learningUrl": "optics-laser.html#ppt-ppt-12",
+          "learningHeading": "3. 吸收、增益与粒子数反转"
         },
         {
           "pdf_page": 13,
           "topic": "吸收、放大与激光条件",
-          "learning_section": "3导言、4导言"
+          "learning_section": "3导言、4导言",
+          "learningAnchor": "ppt-ppt-13",
+          "learningUrl": "optics-laser.html#ppt-ppt-13",
+          "learningHeading": "3. 吸收、增益与粒子数反转"
         },
         {
           "pdf_page": 14,
           "topic": "反转及三/四能级",
-          "learning_section": "3.1的课件部分"
+          "learning_section": "3.1的课件部分",
+          "learningAnchor": "ppt-ppt-14",
+          "learningUrl": "optics-laser.html#ppt-ppt-14",
+          "learningHeading": "3.1 泵浦饱和与多能级反转"
         },
         {
           "pdf_page": 15,
           "topic": "反馈腔与反复放大",
-          "learning_section": "4导言及激光三要素"
+          "learning_section": "4导言及激光三要素",
+          "learningAnchor": "ppt-ppt-15",
+          "learningUrl": "optics-laser.html#ppt-ppt-15",
+          "learningHeading": "4. 光学谐振腔、阈值与模式"
         },
         {
           "pdf_page": 16,
           "topic": "反馈腔与反复放大",
-          "learning_section": "4导言及激光三要素"
+          "learning_section": "4导言及激光三要素",
+          "learningAnchor": "ppt-ppt-16",
+          "learningUrl": "optics-laser.html#ppt-ppt-16",
+          "learningHeading": "4. 光学谐振腔、阈值与模式"
         },
         {
           "pdf_page": 17,
           "topic": "反馈腔与反复放大",
-          "learning_section": "4导言及激光三要素"
+          "learning_section": "4导言及激光三要素",
+          "learningAnchor": "ppt-ppt-17",
+          "learningUrl": "optics-laser.html#ppt-ppt-17",
+          "learningHeading": "4. 光学谐振腔、阈值与模式"
         },
         {
           "pdf_page": 18,
           "topic": "起振阈值",
-          "learning_section": "4.1"
+          "learning_section": "4.1",
+          "learningAnchor": "ppt-ppt-18",
+          "learningUrl": "optics-laser.html#ppt-ppt-18",
+          "learningHeading": "4.1 往返增益与起振阈值"
         },
         {
           "pdf_page": 19,
           "topic": "纵模、自由光谱范围和可容模数",
-          "learning_section": "4.2主结论、4.3"
+          "learning_section": "4.2主结论、4.3",
+          "learningAnchor": "ppt-ppt-19",
+          "learningUrl": "optics-laser.html#ppt-ppt-19",
+          "learningHeading": "4.2 往返相位与纵模间隔"
         },
         {
           "pdf_page": 20,
           "topic": "横模场形",
-          "learning_section": "4.4"
+          "learning_section": "4.4",
+          "learningAnchor": "ppt-ppt-20",
+          "learningUrl": "optics-laser.html#ppt-ppt-20",
+          "learningHeading": "4.4 衍射和边界决定横模"
         },
         {
           "pdf_page": 21,
           "topic": "LASER名称与组成总结",
-          "learning_section": "4导言及激光三要素"
+          "learning_section": "4导言及激光三要素",
+          "learningAnchor": "ppt-ppt-21",
+          "learningUrl": "optics-laser.html#ppt-ppt-21",
+          "learningHeading": "4. 光学谐振腔、阈值与模式"
         },
         {
           "pdf_page": 22,
           "topic": "方向性",
-          "learning_section": "5.1主结论"
+          "learning_section": "5.1主结论",
+          "learningAnchor": "ppt-ppt-22",
+          "learningUrl": "optics-laser.html#ppt-ppt-22",
+          "learningHeading": "5.1 方向性"
         },
         {
           "pdf_page": 23,
           "topic": "相干性",
-          "learning_section": "5.2"
+          "learning_section": "5.2",
+          "learningAnchor": "ppt-ppt-23",
+          "learningUrl": "optics-laser.html#ppt-ppt-23",
+          "learningHeading": "5.2 时间、空间相干性"
         },
         {
           "pdf_page": 24,
           "topic": "高亮度比较",
-          "learning_section": "5.3"
+          "learning_section": "5.3",
+          "learningAnchor": "ppt-ppt-24",
+          "learningUrl": "optics-laser.html#ppt-ppt-24",
+          "learningHeading": "5.3 辐亮度与功率集中"
         },
         {
           "pdf_page": 25,
           "topic": "短脉冲技术",
-          "learning_section": "5.4的课件部分"
+          "learning_section": "5.4的课件部分",
+          "learningAnchor": "ppt-ppt-25",
+          "learningUrl": "optics-laser.html#ppt-ppt-25",
+          "learningHeading": "5.4 脉冲宽度与频宽"
         },
         {
           "pdf_page": 26,
           "topic": "非线性极化、倍频及历史图",
-          "learning_section": "5.5"
+          "learning_section": "5.5",
+          "learningAnchor": "ppt-ppt-26",
+          "learningUrl": "optics-laser.html#ppt-ppt-26",
+          "learningHeading": "5.5 非线性极化与倍频"
         },
         {
           "pdf_page": 27,
           "topic": "激光性质总结图",
-          "learning_section": "4.4、5.1至5.5"
+          "learning_section": "4.4、5.1至5.5",
+          "learningAnchor": "ppt-ppt-27",
+          "learningUrl": "optics-laser.html#ppt-ppt-27",
+          "learningHeading": "4.4 衍射和边界决定横模"
         },
         {
           "pdf_page": 28,
           "topic": "束缚/自由电子激光和波荡运动",
-          "learning_section": "激光三要素、6导言、6.1"
+          "learning_section": "激光三要素、6导言、6.1",
+          "learningAnchor": "ppt-ppt-28",
+          "learningUrl": "optics-laser.html#ppt-ppt-28",
+          "learningHeading": "6. 自由电子激光的相干放大"
         },
         {
           "pdf_page": 29,
           "topic": "束缚/自由电子激光和波荡运动",
-          "learning_section": "激光三要素、6导言、6.1"
+          "learning_section": "激光三要素、6导言、6.1",
+          "learningAnchor": "ppt-ppt-29",
+          "learningUrl": "optics-laser.html#ppt-ppt-29",
+          "learningHeading": "6. 自由电子激光的相干放大"
         },
         {
           "pdf_page": 30,
           "topic": "束缚/自由电子激光和波荡运动",
-          "learning_section": "激光三要素、6导言、6.1"
+          "learning_section": "激光三要素、6导言、6.1",
+          "learningAnchor": "ppt-ppt-30",
+          "learningUrl": "optics-laser.html#ppt-ppt-30",
+          "learningHeading": "6. 自由电子激光的相干放大"
         },
         {
           "pdf_page": 31,
           "topic": "轴上周期滑移",
-          "learning_section": "6.2轴上式"
+          "learning_section": "6.2轴上式",
+          "learningAnchor": "ppt-ppt-31",
+          "learningUrl": "optics-laser.html#ppt-ppt-31",
+          "learningHeading": "6.2 周期滑移与相干条件"
         },
         {
           "pdf_page": 32,
           "topic": "轴上周期滑移",
-          "learning_section": "6.2轴上式"
+          "learning_section": "6.2轴上式",
+          "learningAnchor": "ppt-ppt-32",
+          "learningUrl": "optics-laser.html#ppt-ppt-32",
+          "learningHeading": "6.2 周期滑移与相干条件"
         },
         {
           "pdf_page": 33,
           "topic": "做功符号与奇次放大",
-          "learning_section": "6.3的课件部分"
+          "learning_section": "6.3的课件部分",
+          "learningAnchor": "ppt-ppt-33",
+          "learningUrl": "optics-laser.html#ppt-ppt-33",
+          "learningHeading": "6.3 共振慢相位与平均做功"
         },
         {
           "pdf_page": 34,
           "topic": "做功符号与奇次放大",
-          "learning_section": "6.3的课件部分"
+          "learning_section": "6.3的课件部分",
+          "learningAnchor": "ppt-ppt-34",
+          "learningUrl": "optics-laser.html#ppt-ppt-34",
+          "learningHeading": "6.3 共振慢相位与平均做功"
         },
         {
           "pdf_page": 35,
           "topic": "做功符号与奇次放大",
-          "learning_section": "6.3的课件部分"
+          "learning_section": "6.3的课件部分",
+          "learningAnchor": "ppt-ppt-35",
+          "learningUrl": "optics-laser.html#ppt-ppt-35",
+          "learningHeading": "6.3 共振慢相位与平均做功"
         },
         {
           "pdf_page": 36,
           "topic": "做功符号与奇次放大",
-          "learning_section": "6.3的课件部分"
+          "learning_section": "6.3的课件部分",
+          "learningAnchor": "ppt-ppt-36",
+          "learningUrl": "optics-laser.html#ppt-ppt-36",
+          "learningHeading": "6.3 共振慢相位与平均做功"
         },
         {
           "pdf_page": 37,
           "topic": "基频共振波长与波荡参数",
-          "learning_section": "6.4主结论"
+          "learning_section": "6.4主结论",
+          "learningAnchor": "ppt-ppt-37",
+          "learningUrl": "optics-laser.html#ppt-ppt-37",
+          "learningHeading": "6.4 平面波荡器的共振波长"
         },
         {
           "pdf_page": 38,
           "topic": "束流相位与微群聚定义",
-          "learning_section": "6.5"
+          "learning_section": "6.5",
+          "learningAnchor": "ppt-ppt-38",
+          "learningUrl": "optics-laser.html#ppt-ppt-38",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 39,
           "topic": "束流相位与微群聚定义",
-          "learning_section": "6.5"
+          "learning_section": "6.5",
+          "learningAnchor": "ppt-ppt-39",
+          "learningUrl": "optics-laser.html#ppt-ppt-39",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 40,
           "topic": "a/b区滑移与群聚图",
-          "learning_section": "6.5及原图"
+          "learning_section": "6.5及原图",
+          "learningAnchor": "ppt-ppt-40",
+          "learningUrl": "optics-laser.html#ppt-ppt-40",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 41,
           "topic": "a/b区滑移与群聚图",
-          "learning_section": "6.5及原图"
+          "learning_section": "6.5及原图",
+          "learningAnchor": "ppt-ppt-41",
+          "learningUrl": "optics-laser.html#ppt-ppt-41",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 42,
           "topic": "a/b区滑移与群聚图",
-          "learning_section": "6.5及原图"
+          "learning_section": "6.5及原图",
+          "learningAnchor": "ppt-ppt-42",
+          "learningUrl": "optics-laser.html#ppt-ppt-42",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 43,
           "topic": "电子束质量和相互作用长度",
-          "learning_section": "6.5"
+          "learning_section": "6.5",
+          "learningAnchor": "ppt-ppt-43",
+          "learningUrl": "optics-laser.html#ppt-ppt-43",
+          "learningHeading": "6.5 微群聚与相干强度"
         },
         {
           "pdf_page": 44,
           "topic": "振荡型FEL",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-44",
+          "learningUrl": "optics-laser.html#ppt-ppt-44",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 45,
           "topic": "SASE",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-45",
+          "learningUrl": "optics-laser.html#ppt-ppt-45",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 46,
           "topic": "自种子",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-46",
+          "learningUrl": "optics-laser.html#ppt-ppt-46",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 47,
           "topic": "外种子",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-47",
+          "learningUrl": "optics-laser.html#ppt-ppt-47",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 48,
           "topic": "HGHG与EEHG",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-48",
+          "learningUrl": "optics-laser.html#ppt-ppt-48",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 49,
           "topic": "HGHG与EEHG",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-49",
+          "learningUrl": "optics-laser.html#ppt-ppt-49",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 50,
           "topic": "级联",
-          "learning_section": "6.6表"
+          "learning_section": "6.6表",
+          "learningAnchor": "ppt-ppt-50",
+          "learningUrl": "optics-laser.html#ppt-ppt-50",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 51,
           "topic": "国内装置与FEL总结",
-          "learning_section": "6.6、6导言"
+          "learning_section": "6.6、6导言",
+          "learningAnchor": "ppt-ppt-51",
+          "learningUrl": "optics-laser.html#ppt-ppt-51",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 52,
           "topic": "国内装置与FEL总结",
-          "learning_section": "6.6、6导言"
+          "learning_section": "6.6、6导言",
+          "learningAnchor": "ppt-ppt-52",
+          "learningUrl": "optics-laser.html#ppt-ppt-52",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 53,
           "topic": "国内装置与FEL总结",
-          "learning_section": "6.6、6导言"
+          "learning_section": "6.6、6导言",
+          "learningAnchor": "ppt-ppt-53",
+          "learningUrl": "optics-laser.html#ppt-ppt-53",
+          "learningHeading": "6.6 反馈、噪声与种子运行模式"
         },
         {
           "pdf_page": 54,
           "topic": "全章光源和辐射机制总结",
-          "learning_section": "章导言、激光三要素、第6节；联系02章"
+          "learning_section": "章导言、激光三要素、第6节；联系02章",
+          "learningAnchor": "ppt-ppt-54",
+          "learningUrl": "optics-laser.html#ppt-ppt-54",
+          "learningHeading": "6. 自由电子激光的相干放大"
         }
       ]
     },
@@ -959,222 +1442,354 @@
         {
           "page": 1,
           "learning_section": "章首主题说明",
-          "topic": "第三部分 光的传输；映射主标题"
+          "topic": "第三部分 光的传输；映射主标题",
+          "learningAnchor": "ppt-ppt-1",
+          "learningUrl": "optics-propagation.html#ppt-ppt-1",
+          "learningHeading": "光的传播与介质响应"
         },
         {
           "page": 2,
           "learning_section": "章首主题说明",
-          "topic": "第七章 光在各向同性介质中的传播；映射主标题"
+          "topic": "第七章 光在各向同性介质中的传播；映射主标题",
+          "learningAnchor": "ppt-ppt-2",
+          "learningUrl": "optics-propagation.html#ppt-ppt-2",
+          "learningHeading": "光的传播与介质响应"
         },
         {
           "page": 3,
           "learning_section": "1、2.1",
-          "topic": "极化、本构关系、线性/各向同性/均匀的含义"
+          "topic": "极化、本构关系、线性/各向同性/均匀的含义",
+          "learningAnchor": "ppt-ppt-3",
+          "learningUrl": "optics-propagation.html#ppt-ppt-3",
+          "learningHeading": "1. 场的表示与介质性质"
         },
         {
           "page": 4,
           "learning_section": "2.1",
-          "topic": "无源均匀介质波动方程，保留条件和结果、略去逐行旋度推导"
+          "topic": "无源均匀介质波动方程，保留条件和结果、略去逐行旋度推导",
+          "learningAnchor": "ppt-ppt-4",
+          "learningUrl": "optics-propagation.html#ppt-ppt-4",
+          "learningHeading": "2.1 本构关系与波动方程"
         },
         {
           "page": 5,
           "learning_section": "2.1、2.3",
-          "topic": "波速、折射率和电磁参数；照度与振幅及跨介质n因子"
+          "topic": "波速、折射率和电磁参数；照度与振幅及跨介质n因子",
+          "learningAnchor": "ppt-ppt-5",
+          "learningUrl": "optics-propagation.html#ppt-ppt-5",
+          "learningHeading": "2.1 本构关系与波动方程"
         },
         {
           "page": 6,
           "learning_section": "2.2",
-          "topic": "简谐波、固定频率、介质波长与波数；负时间因子统一"
+          "topic": "简谐波、固定频率、介质波长与波数；负时间因子统一",
+          "learningAnchor": "ppt-ppt-6",
+          "learningUrl": "optics-propagation.html#ppt-ppt-6",
+          "learningHeading": "2.2 单色波的相位与场方向"
         },
         {
           "page": 7,
           "learning_section": "3.1",
-          "topic": "Lorentz模型、固定正电荷和束缚电子、受迫振动及同频次波"
+          "topic": "Lorentz模型、固定正电荷和束缚电子、受迫振动及同频次波",
+          "learningAnchor": "ppt-ppt-7",
+          "learningUrl": "optics-propagation.html#ppt-ppt-7",
+          "learningHeading": "3.1 受迫阻尼振子模型"
         },
         {
           "page": 8,
           "learning_section": "3.2",
-          "topic": "p=-er、P=Np、相干次波叠加"
+          "topic": "p=-er、P=Np、相干次波叠加",
+          "learningAnchor": "ppt-ppt-8",
+          "learningUrl": "optics-propagation.html#ppt-ppt-8",
+          "learningHeading": "3.2 从位移响应求复极化率"
         },
         {
           "page": 9,
           "learning_section": "3.1",
-          "topic": "电子运动方程、固有频率和阻尼参数"
+          "topic": "电子运动方程、固有频率和阻尼参数",
+          "learningAnchor": "ppt-ppt-9",
+          "learningUrl": "optics-propagation.html#ppt-ppt-9",
+          "learningHeading": "3.1 受迫阻尼振子模型"
         },
         {
           "page": 10,
           "learning_section": "3.2",
-          "topic": "负时间因子下稳态响应分母；用极化率结果代替试探解细推"
+          "topic": "负时间因子下稳态响应分母；用极化率结果代替试探解细推",
+          "learningAnchor": "ppt-ppt-10",
+          "learningUrl": "optics-propagation.html#ppt-ppt-10",
+          "learningHeading": "3.2 从位移响应求复极化率"
         },
         {
           "page": 11,
           "learning_section": "3.2",
-          "topic": "极化率、P与E相位差和热耗散"
+          "topic": "极化率、P与E相位差和热耗散",
+          "learningAnchor": "ppt-ppt-11",
+          "learningUrl": "optics-propagation.html#ppt-ppt-11",
+          "learningHeading": "3.2 从位移响应求复极化率"
         },
         {
           "page": 12,
           "learning_section": "3.2",
-          "topic": "极化率实虚部；无阻尼非共振情形的实响应"
+          "topic": "极化率实虚部；无阻尼非共振情形的实响应",
+          "learningAnchor": "ppt-ppt-12",
+          "learningUrl": "optics-propagation.html#ppt-ppt-12",
+          "learningHeading": "3.2 从位移响应求复极化率"
         },
         {
           "page": 13,
           "learning_section": "3.4、4.1",
-          "topic": "复折射率、平方展开所得两条实数关系"
+          "topic": "复折射率、平方展开所得两条实数关系",
+          "learningAnchor": "ppt-ppt-13",
+          "learningUrl": "optics-propagation.html#ppt-ppt-13",
+          "learningHeading": "3.4 复折射率的实部与虚部"
         },
         {
           "page": 14,
           "learning_section": "3.4、4.1",
-          "topic": "相位/衰减物理意义和随频率变化；纠正空间因子符号"
+          "topic": "相位/衰减物理意义和随频率变化；纠正空间因子符号",
+          "learningAnchor": "ppt-ppt-14",
+          "learningUrl": "optics-propagation.html#ppt-ppt-14",
+          "learningHeading": "3.4 复折射率的实部与虚部"
         },
         {
           "page": 15,
           "learning_section": "3.5",
-          "topic": "低频n>1、高频n<1、共振吸收与忽略阻尼的单共振公式"
+          "topic": "低频n>1、高频n<1、共振吸收与忽略阻尼的单共振公式",
+          "learningAnchor": "ppt-ppt-15",
+          "learningUrl": "optics-propagation.html#ppt-ppt-15",
+          "learningHeading": "3.5 共振两侧的响应与多振子模型"
         },
         {
           "page": 16,
           "learning_section": "3.4",
-          "topic": "弱极化近似n和κ；稀薄气体条件"
+          "topic": "弱极化近似n和κ；稀薄气体条件",
+          "learningAnchor": "ppt-ppt-16",
+          "learningUrl": "optics-propagation.html#ppt-ppt-16",
+          "learningHeading": "3.4 复折射率的实部与虚部"
         },
         {
           "page": 17,
           "learning_section": "3.5",
-          "topic": "多振子求和及经典参数的含义"
+          "topic": "多振子求和及经典参数的含义",
+          "learningAnchor": "ppt-ppt-17",
+          "learningUrl": "optics-propagation.html#ppt-ppt-17",
+          "learningHeading": "3.5 共振两侧的响应与多振子模型"
         },
         {
           "page": 18,
           "learning_section": "3.1",
-          "topic": "经典运动方程条件：电子速度、振幅、电场力主导"
+          "topic": "经典运动方程条件：电子速度、振幅、电场力主导",
+          "learningAnchor": "ppt-ppt-18",
+          "learningUrl": "optics-propagation.html#ppt-ppt-18",
+          "learningHeading": "3.1 受迫阻尼振子模型"
         },
         {
           "page": 19,
           "learning_section": "4.1",
-          "topic": "吸收定义、能量转换、微分吸收律"
+          "topic": "吸收定义、能量转换、微分吸收律",
+          "learningAnchor": "ppt-ppt-19",
+          "learningUrl": "optics-propagation.html#ppt-ppt-19",
+          "learningHeading": "4.1 吸收系数与消光系数"
         },
         {
           "page": 20,
           "learning_section": "4.1",
-          "topic": "Bouguer–Lambert指数律、线性条件、材料数量级与厚度"
+          "topic": "Bouguer–Lambert指数律、线性条件、材料数量级与厚度",
+          "learningAnchor": "ppt-ppt-20",
+          "learningUrl": "optics-propagation.html#ppt-ppt-20",
+          "learningHeading": "4.1 吸收系数与消光系数"
         },
         {
           "page": 21,
           "learning_section": "4.1",
-          "topic": "照度指数翻倍、α=4πκ/λ0"
+          "topic": "照度指数翻倍、α=4πκ/λ0",
+          "learningAnchor": "ppt-ppt-21",
+          "learningUrl": "optics-propagation.html#ppt-ppt-21",
+          "learningHeading": "4.1 吸收系数与消光系数"
         },
         {
           "page": 22,
           "learning_section": "4.2",
-          "topic": "Beer定律、浓度和邻近分子影响条件"
+          "topic": "Beer定律、浓度和邻近分子影响条件",
+          "learningAnchor": "ppt-ppt-22",
+          "learningUrl": "optics-propagation.html#ppt-ppt-22",
+          "learningHeading": "4.2 Beer 定律、透射率和吸光度"
         },
         {
           "page": 23,
           "learning_section": "4.3",
-          "topic": "一般/选择吸收、限定波段、绿色玻璃"
+          "topic": "一般/选择吸收、限定波段、绿色玻璃",
+          "learningAnchor": "ppt-ppt-23",
+          "learningUrl": "optics-propagation.html#ppt-ppt-23",
+          "learningHeading": "4.3 选择吸收、颜色与吸收光谱"
         },
         {
           "page": 24,
           "learning_section": "4.3",
-          "topic": "体色/表面色、反射光含义修正、大气窗口和应用"
+          "topic": "体色/表面色、反射光含义修正、大气窗口和应用",
+          "learningAnchor": "ppt-ppt-24",
+          "learningUrl": "optics-propagation.html#ppt-ppt-24",
+          "learningHeading": "4.3 选择吸收、颜色与吸收光谱"
         },
         {
           "page": 25,
           "learning_section": "4.3",
-          "topic": "连续光源→样品→分光检测；吸收暗线与装置分工"
+          "topic": "连续光源→样品→分光检测；吸收暗线与装置分工",
+          "learningAnchor": "ppt-ppt-25",
+          "learningUrl": "optics-propagation.html#ppt-ppt-25",
+          "learningHeading": "4.3 选择吸收、颜色与吸收光谱"
         },
         {
           "page": 26,
           "learning_section": "4.3",
-          "topic": "连续/发射/吸收光谱图、透过率谷、特征吸收波长识别"
+          "topic": "连续/发射/吸收光谱图、透过率谷、特征吸收波长识别",
+          "learningAnchor": "ppt-ppt-26",
+          "learningUrl": "optics-propagation.html#ppt-ppt-26",
+          "learningHeading": "4.3 选择吸收、颜色与吸收光谱"
         },
         {
           "page": 27,
           "learning_section": "5.1",
-          "topic": "色散定义和相速度差异"
+          "topic": "色散定义和相速度差异",
+          "learningAnchor": "ppt-ppt-27",
+          "learningUrl": "optics-propagation.html#ppt-ppt-27",
+          "learningHeading": "5.1 正常与反常色散的定义"
         },
         {
           "page": 28,
           "learning_section": "5.1",
-          "topic": "色散函数、曲线、导数"
+          "topic": "色散函数、曲线、导数",
+          "learningAnchor": "ppt-ppt-28",
+          "learningUrl": "optics-propagation.html#ppt-ppt-28",
+          "learningHeading": "5.1 正常与反常色散的定义"
         },
         {
           "page": 29,
           "learning_section": "5.2",
-          "topic": "可见透明介质正常曲线、紫端展开、斜率绝对值"
+          "topic": "可见透明介质正常曲线、紫端展开、斜率绝对值",
+          "learningAnchor": "ppt-ppt-29",
+          "learningUrl": "optics-propagation.html#ppt-ppt-29",
+          "learningHeading": "5.2 从 Lorentz 模型推导 Cauchy 公式"
         },
         {
           "page": 30,
           "learning_section": "5.2",
-          "topic": "Cauchy公式、两项近似和色散率"
+          "topic": "Cauchy公式、两项近似和色散率",
+          "learningAnchor": "ppt-ppt-30",
+          "learningUrl": "optics-propagation.html#ppt-ppt-30",
+          "learningHeading": "5.2 从 Lorentz 模型推导 Cauchy 公式"
         },
         {
           "page": 31,
           "learning_section": "5.2",
-          "topic": "远离共振弱阻尼条件、ω/ω0小的展开直觉、略去级数细推"
+          "topic": "远离共振弱阻尼条件、ω/ω0小的展开直觉、略去级数细推",
+          "learningAnchor": "ppt-ppt-31",
+          "learningUrl": "optics-propagation.html#ppt-ppt-31",
+          "learningHeading": "5.2 从 Lorentz 模型推导 Cauchy 公式"
         },
         {
           "page": 32,
           "learning_section": "5.3、5.4",
-          "topic": "石英红外反常色散实验、薄片必要条件"
+          "topic": "石英红外反常色散实验、薄片必要条件",
+          "learningAnchor": "ppt-ppt-32",
+          "learningUrl": "optics-propagation.html#ppt-ppt-32",
+          "learningHeading": "5.3 共振附近的反常色散"
         },
         {
           "page": 33,
           "learning_section": "5.3、5.4",
-          "topic": "吸收带内及附近与Cauchy公式关系、两侧正常区"
+          "topic": "吸收带内及附近与Cauchy公式关系、两侧正常区",
+          "learningAnchor": "ppt-ppt-33",
+          "learningUrl": "optics-propagation.html#ppt-ppt-33",
+          "learningHeading": "5.3 共振附近的反常色散"
         },
         {
           "page": 34,
           "learning_section": "5.4",
-          "topic": "Newton交叉棱镜：两垂直分光方向、弯曲色带和非均匀波长轴"
+          "topic": "Newton交叉棱镜：两垂直分光方向、弯曲色带和非均匀波长轴",
+          "learningAnchor": "ppt-ppt-34",
+          "learningUrl": "optics-propagation.html#ppt-ppt-34",
+          "learningHeading": "5.4 交叉棱镜显示色散曲线"
         },
         {
           "page": 35,
           "learning_section": "5.4",
-          "topic": "Wood钠蒸汽：加热/密度梯度、后续玻璃棱镜、吸收线附近弯折"
+          "topic": "Wood钠蒸汽：加热/密度梯度、后续玻璃棱镜、吸收线附近弯折",
+          "learningAnchor": "ppt-ppt-35",
+          "learningUrl": "optics-propagation.html#ppt-ppt-35",
+          "learningHeading": "5.4 交叉棱镜显示色散曲线"
         },
         {
           "page": 36,
           "learning_section": "6.1",
-          "topic": "各向同性非均匀介质本构及n(r)"
+          "topic": "各向同性非均匀介质本构及n(r)",
+          "learningAnchor": "ppt-ppt-36",
+          "learningUrl": "optics-propagation.html#ppt-ppt-36",
+          "learningHeading": "6.1 介电常数梯度与波动方程"
         },
         {
           "page": 37,
           "learning_section": "6.1",
-          "topic": "非均匀性使波动方程多项；保留div D=0区别，略复杂传播方程"
+          "topic": "非均匀性使波动方程多项；保留div D=0区别，略复杂传播方程",
+          "learningAnchor": "ppt-ppt-37",
+          "learningUrl": "optics-propagation.html#ppt-ppt-37",
+          "learningHeading": "6.1 介电常数梯度与波动方程"
         },
         {
           "page": 38,
           "learning_section": "6.2",
-          "topic": "光程的等效相位定义、nL=ct和积分光程"
+          "topic": "光程的等效相位定义、nL=ct和积分光程",
+          "learningAnchor": "ppt-ppt-38",
+          "learningUrl": "optics-propagation.html#ppt-ppt-38",
+          "learningHeading": "6.2 光程与相位积累"
         },
         {
           "page": 39,
           "learning_section": "6.3",
-          "topic": "Fermat平稳原理及三种含义"
+          "topic": "Fermat平稳原理及三种含义",
+          "learningAnchor": "ppt-ppt-39",
+          "learningUrl": "optics-propagation.html#ppt-ppt-39",
+          "learningHeading": "6.3 光程的驻值与费马原理"
         },
         {
           "page": 40,
           "learning_section": "6.3",
-          "topic": "平面反射、椭圆双焦点、透镜成像等光程图意"
+          "topic": "平面反射、椭圆双焦点、透镜成像等光程图意",
+          "learningAnchor": "ppt-ppt-40",
+          "learningUrl": "optics-propagation.html#ppt-ppt-40",
+          "learningHeading": "6.3 光程的驻值与费马原理"
         },
         {
           "page": 41,
           "learning_section": "6.3",
-          "topic": "真空和各向同性均匀介质直线传播"
+          "topic": "真空和各向同性均匀介质直线传播",
+          "learningAnchor": "ppt-ppt-41",
+          "learningUrl": "optics-propagation.html#ppt-ppt-41",
+          "learningHeading": "6.3 光程的驻值与费马原理"
         },
         {
           "page": 42,
           "learning_section": "6.5",
-          "topic": "冷海逆温、n随高度降低、向下弯和上蜃景；分层模型趋势"
+          "topic": "冷海逆温、n随高度降低、向下弯和上蜃景；分层模型趋势",
+          "learningAnchor": "ppt-ppt-42",
+          "learningUrl": "optics-propagation.html#ppt-ppt-42",
+          "learningHeading": "6.5 折射率梯度与蜃景"
         },
         {
           "page": 43,
           "learning_section": "6.5",
-          "topic": "热地面、n随高度增加、向上弯和下蜃景"
+          "topic": "热地面、n随高度增加、向上弯和下蜃景",
+          "learningAnchor": "ppt-ppt-43",
+          "learningUrl": "optics-propagation.html#ppt-ppt-43",
+          "learningHeading": "6.5 折射率梯度与蜃景"
         },
         {
           "page": 44,
           "learning_section": "6.5",
-          "topic": "实验室透明槽弯曲光迹与标尺视位置变化；不编造配液条件"
+          "topic": "实验室透明槽弯曲光迹与标尺视位置变化；不编造配液条件",
+          "learningAnchor": "ppt-ppt-44",
+          "learningUrl": "optics-propagation.html#ppt-ppt-44",
+          "learningHeading": "6.5 折射率梯度与蜃景"
         }
       ]
     },
@@ -1185,262 +1800,418 @@
         {
           "page": 1,
           "learning_section": "章首主题说明",
-          "topic": "第三部分 光的传输；本节标题与开头的主题定位"
+          "topic": "第三部分 光的传输；本节标题与开头的主题定位",
+          "learningAnchor": "ppt-ppt-1",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-1",
+          "learningHeading": "光的传播II：散射、偏振与波的合成"
         },
         {
           "page": 2,
           "learning_section": "章首主题说明",
-          "topic": "第七章 光在各向同性介质中的传播；本节开头说明前11页复习"
+          "topic": "第七章 光在各向同性介质中的传播；本节开头说明前11页复习",
+          "learningAnchor": "ppt-ppt-2",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-2",
+          "learningHeading": "光的传播II：散射、偏振与波的合成"
         },
         {
           "page": 3,
           "learning_section": "1",
-          "topic": "各向同性非均匀介质定义、位置相关本构"
+          "topic": "各向同性非均匀介质定义、位置相关本构",
+          "learningAnchor": "ppt-ppt-3",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-3",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 4,
           "learning_section": "1",
-          "topic": "div D=0与div E区别、非均匀传播方程的额外项；不背长方程"
+          "topic": "div D=0与div E区别、非均匀传播方程的额外项；不背长方程",
+          "learningAnchor": "ppt-ppt-4",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-4",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 5,
           "learning_section": "1",
-          "topic": "光程定义、相位等效、均匀/积分形式"
+          "topic": "光程定义、相位等效、均匀/积分形式",
+          "learningAnchor": "ppt-ppt-5",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-5",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 6,
           "learning_section": "1",
-          "topic": "Fermat平稳原理及公式、三种含义"
+          "topic": "Fermat平稳原理及公式、三种含义",
+          "learningAnchor": "ppt-ppt-6",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-6",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 7,
           "learning_section": "1",
-          "topic": "平面镜、椭圆反射面双焦点与透镜图的平稳/等光程例子"
+          "topic": "平面镜、椭圆反射面双焦点与透镜图的平稳/等光程例子",
+          "learningAnchor": "ppt-ppt-7",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-7",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 8,
           "learning_section": "1",
-          "topic": "真空/均匀介质直线传播"
+          "topic": "真空/均匀介质直线传播",
+          "learningAnchor": "ppt-ppt-8",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-8",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 9,
           "learning_section": "1",
-          "topic": "冷海逆温、折射率随高度降低、上蜃景与分层模型趋势"
+          "topic": "冷海逆温、折射率随高度降低、上蜃景与分层模型趋势",
+          "learningAnchor": "ppt-ppt-9",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-9",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 10,
           "learning_section": "1",
-          "topic": "热沙漠/路面温度和折射率梯度、下蜃景"
+          "topic": "热沙漠/路面温度和折射率梯度、下蜃景",
+          "learningAnchor": "ppt-ppt-10",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-10",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 11,
           "learning_section": "1",
-          "topic": "实验室透明槽光迹弯折和标尺视位置改变"
+          "topic": "实验室透明槽光迹弯折和标尺视位置改变",
+          "learningAnchor": "ppt-ppt-11",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-11",
+          "learningHeading": "1. 非均匀介质：从光程判断光线怎样走"
         },
         {
           "page": 12,
           "learning_section": "2",
-          "topic": "林间光柱、舞台激光等图片：侧面可见需要光散向观察者"
+          "topic": "林间光柱、舞台激光等图片：侧面可见需要光散向观察者",
+          "learningAnchor": "ppt-ppt-12",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-12",
+          "learningHeading": "2. 光的散射：为什么能从侧面看见光束"
         },
         {
           "page": 13,
           "learning_section": "2",
-          "topic": "散射定义和介质均匀性破坏的条件"
+          "topic": "散射定义和介质均匀性破坏的条件",
+          "learningAnchor": "ppt-ppt-13",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-13",
+          "learningHeading": "2. 光的散射：为什么能从侧面看见光束"
         },
         {
           "page": 14,
           "learning_section": "2",
-          "topic": "Lorentz次波相干叠加：均匀介质非前向相消、不均匀时散射"
+          "topic": "Lorentz次波相干叠加：均匀介质非前向相消、不均匀时散射",
+          "learningAnchor": "ppt-ppt-14",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-14",
+          "learningHeading": "2. 光的散射：为什么能从侧面看见光束"
         },
         {
           "page": 15,
           "learning_section": "2",
-          "topic": "悬浮粒子/廷德尔散射、分子密度涨落散射"
+          "topic": "悬浮粒子/廷德尔散射、分子密度涨落散射",
+          "learningAnchor": "ppt-ppt-15",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-15",
+          "learningHeading": "2. 光的散射：为什么能从侧面看见光束"
         },
         {
           "page": 16,
           "learning_section": "3",
-          "topic": "Rayleigh波长四次方反比；蓝天、红日、信号灯的条件与直觉"
+          "topic": "Rayleigh波长四次方反比；蓝天、红日、信号灯的条件与直觉",
+          "learningAnchor": "ppt-ppt-16",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-16",
+          "learningHeading": "3. Rayleigh 与 Mie：颗粒大小决定波长规律"
         },
         {
           "page": 17,
           "learning_section": "3",
-          "topic": "小球ka参考条件、Mie较大粒子和白云"
+          "topic": "小球ka参考条件、Mie较大粒子和白云",
+          "learningAnchor": "ppt-ppt-17",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-17",
+          "learningHeading": "3. Rayleigh 与 Mie：颗粒大小决定波长规律"
         },
         {
           "page": 18,
           "learning_section": "3",
-          "topic": "按课件夜光云标题说明冰晶散射太阳光"
+          "topic": "按课件夜光云标题说明冰晶散射太阳光",
+          "learningAnchor": "ppt-ppt-18",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-18",
+          "learningHeading": "3. Rayleigh 与 Mie：颗粒大小决定波长规律"
         },
         {
           "page": 19,
           "learning_section": "4",
-          "topic": "吸收/散射共同使直射光指数衰减，α/β定义和条件"
+          "topic": "吸收/散射共同使直射光指数衰减，α/β定义和条件",
+          "learningAnchor": "ppt-ppt-19",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-19",
+          "learningHeading": "4. 散射怎样减弱直射光，怎样改变方向与偏振"
         },
         {
           "page": 20,
           "learning_section": "4",
-          "topic": "表面法线、镜面方向、粗糙度增大导致角分布展宽"
+          "topic": "表面法线、镜面方向、粗糙度增大导致角分布展宽",
+          "learningAnchor": "ppt-ppt-20",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-20",
+          "learningHeading": "4. 散射怎样减弱直射光，怎样改变方向与偏振"
         },
         {
           "page": 21,
           "learning_section": "4",
-          "topic": "偶极散射方向筛选与散射光偏振；自然光90°单次Rayleigh极限"
+          "topic": "偶极散射方向筛选与散射光偏振；自然光90°单次Rayleigh极限",
+          "learningAnchor": "ppt-ppt-21",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-21",
+          "learningHeading": "4. 散射怎样减弱直射光，怎样改变方向与偏振"
         },
         {
           "page": 22,
           "learning_section": "4",
-          "topic": "同频散射与Raman/Compton/Brillouin变频散射分类"
+          "topic": "同频散射与Raman/Compton/Brillouin变频散射分类",
+          "learningAnchor": "ppt-ppt-22",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-22",
+          "learningHeading": "4. 散射怎样减弱直射光，怎样改变方向与偏振"
         },
         {
           "page": 23,
           "learning_section": "5",
-          "topic": "各向异性均匀介质、介电张量/主轴、单轴双轴；纠正不当正负判据"
+          "topic": "各向异性均匀介质、介电张量/主轴、单轴双轴；纠正不当正负判据",
+          "learningAnchor": "ppt-ppt-23",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-23",
+          "learningHeading": "5. 各向异性均匀介质与介电张量"
         },
         {
           "page": 24,
           "learning_section": "5",
-          "topic": "各向异性张量进入本构；传播求解复杂，只保留矩阵含义"
+          "topic": "各向异性张量进入本构；传播求解复杂，只保留矩阵含义",
+          "learningAnchor": "ppt-ppt-24",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-24",
+          "learningHeading": "5. 各向异性均匀介质与介电张量"
         },
         {
           "page": 25,
           "learning_section": "5",
-          "topic": "三类介质的空间/方向依赖与本构形式比较表"
+          "topic": "三类介质的空间/方向依赖与本构形式比较表",
+          "learningAnchor": "ppt-ppt-25",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-25",
+          "learningHeading": "5. 各向异性均匀介质与介电张量"
         },
         {
           "page": 26,
           "learning_section": "5",
-          "topic": "自然原子/自然材料、人工单元/超材料的结构响应"
+          "topic": "自然原子/自然材料、人工单元/超材料的结构响应",
+          "learningAnchor": "ppt-ppt-26",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-26",
+          "learningHeading": "5. 各向异性均匀介质与介电张量"
         },
         {
           "page": 27,
           "learning_section": "5",
-          "topic": "ε/μ四象限材料图、负折射/衰逝、异常折射/隐身示例"
+          "topic": "ε/μ四象限材料图、负折射/衰逝、异常折射/隐身示例",
+          "learningAnchor": "ppt-ppt-27",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-27",
+          "learningHeading": "5. 各向异性均匀介质与介电张量"
         },
         {
           "page": 28,
           "learning_section": "6—11主题入口",
-          "topic": "第八章多束光传播：6.6—6.11按实质内容覆盖"
+          "topic": "第八章多束光传播：6.6—6.11按实质内容覆盖",
+          "learningAnchor": "ppt-ppt-28",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-28",
+          "learningHeading": "6. 同频、同向、同振动方向：相加后仍是同频简谐波"
         },
         {
           "page": 29,
           "learning_section": "6",
-          "topic": "代数合成的振幅/相位结果和条件，纠正三角展开"
+          "topic": "代数合成的振幅/相位结果和条件，纠正三角展开",
+          "learningAnchor": "ppt-ppt-29",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-29",
+          "learningHeading": "6. 同频、同向、同振动方向：相加后仍是同频简谐波"
         },
         {
           "page": 30,
           "learning_section": "6",
-          "topic": "统一负时间因子的复振幅和模平方求振幅"
+          "topic": "统一负时间因子的复振幅和模平方求振幅",
+          "learningAnchor": "ppt-ppt-30",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-30",
+          "learningHeading": "6. 同频、同向、同振动方向：相加后仍是同频简谐波"
         },
         {
           "page": 31,
           "learning_section": "6",
-          "topic": "相量平行四边形及多束首尾相加"
+          "topic": "相量平行四边形及多束首尾相加",
+          "learningAnchor": "ppt-ppt-31",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-31",
+          "learningHeading": "6. 同频、同向、同振动方向：相加后仍是同频简谐波"
         },
         {
           "page": 32,
           "learning_section": "7",
-          "topic": "两等振幅反向光波的驻波条件和积式"
+          "topic": "两等振幅反向光波的驻波条件和积式",
+          "learningAnchor": "ppt-ppt-32",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-32",
+          "learningHeading": "7. 反向传播的两束光：驻波的波节与波腹"
         },
         {
           "page": 33,
           "learning_section": "7",
-          "topic": "波节/波腹定义位置与间距"
+          "topic": "波节/波腹定义位置与间距",
+          "learningAnchor": "ppt-ppt-33",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-33",
+          "learningHeading": "7. 反向传播的两束光：驻波的波节与波腹"
         },
         {
           "page": 34,
           "learning_section": "7",
-          "topic": "绳驻波图片的节点/腹部读图，与光波照片区分"
+          "topic": "绳驻波图片的节点/腹部读图，与光波照片区分",
+          "learningAnchor": "ppt-ppt-34",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-34",
+          "learningHeading": "7. 反向传播的两束光：驻波的波节与波腹"
         },
         {
           "page": 35,
           "learning_section": "8",
-          "topic": "同频同向正交电场、恒定相差、偏振轨迹方程；略消元细推"
+          "topic": "同频同向正交电场、恒定相差、偏振轨迹方程；略消元细推",
+          "learningAnchor": "ppt-ppt-35",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-35",
+          "learningHeading": "8. 正交电场相干合成：线、椭圆与圆偏振"
         },
         {
           "page": 36,
           "learning_section": "8",
-          "topic": "椭圆主轴角、线/正椭圆/圆的条件；圆式右端平方修正"
+          "topic": "椭圆主轴角、线/正椭圆/圆的条件；圆式右端平方修正",
+          "learningAnchor": "ppt-ppt-36",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-36",
+          "learningHeading": "8. 正交电场相干合成：线、椭圆与圆偏振"
         },
         {
           "page": 37,
           "learning_section": "8",
-          "topic": "迎着光看的左右旋、ε=-π/4例、相邻时间点判向"
+          "topic": "迎着光看的左右旋、ε=-π/4例、相邻时间点判向",
+          "learningAnchor": "ppt-ppt-37",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-37",
+          "learningHeading": "8. 正交电场相干合成：线、椭圆与圆偏振"
         },
         {
           "page": 38,
           "learning_section": "9",
-          "topic": "随机波列、自然光方向和相位统计含义"
+          "topic": "随机波列、自然光方向和相位统计含义",
+          "learningAnchor": "ppt-ppt-38",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-38",
+          "learningHeading": "9. 自然光、部分偏振光与偏振图示"
         },
         {
           "page": 39,
           "learning_section": "9",
-          "topic": "任意正交分解I/2、无固定相位、不固定轨迹与瞬时矢量区分"
+          "topic": "任意正交分解I/2、无固定相位、不固定轨迹与瞬时矢量区分",
+          "learningAnchor": "ppt-ppt-39",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-39",
+          "learningHeading": "9. 自然光、部分偏振光与偏振图示"
         },
         {
           "page": 40,
           "learning_section": "9",
-          "topic": "部分线偏振模型、强度极值、P公式及0/1中间极限"
+          "topic": "部分线偏振模型、强度极值、P公式及0/1中间极限",
+          "learningAnchor": "ppt-ppt-40",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-40",
+          "learningHeading": "9. 自然光、部分偏振光与偏振图示"
         },
         {
           "page": 41,
           "learning_section": "9",
-          "topic": "椭圆偏振的相位关系与随机混合的区别、自然光极限"
+          "topic": "椭圆偏振的相位关系与随机混合的区别、自然光极限",
+          "learningAnchor": "ppt-ppt-41",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-41",
+          "learningHeading": "9. 自然光、部分偏振光与偏振图示"
         },
         {
           "page": 42,
           "learning_section": "9",
-          "topic": "侧视短线/圆点、两正交分量与统计强弱图示"
+          "topic": "侧视短线/圆点、两正交分量与统计强弱图示",
+          "learningAnchor": "ppt-ppt-42",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-42",
+          "learningHeading": "9. 自然光、部分偏振光与偏振图示"
         },
         {
           "page": 43,
           "learning_section": "6—9",
-          "topic": "多波合成与各偏振态回顾，对应前述四小节"
+          "topic": "多波合成与各偏振态回顾，对应前述四小节",
+          "learningAnchor": "ppt-ppt-43",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-43",
+          "learningHeading": "6. 同频、同向、同振动方向：相加后仍是同频简谐波"
         },
         {
           "page": 44,
           "learning_section": "10",
-          "topic": "相近频率同振幅同向同振动方向合成的积式"
+          "topic": "相近频率同振幅同向同振动方向合成的积式",
+          "learningAnchor": "ppt-ppt-44",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-44",
+          "learningHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记"
         },
         {
           "page": 45,
           "learning_section": "10",
-          "topic": "平均量、差的一半、快载波与慢包络"
+          "topic": "平均量、差的一半、快载波与慢包络",
+          "learningAnchor": "ppt-ppt-45",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-45",
+          "learningHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记"
         },
         {
           "page": 46,
           "learning_section": "10",
-          "topic": "强度0到4I0与差频；不混有符号场包络频率"
+          "topic": "强度0到4I0与差频；不混有符号场包络频率",
+          "learningAnchor": "ppt-ppt-46",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-46",
+          "learningHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记"
         },
         {
           "page": 47,
           "learning_section": "10",
-          "topic": "光拍图、1955年观测、微小频差测量与探测时间条件"
+          "topic": "光拍图、1955年观测、微小频差测量与探测时间条件",
+          "learningAnchor": "ppt-ppt-47",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-47",
+          "learningHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记"
         },
         {
           "page": 48,
           "learning_section": "11",
-          "topic": "相位速度/等幅包络速度定义和比值"
+          "topic": "相位速度/等幅包络速度定义和比值",
+          "learningAnchor": "ppt-ppt-48",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-48",
+          "learningHeading": "11. 相速度与群速度：跟波峰还是跟包络"
         },
         {
           "page": 49,
           "learning_section": "11",
-          "topic": "无色散相群速相同、有色散内部波峰与包络移动不同"
+          "topic": "无色散相群速相同、有色散内部波峰与包络移动不同",
+          "learningAnchor": "ppt-ppt-49",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-49",
+          "learningHeading": "11. 相速度与群速度：跟波峰还是跟包络"
         },
         {
           "page": 50,
           "learning_section": "11",
-          "topic": "t1/t2图：单色波相位标记与合波包络标记各自位移"
+          "topic": "t1/t2图：单色波相位标记与合波包络标记各自位移",
+          "learningAnchor": "ppt-ppt-50",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-50",
+          "learningHeading": "11. 相速度与群速度：跟波峰还是跟包络"
         },
         {
           "page": 51,
           "learning_section": "11",
-          "topic": "群速度Δω/Δk到导数、vp−λn导数、正常/反常快慢条件"
+          "topic": "群速度Δω/Δk到导数、vp−λn导数、正常/反常快慢条件",
+          "learningAnchor": "ppt-ppt-51",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-51",
+          "learningHeading": "11. 相速度与群速度：跟波峰还是跟包络"
         },
         {
           "page": 52,
           "learning_section": "10—11",
-          "topic": "相近频率合成、光拍和相/群速的回顾"
+          "topic": "相近频率合成、光拍和相/群速的回顾",
+          "learningAnchor": "ppt-ppt-52",
+          "learningUrl": "optics-propagation-ii.html#ppt-ppt-52",
+          "learningHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记"
         }
       ]
     }

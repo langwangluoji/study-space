@@ -42,8 +42,10 @@ jobs:
       - run: pip install -r requirements-checks.txt --extra-index-url https://download.pytorch.org/whl/cpu
       - run: python scripts/verify_insar.py
       - run: python scripts/verify_optics.py
+      - run: python scripts/test_optics_content.py
       - run: npm run check:math
       - run: npx playwright install --with-deps chromium
+      - run: node scripts/check-optics-learning.cjs
       - run: node scripts/check-activity-ui.cjs
       - run: node scripts/check-anatomy-ml-ui.mjs
       - run: node scripts/check-anatomy-integration.mjs

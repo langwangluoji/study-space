@@ -1,0 +1,392 @@
+{
+  "status": "PASS",
+  "base": "http://127.0.0.1:65120/study-space/",
+  "cases": [
+    {
+      "slug": "course-optics",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    },
+    {
+      "slug": "course-optics",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    },
+    {
+      "slug": "course-optics",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    },
+    {
+      "slug": "course-optics",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    },
+    {
+      "slug": "course-optics",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    },
+    {
+      "slug": "course-optics",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-learning",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 0
+    },
+    {
+      "slug": "optics-waves",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 8
+    },
+    {
+      "slug": "optics-incoherent",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 6
+    },
+    {
+      "slug": "optics-laser",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-propagation",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
+      "slug": "optics-propagation-ii",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 9
+    }
+  ],
+  "checks": [
+    "42 responsive/theme layouts",
+    "native derivation toggle and mathematical rendering",
+    "all headings and learning legacy targets outside folds",
+    "384 legacy anchors",
+    "five source deep links"
+  ],
+  "errors": []
+}

@@ -2,6 +2,685 @@
   "source": "PPT excerpts with PDF page captions",
   "figures": [
     {
+      "file": "laser-feedback-p15.png",
+      "bytes": 171164,
+      "sha256": "2c693a84b08703d66ef1f43811dd2f6a12d3a0268730efb6fba303eb01910c9a",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 15,
+      "cropPixels": [
+        570,
+        300,
+        1215,
+        860
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "laser-fel-bunching-p42.png",
+      "bytes": 62849,
+      "sha256": "93caee0d775d8f880c5d3bf4d9e8d14f88767bdffb14e98bdb1005b6d4289399",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 42,
+      "cropPixels": [
+        420,
+        490,
+        1430,
+        965
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "laser-longitudinal-spectrum-p19.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 19,
+      "cropPixels": [
+        320,
+        690,
+        805,
+        955
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-laser.html",
+      "bytes": 39527,
+      "sha256": "8ba423072f28bba14130a6483215172313722a26b22b2a28aa86a3774f8d43ff"
+    },
+    {
+      "file": "laser-roundtrip-intensity-p18.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 18,
+      "cropPixels": [
+        550,
+        245,
+        1025,
+        555
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-laser.html",
+      "bytes": 5573,
+      "sha256": "c4271898c1f25a64c2ff6f4d57183bbabfddf5ccba5d4484913f482d099d5688"
+    },
+    {
+      "file": "laser-stimulated-transition-p07.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 7,
+      "cropPixels": [
+        180,
+        150,
+        1500,
+        470
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-laser.html",
+      "bytes": 37370,
+      "sha256": "40ac2a2989c1e3b794845c03956ae5eb8345fb39dc5bf6d532d67be80b21eb2c"
+    },
+    {
+      "file": "laser-three-four-levels-p14.png",
+      "bytes": 97174,
+      "sha256": "a5ad874a65970f97d99ca7a27128471cb6266165e606868408a1984e1d91f397",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        285,
+        485,
+        1605,
+        980
+      ],
+      "learningPage": "optics-laser.html"
+    },
+    {
+      "file": "laser-transverse-patterns-p20.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 20,
+      "cropPixels": [
+        700,
+        245,
+        1330,
+        580
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-laser.html",
+      "bytes": 131106,
+      "sha256": "f025254b25183dc4c68585563dad5638a3f2fbc18acb363b244c5a88b8ae70b8"
+    },
+    {
+      "file": "propagation-i-absorption-spectrometer.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 25,
+      "cropPixels": [
+        240,
+        215,
+        1560,
+        990
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 281839,
+      "sha256": "cf605b526df9c25b8f608cdd28ef570bff41310da2c45e0ce134abac9e21b09a",
+      "alt": "吸收光谱装置与连续背景上的吸收暗线",
+      "caption": "图 4-3　原课件 P25：上方依次为连续光源、原子化吸收区、分光系统、检测与显示；下方彩色连续背景中的暗竖线表示选择吸收。",
+      "readingGuide": "沿光的传播方向找样品放在哪里，再在下图找损失的是哪些波长。暗线的位置对应 $\\alpha(\\lambda_0)$ 较大处；其深浅还随样品浓度和路径长度变化。",
+      "box": [
+        240,
+        215,
+        1560,
+        990
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-absorption-spectrum-types.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 26,
+      "cropPixels": [
+        370,
+        580,
+        1500,
+        842
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 62656,
+      "sha256": "ac3e350d3ed2f93ea606a25770164cafbcbea152e4a97cd4825366aa6b068f82",
+      "alt": "红外透射率吸收谷与可见连续背景吸收线",
+      "caption": "图 4-4　原课件 P26：左图为红外透过率 $T\\%$ 曲线，横轴下部是波数 $\\mathrm{cm^{-1}}$，向右减小；右图以 nm 标注波长，展示连续背景中的吸收线。",
+      "readingGuide": "左图纵向下陷才是强吸收，右图是在连续背景上变暗；两图横轴使用不同谱变量。用 $T=e^{-\\alpha L}$ 解释谷深，用峰谷位置识别吸收带，不把横轴数字直接当成同一单位的波长。",
+      "box": [
+        370,
+        580,
+        1500,
+        842
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-anomalous-dispersion-band.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 33,
+      "cropPixels": [
+        130,
+        245,
+        1670,
+        970
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 215553,
+      "sha256": "8d88d8b384b12b8fa0cebf9795302981d6ccdfb6ec285b03b713d5676e0bfd75",
+      "alt": "吸收带及其两侧折射率曲线斜率变化",
+      "caption": "图 4-6　原课件 P33：右图阴影为吸收带，横轴为波长；折射率曲线在带内急变，外侧恢复正常色散趋势。",
+      "readingGuide": "区分代表吸收的谱特征与代表折射率的曲线。正常/反常由折射率的局部斜率判断；阴影吸收带提示需要检查复折射率及近共振近似，不把整条曲线划成同一种色散。",
+      "box": [
+        130,
+        245,
+        1670,
+        970
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-cold-sea-upper-mirage.png",
+      "bytes": 19992,
+      "sha256": "362b3758b428dc3d814afe3e74349844725e7fdd6ea1f61dc52db28a77e5de30",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 42,
+      "cropPixels": [
+        450,
+        740,
+        940,
+        1075
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-i-fermat-path-examples.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 40,
+      "cropPixels": [
+        110,
+        500,
+        1680,
+        975
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 229040,
+      "sha256": "1ad5b9dbf49aa63a593c9860f15eae072f8ebd7fdf0698314298fec9c046e966",
+      "alt": "平面镜反射、椭圆反射面与透镜等光程示意",
+      "caption": "图 4-8　原课件 P40：左图比较固定端点间的反射候选路；中图为椭圆两焦点之间的反射；右图为透镜成像的不同通光路径。",
+      "readingGuide": "沿每条折线或曲线从起点走到终点，再对照 $\\int n\\,ds$。左图用于比较邻近候选路径的驻值；中、右图说明成像可有多条实际路径等光程，费马原理描述的是光程平稳。",
+      "box": [
+        110,
+        500,
+        1680,
+        975
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-hot-ground-lower-mirage.png",
+      "bytes": 20455,
+      "sha256": "592855774bab35b0f5cdc199c0e4efffbb4d447088c17f35c418072515dca499",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 43,
+      "cropPixels": [
+        405,
+        610,
+        940,
+        950
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-i-index-phase-attenuation.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        205,
+        215,
+        1530,
+        985
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 128706,
+      "sha256": "5a4cf10e9a6f43565b12745f604b6ad149f044909a32c90b020e29186a6d39a1",
+      "alt": "复折射率实部和虚部对应相位与衰减的课件公式",
+      "caption": "图 4-2　原课件 P14：上部将介电响应拆成实、虚部，下部比较场振幅与强度的指数。原页用 $\\eta$ 表示本章的 $\\kappa$。",
+      "readingGuide": "观察两个空间指数中衰减项的倍数：强度指数是场振幅的两倍。原页空间行波指数与复折射率符号有混用，本章统一采用 $e^{+ik_0\\widetilde nz-i\\omega t}$，以正文可编辑公式核算正向衰减。",
+      "box": [
+        205,
+        215,
+        1530,
+        985
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-lorentz-electron-model.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 7,
+      "cropPixels": [
+        150,
+        230,
+        1540,
+        975
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 104545,
+      "sha256": "9d9e803dd91239440cc9dc73fd80222fbd8eb09f37603207655ab2d2c3c6aef4",
+      "alt": "固定正电中心附近受光驱动的束缚电子模型",
+      "caption": "图 4-1　原课件 P7：正电中心近似固定，电子在平衡位置附近振动；箭头表示电子位移，下面的入射箭头表示驱动光场。",
+      "readingGuide": "把图中的“电子位移”与 $\\mathbf p=-e\\mathbf r$ 对照。稳态振动频率跟随入射光，回复力则由 $\\omega_0$ 控制；图示的辐射说明电子产生次波，净耗散还要由阻尼及平均做功判定。",
+      "box": [
+        150,
+        230,
+        1540,
+        975
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-i-newton-cross-prisms.png",
+      "bytes": 105635,
+      "sha256": "040b6748eb30b5d4a8369ba479e3dece10d839f53c110c685668d5b6bdea5209",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 34,
+      "cropPixels": [
+        220,
+        260,
+        1180,
+        650
+      ],
+      "learningPage": "optics-propagation.html"
+    },
+    {
+      "file": "propagation-i-normal-dispersion-curves.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 29,
+      "cropPixels": [
+        60,
+        390,
+        660,
+        910
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation.html",
+      "bytes": 197571,
+      "sha256": "2e7b9d03432809a8455ecaf318409a08d6fa2bfa49f66f41181ea9122f31822c",
+      "alt": "几种透明材料折射率随波长下降的正常色散曲线",
+      "caption": "图 4-5　原课件 P29：纵轴为折射率 $n$，横轴为真空波长，单位 Å（$1\\,\\text{Å}=0.1\\,\\mathrm{nm}$）；黄色条标示可见光范围。",
+      "readingGuide": "沿同一材料曲线由左向右看，$n$ 降低，故 $dn/d\\lambda_0<0$。短波端曲线更陡，说明导数绝对值更大；长波端趋平对应负导数趋近零。",
+      "box": [
+        60,
+        390,
+        660,
+        910
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-beat-envelope-intensity.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 47,
+      "cropPixels": [
+        375,
+        270,
+        1230,
+        705
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 53507,
+      "sha256": "54cb51ee87a91292fc5498776e814312214470527b51b04d2da0bdbf0f49a511",
+      "alt": "光拍的快速电场、慢包络和非负强度曲线",
+      "caption": "图 11-8　原课件 P47：上方蓝线是快速合电场，绿线给慢包络边界；下方红线表示平均掉快振动后的强度，谷底落在零线上。",
+      "readingGuide": "把上图每个包络大小峰与下图一个亮峰对齐。场包络正负都能给亮峰，模平方后强度重复频率为 $|\\nu_1-\\nu_2|$；下图横轴可理解为固定位置的时间切片，各曲线共享同一横坐标。",
+      "box": [
+        375,
+        270,
+        1230,
+        705
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-group-phase-displacement.png",
+      "bytes": 152009,
+      "sha256": "0425382cb428ef15a37fb2bb907d54bd3feee698b66e204071f930e51ccefa1e",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 50,
+      "cropPixels": [
+        350,
+        245,
+        1540,
+        1030
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    },
+    {
+      "file": "propagation-ii-mie-cloud-spectrum.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 17,
+      "cropPixels": [
+        175,
+        585,
+        1575,
+        930
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 363256,
+      "sha256": "cacf21bd3a5e9935cb6fa7f0f1bedf33fdb0d3b4605b302049019f58b5f31d6b",
+      "alt": "粒径参数下瑞利区和米氏区及白云照片",
+      "caption": "图 11-2　原课件 P17：左图横轴为粒径参数 $ka$，左侧小粒子区呈 $k^4$ 趋势，较大粒子区曲线发生起伏；右侧为含水滴的白云。",
+      "readingGuide": "先确认横轴是 $ka$，不是可见光波长。固定粒径而改变波长才可将 $k^4$ 换成 $\\lambda^{-4}$；云图强调较大水滴对可见各色的散射差异较小，曲线起伏也说明米氏散射并非严格与波长无关。",
+      "box": [
+        175,
+        585,
+        1575,
+        930
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-natural-light-statistics.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 39,
+      "cropPixels": [
+        315,
+        395,
+        1530,
+        670
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 86140,
+      "sha256": "f5fc02557ed4a174908dee72869cdf7c83a52e13923c4834e1a77274a7cc4dcb",
+      "alt": "自然光的随机振动方向和等强正交分解图",
+      "caption": "图 11-6　原课件 P39：左图多方向箭头表示统计上无优先方向，右图以两个正交方向分解，总平均强度各占 $I/2$。",
+      "readingGuide": "这里的圆形虚线表示方向统计的对称性；圆偏振的圆轨迹则描述固定位置随时间的确定电场端点。相同的等强条件还需结合相位是否稳定来判断偏振态。",
+      "box": [
+        315,
+        395,
+        1530,
+        670
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-partial-polarization-statistics.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 40,
+      "cropPixels": [
+        335,
+        415,
+        1500,
+        765
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 72093,
+      "sha256": "48441fb586732677fd5dfb4adb5cdd7204f6c7730009924d7b6ec8d3059720e3",
+      "alt": "部分偏振光的优先方向和正交极值强度",
+      "caption": "图 11-7　原课件 P40：左图各方向统计强弱有差别，中图标出最强与最弱方向，右式比较相应平均强度的差与和。",
+      "readingGuide": "箭头长短表示优先振动方向的示意，计算用的是强度 $I_{\\max},I_{\\min}$。这幅方向统计图不代表一个确定的偏振椭圆；本节的差比和公式用于自然光加线偏振成分的模型。",
+      "box": [
+        335,
+        415,
+        1500,
+        765
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-polarization-ellipse.png",
+      "bytes": 37779,
+      "sha256": "9f69e66c312344c54a381d4a98dd4bcca0034f0c1ced5dd2e6a3c95e4846b060",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 36,
+      "cropPixels": [
+        330,
+        375,
+        940,
+        720
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    },
+    {
+      "file": "propagation-ii-rope-standing-wave.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 34,
+      "cropPixels": [
+        170,
+        300,
+        1040,
+        765
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 323144,
+      "sha256": "9e9b3563b55f50651db0c63908e9c56580fa68ede92ce18a0a513c720b9581b5",
+      "alt": "绳驻波照片中的固定交点和鼓起区",
+      "caption": "图 11-4　原课件 P34：多时刻绳形叠成驻波照片，两端固定，内部各条曲线共同交会处为波节，鼓起区中心为波腹。",
+      "readingGuide": "对照位置因子 $|2E_0\\cos(kz+\\delta/2)|$：所有时刻共同为零的位置对应余弦零点；某一瞬间整条曲线经过平衡位置，并不使所有位置都变为波节。光驻波采用相同空间结构。",
+      "box": [
+        170,
+        300,
+        1040,
+        765
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "propagation-ii-scattering-polarization-geometry.png",
+      "bytes": 260471,
+      "sha256": "998cb6b58f6f9f786ada48ebb994727da4fd3c02b7d0b91abc8a1b6e0d77c224",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 21,
+      "cropPixels": [
+        446,
+        308,
+        1708,
+        1062
+      ],
+      "learningPage": "optics-propagation-ii.html"
+    },
+    {
+      "file": "propagation-ii-secondary-wave-cancellation.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        275,
+        230,
+        1550,
+        975
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-propagation-ii.html",
+      "bytes": 116068,
+      "sha256": "119ee546230f39ebe9bef18208c0071c7876b88be317d2ce4d411d0b2eb6c6a4",
+      "alt": "均匀与非均匀介质中的次波相干叠加说明",
+      "caption": "图 11-1　原课件 P14：上、下两组文字比较密度均匀与不均匀时，受迫电子次波叠加后保留的传播方向。",
+      "readingGuide": "把“单个电子能辐射”与“整块介质的合场”分开：观察者接收的是所有次波的矢量和。非均匀性使非前向的相消发生改变，因而产生可观察的侧向散射；理想均匀体的表面和边界还需另行处理。",
+      "box": [
+        275,
+        230,
+        1550,
+        975
+      ],
+      "visualChecked": true
+    },
+    {
+      "file": "radiation-blackbody-cavity-p17.png",
+      "bytes": 69500,
+      "sha256": "5c88dee05dbc907a2891b3e3c7ab91c0e4ebadb9e51254389897a10f5d33599b",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 17,
+      "cropPixels": [
+        275,
+        700,
+        840,
+        930
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "radiation-blackbody-spectra-p18.png",
+      "bytes": 91201,
+      "sha256": "f81b6b28b726c1d9cc00f0b7529d3947f2a3790934c7229f790d1bd07bd152f1",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 18,
+      "cropPixels": [
+        245,
+        495,
+        825,
+        930
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "radiation-dipole-wavefronts-p31.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 31,
+      "cropPixels": [
+        185,
+        250,
+        995,
+        890
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-incoherent.html",
+      "bytes": 552341,
+      "sha256": "2d445fa6687894b1bc3e0bd54d68e5596c7011608b6b40926bceff5cefe8c629",
+      "alt": "电偶极子沿竖直轴振荡，场线向外传播，赤道方向辐射最强的环状方向图",
+      "owner": "radiation",
+      "visualCheck": "已查看1800长边原页和裁图联系图，图形、坐标及物种标签完整",
+      "purpose": "偶极子轴向电场线、向外传播的场线和赤道最强的环状方向图",
+      "caption": "图：偶极辐射的空间图像，原课件《光学20260928_非相干辐射》PDF p.31。读图时先看上下正负电荷及竖直红箭头，再看离源向外发展的绿色场线，底部环面给出方向分布。环面沿偶极轴凹至零、赤道鼓起，与 $E_0\\propto\\sin\\theta$、强度 $\\propto\\sin^2\\theta$ 一致。图是示意快照，具体远场幅值采用下方含 $\\epsilon_0$ 的SI公式。",
+      "readGuide": "图：偶极辐射的空间图像，原课件《光学20260928_非相干辐射》PDF p.31。读图时先看上下正负电荷及竖直红箭头，再看离源向外发展的绿色场线，底部环面给出方向分布。环面沿偶极轴凹至零、赤道鼓起，与 $E_0\\propto\\sin\\theta$、强度 $\\propto\\sin^2\\theta$ 一致。图是示意快照，具体远场幅值采用下方含 $\\epsilon_0$ 的SI公式。",
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p31.png"
+    },
+    {
+      "file": "radiation-emission-absorption-p41.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 41,
+      "cropPixels": [
+        425,
+        215,
+        1380,
+        865
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-incoherent.html",
+      "bytes": 267032,
+      "sha256": "345659d5d3099d4d911ed62b26f7729fb0bdda1765a93de0c2f31c719be528ec",
+      "alt": "H、Na、Ne、Hg和H2的发射亮线，与连续太阳光谱上的暗吸收线对照",
+      "owner": "radiation",
+      "visualCheck": "已查看1800长边原页和裁图联系图，图形、坐标及物种标签完整",
+      "purpose": "H、Na、Ne、Hg和H2发射谱与太阳吸收谱",
+      "caption": "图：发射谱与吸收谱，原课件PDF p.41。各横条的横向位置表示光谱颜色，图未给出可用于精确测波长的数值坐标；H、Na、Ne、Hg 的亮线位置各具特征，H₂ 显示更密集的谱结构。底部太阳连续背景上的箭头标出暗吸收线。亮线和暗线都由允许跃迁的能级差定位，对应 $h\\nu=\\Delta E$；是否显亮或显暗还取决于布居、连续背景和观测光路。图中不同物种的亮度未作统一定量标定。",
+      "readGuide": "图：发射谱与吸收谱，原课件PDF p.41。各横条的横向位置表示光谱颜色，图未给出可用于精确测波长的数值坐标；H、Na、Ne、Hg 的亮线位置各具特征，H₂ 显示更密集的谱结构。底部太阳连续背景上的箭头标出暗吸收线。亮线和暗线都由允许跃迁的能级差定位，对应 $h\\nu=\\Delta E$；是否显亮或显暗还取决于布居、连续背景和观测光路。图中不同物种的亮度未作统一定量标定。",
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p41.png"
+    },
+    {
+      "file": "radiation-hydrogen-levels-p44.png",
+      "bytes": 352768,
+      "sha256": "e3f6b02d515a2546101c0996ff1bbd888dc585a7ef77339f68668d78553b3b41",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        420,
+        170,
+        1255,
+        965
+      ],
+      "learningPage": "optics-incoherent.html"
+    },
+    {
+      "file": "radiation-synchrotron-spectra-p34.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 34,
+      "cropPixels": [
+        95,
+        175,
+        1195,
+        955
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-incoherent.html",
+      "bytes": 357607,
+      "sha256": "18a8dadab8a875470f7dc72c6d54c50dd4b0507f0f9c5472ee29a1302be15e42",
+      "alt": "储存环与弯转磁铁、扭摆器、波荡器示意，及光子能量横轴上的谱亮度曲线",
+      "owner": "radiation",
+      "visualCheck": "已查看1800长边原页和裁图联系图，图形、坐标及物种标签完整",
+      "purpose": "弯转磁铁、扭摆器与波荡器的轨迹及光谱亮度对比",
+      "caption": "图：同步辐射的装置与谱形，原课件PDF p.34。左侧彩色磁块使电子轨迹偏转，绿色箭头指向辐射输出；下方角分布图用 $\\beta\\ll1$ 与 $\\beta\\approx1$ 对照前向准直。中图横轴为光子能量（eV）、纵轴为按面积、角度及相对带宽归一的谱亮度，采用对数坐标；弯转磁铁是宽谱背景，波荡器在选定方向出现尖锐谱峰，与周期辐射相干叠加相联系。图中 $N$ 表示辐射周期/单元数，$N^2$ 是满足相干条件时某方向、频率处的峰值增强；总功率还需对角度和频率积分。该纵轴是亮度，和黑体图的 $M_\\lambda$ 具有不同定义与单位。",
+      "readGuide": "图：同步辐射的装置与谱形，原课件PDF p.34。左侧彩色磁块使电子轨迹偏转，绿色箭头指向辐射输出；下方角分布图用 $\\beta\\ll1$ 与 $\\beta\\approx1$ 对照前向准直。中图横轴为光子能量（eV）、纵轴为按面积、角度及相对带宽归一的谱亮度，采用对数坐标；弯转磁铁是宽谱背景，波荡器在选定方向出现尖锐谱峰，与周期辐射相干叠加相联系。图中 $N$ 表示辐射周期/单元数，$N^2$ 是满足相干条件时某方向、频率处的峰值增强；总功率还需对角度和频率积分。该纵轴是亮度，和黑体图的 $M_\\lambda$ 具有不同定义与单位。",
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p34.png"
+    },
+    {
       "file": "wave-w2-p04-phasor.png",
       "bytes": 13924,
       "sha256": "3a461f0b3adc76ea1bcbe4a3a51884e9c9e83983eba2269406994a4b5f1c2bef",
@@ -44,172 +723,159 @@
       "learningPage": "optics-waves.html"
     },
     {
-      "file": "radiation-blackbody-cavity-p17.png",
-      "bytes": 69500,
-      "sha256": "5c88dee05dbc907a2891b3e3c7ab91c0e4ebadb9e51254389897a10f5d33599b",
-      "sourcePdf": "光学20260928_非相干辐射.pdf",
-      "pdfPage": 17,
-      "cropPixels": [
-        275,
-        700,
-        840,
-        930
-      ],
-      "learningPage": "optics-incoherent.html"
-    },
-    {
-      "file": "radiation-blackbody-spectra-p18.png",
-      "bytes": 91201,
-      "sha256": "f81b6b28b726c1d9cc00f0b7529d3947f2a3790934c7229f790d1bd07bd152f1",
-      "sourcePdf": "光学20260928_非相干辐射.pdf",
-      "pdfPage": 18,
+      "file": "waves-selfstudy-w1-p10-translation.png",
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 10,
       "cropPixels": [
         245,
-        495,
-        825,
-        930
+        300,
+        1090,
+        615
       ],
-      "learningPage": "optics-incoherent.html"
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-waves.html",
+      "bytes": 24845,
+      "sha256": "91b88b065537569b036ebf3469e020275430aeae5e2d34f2d4f96a7e40732d44",
+      "owner": "waves",
+      "section": "§1.2",
+      "description": "波峰平移与随动坐标；x′=x-vt",
+      "alt": "实验室坐标与随波移动坐标下的同一个脉冲",
+      "visualChecked": true,
+      "visualCheckNotes": "原PDF页按1800像素长边渲染，先查看原页，再查看裁图联系图；坐标、箭头与公式未截断。",
+      "caption": "图1-1｜W1《光学202609-波动.pdf》，PDF第10页，局部截取。左图横轴 $x$ 上的多条曲线依次向右移，红箭头标明正向传播；右图随动坐标 $x'$ 中峰值始终在原点。两种坐标用 $x=x'+vt$ 联系，所以读取初始波形时使用 $x'=x-vt$。观察的是波峰的轨迹，纵轴的场值保持相同。",
+      "box": [
+        245,
+        300,
+        1090,
+        615
+      ]
     },
     {
-      "file": "radiation-hydrogen-levels-p44.png",
-      "bytes": 352768,
-      "sha256": "e3f6b02d515a2546101c0996ff1bbd888dc585a7ef77339f68668d78553b3b41",
-      "sourcePdf": "光学20260928_非相干辐射.pdf",
-      "pdfPage": 44,
+      "file": "waves-selfstudy-w2-p05-phase.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 5,
       "cropPixels": [
-        420,
-        170,
-        1255,
-        965
+        40,
+        365,
+        920,
+        680
       ],
-      "learningPage": "optics-incoherent.html"
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-waves.html",
+      "bytes": 31966,
+      "sha256": "f4b4e90d5fef0e284101592a3b60fab9258db8221b548e7c661ebef87eb1b760",
+      "owner": "waves",
+      "section": "§2.2",
+      "description": "不同初相位对应空间波形与相量方向",
+      "alt": "不同初相位对应的空间波形与相量方向",
+      "visualChecked": true,
+      "visualCheckNotes": "原PDF页按1800像素长边渲染，先查看原页，再查看裁图联系图；坐标、箭头与公式未截断。",
+      "caption": "图1-2｜W2《光学20260921_波动.pdf》，PDF第5页，局部截取。观察每幅曲线在竖直坐标轴处的值，以及旁边红色相量相对实轴的转角：初相位每增加 $\\pi/2$，同一空间曲线便平移四分之一波长。原页采用正弦及正时间因子，旁边箭头表示其相量约定；换成本章负时间余弦约定时应连同初相位一起换算。这里比较的是各初相位下的空间快照，不是不同波的振幅变化。",
+      "box": [
+        40,
+        365,
+        920,
+        680
+      ]
     },
     {
-      "file": "laser-three-four-levels-p14.png",
-      "bytes": 97174,
-      "sha256": "a5ad874a65970f97d99ca7a27128471cb6266165e606868408a1984e1d91f397",
-      "sourcePdf": "光学20261012_相干辐射(1).pdf",
-      "pdfPage": 14,
+      "file": "waves-selfstudy-w2-p09-wavefront.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 9,
       "cropPixels": [
-        285,
-        485,
-        1605,
+        180,
+        540,
+        640,
         980
       ],
-      "learningPage": "optics-laser.html"
-    },
-    {
-      "file": "laser-feedback-p15.png",
-      "bytes": 171164,
-      "sha256": "2c693a84b08703d66ef1f43811dd2f6a12d3a0268730efb6fba303eb01910c9a",
-      "sourcePdf": "光学20261012_相干辐射(1).pdf",
-      "pdfPage": 15,
-      "cropPixels": [
-        570,
-        300,
-        1215,
-        860
+      "renderSize": [
+        1800,
+        1013
       ],
-      "learningPage": "optics-laser.html"
+      "learningPage": "optics-waves.html",
+      "bytes": 18676,
+      "sha256": "5b0404016350bad357baaae09c93170a7be1044480de80648dfe264c76d15c6b",
+      "owner": "waves",
+      "section": "§4.1",
+      "description": "波矢法线与面内位移点积为零",
+      "alt": "波矢垂直等相位平面的三维几何",
+      "visualChecked": true,
+      "visualCheckNotes": "原PDF页按1800像素长边渲染，先查看原页，再查看裁图联系图；坐标、箭头与公式未截断。",
+      "caption": "图1-3｜W2《光学20260921_波动.pdf》，PDF第9页，局部截取。三条蓝色坐标轴是 $x,y,z$，斜四边形表示一个平面波前；红箭头 $\\mathbf k$ 沿该平面的法线，$P$ 与 $P_0$ 都在面内。连接两点的位移与 $\\mathbf k$ 点积为零，正对应 $\\mathbf k\\cdot(\\mathbf r-\\mathbf r_0)=0$；沿面移动保持相位，沿法线移动改变相位。图中的 $\\alpha,\\beta,\\gamma$ 是方向角，本章正文相同字母用作方向余弦。",
+      "box": [
+        180,
+        540,
+        640,
+        980
+      ]
     },
     {
-      "file": "laser-fel-bunching-p42.png",
-      "bytes": 62849,
-      "sha256": "93caee0d775d8f880c5d3bf4d9e8d14f88767bdffb14e98bdb1005b6d4289399",
-      "sourcePdf": "光学20261012_相干辐射(1).pdf",
-      "pdfPage": 42,
-      "cropPixels": [
-        420,
-        490,
-        1430,
-        965
-      ],
-      "learningPage": "optics-laser.html"
-    },
-    {
-      "file": "propagation-i-newton-cross-prisms.png",
-      "bytes": 105635,
-      "sha256": "040b6748eb30b5d4a8369ba479e3dece10d839f53c110c685668d5b6bdea5209",
-      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "file": "waves-selfstudy-w2-p34-interference.png",
+      "sourcePdf": "光学20260921_波动.pdf",
       "pdfPage": 34,
       "cropPixels": [
-        220,
-        260,
-        1180,
-        650
+        85,
+        145,
+        1700,
+        640
       ],
-      "learningPage": "optics-propagation.html"
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-waves.html",
+      "bytes": 65582,
+      "sha256": "899517ebbe4d72f54e89b3813885defad72acf81b15481fbe5fd3fe6974cffd6",
+      "owner": "waves",
+      "section": "§9.3",
+      "description": "两路场的相位差决定交叉项；排除原页单点零值误判相干性语句",
+      "alt": "两路光到达观察点后形成场平方交叉项",
+      "visualChecked": true,
+      "visualCheckNotes": "原PDF页按1800像素长边渲染，先查看原页，再查看裁图联系图；坐标、箭头与公式未截断。",
+      "caption": "图1-4｜W2《光学20260921_波动.pdf》，PDF第34页，局部截取。右上 $S_1,S_2$ 到 $P$ 的两条线表示两路场在同一观察点相加；红式中的第三项随 $\\varphi_2-\\varphi_1$ 改变，蓝式把场幅平方换成光强。读图时比较第三项与前两项的量纲，并把偏振相同、同频和探测平均条件一并带入。交叉项在某个 $P$ 点为零可由 $\\delta=\\pi/2$ 引起，统计相干性须由场的相位关联判断。",
+      "box": [
+        85,
+        145,
+        1700,
+        640
+      ]
     },
     {
-      "file": "propagation-i-cold-sea-upper-mirage.png",
-      "bytes": 19992,
-      "sha256": "362b3758b428dc3d814afe3e74349844725e7fdd6ea1f61dc52db28a77e5de30",
-      "sourcePdf": "光学20261019_光的传播_I.pdf",
-      "pdfPage": 42,
+      "file": "waves-selfstudy-w2-p37-phase-stability.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 37,
       "cropPixels": [
-        450,
-        740,
-        940,
-        1075
+        390,
+        580,
+        1490,
+        905
       ],
-      "learningPage": "optics-propagation.html"
-    },
-    {
-      "file": "propagation-i-hot-ground-lower-mirage.png",
-      "bytes": 20455,
-      "sha256": "592855774bab35b0f5cdc199c0e4efffbb4d447088c17f35c418072515dca499",
-      "sourcePdf": "光学20261019_光的传播_I.pdf",
-      "pdfPage": 43,
-      "cropPixels": [
-        405,
-        610,
-        940,
-        950
+      "renderSize": [
+        1800,
+        1013
       ],
-      "learningPage": "optics-propagation.html"
-    },
-    {
-      "file": "propagation-ii-scattering-polarization-geometry.png",
-      "bytes": 260471,
-      "sha256": "998cb6b58f6f9f786ada48ebb994727da4fd3c02b7d0b91abc8a1b6e0d77c224",
-      "sourcePdf": "光学20261026光的传播II.pdf",
-      "pdfPage": 21,
-      "cropPixels": [
-        446,
-        308,
-        1708,
-        1062
-      ],
-      "learningPage": "optics-propagation-ii.html"
-    },
-    {
-      "file": "propagation-ii-polarization-ellipse.png",
-      "bytes": 37779,
-      "sha256": "9f69e66c312344c54a381d4a98dd4bcca0034f0c1ced5dd2e6a3c95e4846b060",
-      "sourcePdf": "光学20261026光的传播II.pdf",
-      "pdfPage": 36,
-      "cropPixels": [
-        330,
-        375,
-        940,
-        720
-      ],
-      "learningPage": "optics-propagation-ii.html"
-    },
-    {
-      "file": "propagation-ii-group-phase-displacement.png",
-      "bytes": 152009,
-      "sha256": "0425382cb428ef15a37fb2bb907d54bd3feee698b66e204071f930e51ccefa1e",
-      "sourcePdf": "光学20261026光的传播II.pdf",
-      "pdfPage": 50,
-      "cropPixels": [
-        350,
-        245,
-        1540,
-        1030
-      ],
-      "learningPage": "optics-propagation-ii.html"
+      "learningPage": "optics-waves.html",
+      "bytes": 31928,
+      "sha256": "de8a2299e7db60795c6ba90d17a0781a5ec62336b81b6096f57b85c50bd81733",
+      "owner": "waves",
+      "section": "§9.4",
+      "description": "恒定与快速随机相位差的平均交叉项对比",
+      "alt": "稳定相位差与随机相位差对应的平均干涉项",
+      "visualChecked": true,
+      "visualCheckNotes": "原PDF页按1800像素长边渲染，先查看原页，再查看裁图联系图；坐标、箭头与公式未截断。",
+      "caption": "图1-5｜W2《光学20260921_波动.pdf》，PDF第37页，局部截取。比较下方“固定不变”和“随机变化”两行：前者保留含 $\\cos\\delta$ 的项，后者对应平均交叉项消失。这里“随机变化”取曝光内充分采样、使 $\\langle\\cos\\delta\\rangle=0$ 的情形；缓慢漂移或部分相干时，平均交叉项仍可能保留一部分。原页把照度与光强并列，本文计算按平均电磁能流密度定义 $I$，单位为 W/m²。",
+      "box": [
+        390,
+        580,
+        1490,
+        905
+      ]
     }
   ]
 }

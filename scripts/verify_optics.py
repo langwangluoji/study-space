@@ -97,6 +97,7 @@ for page in pages:
     assert not re.search(r'[A-Z]:[/\\]|tmp/review_build|\[\[|\ufffd',text),page
     assert not re.search(r'\]\(optics-sources\.html\)\.(?:pdf|docx)\)',text),page+' truncated source link'
     assert text.count('$$')%2==0,page
+    assert not re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f]',text),page+' control character in formula/text'
     assert re.search(r'^# ',text,re.M),page
 with zipfile.ZipFile(root/'public'/'optics'/'光学期中复习_Obsidian.zip') as z:
     assert z.testzip() is None
@@ -122,6 +123,37 @@ assert review_sources['scope']=='ppt-only'
 assert len(review_sources['files'])==6 and sum(s['pages'] for s in review_sources['files'])==257
 learning_map=json.loads((root/'optics-learning-source-map.json').read_text(encoding='utf-8'))
 assert learning_map['sourcePages']==257 and len(learning_map['chapters'])==5
+# Source-page coverage is a set of individual pages, not just an aggregate count.
+mapped={}
+from html.parser import HTMLParser
+class LearningDOM(HTMLParser):
+    def __init__(self):super().__init__();self.ids=[];self.depth=0;self.hidden_targets=[];self.hidden_headings=[]
+    def handle_starttag(self,tag,attrs):
+        attrs=dict(attrs)
+        if tag=='details':self.depth+=1
+        if tag=='a' and 'id' in attrs and self.depth:self.hidden_targets.append(attrs['id'])
+        if tag in ('h1','h2','h3','h4','h5','h6') and self.depth:self.hidden_headings.append(attrs.get('id'))
+        if 'id' in attrs:self.ids.append(attrs['id'])
+    def handle_endtag(self,tag):
+        if tag=='details':self.depth-=1
+for chapter in learning_map['chapters']:
+    dom=LearningDOM();dom.feed((root/'docs/.vitepress/dist'/(chapter['chapter']+'.html')).read_text(encoding='utf-8'))
+    assert not dom.hidden_headings,(chapter['chapter'],dom.hidden_headings)
+    assert not dom.hidden_targets,(chapter['chapter'],dom.hidden_targets)
+    for item in chapter['pages']:
+        source=chapter['source']
+        if isinstance(source,list):source=source[0 if item['source']=='W1' else 1]
+        page=item.get('pdf_page',item.get('page'))
+        assert page not in mapped.setdefault(source,set()),(source,page)
+        mapped[source].add(page)
+        assert dom.ids.count(item['learningAnchor'])==1,(chapter['chapter'],page)
+        assert item['learningUrl']==chapter['chapter']+'.html#'+item['learningAnchor']
+for source in review_sources['files']:
+    name=source.get('filename',source.get('file'))
+    assert mapped[name]==set(range(1,source['pages']+1)),name
+for figure in figures:
+    assert all(key in figure for key in ['sourcePdf','pdfPage','cropPixels','learningPage']),figure
+    assert figure['pdfPage'] in mapped[figure['sourcePdf']],figure
 standalone=(root/'public/optics/光学考试复习_概念公式精简版.md').read_text(encoding='utf-8')
 assert not re.search(r'\]\((?!https://|#)[^)]+\.html\)',standalone)
 with zipfile.ZipFile(root/'public/optics/光学PPT复习_Obsidian.zip') as z:
@@ -144,6 +176,8 @@ report={'status':'PASS','checks':checks,'pages':len(pages),'sourcePdfPages':257,
         'legacyOpticsAnchors':sum(map(len,legacy.values())),
         'pptReviewScope':'Six classroom PPT PDFs only, including propagation II; learning notes retain textbook extensions.',
         'learningSourceFigures':len(figures),'learningPptPageMap':257,
+        'individualSourcePageTargets':sum(map(len,mapped.values())),
+        'allLearningTargetsVisible':True,
         'scope':'Numerical checks for learning notes, PPT review source scope, offline links and preserved legacy anchors.'}
 (root/'reports'/'optics-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Optics:',len(checks),'independent numerical checks;',len(pages),'portable pages; ZIP valid.')
