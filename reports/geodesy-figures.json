@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "date": "2026-11-04",
+  "topics": 31,
+  "captionBlocks": 43,
+  "uniqueAssets": 55,
+  "newRedraws": 11,
+  "newSourceCrops": 10,
+  "topicFigures": [
+    {
+      "slug": "geodesy-coordinate-differentials",
+      "title": "坐标微分：方向基与长度标尺",
+      "figures": [
+        "differential-scales.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-coordinate-forward",
+      "title": "正算：由大地经纬高求空间坐标",
+      "figures": [
+        "lab-blh-xyz.svg",
+        "coordinate-meridian.svg",
+        "source-blh-normal.png"
+      ]
+    },
+    {
+      "slug": "geodesy-coordinate-inverse",
+      "title": "反算：由空间坐标找回经纬高",
+      "figures": [
+        "lab-inverse.svg",
+        "inverse-steps.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-curvature",
+      "title": "曲线曲率与子午曲率半径",
+      "figures": [
+        "local-curvature.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-ellipsoid-coordinates",
+      "title": "旋转椭球与三种纬度",
+      "figures": [
+        "anatomy-latitude.svg",
+        "reduced-latitude.png",
+        "geodetic-latitude.png",
+        "geocentric-latitude.png"
+      ]
+    },
+    {
+      "slug": "geodesy-ellipsoid-parameter-change",
+      "title": "椭球参数改变时，同一点的经纬高怎样变化",
+      "figures": [
+        "ellipsoid-change.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-frame-rotation",
+      "title": "坐标旋转：方向余弦、顺序与小角近似",
+      "figures": [
+        "rotation-comparison.svg",
+        "source-euler-zxz.png",
+        "source-euler-xyz.png"
+      ]
+    },
+    {
+      "slug": "geodesy-gauss-derivation",
+      "title": "高斯平均引数的推导",
+      "figures": [
+        "anatomy-midpoint.svg",
+        "S8-gauss-midpoint.png"
+      ]
+    },
+    {
+      "slug": "geodesy-gauss-solution",
+      "title": "大地主题正算与反算",
+      "figures": [
+        "gauss-flow.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-geodesic-equations",
+      "title": "克莱劳定理与微分方程",
+      "figures": [
+        "S7-geodesic-differentials.png"
+      ]
+    },
+    {
+      "slug": "geodesy-geodesic-geometry",
+      "title": "法截弧与大地线",
+      "figures": [
+        "anatomy-geodesic.svg",
+        "S7-relative-sections.png"
+      ]
+    },
+    {
+      "slug": "geodesy-intro-frames",
+      "title": "位置表达与坐标框架",
+      "figures": [
+        "anatomy-frame.svg",
+        "frame-chain.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-intro-gravity",
+      "title": "地球形状与重力场",
+      "figures": [
+        "height-reference.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-intro-models",
+      "title": "研究对象与参考模型",
+      "figures": [
+        "reference-ellipsoid.png",
+        "geoid-ellipsoid.png"
+      ]
+    },
+    {
+      "slug": "geodesy-intro-observations",
+      "title": "空间观测怎样约束位置",
+      "figures": [
+        "station-satellite.png",
+        "vlbi.png",
+        "altimetry.png"
+      ]
+    },
+    {
+      "slug": "geodesy-local-directions",
+      "title": "椭球上的局部方向",
+      "figures": [
+        "local-basis.svg",
+        "lab-blh-xyz.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-local-polar",
+      "title": "站心坐标：从空间基线到方位角与高度角",
+      "figures": [
+        "lab-local-polar.svg",
+        "local-basis.svg",
+        "source-station-neu.png",
+        "source-station-polar.png"
+      ]
+    },
+    {
+      "slug": "geodesy-math",
+      "title": "曲线 曲面与坐标表达",
+      "figures": [
+        "meridian-normal.png"
+      ]
+    },
+    {
+      "slug": "geodesy-metric",
+      "title": "曲面度量 弧长与面积",
+      "figures": [
+        "area-element.png",
+        "anatomy-metric.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-normal-curvature",
+      "title": "法曲率与方向曲率",
+      "figures": [
+        "anatomy-curvature.svg",
+        "normal-sections.png",
+        "local-curvature.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-observation-reduction",
+      "title": "地面方向与边长归算",
+      "figures": [
+        "anatomy-reduction.svg",
+        "S8-direction-reductions.png"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-celestial-frames",
+      "title": "天球与地球参考系：坐标、旋转与转换链",
+      "figures": [
+        "orbit-rotation-chain.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-celestial-sphere",
+      "title": "天球上的方向、赤经与时角",
+      "figures": [
+        "lab-celestial.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-earth-motion",
+      "title": "自转、公转、岁差、章动与极移",
+      "figures": [
+        "earth-motion-reference.svg",
+        "source-earth-spin.png",
+        "source-earth-orbit.png",
+        "source-precession.png",
+        "source-polar-motion-2001-2005.png"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-gravity",
+      "title": "地球形状与引力场：从点质量到球谐展开",
+      "figures": [
+        "spherical-harmonics.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-time-systems",
+      "title": "时间系统：恒星时、太阳时、UT1、TAI、UTC与TT",
+      "figures": [
+        "lab-time.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-orbit-vector-derivative",
+      "title": "旋转坐标系中的矢量导数与速度转换",
+      "figures": [
+        "orbit-rotating-basis.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-parameter-estimation",
+      "title": "从同名点估计七参数，再传播到大地坐标",
+      "figures": [
+        "parameter-estimation-flow.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-pivot-models",
+      "title": "参考点转换与范士模型：中心和旋转轴各管什么",
+      "figures": [
+        "lab-transform-pivot.svg",
+        "source-pivot-two-frames.png"
+      ]
+    },
+    {
+      "slug": "geodesy-seven-parameters",
+      "title": "Bursa–Wolf：平移、旋转与尺度的七参数模型",
+      "figures": [
+        "seven-parameter-vectors.svg"
+      ]
+    },
+    {
+      "slug": "geodesy-spherical-triangles",
+      "title": "球面角超与三角形解算",
+      "figures": [
+        "S8-spherical-lune.png"
+      ]
+    }
+  ]
+}

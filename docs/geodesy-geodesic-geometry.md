@@ -22,6 +22,8 @@ next: {"text":"克莱劳定理与微分方程","link":"/geodesy-geodesic-equatio
 
 <AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=geodesic" title="两端都能法截，途中就一定最直吗？" poster="/geodesy/figures/anatomy-geodesic.svg" />
 
+比较两端法线确定的法截面与沿途切平面内最直的大地线；端点的法截条件并不保证整段测地。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=geodesic)
 
 端点条件只规定一处法截方向。大地线要求笔尖每一处的切向弯曲为零，下一节由这个连续条件推出守恒量。
@@ -29,7 +31,11 @@ next: {"text":"克莱劳定理与微分方程","link":"/geodesy-geodesic-equatio
 
 过椭球上点 $P$ 的法线和另一点 $Q$ 作平面，这个平面与椭球的交线中连接两点的弧段，称为 $P$ 对 $Q$ 的法截弧。交换两点，改用 $Q$ 的法线作截面，就得到相对法截弧。两平面都包含弦 $PQ$，但一般不能同时包含两端法线，因此通常不是同一平面。
 
-<SourceFigure src="/geodesy/figures/S7-relative-sections.png" alt="相对法截弧的两个截面" source="S7 大地线讲义" page="3" printed="插入说明页" note="蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。" />
+<SourceFigure src="/geodesy/figures/S7-relative-sections.png" alt="相对法截弧的两个截面" source="S7 大地线讲义" page="3" printed="插入说明页" note="蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。">
+
+蓝、橙两个截面各包含一端的法线。交换起终点后截面一般改变，正好解释相对法截弧为何通常不重合。 来源：S7 大地线讲义，PDF 文件页3，原页码插入说明页。蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。
+
+</SourceFigure>
 
 旋转椭球上，同子午面的两点，其法线与弦在同一个子午面内。同纬度的两点也有特殊性：令其共同归化纬度为 $u$，则
 

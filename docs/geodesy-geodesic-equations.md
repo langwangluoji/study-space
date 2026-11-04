@@ -68,7 +68,11 @@ L'=\frac{\sin A}{N\cos B},\qquad
 A'=\frac{\tan B\sin A}{N}.}
 $$
 
-<SourceFigure src="/geodesy/figures/S7-geodesic-differentials.png" alt="大地线位移的北向与东向分解" source="S7 大地线讲义" page="9" printed="7" note="图中dA表示沿前进方向的切线方位角变化；公式中的角度均为弧度。" />
+<SourceFigure src="/geodesy/figures/S7-geodesic-differentials.png" alt="大地线位移的北向与东向分解" source="S7 大地线讲义" page="9" printed="7" note="图中dA表示沿前进方向的切线方位角变化；公式中的角度均为弧度。">
+
+将一小段 ds 分到北向与东向，分别读出 ds cos A 和 ds sin A；再除以当地经纬标尺，得到 dB 与 dL。 来源：S7 大地线讲义，PDF 文件页9，原页码7。图中dA表示沿前进方向的切线方位角变化；公式中的角度均为弧度。
+
+</SourceFigure>
 
 把这三个方程代回，既得到 $M^2B'^2+N^2\cos^2B\,L'^2=1$，又得到 $d(N\cos B\sin A)/ds=0$。单位速度与克莱劳守恒可作为数值积分的检查量。极点处 $\cos B=0$，经度与方位角坐标本身奇异，并不意味着曲线断裂；极区计算应换用稳定的坐标或完整大地线算法。
 

@@ -230,7 +230,7 @@ def examples():
     ref=Geodesic.WGS84.Direct(math.degrees(B),math.degrees(L),math.degrees(A),length)
     out={'ellipsoid':'WGS84 explicitly selected, not specified by the source exercise',
          'B2_deg':math.degrees(b),'L2_deg':math.degrees(l),'A21_deg':math.degrees((a+math.pi)%(2*math.pi)),
-         'iterations':it,'iteration_change_arcsec':res*RHO,
+         'iterations':it,'iteration_tolerance_rad':1e-14,'iteration_maximum':100,'iteration_change_arcsec':res*RHO,
          'inverse_S_m':inv[0],'inverse_A12_deg':math.degrees(inv[1]),
          'position_error_vs_GeographicLib_m':Geodesic.WGS84.Inverse(math.degrees(b),math.degrees(l),ref['lat2'],ref['lon2'])['s12']}
     def RA(B,A):

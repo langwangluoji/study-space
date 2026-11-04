@@ -32,7 +32,7 @@ $C_{P\leftarrow R}=C_{P\leftarrow Q}C_{Q\leftarrow R}$，最右侧先作用。
 固定坐标轴，将向量绕 z 轴按右手规则旋转 $\theta$，主动矩阵为
 
 $$
-R_z(\theta)=
+R_z^{\rm act}(\theta)=
 \begin{pmatrix}
 \cos\theta&-\sin\theta&0\\
 \sin\theta&\cos\theta&0\\
@@ -41,11 +41,15 @@ R_z(\theta)=
 $$
 
 若向量不动，而轴转过同一个正角，分量使用
-$R_z(-\theta)=R_z(\theta)^T$。原文附图中的 $C_z$ 对应这一被动约定。不是公式互相矛盾，而是“旋转什么”的定义不同。
+$R_z^{\rm pass}(\theta)=R_z^{\rm act}(-\theta)=[R_z^{\rm act}(\theta)]^T$。原文附图中的 $C_z$ 对应这一被动约定。不是公式互相矛盾，而是“旋转什么”的定义不同。
 
 $\theta=90^\circ$ 时，主动旋转把 $(1,0,0)$ 变为 $(0,1,0)$；轴转动后，同一个固定向量的分量变为 $(0,-1,0)$。下面将两组数值画在公共数值轴上比较，被动图不意味着几何向量真的反向转动。
 
-![向量和坐标架的旋转](../assets/figures/lab-transform-pivot.svg)
+<!-- source-figure: {"src": "/geodesy/figures/rotation-comparison.svg", "alt": "主动旋转与被动坐标变换的对照", "source": "本站绘制", "page": "示意图", "original": true} -->
+![主动旋转与被动坐标变换的对照](../assets/figures/rotation-comparison.svg)
+
+左图只转坐标轴，右图只转向量。主动与被动使用互为转置的矩阵，90°的结果分别检验符号；下方交互中的分量比较沿用同一约定。本站绘制。
+<!-- /source-figure -->
 
 <!-- legacy-lab: rotation -->
 

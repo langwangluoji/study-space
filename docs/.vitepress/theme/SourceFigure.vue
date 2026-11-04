@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue';
 import {withBase} from 'vitepress';
-defineProps({src:{type:String,required:true},alt:{type:String,required:true},source:{type:String,required:true},page:{type:[String,Number],required:true},printed:{type:[String,Number],default:''},original:{type:Boolean,default:false},note:{type:String,default:''}});
+defineProps({src:{type:String,required:true},alt:{type:String,required:true},source:{type:String,required:true},page:{type:[String,Number],default:''},printed:{type:[String,Number],default:''},locator:{type:String,default:''},original:{type:Boolean,default:false},note:{type:String,default:''}});
 const dialog=ref(null);
 function open(){dialog.value?.showModal()}
 function close(){dialog.value?.close()}
@@ -9,10 +9,10 @@ function close(){dialog.value?.close()}
 <template>
   <figure class="source-figure">
     <button class="figure-open" type="button" @click="open" :aria-label="'放大查看：'+alt"><img :src="withBase(src)" :alt="alt" loading="lazy"><span>点击放大</span></button>
-    <figcaption>{{alt}}。来源：{{source}}<template v-if="!original">，PDF 文件页 {{page}}，原页码 {{printed}}</template><template v-else>（示意图）</template>。<span v-if="note">{{note}}</span></figcaption>
+    <figcaption><slot>{{alt}}。来源：{{source}}<template v-if="locator">，{{locator}}</template><template v-else-if="!original">，PDF 文件页 {{page}}<template v-if="printed">，原页码 {{printed}}</template></template><template v-else>（示意图）</template>。<span v-if="note">{{note}}</span></slot></figcaption>
     <dialog ref="dialog" class="figure-dialog" @click="e=>{if(e.target===dialog)close()}">
       <button class="figure-close" type="button" @click="close" aria-label="关闭配图">关闭 ×</button>
-      <p class="figure-pan-hint">大图可左右滑动查看。</p><div class="figure-image-scroll"><img :src="withBase(src)" :alt="alt"></div><p>{{source}}<template v-if="!original"> · 文件页 {{page}} · 原页码 {{printed}}</template><template v-else> · 示意图</template></p>
+      <p class="figure-pan-hint">大图可左右滑动查看。</p><div class="figure-image-scroll"><img :src="withBase(src)" :alt="alt"></div><p>{{source}}<template v-if="locator"> · {{locator}}</template><template v-else-if="!original"> · 文件页 {{page}}<template v-if="printed"> · 原页码 {{printed}}</template></template><template v-else> · 示意图</template></p>
     </dialog>
   </figure>
 </template>

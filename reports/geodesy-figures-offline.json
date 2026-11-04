@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "date": "2026-11-04",
+  "archive": "大地测量自学知识库_20261104.zip",
+  "files": 121,
+  "bytes": 3570045,
+  "sha256": "6e081897c49b3fba450e81262bc1bfc67c79f28158814ffd96dcf29a056ac3af",
+  "crc": "PASS",
+  "byte_equality": "all archived files match canonical vault",
+  "excluded": [
+    "complete PDF/PPTX/DOCX teaching originals",
+    "workspace state",
+    "personal study notes"
+  ]
+}

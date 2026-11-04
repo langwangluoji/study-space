@@ -14,7 +14,7 @@ sources: []
 |---|---|---|
 | 参考椭球 a、f、e² | 长半轴、扁率与第一偏心率平方；$e^2=f(2-f)$ | [椭球参数](geodesy-ellipsoid-coordinates.md) |
 | B、u、Φ | 椭球法线、辅助圆参数、地心向径定义的纬度 | [三种纬度](geodesy-ellipsoid-coordinates.md#%E4%B8%89%E7%A7%8D%E8%A7%92%E5%BA%A6%E6%80%8E%E6%A0%B7%E5%AE%9A%E4%B9%89) |
-| h、H、H^γ | 椭球高、正高、正常高，依附不同参考 | [高度与重力](geodesy-intro-gravity.md) |
+| h、H^O、H^N | 椭球高、正高、正常高，依附不同参考；原坐标讲义的 H 对应本课 h | [高度与重力](geodesy-intro-gravity.md) |
 | M、N | 子午与卯酉方向的法曲率半径，单位m | [曲率](geodesy-curvature.md)、[方向曲率](geodesy-normal-curvature.md) |
 | E、F、G | 第一基本形式系数，取决于选用的参数 | [数学准备](geodesy-math.md#%E5%8F%82%E6%95%B0%E5%B7%AE%E6%80%8E%E6%A0%B7%E5%8F%98%E6%88%90%E9%95%BF%E5%BA%A6) |
 | E、N、U | 东、北、上坐标分量；此处N是长度分量 | [局部坐标](geodesy-local-polar.md) |

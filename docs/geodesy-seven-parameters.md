@@ -10,6 +10,12 @@ next: {"text":"参考点转换与范士模型：中心和旋转轴各管什么",
 
 两个空间框架可能具有不同原点、不同轴向和不同长度尺度。Bursa–Wolf 模型用3个平移、3个旋转和1个尺度，把同一点的两套坐标连接起来。本页对应 S11 第22–24页，采用与课件一致的被动旋转符号。
 
+<SourceFigure src="/geodesy/figures/seven-parameter-vectors.svg" alt="七参数转换的原点与相对向量" source="本站绘制" page="示意图" original>
+
+橙色 t 从目标原点指向源原点；绿色边已旋转、缩放到目标系表达，与 t 相加才得到蓝色目标位置向量。三条边用同一目标基底闭合，不能直接把不同基底下的分量相加。本站绘制。
+
+</SourceFigure>
+
 ## 先写清输入与输出
 
 以 $\mathbf r_s=(X_s,Y_s,Z_s)^T$ 表示源系坐标，$\mathbf r_t$ 表示目标系坐标：
@@ -58,7 +64,7 @@ $$
 
 <details><summary>反向转换与误差项的阶次</summary>
 
-完整相似变换的逆为
+当 $R^TR=I$ 且 $1+\mu\ne0$ 时，完整相似变换的逆为
 
 $$
 \boxed{\mathbf r_s=\frac1{1+\mu}R^T(\mathbf r_t-\mathbf t).}
@@ -72,7 +78,9 @@ R_{\rm inv}=R^T,\quad
 \mathbf t_{\rm inv}=-s_{\rm inv}R^T\mathbf t.
 $$
 
-一阶近似下才可将平移、旋转、尺度分别变号。完整转换应使用上面的逆式。
+若实际使用的是截断阵 $I-[\boldsymbol\varepsilon]_\times$，它并不严格正交，转置只给出相应的一阶逆。完整计算可使用精确旋转，或对实际线性矩阵求逆。
+
+将三个参数组分别变号，还隐含舍去 $\mu\mathbf t$、$[\boldsymbol\varepsilon]_\times\mathbf t$ 等交叉项。例如被动绕 z 转 $1''$、$\mathbf t=(1000,0,0)^T$ m、$\mu=0$，精确逆平移约为 $(-1000,-0.004848,0)^T$ m，直接取 $-\mathbf t$ 会漏掉约4.848 mm。完整转换使用上面的逆式。
 
 小角近似舍去的坐标项约为 $O(\|\mathbf r\|\|\boldsymbol\varepsilon\|^2)$；线性化又舍去 $O(\|\mathbf r\||\mu|\|\boldsymbol\varepsilon\|)$。采用精确 R 时仍需明确旋转轴与顺序；七参数只是参数数量，并未自动确定欧拉角约定。
 

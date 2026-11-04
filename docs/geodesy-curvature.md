@@ -126,7 +126,11 @@ $$
 
 以 $\mathbf r_0+\mathbf n_c/\kappa_0$ 为圆心、$1/\kappa_0$ 为半径，在切向与主法向张成的平面内画圆，它有同样的位置、一阶切向和二阶弯曲项。因此密切圆描述的是局部接触，而不是整条曲线都成为这个圆。下图下半部给出这层关系；上半部的法曲率夹角将在下一专题使用。
 
-<SourceFigure src="/geodesy/figures/local-curvature.svg" alt="主法线、方位角与密切圆的局部关系" source="本站绘制" page="示意图" original />
+<SourceFigure src="/geodesy/figures/local-curvature.svg" alt="主法线、方位角与密切圆的局部关系" source="本站绘制" page="示意图" original>
+
+上半图把曲率向量投到曲面法线，下半图用相同位置、切向和二阶弯曲确定密切圆。先区别曲面法线与曲线主法线，再对应 Meusnier 关系。 来源：本站绘制，本站示意图。
+
+</SourceFigure>
 
 ## 边界与局部意义
 

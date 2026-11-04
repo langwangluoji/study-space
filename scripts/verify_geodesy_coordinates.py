@@ -109,6 +109,14 @@ def main():
     local=np.array([400.,300.,500.]) # NEU
     baseline=qneu@local
     assert np.allclose(qneu.T@baseline,local)
+    # Geometric construction, independent of the coordinate derivative route.
+    up=qenu[:,2]
+    east=np.cross([0.,0.,1.],up); east/=np.linalg.norm(east)
+    north=np.cross(up,east)
+    assert np.allclose(np.column_stack([east,north,up]),qenu,atol=2e-15)
+    finite_height=inverse(r+baseline)[2]-h
+    assert abs(finite_height-500.019639528) < 2e-8
+    assert abs(finite_height-local[2]) > .019
     az=np.arctan2(local[1],local[0]); el=np.arctan2(local[2],np.hypot(*local[:2]))
     om=np.array([1.,2.,3.])*AS
     eps=-qneu@om
@@ -133,11 +141,30 @@ def main():
     obs=ds@truth
     fit,_,rank,_=np.linalg.lstsq(ds,obs,rcond=None)
     assert rank==7 and np.allclose(fit,truth,atol=1e-9)
+    collinear=np.vstack([design(np.array([x,0.,0.]))@scale for x in [0.,1000.,2000.,3000.]])
+    assert np.linalg.matrix_rank(collinear)==6
+    assert np.all(collinear[:,3]==0)  # Rotation around the line is unobservable.
     # Exact order and first-order approximation checks.
     v0=np.array([1.,0.,0.]); ordered=rx(np.pi/2)@rz(np.pi/2)@v0; reverse=rz(np.pi/2)@rx(np.pi/2)@v0
     small=np.array([1,2,3])*AS
     rex=rz(small[2])@ry(small[1])@rx(small[0])
     small_error=np.linalg.norm((rex-(np.eye(3)-cross(small)))@r)
+    # S11 p8 has a plus in cos(beta); its own Rz Ry Rx product requires minus.
+    all_thirty=rz(np.pi/6)@ry(np.pi/6)@rx(np.pi/6)
+    assert np.allclose(np.diag(all_thirty),[.75,.625,.75],atol=2e-15)
+    # A transpose is an exact inverse for the orthogonal R, not for I-[eps]x.
+    exact_rotation=rz(.12)@ry(-.07)@rx(.05)
+    translation=np.array([1000.,-230.,70.]); factor=1.000002
+    target=translation+factor*exact_rotation@r
+    assert np.linalg.norm(exact_rotation.T@(target-translation)/factor-r) < 3e-9
+    linear_rotation=np.eye(3)-cross(np.array([.02,-.03,.01]))
+    assert np.linalg.norm(linear_rotation.T@linear_rotation-np.eye(3)) > .001
+    assert np.linalg.norm(np.linalg.solve(linear_rotation,linear_rotation@r)-r) < 3e-9
+    inverse_translation=-rz(AS).T@np.array([1000.,0.,0.])
+    assert abs(inverse_translation[1]+.004848136811) < 1e-12
+    # Same reference point, zero point-coordinate difference; BW still needs translation.
+    p_test=np.array([A,0.,0.]); t_test=p_test-rz(AS)@p_test
+    assert abs(t_test[1]-30.922604375) < 1e-8
     result=dict(xyz=r.tolist(), inverse_degrees=[*np.rad2deg(back[:2]),back[2]],
         differential_linear=linear.tolist(), differential_exact=exact.tolist(), differential_error_mm=((exact-linear)*1000).tolist(),
         ellipsoid_change_arcsec_m=[elliptic[0]/AS,elliptic[1]/AS,elliptic[2]],
@@ -146,7 +173,11 @@ def main():
         rotation_neu_to_global_arcsec=(eps/AS).tolist(),seven_parameter_shift=(shifted-r).tolist(),
         mb_point=mb.tolist(),mb_2d_point=mb2.tolist(),bw_translation=tbw.tolist(),ls_parameters=fit.tolist(),ls_rank=int(rank),ls_max_residual=float(np.max(np.abs(ds@fit-obs))),
         geodetic_differential_arcsec_m=(geodiff/[AS,AS,1.]).tolist(),geodetic_exact_arcsec_m=(geoexact/[AS,AS,1.]).tolist(),
-        rotation_order=[ordered.tolist(),reverse.tolist()],small_angle_error_mm=float(small_error*1000))
+        rotation_order=[ordered.tolist(),reverse.tolist()],small_angle_error_mm=float(small_error*1000),
+        finite_baseline_height_difference_m=float(finite_height),finite_baseline_U_m=float(local[2]),
+        inverse_translation_example_m=inverse_translation.tolist(),pivot_zero_difference_bw_translation_m=t_test.tolist(),
+        basis_construction='cross product agrees with independently differentiated basis',
+        inverse_matrix_checks='exact orthogonal transpose and truncated-matrix linear solve verified')
     print(json.dumps(result,indent=2,ensure_ascii=False))
 
 

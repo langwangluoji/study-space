@@ -29,6 +29,8 @@ S8 文件页17把距离约分为短距离 $S\le120\,\mathrm{km}$、中距离 $12
 
 <AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=midpoint" title="曲线走到一半，不等于坐标平均" poster="/geodesy/figures/anatomy-midpoint.svg" />
 
+标尺中心沿曲线弧长确定；端点坐标平均产生的点通常与它不同。将图中的对称弧段与泰勒展开的正负半弧长对应。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=midpoint)
 
 不重合的量正是平均引数改正的来源。下面先看二阶偏移怎样进入三次项，再区分“迭代停止”和“路径近似足够准确”。
@@ -52,7 +54,11 @@ $$
 
 因此**弧长中点的坐标 $q_M$ 通常不等于端点坐标的算术平均 $q_m$**。高斯“平均引数”使用后者，必须处理二者差异。$O(S^k)$ 的系数包含相应的曲率半径倒数；在固定、光滑、远离极点的坐标域里理解该阶次，不意味着以米代入后能直接读出误差。
 
-<SourceFigure src="/geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。" />
+<SourceFigure src="/geodesy/figures/S8-gauss-midpoint.png" alt="以弧长中点对称展开两端" source="S8 大地坐标计算讲义" page="20" printed="16" note="图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。">
+
+沿同一条大地线，把中点到两端的弧长分别记作正、负半弧长；对称展开后，偶次项在端点差中抵消。 来源：S8 大地坐标计算讲义，PDF 文件页20，原页码16。图中M为曲线中点；公式中的下标M与曲率半径M不是同一含义。
+
+</SourceFigure>
 
 <details><summary>求导工具：从起点展开，逐次求沿程导数</summary>
 

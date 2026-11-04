@@ -80,6 +80,8 @@ $$
 
 <!-- anatomy-interactive: /anatomy/earth-observation/geodesy.html?mode=curvature | 曲率规为什么必须转一个方向？ | anatomy-curvature.svg -->
 
+曲率规随方位转动，比较该方向的弯曲与两个主方向；把读数与 Euler 方向曲率式中的平方权重对应。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=curvature)
 
 仪器给出两个主方向的半径，但平行圈圆心不在法线上。下面用曲率的法向投影解释N从哪里来。
@@ -88,7 +90,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/normal-sections.png","alt":"子午法截面与卯酉法截面","source":"1椭球面数学性质   课程讲义.pdf","page":"41","printed":"32","note":"图中P是接触点，PT是子午切线，Pn是椭球法线；图内小写n标记法线延伸，不表示本文的单位向量。"} -->
 ![子午法截面与卯酉法截面](../assets/figures/normal-sections.png)
 
-1椭球面数学性质   课程讲义.pdf，文件页 41／原页码 32。图中P是接触点，PT是子午切线，Pn是椭球法线；图内小写n标记法线延伸，不表示本文的单位向量。
+把同一外法线与两个不同切向分别组成截面，再比较截线弯曲；M、N 分别对应子午和卯酉方向。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页41，原页码32。图中P是接触点，PT是子午切线，Pn是椭球法线；图内小写n标记法线延伸，不表示本文的单位向量。
 <!-- /source-figure -->
 
 卯酉法截面包含法线与东向切线，与子午面正交。平行圈在固定 B 下是半径 $r_B=N\cos B$ 的圆，它与卯酉法截线具有同一东向切线，但通常不是同一曲线。
@@ -119,7 +121,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/local-curvature.svg","alt":"Meusnier法向投影与Euler方位角","source":"本站绘制","page":"示意图","original":true} -->
 ![Meusnier法向投影与Euler方位角](../assets/figures/local-curvature.svg)
 
-本站绘制，本站示意图。
+上半图把曲率向量投到曲面法线，下半图用相同位置、切向和二阶弯曲确定密切圆。先区别曲面法线与曲线主法线，再对应 Meusnier 关系。 来源：本站绘制，本站示意图。
 <!-- /source-figure -->
 
 图左只画平行圈主法线与椭球内法线所在的子午面，东向切线垂直图面；夹角是 $|B|$。图右画切平面，A从北向东量起，因此单位切向为 $\cos A\,\mathbf e_N+\sin A\,\mathbf e_E$。两幅图分别说明法向投影和切向方向，不能把两个角当成同一个角。

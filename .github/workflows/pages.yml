@@ -26,6 +26,7 @@ jobs:
       - run: npm run check
       - run: node --test scripts/geodesy-publish.test.mjs scripts/geodesy/model.test.mjs
       - run: node scripts/check-geodesy-content.mjs
+      - run: node scripts/check-geodesy-figures.mjs
       - run: node scripts/check-classroom-model.mjs
       - run: npm run check:anatomy
       - run: node scripts/check-optimization.mjs
@@ -48,6 +49,7 @@ jobs:
       - run: node scripts/check-anatomy-integration.mjs
       - run: node scripts/check-folio-ui.mjs
       - run: node scripts/check-geodesy-ui.mjs
+      - run: node scripts/check-geodesy-figure-ui.mjs
       - run: node scripts/check-ui.cjs
       - run: node scripts/check-remote-resource-navigation.cjs
       - run: node scripts/check-insar-ui.cjs

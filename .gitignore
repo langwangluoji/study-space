@@ -43,3 +43,5 @@ reports/textbook-web-review.txt
 /reports/geodesy-*-run.log
 /reports/geodesy-build.log
 /reports/geodesy-build-error.log
+
+/reports/geodesy-figure-renders/

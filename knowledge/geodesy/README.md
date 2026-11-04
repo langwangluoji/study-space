@@ -20,3 +20,9 @@
 原始资料位于本机 E:/Document/FILE_package/Class/大地测量；详细相对文件名及校验值见 course-sources.json。知识库包含加工后的课程内容和必要图解。
 
 [打开网站](https://langwangluoji.github.io/study-space/course-geodesy.html)
+
+## 配图与坐标转换学习路线
+
+本轮增加11幅重绘图与10幅课件局部图。[配图来源表](data/figure-inventory.md)把图片、来源页和专题连接起来；[裁切记录](data/figure-source-crops.json)保留原图范围和校验值。
+
+学习坐标转换时，可依次阅读“法线脚点与正算—反算法线条件—局部方向—微分标尺—站心投影—七参数与参考点模型”。正文讲清几何步骤，完整求导与课件旋转路线可展开。原讲义的 H 在几何坐标公式中对应本库的椭球高 h；归算页的正常高另记作 H^N。

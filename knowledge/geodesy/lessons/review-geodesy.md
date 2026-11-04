@@ -25,7 +25,7 @@ sources: []
 | 大地线方程 | $dB/ds=\cos A/M$；$dL/ds=\sin A/(N\cos B)$；$dA/ds=\sin A\tan B/N$ | 前进方位角沿程变化；近极区经度坐标有奇异性 |
 | 克莱劳关系 | $N\cos B\sin A=C$ | 旋转曲面大地线守恒量；不是所有地表曲线都成立 |
 | 球面角超 | $E=\alpha+\beta+\gamma-\pi$，$F=R^2E$ | 球面三角形，角超用弧度；球面不是椭球面的精确替代 |
-| 高程区别 | $h\simeq H^\gamma+\zeta$（正常高），$h\simeq H+N_g$（正高） | $\zeta$ 是高程异常；$N_g$ 为大地水准面差距，避免与卯酉半径 $N$ 混名 |
+| 高程区别 | $h\simeq H^{N}+\zeta$（正常高），$h\simeq H^{O}+N_g$（正高） | $\zeta$ 是高程异常；$N_g$ 为大地水准面差距，避免与卯酉半径 $N$ 混名 |
 
 推导入口：[坐标与纬度](geodesy-ellipsoid-coordinates.md) · [局部基](geodesy-local-directions.md) · [曲率](geodesy-normal-curvature.md) · [度量](geodesy-metric.md) · [大地线方程](geodesy-geodesic-equations.md)。
 
@@ -33,7 +33,7 @@ sources: []
 
 **坐标与局部长度。** 写明椭球和高程类型 → 算 $M,N$ → 把角度换成弧度 → 分别用南北、东西系数。WGS84 在 $B=45°$、$h=0$ 时，$u\approx44.9037878494°$、$\Phi\approx44.8075767840°$；三者都对应同一测站。
 
-**斜距归算。** 在[球面短边模型](geodesy-observation-reduction.md#%E7%94%A8%E4%B8%80%E4%B8%AA%E7%9F%AD%E8%A7%82%E6%B5%8B%E6%A3%80%E9%AA%8C%E5%BD%92%E7%AE%97%E6%96%B9%E5%90%91)中，先取 $q=\sqrt{D^2-(H_2-H_1)^2}$，再取 $d=q/\sqrt{(1+H_1/R)(1+H_2/R)}$，最后 $S=2R\arcsin[d/(2R)]$。$D=1000$ m、$H_1=H_2=100$ m、$R=6371000$ m 时，$q=1000$ m、$d\approx999.984304$ m、弦转弧约 $1.027\,\mu$m。高程归算与弦弧改正不能相互替代。
+**斜距归算。** 在[球面短边模型](geodesy-observation-reduction.md#%E7%94%A8%E4%B8%80%E4%B8%AA%E7%9F%AD%E8%A7%82%E6%B5%8B%E6%A3%80%E9%AA%8C%E5%BD%92%E7%AE%97%E6%96%B9%E5%90%91)中，先取 $q=\sqrt{D^2-(h_2-h_1)^2}$，再取 $d=q/\sqrt{(1+h_1/R)(1+h_2/R)}$，最后 $S=2R\arcsin[d/(2R)]$。$D=1000$ m、$h_1=h_2=100$ m、$R=6371000$ m 时，$q=1000$ m、$d\approx999.984304$ m、弦转弧约 $1.027\,\mu$m。高程归算与弦弧改正不能相互替代。
 
 **高斯正反算。** 先统一终点方位角约定 → 用两端关系初始化 → 求中点引数并迭代 → 用 atan2 处理象限 → 正算回代检查终点。[推导](geodesy-gauss-derivation.md)中的实际中点值 $q_M$ 与端点算术平均 $q_m$ 相差 $O(S^2)$，进入距离项后可造成更高阶改正。迭代残差很小只说明方程迭代收敛，不能证明截断模型的真实端点误差很小。高纬、长距离须用独立椭球解回验；不背“所有情况毫米级”的结论。
 

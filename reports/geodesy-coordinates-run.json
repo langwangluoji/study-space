@@ -99,5 +99,19 @@
       0.0
     ]
   ],
-  "small_angle_error_mm": 0.9111498835489618
+  "small_angle_error_mm": 0.9111498835489618,
+  "finite_baseline_height_difference_m": 500.0196395281851,
+  "finite_baseline_U_m": 500.0,
+  "inverse_translation_example_m": [
+    -999.9999999882477,
+    -0.004848136811076368,
+    0.0
+  ],
+  "pivot_zero_difference_bw_translation_m": [
+    7.49584287405014e-05,
+    30.922604374563786,
+    0.0
+  ],
+  "basis_construction": "cross product agrees with independently differentiated basis",
+  "inverse_matrix_checks": "exact orthogonal transpose and truncated-matrix linear solve verified"
 }

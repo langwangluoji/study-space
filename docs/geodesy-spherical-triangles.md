@@ -30,7 +30,11 @@ dF=R^2\sin\vartheta\,d\vartheta\,d\lambda,\qquad
 F_\theta=R^2\int_0^\theta\int_0^\pi\sin\vartheta\,d\vartheta\,d\lambda=2R^2\theta.
 $$
 
-<SourceFigure src="/geodesy/figures/S8-spherical-lune.png" alt="半大圆围成的完整球面月形" source="S8 大地坐标计算讲义" page="13" printed="插入说明页" note="θ是弧度；积分中的余纬覆盖0到π，不能只取前半球的投影面积。" />
+<SourceFigure src="/geodesy/figures/S8-spherical-lune.png" alt="半大圆围成的完整球面月形" source="S8 大地坐标计算讲义" page="13" printed="插入说明页" note="θ是弧度；积分中的余纬覆盖0到π，不能只取前半球的投影面积。">
+
+两条半大圆围成完整月形，沿余纬从0到π累加；月形面积与夹角成正比，再用于推导三角形角超。 来源：S8 大地坐标计算讲义，PDF 文件页13，原页码插入说明页。θ是弧度；积分中的余纬覆盖0到π，不能只取前半球的投影面积。
+
+</SourceFigure>
 
 令三角形顶点为 $P,Q,T$，对跖点为 $P',Q',T'$。由三个大圆划分的球面区域成对对跖；记原三角形面积为 $F$，相邻三个区域 $P'QT,PQ'T,PQT'$ 的面积为 $F_P,F_Q,F_T$。对跖区域面积相等，所以
 

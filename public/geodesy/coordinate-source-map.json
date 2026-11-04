@@ -30,7 +30,7 @@
         {"page": 5, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "Z-X-Z同名轴夹角与矩阵对角元素"},
         {"page": 6, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "X-Y-Z逐步旋转几何路线"},
         {"page": 7, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "Rz Ry Rx连乘与作用次序"},
-        {"page": 8, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "X-Y-Z同名轴夹角关系"},
+        {"page": 8, "status": "covered-with-correction", "topics": ["geodesy-frame-rotation"], "content": "X-Y-Z同名轴夹角关系", "correction": "被动Rz Ry Rx约定下cos(beta)三重正弦交叉项应为负号；原页为正号。完整矩阵R22及三个角均30度的数值0.625确认。"},
         {"page": 9, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "小角近似与一阶旋转模型"},
         {"page": 10, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "九元素的六个正交约束"},
         {"page": 11, "status": "covered", "topics": ["geodesy-frame-rotation"], "content": "三自由度与直接求旋转矩阵"},

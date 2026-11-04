@@ -130,7 +130,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/local-curvature.svg","alt":"主法线、方位角与密切圆的局部关系","source":"本站绘制","page":"示意图","original":true} -->
 ![主法线、方位角与密切圆的局部关系](../assets/figures/local-curvature.svg)
 
-本站绘制，本站示意图。
+上半图把曲率向量投到曲面法线，下半图用相同位置、切向和二阶弯曲确定密切圆。先区别曲面法线与曲线主法线，再对应 Meusnier 关系。 来源：本站绘制，本站示意图。
 <!-- /source-figure -->
 
 ## 边界与局部意义

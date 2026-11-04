@@ -17,7 +17,11 @@ next: {"text":"地球形状与重力场","link":"/geodesy-intro-gravity"}
 
 一颗卫星和一个地面站的位置都在同一框架、同一观测时刻表达时，它们的差就是由测站指向卫星的向量。距离、方向和距离变化率，都是这个向量的不同属性。原绪论文件页 6–20 用多种仪器说明空间观测，本专题先建立共同的几何关系，再解释典型观测。
 
-<SourceFigure src="/geodesy/figures/station-satellite.png" alt="测站与卫星的地心位置向量" source="大地测量 绪论(1).pdf" page="6" printed="22" />
+<SourceFigure src="/geodesy/figures/station-satellite.png" alt="测站与卫星的地心位置向量" source="大地测量 绪论(1).pdf" page="6" printed="22">
+
+地心到卫星的位置向量减去地心到测站的位置向量，才是测站指向卫星的视线。把三根向量对应到后续站心转换。 来源：大地测量 绪论(1).pdf，PDF 文件页6，原页码22。
+
+</SourceFigure>
 
 ## 站星向量与距离变化率
 
@@ -98,7 +102,11 @@ c\tau=(-\mathbf s)\cdot\mathbf b,\qquad
 \tau=-\frac{\mathbf b\cdot\mathbf s}{c}.
 $$
 
-<SourceFigure src="/geodesy/figures/vlbi.png" alt="平面电磁波到达两座射电望远镜的时差" source="大地测量 绪论(1).pdf" page="11" printed="27" />
+<SourceFigure src="/geodesy/figures/vlbi.png" alt="平面电磁波到达两座射电望远镜的时差" source="大地测量 绪论(1).pdf" page="11" printed="27">
+
+同一波前先后到达两站，传播路程差等于基线沿波传播方向的投影；再除以光速得到时延。 来源：大地测量 绪论(1).pdf，PDF 文件页11，原页码27。
+
+</SourceFigure>
 
 负号来自刚才定义的传播方向和到达时间差顺序，改换约定时符号也会改变。已知射电源方向，多个方向的时差观测便能约束基线，而不是单纯得到两个站之间的距离。精密 VLBI 还需要钟差、大气和相对论等模型。
 
@@ -110,7 +118,11 @@ $$
 h_{\mathrm{sea}}\approx h_{\mathrm{sat}}-R_{\mathrm{alt}}.
 $$
 
-<SourceFigure src="/geodesy/figures/altimetry.png" alt="卫星轨道高度与海面测距的关系" source="大地测量 绪论(1).pdf" page="13" printed="29" note="红色文字是原课件批注；本文用 R_alt 表示测距，避免与高程符号混淆。" />
+<SourceFigure src="/geodesy/figures/altimetry.png" alt="卫星轨道高度与海面测距的关系" source="大地测量 绪论(1).pdf" page="13" printed="29" note="红色文字是原课件批注；本文用 R_alt 表示测距，避免与高程符号混淆。">
+
+轨道定位给出卫星相对椭球的位置，雷达给出卫星到海面的距离，两者结合得到海面椭球高。 来源：大地测量 绪论(1).pdf，PDF 文件页13，原页码29。红色文字是原课件批注；本文用 R_alt 表示测距，避免与高程符号混淆。
+
+</SourceFigure>
 
 原图的 $h'$ 对应卫星高度，$H$ 对应测距。离天底、海况和传播改正等因素使实际解算比简单相减更复杂。由此也可以看出：轨道高度误差会进入海面高度结果，测高仪的距离精度不能单独代表海面成果精度。
 

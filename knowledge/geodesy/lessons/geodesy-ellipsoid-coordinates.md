@@ -50,6 +50,8 @@ $$
 
 <!-- anatomy-interactive: /anatomy/earth-observation/geodesy.html?mode=latitude | 同一个测站，三只纬度刻度 | anatomy-latitude.svg -->
 
+同一个椭球面点分别用法线、地心向径和辅助圆定义纬度；拖动时比较三根方向，不把三个角当成同一个量。本站绘制，扁率放大。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=latitude)
 
 三只刻度没有在测三个点。下面分别写出同一点的p、Z，再用坐标相等推出角度关系；完整推导仍保留。
@@ -85,7 +87,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/reduced-latitude.png","alt":"椭圆与辅助圆定义归化纬度","source":"1椭球面数学性质   课程讲义.pdf","page":"13","printed":"12"} -->
 ![椭圆与辅助圆定义归化纬度](../assets/figures/reduced-latitude.png)
 
-1椭球面数学性质   课程讲义.pdf，文件页 13／原页码 12。
+把椭圆点与辅助圆上的同横坐标点对应起来，辅助圆的半径方向定义归化纬度 u；u 的用途是简化椭圆参数式。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页13，原页码12。
 <!-- /source-figure -->
 
 原图用 $M$ 表示本文的椭球面点 $P$，用 $M′$ 表示辅助圆点 $P′$。图中的 $X$ 方向对应本子午面内的水平距离 $p$；竖直线表示两点具有相同的水平坐标。
@@ -153,7 +155,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/geodetic-latitude.png","alt":"子午椭圆的切线与大地纬度","source":"1椭球面数学性质   课程讲义.pdf","page":"14","printed":"13"} -->
 ![子午椭圆的切线与大地纬度](../assets/figures/geodetic-latitude.png)
 
-1椭球面数学性质   课程讲义.pdf，文件页 14／原页码 13。
+B 由椭圆法线与赤道面确定。先找切线，再看垂直于切线的法线，便能核对切线斜率与 B 的关系。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页14，原页码13。
 <!-- /source-figure -->
 
 原图的 $M_0$ 对应本文点 $P$，$K_0M_0$ 所在线给出法线方向，$M_0T$ 是切线。$K_0$ 不是地心 $O$，所以图中的法线角 $B$ 不应读成向径 $OP$ 的角度。
@@ -407,7 +409,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/geocentric-latitude.png","alt":"地心向径与地心纬度","source":"1椭球面数学性质   课程讲义.pdf","page":"25","printed":"24"} -->
 ![地心向径与地心纬度](../assets/figures/geocentric-latitude.png)
 
-1椭球面数学性质   课程讲义.pdf，文件页 25／原页码 24。
+角 Φ 沿地心到椭球面点的向径量取，B 则沿法线量取；本图讨论椭球面点，高度为零。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页25，原页码24。
 <!-- /source-figure -->
 
 原图的 $M_0$ 对应本文点 $P$，$OM_0$ 是地心向径；这里的角 $\Phi$ 从赤道方向量起，与前图的法线角 $B$ 使用不同的量角对象。

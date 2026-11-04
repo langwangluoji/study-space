@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "topicPages": 31,
+  "imageCases": [
+    {
+      "slug": "geodesy-coordinate-differentials",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-coordinate-forward",
+      "images": 2,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-coordinate-inverse",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-curvature",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-ellipsoid-coordinates",
+      "images": 3,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-ellipsoid-parameter-change",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-frame-rotation",
+      "images": 3,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-gauss-derivation",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-gauss-solution",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-geodesic-equations",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-geodesic-geometry",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-intro-frames",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-intro-gravity",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-intro-models",
+      "images": 2,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-intro-observations",
+      "images": 3,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-local-directions",
+      "images": 2,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-local-polar",
+      "images": 3,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-math",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-metric",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-normal-curvature",
+      "images": 2,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-observation-reduction",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-orbit-celestial-frames",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-orbit-celestial-sphere",
+      "images": 0,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-orbit-earth-motion",
+      "images": 5,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-orbit-gravity",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-orbit-time-systems",
+      "images": 0,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-orbit-vector-derivative",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-parameter-estimation",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-pivot-models",
+      "images": 1,
+      "embeds": 1
+    },
+    {
+      "slug": "geodesy-seven-parameters",
+      "images": 1,
+      "embeds": 0
+    },
+    {
+      "slug": "geodesy-spherical-triangles",
+      "images": 1,
+      "embeds": 0
+    }
+  ],
+  "representativePages": 12,
+  "viewportThemeDialogCases": 72,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "keyboardDialog": true,
+  "slideLocator": true,
+  "oldFoldedAnchors": true,
+  "errors": []
+}

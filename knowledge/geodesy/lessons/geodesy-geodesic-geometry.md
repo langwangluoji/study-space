@@ -25,6 +25,8 @@ sources: ["S7"]
 
 <!-- anatomy-interactive: /anatomy/earth-observation/geodesy.html?mode=geodesic | 两端都能法截，途中就一定最直吗？ | anatomy-geodesic.svg -->
 
+比较两端法线确定的法截面与沿途切平面内最直的大地线；端点的法截条件并不保证整段测地。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=geodesic)
 
 端点条件只规定一处法截方向。大地线要求笔尖每一处的切向弯曲为零，下一节由这个连续条件推出守恒量。
@@ -35,7 +37,7 @@ sources: ["S7"]
 <!-- source-figure: {"src":"/geodesy/figures/S7-relative-sections.png","alt":"相对法截弧的两个截面","source":"S7 大地线讲义","page":"3","printed":"插入说明页","note":"蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。"} -->
 ![相对法截弧的两个截面](../assets/figures/S7-relative-sections.png)
 
-S7 大地线讲义，文件页 3／原页码 插入说明页。蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。
+蓝、橙两个截面各包含一端的法线。交换起终点后截面一般改变，正好解释相对法截弧为何通常不重合。 来源：S7 大地线讲义，PDF 文件页3，原页码插入说明页。蓝、橙两弧分别用两端法线确定；图中同纬度特殊情况的说明见下文。
 <!-- /source-figure -->
 
 旋转椭球上，同子午面的两点，其法线与弦在同一个子午面内。同纬度的两点也有特殊性：令其共同归化纬度为 $u$，则

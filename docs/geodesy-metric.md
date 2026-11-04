@@ -58,7 +58,11 @@ $$
 \boxed{dS=MN\cos B\,dB\,dL}.
 $$
 
-<SourceFigure src="/geodesy/figures/area-element.png" alt="经纬格网微元的两边与面积" source="1椭球面数学性质   课程讲义.pdf" page="56" printed="43" />
+<SourceFigure src="/geodesy/figures/area-element.png" alt="经纬格网微元的两边与面积" source="1椭球面数学性质   课程讲义.pdf" page="56" printed="43">
+
+小格两边分别是 M dB 和 N cos B dL，正交时相乘得到面积微元；经线汇聚使东西边长随纬度变化。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页56，原页码43。
+
+</SourceFigure>
 
 图中两边分别是 $M\,dB$ 与 $N\cos B\,dL$。这说明小区域可以近似把经纬网看成正交矩形，但长距离需要沿途积分变化的系数。极点经纬参数退化，面元表达按极限积分仍有意义，却不能将该处的两条参数向量当成独立基。
 
@@ -68,6 +72,8 @@ $$
 上一节只有一个点的长度系数。让轮子真的走一段，看看固定M与沿途更新M的里程计何时开始分开。
 
 <AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=metric" title="一度纬差不能只乘一次M" poster="/geodesy/figures/anatomy-metric.svg" />
+
+沿纬向移动时 M 随 B 变化，整段弧长须累加局部标尺；右侧读数可与积分结果比较。本站绘制。
 
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=metric)
 

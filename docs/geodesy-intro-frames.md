@@ -26,6 +26,8 @@ next: {"text":"空间观测怎样约束位置","link":"/geodesy-intro-observatio
 
 <AnatomyFigure src="/anatomy/earth-observation/geodesy.html?mode=frame" title="点没有动，为什么坐标变了？" poster="/geodesy/figures/anatomy-frame.svg" />
 
+固定同一靶点观察原点、轴向和刻度的改变；坐标数值改变时，靶点的物理位置可以保持不动。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=frame)
 
 靶点和长度都未改变，改变的是读数的基。接下来用同一分解写出方向余弦矩阵。
@@ -69,7 +71,11 @@ $$
 
 地球绕太阳公转，也绕自己的轴自转。太阳与月球对地球赤道隆起部分的引力矩，使平均自转轴在天球上缓慢改变方向，这种长期变化称为岁差；叠加在平均方向上的周期摆动称为章动。自转角描述地球绕轴转过多少，而极移描述自转轴相对固体地球的位置变化。前两者主要解释轴在天球上怎样改变，最后一个解释轴在地球表面怎样移动，不能把它们当成同一种“轴晃动”。
 
-<SourceFigure src="/geodesy/figures/frame-chain.svg" alt="岁差、章动、自转与极移对应的坐标轴转换链" source="本站绘制" page="示意图" note="示意轴向关系；角度与摆动幅度均不按真实比例绘制。" original />
+<SourceFigure src="/geodesy/figures/frame-chain.svg" alt="岁差、章动、自转与极移对应的坐标轴转换链" source="本站绘制" page="示意图" note="示意轴向关系；角度与摆动幅度均不按真实比例绘制。" original>
+
+按箭头逐站识别岁差、章动、自转和极移分别连接哪两套轴；反向转换需逐项取逆并反转次序。 来源：本站绘制，本站示意图。示意轴向关系；角度与摆动幅度均不按真实比例绘制。
+
+</SourceFigure>
 
 图中的箭头表示同一个向量依次在不同基下重写分量；每条箭头都对应下式中的一个方向余弦矩阵。传统课件把二者之间的联系分为岁差、章动、地球自转和极移。用方向明确的矩阵，几何上可写成
 

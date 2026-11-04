@@ -13,7 +13,15 @@ next: {"text":"Bursa–Wolf：平移、旋转与尺度的七参数模型","link"
 
 <AnatomyFigure src="/geodesy/interactive/local-polar.html" title="从空间基线到测站水平与竖直分量" :height="1100" poster="/geodesy/figures/lab-local-polar.svg" />
 
+水平图从北向东量方位角，竖直图把空间距离分成水平和上向；两图描述同一条视线。先核对 Nloc、E 顺序，再读角度。本站绘制。
+
 [离线打开交互图](/geodesy/interactive/local-polar.html)
+
+<SourceFigure src="/geodesy/figures/local-basis.svg" alt="站心单位方向从哪里来" source="本站绘制" page="示意图" original>
+
+先取上向为法线，以 $\mathbf k\times\mathbf e_U$ 确定东向，再以 $\mathbf e_U\times\mathbf e_E$ 确定北向。三根轴的长度均为1；目标距离由后面的基线给出。本站绘制。
+
+</SourceFigure>
 
 ## 从位置差到局部投影
 
@@ -23,7 +31,7 @@ $$
 \Delta\mathbf r=\mathbf r_1-\mathbf r_0.
 $$
 
-两点坐标使用同一框架和相容历元。测站大地经纬度为 $B_0,L_0$，当地东、北、上三个方向分别为
+两点坐标使用同一框架和相容历元。上向由大地纬度定义；令 $\mathbf k=(0,0,1)^T$，非极点处东向为 $\mathbf e_E=(\mathbf k\times\mathbf e_U)/\|\mathbf k\times\mathbf e_U\|$，北向为 $\mathbf e_N=\mathbf e_U\times\mathbf e_E$。这是[局部方向页](geodesy-local-directions.html#local-basis-construction)的同一几何构造，代入测站的 $B_0,L_0$ 后得到
 
 $$
 \mathbf e_E=\begin{pmatrix}-\sin L_0\\\cos L_0\\0\end{pmatrix},\quad
@@ -39,7 +47,7 @@ $$
 \mathbf r_1=\mathbf r_0+Q_{ENU}\begin{pmatrix}E\\N_{\rm loc}\\U\end{pmatrix}.}
 $$
 
-$N_{\rm loc}$ 表示北向长度，与曲率半径 N 区分。矩阵每一行的点积就是对应方向上的投影。
+$N_{\rm loc}$ 表示北向长度，与曲率半径 N 区分。逐个计算 $E=\mathbf e_E\cdot\Delta\mathbf r$、$N_{\rm loc}=\mathbf e_N\cdot\Delta\mathbf r$、$U=\mathbf e_U\cdot\Delta\mathbf r$，恰好组成 $Q_{ENU}^T$ 的三行；反向则按三根单位轴组合出同一条基线。极点需要先指定参考经线，东、北随该约定确定。
 
 ## 课件使用的 NEU 顺序
 
@@ -79,9 +87,15 @@ $$
 </details>
 
 
+<SourceFigure src="/geodesy/figures/source-station-neu.png" alt="课件采用北、东、上的站心轴" source="S11 三维直角坐标系之间转换" page="12" locator="PDF 文件页 12">
+
+来源：S11，PDF 文件页12，截取坐标轴图。图中 x 为北、y 为东、z 为上，对应本文的 $(N_{\rm loc},E,U)$；与 ENU 比较时先交换前两项，不能把轴顺序混入旋转正号。
+
+</SourceFigure>
+
 ## 极坐标：距离、方位角、天顶距
 
-定义空间距离 D、从北顺时针向东量取的方位角 A、从上向量起的天顶距 $z_d$。这里用 $z_d$ 区分天顶距与直角分量 z，也与全球 Z 轴区分。课件第16–17页给出
+先显式换成课件顺序：$x=N_{\rm loc},y=E,z=U$。定义空间距离 D、从北顺时针向东量取的方位角 A、从上向量起的天顶距 $z_d$。这里用 $z_d$ 区分天顶距与直角分量 z，也与全球 Z 轴区分。课件第16–17页给出
 
 $$
 \boxed{x=D\sin z_d\cos A,\quad y=D\sin z_d\sin A,\quad z=D\cos z_d.}
@@ -101,6 +115,12 @@ $$
 $\alpha$ 是高度角。atan2 同时照顾象限：目标在地平线下时 $\alpha<0,z_d>90^\circ$。目标恰在正上或正下方，$D_h=0$，方位角无唯一值；目标与测站重合时，D=0，所有方向角均无定义。
 
 课件还给出 $D=x\sin z_d\cos A+y\sin z_d\sin A+z\cos z_d$，它是视线与自身单位方向的点积；已知角度时可用，直接由坐标求距离则用范数更简洁。
+
+<SourceFigure src="/geodesy/figures/source-station-polar.png" alt="斜距、方位角与天顶距的几何关系" source="S11 三维直角坐标系之间转换" page="16" locator="PDF 文件页 16">
+
+来源：S11，PDF 文件页16，截取右侧极坐标图。原图大写 Z 表示天顶距，对应本文的 $z_d$；z 轴表示上向。先把斜距投到水平面，再从北向东量 A，便能读出正算式中的 sin 与 cos。
+
+</SourceFigure>
 
 ## 算例：基线与卫星方向的同一套计算
 
@@ -122,7 +142,10 @@ $$
 
 基线方位角与卫星方位角的计算路线相同。对于较长地面弦线，这里得到的是起点局部地平面中空间基线投影的方位角；若任务要求椭球面大地线的方位角，还要采用相应的大地线解算。
 
+<details><summary>进阶：左手 NEU 基中，叉乘矩阵的小旋转参数怎样换基？</summary>
+
 ## 旋转向量为什么比普通向量多一个符号
+
 
 S11 第18页讨论全球小旋转 $\boldsymbol\varepsilon$ 与局部小旋转 $\boldsymbol\omega$。在右手 ENU 中，旋转向量按普通方向变换：
 
@@ -138,8 +161,8 @@ $$
 
 这正是课件第18页矩阵的符号。若只是在记录同一物理旋转轴沿北、东、上的普通投影，则分量随轴顺序交换即可；此处的负号对应课件小旋转生成矩阵参数的定义，两种记号须明确区分。
 
-<details><summary>推导伪向量变换，并计算一个例子</summary>
 
+### 生成矩阵与数值检核
 对于任意正交阵 Q，有
 
 $$
@@ -164,10 +187,10 @@ $$
 
 把两边分别放入上面的叉乘矩阵恒等式，可独立检核符号。
 
-</details>
-
 
 课件第19页将局部倾斜与垂线偏差联系：其约定下 $\omega_x=-\eta,\omega_y=\xi$，$\omega_z$ 为方位起始方向的旋转。实际仪器以重力垂线定竖直，本页的上向以椭球法线定义，二者之间的转换需要垂线偏差改正。法线、地心径向和实际垂线各有明确用途。
+
+</details>
 
 ## 自检
 

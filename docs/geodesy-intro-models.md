@@ -25,7 +25,11 @@ next: {"text":"位置表达与坐标框架","link":"/geodesy-intro-frames"}
 
 真实地表包含山地、海洋和建筑物，不能用一条简单曲面方程表示。为了把观测位置变成可以求导、积分和转换的坐标，先引入旋转椭球。一个椭圆绕短轴旋转就得到这种曲面，长半轴 $a$ 与短半轴 $b$ 决定它的几何形状。
 
-<SourceFigure src="/geodesy/figures/reference-ellipsoid.png" alt="参考椭球上的经纬度与起始子午面" source="大地测量 绪论(1).pdf" page="24" printed="39" />
+<SourceFigure src="/geodesy/figures/reference-ellipsoid.png" alt="参考椭球上的经纬度与起始子午面" source="大地测量 绪论(1).pdf" page="24" printed="39">
+
+经度用起始子午面定位，纬度用椭球法线定位；先确定轴和角的起算方向，再阅读坐标公式。 来源：大地测量 绪论(1).pdf，PDF 文件页24，原页码39。
+
+</SourceFigure>
 
 图中经度 $L$ 决定子午面，纬度 $B$ 与椭球法线有关。原图用扁率 $\alpha$，本站统一记为 $f=(a-b)/a$。同一个几何形状可以由 $(a,b)$ 或 $(a,f)$ 指定，但几何参数本身还没有决定椭球中心与轴在真实地球中的位置。
 
@@ -35,7 +39,11 @@ next: {"text":"位置表达与坐标框架","link":"/geodesy-intro-frames"}
 
 海水在静力平衡的理想状态下，其表面沿重力等位面展开。大地水准面是选定的、接近平均海面的重力等位面，不是随时变化的真实海面。与它相比，参考椭球更规则，却不一定处处符合重力方向。
 
-<SourceFigure src="/geodesy/figures/geoid-ellipsoid.png" alt="大地水准面与椭球面的差别" source="大地测量 绪论(1).pdf" page="22" printed="37" note="图中起伏是示意性放大，不表示真实比例。" />
+<SourceFigure src="/geodesy/figures/geoid-ellipsoid.png" alt="大地水准面与椭球面的差别" source="大地测量 绪论(1).pdf" page="22" printed="37" note="图中起伏是示意性放大，不表示真实比例。">
+
+光滑椭球用于几何计算，起伏的大地水准面属于重力等位面；同一点相对两面的高度因此不同。 来源：大地测量 绪论(1).pdf，PDF 文件页22，原页码37。图中起伏是示意性放大，不表示真实比例。
+
+</SourceFigure>
 
 椭球法线由曲面的几何方程决定，铅垂线由重力方向决定。两者一般不重合，大地水准面与椭球面之间也存在差距。这里先建立概念上的区别，后面再用梯度解释为什么等位面与重力方向垂直。
 

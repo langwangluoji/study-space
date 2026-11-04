@@ -67,3 +67,12 @@ test('website enhances a local static diagram without displaying a duplicate ima
   assert.match(out, /<AnatomyFigure.*:height="1100"/);
   assert.match(out, /poster="\/geodesy\/figures\/lab-inverse.svg"/);
 });
+
+test('source figure keeps the offline Markdown caption, formulas and slide locator on the website', () => {
+  const out = compileNote('---\nslug: geodesy-caption\n---\n<!-- source-figure: {"src":"/geodesy/figures/pole.png","alt":"极移轨迹","source":"S6","page":"40","locator":"幻灯片 40"} -->\n![极移](../assets/figures/pole.png)\n\n2001–2005年的轨迹；$s=Rp$ 将角度换成长度。\n<!-- /source-figure -->\n\n## 后续推导');
+  assert.match(out, /locator="幻灯片 40"/);
+  assert.match(out, /2001–2005年的轨迹；\$s=Rp\$/);
+  assert.match(out, /<\/SourceFigure>/);
+  assert.doesNotMatch(out, /!\[极移\]/);
+  assert.match(out, /## 后续推导/);
+});

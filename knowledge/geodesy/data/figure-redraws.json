@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-04",
+  "figures": [
+    {
+      "asset": "coordinate-meridian.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "从法线脚点到空间坐标",
+      "exaggerated": true
+    },
+    {
+      "asset": "inverse-steps.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "纬度反算：固定 P，更新法线条件",
+      "exaggerated": true
+    },
+    {
+      "asset": "local-basis.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "局部基：上向 → 东向 → 北向 → 投影",
+      "exaggerated": true
+    },
+    {
+      "asset": "differential-scales.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "雅可比的三列：每一种小变化怎样成为长度",
+      "exaggerated": true
+    },
+    {
+      "asset": "ellipsoid-change.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "换参考面：空间点不动，经纬高标签改变",
+      "exaggerated": true
+    },
+    {
+      "asset": "rotation-comparison.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "相同正角，两个明确的几何问题",
+      "exaggerated": true
+    },
+    {
+      "asset": "seven-parameter-vectors.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "七参数：先表达相对向量，再加目标系中的原点位置",
+      "exaggerated": true
+    },
+    {
+      "asset": "parameter-estimation-flow.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "同名点 → 七参数 → XYZ 改正 → 经纬高改正",
+      "exaggerated": true
+    },
+    {
+      "asset": "gauss-flow.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "高斯平均引数：正算迭代与反算分量法",
+      "exaggerated": true
+    },
+    {
+      "asset": "spherical-harmonics.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "球谐项：用 n、m 读出空间分区",
+      "exaggerated": true
+    },
+    {
+      "asset": "earth-motion-reference.svg",
+      "kind": "redrawn",
+      "model": "scripts/geodesy/model.mjs",
+      "title": "同一根轴：观察参考不同，描述的运动也不同",
+      "exaggerated": true
+    }
+  ]
+}

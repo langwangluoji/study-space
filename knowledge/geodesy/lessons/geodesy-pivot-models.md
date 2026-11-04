@@ -15,6 +15,8 @@ sources: [S11]
 
 <!-- geodesy-interactive: transform-pivot | 在参考点附近旋转、缩放和平移 | lab-transform-pivot.svg -->
 
+先减参考点，再旋转缩放相对向量，最后加回目标参考点。图采用主动正角，与课件被动参数应按正文对应。本站绘制。
+
 [离线打开交互图](../assets/interactive/transform-pivot.html)
 
 ## 参考点模型先减、再转、再放回
@@ -35,6 +37,12 @@ $$
 
 这里 p 是源系参考点的坐标数值，目标表达中复制同一组数值作辅助位置，$\mathbf p+\mathbf t_p=\mathbf p_t$。$\mathbf t_p$ 是参考点两套坐标数值的差，通常不等于两套坐标系原点间的平移。S11 第26页补充图正是用辅助点区分这两个含义。课件将此类模型简称为“Molodensky模型”，这里采用能明确指出参考点三维相似变换的名称。
 
+<!-- source-figure: {"src": "/geodesy/figures/source-pivot-two-frames.png", "alt": "课件中的源参考点、目标参考点与相对向量", "source": "S11 三维直角坐标系之间转换", "page": "26", "locator": "PDF 文件页 26（插入补充图）"} -->
+![课件中的源参考点、目标参考点与相对向量](../assets/figures/source-pivot-two-frames.png)
+
+来源：S11，PDF 文件页26，截取二维关系图。左右两幅分别使用源、目标坐标，先在左图相减，再旋转缩放，最后在右图加目标参考点。原图 t 表示参考点两套坐标的数值差，本文记为 $\mathbf t_p$；它通常不是 Bursa–Wolf 的原点平移。
+<!-- /source-figure -->
+
 ## 与 Bursa–Wolf 的关系
 
 把参考点模型展开：
@@ -51,7 +59,7 @@ $$
 =\mathbf t_p+\mathbf p-(1+\mu)R\mathbf p.}
 $$
 
-固定参考点后，两种模型可以表达相同的相似变换，差别在参数的组织与平移的含义。参考点常取公共点的重心，使旋转、尺度使用较小的中心化坐标，改善平移与其他参数之间的相关性。
+代入 $\mathbf r_s=\mathbf p_s$，参考点式立即给出 $\mathbf r_t=\mathbf p_t$；这是画图和写程序时最直接的检核。固定参考点后，两种模型可以表达相同的相似变换，差别在参数的组织与平移的含义。参考点常取公共点的重心，使旋转、尺度使用较小的中心化坐标，改善平移与其他参数之间的相关性。
 
 > [!info]- 推导一阶式与同名点参数方程
 > 令 $\mathbf d_i=\mathbf r_{s,i}-\mathbf p$。用本章被动小角约定，省去高阶项：
@@ -102,25 +110,29 @@ $$
 
 把它代入原点模型可得到相同的目标坐标。这也说明，模型名称改变后直接复制三个平移数值，会改变变换本身。
 
-## 范士 Veis：用参考点的局部轴表达旋转
-
-范士模型沿用参考点变换中心，把全球旋转参数换成参考点局部地平轴的参数。若用右手 ENU，令参考点的方向矩阵为 $Q_{ENU,p}$，则
-
-$$
-\boldsymbol\varepsilon=Q_{ENU,p}\boldsymbol\omega_{ENU}.
-$$
-
-一阶模型变为
-
-$$
-\boxed{\mathbf r_t-\mathbf r_s
-=\mathbf t_p+\mu\mathbf d
-+C(\mathbf d)Q_{ENU,p}\boldsymbol\omega_{ENU}.}
-$$
-
-原课件使用左手 NEU 的代数旋转参数，按[局部旋转向量规则](geodesy-local-polar.md)有 $\boldsymbol\varepsilon=-Q_{NEU,p}\boldsymbol\omega_{NEU}$，所以课件第30页的旋转系数是 $C(\mathbf d)(-Q_{NEU,p})$。局部两轴参数描述倾斜，上轴参数描述方位起始方向的旋转。选择局部轴使旋转具有直观的区域意义。
-
-范士模型改变的是旋转参数的基底表达，参考点模型改变的是旋转和尺度作用的中心。它们在参数正确定义后都可表达相应的三维相似变换。
+> [!info]- 进阶：范士 Veis 如何用参考点局部轴表达小旋转
+> ## 范士 Veis：用参考点的局部轴表达旋转
+>
+>
+> 范士模型沿用参考点变换中心，把全球旋转参数换成参考点局部地平轴的参数。若用右手 ENU，令参考点的方向矩阵为 $Q_{ENU,p}$，则
+>
+> $$
+> \boldsymbol\varepsilon=Q_{ENU,p}\boldsymbol\omega_{ENU}.
+> $$
+>
+> 一阶模型变为
+>
+> $$
+> \boxed{\mathbf r_t-\mathbf r_s
+> =\mathbf t_p+\mu\mathbf d
+> +C(\mathbf d)Q_{ENU,p}\boldsymbol\omega_{ENU}.}
+> $$
+>
+> 原课件使用左手 NEU 的代数旋转参数，按[局部旋转向量规则](geodesy-local-polar.md)有 $\boldsymbol\varepsilon=-Q_{NEU,p}\boldsymbol\omega_{NEU}$，所以课件第30页的旋转系数是 $C(\mathbf d)(-Q_{NEU,p})$。局部两轴参数描述倾斜，上轴参数描述方位起始方向的旋转。选择局部轴使旋转具有直观的区域意义。
+>
+> 范士模型改变的是旋转参数的基底表达，参考点模型改变的是旋转和尺度作用的中心。它们在参数正确定义后都可表达相应的三维相似变换。
+>
+> 这里变换的是小旋转生成元的参数，不能把任意有限欧拉角三元组直接乘 Q。局部 Q 使用源参考点在源椭球上的经纬度构造，与本页源相对向量的基底相容。
 
 ## 自检
 

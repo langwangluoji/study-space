@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 // Course metadata uses scalar fields and one-line arrays, not executable YAML.
@@ -54,10 +55,12 @@ export function compileNote(source, { slugs = new Set(), anchors = {}, prev, nex
     (_, src, title, poster) => `<AnatomyFigure src="${src.trim()}" title="${title.trim()}" poster="/geodesy/figures/${poster.trim()}" />`);
   text = text.replace(/<!-- learning-mark: ([\w-]+) -->/g, '<LearningMark section="$1" />');
   text = text.replace(/<!-- legacy-lab: (ellipsoid|rotation) -->/g, '<GeodesyLab mode="$1" />');
-  text = text.replace(/<!-- source-figure: (.+?) -->[\s\S]*?<!-- \/source-figure -->/g, (_, json) => {
+  text = text.replace(/<!-- source-figure: (.+?) -->([\s\S]*?)<!-- \/source-figure -->/g, (_, json, body) => {
     const figure = JSON.parse(json);
     const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('"', '&quot;');
-    return '<SourceFigure ' + Object.entries(figure).map(([key, value]) => value === true ? key : `${key}="${escape(value)}"`).join(' ') + ' />';
+    const caption = body.replace(/!\[[^\]]*\]\([^)]*\)/, '').trim();
+    const props = Object.entries(figure).map(([key, value]) => value === true ? key : `${key}="${escape(value)}"`).join(' ');
+    return caption ? `<SourceFigure ${props}>\n\n${caption}\n\n</SourceFigure>` : `<SourceFigure ${props} />`;
   });
   const title = data.title ?? text.match(/^# (.+)$/m)?.[1] ?? data.slug;
   return `---\ntitle: ${JSON.stringify(title)}\nprev: ${JSON.stringify(prev ?? false)}\nnext: ${JSON.stringify(next ?? false)}\n---\n\n<!-- Generated from knowledge/geodesy/lessons/${data.slug}.md; edit the Obsidian source. -->\n\n${text.trim()}\n`;
@@ -88,6 +91,24 @@ export function generateGeodesy(root = process.cwd()) {
     fs.writeFileSync(path.join(root, 'docs', note.slug + '.md'), compileNote(note.source, options));
   }
   fs.writeFileSync(path.join(root, 'geodesy.config.json'), JSON.stringify(chapters, null, 2) + '\n');
+  // Derive the source table before copying data, so hashes cannot lag the built figures.
+  const attributions = new Map(), assets = new Set();
+  for (const note of notes) {
+    for (const m of note.source.matchAll(/!\[[^\]]+\]\(\.\.\/assets\/figures\/([^)]*)\)/g)) assets.add(m[1]);
+    for (const m of note.source.matchAll(/<!-- source-figure: (.+?) -->/g)) {
+      const meta = JSON.parse(m[1]); attributions.set(path.basename(meta.src), meta);
+    }
+  }
+  const crops = JSON.parse(fs.readFileSync(path.join(vault, 'data/figure-source-crops.json'), 'utf8'));
+  const inventory = [...assets].sort().map(asset => {
+    const meta = attributions.get(asset), crop = crops.figures.find(f => f.asset === asset);
+    return {asset, source: meta?.source ?? '本站绘制（交互图静态版本）', locator: meta?.locator ?? (meta?.original ? '示意图' : meta?.page ? 'PDF 文件页 '+meta.page : '模型生成'),
+      topics: notes.filter(n => n.chapter > 0 && n.order > 0 && n.source.includes('../assets/figures/'+asset+')')).map(n => n.slug), ...(crop ? {crop} : {}),
+      sha256: crypto.createHash('sha256').update(fs.readFileSync(path.join(vault, 'assets/figures', asset))).digest('hex')};
+  });
+  fs.writeFileSync(path.join(vault, 'data/figure-inventory.json'), JSON.stringify({date:'2026-11-04',figures:inventory}, null, 2)+'\n');
+  const table = '# 大地测量配图来源表\n\n共'+assets.size+'个图像资源，其中本轮新增11幅重绘图、10幅课件局部图。来源页均按文件顺序计数。裁切矩形和图像校验值见同目录 JSON。\n\n| 图片 | 来源与定位 | 对应专题 |\n|---|---|---|\n'+inventory.map(f => `| [${f.asset}](../assets/figures/${f.asset}) | ${f.source}；${f.locator} | ${f.topics.map(s => `[${s}](../lessons/${s}.md)`).join('、')} |`).join('\n')+'\n';
+  fs.writeFileSync(path.join(vault, 'data/figure-inventory.md'), table);
   const figures = path.join(vault, 'assets/figures');
   if (fs.existsSync(figures)) fs.cpSync(figures, path.join(root, 'public/geodesy/figures'), { recursive: true });
   const localInteractive = path.join(vault, 'assets/interactive');

@@ -13,6 +13,8 @@ next: {"text":"自转、公转、岁差、章动与极移","link":"/geodesy-orbi
 
 <AnatomyFigure src="/geodesy/interactive/celestial.html" title="天球方向与测站水平坐标" :height="1100" poster="/geodesy/figures/lab-celestial.svg" />
 
+先用赤经和恒星时得到时角，再转到测站水平坐标；天球只描述方向，球面半径不表示天体距离。本站绘制。
+
 [离线打开交互图](/geodesy/interactive/celestial.html)
 
 ## 天球的中心决定观测方向

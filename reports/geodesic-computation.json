@@ -34,6 +34,8 @@
     "L2_deg": 116.05708680741117,
     "A21_deg": 255.87355427897768,
     "iterations": 5,
+    "iteration_tolerance_rad": 1e-14,
+    "iteration_maximum": 100,
     "iteration_change_arcsec": 4.579998741307464e-11,
     "inverse_S_m": 24909.81399998068,
     "inverse_A12_deg": 75.69160055565968,

@@ -1,0 +1,665 @@
+{
+  "date": "2026-11-04",
+  "figures": [
+    {
+      "asset": "S7-geodesic-differentials.png",
+      "source": "S7 大地线讲义",
+      "locator": "PDF 文件页 9",
+      "topics": [
+        "geodesy-geodesic-equations"
+      ],
+      "sha256": "4adeee0e5f812b6490728a93c921234821f2a4b6bff9ac5b5c23008afbf332d3"
+    },
+    {
+      "asset": "S7-relative-sections.png",
+      "source": "S7 大地线讲义",
+      "locator": "PDF 文件页 3",
+      "topics": [
+        "geodesy-geodesic-geometry"
+      ],
+      "sha256": "952a9c89014c9589ed062d358f06dd527ddc7c01a0f9f2494c085747a0d64981"
+    },
+    {
+      "asset": "S8-direction-reductions.png",
+      "source": "S8 大地坐标计算讲义",
+      "locator": "PDF 文件页 4",
+      "topics": [
+        "geodesy-observation-reduction"
+      ],
+      "sha256": "96328a0b85642b5f1121d9d61023f805b7e04c54a744f640456f64831ff5fc00"
+    },
+    {
+      "asset": "S8-gauss-midpoint.png",
+      "source": "S8 大地坐标计算讲义",
+      "locator": "PDF 文件页 20",
+      "topics": [
+        "geodesy-gauss-derivation"
+      ],
+      "sha256": "6fbb6048882b6002847016d2373e7e4f393e01d455ff139160c13c5507efd40f"
+    },
+    {
+      "asset": "S8-spherical-lune.png",
+      "source": "S8 大地坐标计算讲义",
+      "locator": "PDF 文件页 13",
+      "topics": [
+        "geodesy-spherical-triangles"
+      ],
+      "sha256": "e2ec5417841d2cef3d450d645f9f4cbd642b1f1d27ef681d2e52aa3a1d6fbcb1"
+    },
+    {
+      "asset": "altimetry.png",
+      "source": "大地测量 绪论(1).pdf",
+      "locator": "PDF 文件页 13",
+      "topics": [
+        "geodesy-intro-observations"
+      ],
+      "sha256": "9d4c1304083db3a78bc5ff16a826f3f707055090b7f46b0a6ca1fb3778f72659"
+    },
+    {
+      "asset": "anatomy-curvature.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-normal-curvature"
+      ],
+      "sha256": "9c0a6dc2d47a7f8bf6ab12b769cc7b3919a9d693e80cca36f90fea7c62d3bcb8"
+    },
+    {
+      "asset": "anatomy-frame.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-intro-frames"
+      ],
+      "sha256": "23ee07378ea8d723d37bc195b9675a0c0d76a5463cabca5d9f1babe117b11fe3"
+    },
+    {
+      "asset": "anatomy-geodesic.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-geodesic-geometry"
+      ],
+      "sha256": "e4da7b07d4852e4195b26803bd039169fb3d5fc5951709dc7343180f1981f089"
+    },
+    {
+      "asset": "anatomy-latitude.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-ellipsoid-coordinates"
+      ],
+      "sha256": "b022e55ca4bdfb4607a908578d1288afe6f045806475e0340ff3dd0a68e841da"
+    },
+    {
+      "asset": "anatomy-metric.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-metric"
+      ],
+      "sha256": "1d824bb0af84d0d2e6a4475a9f77cbff6916972634d23fc225d08f128f4263f0"
+    },
+    {
+      "asset": "anatomy-midpoint.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-gauss-derivation"
+      ],
+      "sha256": "21f276a82367afc1f17076e9560aac74157ee9bb081d0a16091a42775aa79c24"
+    },
+    {
+      "asset": "anatomy-reduction.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-observation-reduction"
+      ],
+      "sha256": "8301b9434640d46ae56bbaf55600eef35507c717bb161162b69a89c72296981f"
+    },
+    {
+      "asset": "area-element.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 56",
+      "topics": [
+        "geodesy-metric"
+      ],
+      "sha256": "23ea8980e4e6232e630a840f024205c7ac703bb1048b48444f893055334d582f"
+    },
+    {
+      "asset": "coordinate-meridian.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-coordinate-forward"
+      ],
+      "sha256": "033d911eafed3b5e0bd62cfb9123e3f63894280e4fa3ce2721001504c25c13c0"
+    },
+    {
+      "asset": "differential-scales.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-coordinate-differentials"
+      ],
+      "sha256": "24b394816b69f07da61559209c92a4e4ff0093efba8d1d7ed7f5ab61ef20901f"
+    },
+    {
+      "asset": "earth-motion-reference.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-orbit-earth-motion"
+      ],
+      "sha256": "553b984937a8022e7341b9512e5474f979817efa977ebd5638bcc64a356fd771"
+    },
+    {
+      "asset": "ellipsoid-change.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-ellipsoid-parameter-change"
+      ],
+      "sha256": "5d7798de6946b6aae6fac3b13cf363fa1e631e4043d36a580021552fa597c5bf"
+    },
+    {
+      "asset": "frame-chain.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-intro-frames"
+      ],
+      "sha256": "cf7b50c4795df86002c4db6d1b14d354fc3bf8731811623226ed9b11c7809066"
+    },
+    {
+      "asset": "gauss-flow.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-gauss-solution"
+      ],
+      "sha256": "41b9d89ce600e08b98b527ea0181bce5266fcbe052c60d7c842d10a05dd5c33c"
+    },
+    {
+      "asset": "geocentric-latitude.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 25",
+      "topics": [
+        "geodesy-ellipsoid-coordinates"
+      ],
+      "sha256": "e7afa1ca158dbaed8b64d4d94b6cd7f40212a642f7de298d0cdfa913f6cbfb36"
+    },
+    {
+      "asset": "geodetic-latitude.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 14",
+      "topics": [
+        "geodesy-ellipsoid-coordinates"
+      ],
+      "sha256": "c3bd992a25ff784c10410be0fea0f6b41141278ef41d0aaf7617aefe78599ee1"
+    },
+    {
+      "asset": "geoid-ellipsoid.png",
+      "source": "大地测量 绪论(1).pdf",
+      "locator": "PDF 文件页 22",
+      "topics": [
+        "geodesy-intro-models"
+      ],
+      "sha256": "850e37753e46baeb152dc29f585ae947c9229982835adc5c02e91282a3c8eb7e"
+    },
+    {
+      "asset": "height-reference.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-intro-gravity"
+      ],
+      "sha256": "71063210352c77b8820c898da0a2344600e6dee95a3d95c29b8bb2019b7d5dfd"
+    },
+    {
+      "asset": "inverse-steps.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-coordinate-inverse"
+      ],
+      "sha256": "5418df0180ba8a74915e9394ed806abf655ac1f08f426208603ad5244a1baf50"
+    },
+    {
+      "asset": "lab-blh-xyz.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-coordinate-forward",
+        "geodesy-local-directions"
+      ],
+      "sha256": "dc8617182a0ede666ba187f424fc8c4191f2b101f1b63c19adbb8e64e6a79e38"
+    },
+    {
+      "asset": "lab-celestial.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-orbit-celestial-sphere"
+      ],
+      "sha256": "5065664207f782bcede6b745df8c5be3476468c93f396ec2914ced565615a35e"
+    },
+    {
+      "asset": "lab-inverse.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-coordinate-inverse"
+      ],
+      "sha256": "7b72a000769326e6bd394b62ce56c85d10adbe8036ad65a558e67f36808befad"
+    },
+    {
+      "asset": "lab-local-polar.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "sha256": "19660b2b093ba1591407c01864641b86c72adcf3329a7aed04d517fac50a2401"
+    },
+    {
+      "asset": "lab-time.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-orbit-time-systems"
+      ],
+      "sha256": "739702dee09ef7772074cb43b0460775b62102142b7531049186156c784fe61c"
+    },
+    {
+      "asset": "lab-transform-pivot.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "sha256": "711ca18ccf90d1d11fb27f06e8d8a1d056f5969e0482c938dd036795697ec018"
+    },
+    {
+      "asset": "local-basis.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-local-directions",
+        "geodesy-local-polar"
+      ],
+      "sha256": "a9f6260d571edefd9d28a43364c68a5697beafbc9204aef48d01542271a66280"
+    },
+    {
+      "asset": "local-curvature.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-curvature",
+        "geodesy-normal-curvature"
+      ],
+      "sha256": "1bc076ee34978358812cfc738b9535939f955852fda617ca37123b47148cc634"
+    },
+    {
+      "asset": "meridian-normal.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 12",
+      "topics": [
+        "geodesy-math"
+      ],
+      "sha256": "dfcddd18d66df79342ae816e7c7aa3ee1d1b6bc5157016dbfc3e8fd06b263f09"
+    },
+    {
+      "asset": "normal-sections.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 41",
+      "topics": [
+        "geodesy-normal-curvature"
+      ],
+      "sha256": "b52e64720ca5242cdf8e91c2d188cf27595a1e1cee108a82a7a70bfaef0fdeb8"
+    },
+    {
+      "asset": "orbit-rotating-basis.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-orbit-vector-derivative"
+      ],
+      "sha256": "59bfa49281ab437bc5797d6ee26e634282d12e97ad7b554fe6c360ddc83e3d1c"
+    },
+    {
+      "asset": "orbit-rotation-chain.svg",
+      "source": "本站绘制（交互图静态版本）",
+      "locator": "模型生成",
+      "topics": [
+        "geodesy-orbit-celestial-frames"
+      ],
+      "sha256": "08632d4e8555325a47696e91c13170010edc50962f5ca6c74099722287296c74"
+    },
+    {
+      "asset": "parameter-estimation-flow.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-parameter-estimation"
+      ],
+      "sha256": "37b306e8698b657c3f1919c51c12dc7ea19e33820218b342242333626d82470e"
+    },
+    {
+      "asset": "reduced-latitude.png",
+      "source": "1椭球面数学性质   课程讲义.pdf",
+      "locator": "PDF 文件页 13",
+      "topics": [
+        "geodesy-ellipsoid-coordinates"
+      ],
+      "sha256": "b7d98101a5d22f2327ddabf768146e01f997f842ae396342b0898d7941d3b805"
+    },
+    {
+      "asset": "reference-ellipsoid.png",
+      "source": "大地测量 绪论(1).pdf",
+      "locator": "PDF 文件页 24",
+      "topics": [
+        "geodesy-intro-models"
+      ],
+      "sha256": "e84d8e98ee8513a6e47c7782d0a632d15b536da5cf406541c35a6a7906ebf250"
+    },
+    {
+      "asset": "rotation-comparison.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "sha256": "8594ee83721b332480e32d2182482b6893617886bfe6d5d40ea4f0d296bc2088"
+    },
+    {
+      "asset": "seven-parameter-vectors.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-seven-parameters"
+      ],
+      "sha256": "3c49eaa4508c315bf0a682433c3716e4e7611dbe52690408e2e325a08e1b635f"
+    },
+    {
+      "asset": "source-blh-normal.png",
+      "source": "S10 大地坐标与地心坐标之间转",
+      "locator": "PDF 文件页 3",
+      "topics": [
+        "geodesy-coordinate-forward"
+      ],
+      "crop": {
+        "asset": "source-blh-normal.png",
+        "source": "S10",
+        "file": "4大地坐标与地心坐标之间转.pdf",
+        "file_page": 3,
+        "crop_normalized": [
+          0.55,
+          0.18,
+          0.99,
+          0.714
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号；清除左下角无关公式框边角，保留 X 轴标签",
+        "cleared_pdf_rectangle": [
+          528,
+          370,
+          599.5,
+          385.56
+        ],
+        "sha256": "9dd7632b608e70a998457577bf0c9fe577a4dc41b2e12b5ad933f42e1feb071a"
+      },
+      "sha256": "9dd7632b608e70a998457577bf0c9fe577a4dc41b2e12b5ad933f42e1feb071a"
+    },
+    {
+      "asset": "source-earth-orbit.png",
+      "source": "S6 轨道力学基础",
+      "locator": "幻灯片 19",
+      "topics": [
+        "geodesy-orbit-earth-motion"
+      ],
+      "crop": {
+        "asset": "source-earth-orbit.png",
+        "source": "S6",
+        "file": "轨道力学基础（4学时）(1).pptx",
+        "slide": 19,
+        "shape_index": 3,
+        "crop_pixels": [
+          0,
+          0,
+          512,
+          384
+        ],
+        "treatment": "提取幻灯片内嵌原图，保持原分辨率与符号",
+        "sha256": "113aa1a1abbf5bca2839902b2a1092f4d191bed6bd9155a122a2573bc87bdfd7"
+      },
+      "sha256": "113aa1a1abbf5bca2839902b2a1092f4d191bed6bd9155a122a2573bc87bdfd7"
+    },
+    {
+      "asset": "source-earth-spin.png",
+      "source": "S6 轨道力学基础",
+      "locator": "幻灯片 19",
+      "topics": [
+        "geodesy-orbit-earth-motion"
+      ],
+      "crop": {
+        "asset": "source-earth-spin.png",
+        "source": "S6",
+        "file": "轨道力学基础（4学时）(1).pptx",
+        "slide": 19,
+        "shape_index": 2,
+        "crop_pixels": [
+          0,
+          0,
+          653,
+          518
+        ],
+        "treatment": "提取幻灯片内嵌原图，保持原分辨率与符号",
+        "sha256": "945d5f0f1ee4d73bfcfd10087b316b40e5a7c9ac49bb7da7ca2c4fd4fcbdcaab"
+      },
+      "sha256": "945d5f0f1ee4d73bfcfd10087b316b40e5a7c9ac49bb7da7ca2c4fd4fcbdcaab"
+    },
+    {
+      "asset": "source-euler-xyz.png",
+      "source": "S11 三维直角坐标系之间转换",
+      "locator": "PDF 文件页 6",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "crop": {
+        "asset": "source-euler-xyz.png",
+        "source": "S11",
+        "file": "5三维直角坐标系之间转换.pdf",
+        "file_page": 6,
+        "crop_normalized": [
+          0.52,
+          0.25,
+          0.97,
+          0.94
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号",
+        "sha256": "6c3698c61f0ed3a05d85ddfbbc5274d0821d025208aba0d83e380849e6899139"
+      },
+      "sha256": "6c3698c61f0ed3a05d85ddfbbc5274d0821d025208aba0d83e380849e6899139"
+    },
+    {
+      "asset": "source-euler-zxz.png",
+      "source": "S11 三维直角坐标系之间转换",
+      "locator": "PDF 文件页 3",
+      "topics": [
+        "geodesy-frame-rotation"
+      ],
+      "crop": {
+        "asset": "source-euler-zxz.png",
+        "source": "S11",
+        "file": "5三维直角坐标系之间转换.pdf",
+        "file_page": 3,
+        "crop_normalized": [
+          0.52,
+          0.25,
+          0.97,
+          0.94
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号",
+        "sha256": "22d50d3a6b5b513031540f1ded37cbef4e440736e399399dcfd57fe77fc99b8f"
+      },
+      "sha256": "22d50d3a6b5b513031540f1ded37cbef4e440736e399399dcfd57fe77fc99b8f"
+    },
+    {
+      "asset": "source-pivot-two-frames.png",
+      "source": "S11 三维直角坐标系之间转换",
+      "locator": "PDF 文件页 26（插入补充图）",
+      "topics": [
+        "geodesy-pivot-models"
+      ],
+      "crop": {
+        "asset": "source-pivot-two-frames.png",
+        "source": "S11",
+        "file": "5三维直角坐标系之间转换.pdf",
+        "file_page": 26,
+        "crop_normalized": [
+          0.025,
+          0.11,
+          0.98,
+          0.91
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号",
+        "sha256": "33af4ea6c3023e1cac9223033592518f3de07a054636562c28a13b8a74a2397b"
+      },
+      "sha256": "33af4ea6c3023e1cac9223033592518f3de07a054636562c28a13b8a74a2397b"
+    },
+    {
+      "asset": "source-polar-motion-2001-2005.png",
+      "source": "S6 轨道力学基础",
+      "locator": "幻灯片 40",
+      "topics": [
+        "geodesy-orbit-earth-motion"
+      ],
+      "crop": {
+        "asset": "source-polar-motion-2001-2005.png",
+        "source": "S6",
+        "file": "轨道力学基础（4学时）(1).pptx",
+        "slide": 40,
+        "shape_index": 1,
+        "crop_pixels": [
+          0,
+          0,
+          725,
+          600
+        ],
+        "treatment": "提取幻灯片内嵌原图，保持原分辨率与符号",
+        "sha256": "c1c4a1c0e1870159985f5f78e198add4bde4a1d0b0bad5315c3ca44faeff37a0"
+      },
+      "sha256": "c1c4a1c0e1870159985f5f78e198add4bde4a1d0b0bad5315c3ca44faeff37a0"
+    },
+    {
+      "asset": "source-precession.png",
+      "source": "S6 轨道力学基础",
+      "locator": "幻灯片 37",
+      "topics": [
+        "geodesy-orbit-earth-motion"
+      ],
+      "crop": {
+        "asset": "source-precession.png",
+        "source": "S6",
+        "file": "轨道力学基础（4学时）(1).pptx",
+        "slide": 37,
+        "shape_index": 5,
+        "crop_pixels": [
+          0,
+          0,
+          308,
+          299
+        ],
+        "treatment": "提取幻灯片内嵌原图，保持原分辨率与符号",
+        "sha256": "1cd5df71f10791b977d10e6ec362405db61b2190f655d90a45173a63f0d08fc8"
+      },
+      "sha256": "1cd5df71f10791b977d10e6ec362405db61b2190f655d90a45173a63f0d08fc8"
+    },
+    {
+      "asset": "source-station-neu.png",
+      "source": "S11 三维直角坐标系之间转换",
+      "locator": "PDF 文件页 12",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "crop": {
+        "asset": "source-station-neu.png",
+        "source": "S11",
+        "file": "5三维直角坐标系之间转换.pdf",
+        "file_page": 12,
+        "crop_normalized": [
+          0.56,
+          0.28,
+          0.98,
+          0.91
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号；清除左上角裁切边缘的无关正文，未覆盖图内对象",
+        "cleared_pdf_rectangle": [
+          537.6,
+          151.20000000000002,
+          566,
+          210
+        ],
+        "sha256": "0210a269f5bee2db27f779d17a3c64058edfe257f14df1f2d44056a6401e2c80"
+      },
+      "sha256": "0210a269f5bee2db27f779d17a3c64058edfe257f14df1f2d44056a6401e2c80"
+    },
+    {
+      "asset": "source-station-polar.png",
+      "source": "S11 三维直角坐标系之间转换",
+      "locator": "PDF 文件页 16",
+      "topics": [
+        "geodesy-local-polar"
+      ],
+      "crop": {
+        "asset": "source-station-polar.png",
+        "source": "S11",
+        "file": "5三维直角坐标系之间转换.pdf",
+        "file_page": 16,
+        "crop_normalized": [
+          0.64,
+          0.29,
+          0.98,
+          0.88
+        ],
+        "scale": 3,
+        "treatment": "裁去页眉、正文和页脚，保留图内原符号",
+        "sha256": "f84d9877f48451511fc6f9280259e006e7afadc159c05b7a0b2f717cbaaec79a"
+      },
+      "sha256": "f84d9877f48451511fc6f9280259e006e7afadc159c05b7a0b2f717cbaaec79a"
+    },
+    {
+      "asset": "spherical-harmonics.svg",
+      "source": "本站绘制",
+      "locator": "示意图",
+      "topics": [
+        "geodesy-orbit-gravity"
+      ],
+      "sha256": "269fb3e430be997323f4cbc6e0e04752f7af59213779826e4bb71f105f302180"
+    },
+    {
+      "asset": "station-satellite.png",
+      "source": "大地测量 绪论(1).pdf",
+      "locator": "PDF 文件页 6",
+      "topics": [
+        "geodesy-intro-observations"
+      ],
+      "sha256": "30f5f22ed8300f998e9367e118b8ea41f1f574022a1c2a0db9ae4901b19ea8ed"
+    },
+    {
+      "asset": "vlbi.png",
+      "source": "大地测量 绪论(1).pdf",
+      "locator": "PDF 文件页 11",
+      "topics": [
+        "geodesy-intro-observations"
+      ],
+      "sha256": "7b6171971f62569c0d545676f86c852dc738954053a0cdcb12ea84e19ab9a8a6"
+    }
+  ]
+}

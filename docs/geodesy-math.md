@@ -84,7 +84,11 @@ $$
 
 曲线也有自己的法线：单位切向随弧长的变化 $d\mathbf T/ds$ 若非零，把它归一化就得到主法线。其长度是曲率，完整定义与推导见[曲线曲率](geodesy-curvature.html)。再取 $\mathbf b_c=\mathbf T\times\mathbf n_c$，切向、主法向与副法向构成Frenet正交标架；这里仅用它辨认方向，不展开挠率。曲线主法线与曲面法线通常不同。下面原课件说明了子午线这一特殊情形。
 
-<SourceFigure src="/geodesy/figures/meridian-normal.png" alt="子午线的法线与椭球面的法线方向" source="1椭球面数学性质   课程讲义.pdf" page="12" printed="11" note="图中 M 是曲面上的点，R 是平行圈切向，不表示本文的曲率半径。" />
+<SourceFigure src="/geodesy/figures/meridian-normal.png" alt="子午线的法线与椭球面的法线方向" source="1椭球面数学性质   课程讲义.pdf" page="12" printed="11" note="图中 M 是曲面上的点，R 是平行圈切向，不表示本文的曲率半径。">
+
+子午切向和平行圈切向张成切平面，外法线同时垂直于它们；据此核对曲面梯度与叉积的方向。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页12，原页码11。图中 M 是曲面上的点，R 是平行圈切向，不表示本文的曲率半径。
+
+</SourceFigure>
 
 子午线的主法线在子午面内，垂直于子午切向；平行圈切向又垂直于整个子午面，所以也垂直于这根主法线。因此它垂直于切平面中的两个独立方向，确实沿曲面的法线。这里比较的是法线所在直线，内外朝向仍可相反。
 

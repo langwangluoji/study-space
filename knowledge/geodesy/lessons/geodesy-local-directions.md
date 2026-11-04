@@ -20,6 +20,24 @@ P的位置已经有了。现在让它只增加一个很小纬度、再只增加�
 
 推导对应椭球讲义文件页 18–24，数学工具见[一般曲面与第一基本形式](geodesy-math.md#%E5%8F%82%E6%95%B0%E5%B7%AE%E6%80%8E%E6%A0%B7%E5%8F%98%E6%88%90%E9%95%BF%E5%BA%A6)和向量公式表。先在 $|B|<\pi/2$ 讨论，经度在极点的参数退化随后说明。
 
+<!-- geodesy-anchor: local-basis-construction -->
+## 先构造方向，再使用方向余弦
+
+令全球地轴单位向量为 $\mathbf k=(0,0,1)^T$。大地纬度直接规定上向 $\mathbf e_U=(\cos B\cos L,\cos B\sin L,\sin B)^T$。非极点处，$\mathbf k\times\mathbf e_U$ 沿纬圈切线，指向经度增加的一侧，归一化即得东向：
+
+$$
+\mathbf e_E=\frac{\mathbf k\times\mathbf e_U}{\|\mathbf k\times\mathbf e_U\|}
+=(-\sin L,\cos L,0)^T.
+$$
+
+再取 $\mathbf e_N=\mathbf e_U\times\mathbf e_E$，使东叉北等于上。这样先由几何建立三个单位方向，下面的偏导证明再给出同样的方向及其长度标尺。极点处叉积为零，应先选参考经线，不能直接除以零向量的模。
+
+<!-- source-figure: {"src": "/geodesy/figures/local-basis.svg", "alt": "从法线构造东、北、上三个单位方向", "source": "本站绘制", "page": "示意图", "original": true} -->
+![从法线构造东、北、上三个单位方向](../assets/figures/local-basis.svg)
+
+蓝箭头沿椭球法线，橙箭头沿纬圈，绿箭头由叉乘确定。先看三根单位方向，再把它们与下面偏导中的括号向量比较；偏导前的系数负责长度。本站按坐标雅可比的归一化列绘制。
+<!-- /source-figure -->
+
 <!-- geodesy-anchor: local-tangents -->
 ## 求偏导得到两个切向量
 取 $\mathbf r(B,L)$ 与 $W,N$ 的定义。$N$ 随纬度变化，求导时不能当作常数：
@@ -131,6 +149,8 @@ $$
 赤道、首子午线、$h=0$ 对应 $(a,0,0)$。高度增长时，赤道点沿 X 移动，极点沿 Z 移动。这样的边界关系能检查角度单位、符号和高度方向。
 
 ![椭球坐标转换](../assets/figures/lab-blh-xyz.svg)
+
+先看子午面上的法线与地心向径，再看赤道面的经度投影；增加 h 时点沿同一法线移动。本站按正算模型绘制。
 
 <!-- legacy-lab: ellipsoid -->
 

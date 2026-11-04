@@ -1445,7 +1445,8 @@
       "topics": [
         "geodesy-frame-rotation"
       ],
-      "note": "X-Y-Z同名轴夹角关系"
+      "note": "X-Y-Z同名轴夹角关系",
+      "correction": "被动Rz Ry Rx约定下cos(beta)三重正弦交叉项应为负号；原页为正号。完整矩阵R22及三个角均30度的数值0.625确认。"
     },
     {
       "source": "S11",

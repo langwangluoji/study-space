@@ -29,6 +29,8 @@ sources: ["S1"]
 
 <!-- anatomy-interactive: /anatomy/earth-observation/geodesy.html?mode=frame | 点没有动，为什么坐标变了？ | anatomy-frame.svg -->
 
+固定同一靶点观察原点、轴向和刻度的改变；坐标数值改变时，靶点的物理位置可以保持不动。本站绘制。
+
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=frame)
 
 靶点和长度都未改变，改变的是读数的基。接下来用同一分解写出方向余弦矩阵。
@@ -75,7 +77,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/frame-chain.svg","alt":"岁差、章动、自转与极移对应的坐标轴转换链","source":"本站绘制","page":"示意图","note":"示意轴向关系；角度与摆动幅度均不按真实比例绘制。","original":true} -->
 ![岁差、章动、自转与极移对应的坐标轴转换链](../assets/figures/frame-chain.svg)
 
-本站绘制，本站示意图。示意轴向关系；角度与摆动幅度均不按真实比例绘制。
+按箭头逐站识别岁差、章动、自转和极移分别连接哪两套轴；反向转换需逐项取逆并反转次序。 来源：本站绘制，本站示意图。示意轴向关系；角度与摆动幅度均不按真实比例绘制。
 <!-- /source-figure -->
 
 图中的箭头表示同一个向量依次在不同基下重写分量；每条箭头都对应下式中的一个方向余弦矩阵。传统课件把二者之间的联系分为岁差、章动、地球自转和极移。用方向明确的矩阵，几何上可写成

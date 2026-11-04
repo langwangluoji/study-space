@@ -16,6 +16,7 @@ for (const file of files) {
   if (/<(?:AnatomyFigure|SourceFigure|LearningMark|GeodesyLab)\b/.test(source)) errors.push(file+': website-only component in canonical note');
   if (/^#{1,6} .*\{#[^}]+\}/m.test(source)) errors.push(file+': website-only heading attribute in Obsidian');
   if (data.chapter > 0 && data.order > 0) {
+    if (!/!\[[^\]]+\]\(\.\.\/assets\/figures\/[^)]+\)/.test(source)) errors.push(file+': missing offline static figure');
     if (!/例题|算例/.test(source)) errors.push(file+': missing worked example');
     const count = Math.max((source.match(/自测\s*\d/g) ?? []).length, (source.split(/## 自检/)[1]?.match(/^\d\. /gm) ?? []).length, (source.split(/## 自检/)[1]?.match(/^> \[!info\]- \d\./gm) ?? []).length);
     if (count < 2) errors.push(file+': fewer than two selfchecks ('+count+')');

@@ -15,6 +15,8 @@ sources: [S6]
 
 <!-- geodesy-interactive: time | 同一瞬间的UTC、TAI与TT读数 | lab-time.svg -->
 
+各行是同一瞬间的不同时间标签；先看输入的闰秒差和 DUT1，再读 TAI、TT、UT1 相对 UTC 的差值。本站绘制。
+
 [离线打开交互图](../assets/interactive/time.html)
 
 ## 时刻、间隔与秒长

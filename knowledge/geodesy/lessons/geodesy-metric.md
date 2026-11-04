@@ -63,7 +63,7 @@ $$
 <!-- source-figure: {"src":"/geodesy/figures/area-element.png","alt":"经纬格网微元的两边与面积","source":"1椭球面数学性质   课程讲义.pdf","page":"56","printed":"43"} -->
 ![经纬格网微元的两边与面积](../assets/figures/area-element.png)
 
-1椭球面数学性质   课程讲义.pdf，文件页 56／原页码 43。
+小格两边分别是 M dB 和 N cos B dL，正交时相乘得到面积微元；经线汇聚使东西边长随纬度变化。 来源：1椭球面数学性质   课程讲义.pdf，PDF 文件页56，原页码43。
 <!-- /source-figure -->
 
 图中两边分别是 $M\,dB$ 与 $N\cos B\,dL$。这说明小区域可以近似把经纬网看成正交矩形，但长距离需要沿途积分变化的系数。极点经纬参数退化，面元表达按极限积分仍有意义，却不能将该处的两条参数向量当成独立基。
@@ -76,6 +76,8 @@ $$
 ![一度纬差不能只乘一次M](../assets/figures/anatomy-metric.svg)
 
 <!-- anatomy-interactive: /anatomy/earth-observation/geodesy.html?mode=metric | 一度纬差不能只乘一次M | anatomy-metric.svg -->
+
+沿纬向移动时 M 随 B 变化，整段弧长须累加局部标尺；右侧读数可与积分结果比较。本站绘制。
 
 [打开交互图](https://langwangluoji.github.io/study-space/anatomy/earth-observation/geodesy.html?mode=metric)
 

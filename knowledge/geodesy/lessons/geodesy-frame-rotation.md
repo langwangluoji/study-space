@@ -10,6 +10,12 @@ sources: [S4, S11]
 
 旋转公式的符号由两个问题决定：旋转的是向量还是坐标轴？输出是哪套基底下的分量？把这两件事写清，公式就能用一个90°算例检验。本页对应 S11 第2–11页，以及旋转 DOCX 中的基向量证明和内嵌图页10–18。
 
+<!-- source-figure: {"src": "/geodesy/figures/rotation-comparison.svg", "alt": "固定向量转坐标轴与固定坐标轴转向量", "source": "本站绘制", "page": "示意图", "original": true} -->
+![固定向量转坐标轴与固定坐标轴转向量](../assets/figures/rotation-comparison.svg)
+
+左图的红向量不动，新轴转过正角后，向量在新 y′ 轴上的投影为负；右图保持轴不动，向量转后 y 分量为正。将角设为90°即可检查矩阵正负号。本站按明确的主动、被动约定绘制。
+<!-- /source-figure -->
+
 ## 从同一向量的两种表达出发
 
 令 $E_P=[\mathbf p_1\ \mathbf p_2\ \mathbf p_3]$、$E_Q=[\mathbf q_1\ \mathbf q_2\ \mathbf q_3]$ 为两组正交单位轴在同一公共空间中的列矩阵。同一个向量满足
@@ -34,6 +40,8 @@ $$
 
 ## 与讲义一致的被动基本矩阵
 
+把旧坐标架命名为 Q，按右手规则转动坐标轴得到新坐标架 P。固定向量从旧分量换到新分量，即 $\mathbf v_P=R\mathbf v_Q$，所以此时 $R=C_{P\leftarrow Q}$。这补齐了前面方向余弦矩阵与下面基本旋转之间的对应。
+
 坐标轴按右手规则转过正角 $\varepsilon$，固定向量的分量使用被动矩阵
 
 $$
@@ -49,44 +57,49 @@ $$
 
 ## 顺序为什么影响结果
 
-S11 第3–5页采用交线轴组织 Z–X–Z 欧拉分解，第6–8页给出 X–Y–Z 的逐步旋转。它们都通过三个角描述一个一般空间姿态，但各步角度的定义不同。第4页的交线分解具体写为
+若依次从 C 系换到 B 系，再换到 A 系，有 $C_{A\leftarrow C}=C_{A\leftarrow B}C_{B\leftarrow C}$，最右侧先作用。带上输入、输出下标后，中间坐标架会自然衔接。固定轴与随动轴的有限欧拉分解各有自己的角定义；下面保留课件两条完整路线。
 
-$$
-R=R_z(-\varepsilon_{z2})R_x(\varepsilon_x)R_z(\varepsilon_{z1}).
-$$
-
-相应同名轴夹角满足
-
-$$
-\begin{aligned}
-\cos\alpha&=\cos\varepsilon_{z1}\cos\varepsilon_{z2}
-+\sin\varepsilon_{z1}\sin\varepsilon_{z2}\cos\varepsilon_x,\\
-\cos\beta&=\sin\varepsilon_{z1}\sin\varepsilon_{z2}
-+\cos\varepsilon_{z1}\cos\varepsilon_{z2}\cos\varepsilon_x,\\
-\cos\gamma&=\cos\varepsilon_x.
-\end{aligned}
-$$
-
-对于依次施加的列向量分量转换
-
-$$
-\mathbf v_3=R_3R_2R_1\mathbf v_0,
-$$
-
-最右侧 $R_1$ 先作用。还需说明每一步围绕固定轴还是已经转动的轴；改变这一约定后，即使轴字母相同，连乘解释也会变化。
-
-例如采用 $R=R_z(\varepsilon_z)R_y(\varepsilon_y)R_x(\varepsilon_x)$ 时，三对同名轴夹角 $\alpha,\beta,\gamma$ 的余弦等于 R 的三个对角元素：
-
-$$
-\begin{aligned}
-\cos\alpha&=\cos\varepsilon_y\cos\varepsilon_z,\\
-\cos\beta&=\cos\varepsilon_x\cos\varepsilon_z+
-\sin\varepsilon_x\sin\varepsilon_y\sin\varepsilon_z,\\
-\cos\gamma&=\cos\varepsilon_x\cos\varepsilon_y.
-\end{aligned}
-$$
-
-所以“某轴与新同名轴的夹角”通常不是某一个欧拉角。对于讲义的另一种 Z–X–Z 分解，倾斜的两根 Z 轴夹角对应中间 X 旋转的绝对大小，两根 X 或 Y 轴的夹角则还依赖两次 Z 旋转。
+> [!info]- 对照课件：Z–X–Z、X–Y–Z 与同名轴夹角
+> S11 第3–5页采用交线轴组织 Z–X–Z 欧拉分解，第6–8页给出 X–Y–Z 的逐步旋转。它们都通过三个角描述一个一般空间姿态，但各步角度的定义不同。第4页的交线分解具体写为
+>
+> $$
+> R=R_z(-\varepsilon_{z2})R_x(\varepsilon_x)R_z(\varepsilon_{z1}).
+> $$
+>
+> 相应同名轴夹角满足
+>
+> $$
+> \begin{aligned}
+> \cos\alpha&=\cos\varepsilon_{z1}\cos\varepsilon_{z2}
+> +\sin\varepsilon_{z1}\sin\varepsilon_{z2}\cos\varepsilon_x,\\
+> \cos\beta&=\sin\varepsilon_{z1}\sin\varepsilon_{z2}
+> +\cos\varepsilon_{z1}\cos\varepsilon_{z2}\cos\varepsilon_x,\\
+> \cos\gamma&=\cos\varepsilon_x.
+> \end{aligned}
+> $$
+>
+> 对于依次施加的列向量分量转换
+>
+> $$
+> \mathbf v_3=R_3R_2R_1\mathbf v_0,
+> $$
+>
+> 最右侧 $R_1$ 先作用。还需说明每一步围绕固定轴还是已经转动的轴；改变这一约定后，即使轴字母相同，连乘解释也会变化。
+>
+> 例如采用 $R=R_z(\varepsilon_z)R_y(\varepsilon_y)R_x(\varepsilon_x)$ 时，三对同名轴夹角 $\alpha,\beta,\gamma$ 的余弦等于 R 的三个对角元素：
+>
+> $$
+> \begin{aligned}
+> \cos\alpha&=\cos\varepsilon_y\cos\varepsilon_z,\\
+> \cos\beta&=\cos\varepsilon_x\cos\varepsilon_z-
+> \sin\varepsilon_x\sin\varepsilon_y\sin\varepsilon_z,\\
+> \cos\gamma&=\cos\varepsilon_x\cos\varepsilon_y.
+> \end{aligned}
+> $$
+>
+> S11 文件页8在 $\cos\beta$ 的交叉项前印作正号。按本章明确的 $R_zR_yR_x$ 及被动基本矩阵连乘，应为上式的负号，与下方完整矩阵第2行第2列一致。三个角均取30°时，该对角元为 $5/8=0.625$，正号会给出 $7/8=0.875$，可直接检出差异。
+>
+> 所以“某轴与新同名轴的夹角”通常不是某一个欧拉角。对于讲义的另一种 Z–X–Z 分解，倾斜的两根 Z 轴夹角对应中间 X 旋转的绝对大小，两根 X 或 Y 轴的夹角则还依赖两次 Z 旋转。
 
 > [!info]- 完整展开：X–Y–Z 连乘与小角近似
 > 用 $c_i=\cos\varepsilon_i,s_i=\sin\varepsilon_i$，相乘可得
@@ -108,6 +121,18 @@ $$
 >
 > 其中 $[\mathbf a]_\times\mathbf b=\mathbf a\times\mathbf b$。一阶项可以交换顺序，因为顺序差异从二阶项开始出现。近似矩阵的 $R^TR=I+O(\varepsilon^2)$，所以严格求逆时应使用精确旋转的转置，或明确采用一阶逆 $I+[\boldsymbol\varepsilon]_\times$。
 
+
+<!-- source-figure: {"src": "/geodesy/figures/source-euler-zxz.png", "alt": "课件的交线轴 Z–X–Z 路线", "source": "S11 三维直角坐标系之间转换", "page": "3", "locator": "PDF 文件页 3"} -->
+![课件的交线轴 Z–X–Z 路线](../assets/figures/source-euler-zxz.png)
+
+来源：S11，PDF 文件页3，截取旋转几何图。原图中的各级撇号表示中间坐标架；依次跟踪坐标轴，最后与折叠区的连乘顺序核对。图中的同名轴夹角通常不等于某一个欧拉角。
+<!-- /source-figure -->
+
+<!-- source-figure: {"src": "/geodesy/figures/source-euler-xyz.png", "alt": "课件的 X–Y–Z 路线", "source": "S11 三维直角坐标系之间转换", "page": "6", "locator": "PDF 文件页 6"} -->
+![课件的 X–Y–Z 路线](../assets/figures/source-euler-xyz.png)
+
+来源：S11，PDF 文件页6，截取旋转几何图。每一步的角必须连同旋转轴和中间坐标架一起识别；换成另一种分解后不能直接照搬同一组三个角。
+<!-- /source-figure -->
 
 ## 算例：顺序与近似各影响多少
 
