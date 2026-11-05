@@ -54,6 +54,8 @@ def vault_links(path):
     with zipfile.ZipFile(path) as z:
         assert z.testzip() is None
         members=set(z.namelist());notes={name:z.read(name).decode('utf-8') for name in members if name.endswith('.md')}
+        assert '.obsidian/snippets/optics-priority.css' in members,'Offline emphasis stylesheet missing'
+        assert 'optics-priority' in json.loads(z.read('.obsidian/appearance.json'))['enabledCssSnippets']
         provenance=json.loads(z.read('assets/ppt/figures.json'))['figures']
         for f in provenance:
             assert hashlib.sha256(z.read('assets/ppt/'+f['file'])).hexdigest()==f['sha256']

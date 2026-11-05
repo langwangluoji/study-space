@@ -217,6 +217,8 @@ def package(vault=None,config=None,figures=None):
         member(z,'assets/ppt/figures.json',json.dumps({'figures':[f for f in figures if f['file'] in used]},ensure_ascii=False,indent=2)+'\n')
         member(z,'开始阅读.md','# 光学PPT考点复习\n\n[[10 考试复习概念公式精简版]]按第1—9章检查概念、条件与公式直觉。\n')
         member(z,'.obsidian/app.json',json.dumps({'showInlineTitle':False,'foldHeading':True}))
+        member(z,'.obsidian/appearance.json',json.dumps({'enabledCssSnippets':['optics-priority']}))
+        member(z,'.obsidian/snippets/optics-priority.css',(ROOT/'docs/.vitepress/theme/optics.css').read_text(encoding='utf-8'))
     standalone=(ROOT/'docs/review-optics.md').read_text(encoding='utf-8');standalone=re.sub(r'^---\n.*?\n---\n','',standalone,flags=re.S);standalone=local_details(standalone)
     for slug in slug_to_file:standalone=standalone.replace(']('+slug+'.html','](https://langwangluoji.github.io/study-space/'+slug+'.html')
     standalone=standalone.replace('](/optics/','](https://langwangluoji.github.io/study-space/optics/')
