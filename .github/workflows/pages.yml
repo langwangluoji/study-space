@@ -24,6 +24,7 @@ jobs:
           python-version: '3.11'
       - run: npm ci
       - run: node --test scripts/math-handler-lifecycle.test.mjs
+      - run: node --test scripts/reading-targets.test.mjs
       - run: npm run check
       - run: node --test scripts/geodesy-publish.test.mjs scripts/geodesy/model.test.mjs
       - run: node scripts/check-geodesy-content.mjs

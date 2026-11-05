@@ -138,7 +138,6 @@ def publish(vault):
     (ROOT/'optics-ppt-review-sources.json').write_bytes((json.dumps(review,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     space=json.loads((ROOT/'study-space.config.json').read_text(encoding='utf-8'));course=next(c for c in space['courses'] if c['id']=='optics')
     course.update(summary='按PPT第1—9章学习：34个独立小节，课件解释图、核心条件、逐步推导与概念思考题；另有按章PPT复习。',scope='7份PPT · 332页 · 第1—9章',chapters=[{'slug':c['slug'],'title':'第'+str(c['number'])+'章 '+c['title'],'topics':[{'slug':t['slug'],'title':t['title']} for t in c['topics']]} for c in chapters])
-    (ROOT/'study-space.config.json').write_bytes((json.dumps(space,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     archives=[]
     for p in (vault/'参考与旧版').glob('*.md'):
         if p.name[:2] in ('00','08','09','10'):continue
@@ -148,6 +147,8 @@ def publish(vault):
         dest.write_bytes((local_details(compile_lesson(p.read_text(encoding='utf-8'),links,'参考与旧版/'+p.name)).rstrip()+'\n').encode('utf-8'))
         archives.append({'slug':slug,'localFile':'参考与旧版/'+p.name,'source':str(dest.relative_to(ROOT)).replace('\\','/')})
     config['archivePages']=archives;config['exportPages']=entries
+    course['readingPages']=[{'slug':e['slug'],'title':e.get('title',Path(e['localFile']).stem)} for e in [*entries,*archives]]
+    (ROOT/'study-space.config.json').write_bytes((json.dumps(space,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     (ROOT/'knowledge/optics/course.json').write_bytes((json.dumps(config,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     package(None,config,figures)
     print('PPT course exported:',len(chapters),'chapters,',len(ordered),'independent sections,',len(pages),'PPT pages,',len(figures),'figures.')
