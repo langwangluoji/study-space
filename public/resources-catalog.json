@@ -925,11 +925,11 @@
     "type": "讲义",
     "title": "光学课程学习版与复习笔记包",
     "author": "Study Space 课程整理",
-    "description": "完整学习讲义与PPT考点复习版，附作业索引和来源对照；考试复习部分按六份PPT整理。",
+    "description": "完整学习讲义与PPT考点复习版，附作业索引和来源对照；考试复习部分按七份PPT整理。",
     "preview": "/course-optics.html",
     "format": "ZIP",
     "file": "/optics/光学期中复习_Obsidian.zip",
-    "bytes": 5673215
+    "bytes": 21904046
   },
   {
     "id": "optics-exam-summary",
@@ -937,11 +937,11 @@
     "type": "讲义",
     "title": "光学PPT考点复习版",
     "author": "Study Space 课程整理",
-    "description": "六份课件共257页的概念、现象条件、核心公式与直观记法；包括新增传播II。",
+    "description": "七份课件共332页的概念、现象条件、核心公式与直观记法；包括界面调控与按第1—9章的独立小节。",
     "preview": "/review-optics.html",
     "format": "Markdown",
     "file": "/optics/光学考试复习_概念公式精简版.md",
-    "bytes": 85686
+    "bytes": 129515
   },
   {
     "id": "optics-ppt-review-bundle",
@@ -953,6 +953,6 @@
     "preview": "/review-optics.html",
     "format": "ZIP",
     "file": "/optics/光学PPT复习_Obsidian.zip",
-    "bytes": 36546
+    "bytes": 1690657
   }
 ]

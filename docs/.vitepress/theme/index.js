@@ -46,6 +46,7 @@ import './folio-global.css';
 import './folio-catalog.css';
 import './classroom.css';
 import './folio-reading.css';
+import './optics.css';
 export default {
   extends:DefaultTheme,
   Layout(){const route=useRoute(),reading=courseForPath(route.path)&&!isResourcePath(route.path);return h(DefaultTheme.Layout,{class:{'folio-reading-layout':!!reading,'folio-course-overview':isCourseOverview(route.path),'folio-review':/\/review-[^/]+\.html$/.test(route.path)}},{'doc-before':()=>h(Fragment,null,[h(PageContext),h(CourseMasthead),h(FolioReadingTools)])})},

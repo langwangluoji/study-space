@@ -1,5 +1,5 @@
 {
-  "source": "PPT excerpts with PDF page captions",
+  "source": "PPT source illustrations with page captions",
   "figures": [
     {
       "file": "laser-feedback-p15.png",
@@ -13,7 +13,10 @@
         1215,
         860
       ],
-      "learningPage": "optics-laser.html"
+      "learningPage": "optics-ch06-s03.html",
+      "learningPages": [
+        "optics-ch06-s03.html"
+      ]
     },
     {
       "file": "laser-fel-bunching-p42.png",
@@ -27,7 +30,10 @@
         1430,
         965
       ],
-      "learningPage": "optics-laser.html"
+      "learningPage": "optics-ch06-s05.html",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
     },
     {
       "file": "laser-longitudinal-spectrum-p19.png",
@@ -43,9 +49,12 @@
         1800,
         1013
       ],
-      "learningPage": "optics-laser.html",
+      "learningPage": "optics-ch06-s03.html",
       "bytes": 39527,
-      "sha256": "8ba423072f28bba14130a6483215172313722a26b22b2a28aa86a3774f8d43ff"
+      "sha256": "8ba423072f28bba14130a6483215172313722a26b22b2a28aa86a3774f8d43ff",
+      "learningPages": [
+        "optics-ch06-s03.html"
+      ]
     },
     {
       "file": "laser-roundtrip-intensity-p18.png",
@@ -61,9 +70,12 @@
         1800,
         1013
       ],
-      "learningPage": "optics-laser.html",
+      "learningPage": "optics-ch06-s03.html",
       "bytes": 5573,
-      "sha256": "c4271898c1f25a64c2ff6f4d57183bbabfddf5ccba5d4484913f482d099d5688"
+      "sha256": "c4271898c1f25a64c2ff6f4d57183bbabfddf5ccba5d4484913f482d099d5688",
+      "learningPages": [
+        "optics-ch06-s03.html"
+      ]
     },
     {
       "file": "laser-stimulated-transition-p07.png",
@@ -79,9 +91,12 @@
         1800,
         1013
       ],
-      "learningPage": "optics-laser.html",
+      "learningPage": "optics-ch06-s01.html",
       "bytes": 37370,
-      "sha256": "40ac2a2989c1e3b794845c03956ae5eb8345fb39dc5bf6d532d67be80b21eb2c"
+      "sha256": "40ac2a2989c1e3b794845c03956ae5eb8345fb39dc5bf6d532d67be80b21eb2c",
+      "learningPages": [
+        "optics-ch06-s01.html"
+      ]
     },
     {
       "file": "laser-three-four-levels-p14.png",
@@ -95,7 +110,10 @@
         1605,
         980
       ],
-      "learningPage": "optics-laser.html"
+      "learningPage": "optics-ch06-s03.html",
+      "learningPages": [
+        "optics-ch06-s03.html"
+      ]
     },
     {
       "file": "laser-transverse-patterns-p20.png",
@@ -111,9 +129,12 @@
         1800,
         1013
       ],
-      "learningPage": "optics-laser.html",
+      "learningPage": "optics-ch06-s03.html",
       "bytes": 131106,
-      "sha256": "f025254b25183dc4c68585563dad5638a3f2fbc18acb363b244c5a88b8ae70b8"
+      "sha256": "f025254b25183dc4c68585563dad5638a3f2fbc18acb363b244c5a88b8ae70b8",
+      "learningPages": [
+        "optics-ch06-s03.html"
+      ]
     },
     {
       "file": "propagation-i-absorption-spectrometer.png",
@@ -129,7 +150,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s03.html",
       "bytes": 281839,
       "sha256": "cf605b526df9c25b8f608cdd28ef570bff41310da2c45e0ce134abac9e21b09a",
       "alt": "吸收光谱装置与连续背景上的吸收暗线",
@@ -141,7 +162,10 @@
         1560,
         990
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s03.html"
+      ]
     },
     {
       "file": "propagation-i-absorption-spectrum-types.png",
@@ -157,7 +181,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s03.html",
       "bytes": 62656,
       "sha256": "ac3e350d3ed2f93ea606a25770164cafbcbea152e4a97cd4825366aa6b068f82",
       "alt": "红外透射率吸收谷与可见连续背景吸收线",
@@ -169,7 +193,10 @@
         1500,
         842
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s03.html"
+      ]
     },
     {
       "file": "propagation-i-anomalous-dispersion-band.png",
@@ -185,7 +212,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s04.html",
       "bytes": 215553,
       "sha256": "8d88d8b384b12b8fa0cebf9795302981d6ccdfb6ec285b03b713d5676e0bfd75",
       "alt": "吸收带及其两侧折射率曲线斜率变化",
@@ -197,7 +224,10 @@
         1670,
         970
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s04.html"
+      ]
     },
     {
       "file": "propagation-i-cold-sea-upper-mirage.png",
@@ -211,7 +241,10 @@
         940,
         1075
       ],
-      "learningPage": "optics-propagation.html"
+      "learningPage": "optics-ch07-s05.html",
+      "learningPages": [
+        "optics-ch07-s05.html"
+      ]
     },
     {
       "file": "propagation-i-fermat-path-examples.png",
@@ -227,7 +260,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s05.html",
       "bytes": 229040,
       "sha256": "1ad5b9dbf49aa63a593c9860f15eae072f8ebd7fdf0698314298fec9c046e966",
       "alt": "平面镜反射、椭圆反射面与透镜等光程示意",
@@ -239,7 +272,10 @@
         1680,
         975
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s05.html"
+      ]
     },
     {
       "file": "propagation-i-hot-ground-lower-mirage.png",
@@ -253,7 +289,10 @@
         940,
         950
       ],
-      "learningPage": "optics-propagation.html"
+      "learningPage": "optics-ch07-s05.html",
+      "learningPages": [
+        "optics-ch07-s05.html"
+      ]
     },
     {
       "file": "propagation-i-index-phase-attenuation.png",
@@ -269,7 +308,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s02.html",
       "bytes": 128706,
       "sha256": "5a4cf10e9a6f43565b12745f604b6ad149f044909a32c90b020e29186a6d39a1",
       "alt": "复折射率实部和虚部对应相位与衰减的课件公式",
@@ -281,7 +320,10 @@
         1530,
         985
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s02.html"
+      ]
     },
     {
       "file": "propagation-i-lorentz-electron-model.png",
@@ -297,7 +339,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s02.html",
       "bytes": 104545,
       "sha256": "9d9e803dd91239440cc9dc73fd80222fbd8eb09f37603207655ab2d2c3c6aef4",
       "alt": "固定正电中心附近受光驱动的束缚电子模型",
@@ -309,7 +351,10 @@
         1540,
         975
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s02.html"
+      ]
     },
     {
       "file": "propagation-i-newton-cross-prisms.png",
@@ -323,7 +368,10 @@
         1180,
         650
       ],
-      "learningPage": "optics-propagation.html"
+      "learningPage": "optics-ch07-s04.html",
+      "learningPages": [
+        "optics-ch07-s04.html"
+      ]
     },
     {
       "file": "propagation-i-normal-dispersion-curves.png",
@@ -339,7 +387,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation.html",
+      "learningPage": "optics-ch07-s04.html",
       "bytes": 197571,
       "sha256": "2e7b9d03432809a8455ecaf318409a08d6fa2bfa49f66f41181ea9122f31822c",
       "alt": "几种透明材料折射率随波长下降的正常色散曲线",
@@ -351,7 +399,10 @@
         660,
         910
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s04.html"
+      ]
     },
     {
       "file": "propagation-ii-beat-envelope-intensity.png",
@@ -367,7 +418,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch08-s04.html",
       "bytes": 53507,
       "sha256": "54cb51ee87a91292fc5498776e814312214470527b51b04d2da0bdbf0f49a511",
       "alt": "光拍的快速电场、慢包络和非负强度曲线",
@@ -379,7 +430,10 @@
         1230,
         705
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch08-s04.html"
+      ]
     },
     {
       "file": "propagation-ii-group-phase-displacement.png",
@@ -393,7 +447,10 @@
         1540,
         1030
       ],
-      "learningPage": "optics-propagation-ii.html"
+      "learningPage": "optics-ch08-s04.html",
+      "learningPages": [
+        "optics-ch08-s04.html"
+      ]
     },
     {
       "file": "propagation-ii-mie-cloud-spectrum.png",
@@ -409,7 +466,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch07-s06.html",
       "bytes": 363256,
       "sha256": "cacf21bd3a5e9935cb6fa7f0f1bedf33fdb0d3b4605b302049019f58b5f31d6b",
       "alt": "粒径参数下瑞利区和米氏区及白云照片",
@@ -421,7 +478,10 @@
         1575,
         930
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s06.html"
+      ]
     },
     {
       "file": "propagation-ii-natural-light-statistics.png",
@@ -437,7 +497,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch08-s03.html",
       "bytes": 86140,
       "sha256": "f5fc02557ed4a174908dee72869cdf7c83a52e13923c4834e1a77274a7cc4dcb",
       "alt": "自然光的随机振动方向和等强正交分解图",
@@ -449,7 +509,10 @@
         1530,
         670
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch08-s03.html"
+      ]
     },
     {
       "file": "propagation-ii-partial-polarization-statistics.png",
@@ -465,7 +528,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch08-s03.html",
       "bytes": 72093,
       "sha256": "48441fb586732677fd5dfb4adb5cdd7204f6c7730009924d7b6ec8d3059720e3",
       "alt": "部分偏振光的优先方向和正交极值强度",
@@ -477,7 +540,10 @@
         1500,
         765
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch08-s03.html"
+      ]
     },
     {
       "file": "propagation-ii-polarization-ellipse.png",
@@ -491,7 +557,10 @@
         940,
         720
       ],
-      "learningPage": "optics-propagation-ii.html"
+      "learningPage": "optics-ch08-s02.html",
+      "learningPages": [
+        "optics-ch08-s02.html"
+      ]
     },
     {
       "file": "propagation-ii-rope-standing-wave.png",
@@ -507,7 +576,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch08-s01.html",
       "bytes": 323144,
       "sha256": "9e9b3563b55f50651db0c63908e9c56580fa68ede92ce18a0a513c720b9581b5",
       "alt": "绳驻波照片中的固定交点和鼓起区",
@@ -519,7 +588,10 @@
         1040,
         765
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch08-s01.html"
+      ]
     },
     {
       "file": "propagation-ii-scattering-polarization-geometry.png",
@@ -533,7 +605,10 @@
         1708,
         1062
       ],
-      "learningPage": "optics-propagation-ii.html"
+      "learningPage": "optics-ch07-s06.html",
+      "learningPages": [
+        "optics-ch07-s06.html"
+      ]
     },
     {
       "file": "propagation-ii-secondary-wave-cancellation.png",
@@ -549,7 +624,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-propagation-ii.html",
+      "learningPage": "optics-ch07-s06.html",
       "bytes": 116068,
       "sha256": "119ee546230f39ebe9bef18208c0071c7876b88be317d2ce4d411d0b2eb6c6a4",
       "alt": "均匀与非均匀介质中的次波相干叠加说明",
@@ -561,7 +636,10 @@
         1550,
         975
       ],
-      "visualChecked": true
+      "visualChecked": true,
+      "learningPages": [
+        "optics-ch07-s06.html"
+      ]
     },
     {
       "file": "radiation-blackbody-cavity-p17.png",
@@ -575,7 +653,10 @@
         840,
         930
       ],
-      "learningPage": "optics-incoherent.html"
+      "learningPage": "optics-ch05-s01.html",
+      "learningPages": [
+        "optics-ch05-s01.html"
+      ]
     },
     {
       "file": "radiation-blackbody-spectra-p18.png",
@@ -589,7 +670,10 @@
         825,
         930
       ],
-      "learningPage": "optics-incoherent.html"
+      "learningPage": "optics-ch05-s01.html",
+      "learningPages": [
+        "optics-ch05-s01.html"
+      ]
     },
     {
       "file": "radiation-dipole-wavefronts-p31.png",
@@ -605,7 +689,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-incoherent.html",
+      "learningPage": "optics-ch05-s02.html",
       "bytes": 552341,
       "sha256": "2d445fa6687894b1bc3e0bd54d68e5596c7011608b6b40926bceff5cefe8c629",
       "alt": "电偶极子沿竖直轴振荡，场线向外传播，赤道方向辐射最强的环状方向图",
@@ -614,7 +698,10 @@
       "purpose": "偶极子轴向电场线、向外传播的场线和赤道最强的环状方向图",
       "caption": "图：偶极辐射的空间图像，原课件《光学20260928_非相干辐射》PDF p.31。读图时先看上下正负电荷及竖直红箭头，再看离源向外发展的绿色场线，底部环面给出方向分布。环面沿偶极轴凹至零、赤道鼓起，与 $E_0\\propto\\sin\\theta$、强度 $\\propto\\sin^2\\theta$ 一致。图是示意快照，具体远场幅值采用下方含 $\\epsilon_0$ 的SI公式。",
       "readGuide": "图：偶极辐射的空间图像，原课件《光学20260928_非相干辐射》PDF p.31。读图时先看上下正负电荷及竖直红箭头，再看离源向外发展的绿色场线，底部环面给出方向分布。环面沿偶极轴凹至零、赤道鼓起，与 $E_0\\propto\\sin\\theta$、强度 $\\propto\\sin^2\\theta$ 一致。图是示意快照，具体远场幅值采用下方含 $\\epsilon_0$ 的SI公式。",
-      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p31.png"
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p31.png",
+      "learningPages": [
+        "optics-ch05-s02.html"
+      ]
     },
     {
       "file": "radiation-emission-absorption-p41.png",
@@ -630,7 +717,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-incoherent.html",
+      "learningPage": "optics-ch05-s03.html",
       "bytes": 267032,
       "sha256": "345659d5d3099d4d911ed62b26f7729fb0bdda1765a93de0c2f31c719be528ec",
       "alt": "H、Na、Ne、Hg和H2的发射亮线，与连续太阳光谱上的暗吸收线对照",
@@ -639,7 +726,10 @@
       "purpose": "H、Na、Ne、Hg和H2发射谱与太阳吸收谱",
       "caption": "图：发射谱与吸收谱，原课件PDF p.41。各横条的横向位置表示光谱颜色，图未给出可用于精确测波长的数值坐标；H、Na、Ne、Hg 的亮线位置各具特征，H₂ 显示更密集的谱结构。底部太阳连续背景上的箭头标出暗吸收线。亮线和暗线都由允许跃迁的能级差定位，对应 $h\\nu=\\Delta E$；是否显亮或显暗还取决于布居、连续背景和观测光路。图中不同物种的亮度未作统一定量标定。",
       "readGuide": "图：发射谱与吸收谱，原课件PDF p.41。各横条的横向位置表示光谱颜色，图未给出可用于精确测波长的数值坐标；H、Na、Ne、Hg 的亮线位置各具特征，H₂ 显示更密集的谱结构。底部太阳连续背景上的箭头标出暗吸收线。亮线和暗线都由允许跃迁的能级差定位，对应 $h\\nu=\\Delta E$；是否显亮或显暗还取决于布居、连续背景和观测光路。图中不同物种的亮度未作统一定量标定。",
-      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p41.png"
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p41.png",
+      "learningPages": [
+        "optics-ch05-s03.html"
+      ]
     },
     {
       "file": "radiation-hydrogen-levels-p44.png",
@@ -653,7 +743,10 @@
         1255,
         965
       ],
-      "learningPage": "optics-incoherent.html"
+      "learningPage": "optics-ch05-s03.html",
+      "learningPages": [
+        "optics-ch05-s03.html"
+      ]
     },
     {
       "file": "radiation-synchrotron-spectra-p34.png",
@@ -669,7 +762,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-incoherent.html",
+      "learningPage": "optics-ch05-s02.html",
       "bytes": 357607,
       "sha256": "18a8dadab8a875470f7dc72c6d54c50dd4b0507f0f9c5472ee29a1302be15e42",
       "alt": "储存环与弯转磁铁、扭摆器、波荡器示意，及光子能量横轴上的谱亮度曲线",
@@ -678,7 +771,10 @@
       "purpose": "弯转磁铁、扭摆器与波荡器的轨迹及光谱亮度对比",
       "caption": "图：同步辐射的装置与谱形，原课件PDF p.34。左侧彩色磁块使电子轨迹偏转，绿色箭头指向辐射输出；下方角分布图用 $\\beta\\ll1$ 与 $\\beta\\approx1$ 对照前向准直。中图横轴为光子能量（eV）、纵轴为按面积、角度及相对带宽归一的谱亮度，采用对数坐标；弯转磁铁是宽谱背景，波荡器在选定方向出现尖锐谱峰，与周期辐射相干叠加相联系。图中 $N$ 表示辐射周期/单元数，$N^2$ 是满足相干条件时某方向、频率处的峰值增强；总功率还需对角度和频率积分。该纵轴是亮度，和黑体图的 $M_\\lambda$ 具有不同定义与单位。",
       "readGuide": "图：同步辐射的装置与谱形，原课件PDF p.34。左侧彩色磁块使电子轨迹偏转，绿色箭头指向辐射输出；下方角分布图用 $\\beta\\ll1$ 与 $\\beta\\approx1$ 对照前向准直。中图横轴为光子能量（eV）、纵轴为按面积、角度及相对带宽归一的谱亮度，采用对数坐标；弯转磁铁是宽谱背景，波荡器在选定方向出现尖锐谱峰，与周期辐射相干叠加相联系。图中 $N$ 表示辐射周期/单元数，$N^2$ 是满足相干条件时某方向、频率处的峰值增强；总功率还需对角度和频率积分。该纵轴是亮度，和黑体图的 $M_\\lambda$ 具有不同定义与单位。",
-      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p34.png"
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\selfstudy_20261104\\radiation\\光学20260928_非相干辐射-p34.png",
+      "learningPages": [
+        "optics-ch05-s02.html"
+      ]
     },
     {
       "file": "wave-w2-p04-phasor.png",
@@ -692,7 +788,10 @@
         650,
         410
       ],
-      "learningPage": "optics-waves.html"
+      "learningPage": "optics-ch02-s02.html",
+      "learningPages": [
+        "optics-ch02-s02.html"
+      ]
     },
     {
       "file": "wave-w2-p14-spherical-coordinates.png",
@@ -706,7 +805,10 @@
         710,
         840
       ],
-      "learningPage": "optics-waves.html"
+      "learningPage": "optics-ch02-s03.html",
+      "learningPages": [
+        "optics-ch02-s03.html"
+      ]
     },
     {
       "file": "wave-w2-p35-orthogonal-fields.png",
@@ -720,7 +822,10 @@
         875,
         750
       ],
-      "learningPage": "optics-waves.html"
+      "learningPage": "optics-ch03-s01.html",
+      "learningPages": [
+        "optics-ch03-s01.html"
+      ]
     },
     {
       "file": "waves-selfstudy-w1-p10-translation.png",
@@ -736,7 +841,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-waves.html",
+      "learningPage": "optics-ch02-s01.html",
       "bytes": 24845,
       "sha256": "91b88b065537569b036ebf3469e020275430aeae5e2d34f2d4f96a7e40732d44",
       "owner": "waves",
@@ -751,6 +856,9 @@
         300,
         1090,
         615
+      ],
+      "learningPages": [
+        "optics-ch02-s01.html"
       ]
     },
     {
@@ -767,7 +875,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-waves.html",
+      "learningPage": "optics-ch02-s02.html",
       "bytes": 31966,
       "sha256": "f4b4e90d5fef0e284101592a3b60fab9258db8221b548e7c661ebef87eb1b760",
       "owner": "waves",
@@ -782,6 +890,9 @@
         365,
         920,
         680
+      ],
+      "learningPages": [
+        "optics-ch02-s02.html"
       ]
     },
     {
@@ -798,7 +909,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-waves.html",
+      "learningPage": "optics-ch02-s03.html",
       "bytes": 18676,
       "sha256": "5b0404016350bad357baaae09c93170a7be1044480de80648dfe264c76d15c6b",
       "owner": "waves",
@@ -813,6 +924,9 @@
         540,
         640,
         980
+      ],
+      "learningPages": [
+        "optics-ch02-s03.html"
       ]
     },
     {
@@ -829,7 +943,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-waves.html",
+      "learningPage": "optics-ch03-s01.html",
       "bytes": 65582,
       "sha256": "899517ebbe4d72f54e89b3813885defad72acf81b15481fbe5fd3fe6974cffd6",
       "owner": "waves",
@@ -844,6 +958,9 @@
         145,
         1700,
         640
+      ],
+      "learningPages": [
+        "optics-ch03-s01.html"
       ]
     },
     {
@@ -860,7 +977,7 @@
         1800,
         1013
       ],
-      "learningPage": "optics-waves.html",
+      "learningPage": "optics-ch03-s01.html",
       "bytes": 31928,
       "sha256": "de8a2299e7db60795c6ba90d17a0781a5ec62336b81b6096f57b85c50bd81733",
       "owner": "waves",
@@ -875,6 +992,2259 @@
         580,
         1490,
         905
+      ],
+      "learningPages": [
+        "optics-ch03-s01.html"
+      ]
+    },
+    {
+      "file": "nov05-course-logic-p01.png",
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 1,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch01-s03.html",
+      "suggestedChapter": "1",
+      "section": "1.3",
+      "suggestedSection": "1.3",
+      "alt": "由光的本性、产生、传播、探测、物质作用和应用构成的课程问题链",
+      "caption": "《光学202609-波动.pdf》PDF第1页（局部）。从上到下读六个问题：光是什么、怎样产生、怎样传播与调控、怎样探测、怎样与物质相互作用及怎样应用。右侧括号把这些问题连成课程的逻辑体系；每个小照片只作问题实例，知识主线由问题之间的关系给出。",
+      "sha256": "7c58b24c8d7ea9eb1ca831752be129523a6120bcab1fab340a1905c6ac4736f1",
+      "bytes": 242671,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-1-1.png",
+      "owner": "existing",
+      "suggestedHeading": "1.3 光学内容",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-1.jpg",
+      "learningPages": [
+        "optics-ch01-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-course-model-hierarchy-p02.png",
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 2,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch01-s03.html",
+      "suggestedChapter": "1",
+      "section": "1.3",
+      "suggestedSection": "1.3",
+      "alt": "几何光学、波动光学、矢量光学和量子光学的嵌套示意",
+      "caption": "《光学202609-波动.pdf》PDF第2页（局部）。从内向外看几何、波动、矢量、量子四个层次：光线模型适合研究路径，标量波描述相位与干涉，矢量场进一步描述偏振，量子理论讨论光子及物质能级。嵌套表示本课件的模型层次和适用内容扩展，圆的面积没有定量含义；几何光学通常来自短波极限。",
+      "sha256": "53318904709d073c9b4738f9b75de975c711bb3b9c223944596d34bfbc850e61",
+      "bytes": 112831,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-1-2.png",
+      "owner": "existing",
+      "suggestedHeading": "1.3 光学内容",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-1.jpg",
+      "learningPages": [
+        "optics-ch01-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-course-learning-map-p03.png",
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 3,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch01-s03.html",
+      "suggestedChapter": "1",
+      "section": "1.3",
+      "suggestedSection": "1.3",
+      "alt": "从光学现象通向描述、重要性、特点和研究内容的学习图",
+      "caption": "《光学202609-波动.pdf》PDF第3页（局部）。从中心的光学现象沿四条支路阅读：先准确描述现象，再说明其重要性、提炼特点，最后确定研究内容。四条支路给出本章的学习任务；将具体实验或生活现象放入中心，即可据此组织现象、物理问题与模型的联系。",
+      "sha256": "800e7bc00de824f7fe4293f2a6b3bc8360c3dc225ac7ffc847a377e533d6af0f",
+      "bytes": 215897,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-1-3.png",
+      "owner": "existing",
+      "suggestedHeading": "1.3 光学内容",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-1.jpg",
+      "learningPages": [
+        "optics-ch01-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-longitudinal-transverse-p07.png",
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 7,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch02-s01.html",
+      "suggestedChapter": "2",
+      "section": "2.1",
+      "suggestedSection": "2.1",
+      "alt": "弹簧纵波与绳横波中振动方向和传播方向的比较",
+      "caption": "《光学202609-波动.pdf》PDF第7页（局部）。左侧弹簧的质点位移与扰动传播方向平行，对应纵波；右侧绳的位移与传播方向垂直，对应横波。应跟踪某一个质点在平衡位置附近的振动，并另行跟踪波形向前移动，两个方向的夹角才是分类依据。静态截图中的绳线不显示完整振动过程。",
+      "sha256": "a083d68e01983eae742a73ed9d763c9319730bb0d74b62e050bcbbb8c0d58ded",
+      "bytes": 278012,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-1-7.png",
+      "owner": "existing",
+      "suggestedHeading": "1.1 三个概念与两个方向",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-1.jpg",
+      "learningPages": [
+        "optics-ch02-s01.html"
+      ]
+    },
+    {
+      "file": "nov05-cylindrical-coordinates-p15.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 15,
+      "cropPixels": [
+        100,
+        280,
+        590,
+        820
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch02-s03.html",
+      "suggestedChapter": "2",
+      "section": "2.3",
+      "suggestedSection": "2.3",
+      "alt": "柱面波所用的径向、方位角与轴向坐标",
+      "caption": "《光学20260921_波动.pdf》PDF第15页（局部）。竖直轴为 z，红箭头为径向 r，圆周角 θ 在横截面内量取；圆柱表面给出 r 相同的点集。理想无限线源形成柱对称波，振幅随传播距离展开。原页写出的 A/√r 乘简谐相位是远区 kr≫1 的渐近形式，精确柱面解使用贝塞尔或汉克尔函数；这里仅截取坐标图。",
+      "sha256": "b8464bb30b5f6d40227aad0cfa62f3438031223360af101657a534f5210b2b1b",
+      "bytes": 37085,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-2-15.png",
+      "owner": "existing",
+      "suggestedHeading": "5.2 柱面波：远场振幅为什么是 $1/\\sqrt{\\rho}$",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-2.jpg",
+      "learningPages": [
+        "optics-ch02-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-superposition-phase-p18.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 18,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch02-s04.html",
+      "suggestedChapter": "2",
+      "section": "2.4",
+      "suggestedSection": "2.4",
+      "alt": "相位差为零、三分之一π、三分之二π和π的两波叠加曲线",
+      "caption": "《光学20260921_波动.pdf》PDF第18页（局部）。每组红、蓝曲线是两个振幅分别为1.0与0.8的分波，紫线是逐点相加的合波。沿左上、右上、左下、右下比较，相位差从0增至π时合振幅由1.8减至0.2；末图仍有0.2的振幅，因为两分波不等幅。图中“几乎为0”应据此作定量理解，等幅且反相才完全相消。",
+      "sha256": "e8c8bf07637d00177de24a50804d7868dbc27d2129571b8e5d44c639c54da091",
+      "bytes": 224945,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-2-18.png",
+      "owner": "existing",
+      "suggestedHeading": "6.2 同频同方向振动的相量推导",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-2.jpg",
+      "learningPages": [
+        "optics-ch02-s04.html"
+      ]
+    },
+    {
+      "file": "nov05-electromagnetic-transverse-p29.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 29,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch03-s01.html",
+      "suggestedChapter": "3",
+      "section": "3.1",
+      "suggestedSection": "3.1",
+      "alt": "真空平面电磁波的电场磁场波矢正交方向及同相振荡",
+      "caption": "《光学20260921_波动.pdf》PDF第29页（局部）。先用左侧三轴识别电场 E、磁场 H 和波矢 k，再在右侧波形中对照电、磁场的峰谷位置。真空行波满足 E⊥H、E⊥k、H⊥k，E×H 指向能流传播方向；同一位置的两场同相，并有 E₀=cB₀。此处为单一真空平面行波，各向异性介质或叠加场须重新检查这些关系。",
+      "sha256": "31b5cfd080deb85e2711579cf5cfc888ea476e988b98670b6adf1a4a0f12248e",
+      "bytes": 205934,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-2-29.png",
+      "owner": "existing",
+      "suggestedHeading": "8.2 旋度方程给出右手关系、阻抗与同步性",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-2.jpg",
+      "learningPages": [
+        "optics-ch03-s01.html"
+      ]
+    },
+    {
+      "file": "nov05-wave-particle-map-p44.png",
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch03-s02.html",
+      "suggestedChapter": "3",
+      "section": "3.2",
+      "suggestedSection": "3.2",
+      "alt": "光的波动描述和光子描述由普朗克常数联系的概念图",
+      "caption": "《光学20260921_波动.pdf》PDF第44页（局部）。上支路以干涉、电磁场及光速、频率、波长描述光的传播，下支路以光子能量、动量和角动量描述量子性质。右侧虚线联系由普朗克常数给出，例如 E=hν 与 p=h/λ。图中的历史人物用于说明理论发展；波与粒子表征在同一光学理论中联系，选择模型取决于所研究的可观测量。",
+      "sha256": "33ccef266c579753313a377d80998612f006c7951c6c36cc41717de4f8559cdd",
+      "bytes": 143338,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-2-44.png",
+      "owner": "existing",
+      "suggestedHeading": "10.3 波动量与光子量的统一联系",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-2.jpg",
+      "learningPages": [
+        "optics-ch03-s02.html"
+      ]
+    },
+    {
+      "file": "nov05-source-classification-p04.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 4,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch04-s01.html",
+      "suggestedChapter": "4",
+      "section": "4.1",
+      "suggestedSection": "4.1",
+      "alt": "按束缚电子与自由电子划分激光并按机制划分普通光源",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第4页（局部）。先看左图激光分成束缚电子和自由电子两支，再分别读材料、运行方式和输出谱段；右图把普通光源按热辐射、同步辐射、能级辐射与偶极辐射组织。两图采用不同分类维度，同一个实际光源可同时拥有材料、发射机制、相干性和运行方式等标签。",
+      "sha256": "355c9d5b524ff03000dc36e22d382f2cd43ab78101eac786b9dc724a5f982937",
+      "bytes": 172494,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-4.png",
+      "owner": "existing",
+      "suggestedHeading": "1.1 光源的分类",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-3.jpg",
+      "learningPages": [
+        "optics-ch04-s01.html"
+      ]
+    },
+    {
+      "file": "nov05-rays-beams-p05.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 5,
+      "cropPixels": [
+        150,
+        610,
+        1570,
+        985
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch04-s02.html",
+      "suggestedChapter": "4",
+      "section": "4.2",
+      "suggestedSection": "4.2",
+      "alt": "发散同心光束与透镜会聚后形成像散的光束",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第5页（局部）。左侧蓝线从同一个点发散，给出同心光束；右侧光线通过透镜后在不同位置交会，课件用它表示像散光束。沿每条几何线观察能量传播方向，再检查是否存在共同的交点。光线表示平均能流的方向；图中线条的数目和粗细没有给出光强的定量标定。",
+      "sha256": "4830a048348c906935bf56f82eef8f47fb154cfc8ee0aa4809fed02fd370a3f0",
+      "bytes": 129878,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-5.png",
+      "owner": "existing",
+      "suggestedHeading": "1.2 光线、波谱与不同谱形",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-3.jpg",
+      "learningPages": [
+        "optics-ch04-s02.html"
+      ]
+    },
+    {
+      "file": "nov05-visible-spectrum-p06.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 6,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch04-s03.html",
+      "suggestedChapter": "4",
+      "section": "4.3",
+      "suggestedSection": "4.3",
+      "alt": "可见光在电磁谱中的位置和颜色波长频率的对应",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第6页（局部）。左图将可见光放在紫外与红外之间，右图把红至紫的颜色对应到波长范围；沿波长减小的方向，频率与光子能量增大。下方 c=λν 使用真空波长，取 c≈3×10⁸ m/s。390—780 nm 是本课件采用的近似可见范围，视觉边界随观察条件变化，各颜色区间也是约定性的。",
+      "sha256": "c4f7977b086cf5e1f74f3e73869249682573a997e23b8723f40f9c216d067c17",
+      "bytes": 279499,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-6.png",
+      "owner": "existing",
+      "suggestedHeading": "1.2 光线、波谱与不同谱形",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-3.jpg",
+      "learningPages": [
+        "optics-ch04-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-electromagnetic-spectrum-p07.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 7,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch04-s03.html",
+      "suggestedChapter": "4",
+      "section": "4.3",
+      "suggestedSection": "4.3",
+      "alt": "从无线电到伽马射线的波长频率能量与典型应用对照图",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第7页（局部）。先选上方任一波长，再沿同一竖线读取频率、能量与谱段；向右波长减小，而频率与光子能量增大。下部照片给出各谱段的典型来源或用途，可用 λν=c、E=hν 检查读数。图内含多个不同单位与数量级刻度，应先确认单位再换算，谱段之间的边界按惯例划分。",
+      "sha256": "735092d451bfc132f6b0452822e33b4f3a5a8fbe9faabde320bbae938f5f2a38",
+      "bytes": 1063846,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-7.png",
+      "owner": "existing",
+      "suggestedHeading": "1.2 光线、波谱与不同谱形",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-3.jpg",
+      "learningPages": [
+        "optics-ch04-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-continuous-line-spectrum-p08.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 8,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch04-s03.html",
+      "suggestedChapter": "4",
+      "section": "4.3",
+      "suggestedSection": "4.3",
+      "alt": "连续可见谱和原子分子线带谱与右侧谱分布曲线的对照",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第8页（局部）。左侧各横条沿水平方向分光：白炽灯呈连续背景，原子与分子发射呈不同线带结构；右图用随波长变化的谱分布说明连续谱和多个窄峰。峰的位置给出主要波长，峰宽描述有限带宽，曲线下面积才对应选定范围内的总量。横条亮度与右侧曲线没有统一定量标定。",
+      "sha256": "1b3e9858e90b1ee8cb90d0727318f87f54f5b19b15a4870dff63e95c3782fe90",
+      "bytes": 268607,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-8.png",
+      "owner": "existing",
+      "suggestedHeading": "1.2 光线、波谱与不同谱形",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-4.jpg",
+      "learningPages": [
+        "optics-ch04-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-atomic-levels-solid-bands-p45.png",
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 45,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch05-s03.html",
+      "suggestedChapter": "5",
+      "section": "5.3",
+      "suggestedSection": "5.3",
+      "alt": "原子离散能级和精细结构与固体导带价带及带隙的对照",
+      "caption": "《光学20260928_非相干辐射.pdf》PDF第45页（局部）。上部从原子离散能级及其分裂阅读跃迁能量，下部在固体示意中识别导带、价带、杂质施主能级与带隙。允许的辐射频率由初末态能量差满足 hν=ΔE；原子线谱和固体能带谱的组织方式由此联系。费米能级描述占据统计，不能把图中虚线单独当成一条必然发光的能级。原页三级标题误标为5.2.3，此内容属于5.3能级跃迁辐射。",
+      "sha256": "8cddd0fbf83728c68a5a82ec476659b0408fe4ba3b5c53bf6579abca0a9714a1",
+      "bytes": 282145,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-3-45.png",
+      "owner": "existing",
+      "suggestedHeading": "6.3 原子、分子、固体为什么有不同谱形",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-4.jpg",
+      "learningPages": [
+        "optics-ch05-s03.html"
+      ]
+    },
+    {
+      "file": "nov05-thermal-population-p09.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 9,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s02.html",
+      "suggestedChapter": "6",
+      "section": "6.2",
+      "suggestedSection": "6.2",
+      "alt": "氢原子能级与热平衡玻尔兹曼布居示例",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第9页（局部）。左图识别基态与激发态，右式再把能量差与热能 kBT 比较：能级越高，热平衡占据一般越低。黄色例框中 ΔE=2.0×10⁻¹⁹ J、kBT≈4.2×10⁻²¹ J，对等简并的两能级有 N₂/N₁≈exp(−47.6)≈2.1×10⁻²¹，课件的10⁻²¹表示量级。若两能级简并度不同，需乘 g₂/g₁；该分布是讨论粒子数反转的基准。页眉6.1沿用前节，页内6.2.1决定所属二级节。",
+      "sha256": "68bb7aaa94167e9a309459100e2150bf495d1f9fccbef336d69872ebc2d2cccc",
+      "bytes": 290090,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-9.png",
+      "owner": "existing",
+      "suggestedHeading": "2.1 热平衡下的能级布居",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-4.jpg",
+      "learningPages": [
+        "optics-ch06-s02.html"
+      ]
+    },
+    {
+      "file": "nov05-laser-direction-applications-p22.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 22,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s04.html",
+      "suggestedChapter": "6",
+      "section": "6.4",
+      "suggestedSection": "6.4",
+      "alt": "窄激光束用于天文观测测距和遥感的应用示意",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第22页（局部）。沿各图中的细光束辨认发射端、传播方向和远处目标；窄发散使远距离仍能集中照射小区域，从而支持测距与遥感。配图强调方向性带来的用途，具体束宽还随波长、初始光斑、传播距离和大气条件变化。原页将 sr 用在“发散角”后，sr 实际是立体角单位，平面角应使用 rad。",
+      "sha256": "841e707acbfd5030ff2f698ea76c5c6432400ed908e2ee363e4de5093d4c5470",
+      "bytes": 540088,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-22.png",
+      "owner": "existing",
+      "suggestedHeading": "5.1 方向性",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-4.jpg",
+      "learningPages": [
+        "optics-ch06-s04.html"
+      ]
+    },
+    {
+      "file": "nov05-second-harmonic-p26.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 26,
+      "cropPixels": [
+        140,
+        340,
+        850,
+        670
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s04.html",
+      "suggestedChapter": "6",
+      "section": "6.4",
+      "suggestedSection": "6.4",
+      "alt": "红宝石激光经过石英晶体后产生二次谐波的分光装置",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第26页（局部）。沿左到右的光路看：红宝石基频光经过滤光片及石英晶体，再由棱镜把694.3 nm与347.15 nm分开，在底片上记录。后一波长是前者的一半，对应二次谐波频率2ω；晶体的二阶极化响应提供该频率的源项。原页下方极化展开是省略单位因子的示意，SI制常写 P=ε₀(χ⁽¹⁾E+χ⁽²⁾E²+⋯)。",
+      "sha256": "c2958aa5883c6f362f3c0879787984c809eb988ef570b52030329dd7c356a6ac",
+      "bytes": 25416,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-26.png",
+      "owner": "existing",
+      "suggestedHeading": "5.5 非线性极化与倍频",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-5.jpg",
+      "learningPages": [
+        "optics-ch06-s04.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-undulator-p29.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 29,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "交替磁极波荡器使相对论电子横向摆动并向前辐射",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第29页（局部）。先看上下两排交替磁极，再跟踪中间电子束的横向摆动；左侧叉乘方向提示洛伦兹磁力改变电子速度方向。电子经过周期结构产生辐射，输出沿前方集中。图给出自由电子激光的装置基础，形成激光还需要后续的相位同步、能量交换和微聚束机制。",
+      "sha256": "5a5f402fb0113294b99fc974c8559faf748a0b24a351920467c08252bdc02722",
+      "bytes": 454768,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-29.png",
+      "owner": "existing",
+      "suggestedHeading": "6.1 波荡运动与光场耦合",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-5.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-phase-slip-p31.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 31,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "电子走过一个波荡周期时电子和光不同路程形成相位滑移",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第31页（局部）。在上图找出相隔一个磁场周期λᵤ的A、B，电子到达B时A处发出的光已走至A′；沿观测方向比较光的超前路程A′B′。相长叠加要求超前路程为辐射波长λₑ的整数倍，轴向有 λᵤ/vz=(λᵤ+nλₑ)/c。这里λₑ表示辐射光波长，不是电子德布罗意波长；vz为周期平均轴向速度。",
+      "sha256": "8bd185b338bddf589e30034e68c969d3eaa29f205624d74b82df80799fcbfc14",
+      "bytes": 217796,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-31.png",
+      "owner": "existing",
+      "suggestedHeading": "6.2 周期滑移与相干条件",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-5.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-energy-phase-p35.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 35,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "电子横向速度与光电场在波荡周期中的同步变号",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第35页（局部）。红曲线表示光电场，蓝曲线或箭头表示电子横向速度；比较阴影的相邻半周期，两者同时变号可使 v·E 的符号保持。电子的电荷为−e，所以 dEe/dt=−e v·E，v·E>0时电子失能、光场获得能量。下方奇数滑移条件使这一交换在下半周期继续。判断放大应看带电荷符号的做功，磁场负责改变轨迹并组织相位关系。",
+      "sha256": "176fbb378ef6085c9d9efbf33325011299e39221005f86af960b21617094f099",
+      "bytes": 174185,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-35.png",
+      "owner": "existing",
+      "suggestedHeading": "6.3 共振慢相位与平均做功",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-5.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-oscillator-p44.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "两面反射镜和波荡器组成的自由电子激光振荡器",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第44页（局部）。从左侧反射镜沿电子与光共行的波荡器读到右侧输出端，再想象光在两镜间往返。谐振腔把一部分光反馈给后续电子束，使多次相互作用累积增益；这与后续单程高增益结构形成对照。图中的两面镜只用作结构示意，实际输出耦合器需要有限透射。",
+      "sha256": "ce0cbb6dbd31989d7321d2d6135bbdc0ea230847142e1b3e5bdeb9d63982dc57",
+      "bytes": 181399,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-44.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-6.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-sase-p45.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 45,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "电子单程通过长波荡器并从自发噪声增长的SASE结构",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第45页（局部）。沿电子束从左到右读波荡器，下面的小图显示辐射随传播增强并形成聚束。自放大自发辐射（SASE）由束流的自发辐射和噪声启动，在单程高增益中增长，不依赖两镜往返反馈。启动噪声使每发脉冲的谱形与能量具有统计波动。",
+      "sha256": "324db4e9110df05d87d2a43d247549096b1f7c5fff55feb0c910911d4b18612d",
+      "bytes": 262401,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-45.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-6.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-self-seeding-p46.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 46,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "首段SASE波荡器单色器磁延迟段与第二段种子放大器",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第46页（局部）。按电子束方向依次找第一段SASE波荡器、磁延迟段chicane与第二段波荡器；光在中间经过单色器，取出窄带部分作为第二段的种子。电子走磁弯转路径与光路的不同用于调整相遇时序。原页把自种子标作SASE，准确说它以SASE起始，但此图展示的是self-seeding自种子结构。",
+      "sha256": "4c5c65374d503fa79daf386924d1cbeb2029c55c275d6b2c67705f582f815f09",
+      "bytes": 152648,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-46.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-6.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-external-seeding-p47.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 47,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "外部种子激光与电子束共同进入波荡器后相干放大",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第47页（局部）。从左侧种子激光箭头读到波荡器，再跟踪与电子束共行的放大输出。外部种子给出稳定的光学相位和频谱起点，电子束提供增益所需能量；与SASE比较时，应特别看输入端有无独立种子光。图中未展开高次谐波转换的专门结构。",
+      "sha256": "afd65f73fc03bee59cbb3d96a3a2366a0b41a0a270b4b6a1023e2e6a3d886d6b",
+      "bytes": 184508,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-47.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-6.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-hghg-p48.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 48,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "HGHG外种子调制段色散段和谐波辐射波荡器",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第48页（局部）。从左向右分别识别种子光、调制段波荡器、色散段和辐射段。种子先形成电子能量调制，色散段把能量差转成纵向密度调制；微聚束含有高次谐波成分，后段调谐到所选谐波并放大。HGHG意为高增益谐波产生，原页写HGHG“10次以内”属于典型单级条件下的概括，不能作为普遍硬上限。",
+      "sha256": "65ec5b7e209eb8fb2c1516b021e135cf3e8a9d1bb8fb8fed7b2ed8b2a2cef946",
+      "bytes": 261703,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-48.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-7.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-fel-eehg-p49.png",
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 49,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch06-s05.html",
+      "suggestedChapter": "6",
+      "section": "6.5",
+      "suggestedSection": "6.5",
+      "alt": "EEHG两次种子调制和两个色散段后接辐射波荡器",
+      "caption": "《光学20261012_相干辐射(1).pdf》PDF第49页（局部）。沿图从左到右数出两段种子调制、两段磁色散结构及末端较长的辐射段。第一段强色散把相空间结构细化，第二次调制和色散使选定高次谐波的密度调制重新出现，即回声效应。与HGHG对照时，关键是两次调制和两次色散的组合；具体可达谐波次数依赖束流与装置参数。",
+      "sha256": "0dc665032938e79776cd1183efca2180253e6fc1d5aadbe92136f00859db4eea",
+      "bytes": 214724,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-4-49.png",
+      "owner": "existing",
+      "suggestedHeading": "6.6 反馈、噪声与种子运行模式",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-7.jpg",
+      "learningPages": [
+        "optics-ch06-s05.html"
+      ]
+    },
+    {
+      "file": "nov05-medium-speed-index-p05.png",
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 5,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch07-s01.html",
+      "suggestedChapter": "7",
+      "section": "7.1",
+      "suggestedSection": "7.1",
+      "alt": "从相对介电常数和磁导率到相速度与折射率的公式流程",
+      "caption": "《光学20261019_光的传播_I.pdf》PDF第5页（局部）。沿上排由介电常数ε、磁导率μ读出相速度v，再与真空光速c比较，得到 n=c/v=√(εμ)。箭头说明同一组电磁材料参数决定传播速度；常见光学非磁介质μ≈1时可化为n≈√ε。图中ε、μ是相对量，讨论的是均匀各向同性、低损耗情形的相速度，色散存在时须标出所讨论频率。 下部 I∝nE₀² 的关系含有介质因子；蓝框中的 I=E₀² 仅可理解为同一介质内省略常系数的归一化写法，SI制辐照度使用 I=(1/2)nε₀cE₀²（非磁、低损耗介质）。",
+      "sha256": "baae77d9d72f73debcc95299a3ce912c3529ad640377efc59c7a5675f3c3ec7a",
+      "bytes": 214409,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-5-5.png",
+      "owner": "existing",
+      "suggestedHeading": "2.1 本构关系与波动方程",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-7.jpg",
+      "learningPages": [
+        "optics-ch07-s01.html"
+      ]
+    },
+    {
+      "file": "nov05-surface-roughness-p20.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 20,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch07-s06.html",
+      "suggestedChapter": "7",
+      "section": "7.6",
+      "suggestedSection": "7.6",
+      "alt": "表面粗糙度增加时镜面反射峰和漫散射角分布变化",
+      "caption": "《光学20261026光的传播II.pdf》PDF第20页（局部）。上图以表面法线确定入射方向与镜面方向，轮廓表示散射能量随方向的分布；下图从左到右增加表面粗糙度，镜面集中峰逐渐转成更宽的角分布。应把粗糙度与波长比较，而非只看几何表面的肉眼平整程度。图是角分布和局部面元的示意，曲线面积未给出统一绝对标定。",
+      "sha256": "e6a35697e70f1d41e8402359d31e213a7ca27afed6531ae8a6014addab274140",
+      "bytes": 333342,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-6-20.png",
+      "owner": "existing",
+      "suggestedHeading": "4. 散射怎样减弱直射光，怎样改变方向与偏振",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-7.jpg",
+      "learningPages": [
+        "optics-ch07-s06.html"
+      ]
+    },
+    {
+      "file": "nov05-dielectric-tensor-p23.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 23,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch07-s07.html",
+      "suggestedChapter": "7",
+      "section": "7.7",
+      "suggestedSection": "7.7",
+      "alt": "各向异性介质的介电张量及主轴系中单轴双轴形式",
+      "caption": "《光学20261026光的传播II.pdf》PDF第23页（局部）。先看一般三阶矩阵中D的每个分量可由E的三个分量共同决定，再看主轴系中的对角矩阵；三个主值不同时对应双轴模型，两个主值相同时对应单轴模型。原页D=[ε]E采用绝对介电张量记号，若使用相对张量应写D=ε₀[εr]E。原页把双轴晶体“正负”直接按三个任意轴标签的主值排序，不能据此定义光学正负；光学符号须按主折射率和光轴几何判定，单轴则比较ne与no。",
+      "sha256": "5a02d2acfa4947790facf2d117380d62503651233f1abd98ee9af3ef26fda83e",
+      "bytes": 109045,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-6-23.png",
+      "owner": "existing",
+      "suggestedHeading": "5. 各向异性均匀介质与介电张量",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-8.jpg",
+      "learningPages": [
+        "optics-ch07-s07.html"
+      ]
+    },
+    {
+      "file": "nov05-lattice-metamaterial-p26.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 26,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch07-s07.html",
+      "suggestedChapter": "7",
+      "section": "7.7",
+      "suggestedSection": "7.7",
+      "alt": "自然原子组成晶格和人工结构单元构成超材料的对照",
+      "caption": "《光学20261026光的传播II.pdf》PDF第26页（局部）。右上由自然原子指向晶格，右下由人工亚波长结构单元指向周期材料；两组箭头对照自然微结构与可设计的有效响应。左图以ε、μ的正负划分传播与倏逝情形，双负区与负折射率材料相联系。该四象限图基于有效、近似各向同性材料模型，实际超材料还需检查结构尺度、色散和损耗。",
+      "sha256": "e19df48edcc901e0b8174597758f322d15ba7c64c39ad45aab566cf07a907c93",
+      "bytes": 637893,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-6-26.png",
+      "owner": "existing",
+      "suggestedHeading": "5. 各向异性均匀介质与介电张量",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-8.jpg",
+      "learningPages": [
+        "optics-ch07-s07.html"
+      ]
+    },
+    {
+      "file": "nov05-polarization-handedness-p37.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 37,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch08-s02.html",
+      "suggestedChapter": "8",
+      "section": "8.2",
+      "suggestedSection": "8.2",
+      "alt": "两正交分量相位差决定椭圆旋向及椭圆圆直线偏振的连续变化",
+      "caption": "《光学20261026光的传播II.pdf》PDF第37页（局部）。上图按编号跟踪固定位置电矢量端点，再在下方一排轨迹中比较相位差变化：等振幅时相位差为0或π得到直线，为±π/2得到圆，其余一般为椭圆。原页例式Ex=E₀cos(ωt−kz)、Ey=E₀cos(ωt−kz−π/4)产生椭圆偏振，旁边“左旋光”应按椭圆旋向理解。左右旋名称依赖观察方向，本页注明迎着光看；自然光的方向统计圆图另见p39，两者的时间相位关系不同。",
+      "sha256": "f6382ce1580bfada5fcc6317ee854e38d88b820c16f2af07d024cc780eeb1936",
+      "bytes": 234540,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-6-37.png",
+      "owner": "existing",
+      "suggestedHeading": "8. 正交电场相干合成：线、椭圆与圆偏振",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-8.jpg",
+      "learningPages": [
+        "optics-ch08-s02.html"
+      ]
+    },
+    {
+      "file": "nov05-beat-two-frequencies-p44.png",
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        0,
+        130,
+        1800,
+        1013
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch08-s04.html",
+      "suggestedChapter": "8",
+      "section": "8.4",
+      "suggestedSection": "8.4",
+      "alt": "两个略异频率的波逐渐错相后叠加出慢包络",
+      "caption": "《光学20261026光的传播II.pdf》PDF第44页（局部）。先看上方红、黑两条分波：它们频率接近，沿横坐标逐渐从同相变为反相；再看下方蓝色合波，振幅随这一相对相位缓慢变化。载波振动快，包络变化慢；在固定位置且探测器能分辨差频时，强度亮峰的重复频率为|ν₁−ν₂|。蓝线画的是场，不可直接当作非负光强；强度包络见已保留的p47。",
+      "sha256": "7f791e67f9940d6b797b1204e1859dc0a26e7837bdb34bb49675d46fb7a6b634",
+      "bytes": 234670,
+      "visualChecked": true,
+      "sourceRender": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\source-6-44.png",
+      "owner": "existing",
+      "suggestedHeading": "10. 两个相近频率：光拍怎样出现，拍频怎样记",
+      "visualCheckNotes": "已查看该PDF所有页面的渲染联系图、所选1800长边原页联系图及修正后的最终裁图联系图；标签、坐标、箭头完整。",
+      "finalCropContactSheet": "E:\\Document\\FILE_package\\Class\\物理\\光学\\tmp\\chapters_20261105\\existing-review\\final-crops-8.jpg",
+      "learningPages": [
+        "optics-ch08-s04.html"
+      ]
+    },
+    {
+      "file": "interface-geometry.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 4,
+      "cropPixels": [
+        600,
+        140,
+        1260,
+        640
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 28849,
+      "sha256": "8ef3301f459d5c3ec32d6a7d53753979fd2ae2e901b6b798838acb9a7eb827e0",
+      "learningPages": [
+        "optics-ch09-s01.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-pillbox.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 5,
+      "cropPixels": [
+        1100,
+        480,
+        1540,
+        885
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 64365,
+      "sha256": "ca3fc42bad7bb1c70947f451a2c7f91aef1810fb9fd7098cad775d42f9b537e2",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-wavevectors.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 7,
+      "cropPixels": [
+        140,
+        220,
+        620,
+        600
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 20321,
+      "sha256": "e5ac1c06fe9d4ba4a293b5f324efb4e358beb1053f1947d88609b70175eb80e1",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-s-geometry.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 11,
+      "cropPixels": [
+        220,
+        235,
+        590,
+        540
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 17661,
+      "sha256": "f680baa97e7b0e1a4b51bbc365f4e992a73dac3c202e4d64c7fa13e375abb173",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-p-geometry.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 12,
+      "cropPixels": [
+        315,
+        410,
+        730,
+        750
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 19357,
+      "sha256": "811bf4b343bc0e5200ffd345c32803f4ed97c903bf800ae1f52cd21e5ba090f6",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-amplitude-external.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 13,
+      "cropPixels": [
+        65,
+        365,
+        690,
+        865
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 43632,
+      "sha256": "a53151f403c17a1b95ff8aedd699b6d6eace08ac9d206fdfc6da5aa7364d218a",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-amplitude-internal.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 14,
+      "cropPixels": [
+        75,
+        315,
+        880,
+        930
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 61634,
+      "sha256": "f7e6e85b69d3510590d9530ea8e96c2129e1a2fe540338cac9749445f56ab746",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-normal-flux.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 15,
+      "cropPixels": [
+        110,
+        300,
+        580,
+        815
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 122086,
+      "sha256": "e3c86bca3076f29c85d06bdf1cdab1612f662d75912f3f9bd353c3138fa6f8a0",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-power-external.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 17,
+      "cropPixels": [
+        530,
+        305,
+        1310,
+        945
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 111740,
+      "sha256": "d9cf49eb3068014ce0a4fdcc61b57304229f81b3796474b36e48b93d046bf400",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-power-internal.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 18,
+      "cropPixels": [
+        515,
+        310,
+        1285,
+        950
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 84745,
+      "sha256": "1f2b992b8a262e75818b28c04515b405149526a687a937c69d0ed5ce6dffd048",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-brewster.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 20,
+      "cropPixels": [
+        215,
+        500,
+        690,
+        950
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 78292,
+      "sha256": "829f8af4653640286064e62f273990b7a4acaba9e583a9f068c096c4578f3b0b",
+      "learningPages": [
+        "optics-ch09-s01.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-plate-stack.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 21,
+      "cropPixels": [
+        330,
+        240,
+        1380,
+        955
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 327968,
+      "sha256": "33dadd6403e67559410732e6ec3bbbec4a2c140ecde1f6aab3fc7f432797285d",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-critical-angle.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 22,
+      "cropPixels": [
+        330,
+        260,
+        1550,
+        490
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 46385,
+      "sha256": "0fe153b528df1a2030536afb9db31c88e58b8c3375311f1a28f254a85081dbb2",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-fiber-acceptance.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 23,
+      "cropPixels": [
+        840,
+        200,
+        1565,
+        450
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 13987,
+      "sha256": "2e0e5a6b8ff6b2ede3a71cd5222ee730c1c8212d146bb69a458c2f628cc81c68",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-tir-phase.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 25,
+      "cropPixels": [
+        1190,
+        375,
+        1685,
+        735
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 26442,
+      "sha256": "429bde84ddc23237ca01979d6ffdc3c19a3a6e049d21c33c007238ff3b90399e",
+      "learningPages": [
+        "optics-ch09-s01.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-goos-hanchen.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 26,
+      "cropPixels": [
+        760,
+        785,
+        1175,
+        970
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s01.html",
+      "bytes": 28878,
+      "sha256": "3f35f6315856b5897c210c682aac8a6fe84c35175e079a6d82fbde1617a061df",
+      "learningPages": [
+        "optics-ch09-s01.html"
+      ]
+    },
+    {
+      "file": "interface-double-image.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 30,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 436879,
+      "sha256": "45637cdd0c0eed9967639753e586c36d1d95bcfed0a31f6807e30547e98dd4f8",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-0.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-0.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P30",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-axis-planes.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 32,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 307604,
+      "sha256": "3e676468bf97df94781ccf55e95142c035a9ae976108528f14bda3917412a0bf",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-0.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-0.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P32",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-uniaxial-wavefronts.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 36,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 254370,
+      "sha256": "8bdc524df47dccc7105fe0345f8edfe984fb4260984b4c4c85def54223bed906",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-1.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-0.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P36",
+      "learningPages": [
+        "optics-ch09-s02.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-polarization-speed.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 37,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 269285,
+      "sha256": "1fd883b8098676cc0bf155f324c788104a023c686aff362115e46a3acee12962",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-1.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-0.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P37",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-normal-walkoff.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 38,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 172266,
+      "sha256": "909d1dab1a36129a4fb5652e4463169473833d8d38de61f59550240d5e588866",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-1.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-1.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P38",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-oblique-huygens.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 39,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 286078,
+      "sha256": "3ae72e3084f99f1b5dc66de754e92082ea2e8867507a7b50a2f7de69d964ed6d",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-1.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-1.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P39",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-axis-perp-incidence.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 40,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 210860,
+      "sha256": "2d71e462fdce2802c163aed83076944b59711ce475f95f2d2904bc902d2331a2",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-2.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-1.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P40",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-collinear-birefringence.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 41,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 91645,
+      "sha256": "3f7aa41c98e0596cd6a0a16366f1c1e09b3cd142757997850dc2870f30172245",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-2.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-1.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P41",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-nicol.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 42,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 343127,
+      "sha256": "5df1bcb2f06cd1467053477cd223e49309bff9294e37e31ae7db471aae12c15f",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-2.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-2.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P42",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-wollaston.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 43,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 284634,
+      "sha256": "67bc52aff2cc417eefa1921535fb4a54680fa0211aa67673bfe8594653d294ee",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-2.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-2.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P43",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-retarder-path.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 44,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 176565,
+      "sha256": "169b0fa00788cc37c4fc5ca0b42d28124e286d2cda97c8582e452413724ef2ac",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-2.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-2.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P44",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-fast-slow.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 46,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 227741,
+      "sha256": "91cfa936e4a1f1e4fe3e80bf20d56dd1e906a51ec2a998e4f77c96274333fd25",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-3.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-2.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P46",
+      "learningPages": [
+        "optics-ch09-s02.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-compensators.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 47,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s02.html",
+      "bytes": 155031,
+      "sha256": "0d4d10a0a152e0bb9c8e1bb00c93e2b7cf870ccc0197cd131458d6f8073d0e62",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-3.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-3.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P47",
+      "learningPages": [
+        "optics-ch09-s02.html"
+      ]
+    },
+    {
+      "file": "interface-optical-rotation.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 49,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 170341,
+      "sha256": "2971b1c8ed838d79ec64cde9dec6c9f3e4db210994e445771114a75866993d85",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-3.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-3.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P49",
+      "learningPages": [
+        "optics-ch09-s03.html"
+      ]
+    },
+    {
+      "file": "interface-rotatory-dispersion.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 50,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 240365,
+      "sha256": "f756712a2f466f46285efe7ba18b861de213561599301d7c15b2b9c465cb4119",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-3.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-3.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P50",
+      "learningPages": [
+        "optics-ch09-s03.html"
+      ]
+    },
+    {
+      "file": "interface-polarimeter.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 51,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 286312,
+      "sha256": "aae0e493b5e11951f52bb8ca1502ba1c4e9bf92d38623b334e7cd881899acd75",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-3.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-3.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P51",
+      "learningPages": [
+        "optics-ch09-s03.html"
+      ]
+    },
+    {
+      "file": "interface-circular-rotation.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 54,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 388395,
+      "sha256": "5e450c2c5898b455b19994219b22aadee0220baf62dcc47433eaefc5fc5f3abf",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-4.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-4.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P54",
+      "learningPages": [
+        "optics-ch09-s03.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-fresnel-prisms.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 56,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 212402,
+      "sha256": "af6db9facc210abf4c49fcd9b28f7b2774ae4d1fe9d9b003a74723f350311758",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-4.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-4.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P56",
+      "learningPages": [
+        "optics-ch09-s03.html"
+      ]
+    },
+    {
+      "file": "interface-faraday-isolation.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 57,
+      "cropPixels": [
+        745,
+        530,
+        1570,
+        975
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s03.html",
+      "bytes": 78989,
+      "sha256": "7d11698e4eba4b5c6c6234b792c3ee313f99fea2620dc81c92b288bc1db29bad",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-4.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-4.jpg",
+        "notes": "最终单图已另行查看；仅裁P57下方两幅正反向隔离光路，保留标签，避开错误历史年份。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P57",
+      "learningPages": [
+        "optics-ch09-s03.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-dichroism-color.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 60,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s04.html",
+      "bytes": 527677,
+      "sha256": "219daa19bec57b8c75349bb94424d8a102dc61d78688519b106458732c41a358",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-5.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-4.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P60",
+      "learningPages": [
+        "optics-ch09-s04.html"
+      ]
+    },
+    {
+      "file": "interface-polarizer-field.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 61,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s04.html",
+      "bytes": 338704,
+      "sha256": "1adaf0f1ff0a27635ad1020a892484d3c0a9b0eee996af7eb629d217a863c7a3",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-5.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-5.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P61",
+      "learningPages": [
+        "optics-ch09-s04.html"
+      ]
+    },
+    {
+      "file": "interface-malus-geometry.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 63,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s04.html",
+      "bytes": 99745,
+      "sha256": "a4be720fb4fa2ba5f12b451e7ee54b53e25f8f226973bc566c757547f6351c44",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-5.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-5.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P63",
+      "learningPages": [
+        "optics-ch09-s04.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-crossed-polarizers.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 64,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s04.html",
+      "bytes": 81199,
+      "sha256": "877f322e3c4737764fdc7a6358aba1b7bb4844f13a3e6ddcceab447c61ce5959",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-6.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-5.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P64",
+      "learningPages": [
+        "optics-ch09-s04.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
+      ]
+    },
+    {
+      "file": "interface-analyzer-linear.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 65,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 85604,
+      "sha256": "d9ab118e9de35d52fe8c90df3c5203c9c2c4b7ef0700d7895ceb58f20ebc96c1",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-6.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-5.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P65",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-analyzer-invariant.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 66,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 78183,
+      "sha256": "b5a918b736dfad177ac20e197b6e7f330fd32e2d24eaef0edb14a9657e0687ec",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-6.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-6.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P66",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-ellipse-projections.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 67,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 323193,
+      "sha256": "a77d0c76cfd1ffbb49da45587a18413ab6a6eb63af06c41a3c67d7d58eeca73c",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-6.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-6.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P67",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-ellipse-waveplate.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 68,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 143868,
+      "sha256": "a840eb55c43a520604d99c0b4fe0c3b9253fc31592ccc9b302d0be012c2124dc",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-6.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-6.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P68",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-quarter-test-circular.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 71,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 131850,
+      "sha256": "396572d2c0d1cb6828a176fb9b891682bf196b9bccd1a47691474f348700999c",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-7.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-6.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P71",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-quarter-test-ellipse.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 73,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 185763,
+      "sha256": "bf6ff80036ae3c7d4102f28e7dd79aa030bf62263b0108502f5d65c88089144e",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-7.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-7.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P73",
+      "learningPages": [
+        "optics-ch09-s05.html"
+      ]
+    },
+    {
+      "file": "interface-polarization-decision.png",
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 74,
+      "cropPixels": [
+        50,
+        125,
+        1790,
+        1000
+      ],
+      "renderSize": [
+        1800,
+        1013
+      ],
+      "learningPage": "optics-ch09-s05.html",
+      "bytes": 363643,
+      "sha256": "ed89c5fccbb7fbac2d3a479b4efd47a1a119657e7a1470106651851fd3835da1",
+      "visualVerification": {
+        "sourceInspected": true,
+        "sourceContactSheet": "polarization-pages-7.jpg",
+        "cropInspected": true,
+        "cropContactSheet": "polarization-crops-7.jpg",
+        "notes": "完整内容裁图；已检查标签与公式未被裁断。"
+      },
+      "captionSource": "光学20261102_界面调控.pdf P74",
+      "learningPages": [
+        "optics-ch09-s05.html",
+        "optics-ch09-review.html",
+        "review-optics.html"
       ]
     }
   ]

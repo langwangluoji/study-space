@@ -3,8 +3,14 @@ from pathlib import Path
 import json,re,zipfile
 from urllib.parse import quote,unquote
 from optics_content import local_details
+import sys
 
 root=Path(__file__).resolve().parents[1]
+if (root/'knowledge/optics/course.json').exists():
+    from optics_course import package
+    package()
+    print('Packaged PPT-numbered optics chapters and review.')
+    sys.exit(0)
 pages=['course-optics','optics-waves','optics-incoherent','optics-laser',
        'optics-propagation','optics-electrodynamics','optics-formulas',
        'optics-exercises','optics-sources','optics-learning','review-optics','optics-propagation-ii']

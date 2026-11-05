@@ -1,0 +1,9 @@
+/* Semantic study emphasis: the text label carries meaning as well as colour. */
+.optics-key { color:#b42318; font-weight:650; }
+.optics-condition { color:#854d0e; font-weight:650; }
+.optics-understand { color:#175cd3; font-weight:650; }
+.optics-extension { color:#6941c6; font-weight:650; }
+.dark .optics-key,.theme-dark .optics-key { color:#ffb4a8; }
+.dark .optics-condition,.theme-dark .optics-condition { color:#fde68a; }
+.dark .optics-understand,.theme-dark .optics-understand { color:#93c5fd; }
+.dark .optics-extension,.theme-dark .optics-extension { color:#d6bbfb; }

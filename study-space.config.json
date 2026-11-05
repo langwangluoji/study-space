@@ -355,11 +355,11 @@
       "title": "光学",
       "subtitle": "WAVES · RADIATION · LIGHT PROPAGATION",
       "field": "物理与电磁理论",
-      "summary": "学习版逐节对照PPT，保留推导并配课件原图；PPT考点版集中复习定义、现象条件和公式记法。",
+      "summary": "按PPT第1—9章学习：34个独立小节，课件解释图、核心条件、逐步推导与概念思考题；另有按章PPT复习。",
       "entry": "/course-optics.html",
       "start": "/optics-learning.html",
       "source": "/optics-sources.html",
-      "scope": "257页PPT · 学习与复习双入口",
+      "scope": "7份PPT · 332页 · 第1—9章",
       "tags": [
         "PPT概念与条件",
         "公式直觉与记忆",
@@ -369,40 +369,194 @@
       "status": "课程学习版与PPT考点版",
       "chapters": [
         {
-          "slug": "optics-learning",
-          "title": "课程内容学习版"
+          "slug": "optics-ch01",
+          "title": "第1章 绪论",
+          "topics": [
+            {
+              "slug": "optics-ch01-s03",
+              "title": "1.3 光学内容与课程体系"
+            }
+          ]
         },
         {
-          "slug": "optics-waves",
-          "title": "波动与光的电磁理论"
+          "slug": "optics-ch02",
+          "title": "第2章 波动",
+          "topics": [
+            {
+              "slug": "optics-ch02-s01",
+              "title": "2.1 一维波动"
+            },
+            {
+              "slug": "optics-ch02-s02",
+              "title": "2.2 简谐波、复数表示与相量"
+            },
+            {
+              "slug": "optics-ch02-s03",
+              "title": "2.3 几种重要的波动"
+            },
+            {
+              "slug": "optics-ch02-s04",
+              "title": "2.4 波的叠加原理"
+            }
+          ]
         },
         {
-          "slug": "optics-incoherent",
-          "title": "非相干辐射与热辐射"
+          "slug": "optics-ch03",
+          "title": "第3章 光的基本性质",
+          "topics": [
+            {
+              "slug": "optics-ch03-s01",
+              "title": "3.1 光的波动性与电磁理论"
+            },
+            {
+              "slug": "optics-ch03-s02",
+              "title": "3.2 光的本性与波粒二象性"
+            }
+          ]
         },
         {
-          "slug": "optics-laser",
-          "title": "相干辐射与激光"
+          "slug": "optics-ch04",
+          "title": "第4章 光源及其性质",
+          "topics": [
+            {
+              "slug": "optics-ch04-s01",
+              "title": "4.1 光源"
+            },
+            {
+              "slug": "optics-ch04-s02",
+              "title": "4.2 光线与光束"
+            },
+            {
+              "slug": "optics-ch04-s03",
+              "title": "4.3 光谱范围"
+            }
+          ]
         },
         {
-          "slug": "optics-propagation",
-          "title": "光的传播与介质响应"
+          "slug": "optics-ch05",
+          "title": "第5章 非相干辐射",
+          "topics": [
+            {
+              "slug": "optics-ch05-s01",
+              "title": "5.1 热辐射"
+            },
+            {
+              "slug": "optics-ch05-s02",
+              "title": "5.2 加速电荷产生的辐射"
+            },
+            {
+              "slug": "optics-ch05-s03",
+              "title": "5.3 能级跃迁辐射"
+            }
+          ]
         },
         {
-          "slug": "optics-propagation-ii",
-          "title": "光的传播II：散射、偏振与波的合成"
+          "slug": "optics-ch06",
+          "title": "第6章 相干辐射",
+          "topics": [
+            {
+              "slug": "optics-ch06-s01",
+              "title": "6.1 自发辐射、受激吸收与受激辐射"
+            },
+            {
+              "slug": "optics-ch06-s02",
+              "title": "6.2 能级寿命、谱线展宽与光的增益"
+            },
+            {
+              "slug": "optics-ch06-s03",
+              "title": "6.3 激光产生的条件"
+            },
+            {
+              "slug": "optics-ch06-s04",
+              "title": "6.4 激光的特点"
+            },
+            {
+              "slug": "optics-ch06-s05",
+              "title": "6.5 自由电子激光"
+            }
+          ]
         },
         {
-          "slug": "optics-electrodynamics",
-          "title": "光学与电动力学联系"
+          "slug": "optics-ch07",
+          "title": "第7章 光在各向同性介质中的传播",
+          "topics": [
+            {
+              "slug": "optics-ch07-s01",
+              "title": "7.1 各向同性线性介质中的传播方程"
+            },
+            {
+              "slug": "optics-ch07-s02",
+              "title": "7.2 光与介质相互作用的经典理论"
+            },
+            {
+              "slug": "optics-ch07-s03",
+              "title": "7.3 光的吸收"
+            },
+            {
+              "slug": "optics-ch07-s04",
+              "title": "7.4 光的介质色散"
+            },
+            {
+              "slug": "optics-ch07-s05",
+              "title": "7.5 各向同性非均匀介质中的光传播"
+            },
+            {
+              "slug": "optics-ch07-s06",
+              "title": "7.6 光的散射"
+            },
+            {
+              "slug": "optics-ch07-s07",
+              "title": "7.7 各向异性均匀介质中的光传播"
+            }
+          ]
         },
         {
-          "slug": "optics-formulas",
-          "title": "公式总表与适用条件"
+          "slug": "optics-ch08",
+          "title": "第8章 多束光在各向同性均匀介质中的传播",
+          "topics": [
+            {
+              "slug": "optics-ch08-s01",
+              "title": "8.1 同频率同振动方向两列光波的合成"
+            },
+            {
+              "slug": "optics-ch08-s02",
+              "title": "8.2 同频同向正交振动光波的合成"
+            },
+            {
+              "slug": "optics-ch08-s03",
+              "title": "8.3 光的偏振态"
+            },
+            {
+              "slug": "optics-ch08-s04",
+              "title": "8.4 光拍与群速度"
+            }
+          ]
         },
         {
-          "slug": "optics-exercises",
-          "title": "课后题索引与复习自检"
+          "slug": "optics-ch09",
+          "title": "第9章 两种介质交界面对光的调控",
+          "topics": [
+            {
+              "slug": "optics-ch09-s01",
+              "title": "9.1 两种各向同性均匀介质交界面对光的调控"
+            },
+            {
+              "slug": "optics-ch09-s02",
+              "title": "9.2 各向同性与各向异性介质分界面对光的调控"
+            },
+            {
+              "slug": "optics-ch09-s03",
+              "title": "9.3 旋光效应"
+            },
+            {
+              "slug": "optics-ch09-s04",
+              "title": "9.4 介质的二向色性与偏振片"
+            },
+            {
+              "slug": "optics-ch09-s05",
+              "title": "9.5 偏振光的检验"
+            }
+          ]
         }
       ]
     }

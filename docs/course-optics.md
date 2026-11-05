@@ -1,52 +1,46 @@
 ---
-title: "光学：课程学习与考试复习"
+title: "光学：第1—9章学习与复习"
 outline: [2, 3]
 prev: false
-next: {"text": "课程内容学习版", "link": "/optics-learning.html"}
+next: false
 ---
 
 <a id="光学期中复习资料"></a>
-
-# 光学：课程学习与考试复习
-
-光学用场描述光的传播，用物质与场的相互作用解释发光、吸收和色散。波动、光源、激光和介质响应由此连成一门课。
-
 <a id="内容规划"></a>
 <a id="统一符号"></a>
 
-## 选择阅读版本
+# 光学：按PPT第1—9章学习与复习
 
-| 版本 | 内容 | 入口 |
-| --- | --- | --- |
-| 课程内容学习版 | 对照PPT的概念解释、完整推导和来源插图，另标教材与电动力学补充 | [进入课程学习版](optics-learning.html) |
-| PPT考点复习版 | 仅按六份PPT：概念定义、现象条件、公式直觉与记法 | [进入PPT考点复习版](review-optics.html) |
+七份课件共332页。按二级节号进入34个独立小节，三级节号保留在篇内；每章提供概念题、思考题与参考答案。
 
-学习新内容时，沿课程学习版逐章推导；考前复习时，从PPT考点版检查概念、现象条件和公式记法，遇到不熟悉的步骤再回到对应主章。
+<span class="optics-key">核心结论</span>、<span class="optics-condition">成立条件</span>、<span class="optics-understand">理解线索</span>与<span class="optics-extension">拓展阅读</span>使用不同颜色；文字标签同时说明含义。公式继续采用可编辑排版。
 
-<a id="使用方法"></a>
+## 按课件章节学习
 
-## 分层自学怎样使用
-
-每章先给学习目标和先备知识，正文按现象、图示、概念条件和核心公式展开。短例题帮助选择模型；详细推导和自检答案按需展开。课件对照放在章末，方便学完一个知识点后回看原页。
-
-## 五个学习主题
-
-| 主题 | 学习问题 | 章节 |
-| --- | --- | --- |
-| 波动与电磁场 | 相位怎样传播？场的叠加怎样产生干涉？ | [01 波动与光的电磁理论](optics-waves.html) |
-| 非相干辐射 | 怎样量度光？热辐射和能级辐射的谱由什么决定？ | [02 非相干辐射与热辐射](optics-incoherent.html) |
-| 相干辐射 | 粒子数反转怎样提供增益？谐振腔怎样选择模式？ | [03 相干辐射与激光](optics-laser.html) |
-| 介质中的传播 | 电子响应怎样形成折射率、吸收和色散？光线怎样弯曲？ | [04 光的传播与介质响应](optics-propagation.html) |
-| 散射、偏振与波的合成 | 介质不均匀怎样使光散射？相位关系怎样形成驻波、偏振与光拍？ | [11 光的传播II](optics-propagation-ii.html) |
-
-## 公式、习题与来源
-
-[电动力学联系](optics-electrodynamics.html)串联场方程、辐射、材料响应和能量守恒。[公式总表](optics-formulas.html)列出较完整的公式与条件；[习题与自检](optics-exercises.html)保留37道原作业索引及综合练习。
-
-PPT考点复习版覆盖六份课堂课件，共257页，包含新增《光学20261026光的传播II》的散射、偏振、光拍与群速度。课程学习版另结合官方教材第2至6章与电动力学内容。《[课件与教材来源](optics-sources.html)》列出页码、节号、公式订正及版本信息。
+|章节|独立小节|复习|
+|---|---|---|
+|[第1章 绪论](optics-ch01.html)|1节|[本章复习](optics-ch01-review.html)|
+|[第2章 波动](optics-ch02.html)|4节|[本章复习](optics-ch02-review.html)|
+|[第3章 光的基本性质](optics-ch03.html)|2节|[本章复习](optics-ch03-review.html)|
+|[第4章 光源及其性质](optics-ch04.html)|3节|[本章复习](optics-ch04-review.html)|
+|[第5章 非相干辐射](optics-ch05.html)|3节|[本章复习](optics-ch05-review.html)|
+|[第6章 相干辐射](optics-ch06.html)|5节|[本章复习](optics-ch06-review.html)|
+|[第7章 光在各向同性介质中的传播](optics-ch07.html)|7节|[本章复习](optics-ch07-review.html)|
+|[第8章 多束光在各向同性均匀介质中的传播](optics-ch08.html)|4节|[本章复习](optics-ch08-review.html)|
+|[第9章 两种介质交界面对光的调控](optics-ch09.html)|5节|[本章复习](optics-ch09-review.html)|
 
 <a id="本次教材修订怎样阅读"></a>
+<a id="使用方法"></a>
+
+## 阅读方法
+
+初学先看解释图、概念与条件，再做短例题；详细推导和答案按需展开。复习时进入各章考点页，先独立回答概念题与思考题，再检查答案。图注保留原PDF页码、读图方法及与公式的联系。
+
+第1章现有材料为1.3导论与总结，按已提供范围组织概览。第7章标题沿用课件，各向异性内容归入7.7；第8章接续波的合成和偏振，第9章加入界面调控。
+
+[课程学习导读](optics-learning.html) · [PPT复习总入口](review-optics.html) · [来源与课件页码](optics-sources.html)
+
 
 ## 离线阅读
 
-[下载学习与复习笔记包](/optics/光学期中复习_Obsidian.zip)，解压后在 Obsidian 中打开。公式可编辑，插图可离线阅读。
+[下载光学Obsidian知识库](/optics/光学期中复习_Obsidian.zip)。包内保留第1—9章文件夹、独立小节、复习与来源插图。

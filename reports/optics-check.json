@@ -99,7 +99,7 @@
     }
   ],
   "pages": 12,
-  "sourcePdfPages": 257,
+  "sourcePdfPages": 332,
   "sourceTextbookChapters": 5,
   "workedSelfTests": 17,
   "newTextbookSelfChecks": 6,
@@ -109,10 +109,11 @@
     "exam-summary"
   ],
   "legacyOpticsAnchors": 384,
-  "pptReviewScope": "Six classroom PPT PDFs only, including propagation II; learning notes retain textbook extensions.",
-  "learningSourceFigures": 40,
-  "learningPptPageMap": 257,
-  "individualSourcePageTargets": 257,
+  "pptReviewScope": "Seven classroom PPT PDFs, chapters 1-9 including interface control.",
+  "learningSourceFigures": 118,
+  "learningPptPageMap": 332,
+  "individualSourcePageTargets": 332,
+  "legacyIndividualSourcePageTargets": 257,
   "allLearningTargetsVisible": true,
   "scope": "Numerical checks for learning notes, PPT review source scope, offline links and preserved legacy anchors."
 }

@@ -1,8 +1,11 @@
 """Independent numerical checks for the optics derivations and worked examples."""
 from pathlib import Path
 import math,cmath,json,re,zipfile,hashlib
+from urllib.parse import unquote
+import posixpath
 
 root=Path(__file__).resolve().parents[1]
+course_mode=(root/'optics.config.json').exists()
 checks=[]
 def close(name,actual,expected,rtol=1e-8,atol=1e-12):
     assert abs(actual-expected)<=atol+rtol*abs(expected),(name,actual,expected)
@@ -101,14 +104,16 @@ for page in pages:
     assert re.search(r'^# ',text,re.M),page
 with zipfile.ZipFile(root/'public'/'optics'/'光学期中复习_Obsidian.zip') as z:
     assert z.testzip() is None
-    assert {'optics-learning.md','review-optics.md','optics-propagation-ii.md'}<=set(z.namelist())
-    assert len([n for n in z.namelist() if n.endswith('.md') and '/' not in n])==len(pages)+1
+    if not course_mode:
+        assert {'optics-learning.md','review-optics.md','optics-propagation-ii.md'}<=set(z.namelist())
+        assert len([n for n in z.namelist() if n.endswith('.md') and '/' not in n])==len(pages)+1
     # Every packaged chapter link must work when the vault is opened offline.
     for filename in z.namelist():
         if not filename.endswith('.md'):continue
         for target in re.findall(r'\]\(([^)]+)\)',z.read(filename).decode('utf-8')):
             if target.startswith(('http:','https:','#')):continue
-            assert target.split('#')[0] in z.namelist(),(filename,target)
+            resolved=posixpath.normpath(posixpath.join(posixpath.dirname(filename),unquote(target.split('#')[0])))
+            assert resolved in z.namelist(),(filename,target)
     figures=json.loads((root/'optics-figures.json').read_text(encoding='utf-8'))['figures']
     for figure in figures:
         data=(root/'public/optics/figures'/figure['file']).read_bytes()
@@ -120,7 +125,7 @@ summary=(root/'docs/review-optics.md').read_text(encoding='utf-8')
 assert all(term in summary for term in ['波动','辐射','激光','介质','散射','偏振','群速度','记忆'])
 review_sources=json.loads((root/'optics-ppt-review-sources.json').read_text(encoding='utf-8'))
 assert review_sources['scope']=='ppt-only'
-assert len(review_sources['files'])==6 and sum(s['pages'] for s in review_sources['files'])==257
+assert len(review_sources['files'])==(7 if course_mode else 6) and sum(s['pages'] for s in review_sources['files'])==(332 if course_mode else 257)
 learning_map=json.loads((root/'optics-learning-source-map.json').read_text(encoding='utf-8'))
 assert learning_map['sourcePages']==257 and len(learning_map['chapters'])==5
 # Source-page coverage is a set of individual pages, not just an aggregate count.
@@ -150,16 +155,23 @@ for chapter in learning_map['chapters']:
         assert item['learningUrl']==chapter['chapter']+'.html#'+item['learningAnchor']
 for source in review_sources['files']:
     name=source.get('filename',source.get('file'))
+    if course_mode and name not in mapped:continue
     assert mapped[name]==set(range(1,source['pages']+1)),name
+figure_mapped=mapped
+if course_mode:
+    figure_mapped={}
+    for item in json.loads((root/'optics-course-sources.json').read_text(encoding='utf-8'))['pages']:
+        figure_mapped.setdefault(item['sourcePdf'],set()).add(item['pdfPage'])
 for figure in figures:
     assert all(key in figure for key in ['sourcePdf','pdfPage','cropPixels','learningPage']),figure
-    assert figure['pdfPage'] in mapped[figure['sourcePdf']],figure
+    assert figure['pdfPage'] in figure_mapped[figure['sourcePdf']],figure
 standalone=(root/'public/optics/光学考试复习_概念公式精简版.md').read_text(encoding='utf-8')
 assert not re.search(r'\]\((?!https://|#)[^)]+\.html\)',standalone)
 with zipfile.ZipFile(root/'public/optics/光学PPT复习_Obsidian.zip') as z:
-    assert set(z.namelist())=={'光学PPT复习.md','开始阅读.md','.obsidian/app.json'}
+    if not course_mode:assert set(z.namelist())=={'光学PPT复习.md','开始阅读.md','.obsidian/app.json'}
+    else:assert len([n for n in z.namelist() if n.endswith('/本章复习.md')])==9
     assert z.testzip() is None
-    assert z.read('光学PPT复习.md').decode('utf-8').strip()==standalone.strip()
+    if not course_mode:assert z.read('光学PPT复习.md').decode('utf-8').strip()==standalone.strip()
 # Stable URLs from the earlier course remain usable after headings are edited.
 from html.parser import HTMLParser
 class Ids(HTMLParser):
@@ -170,13 +182,14 @@ legacy=json.loads((root/'optics-legacy-anchors.json').read_text(encoding='utf-8'
 for slug,anchors in legacy.items():
     parser=Ids();parser.feed((root/'docs/.vitepress/dist'/(slug+'.html')).read_text(encoding='utf-8'))
     for anchor in anchors:assert parser.ids.count(anchor)==1,(slug,anchor)
-report={'status':'PASS','checks':checks,'pages':len(pages),'sourcePdfPages':257,
+report={'status':'PASS','checks':checks,'pages':len(pages),'sourcePdfPages':332 if course_mode else 257,
         'sourceTextbookChapters':5,'workedSelfTests':17,'newTextbookSelfChecks':6,
         'originalHomeworkItems':37,'readingModes':['course-learning','exam-summary'],
         'legacyOpticsAnchors':sum(map(len,legacy.values())),
-        'pptReviewScope':'Six classroom PPT PDFs only, including propagation II; learning notes retain textbook extensions.',
-        'learningSourceFigures':len(figures),'learningPptPageMap':257,
-        'individualSourcePageTargets':sum(map(len,mapped.values())),
+        'pptReviewScope':'Seven classroom PPT PDFs, chapters 1-9 including interface control.' if course_mode else 'Six classroom PPT PDFs only, including propagation II; learning notes retain textbook extensions.',
+        'learningSourceFigures':len(figures),'learningPptPageMap':332 if course_mode else 257,
+        'individualSourcePageTargets':len(json.loads((root/'optics-course-sources.json').read_text(encoding='utf-8'))['pages']) if course_mode else sum(map(len,mapped.values())),
+        'legacyIndividualSourcePageTargets':sum(map(len,mapped.values())),
         'allLearningTargetsVisible':True,
         'scope':'Numerical checks for learning notes, PPT review source scope, offline links and preserved legacy anchors.'}
 (root/'reports'/'optics-check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

@@ -1,0 +1,211 @@
+---
+title: "非相干辐射"
+outline: [2, 3]
+prev: false
+next: false
+---
+
+# 第5章 非相干辐射
+
+## 本章独立小节
+
+- [5.1 热辐射](optics-ch05-s01.html)
+- [5.2 加速电荷产生的辐射](optics-ch05-s02.html)
+- [5.3 能级跃迁辐射](optics-ch05-s03.html)
+
+## 概念题与思考题
+
+1. 热辐射与黑体各指什么？
+
+#### 参考答案：第1题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+热辐射是与物体温度有关的电磁辐射；理想黑体对所有波长完全吸收，其平衡谱只由温度决定。
+
+</details>
+
+
+
+2. 谱峰波长与总辐射量各怎样随温度变？
+
+#### 参考答案：第2题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+黑体每波长谱峰满足λmaxT=b，总出射度满足M=σT⁴；它们分别回答谱峰位置和积分总量。
+
+</details>
+
+
+
+3. 每Hz谱与每米谱能直接代换横轴吗？
+
+#### 参考答案：第3题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+不能。要同时转换谱密度，真空中取绝对雅可比|dν/dλ0|=c/λ0²，才能保持同一谱段能量。
+
+</details>
+
+
+
+4. 偶极辐射和能级跃迁各怎样理解？
+
+#### 参考答案：第4题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+偶极远场来自时变电偶极矩的加速度项；能级辐射用离散能级差hν解释允许的光子频率。
+
+</details>
+
+
+
+5. 思考：黑体温度加倍，总出射度与峰值波长怎样变？
+
+#### 参考答案：第5题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+总出射度增为16倍，峰值波长减半；这不是说谱峰高度也按16倍变化。
+
+</details>
+
+
+
+6. 思考：为什么普通非相干光通常只叠加强度？
+
+#### 参考答案：第6题
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+多个独立发射事件的相位相关性在探测平均后常使交叉项消失；关键条件是平均交叉项为零。
+
+</details>
+
+
+
+
+## 综合练习与拓展查阅
+
+## 自测与详解
+
+来源：依据本章编制的练习，非PPT原题；每题注明对应课件结论与补充部分。
+
+### 题 1：温度、谱峰和净散热
+
+来源：PPT p.19至20的定律应用；灰体及环境净散热为教材补充。
+
+面积 $A=2.0\times10^{-3}\,\mathrm{m^2}$、灰体发射率 $\epsilon=0.80$ 的表面处于 $T=1000\,\mathrm K$，周围为 $T_0=300\,\mathrm K$ 的大黑体环境。求发射功率、净散热功率和黑体波长谱峰；升至 $2000\,\mathrm K$ 时发射功率变几倍？
+
+#### 自检答案：题1的计算与条件
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+解：先计算发射功率，再减去吸收的环境辐射：
+
+$$
+P_{\mathrm{emit}}=A\epsilon\sigma T^4
+=0.0020\times0.80\times5.6704\times10^{-8}\times10^{12}
+\simeq90.73\,\mathrm W.
+$$
+
+环境项为 $A\epsilon\sigma T_0^4\simeq0.735\,\mathrm W$，故 $P_{\mathrm{net}}\simeq90.0\,\mathrm W$。
+
+$$
+\lambda_{\max}=b/T=2.898\,\mu\mathrm m.
+$$
+
+温度加倍、发射率不变时发射功率变 $2^4=16$ 倍；谱峰移到 $1.449\,\mu\mathrm m$。净交换功率的比值由两次发射功率分别减去同一个环境项后计算。
+
+</details>
+
+
+
+### 题 2：判断近似并换谱
+
+来源：PPT p.21至24的近似判据；雅可比换谱为补充推导。
+
+在 $T=300\,\mathrm K$ 下，分别判断 $\lambda=500\,\mathrm{nm}$ 和 $1.0\,\mathrm{mm}$ 应用哪种近似。若某波长处 $M_\nu=Q$，能否直接写 $M_\lambda=Q$？
+
+#### 自检答案：题2的计算与条件
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+解： 利用 $hc/k_B\simeq1.4388\times10^{-2}\,\mathrm{m\,K}$，
+
+$$
+x(500\,\mathrm{nm})=\frac{0.014388}{5\times10^{-7}\times300}\simeq95.9\gg1,
+$$
+
+故可用维恩近似，可见光热辐射被指数抑制。
+
+$$
+x(1\,\mathrm{mm})=\frac{0.014388}{10^{-3}\times300}\simeq0.0480\ll1,
+$$
+
+故可用瑞利-金斯近似。要求更高精度时使用完整普朗克式。变谱应写 $M_\lambda=(c/\lambda^2)Q$，其中雅可比同时转换谱段宽度和单位。
+
+</details>
+
+
+
+### 题 3：偶极辐射的比例和角分布
+
+来源：PPT p.31至32的场幅和方向；平均总功率来自电动力学补充。
+
+电偶极子 $\mathbf p(t)=p_0\cos\omega t\,\hat z$。若频率加倍、峰值 $p_0$ 减半，平均总功率变几倍？在相同距离上，$\theta=30^\circ$ 方向强度与 $90^\circ$ 方向之比是多少？说明近区公式为何不能用于回答远处功率。
+
+#### 自检答案：题3的计算与条件
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+解： $\langle P\rangle\propto\omega^4p_0^2$，故倍率为 $2^4\times(1/2)^2=4$。相同 $r$ 的强度按 $\sin^2\theta$，所以比值为 $(1/2)^2/1=1/4$。近区静偶极场主要为 $1/r^3$，它描述局部储能；只有远区 $1/r$ 横向场给出传播到远处的有限总辐射功率。该推导的条件为小源 $a\ll\lambda$、观察远区 $r\gg\lambda$。
+
+</details>
+
+
+
+### 题 4：原子谱线与经典解释边界
+
+来源：PPT p.38至44；用图中能级数值及能级差求光子参数。
+
+氢原子由 $n=3$ 跃迁到 $n=2$。用 $E_n=-13.6/n^2\,\mathrm{eV}$ 求光子能量、频率和波长，并说明“电子处于定态所以不辐射”能否由 Larmor 公式推出。
+
+#### 自检答案：题4的计算与条件
+
+<details class="optics-derivation">
+<summary>展开答案与解释</summary>
+
+解：
+
+$$
+\Delta E=13.6\left(\frac1{2^2}-\frac1{3^2}\right)\mathrm{eV}
+=1.8889\,\mathrm{eV}\simeq3.026\times10^{-19}\,\mathrm J.
+$$
+
+$$
+\nu=\Delta E/h\simeq4.57\times10^{14}\,\mathrm{Hz},\qquad
+\lambda_0=hc/\Delta E\simeq656.4\,\mathrm{nm}.
+$$
+
+这是可见红光。Larmor 公式预言经典轨道上的加速电子持续辐射，因而导出原子不稳定；定态的稳定性属于量子描述，原子内态也无需对应一条确定的经典轨道。
+
+</details>
+
+
+
+## 离线阅读
+
+[下载光学Obsidian知识库](/optics/光学期中复习_Obsidian.zip)。包内保留第1—9章文件夹、独立小节、复习与来源插图。

@@ -1,0 +1,3030 @@
+{
+  "sourceFiles": [
+    {
+      "filename": "光学202609-波动.pdf",
+      "pages": 18,
+      "sha256": "acb13777de6b189e4eefa932e0e9e8b71d4d1b7d3bd7a2d363a8f956146bb2e9"
+    },
+    {
+      "filename": "光学20260921_波动.pdf",
+      "pages": 44,
+      "sha256": "0bf4d4d04b829fc8b9b9a8fdd5d48a129283c001c1c358c7d578541e40744ded"
+    },
+    {
+      "filename": "光学20260928_非相干辐射.pdf",
+      "pages": 45,
+      "sha256": "053edc20e1006d37e6c288d6752d3b459f5c90f2f501a2ddf62f6cbc035c2d13"
+    },
+    {
+      "filename": "光学20261012_相干辐射(1).pdf",
+      "pages": 54,
+      "sha256": "6a8c989b74b7aa1473f5a11403d07c0cff74760c584de826b83cd1999e84797e"
+    },
+    {
+      "filename": "光学20261019_光的传播_I.pdf",
+      "pages": 44,
+      "sha256": "05b1f13ef75132b6b82baa341ab262f90249fb1f4c12eadc34d2019e4c7a352b"
+    },
+    {
+      "filename": "光学20261026光的传播II.pdf",
+      "pages": 52,
+      "sha256": "b62892163bb36ec011f3e27a6b15de3f1cf07169baadc941fa593abe01592d25"
+    },
+    {
+      "filename": "光学20261102_界面调控.pdf",
+      "pages": 75,
+      "sha256": "b070af4d2895bf8cd8b8a990caa43bc6a2fecf68258607e2986783f7c65a0037"
+    }
+  ],
+  "pages": [
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 1,
+      "section": "1.3",
+      "page": "optics-ch01-s03",
+      "anchor": "ppt-1-1",
+      "textTitle": "光是如何产生的？光是什么？ 光是如何传播与调控的？ 光是如何探测的？ 光是如何与物质相互作用的？ 光是如何应用的？ 光学现象---多种多样、纷繁复杂光学现象---产生这些现象的机理是什么？为什么会有这",
+      "learningHeading": "1.3 光学内容与课程体系"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 2,
+      "section": "1.3",
+      "page": "optics-ch01-s03",
+      "anchor": "ppt-1-2",
+      "textTitle": "量子光学 需求与问题 21.3 光学内容 光学现象有关的内容 矢量光学 波动光学 几何光学 光学的科学体系",
+      "learningHeading": "1.3 光学内容与课程体系"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 3,
+      "section": "1.3",
+      "page": "optics-ch01-s03",
+      "anchor": "ppt-1-3",
+      "textTitle": "需求与问题 31.3 光学内容 第一章总结",
+      "learningHeading": "1.3 光学内容与课程体系"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 4,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-4",
+      "textTitle": "第二章波动2024-09-02",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 5,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-5",
+      "textTitle": "需求与问题 5第二章 2.1 一维波动 波动：世界上一种普遍的运动形式力、热、光、电中无处不在基本概念、基本原理、数学语言和计算方法 振动：物理量在其平衡位置附近做周期变化波动：振动在空间中的传播 波",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 6,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-6",
+      "textTitle": "需求与问题 6第二章 2.1 一维波动 波场中每一点的物理状态随时间做周期性变化 每一瞬时，波场中各点物理状态的空间分布也呈现一定的周期性 波动具有时空双重周期性波动伴随着能量的传播真正的波动",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 7,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-7",
+      "textTitle": "需求与问题 7第二章 2.1 一维波动§2.1.1 一维波函数的一般形式 纵波振动方向与传播方向平行这个波动有什么特点？ 请举出一些纵波的例子横波振动方向与传播方向垂直这个波动有什么特点？ 请举出一些",
+      "learningHeading": "2.1.1 从波形平移写出波函数"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 8,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-8",
+      "textTitle": "需求与问题 8第二章 2.1 一维波动 §2.1.1 一维波函数的一般形式 扰动是运动的，波函数应该是时间和位置的函数𝝍𝒙,𝒕=𝒇𝒙,𝒕 波包形状不变，空间移动𝜓𝑥,𝑡∥!\"#=𝑓𝑥,0=𝑓𝑥 经过时",
+      "learningHeading": "2.1.1 从波形平移写出波函数"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 9,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-9",
+      "textTitle": "需求与问题 9第二章 2.1 一维波动§2.1.1 一维波函数的一般形式 𝑥 𝑆 𝑥’ 𝑆′ 𝑥’ 𝑆′𝑆 𝑥𝑥’𝑥 引入坐标系𝑺′：在𝑺′中，波包形状不动𝑺′相对于𝑺以速度𝝊移动",
+      "learningHeading": "2.1.1 从波形平移写出波函数"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 10,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-10",
+      "textTitle": "需求与问题 10第二章 2.1 一维波动§2.1.1 一维波函数的一般形式 𝑥 𝑆 𝑥’ 𝑆′ 𝑥’ 𝑆′𝑆 𝑥𝑥’𝑥 引入坐标系𝑺′：在𝑺′中，波包形状不动𝑺′相对于𝑺以速度𝝊移动 在𝑺′中，𝝍=𝒇",
+      "learningHeading": "2.1.1 从波形平移写出波函数"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 11,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-11",
+      "textTitle": "需求与问题 11第二章 2.1 一维波动 𝝍𝒙,𝒕=𝒇𝒙,𝒕=𝒇𝒙−𝝊𝒕增加了𝚫𝐭时间后𝝍𝒙,𝒕+𝚫𝒕=𝒇𝒙,𝒕+𝚫𝒕=𝒇𝒙+𝝊𝚫𝒕)−𝝊(𝒕+𝚫𝒕=𝒇𝒙−𝝊𝒕𝝍𝒙,𝒕=𝒇𝒙,𝒕=𝒇𝒙+𝝊𝒕当波沿着−",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 12,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-12",
+      "textTitle": "需求与问题 12第二章 2.1 一维波动§2.1.2 一维波动的偏微分方程一维波动满足的偏微分方程应该是什么形式的呢？偏微分方程一定含有至少两个变量，位置和时间线性齐次二阶偏微分方程 𝝍𝒙,𝒕=𝒇𝒙,",
+      "learningHeading": "2.1.2 逐步导出一维波动方程"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 13,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-13",
+      "textTitle": "需求与问题 13第二章 2.1 一维波动 𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝜓𝜕𝑡=𝜐𝜕𝜓𝜕𝑥 𝜕𝑥′𝜕𝑥=𝜕𝑥−𝜐𝑡𝜕𝑥=1𝜕𝜓𝜕𝑡=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑡=𝜐𝜕𝑓𝜕𝑥′ ",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 14,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-14",
+      "textTitle": "需求与问题 14第二章 2.1 一维波动 𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝜓𝜕𝑡=𝜐𝜕𝜓𝜕𝑥 𝜕𝑥′𝜕𝑥=𝜕𝑥−𝜐𝑡𝜕𝑥=1𝜕𝜓𝜕𝑡=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑡=𝜐𝜕𝑓𝜕𝑥′ ",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 15,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-15",
+      "textTitle": "需求与问题 15第二章 2.1 一维波动 𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝜓𝜕𝑡=𝜐𝜕𝜓𝜕𝑥 𝜕𝑥′𝜕𝑥=𝜕𝑥−𝜐𝑡𝜕𝑥=1𝜕𝜓𝜕𝑡=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑡=𝜐𝜕𝑓𝜕𝑥′ ",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 16,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-16",
+      "textTitle": "需求与问题 16第二章 2.1 一维波动 𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝜓𝜕𝑡=𝜐𝜕𝜓𝜕𝑥 𝜕𝑥′𝜕𝑥=𝜕𝑥−𝜐𝑡𝜕𝑥=1𝜕𝜓𝜕𝑡=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑡=𝜐𝜕𝑓𝜕𝑥′ ",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 17,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-17",
+      "textTitle": "需求与问题 17第二章 2.1 一维波动 𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥𝜕𝜓𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑥=𝜕𝑓𝜕𝑥′𝜕𝜓𝜕𝑡=𝜐𝜕𝜓𝜕𝑥 𝜕𝑥′𝜕𝑥=𝜕𝑥−𝜐𝑡𝜕𝑥=1𝜕𝜓𝜕𝑡=𝜕𝑓𝜕𝑥′𝜕𝑥′𝜕𝑡=𝜐𝜕𝑓𝜕𝑥′ ",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学202609-波动.pdf",
+      "pdfPage": 18,
+      "section": "2.1",
+      "page": "optics-ch02-s01",
+      "anchor": "ppt-1-18",
+      "textTitle": "需求与问题 18第二章 2.1 一维波动 一维波函数的一般形式𝝍𝒙,𝒕=𝒇𝒙,𝒕=𝒇𝒙−𝝊𝒕 一维波动的偏微分方程𝜕?𝜓𝜕𝑥?=1𝜐?𝜕?𝜓𝜕𝑡? 纵波与横波 波动的特点",
+      "learningHeading": "2.1 一维波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 1,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-1",
+      "textTitle": "第二章波动2026-09-21",
+      "learningHeading": "2.2 简谐波、复数表示与相量"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 2,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-2",
+      "textTitle": "需求与问题 2第二章 2.2.3 波函数的复数表示复数!𝒛=𝒙+𝒊𝒚 !𝒛 𝒙 𝒚 𝜽𝒓 𝒊=−𝟏极坐标𝒙=𝒓cos𝜽𝒚=𝒓sin𝜽!𝒛=𝒙+𝒊𝒚=𝒓cos𝜽+𝒊sin𝜽 𝒆𝒊𝜽=cos𝜽+𝒊sin𝜽",
+      "learningHeading": "2.2.3 复数的基本工具"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 3,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-3",
+      "textTitle": "需求与问题 3第二章 2.2.3 波函数的复数表示 𝑹𝒆!𝒛=𝒓𝐜𝐨𝐬𝜽𝑰𝒎!𝒛=𝒓𝐬𝐢𝐧𝜽复数实部复数虚部复数的实部或虚部都能用来描述简谐波𝝍𝒙,𝒕=𝑹𝒆𝑨𝒆𝒊𝝎𝒕#𝒌𝒙)𝜺 𝝍𝒙,𝒕=𝑨cos𝝎𝒕",
+      "learningHeading": "2.2.3 复数的基本工具"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 4,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-4",
+      "textTitle": "需求与问题 4第二章 2.2.4 波的相量表示 这种表示相量的图称为相量图 一个矢量绕中心以角速度𝝎旋转，转角为𝝎𝒕 旋转相量在任何时刻在实轴或虚轴上的投影 相量是一个复数，可用复平面上一个矢量表示 ",
+      "learningHeading": "2.2.4 旋转相量和静止复振幅的区别"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 5,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-5",
+      "textTitle": "需求与问题 5第二章 2.2.4 波的相量表示 A∠⁄𝟑𝝅𝟐 𝒙 𝒚 𝝎𝒕𝑨𝑨𝐬𝐢𝐧𝝎𝒕𝑨𝐜𝐨𝐬𝝎𝒕 A∠𝟎 A∠⁄𝝅𝟒 A∠⁄𝝅𝟐 A∠𝝅 A∠⁄𝟑𝝅𝟒 A∠⁄𝟓𝝅𝟒 A∠⁄𝟕𝝅𝟒 𝝍=𝑨𝐬𝐢𝐧𝒌𝒙",
+      "learningHeading": "2.2.4 旋转相量和静止复振幅的区别"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 6,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-6",
+      "textTitle": "需求与问题 6第二章 2.2.4 波的相量表示相位的再认识𝝍𝒙,𝒕=𝑨𝒆𝒊𝝎𝒕#𝒌𝒙)𝜺=𝑨𝒆𝒊𝝋",
+      "learningHeading": "2.2.4 旋转相量和静止复振幅的区别"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 7,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-7",
+      "textTitle": "需求与问题 7第二章 2.2.4 波的相量表示相位的再认识𝝍𝒙,𝒕=𝑨𝒆𝒊𝝎𝒕#𝒌𝒙)𝜺=𝑨𝒆𝒊𝝋 相位：波动所在的状态初相位：波动开始时所在的状态",
+      "learningHeading": "2.2.4 旋转相量和静止复振幅的区别"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 8,
+      "section": "2.2",
+      "page": "optics-ch02-s02",
+      "anchor": "ppt-2-8",
+      "textTitle": "需求与问题 8第二章 2.2.4 波的相量表示波动的复数表达方法𝝍𝒙,𝒕=𝑨𝒆𝒊𝝎𝒕#𝒌𝒙)𝜺=𝑨𝒆𝒊𝝋 相位：波动所在的状态初相位：波动开始时所在的状态 𝒙 𝒚 𝝎𝒕𝑨𝑨𝐬𝐢𝐧𝝎𝒕 𝑨𝐜𝐨𝐬𝝎𝒕 波",
+      "learningHeading": "2.2.4 旋转相量和静止复振幅的区别"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 9,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-9",
+      "textTitle": "需求与问题 9第二章 2.3 几种重要的波动等位相面的形状进行划分：平面波、球面波、柱面波等2.3.1 平面波垂直于矢量𝑘，通过点𝑷𝟎𝑥\",𝑦\",𝑧\"的平面表达式𝒓=𝒙̂P+𝒚̂Q+𝒛R𝒌𝒓−𝒓𝟎=𝒙",
+      "learningHeading": "2.3.1 从平面几何理解波前"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 10,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-10",
+      "textTitle": "需求与问题 10第二章 2.3 几种重要的波动𝜓⃗𝑟=𝐴sin𝑘S⃗𝑟波函数𝝍𝒓𝜓⃗𝑟=𝐴cos𝑘S⃗𝑟𝜓⃗𝑟=𝐴𝑒345⃗7 𝝍𝒓=𝝍𝒓+𝝀𝒌𝒌 由于𝝍𝒓是调和函数，在𝒌方向移动𝝀后，𝝍𝒓值将不发生",
+      "learningHeading": "2.3 几种重要的波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 11,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-11",
+      "textTitle": "需求与问题 11第二章 2.3 几种重要的波动𝝍𝒓,𝒕=𝑨𝒆𝒊𝒌%𝒓∓𝝎𝒕波函数𝝍𝒓,𝒕平面波的相速度等于等位相面的传播速度𝝍𝒓,𝒕=𝝍𝒓𝒌+𝒅𝒓𝒌,𝒕+𝒅𝒕=𝝍𝒓𝒌,𝒕𝑨𝒆𝒊𝒌5𝒓∓𝝎𝒕=𝑨𝒆𝒊𝒌𝒓",
+      "learningHeading": "2.3 几种重要的波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 12,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-12",
+      "textTitle": "需求与问题 12第二章 2.3 几种重要的波动 𝜓<=𝐴<cos2𝜋𝜆𝑧−𝜔𝑡 𝜓==𝐴=cos2𝜋𝜆𝑧cos𝜃−𝑦sin𝜃−𝜔𝑡",
+      "learningHeading": "2.3 几种重要的波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 13,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-13",
+      "textTitle": "需求与问题 13第二章 2.3 几种重要的波动 𝝍𝒙,𝒚,𝒛,𝒕=𝑨𝒆𝒊𝒌𝒙𝒙+𝒌𝒚𝒚+𝒌𝒛𝒛∓𝝎𝒕 𝝍𝒙,𝒚,𝒛,𝒕=𝑨𝒆𝒊𝒌𝜶𝒙+𝜷𝒚+𝜸𝒛∓𝝎𝒕式中𝜶、𝜷、𝜸是𝒌的方向余弦 𝑘𝑷𝟎 𝑷𝒓𝜷 𝜶𝜸",
+      "learningHeading": "2.3 几种重要的波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 14,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-14",
+      "textTitle": "需求与问题 14第二章 2.3 几种重要的波动 ∇=≡1𝑟=𝜕𝜕𝑟𝑟=𝜕𝜕𝑟+1𝑟=sin𝜃𝜕𝜕𝜃sin𝜃𝜕𝜕𝜃+1𝑟=sin=𝜃𝜕=𝜕𝜙= 𝑥=𝑟sin𝜃cos𝜙𝑦=𝑟sin𝜃sin𝜙𝑧=𝑟cos𝜃",
+      "learningHeading": "2.3 几种重要的波动"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 15,
+      "section": "2.3",
+      "page": "optics-ch02-s03",
+      "anchor": "ppt-2-15",
+      "textTitle": "需求与问题 15第二章 2.3 几种重要的波动2.3.3 柱面波∇=𝜓=1𝑟𝜕𝜕𝑟𝑟𝜕𝜓𝜕𝑟+1𝑟=𝜕=𝜓𝜕𝜃=+𝜕=𝜓𝜕𝑧= 𝑥=𝑟cos𝜃𝑦=𝑟sin𝜃𝑧=𝑧𝜓⃗𝑟=𝜓𝑟,𝜃,𝑧=𝜓𝑟1𝑟𝜕𝜕𝑟𝑟",
+      "learningHeading": "2.3.3 柱面波：远场振幅为什么是 $1/\\sqrt{\\rho}$"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 16,
+      "section": "2.4",
+      "page": "optics-ch02-s04",
+      "anchor": "ppt-2-16",
+      "textTitle": "需求与问题 16第二章 2.4 波的叠加原理𝝏𝟐𝝍𝟏𝛛𝒙𝟐=𝟏𝝊𝟐𝛛𝟐𝝍𝟏𝛛𝒕𝟐𝝏𝟐𝝍𝟐𝛛𝒙𝟐=𝟏𝝊𝟐𝛛𝟐𝝍𝟐𝛛𝒕𝟐 𝝏𝟐𝝍𝟏𝛛𝒙𝟐+𝛛𝟐𝝍𝟐𝛛𝒙𝟐=𝟏𝝊𝟐𝛛𝟐𝝍𝟏𝛛𝒕𝟐+𝟏𝝊𝟐𝛛𝟐𝝍𝟐𝛛𝒕𝟐 𝝏𝟐𝛛",
+      "learningHeading": "2.4 波的叠加原理"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 17,
+      "section": "2.4",
+      "page": "optics-ch02-s04",
+      "anchor": "ppt-2-17",
+      "textTitle": "需求与问题 17第二章 2.4 波的叠加原理 𝝍𝟏=𝟏.𝟎𝐬𝐢𝐧𝒌𝒙𝝍𝟐=𝟎.𝟗𝐬𝐢𝐧𝒌𝒙+𝟏.𝟎",
+      "learningHeading": "2.4 波的叠加原理"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 18,
+      "section": "2.4",
+      "page": "optics-ch02-s04",
+      "anchor": "ppt-2-18",
+      "textTitle": "需求与问题 18第二章 2.4 波的叠加原理 𝝍𝟏=𝟏.𝟎𝐬𝐢𝐧𝒌𝒙𝝍𝟐=𝟎.𝟖𝐬𝐢𝐧𝒌𝒙 𝝍𝟏=𝟏.𝟎𝐬𝐢𝐧𝒌𝒙𝝍𝟐=𝟎.𝟖𝐬𝐢𝐧𝒌𝒙−⁄𝝅𝟑 𝝍𝟏=𝟏.𝟎𝐬𝐢𝐧𝒌𝒙𝝍𝟐=𝟎.𝟖𝐬𝐢𝐧𝒌𝒙−⁄𝟐𝝅𝟑",
+      "learningHeading": "2.4 波的叠加原理"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 19,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-19",
+      "textTitle": "第三章光的基本性质2026-09-21",
+      "learningHeading": "3.1 光的波动性与电磁理论"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 20,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-20",
+      "textTitle": "需求与问题 20第三章 3.1 光波--3.1.1 光波的电磁理论 光波遵循什么规律 光波满足什么方程光波性质是什么？光波重要参数是什么？ 光能如何传播？",
+      "learningHeading": "3.1.1 一般方程及符号"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 21,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-21",
+      "textTitle": "需求与问题 21第三章 3.1 光波--3.1.1 光波的电磁理论 光扰动随时间变化和随空间分布的规律 B→𝐸E𝑑⃗𝑙=−J𝜕→𝐵𝜕𝑡𝑑⃗𝜎 O→𝐷•𝑑⃗𝜎=𝑄高斯定律法拉第电磁感应定律磁场高斯定律安",
+      "learningHeading": "3.1.1 一般方程及符号"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 22,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-22",
+      "textTitle": "需求与问题 22第三章 3.1 光波--3.1.1 光波的电磁理论 光扰动随时间变化和随空间分布的规律 ∇×→𝐸=−𝜕→𝐵𝜕𝑡 ∇×→𝐻=⃗𝚥+𝜕→𝐷𝜕𝑡 𝛻•→𝐷=𝜌 ∇•→𝐵=0 高斯定律法拉第电",
+      "learningHeading": "3.1.1 一般方程及符号"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 23,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-23",
+      "textTitle": "需求与问题 23第三章 3.1 光波--3.1.1 光波的电磁理论 ∇×→𝐸=−𝜕→𝐵𝜕𝑡 ∇×→𝐻=𝜕→𝐷𝜕𝑡 𝛻•→𝐷=0 ∇•→𝐵=0 高斯定律法拉第电磁感应定律磁场高斯定律 安培环路定律 自由",
+      "learningHeading": "3.1.1 一般方程及符号"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 24,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-24",
+      "textTitle": "需求与问题 24第三章 3.1 光波--3.1.2 波的波动方程在真空中 𝐵=𝜇s𝐻 𝐷=𝜀s𝐸e0—真空中的介电常数（电容率） 𝜇s—真空中磁导率 ∇×→𝐸=−𝜕→𝐵𝜕𝑡 ∇×→𝐻=𝜕→𝐷𝜕𝑡 𝛻•",
+      "learningHeading": "3.1.2 电场方程的逐步推导"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 25,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-25",
+      "textTitle": "需求与问题 25第三章 3.1 光波--3.1.2 波的波动方程 𝜵𝟐→𝑬−𝜺𝟎𝝁𝟎𝝏𝟐→𝑬𝝏𝒕𝟐=𝟎 𝜵𝟐→𝑯−𝟏𝒄𝟐𝝏𝟐→𝑯𝝏𝒕𝟐=𝟎波动方程的标准形式 𝜵×𝜵×𝑬=𝜵×−𝝁𝟎𝝏𝑯𝝏𝒕=−𝝁𝟎𝝏𝝏",
+      "learningHeading": "3.1.2 电场方程的逐步推导"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 26,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-26",
+      "textTitle": "需求与问题 26第三章 3.1 光波--3.1.2 波的波动方程 𝜵𝟐→𝑯−𝟏𝝊𝟐𝝏𝟐→𝑯𝝏𝒕𝟐=𝟎 𝝏𝟐𝑬𝒙𝝏𝒙𝟐+𝝏𝟐𝑬𝒙𝝏𝒚𝟐+𝝏𝟐𝑬𝒙𝝏𝒛𝟐=𝟏𝒄𝟐𝝏𝟐𝑬𝒙𝝏𝒕𝟐 𝜵𝟐→𝑬−𝟏𝝊𝟐𝝏𝟐→𝑬𝝏𝒕",
+      "learningHeading": "3.1.2 电场方程的逐步推导"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 27,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-27",
+      "textTitle": "需求与问题 27第三章 3.1 光波--3.1.3 光波的性质平面电磁波的波函数𝐸(⃗𝑟,𝑡)=𝐸<cos𝜔𝑡−𝑘⋅⃗𝑟+𝜙=𝐻(⃗𝑟,𝑡)=𝐻<cos(𝜔𝑡−𝑘⋅⃗𝑟+𝜙>)满足波动方程 k ! 为",
+      "learningHeading": "3.1.3 散度方程给出横波性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 28,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-28",
+      "textTitle": "需求与问题 28第三章 3.1 光波--3.1.3 光波的性质（1）光波是横波 ^E ! k ! H ! ^k ! 自由空间中光波是横波电磁场振荡方向与波矢量方向正交，沿等相面的切线方向在与波矢量正交",
+      "learningHeading": "3.1.3 散度方程给出横波性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 29,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-29",
+      "textTitle": "需求与问题 29第三章 3.1 光波--3.1.3 光波的性质（2）电场与磁场之间的正交性和同步性 ∇×𝐸=−𝜇∘𝜕𝐻𝜕𝑡𝜇∘𝐻=1𝜔𝑘×𝐸 由 ， 三者方向构成一个右手螺旋电场和磁场，彼此之间是时时",
+      "learningHeading": "3.1.3 散度方程给出横波性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 30,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-30",
+      "textTitle": "需求与问题 30第三章 3.1 光波--3.1.3 光波的性质（3）电场与磁场与物质的相互作用 与物质相互作用时，主要是电场起作用 𝑬∘=𝒄𝑩∘ 带电粒子在电磁场中收到的力为𝑭=𝒒𝑬+𝒒𝝊×𝑩 若带电",
+      "learningHeading": "3.1.3 散度方程给出横波性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 31,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-31",
+      "textTitle": "需求与问题 31第三章 3.1 光波--3.1.3 光波的性质（4）光的偏振态简谐平面光波的电场强度矢量和磁场强度矢量的方向始终不变始终与传播矢量𝒌相垂直在垂直于传播矢量的平面内，电场强度的大小发生变",
+      "learningHeading": "3.1.3 散度方程给出横波性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 32,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-32",
+      "textTitle": "需求与问题 32第三章 3.1 光波--3.1.4 坡印廷矢量伴随着波的传播必定有能量的传输，电磁波或光波也是如此，即光波携带能量离开光源而向外辐射携带能量、离开光源想外传播的电磁场或光场：辐射场( ",
+      "learningHeading": "3.1.4 坡印廷矢量为什么代表能量传播"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 33,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-33",
+      "textTitle": "需求与问题 33第三章 3.1 光波--3.1.4 坡印廷矢量辐射通量密度、照度（光强）－-平均电磁能流密度⃗𝑆=1𝑇=&'𝐸×𝐻𝑑𝑡=1𝑇=&'𝐸𝐻𝑑𝑡211 22 EH E ee µµ == ! ",
+      "learningHeading": "3.1.4 坡印廷矢量为什么代表能量传播"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 34,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-34",
+      "textTitle": "需求与问题 34第三章 𝑬𝟏(𝒑,𝒕)=𝑬𝟎𝟏(𝒑,𝒕)𝐜𝐨𝐬(𝝎𝒕−𝝋𝟏(𝒑))𝑬𝟐(𝒑,𝒕)=𝑬𝟎𝟐(𝒑,𝒕)𝐜𝐨𝐬(𝝎𝒕−𝝋𝟐(𝒑))𝑬𝟎𝟐(𝒑)=𝑬𝟎𝟏𝟐(𝒑)+𝑬𝟎𝟐𝟐(𝒑)+𝟐𝑬𝟎𝟏𝑬𝟎𝟐",
+      "learningHeading": "3.1 光的波动性与电磁理论"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 35,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-35",
+      "textTitle": "需求与问题 35第三章 什么样的条件才能产生干涉？ （1）两列波的扰动方向若是正交， 振动方向一致存在方向一致的平行振动分量产生相干叠加其必要条件之一 𝟐𝑰𝟏𝑰𝟐𝐜𝐨𝐬𝜹=𝟎 则必然为非相干叠加 3.",
+      "learningHeading": "3.1 光的波动性与电磁理论"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 36,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-36",
+      "textTitle": "需求与问题 36第三章 （2）两列波若频率不同𝑬𝟏(𝑷,𝒕)=𝑬𝟏𝟎(𝑷)𝐜𝐨𝐬(𝒌𝟏𝒓𝟏−𝝎𝟏𝒕+𝝓𝟏𝟎)𝑬𝟐(𝑷,𝒕)=𝑬𝟐𝟎(𝑷)𝐜𝐨𝐬(𝒌𝟐𝒓𝟐−𝝎𝟐𝒕+𝝓𝟐𝟎)𝑬(𝑷,𝒕)=𝑬𝟏(𝑷,𝒕)+",
+      "learningHeading": "3.1 光的波动性与电磁理论"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 37,
+      "section": "3.1",
+      "page": "optics-ch03-s01",
+      "anchor": "ppt-2-37",
+      "textTitle": "需求与问题 37第三章 𝑬𝟎𝟐(𝒑)=𝑬𝟎𝟏𝟐(𝒑)+𝑬𝟎𝟐𝟐(𝒑)+𝟐𝑬𝟎𝟏𝑬𝟎𝟐𝐜𝐨𝐬(𝝋𝟐−𝝋𝟏) 𝑰(𝒑)=𝑰𝟏+𝑰𝟐+𝟐𝑰𝟏𝑰𝟐𝐜𝐨𝐬𝜹 （3）位相差恒定是获得稳定干涉的条件 辐射通量密度、",
+      "learningHeading": "3.1 光的波动性与电磁理论"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 38,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-38",
+      "textTitle": "需求与问题 38第三章 3.2 光的本性--3.2.1 早期光的粒子性和波动性 克里斯蒂安 · 惠更斯 （ Christian Huygens,1629 - 1695 ） 荷兰物理学家、天文学家、数学",
+      "learningHeading": "3.2.1 早期光的粒子性和波动性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 39,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-39",
+      "textTitle": "需求与问题 39第三章 3.2 光的本性--3.2.1 早期光的粒子性和波动性 牛顿(Isaac Newton,1642-1727)英国物理学家、数学家和天文学家 牛顿提出了光的“微粒说”，认为光是由",
+      "learningHeading": "3.2.1 早期光的粒子性和波动性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 40,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-40",
+      "textTitle": "需求与问题 40第三章 3.2 光的本性--3.2.1 早期光的粒子性和波动性 英国物理学家托马斯 · 杨（ Thomas Young,1773 - 1829 ） 1801 年，杨氏进行了著名的杨氏双",
+      "learningHeading": "3.2.1 早期光的粒子性和波动性"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 41,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-41",
+      "textTitle": "需求与问题 41第三章 3.2 光的本性--3.2.2 光的电磁理论的建立 建立了电磁学，并将光和电磁现象统一起来，预言了电磁波 光就是一定频率范围内的电磁波， 确立了波动说的地位 也证实了光是电磁波",
+      "learningHeading": "3.2.2 光的电磁理论的建立"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 42,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-42",
+      "textTitle": "需求与问题 42第三章 3.2 光的本性--3.2.3 光粒子性的建立 1900 年，德国物理学家普朗克首次提出了关于物 质体系与电磁波场交换能量过程中的 量子化假设 ， 成功的导出了与实验符合的黑体",
+      "learningHeading": "3.2.3 光粒子性的建立"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 43,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-43",
+      "textTitle": "需求与问题 43第三章 3.2 光的本性--3.2.4 光的波粒二象性 在光与物质作用并产生能量与动量交换的现象中， 光又充分表现出粒子的量子化特征 在与光的传播特性有关的现象中， 光表现为波动，可由",
+      "learningHeading": "3.2.4 光的波粒二象性：波动量与光子量的统一联系"
+    },
+    {
+      "sourcePdf": "光学20260921_波动.pdf",
+      "pdfPage": 44,
+      "section": "3.2",
+      "page": "optics-ch03-s02",
+      "anchor": "ppt-2-44",
+      "textTitle": "需求与问题 44第三章 3.2 光的本性--3.2.4 光的波粒二象性",
+      "learningHeading": "3.2.4 光的波粒二象性：波动量与光子量的统一联系"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 1,
+      "section": "4.1",
+      "page": "optics-ch04-s01",
+      "anchor": "ppt-3-1",
+      "textTitle": "第二部分光的产生2026-09-28",
+      "learningHeading": "4.1 光源"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 2,
+      "section": "4.1",
+      "page": "optics-ch04-s01",
+      "anchor": "ppt-3-2",
+      "textTitle": "第四章光源及其性质2026-09-28",
+      "learningHeading": "4.1 光源"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 3,
+      "section": "4.1",
+      "page": "optics-ch04-s01",
+      "anchor": "ppt-3-3",
+      "textTitle": "需求与问题 3第四章 4.1 光源 光源如何分类？：什么是光源?任何发光的物体 相干性分类：普通光源、激光光源分类原则：原理、性质、尺寸等 还可以分类：天然光源、人造光源 Ø点光源：只有空间位置、无体",
+      "learningHeading": "4.1 光源"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 4,
+      "section": "4.1",
+      "page": "optics-ch04-s01",
+      "anchor": "ppt-3-4",
+      "textTitle": "需求与问题 4第四章 4.1 光源及其性质--4.1.1 光源 激光光源的再分类 普通光源（常规光源）：",
+      "learningHeading": "4.1.1 光源：定义与分类"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 5,
+      "section": "4.2",
+      "page": "optics-ch04-s02",
+      "anchor": "ppt-3-5",
+      "textTitle": "需求与问题 5第四章 4. 2 光线与光束 光束：有一定几何关系的一些光线的集合 光线：光能传播方向的几何线坡印廷矢量的方向能流密度矢量的方向 同心光束像散光束",
+      "learningHeading": "4.2 光线与光束"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 6,
+      "section": "4.3",
+      "page": "optics-ch04-s03",
+      "anchor": "ppt-3-6",
+      "textTitle": "需求与问题 6第四章 4. 3 光谱范围 光速c=ln3´108m/s 光的频率n=c/l3.9~7.7´1014Hz 光的波长l=c/n390~780 nm",
+      "learningHeading": "4.3 光谱范围"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 7,
+      "section": "4.3",
+      "page": "optics-ch04-s03",
+      "anchor": "ppt-3-7",
+      "textTitle": "需求与问题 7第四章 4.3 光谱范围",
+      "learningHeading": "4.3 光谱范围"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 8,
+      "section": "4.3",
+      "page": "optics-ch04-s03",
+      "anchor": "ppt-3-8",
+      "textTitle": "需求与问题 8第四章 4.3 光谱范围 可见光谱范围光谱分布连续光谱分布 窄带光谱分布",
+      "learningHeading": "4.3 光谱范围"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 9,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-9",
+      "textTitle": "第五章非相干辐射2026-09-28",
+      "learningHeading": "5.1 热辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 10,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-10",
+      "textTitle": "需求与问题 10第五章 5.1.1 热辐射现象与定性规律 什么是热辐射 或 温度辐射？ 当物体温度不大高时（如室温）， 加热到5000C左右，开始辐射一部分暗红的可见光 大约在15000C时就发出白光",
+      "learningHeading": "5.1.1 热辐射现象与定性规律"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 11,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-11",
+      "textTitle": "需求与问题 11第五章 5.1.1 热辐射现象与定性规律 ------温度升高时波长较短的电磁波辐射渐渐加强 温度升高时总辐射能增加 温度的升高将改变各种波长的辐射能的比例关系 实验现象 如何定量解释",
+      "learningHeading": "5.1.1 热辐射现象与定性规律"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 12,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-12",
+      "textTitle": "需求与问题 12第五章 5.1.2 辐射出射度与吸收系数 辐射能量dE(l,T) 与ds的面积和波长间隔dl成正比dsdTrTdE lll ),(),( = 光谱辐射出射度：在单位时间内，从辐射体单位",
+      "learningHeading": "5.1.2 谱辐射量与单位"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 13,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-13",
+      "textTitle": "需求与问题 13第五章 5.1.2 辐射出射度与吸收系数辐射出射度（总辐射本领）R ds dE R= R : 单位时间从辐射体单位表面积上辐射的总能量 ò ò ¥ ¥ == 0 0 ),(),( ll",
+      "learningHeading": "5.1.2 谱辐射量与单位"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 14,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-14",
+      "textTitle": "需求与问题 14第五章 5.1.2 辐射出射度与吸收系数 单位时间辐射到物体表面上在波长为l～l＋dl范围内光的能量为dEl，其中被物体吸收的部分为dE¢l 光谱吸收系数（单色吸收本领）a(l,T)任",
+      "learningHeading": "5.1.2 谱辐射量与单位"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 15,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-15",
+      "textTitle": "需求与问题 15第五章 5.1.2 辐射出射度与吸收系数 同一物体的光谱辐射出射度r(l,T)和光谱吸收系数a(l,T)之间有一定联系 基尔霍夫理想实验 各物体在单位时间内放出的能量恰好等于吸收的能量",
+      "learningHeading": "5.1.2 谱辐射量与单位"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 16,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-16",
+      "textTitle": "需求与问题 16第五章 5.1.2 辐射出射度与吸收系数基尔霍夫定律：物体的光谱辐射出射度和光谱吸收系数的比值与物质的性质无关，对所有物体而言，它只是波长和温度的函数 ),(.... ),( ),( ",
+      "learningHeading": "5.1.2 谱辐射量与单位"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 17,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-17",
+      "textTitle": "需求与问题 17第五章 5.1.3 绝对黑体和黑体辐射定律f(l,T)的物理意义：光谱吸收系数a(l,T)＝1的物体的光谱辐射出射度对所有波长的光谱吸收系数a(l,T)=1 的物体称为绝对黑体，或简称",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 18,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-18",
+      "textTitle": "需求与问题 18第五章 5.1.3 绝对黑体和黑体辐射定律 黑体辐射的测量装置 不同温度下的r0-l曲线 从实验上找到了绝对黑体的光谱辐射出射度随l，T变化的曲线 但经典理论无法解释",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 19,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-19",
+      "textTitle": "需求与问题 19第五章 5.1.3 绝对黑体和黑体辐射定律 与物体绝对温度的四次方成正比斯忒潘－玻尔兹曼（Stefan－Boltzman）定律 4 TR s= 428 /10670.5 KmW ×´=",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 20,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-20",
+      "textTitle": "需求与问题 20第五章 5.1.3 绝对黑体和黑体辐射定律维恩(Wien)位移定律 任何温度下的黑体光谱辐射出射度r(l,T)都有一个极大值，其对应的波长lm与绝对温度成反比 T b m =l Kcm",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 21,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-21",
+      "textTitle": "需求与问题 21第五章 5.1.3 绝对黑体和黑体辐射定律维恩定律基于热力学理论、特殊假设的黑体发射和吸收，维恩得到黑体辐射的维恩公式： 𝒓𝝀,𝑻=𝑪𝟏𝝀\"𝟓𝒆\"𝑪𝟐𝝀𝑻 𝐶'和𝐶(均为普适常数",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 22,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-22",
+      "textTitle": "需求与问题 22第五章 5.1.3 绝对黑体和黑体辐射定律 电磁理论和经典统计理论出发, 得到𝑟!(𝜆,𝑇)𝑑𝜆=2𝜋𝑐𝜆\"𝑘𝑇𝑑𝜆瑞利－靳斯公式 在短波端的这一严重分歧，在物理学史上被称为“紫外灾难",
+      "learningHeading": "5.1.3 黑体的总量、谱峰与光谱"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 23,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-23",
+      "textTitle": "需求与问题 23第五章 5.1.4 普朗克公式与能量子假设 普朗克利用内插法将适用于短波的维恩公式和适用于长波的瑞利－靳斯公式衔接起来 𝑟!(𝑣,𝑇)=2𝜋ℎ𝑣\"𝑐#1𝑒$%&'−1SJh ×´±= ",
+      "learningHeading": "5.1.4 普朗克谱的推导"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 24,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-24",
+      "textTitle": "需求与问题 24第五章 5.1.4 普朗克公式与能量子假设当辐射波长很短，𝒌𝑻≪⁄𝒉𝒄𝝀，即k𝑻<<𝒉𝒗 𝑟!(𝜆,𝑇)=2𝜋ℎ𝑐#𝜆$%𝑒$⁄(())(+,-) 即lT足够大，使得𝒌𝑻>>𝒉𝒗，有𝒓",
+      "learningHeading": "5.1.4 普朗克谱的推导"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 25,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-25",
+      "textTitle": "需求与问题 25第五章 5.1.4 普朗克公式与能量子假设 hv=0 e 能量量子化假设不仅在解决热辐射问题时是必要的而且在解释其他领域里的许多经典理论无法解释的现象也是必要的普朗克的能量量子化假设具",
+      "learningHeading": "5.1.4 普朗克谱的推导"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 26,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-3-26",
+      "textTitle": "需求与问题 26第五章 5.1.4 普朗克公式与能量子假设",
+      "learningHeading": "5.1.4 普朗克谱的推导"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 27,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-27",
+      "textTitle": "需求与问题 27第五章 5.2 加速电荷产生的辐射5.2.1 匀加速电荷产生的辐射波动：振动在空间中的传播振动：物理量在空间某一位置处做周期性的变化 单摆、弹簧的振动都是质点的振动",
+      "learningHeading": "5.2.1 加速过程与辐射场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 28,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-28",
+      "textTitle": "需求与问题 28第五章 5.2 加速电荷产生的辐射5.2.1 匀加速电荷产生的辐射电磁波是什么振动？电荷加速运动？ 静止电荷和匀速运动的电荷只有径向电场（电力线） 单摆之所以振动，存在横向力 所以不产",
+      "learningHeading": "5.2.1 加速过程与辐射场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 29,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-29",
+      "textTitle": "需求与问题 29第五章 5.2 加速电荷产生的辐射5.2.1 匀加速电荷产生的辐射电磁波是什么振动？电荷加速运动？加速运动的电荷是如何产生横向电场的？",
+      "learningHeading": "5.2.1 加速过程与辐射场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 30,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-30",
+      "textTitle": "需求与问题 30第五章 5.2 加速电荷产生的辐射5.2.1 匀加速电荷产生的辐射电磁波是什么振动？电荷加速运动？加速运动的电荷是如何产生横向电场的？",
+      "learningHeading": "5.2.1 加速过程与辐射场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 31,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-31",
+      "textTitle": "需求与问题 31第五章 5.2 加速电荷产生的辐射5.2.2 偶极辐射电磁波是什么振动？电荷振动？ 振动的电偶极子：偶极辐射 𝑬=𝝎𝟐𝒑𝟎𝐬𝐢𝐧𝝍𝟒𝝅𝝊𝟐𝒓𝒆𝒙𝒑𝒊𝒌𝒓−𝝎𝒕𝑩=𝝎𝟐𝒑𝟎𝐬𝐢𝐧𝝍𝟒𝝅𝝊",
+      "learningHeading": "5.2.2 从推迟矢势到电偶极远场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 32,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-32",
+      "textTitle": "需求与问题 32第五章 5.2 加速电荷产生的辐射5.2.2 偶极辐射电磁波是什么振动？电荷振动？ 偶极辐射在微波波段有广泛的应用",
+      "learningHeading": "5.2.2 从推迟矢势到电偶极远场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 33,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-33",
+      "textTitle": "需求与问题 33第五章 5.2 加速电荷产生的辐射5.2.3 同步辐射 同步辐射：高速运动的带电粒子速度发生变化时产生的",
+      "learningHeading": "5.2.3 同步辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 34,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-34",
+      "textTitle": "需求与问题 34第五章 5.2 加速电荷产生的辐射5.2.3 同步辐射",
+      "learningHeading": "5.2.3 同步辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 35,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-35",
+      "textTitle": "需求与问题 35第五章 5.2 加速电荷产生的辐射5.2.3 同步辐射同步辐射：高速运动的带电粒子速度发生变化时产生的 北京高能光源 上海光源 合肥国家同步辐射实验室 蟹状星云",
+      "learningHeading": "5.2.3 同步辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 36,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-36",
+      "textTitle": "需求与问题 36第五章 5.2 加速电荷产生的辐射5.2.1 匀加速电荷产生的辐射 高亮度：常规X射线源的上亿倍同步辐射的特点： 宽光谱：从远红外到X射线连续光谱高准直：几乎是平行光时间性：脉冲时间结",
+      "learningHeading": "5.2.1 加速过程与辐射场"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 37,
+      "section": "5.2",
+      "page": "optics-ch05-s02",
+      "anchor": "ppt-3-37",
+      "textTitle": "需求与问题 37第五章 5.2 加速电荷产生的辐射",
+      "learningHeading": "5.2 加速电荷产生的辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 38,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-38",
+      "textTitle": "需求与问题 38第五章 5.3 能级跃迁辐射5.3.1 卢瑟福原子有核模型 原子是由带正电的原子核和一些带负电的电子组成，它们之间存在着静电吸引力原子核与电子在原子中是如何分布的？ 物质是由原子组成的",
+      "learningHeading": "5.3.1 有核模型为什么还需要量子定态"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 39,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-39",
+      "textTitle": "需求与问题 39第五章 5.3 能级跃迁辐射5.3.1 卢瑟福原子有核模型 a粒子散射实验证明了原子有核模型",
+      "learningHeading": "5.3.1 有核模型为什么还需要量子定态"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 40,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-40",
+      "textTitle": "需求与问题 40第五章 5.3 能级跃迁辐射5.3.1 卢瑟福原子有核模型与天体运行规律一致。按照经典力学原理可得：原子中的电子必须绕原子核沿圆或椭圆轨道不断旋转，不然就会被静电力吸引到原子核上去 加",
+      "learningHeading": "5.3.1 有核模型为什么还需要量子定态"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 41,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-41",
+      "textTitle": "需求与问题 41第五章 5.3 能级跃迁辐射5.3.2 玻尔模型",
+      "learningHeading": "5.3.2 氢原子谱系：把能级差变成波长"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 42,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-42",
+      "textTitle": "需求与问题 42第五章 5.3 能级跃迁辐射5.2.2 玻尔模型1913年，玻尔提出两点假设： 为原子结构的量子理论奠定了基础 原子存在一些定态，在定态中不发射也不吸收电磁能量，原子定态的能量只能取分",
+      "learningHeading": "5.3 能级跃迁辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 43,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-43",
+      "textTitle": "需求与问题 43第五章 5.3 能级跃迁辐射5.2.2 玻尔模型 b)提出“定态”，“能级”，“量子跃迁”等概念，在量子力学中仍很重要, 具有极其深远的影响 玻尔原子理论的意义在于：a) 揭示了微观体",
+      "learningHeading": "5.3 能级跃迁辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 44,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-44",
+      "textTitle": "需求与问题 44第五章 5.3 能级跃迁辐射5.2.3 辐射吸收与跃迁",
+      "learningHeading": "5.3 能级跃迁辐射"
+    },
+    {
+      "sourcePdf": "光学20260928_非相干辐射.pdf",
+      "pdfPage": 45,
+      "section": "5.3",
+      "page": "optics-ch05-s03",
+      "anchor": "ppt-3-45",
+      "textTitle": "需求与问题 45第五章 5.3 能级跃迁辐射5.2.3 辐射吸收与跃迁原子、分子、离子中的能级结构 固体中的能带结构",
+      "learningHeading": "5.3 能级跃迁辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 1,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-4-1",
+      "textTitle": "第二部分光的产生2026-10-12",
+      "learningHeading": "5.1 热辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 2,
+      "section": "5.1",
+      "page": "optics-ch05-s01",
+      "anchor": "ppt-4-2",
+      "textTitle": "需求与问题 2第五章 非相干辐射",
+      "learningHeading": "5.1 热辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 3,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-3",
+      "textTitle": "第六章相干辐射2026-10-12",
+      "learningHeading": "6.1 自发辐射、受激吸收与受激辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 4,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-4",
+      "textTitle": "需求与问题 4第六章 6.1 自发辐射、受激吸收、受激辐射6.1.1 自发辐射 实际比较复杂，简化成二能级系统来讨论一些辐射问题 氢原子的结构 自发辐射、受激吸收、受激辐射",
+      "learningHeading": "6.1.1 自发辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 5,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-5",
+      "textTitle": "需求与问题 5第六章 6.1 自发辐射、受激吸收、受激辐射6.1.1 自发辐射 E2 E1 hv 原子在没有外界干预的情况下，电子会由处于激发态的高能级E2自动跃迁至低能级E1，这种跃迁称为 自发跃迁",
+      "learningHeading": "6.1.1 自发辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 6,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-6",
+      "textTitle": "需求与问题 6第六章 6.1 自发辐射、受激吸收、受激辐射6.1.2 受激吸收 低能级E1 高能级E2 当原子中的电子处于低能级时，吸收光子的能量后，从低能级跃迁到高能级——受激吸收 𝜺=𝒉𝝂=𝑬𝟐−",
+      "learningHeading": "6.1.2 受激吸收"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 7,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-7",
+      "textTitle": "需求与问题 7第六章 6.1 自发辐射、受激吸收、受激辐射6.1.3 受激辐射 低能级E1 高能级E2 光子 在入射光子作用下，电子会由处于激发态的高能级E2自动跃迁至低能级E1，这种跃迁称为受激辐射",
+      "learningHeading": "6.1.3 受激辐射"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 8,
+      "section": "6.1",
+      "page": "optics-ch06-s01",
+      "anchor": "ppt-4-8",
+      "textTitle": "需求与问题 8第六章 6.1 自发辐射、受激吸收、受激辐射6.1.4 爱因斯坦公式𝒅𝑵𝟐𝟏𝒅𝒕=𝑨𝟐𝟏𝑵𝟐 𝒅𝑵𝟏𝟐𝒅𝒕=𝑩𝟏𝟐𝒖𝝂𝑵𝟏 𝒅𝑵𝟐𝟏𝒅𝒕=𝑩𝟐𝟏𝒖(𝝂)𝑵𝟐受激辐射 自发辐射 受激吸收 ",
+      "learningHeading": "6.1.4 从热平衡推导 Einstein 关系"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 9,
+      "section": "6.2",
+      "page": "optics-ch06-s02",
+      "anchor": "ppt-4-9",
+      "textTitle": "需求与问题 9第六章 6.1 自发辐射、受激吸收、受激辐射 基态 激发态 热平衡条件下：各能级上的粒子数目服从一定的统计规律玻尔兹曼分布律𝑵𝒏∞𝒆$𝑬𝒏𝒌𝑻 𝑵𝟐𝑵𝟏=𝒆$𝑬𝟐𝒌𝑻𝒆$𝑬𝟏𝒌𝑻=𝒆$𝑬",
+      "learningHeading": "6.2 能级寿命、谱线展宽与光的增益"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 10,
+      "section": "6.2",
+      "page": "optics-ch06-s02",
+      "anchor": "ppt-4-10",
+      "textTitle": "需求与问题 10第六章 6.2.2 能级寿命激发态的高能级E2上粒子N2由于自动跃迁随时间逐渐减少𝒅𝑵𝟐=−𝒅𝑵𝟐𝟏=−𝑨𝟐𝟏𝑵𝟐𝒅𝒕𝑵𝟐=𝑵𝟐𝟎𝒆$𝑨𝟐𝟏𝒕 讨论：N2与什么因素有关？𝑵𝟐=𝑵𝟐𝟎𝒆",
+      "learningHeading": "6.2.2 布居寿命与衰减率"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 11,
+      "section": "6.2",
+      "page": "optics-ch06-s02",
+      "anchor": "ppt-4-11",
+      "textTitle": "需求与问题 11第六章 6.2.2 能级寿命t与原子结构有关，一般为10-8s一些激发态的t特别长，可达10-3s—1s。亚稳态𝝉\"∆𝝂=𝟏∆𝝂：（1）碰撞展宽：缩短能级寿命（2）多普勒展宽：热运动造",
+      "learningHeading": "6.2.2 布居寿命与衰减率"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 12,
+      "section": "6.2",
+      "page": "optics-ch06-s02",
+      "anchor": "ppt-4-12",
+      "textTitle": "需求与问题 12第六章 6.2.3 光的吸收和增益一束频率n的光照射具有高能级E2和低能级E1的介质时受激吸收和受激辐射同时起作用𝒅𝑵𝟏𝟐=𝑩𝟏𝟐𝒖𝝂𝑵𝟏𝒅𝒕𝒅𝑵𝟐𝟏=𝑩𝟐𝟏𝒖(𝝂)𝑵𝟐𝒅𝒕受激辐射受",
+      "learningHeading": "6.2.3 从净增益到种子放大"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 13,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-13",
+      "textTitle": "需求与问题 13第六章 6.3 激光产生的条件 E1 E2 如何实现受激辐射占优势地位？ 受激辐射与自发辐射的矛盾E1 E2 E1 E2 E1 E2受激辐射与受激吸收的矛盾 E1 E2 E1 E2",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 14,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-14",
+      "textTitle": "需求与问题 14第六章 6.3 激光产生的条件 三能级系统四能级系统 E3 E0 E1 E2 实现激光：解决受激吸收与受激辐射的矛盾如何实现粒子数反转：泵浦、激励、抽运𝑵𝟐𝑵𝟏>𝟏",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 15,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-15",
+      "textTitle": "需求与问题 15第六章 6.3 激光产生的条件 光学谐振腔的作用 如何解决受激辐射和自发辐射的矛盾？",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 16,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-16",
+      "textTitle": "需求与问题 16第六章 6.3 激光产生的条件 （1）产生和维持光振荡（2）确定激光方向（3）选频（4）选偏振 谐振腔的作用",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 17,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-17",
+      "textTitle": "需求与问题 17第六章 6.3 激光产生的条件 E1 E2 光学谐振腔---解决受激辐射和自发辐射的矛盾粒子数反转---克服受激辐射和受激吸收的矛盾",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 18,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-18",
+      "textTitle": "需求与问题 18第六章 6.3 激光产生的条件增益：激光介质的增益放大损耗：端面的衍射、吸收、透射、散射等 I3 I1 I2 I4 I5 𝑰𝟐=𝑰𝟏𝒆𝑮𝑳𝑰𝟑=𝑹𝟐𝑰𝟐𝑰𝟒=𝑰𝟑𝒆𝑮𝑳=𝑹𝟐𝑰𝟏𝒆𝟐𝑮",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 19,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-19",
+      "textTitle": "需求与问题 19第六章 6.3 激光产生的条件 驻波稳定存在的条件：𝒏𝑳=𝑲l𝟐=𝑲𝒄𝟐𝝂 𝝂=𝑲𝒄𝟐𝒏𝑳光场沿传播方向的振动模式：纵模 纵模间隔：∆l𝑲=l𝟐𝟐𝒏𝑳∆𝝂=𝒄𝟐𝒏𝑳 纵模个数N：>1 ",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 20,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-20",
+      "textTitle": "需求与问题 20第六章 6.3 激光产生的条件激光的横模横模：激光腔内垂直光轴的横截面内稳定的光场分布 轴对称横模：𝑻𝑬𝑴𝒎𝒏𝒌m, n是光束x和y方向出现的暗区数旋转对称横模：𝑻𝑬𝑴𝒎𝒏𝒌m, n是",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 21,
+      "section": "6.3",
+      "page": "optics-ch06-s03",
+      "anchor": "ppt-4-21",
+      "textTitle": "需求与问题 21第六章 6.3 激光产生的条件 激光(Laser)即英文：Light Amplification by Stimulated Emission of Radiation 在受激辐射中通",
+      "learningHeading": "6.3 激光产生的条件"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 22,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-22",
+      "textTitle": "需求与问题 22第六章 6.4 激光的特点 § 6.4.1 方向性好激光按照轴线发射，发散角10-5-10-8sr普通光源，发散角4psr或者2psr光束在几公里外，扩展范围也不过几厘米，这样好的方向",
+      "learningHeading": "6.4.1 方向性"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 23,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-23",
+      "textTitle": "需求与问题 23第六章 6.4 激光的特点 6.4.2 相干性好时间相干性：氦氖激光器∆n=𝟏𝟎𝟔Hz，t=𝟏𝟎$𝟔𝒔：相干长度L0=300m 空间相干性： 各种精密测量、引力波测量等 谱线的自然线宽",
+      "learningHeading": "6.4.2 时间、空间相干性"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 24,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-24",
+      "textTitle": "需求与问题 24第六章 6.4 激光的特点 激光器：DE=1J能量，脉宽Dt=10-9s带宽Dn=109Hz，发光立体角DW=p´10-6 普通光源：功率1W、在1s内的能量DE=1J带宽Dn=101",
+      "learningHeading": "6.4 激光的特点"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 25,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-25",
+      "textTitle": "需求与问题 25第六章 6.4 激光的特点（nature激光发展过程的图） 6.4.4 脉冲特性1916年，爱因斯坦在提出自发辐射、受激辐射、受激吸收理论1960年第一台红宝石激光器出光 1962年激",
+      "learningHeading": "6.4.4 脉冲宽度与频宽"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 26,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-26",
+      "textTitle": "需求与问题 26第六章 6.4 激光的特点 6.4.5 非线性效应1961年宣布了非线性光学现象—倍频(Secondharmonicgeneration)的发现 P= c(1) E+ c(2) E^2",
+      "learningHeading": "6.4.5 非线性极化与倍频"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 27,
+      "section": "6.4",
+      "page": "optics-ch06-s04",
+      "anchor": "ppt-4-27",
+      "textTitle": "需求与问题 27第六章 激光的小结",
+      "learningHeading": "6.4 激光的特点"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 28,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-28",
+      "textTitle": "需求与问题 28第六章 6.5 自由电子激光6.5.1 相干条件束缚电子产生激光需要增益介质、谐振腔、激励源 范围有限 自由电子激光 能级跃迁辐射 能不能找到一种激光，波长连续可调，覆盖范围广？ 波长",
+      "learningHeading": "6.5.1 波荡运动与光场耦合"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 29,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-29",
+      "textTitle": "需求与问题 29第六章 6.5 自由电子激光6.5.1 相干条件 自由电子注入到波荡器中可以产生激光自由电子激光自由电子产生激光的条件是什么？激光：光子之间是相同的，相干的光放大：相干放大 𝐵 ⃗𝜐⃗",
+      "learningHeading": "6.5.1 波荡运动与光场耦合"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 30,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-30",
+      "textTitle": "需求与问题 30第六章 6.5 自由电子激光6.5.1 相干条件 自由电子受到的磁场力在x方向自由电子在xz平面内做正弦运动 𝐵 ⃗𝜐⃗𝐹-e 𝐵⃗𝜐⃗𝐹-e",
+      "learningHeading": "6.5.1 波荡运动与光场耦合"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 31,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-31",
+      "textTitle": "需求与问题 31第六章 6.5 自由电子激光6.5.1 相干条件 A和B是自由电子先后经过的两点，其运动状态完全相同A和B发出的电磁波有相同的位相当自由电子到达B点开始辐射时，A点发出的光已传到A¢ ",
+      "learningHeading": "6.5.1 波荡运动与光场耦合"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 32,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-32",
+      "textTitle": "需求与问题 32第六章 6.5 自由电子激光6.5.1 相干条件 当光沿z方向发射，q=0l𝒖𝒗𝒛=𝒏l𝒆+l𝒖𝒄(n=1, 2, 3, …) 发出相干光的条件",
+      "learningHeading": "6.5.1 波荡运动与光场耦合"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 33,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-33",
+      "textTitle": "需求与问题 33第六章 6.5 自由电子激光6.5.2 放大条件 沿z 方向传播的光，其光矢量𝑬在电子轨道平面内沿x方向𝑬=𝑬𝒄𝒐𝒔𝟐𝝅l𝒆𝒛−𝝎𝒆𝒕+𝝋𝟎𝒊𝟎 如光场正好使电子减速，则电子能量减小，",
+      "learningHeading": "6.5.2 共振慢相位与平均做功"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 34,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-34",
+      "textTitle": "需求与问题 34第六章 6.5 自由电子激光6.5.2 放大条件 单位时间内光场对电子所做的功和电子能量变化为： −𝒆𝒗H𝑬=𝒅𝒎𝒄𝟐𝒅𝒕𝒎=𝒎𝟎𝜸=𝒎𝟎𝟏𝟏−𝒗𝟐𝒄𝟐 𝒗B𝑬>𝟎如实现放大，即：𝝊和",
+      "learningHeading": "6.5.2 共振慢相位与平均做功"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 35,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-35",
+      "textTitle": "需求与问题 35第六章 6.5 自由电子激光6.5.2 放大条件 l𝒖𝒗𝒛=𝒏l𝒆+l𝒖𝒄 光辐射电矢量𝑬方向每隔l𝒆𝟐改变一次电子速度𝝊的x分量每前进l𝒖𝟐方向改变一次 电子沿z方向穿过l𝒖𝟐距离，",
+      "learningHeading": "6.5.2 共振慢相位与平均做功"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 36,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-36",
+      "textTitle": "需求与问题 36第六章 6.5 自由电子激光6.5.2 放大条件l𝒖𝒗𝒛=l𝒆+l𝒖𝒄光波电场与电子运动位置的关系受激放大条件 当n=1时， 大家想象一下n=3的图像是怎么样的？",
+      "learningHeading": "6.5.2 共振慢相位与平均做功"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 37,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-37",
+      "textTitle": "需求与问题 37第六章 6.5 自由电子激光6.5.2 放大条件 l𝒖𝒗𝒛=𝒏l𝒆+l𝒖𝒄( n=1, 3, 5, …) l𝒖𝒗𝒛=𝒏l𝒆+l𝒖𝒄(n=1, 2, 3, …)相干条件 受激放大条件 l",
+      "learningHeading": "6.5.2 共振慢相位与平均做功"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 38,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-38",
+      "textTitle": "需求与问题 38第六章 6.5 自由电子激光6.5.3 电子群聚 注入电子是脉冲的，10-10s 3cm比发射光波长大很多，若电子均匀分布 电子运动速度接近光速，10-10s对应的空间展开宽度3cm ",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 39,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-39",
+      "textTitle": "需求与问题 39第六章 6.5 自由电子激光6.5.3 电子群聚如何能够产生激光呢？ 电子产生群聚，间隔等于光波的波长 如何如何群聚呢？ l𝒆",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 40,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-40",
+      "textTitle": "需求与问题 40第六章 6.5 自由电子激光6.5.3 电子群聚 在电子运动过程中，若电子在a区域内， 同时，光波的磁感应强度矢量B在a区域是垂直纸面向内的𝒇=−𝒆𝒗𝒙𝒊𝒙×𝑩𝒋𝒚电子受到洛伦兹力为：",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 41,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-41",
+      "textTitle": "需求与问题 41第六章 6.5 自由电子激光6.5.3 电子群聚 在电子运动过程中，若电子在b区域内， 同时，光波的磁感应强度矢量B在b区域是垂直纸面向外的𝒇=𝒆𝒗𝒙𝒊𝒙×𝑩𝒋𝒚电子受到洛伦兹力为：方",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 42,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-42",
+      "textTitle": "需求与问题 42第六章 6.5 自由电子激光6.5.3 电子群聚 处于b区域的电子将向+z方向移动处于a区域的电子将向-z方向移动 电子聚集位置",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 43,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-43",
+      "textTitle": "需求与问题 43第六章 6.5 自由电子激光6.5.3 电子群聚 l𝒆 足够亮的电子束和足够长的波荡器，可以实现激光",
+      "learningHeading": "6.5.3 微群聚与相干强度"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 44,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-44",
+      "textTitle": "需求与问题 44第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 振荡型自由电子激光 自由电子自由电子激光全反射镜波荡器 自由电子自由电子激光 主要用于THz和远红外波段",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 45,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-45",
+      "textTitle": "需求与问题 45第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 自放大自发辐射自由电子激光(SASE)自由电子自由电子激光波荡器 自由电子激光 用于极紫外及X射线波段 自由电子SASE",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 46,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-46",
+      "textTitle": "需求与问题 46第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式自种子自由电子激光(SASE) 辐射的脉冲能量的抖动都较大 带宽减小一到两个量级，大大提高了FEL 的光谱亮度",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 47,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-47",
+      "textTitle": "需求与问题 47第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 外种子型自由电子激光 电子束自由电子激光波荡器 电子束自由电子激光色散段种子激光种子激光 激光品质变好，谐波次数有限！",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 48,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-48",
+      "textTitle": "需求与问题 48第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 电子束自由电子激光波荡器 电子束自由电子激光色散段种子激光种子激光 调制段波荡器 激光品质变好，提升谐波次数！ 外种子谐",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 49,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-49",
+      "textTitle": "需求与问题 49第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式外种子回声增强谐波放大型自由电子激光（EEHG） EEHG 方案拓宽了外种子激光运行模式的辐射波长范围，但单次EEHG 谐",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 50,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-50",
+      "textTitle": "需求与问题 50第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 ＨＧＨＧ级联的波荡器系统示意图 ＥＥＨＧ－ＨＧＨＧ级联的波荡器系统示意图",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 51,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-51",
+      "textTitle": "需求与问题 51第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式 大连相干光源 SXFEL/SHINE 上海硬X射线自由电子激光装置 上海软X射线自由电子激光装置合肥红外自由电子激光装置",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 52,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-52",
+      "textTitle": "需求与问题 52第六章 6.5 自由电子激光6.5.4 自由电子激光的运行模式",
+      "learningHeading": "6.5.4 反馈、噪声与种子运行模式"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 53,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-53",
+      "textTitle": "需求与问题 53第六章 6.5 自由电子激光",
+      "learningHeading": "6.5 自由电子激光"
+    },
+    {
+      "sourcePdf": "光学20261012_相干辐射(1).pdf",
+      "pdfPage": 54,
+      "section": "6.5",
+      "page": "optics-ch06-s05",
+      "anchor": "ppt-4-54",
+      "textTitle": "需求与问题 54第二部分 总结",
+      "learningHeading": "6.5 自由电子激光"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 1,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-1",
+      "textTitle": "第三部分光的传输2026-10-19",
+      "learningHeading": "7.1 各向同性线性介质中的传播方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 2,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-2",
+      "textTitle": "第七章光在各向同性介质中的传播2026-10-19",
+      "learningHeading": "7.1 各向同性线性介质中的传播方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 3,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-3",
+      "textTitle": "需求与问题 3第七章 7.1 光在各向同性线性介质中的传播方程与简谐波形式7.1.1 光在各向同性线性介质中的波动方程 线性介质的极化 𝐷=𝜀𝜀!𝐸𝐵=𝜇𝜇!𝐻 𝐷=𝜀!𝐸+𝑃 𝑷=c𝒆𝜺𝟎𝑬各向同性",
+      "learningHeading": "7.1.1 本构关系与波动方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 4,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-4",
+      "textTitle": "需求与问题 4第七章 7.1 光在各向同性线性介质中的传播方程与简谐波形式7.1.1 光在各向同性线性介质中的波动方程 𝜵𝟐→𝑬−𝜺𝜺𝟎𝝁𝝁𝟎𝝏𝟐→𝑬𝝏𝒕𝟐=𝟎 𝜵𝟐→𝑯−𝟏𝝊𝟐𝝏𝟐→𝑯𝝏𝒕𝟐=𝟎波动",
+      "learningHeading": "7.1.1 本构关系与波动方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 5,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-5",
+      "textTitle": "需求与问题 5第七章 7.1 光在各向同性线性介质中的传播方程与简谐波形式7.1.1 光在各向同性线性介质中的波动方程𝜐=1𝜀𝜀∘𝜇𝜇∘,𝜀𝜀∘𝜇𝜇∘=1𝜐B,即 1 ,c eµ = !! 8 31 ",
+      "learningHeading": "7.1.1 本构关系与波动方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 6,
+      "section": "7.1",
+      "page": "optics-ch07-s01",
+      "anchor": "ppt-5-6",
+      "textTitle": "需求与问题 6第七章 7.1 光在各向同性线性介质中的传播方程与简谐波形式7.1.2 光在各向同性线性介质中的简谐波函数 𝑬𝑷,𝒕=𝑨𝐜𝐨𝐬𝝎𝒕−𝒌𝒏𝒛+𝝓𝟎𝑬𝑷,𝒕=𝑨𝐜𝐨𝐬𝟐𝝅𝒕𝑻−𝒛𝝀𝒏+𝝓𝟎 ",
+      "learningHeading": "7.1.2 单色波的相位与场方向"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 7,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-7",
+      "textTitle": "需求与问题 7第七章 7.2 光与介质相互作用的经典理论7.2.1 光与物质相互作用的经典模型 洛伦兹电子论物质的原子或分子体系是一个谐振子正电荷不动，电子在其位置做振动有固定的振动频率 入射光场与介",
+      "learningHeading": "7.2.1 受迫阻尼振子模型"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 8,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-8",
+      "textTitle": "需求与问题 8第七章 7.2 光与介质相互作用的经典理论7.2.2 经典理论的基本方程每个原子或分子只有一个电子做强迫振动构成电偶极子的电偶极矩为：𝒑=−𝒆𝒓若单位体积内有N个原子或分子介质的极化强度",
+      "learningHeading": "7.2.2 从位移响应求复极化率"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 9,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-9",
+      "textTitle": "需求与问题 9第七章 7.2 光与介质相互作用的经典理论7.2.2 经典理论的基本方程受迫振动电子的运动方程为：𝒎𝒅𝟐𝒓𝒅𝒕𝟐=−𝒆𝑬−𝒇𝒓−𝒈𝒅𝒓𝒅𝒕 𝒅𝟐𝒓𝒅𝒕𝟐+𝜸𝒅𝒓𝒅𝒕+𝝎𝟎𝟐𝒓=−𝒆𝑬𝒎 ",
+      "learningHeading": "7.2.2 从位移响应求复极化率"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 10,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-10",
+      "textTitle": "需求与问题 10第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率𝑬=C𝑬(𝒛)𝒆4𝒊𝝎𝒕 C𝑬(𝒛)=𝑬𝟎𝒆4𝒊𝒌𝒏𝒛复振幅𝒅𝟐𝒓𝒅𝒕𝟐+𝜸𝒅𝒓𝒅𝒕+𝝎𝟎𝟐𝒓=−𝒆𝑬𝒎引入试探解𝒓",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 11,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-11",
+      "textTitle": "需求与问题 11第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率 𝑷=𝑵𝒆𝟐/𝒎𝝎𝟎𝟐−𝝎𝟐−𝒊𝜸𝝎C𝑬(𝒛)𝒆4𝒊𝝎𝒕 𝑃=c$𝜀!𝐸 𝑷=𝑵𝒑=−𝑵𝒆𝒓 c𝒆=𝑵𝒆𝟐𝜺𝟎𝒎𝟏𝝎",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 12,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-12",
+      "textTitle": "需求与问题 12第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率c𝒆=𝑵𝒆𝟐𝜺𝟎𝒎𝟏𝝎𝟎𝟐−𝝎𝟐−𝒊𝜸𝝎介质的极化率为： c𝒆=𝑵𝒆𝟐𝜺𝟎𝒎𝟏𝝎𝟎𝟐−𝝎𝟐−𝒊𝜸𝝎c𝒆=c¢𝒆+𝒊c",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 13,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-13",
+      "textTitle": "需求与问题 13第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率 L𝒏𝟐=𝜺=𝟏+c𝒆=𝟏+𝑵𝒆𝟐𝜺𝟎𝒎𝟏𝝎𝟎𝟐−𝝎𝟐−𝒊𝜸𝝎L𝒏=𝒏+𝒊hL𝒏𝟐=𝒏+𝒊h𝟐=𝒏𝟐−h𝟐+𝟐𝒊𝒏h",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 14,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-14",
+      "textTitle": "需求与问题 14第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率 C𝑬(𝒛)=𝑬𝟎𝒆4𝒊𝒌;𝒏𝒛光波的复振幅L𝒏=𝒏+𝒊h代入C𝑬(𝒛)=𝑬𝟎𝒆4𝒌h𝒛𝒆4𝒊𝒌𝒏𝒛一列振幅随传播距",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 15,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-15",
+      "textTitle": "需求与问题 15第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率𝒏𝟐−h𝟐=𝟏+𝑵𝒆𝟐𝜺𝟎𝒎𝝎𝟎𝟐−𝝎𝟐𝝎𝟎𝟐−𝝎𝟐𝟐+𝜸𝟐𝝎𝟐 𝟐𝒏h=𝑵𝒆𝟐𝜺𝟎𝒎𝜸𝝎𝝎𝟎𝟐−𝝎𝟐𝟐+𝜸𝟐𝝎𝟐亥",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 16,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-16",
+      "textTitle": "需求与问题 16第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率弱极化时，例如对于稀薄气体，c/≪1a𝒏=𝟏+c𝒆≈𝟏+𝟏𝟐c𝒆=𝟏+𝟏𝟐c¢𝒆+𝒊𝟐c¢¢𝒆 𝒏=𝟏+𝟏𝟐c¢𝒆=",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 17,
+      "section": "7.2",
+      "page": "optics-ch07-s02",
+      "anchor": "ppt-5-17",
+      "textTitle": "需求与问题 17第七章 7.2 光与介质相互作用的经典理论7.2.3 介质的复折射率 L𝒏𝟐=𝟏+S𝒋𝑵𝒋𝒆𝒋𝟐𝜺𝟎𝒎𝒋𝟏𝝎𝟎𝒋𝟐−𝝎𝟐−𝒊𝜸𝒋𝝎 简化版，只有一种固定频率的振子；实际上应该有多种振子",
+      "learningHeading": "7.2.3 复折射率的实部与虚部"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 18,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-18",
+      "textTitle": "需求与问题 18第七章 7.3 光的吸收7.3.1 光的吸收过程𝒅𝟐𝒓𝒅𝒕𝟐+𝜸𝒅𝒓𝒅𝒕+𝝎𝟎𝟐𝒓=−𝒆𝑬𝒎经典电子论的电子运动的基本方程成立的条件是什么？电子的运动速度𝒗≪𝒄电子振动振幅：𝒗𝑻≪𝒄𝑻",
+      "learningHeading": "7.3.1 光的吸收过程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 19,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-19",
+      "textTitle": "需求与问题 19第七章 7.3 光的吸收7.3.1 光的吸收过程 光经过dx 厚的介质时照度由I 减小到I-dI减小的照度dI正比于I 和dx，有：dI Idxa-=a与照度无关，称为该介质的吸收系数",
+      "learningHeading": "7.3.1 光的吸收过程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 20,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-20",
+      "textTitle": "需求与问题 20第七章 7.3 光的吸收7.3.2 介质的吸收规律 0 L II e a- =在0到L区间对x积分 朗伯定律描述了光吸收的线性规律布格尔定律(P.Bouguer)或朗伯定律(J.H.L",
+      "learningHeading": "7.3.2 介质的吸收规律：吸收系数与消光系数"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 21,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-21",
+      "textTitle": "需求与问题 21第七章 7.3 光的吸收7.3.2 介质的吸收规律0 L II e a- = 𝛼=2𝑘h=4𝜋lh𝑰=𝑰𝟎𝒆4𝟒𝝅lh𝑳 𝐼=C𝑬(𝑳)#=𝐼@𝑒4#AhB 介质的吸收规律L𝒏=𝒏+𝒊",
+      "learningHeading": "7.3.2 介质的吸收规律：吸收系数与消光系数"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 22,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-22",
+      "textTitle": "需求与问题 22第七章 7.3 光的吸收7.3.3 液体介质的吸收规律当介质是透明溶液时ACa=A与浓度无关，取决于吸收物质的分子特性0 ACL II e - = 每个分子的吸收本领不受周围临近分子的",
+      "learningHeading": "7.3.3 液体介质的吸收规律：Beer 定律、透射率和吸光度"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 23,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-23",
+      "textTitle": "需求与问题 23第七章 7.3 光的吸收7.3.4 光吸收的种类物质对各种波长l的光的吸收程度几乎相等即吸收系数a与l无关如：空气、纯水、无色玻璃在可见光范围内的吸收吸收后只改变强度不改变颜色 物质对",
+      "learningHeading": "7.3.4 光吸收的种类：选择吸收与颜色"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 24,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-24",
+      "textTitle": "需求与问题 24第七章 7.3 光的吸收7.3.4 光吸收的种类物体的体色：物体由于选择吸收而呈现的颜色呈现体色的物体的透射光和反射光的颜色是一样的 “大气窗口”：大气透明的波段 红外导航跟踪遥感 物",
+      "learningHeading": "7.3.4 光吸收的种类：选择吸收与颜色"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 25,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-25",
+      "textTitle": "需求与问题 25第七章 7.3 光的吸收7.3.5 介质吸收的吸收光谱连续光谱的白光光源、吸收物质、光谱仪组成 吸收光谱的特点",
+      "learningHeading": "7.3.5 介质吸收光谱"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 26,
+      "section": "7.3",
+      "page": "optics-ch07-s03",
+      "anchor": "ppt-5-26",
+      "textTitle": "需求与问题 26第七章 7.3 光的吸收7.3.5 介质吸收光谱 吸收光谱的特点 历史上就曾靠这种方法发现了铯、鉫、铊、铟、镓、等多种新元素每一种物质能选择吸收的波长是特定的，它反映了物质本身的特性",
+      "learningHeading": "7.3.5 介质吸收光谱"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 27,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-27",
+      "textTitle": "需求与问题 27第七章 7.4 光的介质色散7.4.1 光的介质色散现象不同波长（或频率）的光，在同一介质中传播时具有不同的相速度u 同一介质对不同波长的光波具有不同的折射率n＝c/u这称为介质色散",
+      "learningHeading": "7.4.1 光的介质色散现象"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 28,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-28",
+      "textTitle": "需求与问题 28第七章 7.4 光的介质色散7.4.2 介质色散函数、介质色散率、介质色散曲线 介质色散率：折射率对于波长的导数，即： 每种介质的折射率n是波长λ（或频率v）的函数𝒅𝒏𝒅𝝀=𝒅𝒇(𝝀)",
+      "learningHeading": "7.4.2 介质色散函数、介质色散率、介质色散曲线"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 29,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-29",
+      "textTitle": "需求与问题 29第七章 7.4 光的介质色散7.4.2 介质色散函数、介质色散率、介质色散曲线介质色散曲线：介质折射率n与波长l之间的关系曲线 波长很长时，色散率趋近于0 波长越长，折射率越小随着波长",
+      "learningHeading": "7.4.2 介质色散函数、介质色散率、介质色散曲线"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 30,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-30",
+      "textTitle": "需求与问题 30第七章 7.4 光的介质色散7.4.3 正常色散 正常色散的经验公式（科希公式）：l是入射光在真空中的波长，A、B、C是与介质有关的常数 色散率的数值随波长的增加而减小，与实验曲线相符",
+      "learningHeading": "7.4.3 从 Lorentz 模型推导 Cauchy 公式"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 31,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-31",
+      "textTitle": "需求与问题 31第七章 7.4 光的介质色散7.4.3 正常色散正常色散的经验公式（科希公式）：42llCBAn++=科希1836年总结出来的𝒏=𝟏+𝟏𝟐c¢𝒆=𝟏+𝑵𝒆𝟐𝟐𝜺𝟎𝒎𝝎𝟎𝟐−𝝎𝟐𝝎𝟎𝟐−",
+      "learningHeading": "7.4.3 从 Lorentz 模型推导 Cauchy 公式"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 32,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-32",
+      "textTitle": "需求与问题 32第七章 7.4 光的介质色散7.4.4 反常色散色散曲线内色散率dn/dl>0的区域 在吸收带内，由于石英强烈吸收红外线，通过的光非常微弱，使折射率通常很难进行测量，必须采用很薄的石英",
+      "learningHeading": "7.4.4 共振附近的反常色散"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 33,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-33",
+      "textTitle": "需求与问题 33第七章 7.4 光的介质色散7.4.4 反常色散 在吸收带内，则有dn/dλ>0，属于反常色散 上述实验结果可归结如下： 在吸收带内及其附近不符合科希公式在透明波段的色散曲线符合科希公",
+      "learningHeading": "7.4.4 共振附近的反常色散"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 34,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-34",
+      "textTitle": "需求与问题 34第七章 7.4 光的介质色散7.4.5 正常色散的观察 牛顿首先利用交叉棱镜形象地观察到与色散曲线相似的色散图像这弯曲彩色光带的形状大致表示出棱镜P2材料的色散特性，其水平方向的展宽相",
+      "learningHeading": "7.4.5 交叉棱镜显示色散曲线"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 35,
+      "section": "7.4",
+      "page": "optics-ch07-s04",
+      "anchor": "ppt-5-35",
+      "textTitle": "需求与问题 35第七章 7.4 光的介质色散7.4.6 反常色散的观察在金属蒸汽中最容易观察到反常色散。1904年伍德（R.W.Wood）利用交叉棱镜法巧妙地显示出钠蒸汽在可见光范围内的反常色散。 管",
+      "learningHeading": "7.4.6 反常色散的观察：伍德实验"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 36,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-36",
+      "textTitle": "需求与问题 36第七章 7.5 各向同性非均匀介质中的光传播7.5.1 各向同性非均匀介质介质的极化 𝐷=𝜀⃗𝑟𝜀!𝐸 𝐵=𝜇⃗𝑟𝜇!𝐻 𝐷=𝜀!𝐸+𝑃 𝑃=c$⃗𝑟𝜀!𝐸各向同性非均匀线性介质𝜀⃗𝑟",
+      "learningHeading": "7.5.1 介电常数梯度与波动方程"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 37,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-37",
+      "textTitle": "需求与问题 37第七章 7.5 各向同性非均匀介质中的光传播7.5.2 光在各向同性非均匀介质的传播𝐷=𝜀⃗𝑟𝜀!𝐸 𝜵^𝑫=𝜺𝜵^𝑬+𝜵𝜺^𝑬=𝟎𝜵^𝑬=−𝜵𝜺^𝑬𝜺 𝜵•→𝑫=𝟎 𝜵×𝜵×𝑬=𝜵𝜵",
+      "learningHeading": "7.5.2 光程与相位积累"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 38,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-38",
+      "textTitle": "需求与问题 38第七章 7.5 各向同性非均匀介质中的光传播7.5.3 光程C𝑬(𝒛)=𝑬𝟎𝒆4𝒌h𝒛𝒆4𝒊𝒌𝒏𝒛 𝟐𝝅𝝀𝒏𝒛=𝒌^𝒏𝒛=𝒌¢^𝒛=𝟐𝝅𝝀′𝒛光在介质中传播z距离后引起的位相改变为： ",
+      "learningHeading": "7.5.3 光程的驻值与费马原理"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 39,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-39",
+      "textTitle": "需求与问题 39第七章 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理17世纪，法国数学家和法理学家提出了一个观点“自然总是经济的”1657年，他提出描述光线传播行为的费马原理“光线沿光程（",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 40,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-40",
+      "textTitle": "需求与问题 40第七章 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理 P Qn(𝒓) 平稳值有三种含义：极小值——常见情形极大值——个别情形常数——成像系统物像关系",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 41,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-41",
+      "textTitle": "需求与问题 41第七章 在真空和各向同性均匀介质中，光沿直线传播 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 42,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-42",
+      "textTitle": "需求与问题 42第七章 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理自然界中的各向同性非均匀介质中的光传播现象：海市蜃楼，沙漠幻影 温度T( h ), 若h2> h1，T( h2 )>T(",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 43,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-43",
+      "textTitle": "需求与问题 43第七章 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理自然界中的各向同性非均匀介质中的光传播现象：海市蜃楼，沙漠幻影地面温度高T(h2)<T(h1)；n(h1)<n(h2)沙",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261019_光的传播_I.pdf",
+      "pdfPage": 44,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-5-44",
+      "textTitle": "需求与问题 44第七章 7.5 各向同性非均匀介质中的光传播7.5.4 费马原理实验室内的光学弯折实验",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 1,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-1",
+      "textTitle": "第三部分 光的传输 2026-10-26",
+      "learningHeading": "7.5 各向同性非均匀介质中的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 2,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-2",
+      "textTitle": "第七章 光在各向同性介质中的传播 2026-10-26",
+      "learningHeading": "7.5 各向同性非均匀介质中的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 3,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-3",
+      "textTitle": "需求与问题 3第七章 7.5 各向同性非均匀介质中的光传播 7.5.1 各向同性非均匀介质 介质的极化 𝐷 = 𝜀 Ԧ𝑟 𝜀0𝐸 𝐵 = 𝜇 Ԧ𝑟 𝜇0𝐻 𝐷 = 𝜀0𝐸 + 𝑃 𝑃 = 𝑒 Ԧ𝑟 ",
+      "learningHeading": "7.5.1 介电常数梯度与波动方程"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 4,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-4",
+      "textTitle": "需求与问题 4第七章 7.5 各向同性非均匀介质中的光传播 7.5.2 光在各向同性非均匀介质的传播 𝐷 = 𝜀 Ԧ𝑟 𝜀0𝐸 𝜵 ∙ 𝑫 = 𝜺𝜵 ∙ 𝑬 + 𝜵𝜺 ∙ 𝑬 = 𝟎 𝜵 ∙ 𝑬 = ",
+      "learningHeading": "7.5.2 光程与相位积累"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 5,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-5",
+      "textTitle": "需求与问题 5第七章 7.5 各向同性非均匀介质中的光传播 7.5.3 光程 ෫𝑬(𝒛) = 𝑬𝟎𝒆−𝒌𝒛𝒆−𝒊𝒌𝒏𝒛 𝟐𝝅 𝝀 𝒏𝒛 = 𝒌 ∙ 𝒏𝒛 = 𝒌 ∙ 𝒛 = 𝟐𝝅 𝝀′ 𝒛 光在介",
+      "learningHeading": "7.5.3 光程的驻值与费马原理"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 6,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-6",
+      "textTitle": "需求与问题 6第七章 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 17世纪，法国数学家和法理学家提出了一个观点 “自然总是经济的” 1657年，他提出描述光线传播行为的费马原理 “光线",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 7,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-7",
+      "textTitle": "需求与问题 7第七章 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 P Q n(𝒓) 平稳值有三种含义：极小值——常见情形 极大值——个别情形 常 数——成像系统物像关系 举出费马原理的",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 8,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-8",
+      "textTitle": "需求与问题 8第七章 在真空和各向同性均匀介质中，光沿直线传播 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 用费马原理可以证明什么？",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 9,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-9",
+      "textTitle": "需求与问题 9第七章 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 自然界中的各向同性非均匀介质中的光传播现象：海市蜃楼，沙漠幻影 温度T( h ), 若 h2> h1 ，T( h2 )",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 10,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-10",
+      "textTitle": "需求与问题 10第七章 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 自然界中的各向同性非均匀介质中的光传播现象：海市蜃楼，沙漠幻影 地面温度高 T(h2)<T(h1)； n(h1)<n",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 11,
+      "section": "7.5",
+      "page": "optics-ch07-s05",
+      "anchor": "ppt-6-11",
+      "textTitle": "需求与问题 11第七章 7.5 各向同性非均匀介质中的光传播 7.5.4 费马原理 实验室内的光学弯折实验 用费马原理 可以解释什么？",
+      "learningHeading": "7.5.4 折射率梯度与蜃景"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 12,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-12",
+      "textTitle": "需求与问题 12第七章 7.6 光的散射 7.6.1 光的散射现象 fj10 fj1",
+      "learningHeading": "7.6.1 光的散射现象：为什么能从侧面看见光束"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 13,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-13",
+      "textTitle": "需求与问题 13第七章 7.6 光的散射 7.6.1 光的散射现象 光线通过均匀的透明介质时，从侧面很难看到光线 当介质均匀性受到破坏时， 有些光线就会离开原来的传播方向，向各个方向传播 光的散射现象",
+      "learningHeading": "7.6.1 光的散射现象：为什么能从侧面看见光束"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 14,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-14",
+      "textTitle": "需求与问题 14第七章 7.6 光的散射 7.6.2 光散射现象的解释 光与物质相互作用的理论：洛伦兹电子论 入射光波引起介质中的电子作受迫振动，发出次波 入射光波与众次波相干叠加，结果是只有入射 方",
+      "learningHeading": "7.6.2 光散射现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 15,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-15",
+      "textTitle": "需求与问题 15第七章 7.6 光的散射 7.6.3 光散射与不均匀性尺度间的关系 光的散射是介质不均匀性引起的 不均匀性尺度与光散射有什么关系？ 按不均匀尺度，光散射可分为两大类: 悬浮质点的散射：",
+      "learningHeading": "7.6.3 光散射与不均匀性尺度间的关系"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 16,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-16",
+      "textTitle": "需求与问题 16第七章 7.6 光的散射 7.6.4 光的散射规律 瑞利散射定律 4 )()(   fI s  在散射微粒的尺度比光波长小的条件下成立 为什么晴朗的天空蔚蓝而明亮? t1 信号",
+      "learningHeading": "7.6.4 光的散射规律：Rayleigh 与 Mie"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 17,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-17",
+      "textTitle": "需求与问题 17第七章 7.6 光的散射 7.6.4 光的散射规律 米氏散射：较大颗粒对光的散射不遵从瑞利散射定律 当球半径 a<0.3/2 时，瑞利散射定律是正确的 当 a 较大时，散射辐射通量",
+      "learningHeading": "7.6.4 光的散射规律：Rayleigh 与 Mie"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 18,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-18",
+      "textTitle": "需求与问题 18第七章 7.6 光的散射 7.6.4 光的散射规律 夜光云：大气中冰晶颗粒散射太阳光的结果",
+      "learningHeading": "7.6.4 光的散射规律：Rayleigh 与 Mie"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 19,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-19",
+      "textTitle": "需求与问题 19第七章 7.6 光的散射 7.6.4 光的散射规律 穿过厚度为 L 介质的透射辐射通量密度 I 和入射辐射通量密度 I0 的关系： 当光通过介质时，吸收和散射会使透射光减弱 与吸收一样",
+      "learningHeading": "7.6.4 光的散射规律：Rayleigh 与 Mie"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 20,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-20",
+      "textTitle": "需求与问题 20第七章 7.6 光的散射 7.6.5 表面的光散射",
+      "learningHeading": "7.6.5 表面的光散射"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 21,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-21",
+      "textTitle": "需求与问题 21第七章 7.6 光的散射 7.6.6 散射光的偏振状态",
+      "learningHeading": "7.6.6 散射光的偏振状态"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 22,
+      "section": "7.6",
+      "page": "optics-ch07-s06",
+      "anchor": "ppt-6-22",
+      "textTitle": "需求与问题 22第七章 7.6 光的散射 7.6.6 光的散射规律 分子散射 廷德尔散射 散射光频率与入射光一致 布里渊散射 拉曼散射 散射光频率与入射光不一致康普顿散射",
+      "learningHeading": "7.6.6 散射光的偏振状态"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 23,
+      "section": "7.7",
+      "page": "optics-ch07-s07",
+      "anchor": "ppt-6-23",
+      "textTitle": "需求与问题 23第七章 7.7 各向异性均匀介质中的光传播 7.7.1 各向异性均匀介质 各向异性均匀线性介质 介质极化与作用位置无关，与电磁场方向有关 𝐷 = 𝜀 𝐸 𝜺 为二阶张量，称为介电张量 ",
+      "learningHeading": "7.7.1 各向异性均匀介质与介电张量"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 24,
+      "section": "7.7",
+      "page": "optics-ch07-s07",
+      "anchor": "ppt-6-24",
+      "textTitle": "需求与问题 24第七章 7.7 各向异性均匀介质中的光传播 7.7.2 各向异性均匀介质的光传播 ∇ × ՜𝐸 = − 𝜕 ՜𝐵 𝜕𝑡 ∇ × ՜𝐻 = 𝜕 ՜𝐷 𝜕𝑡 𝛻 • ՜𝐷 = 0 ∇ • ",
+      "learningHeading": "7.7.2 各向异性均匀介质的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 25,
+      "section": "7.7",
+      "page": "optics-ch07-s07",
+      "anchor": "ppt-6-25",
+      "textTitle": "需求与问题 25第七章 总结 𝑫 = 𝜺𝟎 𝜺 𝑬 𝑩 = 𝝁𝝁𝟎𝑯 物质（介质）方程 𝜺 的形式决定了介质的属性 𝜺 是常数：各向同性均匀介质 𝜺 与位置有关、与方向无关：各向同性非均匀介质 𝜺 与",
+      "learningHeading": "7.7 各向异性均匀介质中的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 26,
+      "section": "7.7",
+      "page": "optics-ch07-s07",
+      "anchor": "ppt-6-26",
+      "textTitle": "需求与问题 26第七章 总结 自然界的光学材料 光学材料的性质 由介电常数和磁导率决定 人工超材料 自然界原子 人工原子",
+      "learningHeading": "7.7 各向异性均匀介质中的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 27,
+      "section": "7.7",
+      "page": "optics-ch07-s07",
+      "anchor": "ppt-6-27",
+      "textTitle": "需求与问题 27第七章 总结 材料光学特性的逆向设计和自由定制 异常折射 隐身",
+      "learningHeading": "7.7 各向异性均匀介质中的光传播"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 28,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-28",
+      "textTitle": "第八章 多束光在各向同性均匀介质中的传播 2025-10-27",
+      "learningHeading": "8.1 同频率同振动方向两列光波的合成"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 29,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-29",
+      "textTitle": "需求与问题 29第八章 8.1 同频率同振动方向两列光波的合成 8.1.1 同频同振动方向传播方向相同的两束光的合成 8.1.1.1 代数法求解法 ቋ𝑬𝟏(𝒑, 𝒕) = 𝑬𝟎𝟏(𝒑) 𝐜𝐨𝐬( 𝝎𝒕",
+      "learningHeading": "8.1.1 同频同振动方向传播方向相同的两束光的合成"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 30,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-30",
+      "textTitle": "需求与问题 30第八章 8.1 同频率同振动方向两列光波的合成 8.1.1 同频同振动方向传播方向相同的两束光的合成 8.1.1.2 复振幅求解法 ෩𝑬𝒊(𝒑, 𝒕) = 𝑬𝒊𝟎(𝒑)𝒆𝝓𝒊(𝒑) •",
+      "learningHeading": "8.1.1 同频同振动方向传播方向相同的两束光的合成"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 31,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-31",
+      "textTitle": "需求与问题 31第八章 8.1 同频率同振动方向两列光波的合成 8.1.1 同频同振动方向传播方向相同的两束光的合成 8.1.1.3 相量图解法 1 01 1 2 02 2 ( , ) ( , )co",
+      "learningHeading": "8.1.1 同频同振动方向传播方向相同的两束光的合成"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 32,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-32",
+      "textTitle": "需求与问题 32第八章 8.1 同频率同振动方向两列光波的合成 8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加 𝑬𝟏 = 𝑬𝟎 𝐜𝐨𝐬( 𝒌𝒛 + 𝝎𝒕) 𝑬 = 𝟐𝑬𝟎 𝐜𝐨𝐬( ",
+      "learningHeading": "8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 33,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-33",
+      "textTitle": "需求与问题 33第八章 8.1 同频率同振动方向两列光波的合成 8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加 波腹：在相邻两个波节之间的中点振幅最大 𝑬 = 𝟐𝑬𝟎 𝐜𝐨𝐬( 𝒌𝒛",
+      "learningHeading": "8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 34,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-34",
+      "textTitle": "需求与问题 34第八章 8.1 同频率同振动方向两列光波的合成 8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加",
+      "learningHeading": "8.1.2 驻波：同频率、同振动方向传播方向相反的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 35,
+      "section": "8.2",
+      "page": "optics-ch08-s02",
+      "anchor": "ppt-6-35",
+      "textTitle": "需求与问题 35第八章 8.2 同频同方向传播振动方向相互垂直的两束光的合成 8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加 𝑬𝒙 = 𝑬𝟎𝒙𝐜𝐨𝐬(𝒘𝒕 − 𝒌𝒛) 𝑬𝒚 = 𝑬𝟎𝒚𝐜",
+      "learningHeading": "8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 36,
+      "section": "8.2",
+      "page": "optics-ch08-s02",
+      "anchor": "ppt-6-36",
+      "textTitle": "需求与问题 36第八章 8.2 同频同方向传播振动方向相互垂直的两束光的合成 8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加 𝑬𝒚 𝑬𝟎𝒚 𝟐 + ( 𝑬𝒙 𝑬𝟎𝒙 )𝟐 − 𝟐 𝑬𝒙 ",
+      "learningHeading": "8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 37,
+      "section": "8.2",
+      "page": "optics-ch08-s02",
+      "anchor": "ppt-6-37",
+      "textTitle": "需求与问题 37第八章 8.2 同频同方向传播振动方向相互垂直的两束光的合成 8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加 椭圆偏振光有左旋与右旋之分：迎着光看的结果 𝐸𝑥 = 𝐸0c",
+      "learningHeading": "8.2.1 同频率同传播方向振动方向相互垂直的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 38,
+      "section": "8.3",
+      "page": "optics-ch08-s03",
+      "anchor": "ppt-6-38",
+      "textTitle": "需求与问题 38第八章 8.3 光的偏振态 8.3.1 自然光 光源的发光机制：任一原子或分子的任一次辐射波列都具有恒定的振动方向 不同原子或分子同一时刻 同一原子或分子不同时刻 发出的不同列波，可能",
+      "learningHeading": "8.3.1 自然光"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 39,
+      "section": "8.3",
+      "page": "optics-ch08-s03",
+      "anchor": "ppt-6-39",
+      "textTitle": "需求与问题 39第八章 8.3 光的偏振态 8.3.1 自然光 自然光：分解为两个强度相等、 振动方向正交、相位 各自随机变化的线偏振光 分解不是唯一的，可以任意，只要相互正交 分解后的两线偏振光无位",
+      "learningHeading": "8.3.1 自然光"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 40,
+      "section": "8.3",
+      "page": "optics-ch08-s03",
+      "anchor": "ppt-6-40",
+      "textTitle": "需求与问题 40第八章 8.3 光的偏振态 8.3.2 部分偏振光 若光在两个正交方向强度的时间平均值不相等 一个取极大值 Imax ，另一正好取极小值Imin 偏振度：部分偏振光的偏振特性 II I",
+      "learningHeading": "8.3.2 部分偏振光"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 41,
+      "section": "8.3",
+      "page": "optics-ch08-s03",
+      "anchor": "ppt-6-41",
+      "textTitle": "需求与问题 41第八章 8.3 光的偏振态 8.3.2 部分偏振光 1. 线和圆偏振光是椭圆偏振光的特殊表现形式。 2. 自然光是部分偏振光的特殊表现形式。 3. 椭圆偏振光＝两个振动合成，有位相关系",
+      "learningHeading": "8.3.2 部分偏振光"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 42,
+      "section": "8.3",
+      "page": "optics-ch08-s03",
+      "anchor": "ppt-6-42",
+      "textTitle": "需求与问题 42第八章 8.3 光的偏振态 8.3.2 偏振光图示方法",
+      "learningHeading": "8.3.2 部分偏振光"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 43,
+      "section": "8.1",
+      "page": "optics-ch08-s01",
+      "anchor": "ppt-6-43",
+      "textTitle": "需求与问题 43第八章 8.1 同频率同振动方向两列光波的合成 同频同振动方向传播方向相同的两束光的合成 同频同振动方向传播方向相反的两束光的合成 同频传播方向相同振动方向相互垂直的两束光的合成 自然",
+      "learningHeading": "8.1 同频率同振动方向两列光波的合成"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 44,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-44",
+      "textTitle": "需求与问题 44第八章 8.4 光拍 8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加 振幅为𝑬𝟎角频率为𝝎𝟏和𝝎𝟐的两个单色波沿z方向传播，波函数为： 𝑬𝟏 = 𝑬𝟎 𝐜𝐨𝐬 𝝎",
+      "learningHeading": "8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 45,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-45",
+      "textTitle": "需求与问题 45第八章 8.4 光拍 8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加 引入平均角频率 ഥ𝝎和平均传波数ഥ𝒌： 调制角频率𝝎𝒎和调制传波数𝒌𝒎： ത𝑘 = 1 2 ",
+      "learningHeading": "8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 46,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-46",
+      "textTitle": "需求与问题 46第八章 8.4 光拍 8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加 𝐸 = 2𝐸0 cos 𝜔𝑚𝑡 − 𝑘𝑚𝑧 cos ഥ𝜔𝑡 − ത𝑘𝑧 = 2𝐸0cos 𝜔",
+      "learningHeading": "8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 47,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-47",
+      "textTitle": "需求与问题 47第八章 8.4 光拍 8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加 Forrester等人于1955年首先观测到的！ 检测微小频率差的有效方法！",
+      "learningHeading": "8.4.1 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 48,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-48",
+      "textTitle": "需求与问题 48第八章 8.4 光拍 8.4.2 群速度和相速度 𝑬 = 𝟐𝑬𝟎 𝐜𝐨𝐬 𝝎𝒎𝒕 − 𝒌𝒎𝒛 𝐜𝐨𝐬 ഥ𝝎𝒕 − ഥ𝒌𝒛 = 𝟐𝑬𝟎𝐜𝐨𝐬 𝝎𝒎𝒕 − 𝒌𝒎𝒛 𝒄𝒐𝒔 ഥ𝝎𝒕 − ഥ𝒌",
+      "learningHeading": "8.4.2 群速度和相速度"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 49,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-49",
+      "textTitle": "需求与问题 49第八章 8.4 光拍 8.4.2 群速度和相速度 等幅面的传播速度：振幅恒值点的移动速度，群速度 在真空中，介质无色散，相速度和群速度相等 在介质中，介质有色散，频率不同，速度不同，合",
+      "learningHeading": "8.4.2 群速度和相速度"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 50,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-50",
+      "textTitle": "需求与问题 50第八章 8.4 光拍 8.4.2 群速度和相速度 M N 𝒕𝟏时刻 𝒕𝟐时刻 𝒗𝟏 𝒕𝟐 − 𝒕𝟏 𝒗𝟐 𝒕𝟐 − 𝒕𝟏 𝒗𝒈 𝒕𝟐 − 𝒕𝟏",
+      "learningHeading": "8.4.2 群速度和相速度"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 51,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-51",
+      "textTitle": "需求与问题 51第八章 8.4 光拍 8.4.2 群速度和相速度 群速度： 𝝎𝒎𝒕 − 𝒌𝒎𝒛=常数 𝒗𝒈 = 𝝎𝒎 𝒌𝒎 = 𝝎𝟏 − 𝝎𝟐 𝒌𝟏 − 𝒌𝟐 = 𝚫𝝎 𝚫𝒌 ՜ 𝒅𝝎 𝒅𝒌 𝒗𝒈 =",
+      "learningHeading": "8.4.2 群速度和相速度"
+    },
+    {
+      "sourcePdf": "光学20261026光的传播II.pdf",
+      "pdfPage": 52,
+      "section": "8.4",
+      "page": "optics-ch08-s04",
+      "anchor": "ppt-6-52",
+      "textTitle": "需求与问题 52第八章 8.4 光拍 同振幅同振动方向同一方向传播的频率差很小的两列光波的叠加 振幅为𝑬𝟎角频率为𝝎𝟏和𝝎𝟐的两个单色波沿z方向传播，波函数为： 𝑬𝟏 = 𝑬𝟎 𝐜𝐨𝐬 𝝎𝟏𝒕 − 𝒌",
+      "learningHeading": "8.4 光拍与群速度"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 1,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-1",
+      "textTitle": "第四部分光的调控2026-11-02",
+      "learningHeading": "9.1 两种各向同性均匀介质交界面对光的调控"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 2,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-2",
+      "textTitle": "需求与问题 2第四部分 光的调控𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎𝒕(𝝋 𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎𝒕(𝝋 𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎𝒕(𝝋 𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎𝒕(𝝋𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎𝒕(𝝋𝑬=𝑨𝒆!𝒊𝒌$𝒓!𝝎",
+      "learningHeading": "9.1 两种各向同性均匀介质交界面对光的调控"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 3,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-3",
+      "textTitle": "第九章两种介质交界面对光的调控2026-11-02",
+      "learningHeading": "9.1 两种各向同性均匀介质交界面对光的调控"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 4,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-4",
+      "textTitle": "需求与问题 4第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.1 界面边界条件 求什么？光线的方向问题？反射和折射光的通量密度问题？反射和折射波的相位问题？ 介质1和介质2都是各向同性均匀",
+      "learningHeading": "9.1.1 界面边界条件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 5,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-5",
+      "textTitle": "需求与问题 5第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.1 界面边界条件 电位移矢量𝑫的法向分量!𝑫#𝒅𝑺=𝑸𝒇电场高斯定律 𝑫𝟐𝒏=𝑫𝟏𝒏 (𝑫#𝒅𝑺=)顶𝑫#𝒅𝑺+)底𝑫#𝒅𝑺+",
+      "learningHeading": "9.1.1 界面边界条件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 6,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-6",
+      "textTitle": "需求与问题 6第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.1 界面边界条件磁感应强度𝑩的法向分量 𝑩𝟐𝒏=𝑩𝟏𝒏 𝒏#𝑩𝟏−𝑩𝟐=𝟎磁感应强度𝑩的法向分量连续电场强度𝑬的切向分量𝑬𝟐𝒕",
+      "learningHeading": "9.1.1 界面边界条件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 7,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-7",
+      "textTitle": "需求与问题 7第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.2 反射定律和折射定律（方向问题） 介质1和介质2的分界面无限大（xy平面）入射波平面波：将产生反射波和折射波传播矢量：𝒌𝒌¢",
+      "learningHeading": "9.1.2 反射定律和折射定律（方向问题）"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 8,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-8",
+      "textTitle": "需求与问题 8第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.2 反射定律和折射定律（方向问题） 𝑬=𝑨𝒆(𝒊𝒌+𝒓(𝝎𝒕 𝑬¢=𝑨¢𝒆(𝒊𝒌¢+𝒓(𝝎¢𝒕 𝑬¢¢=𝑨¢¢𝒆(𝒊𝒌¢¢+𝒓",
+      "learningHeading": "9.1.2 反射定律和折射定律（方向问题）"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 9,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-9",
+      "textTitle": "需求与问题 9第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.2 反射定律和折射定律（方向问题） 光在介质1和介质2中的传播速度分别为𝝊1和𝝊2 入射光线、反射光线、折射光线在一个平面内入",
+      "learningHeading": "9.1.2 反射定律和折射定律（方向问题）"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 10,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-10",
+      "textTitle": "需求与问题 10第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.2 反射定律和折射定律（方向问题） 反射定律入射光线与反射光线在一个平面内𝜽=𝜽¢入射角=反射角 折射定律入射光线与折射光线",
+      "learningHeading": "9.1.2 反射定律和折射定律（方向问题）"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 11,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-11",
+      "textTitle": "需求与问题 11第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.3 菲涅尔公式：振幅和位相的关系光矢量可分解为：平行于入射面的p分量+垂直于入射面的s分量s和p分量的入射平面波其反射与折射",
+      "learningHeading": "9.1.3 菲涅尔公式：振幅和位相的关系"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 12,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-12",
+      "textTitle": "需求与问题 12第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.3 菲涅尔公式：振幅和位相的关系𝑟I=𝑛Hcos𝜃−𝑛Gcos𝜃¢¢𝑛Hcos𝜃+𝑛Gcos𝜃¢¢=𝑡𝑔(𝜃−𝜃¢¢)𝑡𝑔(",
+      "learningHeading": "9.1.3 菲涅尔公式：振幅和位相的关系"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 13,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-13",
+      "textTitle": "需求与问题 13第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.3 菲涅尔公式：振幅和位相的关系 从光疏→到光密界面上的反射，n1=1.0、n2=1.5 p光波 s光波",
+      "learningHeading": "9.1.3 菲涅尔公式：振幅和位相的关系"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 14,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-14",
+      "textTitle": "需求与问题 14第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.3 菲涅尔公式：振幅和位相的关系 从光密→到光疏界面上的反射，n1=1.5、n2=1.0 p光波 s光波",
+      "learningHeading": "9.1.3 菲涅尔公式：振幅和位相的关系"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 15,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-15",
+      "textTitle": "需求与问题 15第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.4 反射率和透过率 通量密度：单位时间内通过垂直于传播方向的单位面积上的能量𝑰=𝟏𝟐𝜺𝟎𝜺𝝁𝟎𝝁𝑬𝟐 单位时间内入射到分界面",
+      "learningHeading": "9.1.4 反射率和透过率"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 16,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-16",
+      "textTitle": "需求与问题 16第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.4 反射率和透过率反射率：反射波的能流密度比上入射波的能流密度𝑹=𝑾¢𝑾=𝑬¢𝟐𝑬𝟐=𝒓𝟐𝑹𝒔=𝒓𝒔𝟐𝑹𝒑=𝒓𝒑𝟐 透射率：",
+      "learningHeading": "9.1.4 反射率和透过率"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 17,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-17",
+      "textTitle": "需求与问题 17第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.4 反射率和透过率从光疏→到光密界面上的反射，n1=1.0、n2=1.5",
+      "learningHeading": "9.1.4 反射率和透过率"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 18,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-18",
+      "textTitle": "需求与问题 18第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.4 反射率和透过率从光密→到光疏界面上的反射，n1=1.5、n2=1.0",
+      "learningHeading": "9.1.4 反射率和透过率"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 19,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-19",
+      "textTitle": "需求与问题 19第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.5 布儒斯特定律 布儒斯特角 从光疏→到光密界面上的反射，n1=1.0、n2=1.5 从光密→到光疏界面上的反射，n1=1.",
+      "learningHeading": "9.1.5 布儒斯特定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 20,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-20",
+      "textTitle": "需求与问题 20第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.5 布儒斯特定律𝑟I=𝑛Hcos𝜃−𝑛Gcos𝜃¢¢𝑛Hcos𝜃+𝑛Gcos𝜃¢¢=𝑡𝑔(𝜃−𝜃¢¢)𝑡𝑔(𝜃+𝜃¢¢)=0",
+      "learningHeading": "9.1.5 布儒斯特定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 21,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-21",
+      "textTitle": "需求与问题 21第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.5 布儒斯特定律 用玻璃片堆获得线偏振光 布儒斯特1812年发现的",
+      "learningHeading": "9.1.5 布儒斯特定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 22,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-22",
+      "textTitle": "需求与问题 22第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.6 全反射 全反射现象：光密到光疏介质 内反射（密疏） 外反射（疏密） 𝒏𝟏𝐬𝐢𝐧𝜽𝟏=𝒏𝟏𝐬𝐢𝐧𝜽𝒄=𝒏𝟐𝐬𝐢𝐧𝝅𝟐=𝒏𝟐",
+      "learningHeading": "9.1.6 全反射"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 23,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-23",
+      "textTitle": "需求与问题 23第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.6 全反射 2n1nq'qcq光纤的数值孔径： 12sinnnc=q'sinsin10qqnn=090'=+cqqcccnn",
+      "learningHeading": "9.1.6 全反射"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 24,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-24",
+      "textTitle": "需求与问题 24第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.6 全反射 光纤通讯 损耗 例子开始现在 2009年诺贝尔物理学奖：核心是1966年理论上解决了损耗问题",
+      "learningHeading": "9.1.6 全反射"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 25,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-25",
+      "textTitle": "需求与问题 25第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.6 全反射 设：入射介质n1=n，折射介质n2=1，入射角q，折射角q¢¢ sin𝜃¢¢=𝑛%𝑛&sin𝜃=sin𝜃𝑛&% ",
+      "learningHeading": "9.1.6 全反射"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 26,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-26",
+      "textTitle": "需求与问题 26第九章 9.1 两种各向同性均匀介质交界面对光的调控9.1.6 全反射𝑬¢¢=𝑨¢¢𝒆(𝒊𝒌¢¢+𝒓(𝝎𝒕折射波如选取入射面为xz平面𝑬¢¢=𝑨¢¢𝒆(𝒊𝒌¢¢+𝒓(𝝎𝒕=𝑨¢¢𝒆(𝒊",
+      "learningHeading": "9.1.6 全反射"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 27,
+      "section": "9.1",
+      "page": "optics-ch09-s01",
+      "anchor": "ppt-7-27",
+      "textTitle": "需求与问题 27第九章 9.1 两种各向同性均匀介质交界面对光的调控",
+      "learningHeading": "9.1 两种各向同性均匀介质交界面对光的调控"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 28,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-28",
+      "textTitle": "需求与问题 28第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.1 晶体的双折射现象与定性规律 求什么？光线的方向问题？反射和折射光的通量密度问题？反射和折射波的相位问题？ 介质1和介质",
+      "learningHeading": "9.2.1 晶体的双折射现象与定性规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 29,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-29",
+      "textTitle": "需求与问题 29第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.1 晶体的双折射现象与定性规律 介质1各向同性均匀介质介质2是各向异性均匀介质 求什么？光线的方向问题？ 照度问题？相位问",
+      "learningHeading": "9.2.1 晶体的双折射现象与定性规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 30,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-30",
+      "textTitle": "需求与问题 30第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.1 晶体的双折射现象 什 么 是 晶 体 的 双 折 射 现 象 ？ 方解石的双折射现象",
+      "learningHeading": "9.2.1 晶体的双折射现象与定性规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 31,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-31",
+      "textTitle": "需求与问题 31第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.2 晶体的双折射现象的基本规律 另一条折射光线不满足通常的折射定律，这条折射光成为非寻常光线，简称e光 n0为常数，叫做晶",
+      "learningHeading": "9.2.2 晶体的双折射现象的基本规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 32,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-32",
+      "textTitle": "需求与问题 32第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.2 晶体的双折射现象的基本规律 晶体的光轴：当光线在晶体内沿着这特殊的方向传播时不发生双折射现象 单轴和双轴晶体的定义？ ",
+      "learningHeading": "9.2.2 晶体的双折射现象的基本规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 33,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-33",
+      "textTitle": "需求与问题 33第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.2 晶体的双折射现象的基本规律一般情形下，o主平面和e主平面是不重合的 o 光和 e 光都是线偏振光 o 光的光矢量于 o",
+      "learningHeading": "9.2.2 晶体的双折射现象的基本规律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 34,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-34",
+      "textTitle": "需求与问题 34第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.3 惠更斯对晶体双折射现象的解释早在电磁理论诞生之前，惠更斯对晶体的双折射现象做出了解释，是一种“唯象”的方法 没有考虑光",
+      "learningHeading": "9.2.3 惠更斯对晶体双折射现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 35,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-35",
+      "textTitle": "需求与问题 35第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.3 惠更斯对晶体双折射现象的解释 （一）由两条折射光事实：（1）单轴晶体中光波的波面 非常光线的波面假定为旋转椭球面 晶体",
+      "learningHeading": "9.2.3 惠更斯对晶体双折射现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 36,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-36",
+      "textTitle": "需求与问题 36第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.3 惠更斯对晶体双折射现象的解释 正晶体： 𝝊 e < 𝝊 o 负晶体： 𝝊 e > 𝝊 o 方解石 石英 𝝊 0 ：在光",
+      "learningHeading": "9.2.3 惠更斯对晶体双折射现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 37,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-37",
+      "textTitle": "需求与问题 37第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.3 惠更斯对晶体双折射现象的解释惠更斯根据事实认识到：晶体内有两个波面，对两个波面做了基本正确的描述，解释了双折射 没有解",
+      "learningHeading": "9.2.3 惠更斯对晶体双折射现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 38,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-38",
+      "textTitle": "需求与问题 38第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.4 惠更斯作图法确定光线方向 平面波正入射到正晶体（如石英）的表面上，光轴在入射面内，且与表面呈一个角，求出射光方向？ e",
+      "learningHeading": "9.2.4 惠更斯作图法确定光线方向"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 39,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-39",
+      "textTitle": "需求与问题 39第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.4 惠更斯作图法确定光线方向平面波斜入射到正晶体（如石英）的表面上，光轴在入射面内，且与表面呈一个角度，求出射光方向？",
+      "learningHeading": "9.2.4 惠更斯作图法确定光线方向"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 40,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-40",
+      "textTitle": "需求与问题 40第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.4 惠更斯作图法确定光线方向 光轴平行于晶体表面，但垂直于入射面，光线倾斜入射 𝐬𝐢𝐧𝜽𝒊𝐬𝐢𝐧𝜽𝒓=𝒄𝝊𝒆=𝒏𝒆",
+      "learningHeading": "9.2.4 惠更斯作图法确定光线方向"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 41,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-41",
+      "textTitle": "需求与问题 41第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.4 惠更斯作图法确定光线方向负晶体，平行光垂直入射，光轴与晶体表面平行",
+      "learningHeading": "9.2.4 惠更斯作图法确定光线方向"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 42,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-42",
+      "textTitle": "需求与问题 42第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件 尼科尔棱镜 o光折射率：1.658, e光折射率：1.516，加拿大树胶的折射率：1.55",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 43,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-43",
+      "textTitle": "需求与问题 43第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件 渥拉斯顿棱镜 负晶体： 𝝊 e > 𝝊 o 方解石负晶体，no>ne",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 44,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-44",
+      "textTitle": "需求与问题 44第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件—相移片 o光经过的光程：Lo=nod𝜹𝒐→𝒆=𝝓𝒐−𝝓𝒆=𝟐𝝅𝝀(𝒏𝒐−𝒏𝒆)𝒅e光经过的光程：Le=ned",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 45,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-45",
+      "textTitle": "需求与问题 45第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件—相移片 正晶体：δo-e<0, 负晶体：δo-e>0四分之一波片(no-ne)d=λ/4δo-e=±π/2 ",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 46,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-46",
+      "textTitle": "需求与问题 46第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件 2 () 2 cos( \") 2 cos( ) x y oe o e E E coos t n d EE t",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 47,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-47",
+      "textTitle": "需求与问题 47第九章 9.2 各向同性与各向异性介质分界面对光的调控9.2.5 偏振器件—补偿器 能任意改变两束光光程差的器件称为补偿器或补色器 巴俾涅补偿器缺点是很窄光束,因为宽光束的不同部分会产",
+      "learningHeading": "9.2.5 偏振器件"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 48,
+      "section": "9.2",
+      "page": "optics-ch09-s02",
+      "anchor": "ppt-7-48",
+      "textTitle": "需求与问题 48第九章 9.2 各向同性与各向异性介质分界面对光的调控 9.1 两种各向同性介质分界面对光的调控 9.2 各向同性与各向异性介质分界面对光的调控 方向、通量密度、相位的变化反射与折射定",
+      "learningHeading": "9.2 各向同性与各向异性介质分界面对光的调控"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 49,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-49",
+      "textTitle": "需求与问题 49第九章 9.3 旋光效应9.3.1 旋光现象 一定波长的线偏振光通过旋光物质时，光矢量转过的角度Y与其通过的距离d 成正比：系数a：物质的旋光率，单位：度/mY=a𝒅 旋光性、旋光物质",
+      "learningHeading": "9.3.1 旋光现象"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 50,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-50",
+      "textTitle": "需求与问题 50第九章 9.3 旋光效应9.3.1 旋光现象旋光率：既与材料有关又与波长有关 旋光色散 对 1mm 厚的石英晶片， 红光大约转过 15 0 ， 紫光则转过大约 50 0 ， 其它色介于",
+      "learningHeading": "9.3.1 旋光现象"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 51,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-51",
+      "textTitle": "需求与问题 51第九章 9.3 旋光效应9.3.1 旋光现象对于旋光溶液，光矢量转过的角度y除了正比于光在溶液中通过的距离d，还和溶液的浓度C成正比dCya = 系数a：溶液的旋光率 利用旋光现象可测",
+      "learningHeading": "9.3.1 旋光现象"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 52,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-52",
+      "textTitle": "需求与问题 52第九章 9.3 旋光效应9.3.2 旋光现象的解释 在左旋晶体中，左旋圆偏振光（简称L光）传播速度较快 菲涅尔的假设：沿晶体光轴传播的线偏振光分解为两个沿相反方向旋转的等频率、等振幅的",
+      "learningHeading": "9.3.2 旋光现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 53,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-53",
+      "textTitle": "需求与问题 53第九章 9.3 旋光效应9.3.2 旋光现象的解释𝑬𝒙=𝑬𝟎𝐜𝐨𝐬(𝐰𝐭−𝐤𝐳)𝑬𝒚=𝑬𝟎𝐜𝐨𝐬(𝒘𝒕−𝒌𝒛−p𝟐) 𝑬𝒙=𝑬𝟎𝐜𝐨𝐬(𝐰𝐭−𝐤𝐳)𝑬𝒚=𝑬𝟎𝐜𝐨𝐬(𝒘𝒕−𝒌𝒛+p𝟐)",
+      "learningHeading": "9.3.2 旋光现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 54,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-54",
+      "textTitle": "需求与问题 54第九章 9.3 旋光效应9.3.2 旋光现象的解释 𝝊L、𝝊R：左旋和右旋圆偏振光沿光轴方向的传播速度nL=𝒄/𝝊L和nR=𝒄/𝝊R：折射率 经过旋光晶体产生不同的位相滞后： 当两种圆",
+      "learningHeading": "9.3.2 旋光现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 55,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-55",
+      "textTitle": "需求与问题 55第九章 9.3 旋光效应9.3.2 旋光现象的解释 此方向相对于原来的竖直方向转过了一个角度 y1 () ( ) 2 LR L R nn d p yj j l =- =- 与旋光晶片厚",
+      "learningHeading": "9.3.2 旋光现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 56,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-56",
+      "textTitle": "需求与问题 56第九章 9.3 旋光效应9.3.2 旋光现象的解释 菲涅耳假设的实验验证 右旋晶体：𝒏𝑳>𝒏𝑹左旋晶体：𝒏𝑳<𝒏𝑹 从右旋晶体入射到左旋晶体时左旋圆偏振光相当于从光密入射到光疏右旋圆偏",
+      "learningHeading": "9.3.2 旋光现象的解释"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 57,
+      "section": "9.3",
+      "page": "optics-ch09-s03",
+      "anchor": "ppt-7-57",
+      "textTitle": "需求与问题 57第九章 9.3 旋光效应9.3.3 磁致旋光----法拉第效应 1864 年，法拉第发现在磁场的作用下，不具有旋光性的 介质会产生旋光效应，即能使光矢量的振动面发生旋转 磁致旋光有右旋",
+      "learningHeading": "9.3.3 磁致旋光——法拉第效应"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 58,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-58",
+      "textTitle": "需求与问题 58第九章 9.4 介质的二向色性与偏振片9.4.1 介质的二向色性 什么是光的线二向色性晶体对振动方向垂直的线偏振光具有选择吸收的性质 𝑬𝟏=𝑬𝟏𝟎𝐜𝐨𝐬w𝒕−𝒌𝒛⃗;𝑬𝟐=𝑬𝟐𝟎𝐜𝐨𝐬",
+      "learningHeading": "9.4.1 介质的二向色性"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 59,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-59",
+      "textTitle": "需求与问题 59第九章 9.4 介质的二向色性与偏振片9.4.1 介质的二向色性 什么是光的圆二向色性 介质对左旋与右旋圆偏振光的吸收不同：圆二色性两个振幅不同的圆偏振光合成：椭圆偏振光 左旋圆偏振光",
+      "learningHeading": "9.4.1 介质的二向色性"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 60,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-60",
+      "textTitle": "需求与问题 60第九章 9.4 介质的二向色性与偏振片9.4.1 介质的二向色性 为什么叫光的二向色性？当振动方向相互垂直的两束线性偏振白光通过晶体后会呈现出不同的颜色",
+      "learningHeading": "9.4.1 介质的二向色性"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 61,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-61",
+      "textTitle": "需求与问题 61第九章 9.4 介质的二向色性与偏振片9.4.2 偏振片当自然光通过线二向色性材料后，变成线偏振光：偏振片偏振片原理",
+      "learningHeading": "9.4.2 偏振片"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 62,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-62",
+      "textTitle": "需求与问题 62第九章 9.4 介质的二向色性与偏振片9.4.3 马吕斯定律偏振片的透振方向：光振动能够通过的方向偏振片P1是起偏器，偏振片P2是检偏器，箭头表示偏振片的透振方向 当P1 和P2 的透",
+      "learningHeading": "9.4.3 马吕斯定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 63,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-63",
+      "textTitle": "需求与问题 63第九章 9.4 介质的二向色性与偏振片9.4.3 马吕斯定律 当P1与P2的透振方向成α角时，透过P2的通量密度为：2 cos0 I=I a I0 是透过起偏器的线偏振光的通量密度，I",
+      "learningHeading": "9.4.3 马吕斯定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 64,
+      "section": "9.4",
+      "page": "optics-ch09-s04",
+      "anchor": "ppt-7-64",
+      "textTitle": "需求与问题 64第九章 9.4 介质的二向色性与偏振片9.4.3 马吕斯定律 当α＝90°时，P1和P2的透振方向垂直，透过的通量密度为0，这称为消光判断偏振光要用到偏振片",
+      "learningHeading": "9.4.3 马吕斯定律"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 65,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-65",
+      "textTitle": "需求与问题 65第九章 9.5 偏振光的检验9.5.1 光通过偏振器件后偏振态的变化 有两个照度为零的点有两个最大值点 线偏振光检偏器 旋转一周",
+      "learningHeading": "9.5.1 光通过偏振器件后偏振态的变化"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 66,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-66",
+      "textTitle": "需求与问题 66第九章 9.5 偏振光的检验9.5.1 光通过偏振器件后偏振态的变化 照度不变 自然光检偏器 旋转一周 圆偏振光",
+      "learningHeading": "9.5.1 光通过偏振器件后偏振态的变化"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 67,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-67",
+      "textTitle": "需求与问题 67第九章 9.5 偏振光的检验9.5.1 光通过偏振器件后偏振态的变化椭圆偏振光、部分偏振光",
+      "learningHeading": "9.5.1 光通过偏振器件后偏振态的变化"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 68,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-68",
+      "textTitle": "需求与问题 68第九章 9.5 偏振光的检验9.5.2 椭圆偏振光通过波片后偏振态的变化 第一步，分解 第二步，附加位相差的产生 第三步，重新合成",
+      "learningHeading": "9.5.2 椭圆偏振光通过波片后偏振态的变化"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 69,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-69",
+      "textTitle": "需求与问题 69第九章 9.5 偏振光的检验9.5.3 偏振光的检验1. 有两个照度为零的点，有两个最大值点 部分偏振光或者椭圆偏振光 入射光检偏器 旋转一周 自然光或者圆偏振光 观察屏幕3. 有两个",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 70,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-70",
+      "textTitle": "需求与问题 70第九章 9.5 偏振光的检验9.5.3 偏振光的检验 入射光检偏器 旋转一周 观察屏幕 自然光或者圆偏振光2. 照度不变",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 71,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-71",
+      "textTitle": "需求与问题 71第九章 9.5 偏振光的检验9.5.3 偏振光的检验 入射光检偏器 旋转一周 观察屏幕 自然光或者圆偏振光2. 照度不变 在检偏器前插入四分之一玻片 则入射光为圆偏振光如出现两个照度为",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 72,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-72",
+      "textTitle": "需求与问题 72第九章 9.5 偏振光的检验9.5.3 偏振光的检验部分偏振光或者椭圆偏振光 入射光检偏器 旋转一周 观察屏幕 3. 有两个照度极大值点和两个极小值点",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 73,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-73",
+      "textTitle": "需求与问题 73第九章 9.5 偏振光的检验9.5.3 偏振光的检验部分偏振光或者椭圆偏振光 入射光检偏器 旋转一周 观察屏幕 3. 有两个照度极大值点和两个极小值点 在检偏器前插入四分之一玻片，快轴",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 74,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-74",
+      "textTitle": "需求与问题 74第九章 9.5 偏振光的检验9.5.3 偏振光的检验 第一步 令入射光通过偏振片 I ，改变偏振片 I 的透振方向 P 1 ，观察透射照 度的变化 观察到 的现象 有消光 照度无变化 ",
+      "learningHeading": "9.5.3 偏振光的检验"
+    },
+    {
+      "sourcePdf": "光学20261102_界面调控.pdf",
+      "pdfPage": 75,
+      "section": "9.5",
+      "page": "optics-ch09-s05",
+      "anchor": "ppt-7-75",
+      "textTitle": "需求与问题 75第九章 总结 双折射现象、规律、唯象解释惠更斯作图法：核心是波面正晶体、负晶体o光与e光的偏振状态 偏振器件：棱镜、波片、补偿器 偏振光的检验：线偏振光、圆偏振光、椭圆偏振光自然光、部",
+      "learningHeading": "9.5 偏振光的检验"
+    }
+  ],
+  "scope": "PPT chapter order, teaching derivations separately explained"
+}

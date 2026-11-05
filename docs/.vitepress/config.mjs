@@ -2,8 +2,10 @@ import { defineConfig } from 'vitepress';
 import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {outlineLifecycleGuard} from '../../scripts/outline-lifecycle.mjs';
+import {releaseMathHandlers} from '../../scripts/math-handler-lifecycle.mjs';
 const courses=JSON.parse(fs.readFileSync(new URL('../../course.config.json',import.meta.url),'utf8'));
 const geodesy=JSON.parse(fs.readFileSync(new URL('../../geodesy.config.json',import.meta.url),'utf8'));
+const optics=JSON.parse(fs.readFileSync(new URL('../../optics.config.json',import.meta.url),'utf8'));
 const space=JSON.parse(fs.readFileSync(new URL('../../study-space.config.json',import.meta.url),'utf8'));
 const resources=JSON.parse(fs.readFileSync(new URL('../../resources.config.json',import.meta.url),'utf8'));
 const geodesySidebar=[{text:'大地测量',items:[{text:'课程总览',link:'/course-geodesy'},{text:'复习与方法选择',link:'/review-geodesy'},{text:'术语与公式索引',link:'/geodesy-glossary'}]},...geodesy.map(c=>({text:c.title,link:'/'+c.slug,collapsed:false,items:c.topics.map(t=>({text:t.title,link:'/'+t.slug}))})),{text:'辅助资料',collapsed:true,items:[{text:'坐标旋转说明',link:'/geodesy-rotation'},{text:'资料来源与图像索引',link:'/geodesy-sources'},{text:'课程维护方案',link:'/geodesy-plan'}]}];
@@ -47,9 +49,9 @@ for(const c of space.courses.filter(c=>!['ml','geodesy'].includes(c.id))){
   sidebar['/course-'+c.id]=navigation;sidebar['/'+c.id+'-']=navigation;
 }
 const opticsNavigation=[
- {text:'光学',items:[{text:'课程总览',link:'/course-optics'},{text:'课程内容学习版',link:'/optics-learning'},{text:'PPT考点复习版',link:'/review-optics'}]},
- {text:'课程内容',items:[{text:'波动与光的电磁理论',link:'/optics-waves'},{text:'非相干辐射与热辐射',link:'/optics-incoherent'},{text:'相干辐射与激光',link:'/optics-laser'},{text:'光的传播与介质响应',link:'/optics-propagation'},{text:'光的传播II：散射、偏振与合成',link:'/optics-propagation-ii'}]},
- {text:'学习版拓展与查阅',items:[{text:'光学与电动力学联系',link:'/optics-electrodynamics'},{text:'课后题与复习自检',link:'/optics-exercises'},{text:'学习版公式总表',link:'/optics-formulas'},{text:'资料来源与公式订正',link:'/optics-sources'}]}
+ {text:'光学',items:[{text:'课程总览',link:'/course-optics'},{text:'第1—9章学习目录',link:'/optics-learning'},{text:'按章PPT复习',link:'/review-optics'}]},
+ ...optics.map(c=>({text:'第'+c.number+'章 '+c.title,link:'/'+c.slug,collapsed:true,items:[...c.topics.map(t=>({text:t.title,link:'/'+t.slug})),{text:'本章考点与概念复习',link:'/'+c.review.slug}]})),
+ {text:'参考资料',collapsed:true,items:[{text:'光学与电动力学联系',link:'/optics-electrodynamics'},{text:'原课后题索引',link:'/optics-exercises'},{text:'公式总表',link:'/optics-formulas'},{text:'课件页码与来源',link:'/optics-sources'}]}
 ];
 sidebar['/course-optics']=opticsNavigation;sidebar['/optics-']=opticsNavigation;
 const optimizationSidebar=[{text:'最优化 · 双教材',items:[{text:'完整目录',link:'/course-optimization'}]},{text:'Boyd · Convex Optimization',collapsed:false,items:[{"text":"第1章 · Introduction · 引言","link":"/optimization-bv-01"},{"text":"第2章 · Convex sets · 凸集","link":"/optimization-bv-02"},{"text":"第3章 · Convex functions · 凸函数","link":"/optimization-bv-03"},{"text":"第4章 · Convex optimization problems · 凸优化问题","link":"/optimization-bv-04"},{"text":"第5章 · Duality · 对偶","link":"/optimization-bv-05"},{"text":"第6章 · Approximation and fitting · 逼近与拟合","link":"/optimization-bv-06"},{"text":"第7章 · Statistical estimation · 统计估计","link":"/optimization-bv-07"},{"text":"第8章 · Geometric problems · 几何问题","link":"/optimization-bv-08"},{"text":"第9章 · Unconstrained minimization · 无约束极小化","link":"/optimization-bv-09"},{"text":"第10章 · Equality constrained minimization · 等式约束极小化","link":"/optimization-bv-10"},{"text":"第11章 · Interior-point methods · 内点法","link":"/optimization-bv-11"}]},{text:'Nocedal–Wright · Numerical Optimization',collapsed:true,items:[{"text":"第1章 · Introduction · 引言","link":"/optimization-nw-01"},{"text":"第2章 · Fundamentals of Unconstrained Optimization · 无约束基础","link":"/optimization-nw-02"},{"text":"第3章 · Line Search Methods · 线搜索","link":"/optimization-nw-03"},{"text":"第4章 · Trust-Region Methods · 信赖域","link":"/optimization-nw-04"},{"text":"第5章 · Conjugate Gradient Methods · 共轭梯度","link":"/optimization-nw-05"},{"text":"第6章 · Quasi-Newton Methods · 拟牛顿","link":"/optimization-nw-06"},{"text":"第7章 · Large-Scale Unconstrained Optimization · 大规模优化","link":"/optimization-nw-07"},{"text":"第8章 · Calculating Derivatives · 导数计算","link":"/optimization-nw-08"},{"text":"第9章 · Derivative-Free Optimization · 无导数优化","link":"/optimization-nw-09"},{"text":"第10章 · Least-Squares Problems · 最小二乘","link":"/optimization-nw-10"},{"text":"第11章 · Nonlinear Equations · 非线性方程","link":"/optimization-nw-11"},{"text":"第12章 · Theory of Constrained Optimization · 约束理论","link":"/optimization-nw-12"},{"text":"第13章 · Linear Programming: The Simplex Method · LP单纯形法","link":"/optimization-nw-13"},{"text":"第14章 · Linear Programming: Interior-Point Methods · LP内点法","link":"/optimization-nw-14"},{"text":"第15章 · Fundamentals of Algorithms for Nonlinear Constrained Optimization · 约束算法基础","link":"/optimization-nw-15"},{"text":"第16章 · Quadratic Programming · 二次规划","link":"/optimization-nw-16"},{"text":"第17章 · Penalty and Augmented Lagrangian Methods · 罚与增广拉格朗日","link":"/optimization-nw-17"},{"text":"第18章 · Sequential Quadratic Programming · SQP","link":"/optimization-nw-18"},{"text":"第19章 · Interior-Point Methods for Nonlinear Programming · 非线性内点法","link":"/optimization-nw-19"}]},{text:'阅读辅助',collapsed:true,items:[{text:'原书、页码与校验范围',link:'/optimization-sources'},{text:'英文阅读辅助',link:'/optimization-reading'},{text:'数学概念随用随查',link:'/optimization-prerequisites'}]}];
@@ -84,10 +86,12 @@ function renderSearch(src,env,md){
 export default defineConfig({
   title:'Study Space · 学习空间', description:'从多源资料到连贯知识：课程自学、期末复习、教材课件与资源下载。', lang:'zh-CN',
   base:'/study-space/', cleanUrls:false,
+  // Limit simultaneous formula-heavy pages during build and search indexing.
+  buildConcurrency:4,
   vite:{publicDir:fileURLToPath(new URL('../../public',import.meta.url)),plugins:[outlineLifecycleGuard()],define:{'import.meta.env.VITE_EXTRA_EXTENSIONS':JSON.stringify('py,ipynb,pptx')}},
   srcExclude:['_fragments/**'], ignoreDeadLinks:false, lastUpdated:true,
   head:[['link',{rel:'icon',href:'/study-space/assets/favicon.svg'}],['script',{},`try{if(!localStorage.getItem('vitepress-theme-appearance')){var t=localStorage.getItem('ml-course-theme');if(t==='dark'||t==='light')localStorage.setItem('vitepress-theme-appearance',t)}}catch(e){}`]],
-  markdown:{math:true},
+  markdown:{math:true,config:releaseMathHandlers},
   themeConfig:{
     logo:'/assets/favicon.svg', siteTitle:'Study Space', outline:{level:[2,3],label:'本页大纲'},
     sidebarMenuLabel:'页面导航', outlineTitle:'本页大纲', darkModeSwitchLabel:'主题',returnToTopLabel:'回到顶部',

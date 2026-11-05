@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-05",
   "sourceKind": "classroom-PPT-PDF",
-  "pages": 257,
+  "pages": 332,
   "files": [
     {
       "filename": "光学202609-波动.pdf",
@@ -32,15 +32,12 @@
       "filename": "光学20261026光的传播II.pdf",
       "pages": 52,
       "sha256": "b62892163bb36ec011f3e27a6b15de3f1cf07169baadc941fa593abe01592d25"
+    },
+    {
+      "filename": "光学20261102_界面调控.pdf",
+      "pages": 75,
+      "sha256": "b070af4d2895bf8cd8b8a990caa43bc6a2fecf68258607e2986783f7c65a0037"
     }
   ],
-  "scope": "ppt-only",
-  "review": "/review-optics.html",
-  "sections": [
-    "waves",
-    "incoherent-radiation",
-    "laser",
-    "propagation-I",
-    "propagation-II"
-  ]
+  "scope": "ppt-only"
 }

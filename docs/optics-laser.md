@@ -11,6 +11,9 @@ next: {"text": "光的传播与介质响应", "link": "/optics-propagation.html"
 
 # 相干辐射与激光
 
+<!-- optics-legacy-notice -->
+> 这篇保留原整讲定位；按PPT第1—9章和独立小节学习，请进入[新版课程目录](optics-learning.html)。新增界面调控见[第9章](optics-ch09.html)。
+
 激光放大来自光场与物质之间有方向的能量交换。束缚电子激光通过泵浦建立能级反转，再借谐振腔积累并选择光场；自由电子激光则让相对论电子束在波荡器中与辐射场交换动能。两种机制都要回答：能量从哪里来，哪些相位能够持续放大，输出光由什么条件决定。
 
 本章采用 $e^{i(\mathbf k\cdot\mathbf r-\omega t)}$ 和峰值场振幅。来源为[光学20261012_相干辐射(1).pdf](optics-sources.html)与[官方教材第六章《相干辐射的产生》](optics-sources.html)。“课件 p.x”指 PDF 文件页码；教材按节号和式号定位。

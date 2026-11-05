@@ -1,0 +1,538 @@
+[
+  {
+    "number": 1,
+    "title": "绪论",
+    "sections": [
+      [
+        "1.3",
+        "光学内容与课程体系"
+      ]
+    ],
+    "slug": "optics-ch01",
+    "folder": "第01章 绪论",
+    "localFile": "第01章 绪论/第01章 绪论.md",
+    "topics": [
+      {
+        "id": "1.3",
+        "slug": "optics-ch01-s03",
+        "title": "1.3 光学内容与课程体系",
+        "localFile": "第01章 绪论/1.3 光学内容与课程体系.md",
+        "source": "knowledge/optics/lessons/optics-ch01-s03.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch01.md",
+    "review": {
+      "slug": "optics-ch01-review",
+      "title": "第1章 考点与概念复习",
+      "localFile": "第01章 绪论/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch01-review.md"
+    }
+  },
+  {
+    "number": 2,
+    "title": "波动",
+    "sections": [
+      [
+        "2.1",
+        "一维波动"
+      ],
+      [
+        "2.2",
+        "简谐波、复数表示与相量"
+      ],
+      [
+        "2.3",
+        "几种重要的波动"
+      ],
+      [
+        "2.4",
+        "波的叠加原理"
+      ]
+    ],
+    "slug": "optics-ch02",
+    "folder": "第02章 波动",
+    "localFile": "第02章 波动/第02章 波动.md",
+    "topics": [
+      {
+        "id": "2.1",
+        "slug": "optics-ch02-s01",
+        "title": "2.1 一维波动",
+        "localFile": "第02章 波动/2.1 一维波动.md",
+        "source": "knowledge/optics/lessons/optics-ch02-s01.md"
+      },
+      {
+        "id": "2.2",
+        "slug": "optics-ch02-s02",
+        "title": "2.2 简谐波、复数表示与相量",
+        "localFile": "第02章 波动/2.2 简谐波、复数表示与相量.md",
+        "source": "knowledge/optics/lessons/optics-ch02-s02.md"
+      },
+      {
+        "id": "2.3",
+        "slug": "optics-ch02-s03",
+        "title": "2.3 几种重要的波动",
+        "localFile": "第02章 波动/2.3 几种重要的波动.md",
+        "source": "knowledge/optics/lessons/optics-ch02-s03.md"
+      },
+      {
+        "id": "2.4",
+        "slug": "optics-ch02-s04",
+        "title": "2.4 波的叠加原理",
+        "localFile": "第02章 波动/2.4 波的叠加原理.md",
+        "source": "knowledge/optics/lessons/optics-ch02-s04.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch02.md",
+    "review": {
+      "slug": "optics-ch02-review",
+      "title": "第2章 考点与概念复习",
+      "localFile": "第02章 波动/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch02-review.md"
+    }
+  },
+  {
+    "number": 3,
+    "title": "光的基本性质",
+    "sections": [
+      [
+        "3.1",
+        "光的波动性与电磁理论"
+      ],
+      [
+        "3.2",
+        "光的本性与波粒二象性"
+      ]
+    ],
+    "slug": "optics-ch03",
+    "folder": "第03章 光的基本性质",
+    "localFile": "第03章 光的基本性质/第03章 光的基本性质.md",
+    "topics": [
+      {
+        "id": "3.1",
+        "slug": "optics-ch03-s01",
+        "title": "3.1 光的波动性与电磁理论",
+        "localFile": "第03章 光的基本性质/3.1 光的波动性与电磁理论.md",
+        "source": "knowledge/optics/lessons/optics-ch03-s01.md"
+      },
+      {
+        "id": "3.2",
+        "slug": "optics-ch03-s02",
+        "title": "3.2 光的本性与波粒二象性",
+        "localFile": "第03章 光的基本性质/3.2 光的本性与波粒二象性.md",
+        "source": "knowledge/optics/lessons/optics-ch03-s02.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch03.md",
+    "review": {
+      "slug": "optics-ch03-review",
+      "title": "第3章 考点与概念复习",
+      "localFile": "第03章 光的基本性质/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch03-review.md"
+    }
+  },
+  {
+    "number": 4,
+    "title": "光源及其性质",
+    "sections": [
+      [
+        "4.1",
+        "光源"
+      ],
+      [
+        "4.2",
+        "光线与光束"
+      ],
+      [
+        "4.3",
+        "光谱范围"
+      ]
+    ],
+    "slug": "optics-ch04",
+    "folder": "第04章 光源及其性质",
+    "localFile": "第04章 光源及其性质/第04章 光源及其性质.md",
+    "topics": [
+      {
+        "id": "4.1",
+        "slug": "optics-ch04-s01",
+        "title": "4.1 光源",
+        "localFile": "第04章 光源及其性质/4.1 光源.md",
+        "source": "knowledge/optics/lessons/optics-ch04-s01.md"
+      },
+      {
+        "id": "4.2",
+        "slug": "optics-ch04-s02",
+        "title": "4.2 光线与光束",
+        "localFile": "第04章 光源及其性质/4.2 光线与光束.md",
+        "source": "knowledge/optics/lessons/optics-ch04-s02.md"
+      },
+      {
+        "id": "4.3",
+        "slug": "optics-ch04-s03",
+        "title": "4.3 光谱范围",
+        "localFile": "第04章 光源及其性质/4.3 光谱范围.md",
+        "source": "knowledge/optics/lessons/optics-ch04-s03.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch04.md",
+    "review": {
+      "slug": "optics-ch04-review",
+      "title": "第4章 考点与概念复习",
+      "localFile": "第04章 光源及其性质/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch04-review.md"
+    }
+  },
+  {
+    "number": 5,
+    "title": "非相干辐射",
+    "sections": [
+      [
+        "5.1",
+        "热辐射"
+      ],
+      [
+        "5.2",
+        "加速电荷产生的辐射"
+      ],
+      [
+        "5.3",
+        "能级跃迁辐射"
+      ]
+    ],
+    "slug": "optics-ch05",
+    "folder": "第05章 非相干辐射",
+    "localFile": "第05章 非相干辐射/第05章 非相干辐射.md",
+    "topics": [
+      {
+        "id": "5.1",
+        "slug": "optics-ch05-s01",
+        "title": "5.1 热辐射",
+        "localFile": "第05章 非相干辐射/5.1 热辐射.md",
+        "source": "knowledge/optics/lessons/optics-ch05-s01.md"
+      },
+      {
+        "id": "5.2",
+        "slug": "optics-ch05-s02",
+        "title": "5.2 加速电荷产生的辐射",
+        "localFile": "第05章 非相干辐射/5.2 加速电荷产生的辐射.md",
+        "source": "knowledge/optics/lessons/optics-ch05-s02.md"
+      },
+      {
+        "id": "5.3",
+        "slug": "optics-ch05-s03",
+        "title": "5.3 能级跃迁辐射",
+        "localFile": "第05章 非相干辐射/5.3 能级跃迁辐射.md",
+        "source": "knowledge/optics/lessons/optics-ch05-s03.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch05.md",
+    "review": {
+      "slug": "optics-ch05-review",
+      "title": "第5章 考点与概念复习",
+      "localFile": "第05章 非相干辐射/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch05-review.md"
+    }
+  },
+  {
+    "number": 6,
+    "title": "相干辐射",
+    "sections": [
+      [
+        "6.1",
+        "自发辐射、受激吸收与受激辐射"
+      ],
+      [
+        "6.2",
+        "能级寿命、谱线展宽与光的增益"
+      ],
+      [
+        "6.3",
+        "激光产生的条件"
+      ],
+      [
+        "6.4",
+        "激光的特点"
+      ],
+      [
+        "6.5",
+        "自由电子激光"
+      ]
+    ],
+    "slug": "optics-ch06",
+    "folder": "第06章 相干辐射",
+    "localFile": "第06章 相干辐射/第06章 相干辐射.md",
+    "topics": [
+      {
+        "id": "6.1",
+        "slug": "optics-ch06-s01",
+        "title": "6.1 自发辐射、受激吸收与受激辐射",
+        "localFile": "第06章 相干辐射/6.1 自发辐射、受激吸收与受激辐射.md",
+        "source": "knowledge/optics/lessons/optics-ch06-s01.md"
+      },
+      {
+        "id": "6.2",
+        "slug": "optics-ch06-s02",
+        "title": "6.2 能级寿命、谱线展宽与光的增益",
+        "localFile": "第06章 相干辐射/6.2 能级寿命、谱线展宽与光的增益.md",
+        "source": "knowledge/optics/lessons/optics-ch06-s02.md"
+      },
+      {
+        "id": "6.3",
+        "slug": "optics-ch06-s03",
+        "title": "6.3 激光产生的条件",
+        "localFile": "第06章 相干辐射/6.3 激光产生的条件.md",
+        "source": "knowledge/optics/lessons/optics-ch06-s03.md"
+      },
+      {
+        "id": "6.4",
+        "slug": "optics-ch06-s04",
+        "title": "6.4 激光的特点",
+        "localFile": "第06章 相干辐射/6.4 激光的特点.md",
+        "source": "knowledge/optics/lessons/optics-ch06-s04.md"
+      },
+      {
+        "id": "6.5",
+        "slug": "optics-ch06-s05",
+        "title": "6.5 自由电子激光",
+        "localFile": "第06章 相干辐射/6.5 自由电子激光.md",
+        "source": "knowledge/optics/lessons/optics-ch06-s05.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch06.md",
+    "review": {
+      "slug": "optics-ch06-review",
+      "title": "第6章 考点与概念复习",
+      "localFile": "第06章 相干辐射/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch06-review.md"
+    }
+  },
+  {
+    "number": 7,
+    "title": "光在各向同性介质中的传播",
+    "sections": [
+      [
+        "7.1",
+        "各向同性线性介质中的传播方程"
+      ],
+      [
+        "7.2",
+        "光与介质相互作用的经典理论"
+      ],
+      [
+        "7.3",
+        "光的吸收"
+      ],
+      [
+        "7.4",
+        "光的介质色散"
+      ],
+      [
+        "7.5",
+        "各向同性非均匀介质中的光传播"
+      ],
+      [
+        "7.6",
+        "光的散射"
+      ],
+      [
+        "7.7",
+        "各向异性均匀介质中的光传播"
+      ]
+    ],
+    "slug": "optics-ch07",
+    "folder": "第07章 光在各向同性介质中的传播",
+    "localFile": "第07章 光在各向同性介质中的传播/第07章 光在各向同性介质中的传播.md",
+    "topics": [
+      {
+        "id": "7.1",
+        "slug": "optics-ch07-s01",
+        "title": "7.1 各向同性线性介质中的传播方程",
+        "localFile": "第07章 光在各向同性介质中的传播/7.1 各向同性线性介质中的传播方程.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s01.md"
+      },
+      {
+        "id": "7.2",
+        "slug": "optics-ch07-s02",
+        "title": "7.2 光与介质相互作用的经典理论",
+        "localFile": "第07章 光在各向同性介质中的传播/7.2 光与介质相互作用的经典理论.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s02.md"
+      },
+      {
+        "id": "7.3",
+        "slug": "optics-ch07-s03",
+        "title": "7.3 光的吸收",
+        "localFile": "第07章 光在各向同性介质中的传播/7.3 光的吸收.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s03.md"
+      },
+      {
+        "id": "7.4",
+        "slug": "optics-ch07-s04",
+        "title": "7.4 光的介质色散",
+        "localFile": "第07章 光在各向同性介质中的传播/7.4 光的介质色散.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s04.md"
+      },
+      {
+        "id": "7.5",
+        "slug": "optics-ch07-s05",
+        "title": "7.5 各向同性非均匀介质中的光传播",
+        "localFile": "第07章 光在各向同性介质中的传播/7.5 各向同性非均匀介质中的光传播.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s05.md"
+      },
+      {
+        "id": "7.6",
+        "slug": "optics-ch07-s06",
+        "title": "7.6 光的散射",
+        "localFile": "第07章 光在各向同性介质中的传播/7.6 光的散射.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s06.md"
+      },
+      {
+        "id": "7.7",
+        "slug": "optics-ch07-s07",
+        "title": "7.7 各向异性均匀介质中的光传播",
+        "localFile": "第07章 光在各向同性介质中的传播/7.7 各向异性均匀介质中的光传播.md",
+        "source": "knowledge/optics/lessons/optics-ch07-s07.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch07.md",
+    "review": {
+      "slug": "optics-ch07-review",
+      "title": "第7章 考点与概念复习",
+      "localFile": "第07章 光在各向同性介质中的传播/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch07-review.md"
+    }
+  },
+  {
+    "number": 8,
+    "title": "多束光在各向同性均匀介质中的传播",
+    "sections": [
+      [
+        "8.1",
+        "同频率同振动方向两列光波的合成"
+      ],
+      [
+        "8.2",
+        "同频同向正交振动光波的合成"
+      ],
+      [
+        "8.3",
+        "光的偏振态"
+      ],
+      [
+        "8.4",
+        "光拍与群速度"
+      ]
+    ],
+    "slug": "optics-ch08",
+    "folder": "第08章 多束光在各向同性均匀介质中的传播",
+    "localFile": "第08章 多束光在各向同性均匀介质中的传播/第08章 多束光在各向同性均匀介质中的传播.md",
+    "topics": [
+      {
+        "id": "8.1",
+        "slug": "optics-ch08-s01",
+        "title": "8.1 同频率同振动方向两列光波的合成",
+        "localFile": "第08章 多束光在各向同性均匀介质中的传播/8.1 同频率同振动方向两列光波的合成.md",
+        "source": "knowledge/optics/lessons/optics-ch08-s01.md"
+      },
+      {
+        "id": "8.2",
+        "slug": "optics-ch08-s02",
+        "title": "8.2 同频同向正交振动光波的合成",
+        "localFile": "第08章 多束光在各向同性均匀介质中的传播/8.2 同频同向正交振动光波的合成.md",
+        "source": "knowledge/optics/lessons/optics-ch08-s02.md"
+      },
+      {
+        "id": "8.3",
+        "slug": "optics-ch08-s03",
+        "title": "8.3 光的偏振态",
+        "localFile": "第08章 多束光在各向同性均匀介质中的传播/8.3 光的偏振态.md",
+        "source": "knowledge/optics/lessons/optics-ch08-s03.md"
+      },
+      {
+        "id": "8.4",
+        "slug": "optics-ch08-s04",
+        "title": "8.4 光拍与群速度",
+        "localFile": "第08章 多束光在各向同性均匀介质中的传播/8.4 光拍与群速度.md",
+        "source": "knowledge/optics/lessons/optics-ch08-s04.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch08.md",
+    "review": {
+      "slug": "optics-ch08-review",
+      "title": "第8章 考点与概念复习",
+      "localFile": "第08章 多束光在各向同性均匀介质中的传播/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch08-review.md"
+    }
+  },
+  {
+    "number": 9,
+    "title": "两种介质交界面对光的调控",
+    "sections": [
+      [
+        "9.1",
+        "两种各向同性均匀介质交界面对光的调控"
+      ],
+      [
+        "9.2",
+        "各向同性与各向异性介质分界面对光的调控"
+      ],
+      [
+        "9.3",
+        "旋光效应"
+      ],
+      [
+        "9.4",
+        "介质的二向色性与偏振片"
+      ],
+      [
+        "9.5",
+        "偏振光的检验"
+      ]
+    ],
+    "slug": "optics-ch09",
+    "folder": "第09章 两种介质交界面对光的调控",
+    "localFile": "第09章 两种介质交界面对光的调控/第09章 两种介质交界面对光的调控.md",
+    "topics": [
+      {
+        "id": "9.1",
+        "slug": "optics-ch09-s01",
+        "title": "9.1 两种各向同性均匀介质交界面对光的调控",
+        "localFile": "第09章 两种介质交界面对光的调控/9.1 两种各向同性均匀介质交界面对光的调控.md",
+        "source": "knowledge/optics/lessons/optics-ch09-s01.md"
+      },
+      {
+        "id": "9.2",
+        "slug": "optics-ch09-s02",
+        "title": "9.2 各向同性与各向异性介质分界面对光的调控",
+        "localFile": "第09章 两种介质交界面对光的调控/9.2 各向同性与各向异性介质分界面对光的调控.md",
+        "source": "knowledge/optics/lessons/optics-ch09-s02.md"
+      },
+      {
+        "id": "9.3",
+        "slug": "optics-ch09-s03",
+        "title": "9.3 旋光效应",
+        "localFile": "第09章 两种介质交界面对光的调控/9.3 旋光效应.md",
+        "source": "knowledge/optics/lessons/optics-ch09-s03.md"
+      },
+      {
+        "id": "9.4",
+        "slug": "optics-ch09-s04",
+        "title": "9.4 介质的二向色性与偏振片",
+        "localFile": "第09章 两种介质交界面对光的调控/9.4 介质的二向色性与偏振片.md",
+        "source": "knowledge/optics/lessons/optics-ch09-s04.md"
+      },
+      {
+        "id": "9.5",
+        "slug": "optics-ch09-s05",
+        "title": "9.5 偏振光的检验",
+        "localFile": "第09章 两种介质交界面对光的调控/9.5 偏振光的检验.md",
+        "source": "knowledge/optics/lessons/optics-ch09-s05.md"
+      }
+    ],
+    "source": "knowledge/optics/lessons/optics-ch09.md",
+    "review": {
+      "slug": "optics-ch09-review",
+      "title": "第9章 考点与概念复习",
+      "localFile": "第09章 两种介质交界面对光的调控/本章复习.md",
+      "source": "knowledge/optics/lessons/optics-ch09-review.md"
+    }
+  }
+]

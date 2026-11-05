@@ -11,6 +11,9 @@ ROOT=Path(__file__).resolve().parents[1]
 LEARNING=['optics-waves','optics-incoherent','optics-laser','optics-propagation','optics-propagation-ii']
 
 def export(vault):
+    if (vault/'课程目录.json').exists():
+        from optics_course import publish
+        return publish(vault)
     legacy=json.loads((ROOT/'optics-legacy-anchors.json').read_text(encoding='utf-8'))
     records=json.loads((ROOT/'scripts/optics-legacy-headings.json').read_text(encoding='utf-8'))
     source_map=json.loads((ROOT/'optics-learning-source-map.json').read_text(encoding='utf-8'))

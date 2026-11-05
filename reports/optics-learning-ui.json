@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "base": "http://127.0.0.1:65120/study-space/",
+  "base": "http://127.0.0.1:63480/study-space/",
   "cases": [
     {
       "slug": "course-optics",
@@ -66,6 +66,60 @@
       "images": 9
     },
     {
+      "slug": "optics-ch02-s01",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "light",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
       "slug": "course-optics",
       "theme": "dark",
       "width": 390,
@@ -129,6 +183,60 @@
       "images": 9
     },
     {
+      "slug": "optics-ch02-s01",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "dark",
+      "width": 390,
+      "scroll": 390,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
       "slug": "course-optics",
       "theme": "light",
       "width": 1024,
@@ -192,6 +300,60 @@
       "images": 9
     },
     {
+      "slug": "optics-ch02-s01",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
       "slug": "course-optics",
       "theme": "dark",
       "width": 1024,
@@ -255,6 +417,60 @@
       "images": 9
     },
     {
+      "slug": "optics-ch02-s01",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1024,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
       "slug": "course-optics",
       "theme": "light",
       "width": 1440,
@@ -318,6 +534,60 @@
       "images": 9
     },
     {
+      "slug": "optics-ch02-s01",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
+    },
+    {
       "slug": "course-optics",
       "theme": "dark",
       "width": 1440,
@@ -379,10 +649,66 @@
       "mathErrors": 0,
       "hiddenHeadings": 0,
       "images": 9
+    },
+    {
+      "slug": "optics-ch02-s01",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 2
+    },
+    {
+      "slug": "optics-ch06-s03",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 5
+    },
+    {
+      "slug": "optics-ch09-s01",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 16
+    },
+    {
+      "slug": "optics-ch09-s02",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 13
+    },
+    {
+      "slug": "optics-ch09-s05",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 7
+    },
+    {
+      "slug": "optics-ch09-review",
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1440,
+      "mathErrors": 0,
+      "hiddenHeadings": 0,
+      "images": 10
     }
   ],
   "checks": [
-    "42 responsive/theme layouts",
+    "nine chapter tree and independent 9.2 navigation",
+    "legacy concept links resolve to their subject after heading-depth migration",
+    "78 responsive/theme layouts",
     "native derivation toggle and mathematical rendering",
     "all headings and learning legacy targets outside folds",
     "384 legacy anchors",
