@@ -8,7 +8,7 @@
     "commit": "3c9f671760b1f3ffa95198d55a0b68a188d58144",
     "runUrl": "https://github.com/langwangluoji/study-space/actions/runs/38532698910"
   },
-  "updatedAt": "2026-11-26T20:13:55.470Z",
+  "updatedAt": "2026-11-27T02:56:41.064Z",
   "days": [
     {
       "date": "2026-10-14",
@@ -302,28 +302,28 @@
       "pv": 6,
       "uv": 4,
       "complete": true,
-      "observedAt": "2026-11-26T20:13:55.470Z"
+      "observedAt": "2026-11-27T02:56:41.064Z"
     },
     {
       "date": "2026-11-25",
       "pv": 92,
       "uv": 88,
       "complete": true,
-      "observedAt": "2026-11-26T20:13:55.470Z"
+      "observedAt": "2026-11-27T02:56:41.064Z"
     },
     {
       "date": "2026-11-26",
       "pv": 5,
       "uv": 4,
       "complete": true,
-      "observedAt": "2026-11-26T20:13:55.470Z"
+      "observedAt": "2026-11-27T02:56:41.064Z"
     },
     {
       "date": "2026-11-27",
-      "pv": 0,
-      "uv": 0,
+      "pv": 7,
+      "uv": 7,
       "complete": false,
-      "observedAt": "2026-11-26T20:13:55.470Z"
+      "observedAt": "2026-11-27T02:56:41.064Z"
     }
   ],
   "errors": []
